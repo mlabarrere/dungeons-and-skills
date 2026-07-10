@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lueurs feeriques — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Lueurs feeriques">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="lueurs-feeriques" data-status="source"
+             data-source="img:301"
+             data-spell-level="1" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="18m" data-components="V"
+             data-duration="conc-1min" data-classes="barde,druide"
+             data-save="dex">
+
+      <h1>Lueurs feeriques</h1>
+      <p class="provenance">Evocation du 1er niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 1</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Druide</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Le contour des objets compris dans un Cube de 6 m a portee luit de bleu, de vert ou de violet, a votre convenance. Chaque creature prise dans le Cube est aussi nimbee si elle rate un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite. Pour toute la duree, les objets et les creatures affectes projettent une <a href="../regles/glossaire.html#lumiere-faible" data-ref="lumiere-faible">Lumiere faible</a> sur un rayon de 3 m, et ne peuvent beneficier de l'etat Invisible.</p>
+        <p>Les jets d'attaque contre une creature ou un objet affectes ont l'Avantage si l'assaillant voit la cible.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Nimbee : projette une Lumiere faible (rayon 3 m), ne peut etre Invisible, jets d'attaque contre elle avec Avantage.</td></tr>
+            <tr><td>Reussite</td><td>Non affectee.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

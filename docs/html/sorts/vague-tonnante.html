@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vague tonnante — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Vague tonnante">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="vague-tonnante" data-status="source"
+             data-source="img:341"
+             data-spell-level="1" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="perso" data-components="V,S"
+             data-duration="instantanee" data-classes="barde,druide,ensorceleur,magicien"
+             data-save="con" data-damage-type="tonnerre">
+
+      <h1>Vague tonnante</h1>
+      <p class="provenance">Evocation du 1er niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 1</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Personnelle</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous produisez une vague de force tonitruante. Chaque creature prise dans un Cube de 4,50 m emanant de vous effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Constitution. En cas d'echec, la creature subit 2d8 degats de tonnerre et le choc l'eloigne de 3 m de vous. En cas de reussite, la creature subit uniquement la moitie de ces degats.</p>
+        <p>En outre, les objets non fixes entierement compris dans le Cube sont automatiquement repousses de 3 m de vous par le sort, dont le fracas s'entend a une distance de 90 m.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Constitution)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>2d8 degats de tonnerre et repoussee de 3 m de vous.</td></tr>
+            <tr><td>Reussite</td><td>Moitie des degats (pas de recul).</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Emplacement de niveau superieur. Les degats augmentent de 1d8 par niveau d'emplacement au-dela du 1er.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

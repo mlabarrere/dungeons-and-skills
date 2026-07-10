@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Druide — Classe</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Druide">
+  <main>
+    <article class="sheet" data-entity="classe" data-id="druide" data-status="source" data-source="img:79">
+      <h1>Druide</h1>
+      <div class="pill-row">
+        <span class="badge" data-status="source">Extraction faite (img:79 a 130)</span>
+        <span class="pill">Caracteristique : Sagesse</span>
+        <span class="pill">De de vie : d8</span>
+        <span class="pill">Lanceur primitif</span>
+      </div>
+      <p class="note">
+        Conversion fidele des pages 79-84 (images p79, 123, 125, 126, 127, 130).
+        Aptitudes completes de tous les niveaux et liste complete des sorts de Druide
+        (mineurs et niveaux 1 a 9). Les sous-classes (Cercles) sont detaillees sur
+        leurs propres pages, liees plus bas.
+      </p>
+
+      <section class="section">
+        <h2>Role de la classe</h2>
+        <p>
+          Les Druides sont membres d'ordres ancestraux qui invoquent les forces de la
+          nature. Ils pratiquent la magie de la faune, de la flore et des quatre
+          elements pour soigner, adopter des formes animales et controler la
+          destruction elementaire.
+        </p>
+        <p>Pour une table debutante, le druide sert souvent a :</p>
+        <ul>
+          <li>apporter de la magie de soutien et de controle ;</li>
+          <li>fournir des soins ;</li>
+          <li>aider en exploration et survie ;</li>
+          <li>utiliser Forme sauvage pour s'adapter a certaines situations ;</li>
+          <li>couvrir les competences liees a la nature, aux animaux et a la perception.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Traits de base</h2>
+        <table>
+          <thead><tr><th>Element</th><th>Valeur</th></tr></thead>
+          <tbody>
+            <tr><td>Caracteristique principale</td><td>Sagesse</td></tr>
+            <tr><td>De de vie</td><td>d8 par niveau de Druide</td></tr>
+            <tr><td>Maitrise des jets de sauvegarde</td><td>Intelligence et Sagesse</td></tr>
+            <tr><td>Maitrises de competence</td><td>2 au choix parmi Arcanes, Dressage, Intuition, Medecine, Nature, Perception, Religion et Survie</td></tr>
+            <tr><td>Maitrises d'arme</td><td><a href="../equipement/armes.html" data-ref="armes">Armes</a> courantes</td></tr>
+            <tr><td>Maitrises d'<a href="../equipement/outils.html" data-ref="outils">outils</a></td><td>Materiel d'herboriste</td></tr>
+            <tr><td><a href="../regles/glossaire.html#formation-aux-armures" data-ref="formation-aux-armures">Formation aux armures</a></td><td>Armures legeres et boucliers</td></tr>
+            <tr><td><a href="../regles/glossaire.html#focaliseur-d-incantation" data-ref="focaliseur-d-incantation">Focaliseur d'incantation</a></td><td>Focaliseur druidique</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Equipement de depart</h2>
+        <table>
+          <thead><tr><th>Option</th><th>Contenu</th></tr></thead>
+          <tbody>
+            <tr><td>A</td><td>Armure de cuir, bouclier, serpe, focaliseur druidique (baton de combat), paquetage d'explorateur, materiel d'herboriste et 9 po</td></tr>
+            <tr><td>B</td><td>50 po</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 1 — Sorts, Druidique et Ordre primitif</h2>
+
+        <h3>Sorts</h3>
+        <p>
+          Le Druide a appris a lancer des sorts en etudiant les forces mystiques de la
+          nature. La Sagesse est sa caracteristique d'incantation ; il peut se servir
+          d'un focaliseur druidique comme focaliseur d'incantation. Au niveau 1 :
+        </p>
+        <ul>
+          <li>sorts mineurs connus : 2 ;</li>
+          <li>sorts prepares de niveau 1+ : 4 ;</li>
+          <li>emplacements de sort de niveau 1 : 2.</li>
+        </ul>
+        <p class="note">Sorts mineurs recommandes dans les sources : druidisme, flammes.</p>
+        <p class="note">Sorts de niveau 1 recommandes dans les sources : <a href="../sorts/amitie-avec-les-animaux.html" data-ref="amitie-avec-les-animaux">amitie avec les animaux</a>, <a href="../sorts/lueurs-feeriques.html" data-ref="lueurs-feeriques">lueurs feeriques</a>, soins, <a href="../sorts/vague-tonnante.html" data-ref="vague-tonnante">vague tonnante</a>.</p>
+        <p class="note">
+          Chaque fois qu'il gagne un niveau de Druide, le Druide peut remplacer l'un de
+          ses sorts mineurs par un autre de la liste. Il apprend un <a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">sort mineur</a>
+          supplementaire aux niveaux 4 et 10. Les sorts prepares peuvent etre changes
+          apres un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">repos long</a> ; les emplacements sont recuperes apres un repos long ;
+          un sort prepare doit etre d'un niveau pour lequel le Druide possede un
+          emplacement ; les sorts toujours prepares (aptitudes, sous-classe) ne sont
+          pas decomptes de la limite.
+        </p>
+
+        <h3 style="margin-top:12px;">Druidique</h3>
+        <p>
+          Le Druide connait le druidique, langue secrete des Druides. En apprenant
+          cette langue ancestrale, il a aussi perce les mysteres magiques de la
+          conversation animale : le sort <em><a href="../sorts/communication-avec-les-animaux.html" data-ref="communication-avec-les-animaux">communication avec les animaux</a></em> est
+          toujours prepare en ce qui le concerne.
+        </p>
+        <ul>
+          <li>le druidique permet de laisser des messages caches ;</li>
+          <li>le Druide et tous ceux qui connaissent cet idiome reperent automatiquement ces messages ;</li>
+          <li>d'autres creatures peuvent detecter la presence de tels signes en reussissant un test d'Intelligence (Investigation) DD 15, mais sont incapables d'en dechiffrer le sens.</li>
+        </ul>
+
+        <h3 style="margin-top:12px;">Ordre primitif</h3>
+        <p>Le Druide consacre son existence a l'un des roles sacres suivants, au choix :</p>
+        <table>
+          <thead><tr><th>Option</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Gardien</td><td>Combattant chevronne : maitrise des armes de guerre et formation aux armures intermediaires.</td></tr>
+            <tr><td>Mage</td><td>Un sort mineur supplementaire tire de la liste du Druide ; bonus aux tests d'Intelligence (Arcanes et Nature) egal au modificateur de Sagesse (minimum +1).</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 2 — Compagnon sauvage et Forme sauvage</h2>
+
+        <h3>Compagnon sauvage</h3>
+        <p>
+          Le Druide peut convoquer un esprit de la nature qui adopte une forme animale
+          pour l'assister. Au prix de l'action Magie, il depense un emplacement de sort
+          ou une utilisation de Forme sauvage pour lancer le sort <em>appel de
+          familier</em> sans composantes materielles. Lance ainsi, le familier est une
+          Fee et disparait lorsque le Druide termine un repos long.
+        </p>
+
+        <h3 style="margin-top:12px;">Forme sauvage</h3>
+        <p>
+          Le pouvoir de la nature permet au Druide d'adopter la forme d'un animal. Par
+          une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a>, il se metamorphose en Bete, forme apprise via cette
+          aptitude (voir Formes connues). Il reste sous cette forme autant d'heures que
+          la moitie de son niveau de Druide, mais la quitte prematurement s'il recourt
+          de nouveau a Forme sauvage, subit l'etat Neutralise ou meurt. Il peut aussi
+          quitter la forme par une action Bonus.
+        </p>
+        <p>
+          <strong>Nombre d'utilisations.</strong> Le Druide peut recourir deux fois a
+          Forme sauvage. Il regagne une utilisation apres un <a href="../regles/glossaire.html#repos-court" data-ref="repos-court">repos court</a> et recupere
+          tout le quota apres un repos long. Il recoit des utilisations supplementaires
+          a certains niveaux (colonne Forme sauvage de la table).
+        </p>
+        <p>
+          <strong>Formes connues.</strong> Le Druide connait quatre formes de Bete,
+          choisies parmi les profils de Bete dont le <a href="../regles/glossaire.html#facteur-de-puissance" data-ref="facteur-de-puissance">facteur de puissance</a> n'excede pas
+          1/4 et depourvus de <a href="../regles/glossaire.html#vitesse-de-vol" data-ref="vitesse-de-vol">Vitesse de vol</a> (l'annexe B propose des options). <a href="../creatures/araignee.html" data-ref="araignee">Araignee</a>,
+          <a href="../creatures/cheval-de-selle.html" data-ref="cheval-de-selle">cheval de selle</a>, <a href="../creatures/loup.html" data-ref="loup">loup</a> et rat sont recommandes. Apres chaque repos long, il
+          peut remplacer l'une de ses formes connues par une autre forme autorisee. Son
+          nombre de formes connues et le facteur de puissance maximal augmentent selon
+          la table Formes de bete ; a partir du niveau 8, il peut adopter une forme
+          dotee d'une Vitesse de vol.
+        </p>
+        <table>
+          <thead><tr><th>Niveau de Druide</th><th>Formes connues</th><th>FP max.</th><th>Vitesse de vol</th></tr></thead>
+          <tbody>
+            <tr><td>2</td><td>4</td><td>1/4</td><td>Non</td></tr>
+            <tr><td>4</td><td>6</td><td>1/2</td><td>Non</td></tr>
+            <tr><td>8</td><td>8</td><td>1</td><td>Oui</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Regles sous metamorphose</h3>
+        <p>
+          Tant qu'il est sous forme de bete, le Druide conserve sa personnalite, ses
+          souvenirs et sa faculte de parole, et les regles suivantes s'appliquent :
+        </p>
+        <ul>
+          <li><strong><a href="../regles/glossaire.html#points-de-vie-temporaires" data-ref="points-de-vie-temporaires">Points de vie temporaires</a>.</strong> En adoptant une Forme sauvage, il recoit autant de points de vie temporaires que son niveau de Druide.</li>
+          <li><strong><a href="../regles/glossaire.html#profil-de-jeu" data-ref="profil-de-jeu">Profil de jeu</a>.</strong> Son profil est remplace par celui de la Bete, mais il conserve : <a href="../regles/glossaire.html#type-de-creature" data-ref="type-de-creature">type de creature</a> ; <a href="../regles/glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> ; <a href="../regles/glossaire.html#des-de-vie" data-ref="des-de-vie">des de vie</a> ; valeurs d'Intelligence, Sagesse et Charisme ; aptitudes de classe ; langues ; et <a href="../dons/index.html" data-ref="index-dons">dons</a>. Il conserve aussi ses maitrises de competence et de <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> (avec son bonus de maitrise) et recoit celles de la creature. Quand le modificateur de competence ou de JS du profil de Bete est superieur au sien, celui de la Bete s'applique.</li>
+          <li><strong>Pas d'incantation.</strong> Il ne peut pas lancer de sorts, mais la metamorphose ne rompt pas sa Concentration et n'interfere pas avec les sorts deja lances.</li>
+          <li><strong>Objets.</strong> Sa faculte de manipuler des objets depend des membres de la forme. Il decide si son <a href="../equipement/index.html" data-ref="index-equipement">equipement</a> tombe au sol, fusionne avec la nouvelle forme ou est porte par elle ; l'equipement qui fusionne reste sans effet tant qu'il <a href="../historiques/garde.html" data-ref="garde">garde</a> cette forme.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 3 — Sous-classe (Cercle)</h2>
+        <p>
+          Le Druide recoit la sous-classe de son choix. Une sous-classe est une
+          specialisation qui octroie des aptitudes a certains niveaux de Druide ; pour
+          le reste de sa carriere, il beneficie de chacune des aptitudes du cercle
+          choisi, a concurrence de son niveau actuel. Cercles detailles dans les
+          sources :
+        </p>
+        <div class="pill-row">
+          <a class="pill" href="cercle-des-astres.html" data-ref="cercle-des-astres">Cercle des Astres</a>
+          <a class="pill" href="cercle-de-la-lune.html" data-ref="cercle-de-la-lune">Cercle de la Lune</a>
+          <a class="pill" href="cercle-des-mers.html" data-ref="cercle-des-mers">Cercle des Mers</a>
+          <a class="pill" href="cercle-de-la-terre.html" data-ref="cercle-de-la-terre">Cercle de la Terre</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Aptitudes de plus haut niveau</h2>
+        <table>
+          <thead><tr><th>Niveau</th><th>Aptitude</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>4, 8, 12, 16</td><td><a href="../dons/amelioration-de-caracteristique.html" data-ref="amelioration-de-caracteristique">Amelioration de caracteristique</a></td><td>Don Amelioration de caracteristique (cf. chapitre 5) ou autre don eligible.</td></tr>
+            <tr><td>5</td><td>Regain sauvage</td><td>Une fois a chacun de ses tours, s'il ne lui reste aucune utilisation de Forme sauvage, le Druide peut s'en octroyer une en depensant un emplacement de sort (pas d'action requise). De plus, il peut depenser une utilisation de Forme sauvage (pas d'action requise) pour s'octroyer un emplacement du 1er niveau, apres quoi il doit terminer un repos long pour recommencer.</td></tr>
+            <tr><td>7</td><td>Fureur elementaire</td><td>Une option au choix. <em>Attaques primitives</em> : une fois a chacun de ses tours, en touchant une creature par un <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> avec une arme ou une attaque de Bete sous Forme sauvage, infliger 1d8 degats de feu, foudre, froid ou tonnerre (choisis au moment de toucher). <em>Incantation puissante</em> : ajouter le modificateur de Sagesse aux degats infliges par tout sort mineur de Druide.</td></tr>
+            <tr><td>15</td><td>Fureur elementaire amelioree</td><td>L'option retenue se renforce. <em>Attaques primitives</em> : les degats supplementaires passent a 2d8. <em>Incantation puissante</em> : lorsqu'un sort mineur de Druide a une portee de 3 m ou plus, cette portee augmente de 90 m.</td></tr>
+            <tr><td>18</td><td>Incantation animale</td><td>Tant qu'il est sous Forme sauvage, le Druide peut lancer des sorts malgre sa forme de Bete, a l'exception des sorts assortis d'une composante materielle dont le cout est specifie ou qui est detruite par l'incantation.</td></tr>
+            <tr><td>19</td><td>Faveur epique</td><td>Don de Faveur epique (cf. chapitre 5) ou autre don eligible. <a href="../dons/faveur-de-deplacement-dimensionnel.html" data-ref="faveur-de-deplacement-dimensionnel">Faveur de deplacement dimensionnel</a> recommandee.</td></tr>
+            <tr><td>20</td><td>Archidruide</td><td><em>Forme sauvage immarcescible</em> : chaque fois qu'il joue l'Initiative sans utilisation de Forme sauvage disponible, il en recupere une. <em>Mage de dame Nature</em> : il peut convertir des utilisations non depensees de Forme sauvage en un seul emplacement de sort (pas d'action requise), chaque utilisation valant 2 niveaux d'emplacement (deux utilisations = un emplacement du 4e niveau) ; il doit ensuite terminer un repos long pour recommencer. <em>Longevite</em> : son corps ne vieillit que d'un an par decennie.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Table de progression du Druide</h2>
+        <p class="note">Colonnes 1 a 9 = emplacements de sort par niveau de sort.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Niv.</th><th>Maitrise</th><th>Aptitudes de classe</th><th>Forme sauvage</th>
+              <th>Mineurs</th><th>Prepares</th>
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>+2</td><td>Sorts, Druidique, Ordre primitif</td><td>-</td><td>2</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>2</td><td>+2</td><td>Compagnon sauvage, Forme sauvage</td><td>2</td><td>2</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>3</td><td>+2</td><td>Sous-classe de Druide</td><td>2</td><td>2</td><td>6</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>4</td><td>+2</td><td>Amelioration de caracteristique</td><td>2</td><td>3</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>5</td><td>+3</td><td>Regain sauvage</td><td>2</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>6</td><td>+3</td><td>Aptitude de sous-classe</td><td>3</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>7</td><td>+3</td><td>Fureur elementaire</td><td>3</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>8</td><td>+3</td><td>Amelioration de caracteristique</td><td>3</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>9</td><td>+4</td><td>-</td><td>3</td><td>4</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>10</td><td>+4</td><td>Aptitude de sous-classe</td><td>3</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>11</td><td>+4</td><td>-</td><td>3</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>12</td><td>+4</td><td>Amelioration de caracteristique</td><td>3</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>13</td><td>+5</td><td>-</td><td>3</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+            <tr><td>14</td><td>+5</td><td>Aptitude de sous-classe</td><td>3</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+            <tr><td>15</td><td>+5</td><td>Fureur elementaire amelioree</td><td>3</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>-</td></tr>
+            <tr><td>16</td><td>+5</td><td>Amelioration de caracteristique</td><td>3</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>-</td></tr>
+            <tr><td>17</td><td>+6</td><td>-</td><td>4</td><td>4</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>18</td><td>+6</td><td>Incantation animale</td><td>4</td><td>4</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>19</td><td>+6</td><td>Faveur epique</td><td>4</td><td>4</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>20</td><td>+6</td><td>Archidruide</td><td>4</td><td>4</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" data-source="img:79">
+        <h2>Liste des sorts de Druide</h2>
+        <p class="note">
+          Sorts classes par niveau, puis par ordre alphabetique. Colonne Special :
+          C = Concentration, R = rituel, M = composante materielle specifique.
+        </p>
+
+        <h3>Sorts mineurs (sorts de Druide du niveau 0)</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>assistance</td><td>Divination</td><td>C</td></tr>
+            <tr><td><a href="../sorts/bouffee-de-poison.html" data-ref="bouffee-de-poison">bouffee de poison</a></td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/coup-de-tonnerre.html" data-ref="coup-de-tonnerre">coup de tonnerre</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/crosse-des-druides.html" data-ref="crosse-des-druides">crosse des druides</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>druidisme</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>elementalisme</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>flammes</td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/fouet-epineux.html" data-ref="fouet-epineux">fouet epineux</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>message</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/poussiere-d-etoile.html" data-ref="poussiere-d-etoile">poussiere d'etoile</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>reparation</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>resistance</td><td>Abjuration</td><td>C</td></tr>
+            <tr><td>stabilisation</td><td>Necromancie</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 1er niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>amitie avec les animaux</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/baies-nourricieres.html" data-ref="baies-nourricieres">baies nourricieres</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td>charme-personne</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>communication avec les animaux</td><td>Divination</td><td>R</td></tr>
+            <tr><td><a href="../sorts/couteau-de-glace.html" data-ref="couteau-de-glace">couteau de glace</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/creation-ou-destruction-d-eau.html" data-ref="creation-ou-destruction-d-eau">creation ou destruction d'eau</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/detection-de-la-magie.html" data-ref="detection-de-la-magie">detection de la magie</a></td><td>Divination</td><td>C, R</td></tr>
+            <tr><td><a href="../sorts/detection-du-poison-et-des-maladies.html" data-ref="detection-du-poison-et-des-maladies">detection du poison et des maladies</a></td><td>Divination</td><td>C, R</td></tr>
+            <tr><td>enchevetrement</td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/grande-foulee.html" data-ref="grande-foulee">grande foulee</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>lueurs feeriques</td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mot-de-guerison.html" data-ref="mot-de-guerison">mot de guerison</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/nappe-de-brouillard.html" data-ref="nappe-de-brouillard">nappe de brouillard</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/protection-contre-le-mal-et-le-bien.html" data-ref="protection-contre-le-mal-et-le-bien">protection contre le mal et le bien</a></td><td>Abjuration</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/purification-de-la-nourriture-et-de-l-eau.html" data-ref="purification-de-la-nourriture-et-de-l-eau">purification de la nourriture et de l'eau</a></td><td>Transmutation</td><td>R</td></tr>
+            <tr><td>saut</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>soins</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>vague tonnante</td><td>Evocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 2e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>agrandissement/rapetissement</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>aide</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>amelioration de caracteristique</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>augure</td><td>Divination</td><td>R, M</td></tr>
+            <tr><td>bourrasque</td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/convocation-de-bete.html" data-ref="convocation-de-bete">convocation de bete</a></td><td>Invocation</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/croissance-d-epines.html" data-ref="croissance-d-epines">croissance d'epines</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/detection-des-pieges.html" data-ref="detection-des-pieges">detection des pieges</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/flamme-eternelle.html" data-ref="flamme-eternelle">flamme eternelle</a></td><td>Evocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/immobilisation-de-personne.html" data-ref="immobilisation-de-personne">immobilisation de personne</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/lame-de-feu.html" data-ref="lame-de-feu">lame de feu</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/localisation-d-animaux-ou-de-plantes.html" data-ref="localisation-d-animaux-ou-de-plantes">localisation d'animaux ou de plantes</a></td><td>Divination</td><td>R</td></tr>
+            <tr><td><a href="../sorts/localisation-d-objet.html" data-ref="localisation-d-objet">localisation d'objet</a></td><td>Divination</td><td>C</td></tr>
+            <tr><td><a href="../sorts/messager-animal.html" data-ref="messager-animal">messager animal</a></td><td>Enchantement</td><td>R</td></tr>
+            <tr><td><a href="../sorts/metal-brulant.html" data-ref="metal-brulant">metal brulant</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/passage-sans-trace.html" data-ref="passage-sans-trace">passage sans trace</a></td><td>Abjuration</td><td>C</td></tr>
+            <tr><td><a href="../sorts/peau-d-ecorce.html" data-ref="peau-d-ecorce">peau d'ecorce</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/perception-bestiale.html" data-ref="perception-bestiale">perception bestiale</a></td><td>Divination</td><td>C, R</td></tr>
+            <tr><td><a href="../sorts/protection-contre-le-poison.html" data-ref="protection-contre-le-poison">protection contre le poison</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/rayon-de-lune.html" data-ref="rayon-de-lune">rayon de lune</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/restauration-partielle.html" data-ref="restauration-partielle">restauration partielle</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/sphere-de-feu.html" data-ref="sphere-de-feu">sphere de feu</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">vision dans le noir</a></td><td>Transmutation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 3e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/appel-de-la-foudre.html" data-ref="appel-de-la-foudre">appel de la foudre</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/arme-elementaire.html" data-ref="arme-elementaire">arme elementaire</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/aura-de-vitalite.html" data-ref="aura-de-vitalite">aura de vitalite</a></td><td>Abjuration</td><td>C</td></tr>
+            <tr><td><a href="../sorts/communication-avec-les-plantes.html" data-ref="communication-avec-les-plantes">communication avec les plantes</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/convocation-de-fee.html" data-ref="convocation-de-fee">convocation de fee</a></td><td>Invocation</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/croissance-vegetale.html" data-ref="croissance-vegetale">croissance vegetale</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/dissipation-de-la-magie.html" data-ref="dissipation-de-la-magie">dissipation de la magie</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/etat-cadaverique.html" data-ref="etat-cadaverique">etat cadaverique</a></td><td>Necromancie</td><td>R</td></tr>
+            <tr><td><a href="../sorts/fusion-dans-la-pierre.html" data-ref="fusion-dans-la-pierre">fusion dans la pierre</a></td><td>Transmutation</td><td>R</td></tr>
+            <tr><td><a href="../sorts/invocation-d-animaux.html" data-ref="invocation-d-animaux">invocation d'animaux</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/lumiere-du-jour.html" data-ref="lumiere-du-jour">lumiere du jour</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/marche-sur-l-onde.html" data-ref="marche-sur-l-onde">marche sur l'onde</a></td><td>Transmutation</td><td>R</td></tr>
+            <tr><td><a href="../sorts/mur-de-vent.html" data-ref="mur-de-vent">mur de vent</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/protection-contre-l-energie.html" data-ref="protection-contre-l-energie">protection contre l'energie</a></td><td>Abjuration</td><td>C</td></tr>
+            <tr><td><a href="../sorts/respiration-aquatique.html" data-ref="respiration-aquatique">respiration aquatique</a></td><td>Transmutation</td><td>R</td></tr>
+            <tr><td><a href="../sorts/retour-a-la-vie.html" data-ref="retour-a-la-vie">retour a la vie</a></td><td>Necromancie</td><td>M</td></tr>
+            <tr><td><a href="../sorts/tempete-de-neige.html" data-ref="tempete-de-neige">tempete de neige</a></td><td>Invocation</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 4e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/bouclier-de-feu.html" data-ref="bouclier-de-feu">bouclier de feu</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>charme-monstre</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>confusion</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/controle-de-l-eau.html" data-ref="controle-de-l-eau">controle de l'eau</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/convocation-d-elementaire.html" data-ref="convocation-d-elementaire">convocation d'elementaire</a></td><td>Invocation</td><td>C, M</td></tr>
+            <tr><td>divination</td><td>Divination</td><td>R, M</td></tr>
+            <tr><td><a href="../sorts/domination-de-bete.html" data-ref="domination-de-bete">domination de bete</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/faconnage-de-la-pierre.html" data-ref="faconnage-de-la-pierre">faconnage de la pierre</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>fletrissement</td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/fontaine-de-lune.html" data-ref="fontaine-de-lune">fontaine de lune</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/insecte-geant.html" data-ref="insecte-geant">insecte geant</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/invocation-d-elementaires-mineurs.html" data-ref="invocation-d-elementaires-mineurs">invocation d'elementaires mineurs</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/invocation-d-etres-sylvestres.html" data-ref="invocation-d-etres-sylvestres">invocation d'etres sylvestres</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/liane-avide.html" data-ref="liane-avide">liane avide</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/liberte-de-mouvement.html" data-ref="liberte-de-mouvement">liberte de mouvement</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/localisation-de-creature.html" data-ref="localisation-de-creature">localisation de creature</a></td><td>Divination</td><td>C</td></tr>
+            <tr><td>metamorphose</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mur-de-feu.html" data-ref="mur-de-feu">mur de feu</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/peau-de-pierre.html" data-ref="peau-de-pierre">peau de pierre</a></td><td>Transmutation</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/tempete-de-grele.html" data-ref="tempete-de-grele">tempete de grele</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/terrain-hallucinatoire.html" data-ref="terrain-hallucinatoire">terrain hallucinatoire</a></td><td>Illusion</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 5e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/communion-avec-la-nature.html" data-ref="communion-avec-la-nature">communion avec la nature</a></td><td>Divination</td><td>R</td></tr>
+            <tr><td><a href="../sorts/cone-de-froid.html" data-ref="cone-de-froid">cone de froid</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>contagion</td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/coquille-antivie.html" data-ref="coquille-antivie">coquille antivie</a></td><td>Abjuration</td><td>C</td></tr>
+            <tr><td><a href="../sorts/entrave-planaire.html" data-ref="entrave-planaire">entrave planaire</a></td><td>Abjuration</td><td>M</td></tr>
+            <tr><td>eveil</td><td>Transmutation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/fleau-d-insectes.html" data-ref="fleau-d-insectes">fleau d'insectes</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/invocation-d-elementaire.html" data-ref="invocation-d-elementaire">invocation d'elementaire</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mur-de-pierre.html" data-ref="mur-de-pierre">mur de pierre</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/passage-par-les-arbres.html" data-ref="passage-par-les-arbres">passage par les arbres</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td>quete</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>reincarnation</td><td>Necromancie</td><td>M</td></tr>
+            <tr><td><a href="../sorts/restauration-supreme.html" data-ref="restauration-supreme">restauration supreme</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>scrutation</td><td>Divination</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/soins-de-groupe.html" data-ref="soins-de-groupe">soins de groupe</a></td><td>Abjuration</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 6e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/festin-des-heros.html" data-ref="festin-des-heros">festin des heros</a></td><td>Invocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/glissement-de-terrain.html" data-ref="glissement-de-terrain">glissement de terrain</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>guerison</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/invocation-de-fee.html" data-ref="invocation-de-fee">invocation de fee</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mur-d-epines.html" data-ref="mur-d-epines">mur d'epines</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td>orientation</td><td>Divination</td><td>C, M</td></tr>
+            <tr><td>petrification</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/rayon-de-soleil.html" data-ref="rayon-de-soleil">rayon de soleil</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/vent-divin.html" data-ref="vent-divin">vent divin</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/voie-vegetale.html" data-ref="voie-vegetale">voie vegetale</a></td><td>Invocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 7e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/changement-de-plan.html" data-ref="changement-de-plan">changement de plan</a></td><td>Invocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/inversion-de-la-gravite.html" data-ref="inversion-de-la-gravite">inversion de la gravite</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>mirage</td><td>Illusion</td><td>-</td></tr>
+            <tr><td>regeneration</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>symbole</td><td>Abjuration</td><td>M</td></tr>
+            <tr><td><a href="../sorts/tempete-de-feu.html" data-ref="tempete-de-feu">tempete de feu</a></td><td>Evocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 8e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>alienation</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>aversion/attirance</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/controle-du-climat.html" data-ref="controle-du-climat">controle du climat</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/eclat-du-soleil.html" data-ref="eclat-du-soleil">eclat du soleil</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/metamorphose-animale.html" data-ref="metamorphose-animale">metamorphose animale</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/nuage-incendiaire.html" data-ref="nuage-incendiaire">nuage incendiaire</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/tremblement-de-terre.html" data-ref="tremblement-de-terre">tremblement de terre</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>tsunami</td><td>Invocation</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Sorts de Druide du 9e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/changement-de-forme.html" data-ref="changement-de-forme">changement de forme</a></td><td>Transmutation</td><td>C, M</td></tr>
+            <tr><td>premonition</td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/resurrection-supreme.html" data-ref="resurrection-supreme">resurrection supreme</a></td><td>Necromancie</td><td>M</td></tr>
+            <tr><td><a href="../sorts/tempete-vengeresse.html" data-ref="tempete-vengeresse">tempete vengeresse</a></td><td>Invocation</td><td>C</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>A noter sur la fiche</h2>
+        <ul>
+          <li>Sagesse : caracteristique prioritaire.</li>
+          <li>Constitution : utile pour les PV et la concentration.</li>
+          <li>Dexterite : utile pour la CA et certaines armes.</li>
+          <li>Materiel d'herboriste : maitrise a noter.</li>
+          <li>Focaliseur druidique : necessaire pour l'incantation.</li>
+          <li>Forme sauvage : noter le nombre d'utilisations, les formes connues et les limites de mouvement.</li>
+        </ul>
+      </section>
+
+      <div class="callout">
+        <strong>Points a verifier :</strong> ajouter la page detaillee du cercle
+        choisi ; completer les sorts effectivement choisis dans
+        <code>sorts-selectionnes</code> ; verifier avec le MD les formes animales
+        autorisees et disponibles dans la campagne.
+      </div>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

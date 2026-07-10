@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lohita — Rodeur niveau 1</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Personnages|/personnages/index.html; Lohita">
+  <main>
+    <article class="sheet" data-entity="personnage" data-id="lohita" data-status="source">
+      <header class="header">
+        <section class="identity">
+          <span class="label">Nom du personnage</span>
+          <h1>Lohita</h1>
+          <p class="note">Elfe sylvestre, rodeur niveau 1, historique
+            <a href="../historiques/marchand.html" data-ref="marchand">Marchand</a>.
+            Build furtif : discretion, tir a l'arc, embuscade et repli.</p>
+        </section>
+        <section class="meta-grid" aria-label="Informations principales">
+          <div class="field"><span class="label">Classe et niveau</span><span class="value"><a href="../classes/rodeur.html" data-ref="rodeur">Rodeur</a> 1</span></div>
+          <div class="field"><span class="label">Historique</span><span class="value"><a href="../historiques/marchand.html" data-ref="marchand">Marchand</a></span></div>
+          <div class="field"><span class="label">Espece</span><span class="value"><a href="../especes/elfe.html" data-ref="elfe">Elfe sylvestre</a></span></div>
+          <div class="field"><span class="label">Alignement</span><span class="value"><span class="badge" data-status="manquant">A definir</span></span></div>
+          <div class="field"><span class="label">Vitesse</span><span class="value">10,50 m</span></div>
+          <div class="field"><span class="label">Bonus de maitrise</span><span class="value">+2</span></div>
+        </section>
+      </header>
+
+      <section class="section">
+        <h2>Etat de la fiche</h2>
+        <div class="callout ok">
+          <strong>Corrections appliquees.</strong> PV 6 &rArr; 11 ; « Ennemi jure : Humains »
+          et « Explorateur ne » (regles 2014) retires ; Persuasion, don Chanceux, aptitude
+          Sorts, instruments de navigateur, carquois et argent ajoutes.
+        </div>
+        <div class="callout info">
+          <strong>Recommandations appliquees (build sneaky), modifiables.</strong> Les choix
+          marques <span class="badge" data-status="recommande">Reco sneaky</span> sont des
+          propositions orientees furtivite, conformes aux sources ; le joueur peut les
+          changer : lignage <em>Elfe sylvestre</em>, Discretion comme 3e competence de rodeur,
+          Sens aiguises = Intuition, bottes d'arme <em>arc long + epee courte</em>, sorts
+          <em><a href="../sorts/frappe-piegeuse.html" data-ref="frappe-piegeuse">frappe piegeuse</a> + <a href="../sorts/nappe-de-brouillard.html" data-ref="nappe-de-brouillard">nappe de brouillard</a></em>, langues <em>Elfique + Gobelin</em>,
+          <a href="../equipement/index.html" data-ref="index-equipement">equipement</a> Marchand option B (50 po), carac. d'incantation du lignage = Sagesse.
+        </div>
+        <div class="callout">
+          <strong>A confirmer.</strong> Methode de generation des caracteristiques :
+          Dex 16 n'est possible qu'avec des jets 4d6 (le bonus Marchand porte sur Con/Int/Cha,
+          jamais Dex/Sag). Alignement a definir (roleplay).
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Caracteristiques</h2>
+        <div class="score-grid">
+          <div class="score"><span class="name">For</span><span class="mod">+0</span><span class="raw">10</span></div>
+          <div class="score"><span class="name">Dex</span><span class="mod">+3</span><span class="raw">16</span></div>
+          <div class="score"><span class="name">Con</span><span class="mod">+1</span><span class="raw">12</span></div>
+          <div class="score"><span class="name">Int</span><span class="mod">+0</span><span class="raw">11</span></div>
+          <div class="score"><span class="name">Sag</span><span class="mod">+2</span><span class="raw">15</span></div>
+          <div class="score"><span class="name">Cha</span><span class="mod">-2</span><span class="raw">6</span></div>
+        </div>
+        <p class="note">Valeurs <strong>fournies</strong>, modificateurs <strong>calcules</strong>.
+          Le bonus d'historique Marchand (+2/+1 ou +1/+1/+1) porte sur Constitution,
+          Intelligence ou Charisme ; il est suppose deja inclus sur ces trois. Dex 16 et Sag 15
+          sont donc des valeurs de base (jets 4d6 a confirmer).</p>
+      </section>
+
+      <section class="grid-3">
+        <div class="section">
+          <h2>Defense</h2>
+          <div class="field"><span class="label">PV maximum</span><span class="value">11</span><span class="provenance">Rodeur d10 : 10 + Con +1. <span class="badge" data-status="calcule">Calcule</span></span></div>
+          <div class="field"><span class="label">CA equipee</span><span class="value">15</span><span class="provenance">Cuir cloute 12 + Dex +3. Pas de Desavantage a la Discretion (armure legere sans penalite). <span class="badge" data-status="calcule">Calcule</span></span></div>
+          <div class="field"><span class="label">De de vie</span><span class="value">1d10</span><span class="provenance">Classe Rodeur. <span class="badge" data-status="source">Source</span></span></div>
+        </div>
+        <div class="section">
+          <h2>Exploration et initiative</h2>
+          <div class="field"><span class="label">Initiative</span><span class="value">+3</span><span class="provenance">Modificateur de Dexterite. <span class="badge" data-status="calcule">Calcule</span></span></div>
+          <div class="field"><span class="label">Vitesse</span><span class="value">10,50 m</span><span class="provenance">Lignage Elfe sylvestre. <span class="badge" data-status="recommande">Reco sneaky</span></span></div>
+          <div class="field"><span class="label"><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a></span><span class="value">18 m</span><span class="provenance">Trait d'espece Elfe. <span class="badge" data-status="source">Source</span></span></div>
+          <div class="field"><span class="label"><a href="../regles/glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a></span><span class="value">14</span><span class="provenance">10 + Sag +2 + maitrise +2. <span class="badge" data-status="calcule">Calcule</span></span></div>
+        </div>
+        <div class="section">
+          <h2>Incantation (Rodeur)</h2>
+          <div class="field"><span class="label">Carac. d'incantation</span><span class="value">Sagesse</span><span class="provenance">Classe Rodeur. <span class="badge" data-status="source">Source</span></span></div>
+          <div class="field"><span class="label">DD des sorts</span><span class="value">12</span><span class="provenance">8 + Sag +2 + maitrise +2. <span class="badge" data-status="calcule">Calcule</span></span></div>
+          <div class="field"><span class="label"><a href="../regles/glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">Attaque de sort</a></span><span class="value">+4</span><span class="provenance">Sag +2 + maitrise +2. <span class="badge" data-status="calcule">Calcule</span></span></div>
+          <div class="field"><span class="label">Emplacements niv. 1</span><span class="value">2</span><span class="provenance">Table Rodeur niv. 1. <span class="badge" data-status="source">Source</span></span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Jets de sauvegarde</h2>
+        <table>
+          <thead>
+            <tr><th>Force</th><th>Dexterite</th><th>Constitution</th><th>Intelligence</th><th>Sagesse</th><th>Charisme</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>+2 maitrise</td><td>+5 maitrise</td><td>+1</td><td>+0</td><td>+2</td><td>-2</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Le rodeur maitrise les JS de <strong>Force</strong> et <strong>Dexterite</strong>.
+          Ascendance feerique (Elfe) donne en plus l'Avantage aux JS contre l'etat Charme.</p>
+      </section>
+
+      <section class="section">
+        <h2>Competences</h2>
+        <table>
+          <thead>
+            <tr><th>Competence</th><th>Carac.</th><th>Total</th><th>Provenance</th><th>Statut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Discretion</strong></td><td>Dex</td><td><strong>+5</strong></td><td>Rodeur (choix)</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            <tr><td>Perception</td><td>Sag</td><td>+4</td><td>Rodeur (choix)</td><td><span class="badge" data-status="fourni">Choix</span></td></tr>
+            <tr><td>Survie</td><td>Sag</td><td>+4</td><td>Rodeur (choix)</td><td><span class="badge" data-status="fourni">Choix</span></td></tr>
+            <tr><td>Intuition</td><td>Sag</td><td>+4</td><td>Elfe — Sens aiguises</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            <tr><td>Dressage</td><td>Sag</td><td>+4</td><td>Marchand (d'office)</td><td><span class="badge" data-status="source">Source</span></td></tr>
+            <tr><td>Persuasion</td><td>Cha</td><td>0</td><td>Marchand (d'office)</td><td><span class="badge" data-status="source">Source</span></td></tr>
+          </tbody>
+        </table>
+        <p class="note">Repartition : Marchand donne Dressage + Persuasion (fixe) ; le rodeur
+          prend 3 competences (Discretion, Perception, Survie) ; Sens aiguises (Elfe) prend
+          Intuition. Aucun doublon. <strong>Discretion +5</strong> est le pivot du build sneaky.</p>
+      </section>
+
+      <section class="grid-2">
+        <div class="section">
+          <h2>Aptitudes de classe — Rodeur 1</h2>
+          <table>
+            <thead><tr><th>Aptitude</th><th>Effet fiche</th><th>Statut</th></tr></thead>
+            <tbody>
+              <tr><td>Sorts</td><td>Incantation Sagesse : 2 sorts prepares niv. 1, 2 emplacements. DD 12, attaque de sort +4.</td><td><span class="badge" data-status="source">Source</span></td></tr>
+              <tr><td>Bottes d'arme</td><td>Arc long (botte <em>Ralentissement</em>) et epee courte (botte <em>Ouverture</em>) : bottes actives.</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+              <tr><td>Ennemi jure</td><td><em><a href="../sorts/marque-du-chasseur.html" data-ref="marque-du-chasseur">marque du chasseur</a></em> toujours prepare ; 2 utilisations gratuites / <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">repos long</a>, sans emplacement.</td><td><span class="badge" data-status="source">Source</span></td></tr>
+              <tr><td>Sous-classe</td><td>Choisie au niveau 3 (<a href="../classes/belluaire.html" data-ref="belluaire">Belluaire</a>, <a href="../classes/chasseur.html" data-ref="chasseur">Chasseur</a>, <a href="../classes/traqueur-des-tenebres.html" data-ref="traqueur-des-tenebres">Traqueur des tenebres</a>, <a href="../classes/vagabond-feerique.html" data-ref="vagabond-feerique">Vagabond feerique</a>).</td><td><span class="badge" data-status="deduit">Niveau 3</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section">
+          <h2>Traits d'espece — Elfe sylvestre</h2>
+          <table>
+            <thead><tr><th>Trait</th><th>Effet</th><th>Statut</th></tr></thead>
+            <tbody>
+              <tr><td>Ascendance feerique</td><td>Avantage aux JS pour eviter/finir l'etat Charme.</td><td><span class="badge" data-status="source">Source</span></td></tr>
+              <tr><td>Sens aiguises</td><td>Maitrise d'Intuition.</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+              <tr><td>Transe</td><td>Pas de sommeil ; repos long en 4 h de transe.</td><td><span class="badge" data-status="source">Source</span></td></tr>
+              <tr><td>Vision dans le noir</td><td>18 m.</td><td><span class="badge" data-status="source">Source</span></td></tr>
+              <tr><td>Lignage Elfe sylvestre</td><td>Vitesse 10,50 m ; cantrip <em>druidisme</em> (niv. 1) ; carac. d'incantation Sagesse. Niv. 3 : <a href="../sorts/grande-foulee.html" data-ref="grande-foulee">grande foulee</a> ; niv. 5 : <a href="../sorts/passage-sans-trace.html" data-ref="passage-sans-trace">passage sans trace</a>.</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div class="section">
+          <h2>Don d'origine</h2>
+          <table>
+            <thead><tr><th>Don</th><th>Effet fiche</th><th>Statut</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><a href="../dons/chanceux.html" data-ref="chanceux">Chanceux</a></td>
+                <td>2 points de chance (= bonus de maitrise), recuperes au repos long. Depenser 1 point : Avantage a un <a href="../regles/glossaire.html#test-d20" data-ref="test-d20">test d20</a>, ou Desavantage a une attaque subie.</td>
+                <td><span class="badge" data-status="source">Source</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="note">Don accorde d'office par l'historique
+            <a href="../historiques/marchand.html" data-ref="marchand">Marchand</a>.
+            Utile en sneaky : imposer le Desavantage a une attaque qui vise Lohita apres un tir.</p>
+        </div>
+        <div class="section">
+          <h2>Maitrises et langues</h2>
+          <h3>Maitrises</h3>
+          <div class="pill-row">
+            <span class="pill"><a href="../equipement/armes.html" data-ref="armes">Armes</a> courantes</span>
+            <span class="pill">Armes de guerre</span>
+            <span class="pill">Armures legeres</span>
+            <span class="pill">Armures intermediaires</span>
+            <span class="pill">Boucliers</span>
+            <span class="pill">Focaliseur druidique</span>
+            <span class="pill">Instruments de navigateur</span>
+          </div>
+          <p class="note">Instruments de navigateur = maitrise d'outil de Marchand (conservee meme avec l'option d'equipement B).</p>
+          <h3 style="margin-top:12px;">Langues</h3>
+          <div class="pill-row">
+            <span class="pill">Commun</span>
+            <span class="pill">Elfique</span>
+            <span class="pill">Gobelin</span>
+          </div>
+          <p class="note">Commun + 2 langues courantes. Elfique + Gobelin retenus (utile pour ecouter/piste des ennemis courants). <span class="badge" data-status="recommande">Reco sneaky</span></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Armes et attaques</h2>
+        <table>
+          <thead>
+            <tr><th>Arme</th><th>Bonus</th><th>Type</th><th>Degats</th><th>Botte (active ?)</th><th>Notes / provenance</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Arc long</td>
+              <td>+5</td>
+              <td>Distance</td>
+              <td>1d8+3 perforants</td>
+              <td><strong>Ralentissement</strong> — active (Bottes d'arme)</td>
+              <td>Arme principale. Deux mains, Lourde (pas de Desavantage : Dex 16 &ge; 13), munitions 45/180. Dex +3 + maitrise +2.</td>
+            </tr>
+            <tr>
+              <td>Epee courte</td>
+              <td>+5</td>
+              <td>Corps a corps</td>
+              <td>1d6+3 perforants</td>
+              <td><strong>Ouverture</strong> — active (Bottes d'arme)</td>
+              <td>Finesse (Dex), Legere. Ouverture : Avantage au prochain <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> contre la cible touchee.</td>
+            </tr>
+            <tr>
+              <td>Cimeterre</td>
+              <td>+5</td>
+              <td>Corps a corps</td>
+              <td>1d6+3 tranchants</td>
+              <td>Coup double — non active</td>
+              <td>Finesse (Dex), Legere. Botte non choisie dans Bottes d'arme.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout info">
+          <strong>Combo sneaky.</strong> Tir cache a l'arc + <em>marque du chasseur</em>
+          (1d6 bonus) pour l'embuscade ; en melee, l'epee courte (<em>Ouverture</em>) prepare
+          l'Avantage. Cimeterre et epee courte utilisent la Dexterite (Finesse).
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Sorts</h2>
+        <table>
+          <thead>
+            <tr><th>Sort</th><th>Niv.</th><th>Origine</th><th>Prepare ?</th><th>Statut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><em>marque du chasseur</em></td><td>1</td><td>Ennemi jure (Rodeur 1)</td><td>Toujours prepare (hors limite) ; 2 usages gratuits</td><td><span class="badge" data-status="source">Source</span></td></tr>
+            <tr><td><em>frappe piegeuse</em></td><td>1</td><td>Rodeur — prepare 1/2</td><td>Oui (concentration)</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            <tr><td><em>nappe de brouillard</em></td><td>1</td><td>Rodeur — prepare 2/2</td><td>Oui (concentration)</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            <tr><td><em>druidisme</em></td><td>Cantrip</td><td>Lignage Elfe sylvestre</td><td><a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">Sort mineur</a> (automatique)</td><td><span class="badge" data-status="source">Source</span></td></tr>
+          </tbody>
+        </table>
+        <p class="note"><em>frappe piegeuse</em> (degats d'embuscade) et <em>nappe de brouillard</em>
+          (zone masquee pour approcher ou se replier) sont dans la liste de niveau 1 du rodeur.
+          Les trois sorts de niveau 1 demandent la concentration : un seul actif a la fois.
+          Sorts modifiables apres un repos long.</p>
+      </section>
+
+      <section class="section">
+        <h2>Equipement</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Rodeur — option A</h3>
+            <div class="pill-row">
+              <span class="pill">Armure de cuir cloute</span>
+              <span class="pill">Arc long</span>
+              <span class="pill">20 fleches</span>
+              <span class="pill">Carquois</span>
+              <span class="pill">Epee courte</span>
+              <span class="pill">Cimeterre</span>
+              <span class="pill">Focaliseur druidique (branche de gui)</span>
+              <span class="pill">Paquetage d'explorateur</span>
+              <span class="pill">7 po</span>
+            </div>
+            <p class="note">Paquetage d'explorateur = sac a dos, sac de couchage, boite a amadou,
+              corde, 2 flasques d'huile, 10 jours de rations, outre, 10 torches
+              (<a href="../equipement/paquetages.html" data-ref="paquetages">paquetages.html</a>).</p>
+          </div>
+          <div>
+            <h3>Marchand — option B <span class="badge" data-status="recommande">Reco sneaky</span></h3>
+            <div class="pill-row">
+              <span class="pill">50 po</span>
+            </div>
+            <p class="note">Option B (50 po) retenue pour la flexibilite (achat ulterieur de
+              materiel <a href="../dons/discret.html" data-ref="discret">discret</a>). La maitrise « instruments de navigateur » reste acquise.
+              <strong>Argent total : 57 po</strong> (7 + 50).</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Graphe de provenance resume</h2>
+        <table>
+          <thead>
+            <tr><th>Element (case fiche)</th><th>Chemin de provenance</th><th>Statut</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>PV 11</td><td class="provenance">10 (d10 max) + Con +1 &lt;- Constitution 12 + Rodeur d10</td><td><span class="badge" data-status="calcule">Calcule</span></td></tr>
+            <tr><td>CA 15</td><td class="provenance">Cuir cloute 12 + Dex +3 &lt;- Rodeur option A</td><td><span class="badge" data-status="calcule">Calcule</span></td></tr>
+            <tr><td>Discretion +5</td><td class="provenance">Competence choisie &lt;- Rodeur ; Dex +3 + maitrise +2</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            <tr><td>Dressage / Persuasion</td><td class="provenance">Competences &lt;- Marchand (d'office)</td><td><span class="badge" data-status="source">Source</span></td></tr>
+            <tr><td>Chanceux</td><td class="provenance">Don d'origine &lt;- Marchand</td><td><span class="badge" data-status="source">Source</span></td></tr>
+            <tr><td>marque du chasseur</td><td class="provenance">Sort toujours prepare &lt;- Ennemi jure &lt;- Rodeur 1</td><td><span class="badge" data-status="source">Source</span></td></tr>
+            <tr><td>Arc long : botte Ralentissement</td><td class="provenance">Botte active &lt;- Bottes d'arme (arc long choisi) &lt;- Rodeur 1</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            <tr><td>Vitesse 10,50 m + druidisme</td><td class="provenance">&lt;- Lignage Elfe sylvestre &lt;- Espece Elfe</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+            <tr><td>Sorts prepares (frappe piegeuse, nappe de brouillard)</td><td class="provenance">Choix &lt;- liste rodeur niv. 1</td><td><span class="badge" data-status="recommande">Reco sneaky</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Etat de completude</h2>
+        <table>
+          <thead><tr><th>Bloc</th><th>Etat</th></tr></thead>
+          <tbody>
+            <tr><td>Identite</td><td><span class="badge" data-status="source">Complet (alignement roleplay a definir)</span></td></tr>
+            <tr><td>Caracteristiques</td><td><span class="badge" data-status="arbitrer">Fournies ; methode 4d6 a confirmer</span></td></tr>
+            <tr><td>PV / CA / initiative / sens passifs</td><td><span class="badge" data-status="calcule">Complet</span></td></tr>
+            <tr><td>Jets de sauvegarde</td><td><span class="badge" data-status="source">Complet</span></td></tr>
+            <tr><td>Competences (6)</td><td><span class="badge" data-status="source">Complet</span></td></tr>
+            <tr><td>Aptitudes de classe</td><td><span class="badge" data-status="source">Complet (Sorts, Bottes d'arme, Ennemi jure)</span></td></tr>
+            <tr><td>Traits d'espece + lignage</td><td><span class="badge" data-status="source">Complet</span></td></tr>
+            <tr><td>Don d'origine</td><td><span class="badge" data-status="source">Complet (Chanceux)</span></td></tr>
+            <tr><td>Armes et attaques</td><td><span class="badge" data-status="source">Complet</span></td></tr>
+            <tr><td>Sorts</td><td><span class="badge" data-status="source">Complet (2 prepares + marque du chasseur + druidisme)</span></td></tr>
+            <tr><td>Equipement + argent</td><td><span class="badge" data-status="source">Complet (57 po)</span></td></tr>
+            <tr><td>Langues</td><td><span class="badge" data-status="source">Complet (Commun, Elfique, Gobelin)</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

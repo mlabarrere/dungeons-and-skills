@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modification de memoire — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Modification de memoire">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="modification-de-memoire" data-status="source"
+             data-source="img:307"
+             data-spell-level="5" data-school="enchantement"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="9m" data-components="V,S"
+             data-duration="conc-1min" data-classes="barde,magicien"
+             data-save="sag" data-damage-type="-">
+
+      <h1>Modification de memoire</h1>
+      <p class="provenance">Enchantement du 5e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 5</span>
+        <span class="badge" data-status="source">Enchantement</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">9 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous tentez de remodeler les souvenirs d'une autre creature. Une creature que vous voyez a portee effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse. Si vous etes en train de l'affronter, elle a l'Avantage au JS. En cas d'echec, la cible subit l'etat Charme pour toute la duree. Ainsi Charmee, la cible subit aussi l'etat Neutralise et n'a pas conscience de son environnement, mais elle vous entend toujours. Si elle subit des degats ou est la cible d'un autre sort, cette modification de memoire prend fin et nul souvenir n'est altere.</p>
+        <p>Tant que persiste ce charme, vous pouvez influer sur un souvenir de la cible ayant eu lieu au cours des 24 dernieres heures et ne s'etalant pas sur plus de 10 minutes. Vous pouvez effacer toute memoire de l'evenement, permettre au contraire a la cible de se souvenir parfaitement de l'episode dans les moindres details, alterer certains elements qui y sont lies dans son esprit ou creer de toutes pieces le souvenir d'un autre evenement.</p>
+        <p>Vous devez parler a la cible pour lui decrire en quoi sa memoire est modifiee, sachant qu'elle doit comprendre la langue employee pour que le souvenir s'enracine. Son esprit se charge de combler les lacunes de votre description. Si le sort prend fin avant que vous ayez fini de decrire les souvenirs modifies, la memoire de la creature n'est pas alteree. Sinon, l'alteration prend effet quand le sort se termine.</p>
+        <p>Sa memoire modifiee, la creature ne va pas forcement se comporter differemment, surtout si ces souvenirs vont a l'encontre de ses penchants naturels, de son alignement ou de ses croyances. Si le souvenir implante est absurde, comme un episode dans lequel la creature se serait baignee dans l'acide en y prenant plaisir, il sera simplement percu comme un mauvais reve. Le MD peut decider qu'un souvenir est trop contraire a la raison pour affecter la creature.</p>
+        <p>Le sort <em><a href="./delivrance-des-maledictions.html" data-ref="delivrance-des-maledictions">delivrance des maledictions</a></em> ou <em><a href="./restauration-supreme.html" data-ref="restauration-supreme">restauration supreme</a></em> lance sur la cible lui rend sa memoire d'origine.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Sagesse)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit les etats Charme et Neutralise pour toute la duree ; sa memoire peut etre modifiee.</td></tr>
+            <tr><td>Reussite</td><td>N'est pas affectee et sa memoire n'est pas alteree.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p>Vous pouvez alterer le souvenir d'un evenement qui remonte a un maximum de 7 jours (6e niveau), 30 jours (7e), 365 jours (8e) ou a tout moment de son passe (9e).</p>
+        <table>
+          <thead><tr><th>Emplacement</th><th>Anciennete maximale du souvenir</th></tr></thead>
+          <tbody>
+            <tr><td>Niveau 5</td><td>24 heures</td></tr>
+            <tr><td>Niveau 6</td><td>7 jours</td></tr>
+            <tr><td>Niveau 7</td><td>30 jours</td></tr>
+            <tr><td>Niveau 8</td><td>365 jours</td></tr>
+            <tr><td>Niveau 9</td><td>Tout moment du passe</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

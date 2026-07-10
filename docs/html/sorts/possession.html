@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Possession — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Possession">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="possession" data-status="source"
+             data-source="img:319,372"
+             data-spell-level="6" data-school="necromancie"
+             data-casting-time="1min" data-ritual="false" data-concentration="false"
+             data-range="perso" data-components="V,S,M" data-material="une gemme, un cristal ou un reliquaire d'une valeur minimale de 500 po"
+             data-duration="dissipation" data-classes="magicien"
+             data-save="cha" data-damage-type="-">
+
+      <h1>Possession</h1>
+      <p class="provenance">Necromancie du 6e niveau (<a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 6</span>
+        <span class="badge" data-status="source">Necromancie</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">1 minute</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Personnelle</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (une gemme, un cristal ou un reliquaire d'une valeur minimale de 500 po)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Jusqu'a dissipation</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Votre corps sombre en catatonie tandis que votre ame le quitte pour penetrer dans le recipient ayant servi de composante materielle. Tant que votre ame occupe ce contenant, vous restez conscient de l'environnement comme si vous occupiez l'espace du recipient. Vous ne pouvez pas vous deplacer ni jouer de Reactions. La seule action que vous puissiez entreprendre consiste a projeter votre ame a une distance maximale de 30 m du recipient, soit en reprenant possession de votre corps (ce qui met un terme au sort) soit en tentant de posseder un autre corps Humanoide.</p>
+        <p>Vous pouvez tenter de posseder tout Humanoide dans un rayon de 30 m de vous, a condition de le voir (les creatures protegees par le sort <em><a href="./cercle-magique.html" data-ref="cercle-magique">cercle magique</a></em> ou <em><a href="./protection-contre-le-mal-et-le-bien.html" data-ref="protection-contre-le-mal-et-le-bien">protection contre le mal et le bien</a></em> ne peuvent etre possedees). La cible effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Charisme. En cas d'echec, votre ame se transporte dans le corps de la cible et l'ame de celle-ci se retrouve sequestree dans le recipient. En cas de reussite, la cible resiste a votre tentative de possession et vous devez attendre 24 heures pour essayer a nouveau de la posseder.</p>
+        <p>Une fois que vous possedez le corps d'une creature, vous le controlez. Vos <a href="../regles/glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> et <a href="../regles/glossaire.html#des-de-vie" data-ref="des-de-vie">des de vie</a>, vos valeurs de Force, Dexterite et Constitution, votre Vitesse et vos sens sont remplaces par ceux de la creature. Vous conservez pour le reste votre profil.</p>
+        <p>De son cote, l'ame de la creature possedee peut percevoir l'environnement depuis le recipient en usant de ses propres sens, mais elle ne peut pas se deplacer et subit l'etat Neutralise.</p>
+        <p>Tant que vous possedez un corps, vous pouvez entreprendre l'action Magie pour quitter le corps hote et retourner dans le recipient si celui-ci se trouve a 30 m, l'ame de la creature hote retrouvant alors son corps. Si le corps hote meurt alors que vous le possedez, la creature meurt et vous effectuez un jet de sauvegarde de Charisme contre votre propre DD de sauvegarde des sorts. En cas de reussite, vous retournez dans le recipient si celui-ci se trouve dans un rayon de 30 m. Dans le cas contraire, vous mourez.</p>
+        <p>Si le contenant est detruit ou que le sort prend fin, votre ame retrouve votre corps. Si votre corps est distant de plus de 30 m de vous ou s'il est « mort », vous mourez. Si l'ame d'une autre creature occupe le recipient lorsqu'il est detruit, l'ame de celle-ci retrouve son corps s'il est vivant et dans un rayon de 30 m d'elle. Sans cela, la creature meurt.</p>
+        <p>Le recipient est detruit quand le sort prend fin.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Charisme)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Votre ame prend possession du corps ; l'ame de la cible est sequestree dans le recipient.</td></tr>
+            <tr><td>Reussite</td><td>La cible resiste ; vous devez attendre 24 heures avant de retenter.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

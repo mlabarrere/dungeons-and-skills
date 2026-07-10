@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glossaire de regles — Regles (Annexe C)</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Glossaire">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="glossaire" data-status="source" data-source="img:360,376">
+      <h1>Glossaire de regles</h1>
+      <p class="provenance">Annexe C. Sources images p360 a p377 et p376 (pages 360 a 377, page 376 incluse). Definitions conservees fidelement : valeurs, effets d'etat et tables. Les etats (conditions) sont signales par un badge <span class="badge" data-status="source">Etat</span>.</p>
+
+      <section class="section">
+        <h2>Conventions relatives au glossaire</h2>
+        <p>Les conventions suivantes s'appliquent au present glossaire :</p>
+        <ul>
+          <li><strong>Sous-types entre crochets.</strong> Le nom de plusieurs entrees s'accompagne d'une mention entre crochets, par exemple « Attaque [Action] ». Cette mention (Action, Attitude, Danger, Etat ou <a href="./glossaire.html#zone-d-effet" data-ref="zone-d-effet">Zone d'effet</a>) indique que la regle concernee appartient a une famille de regles. Ces mentions figurent elles aussi au glossaire.</li>
+          <li><strong>« Vous ».</strong> Les regles, que ce soit dans ce glossaire ou ailleurs, concernent souvent quelque chose qui vous arrive dans le monde du jeu. Ce « vous » fait reference a la creature ou a l'objet auquel la regle s'applique a un moment donne du jeu. Le « vous » de l'etat A terre, par exemple, est la creature qui subit actuellement cet etat.</li>
+          <li><strong>« Lire aussi ».</strong> Certaines entrees comprennent une section <em>Lire aussi</em> qui renvoie a d'autres entrees du glossaire, a des chapitres de cet ouvrage ou aux deux.</li>
+          <li><strong>Absence de termes obsoletes.</strong> Le present glossaire ne presente que les definitions des termes des regles actuelles. Si vous recherchez un terme d'une version anterieure des regles de la cinquieme edition, veuillez consulter l'index.</li>
+          <li><strong>Abreviations.</strong> Les abreviations enumerees ci-dessous apparaissent dans ce glossaire et ailleurs dans les regles.</li>
+        </ul>
+        <div class="grid-2">
+          <table>
+            <tbody>
+              <tr><td>BM</td><td>bonus de maitrise</td></tr>
+              <tr><td>C</td><td>Concentration</td></tr>
+              <tr><td>CA</td><td><a href="./glossaire.html#classe-d-armure" data-ref="classe-d-armure">classe d'armure</a></td></tr>
+              <tr><td>CB</td><td>Chaotique Bon</td></tr>
+              <tr><td>Cha</td><td>Charisme</td></tr>
+              <tr><td>CM</td><td>Chaotique Mauvais</td></tr>
+              <tr><td>CN</td><td>Chaotique Neutre</td></tr>
+              <tr><td>Con</td><td>Constitution</td></tr>
+              <tr><td>DD</td><td><a href="./glossaire.html#degre-de-difficulte" data-ref="degre-de-difficulte">degre de difficulte</a></td></tr>
+              <tr><td>Dex</td><td>Dexterite</td></tr>
+              <tr><td>For</td><td>Force</td></tr>
+              <tr><td>FP</td><td><a href="./glossaire.html#facteur-de-puissance" data-ref="facteur-de-puissance">facteur de puissance</a></td></tr>
+              <tr><td>Int</td><td>Intelligence</td></tr>
+              <tr><td>JS</td><td><a href="./glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a></td></tr>
+              <tr><td>LB</td><td>Loyal Bon</td></tr>
+              <tr><td>LM</td><td>Loyal Mauvais</td></tr>
+              <tr><td>LN</td><td>Loyal Neutre</td></tr>
+              <tr><td>M</td><td>composante materielle</td></tr>
+            </tbody>
+          </table>
+          <table>
+            <tbody>
+              <tr><td>MD</td><td>maitre du donjon</td></tr>
+              <tr><td>N</td><td>Neutre</td></tr>
+              <tr><td>NB</td><td>Neutre Bon</td></tr>
+              <tr><td>NM</td><td>Neutre Mauvais</td></tr>
+              <tr><td>pa</td><td>piece(s) d'argent</td></tr>
+              <tr><td>pc</td><td>piece(s) de cuivre</td></tr>
+              <tr><td>pe</td><td>piece(s) d'electrum</td></tr>
+              <tr><td>PJ</td><td><a href="./glossaire.html#personnage-joueur" data-ref="personnage-joueur">personnage joueur</a></td></tr>
+              <tr><td>PNJ</td><td><a href="./glossaire.html#personnage-non-joueur" data-ref="personnage-non-joueur">personnage non-joueur</a></td></tr>
+              <tr><td>po</td><td>piece(s) d'or</td></tr>
+              <tr><td>PP</td><td>piece(s) de platine</td></tr>
+              <tr><td>pv</td><td>point(s) de vie</td></tr>
+              <tr><td>PX</td><td>point(s) d'experience</td></tr>
+              <tr><td>R</td><td>rituel</td></tr>
+              <tr><td>S</td><td>composante somatique</td></tr>
+              <tr><td>Sag</td><td>Sagesse</td></tr>
+              <tr><td>V</td><td>composante verbale</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Definitions des regles</h2>
+        <p>Ci-apres, les definitions des diverses regles.</p>
+        <p class="note">Acces rapide par lettre :</p>
+        <div class="pill-row">
+          <a class="pill" href="#lettre-a">A</a>
+          <a class="pill" href="#lettre-b">B</a>
+          <a class="pill" href="#lettre-c">C</a>
+          <a class="pill" href="#lettre-d">D</a>
+          <a class="pill" href="#lettre-e">E</a>
+          <a class="pill" href="#lettre-f">F</a>
+          <a class="pill" href="#lettre-h">H</a>
+          <a class="pill" href="#lettre-i">I</a>
+          <a class="pill" href="#lettre-j">J</a>
+          <a class="pill" href="#lettre-l">L</a>
+          <a class="pill" href="#lettre-m">M</a>
+          <a class="pill" href="#lettre-n">N</a>
+          <a class="pill" href="#lettre-o">O</a>
+          <a class="pill" href="#lettre-p">P</a>
+          <a class="pill" href="#lettre-r">R</a>
+          <a class="pill" href="#lettre-s">S</a>
+          <a class="pill" href="#lettre-t">T</a>
+          <a class="pill" href="#lettre-v">V</a>
+          <a class="pill" href="#lettre-z">Z</a>
+        </div>
+      </section>
+
+      <!-- ================= A ================= -->
+      <section class="section" id="lettre-a">
+        <h2>A</h2>
+
+        <h3 id="a-terre">A terre <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat A terre, vous subissez les effets suivants.</p>
+        <p><strong>Deplacement limite.</strong> Vos seules possibilites de deplacement sont ramper ou vous relever en depensant la moitie de votre Vitesse (arrondie a l'inferieur), ce qui met un terme a l'etat. Si votre Vitesse est de 0, vous ne pouvez pas vous relever.</p>
+        <p><strong>Effet sur les attaques.</strong> Vous subissez le Desavantage aux jets d'attaque. Un <a href="./glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> contre vous recoit l'Avantage si l'assaillant se trouve dans un rayon de 1,50 m de vous. Sans cela, ce jet d'attaque subit le Desavantage.</p>
+
+        <h3 id="abri">Abri</h3>
+        <p>L'abri fournit un degre de <a href="../dons/protection.html" data-ref="protection">protection</a> a la cible situee derriere. Il existe trois niveaux d'abri qui octroient chacun un benefice distinct aux cibles abritees : Abri partiel (bonus de +2 a la CA et aux jets de sauvegarde de Dexterite), Abri superieur (bonus de +5 a la CA et aux jets de sauvegarde de Dexterite), et Abri total (le sujet ne peut pas etre pris pour cible directement). Une cible qui se trouve derriere plus d'un type d'abri ne beneficie que du degre le plus protecteur. <em>Lire aussi</em> chapitre 1 (« Combat »).</p>
+
+        <h3 id="action">Action <span class="badge" data-status="source">Action</span></h3>
+        <p>A votre tour, vous pouvez entreprendre une action. Choisissez l'action a entreprendre parmi celles ci-dessous ou parmi les actions speciales fournies par vos aptitudes. <em>Lire aussi</em> chapitre 1 (« Actions »). Ces actions sont definies ailleurs dans le present glossaire :</p>
+        <div class="pill-row">
+          <span class="pill">Attaque</span>
+          <span class="pill">Desengagement</span>
+          <span class="pill">Esquive</span>
+          <span class="pill">Etude</span>
+          <span class="pill">Furtivite</span>
+          <span class="pill">Influence</span>
+          <span class="pill">Intention</span>
+          <span class="pill">Magie</span>
+          <span class="pill">Observation</span>
+          <span class="pill">Pointe</span>
+          <span class="pill">Soutien</span>
+          <span class="pill">Utilisation</span>
+        </div>
+
+        <h3 id="action-bonus">Action Bonus</h3>
+        <p>Une <a href="./glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> est une action speciale que vous pouvez entreprendre au meme tour qu'une action. Vous ne pouvez pas entreprendre plus d'une action Bonus par tour, et ne jouissez d'une action Bonus que si une regle le stipule explicitement. <em>Lire aussi</em> chapitre 1 (« Actions »).</p>
+
+        <h3 id="agrippe">Agrippe <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Agrippe, vous subissez les effets suivants.</p>
+        <p><strong>Vitesse 0.</strong> Votre Vitesse est de 0 et ne peut pas augmenter.</p>
+        <p><strong>Effet sur les attaques.</strong> Vous subissez le Desavantage aux jets d'attaque contre toute cible hormis l'agrippeur.</p>
+        <p><strong>Deplacable.</strong> L'agrippeur peut vous tirer ou vous porter lorsqu'il se deplace, mais ses couts de deplacement sont doubles, sauf si vous etes de taille TP ou que votre categorie est inferieure d'au moins deux crans a la sienne.</p>
+
+        <h3 id="alignement">Alignement</h3>
+        <p>L'alignement d'une creature illustre globalement ses valeurs ethiques et ses ideaux. L'alignement combine deux aspects : la moralite (bon, mauvais ou neutre) et le point de vue vis-a-vis de l'ordre (loyal, chaotique ou neutre). Ces deux facteurs autorisent neuf combinaisons, par exemple Loyal Bon et Neutre Mauvais. <em>Lire aussi</em> chapitre 2 (« Creation de votre personnage »).</p>
+
+        <h3 id="allie">Allie</h3>
+        <p>Une creature est votre alliee si elle appartient a votre groupe d'aventuriers, si elle est votre amie ou figure dans votre camp lors d'un combat, ou encore s'il s'agit d'une creature que les regles ou le MD designent comme votre alliee.</p>
+
+        <h3 id="allonge">Allonge</h3>
+        <p>Toute creature est dotee d'une allonge de 1,50 m, sauf si une regle precise autre chose.</p>
+
+        <h3 id="amical">Amical <span class="badge" data-status="source">Attitude</span></h3>
+        <p>Une creature Amicale vous considere sous un jour favorable. Vous avez l'Avantage aux tests de caracteristique visant a influencer une creature Amicale. <em>Lire aussi</em> « Influence ».</p>
+
+        <h3 id="arme">Arme</h3>
+        <p>Une arme est un objet appartenant a la categorie des <a href="../equipement/armes.html" data-ref="armes">armes</a> courantes ou de guerre. <em>Lire aussi</em> chapitre 6 (« Armes »).</p>
+
+        <h3 id="armes-improvisees">Armes improvisees</h3>
+        <p>Une arme improvisee est un objet utilise pour depanner comme arme : bouteille cassee, pied de table, poele a frire, etc. Une arme courante ou de guerre est aussi consideree comme une arme improvisee si l'on s'en sert sans tenir compte de sa conception initiale ; si vous utilisez une arme a distance pour effectuer une attaque de corps a corps ou lancez une arme de corps a corps depourvue de la propriete Lancer, l'arme est alors consideree comme une arme improvisee. Une arme improvisee obeit aux regles ci-dessous.</p>
+        <p><strong>Maitrise.</strong> N'ajoutez pas votre bonus de maitrise aux jets d'attaque avec une arme improvisee.</p>
+        <p><strong>Degats.</strong> Si l'attaque touche, l'arme inflige 1d4 degats d'un type que le MD juge adapte a l'objet.</p>
+        <p><strong>Portee.</strong> Si vous lancez l'arme, sa portee normale est de 6 m et sa portee longue de 18 m.</p>
+        <p><strong>Arme equivalente.</strong> Quand une arme improvisee est comparable a une arme courante ou de guerre, le MD peut statuer qu'elle s'utilise de la meme maniere et obeit aux memes regles. Il peut ainsi considerer qu'un pied de table equivaut a un gourdin.</p>
+
+        <h3 id="arrondis-a-l-inferieur">Arrondis a l'inferieur</h3>
+        <p>Chaque fois que vous divisez ou multipliez un nombre dans le jeu et que vous obtenez une fraction, arrondissez a l'entier inferieur meme si cette fraction est d'un demi ou plus. Certaines regles constituent une exception en vous indiquant d'arrondir a l'entier superieur.</p>
+
+        <h3 id="asphyxie">Asphyxie <span class="badge" data-status="source">Danger</span></h3>
+        <p>Une creature peut retenir son souffle pendant un nombre de minutes egal a 1 + son modificateur de Constitution (minimum 30 secondes) avant que ne debute l'asphyxie. Lorsqu'une creature a bout de souffle commence a s'asphyxier, elle recoit 1 niveau d'Epuisement a la fin de chacun de ses tours. Lorsque la creature peut a nouveau respirer, elle supprime tous les niveaux d'Epuisement entraines par l'asphyxie.</p>
+
+        <h3 id="assommer-une-creature">Assommer une creature</h3>
+        <p>Lorsque vous etes cense faire tomber une creature a 0 point de vie avec une attaque de corps a corps, vous pouvez en realite la reduire a 1 point de vie. La creature subit alors l'etat Inconscient et entame un <a href="./glossaire.html#repos-court" data-ref="repos-court">Repos court</a>.</p>
+        <p>Cette creature subit l'etat Inconscient jusqu'a ce qu'elle recupere des <a href="./glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> ou que quelqu'un d'autre consacre son action a lui administrer les premiers soins, ce qui necessite de reussir un test de Sagesse (Medecine) DD 10.</p>
+
+        <h3 id="assourdi">Assourdi <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Assourdi, vous subissez les effets suivants.</p>
+        <p><strong>Incapable d'entendre.</strong> Vous n'entendez rien, et ratez automatiquement tous les tests de caracteristique qui reposent sur l'ouie.</p>
+
+        <h3 id="attaque">Attaque <span class="badge" data-status="source">Action</span></h3>
+        <p>Lorsque vous entreprenez l'action Attaque, vous effectuez un jet d'attaque avec une arme ou une <a href="./glossaire.html#attaque-a-mains-nues" data-ref="attaque-a-mains-nues">attaque a mains nues</a>.</p>
+        <p><strong>S'equiper et se desequiper.</strong> Vous pouvez vous equiper ou vous desequiper d'une arme lorsque vous effectuez une attaque dans le cadre de cette action. Vous pouvez le faire avant ou apres l'attaque. Si vous vous equipez d'une arme avant une attaque, vous n'etes pas tenu de l'utiliser lors de cette attaque. S'equiper d'une arme comprend le fait de la sortir du fourreau ou de la ramasser. Se desequiper d'une arme consiste a la rengainer, la ranger ou la laisser choir.</p>
+        <p><strong>Se deplacer entre les attaques.</strong> Si vous vous deplacez pendant votre tour et disposez d'une aptitude, telle qu'Attaque supplementaire, qui vous octroie plusieurs attaques dans le cadre de l'action Attaque, vous pouvez consacrer tout ou partie de ce deplacement a vous mouvoir entre ces attaques.</p>
+
+        <h3 id="attaque-a-mains-nues">Attaque a mains nues</h3>
+        <p>Au lieu d'utiliser une arme pour effectuer une attaque de corps a corps, vous pouvez recourir a un coup de poing, de pied ou de tete, ou autre frappe violente. En termes de jeu, on parle alors d'attaque a mains nues : une attaque de corps a corps qui vous demande d'utiliser votre corps pour infliger des degats, agripper ou bousculer une cible situee dans un rayon de 1,50 m.</p>
+        <p>Chaque fois que vous recourez a votre attaque a mains nues, choisissez l'une des options suivantes pour son effet.</p>
+        <p><strong>Bousculade.</strong> La cible doit reussir un jet de sauvegarde de Force ou de Dexterite (c'est elle qui choisit), faute de quoi vous la poussez sur 1,50 m ou lui infligez l'etat A terre. Le DD du jet de sauvegarde est egal a 8 + votre modificateur de Force + votre bonus de maitrise. Cette bousculade n'est possible que si la <a href="./glossaire.html#categorie-de-taille" data-ref="categorie-de-taille">categorie de taille</a> de la cible n'est pas superieure a la votre de plus d'un cran.</p>
+        <p><strong>Degats.</strong> Vous effectuez un jet d'attaque contre la cible. Le bonus au jet est egal a votre modificateur de Force + votre bonus de maitrise. Si l'attaque touche, la cible subit un montant de degats contondants egal a 1 + votre modificateur de Force.</p>
+        <p><strong>Lutte.</strong> La cible doit reussir un jet de sauvegarde de Force ou de Dexterite (c'est elle qui choisit) sous peine de subir l'etat Agrippe. Le DD du jet de sauvegarde et des tentatives d'evasion est egal a 8 + votre modificateur de Force + votre bonus de maitrise. Cette lutte n'est possible que si la categorie de taille de la cible n'est pas superieure a la votre de plus d'un cran et si vous disposez d'une main libre pour vous saisir d'elle. <em>Lire aussi</em> « Lutte ».</p>
+
+        <h3 id="attaque-d-arme">Attaque d'arme</h3>
+        <p>Une <a href="./glossaire.html#attaque-d-arme" data-ref="attaque-d-arme">attaque d'arme</a> est un jet d'attaque effectue avec une arme. <em>Lire aussi</em> « Arme ».</p>
+
+        <h3 id="attaque-de-sort">Attaque de sort</h3>
+        <p>Une <a href="./glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">attaque de sort</a> est un jet d'attaque effectue dans le cadre d'un sort ou d'un autre <a href="./glossaire.html#effet-magique" data-ref="effet-magique">effet magique</a>. <em>Lire aussi</em> chapitre 7 (« Incantation »).</p>
+
+        <h3 id="attaques-d-opportunite">Attaques d'Opportunite</h3>
+        <p>Vous pouvez effectuer une attaque d'Opportunite lorsqu'une creature que vous voyez quitte votre zone d'allonge en recourant a son action, a une action Bonus, a sa Reaction ou a l'une de ses Vitesses. L'attaque d'Opportunite consiste a jouer votre Reaction pour effectuer une attaque de corps a corps avec arme, ou une attaque a mains nues, contre la creature qui l'a provoquee. L'attaque intervient juste avant que la creature soit sortie de votre zone d'allonge. <em>Lire aussi</em> chapitre 1 (« Combat »).</p>
+
+        <h3 id="attitude">Attitude</h3>
+        <p>Un monstre presente une attitude initiale envers un personnage joueur : Amical, Hostile ou Indifferent. <em>Lire aussi</em> « Amical », « Hostile », « Indifferent » et « Influence ».</p>
+
+        <h3 id="avantage">Avantage</h3>
+        <p>Si vous avez l'Avantage a un <a href="./glossaire.html#test-d20" data-ref="test-d20">Test d20</a>, lancez deux d20 et ne retenez que le resultat le plus eleve. Un jet ne peut pas etre affecte par plus d'un Avantage, et l'Avantage et le Desavantage sur un meme jet s'annulent. <em>Lire aussi</em> chapitre 1 (« Tests d20 »).</p>
+
+        <h3 id="aventure">Aventure</h3>
+        <p>Une aventure est une succession de rencontres. Une histoire prend corps au fil des rencontres et aventures successives. <em>Lire aussi</em> « Rencontre ».</p>
+
+        <h3 id="aveugle">Aveugle <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Aveugle, vous subissez les effets suivants.</p>
+        <p><strong>Incapable de voir.</strong> Vous ne voyez rien et ratez automatiquement tout <a href="./glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a> reposant sur la vue.</p>
+        <p><strong>Effet sur les attaques.</strong> Les jets d'attaque contre vous ont l'Avantage, et vos jets d'attaque subissent le Desavantage.</p>
+      </section>
+
+      <!-- ================= B ================= -->
+      <section class="section" id="lettre-b">
+        <h2>B</h2>
+
+        <h3 id="bris-des-objets">Bris des objets</h3>
+        <p>Les objets peuvent etre endommages par les attaques et par certains sorts, selon les regles ci-dessous. Si un objet est extremement fragile, le MD peut autoriser une creature a le briser automatiquement par l'action Attaque ou Utilisation.</p>
+        <p><strong>Classe d'armure.</strong> La table « Classe d'armure des objets » enumere la CA de divers materiaux.</p>
+        <table>
+          <thead><tr><th>CA</th><th>Materiau</th></tr></thead>
+          <tbody>
+            <tr><td>11</td><td>Tissu, papier, corde</td></tr>
+            <tr><td>13</td><td>Cristal, verre, glace</td></tr>
+            <tr><td>15</td><td>Bois</td></tr>
+            <tr><td>17</td><td>Pierre</td></tr>
+            <tr><td>19</td><td>Fer, acier</td></tr>
+            <tr><td>21</td><td>Mithral</td></tr>
+            <tr><td>23</td><td>Adamantium</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Points de vie.</strong> Un objet est detruit lorsqu'il tombe a 0 point de vie. La table « Points de vie des objets » propose une estimation des points de vie d'objets fragiles et robustes de taille G ou inferieure. Pour decompter les points de vie d'un objet de taille TG ou Gig, scindez l'objet en sections de taille G ou inferieure, en traitant les pv de chacune independamment. Le MD determine si la destruction d'une partie d'un objet entraine l'effondrement de la structure.</p>
+        <table>
+          <thead><tr><th>Cat. de taille</th><th>Fragile</th><th>Robuste</th></tr></thead>
+          <tbody>
+            <tr><td>TP (bouteille, cadenas)</td><td>2 (1d4)</td><td>5 (2d4)</td></tr>
+            <tr><td>P (coffre, luth)</td><td>3 (1d6)</td><td>10 (3d6)</td></tr>
+            <tr><td>M (tonneau, lustre)</td><td>4 (1d8)</td><td>18 (4d8)</td></tr>
+            <tr><td>G (charrette, grande table)</td><td>5 (1d10)</td><td>27 (5d10)</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Types de degats et objets.</strong> Les objets ont l'Immunite contre les degats psychiques et de poison. Le MD peut decreter que certains types de degats sont plus ou moins efficaces contre un objet donne. Les degats contondants, par exemple, excellent lorsqu'il s'agit de fracasser quelque chose, mais ces memes degats sont inoperants pour couper quelque chose. Les objets en papier ou en tissu ont la Vulnerabilite aux degats de feu.</p>
+        <p><strong><a href="./glossaire.html#seuil-de-degats" data-ref="seuil-de-degats">Seuil de degats</a>.</strong> Les objets imposants comme les murs d'un chateau montrent souvent une robustesse accrue, representee par le seuil de degats. <em>Lire aussi</em> « Seuil de degats ».</p>
+        <p><strong>Absence de valeurs de caracteristique.</strong> Un objet n'a pas de valeurs de caracteristique sauf si une regle lui en attribue. Denue de valeurs de caracteristique, un objet ne peut pas effectuer de tests de caracteristique et rate tous ses jets de sauvegarde.</p>
+      </section>
+
+      <!-- ================= C ================= -->
+      <section class="section" id="lettre-c">
+        <h2>C</h2>
+
+        <h3 id="campagne">Campagne</h3>
+        <p>Une campagne est une serie d'aventures. <em>Lire aussi</em> « Aventure ».</p>
+
+        <h3 id="capacite-de-charge">Capacite de charge</h3>
+        <p>Votre categorie de taille et valeur de Force determinent le poids maximal (en kg) que vous pouvez porter, comme stipule dans la table « <a href="./glossaire.html#capacite-de-charge" data-ref="capacite-de-charge">Capacite de charge</a> ». Sur cette table figure en outre le poids maximal que vous pouvez pousser, tirer ou soulever. Lorsque vous poussez, tirez ou soulevez un poids superieur a votre capacite de charge, votre Vitesse est plafonnee a 1,50 m.</p>
+        <table>
+          <thead><tr><th>Cat. de taille de la creature</th><th>Charge</th><th>Max pour pousser, tirer, soulever</th></tr></thead>
+          <tbody>
+            <tr><td>TP</td><td>For x 3,75 kg</td><td>For x 7,5 kg</td></tr>
+            <tr><td>P/M</td><td>For x 7,5 kg</td><td>For x 15 kg</td></tr>
+            <tr><td>G</td><td>For x 15 kg</td><td>For x 30 kg</td></tr>
+            <tr><td>TG</td><td>For x 30 kg</td><td>For x 60 kg</td></tr>
+            <tr><td>Gig</td><td>For x 60 kg</td><td>For x 120 kg</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="categorie-de-taille">Categorie de taille</h3>
+        <p>Une creature ou un objet appartient a une categorie de taille parmi celles ci-dessous : tres petite (taille TP), petite (taille P), moyenne (taille M), grande (taille G), tres grande (taille TG) ou gigantesque (taille Gig). La categorie de taille d'une creature determine l'espace qu'elle occupe en combat. La taille d'un objet determine ses points de vie. <em>Lire aussi</em> « <a href="./glossaire.html#bris-des-objets" data-ref="bris-des-objets">Bris des objets</a> » et le chapitre 1 (« Combat »).</p>
+
+        <h3 id="charme">Charme <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Charme, vous subissez les effets suivants.</p>
+        <p><strong>Ne pas nuire au charmeur.</strong> Vous ne pouvez pas attaquer votre « charmeur » ni le cibler avec des aptitudes ou effets magiques qui infligent des degats.</p>
+        <p><strong>Interaction avec Avantage.</strong> Le charmeur a l'Avantage aux tests de caracteristique d'interaction sociale avec vous.</p>
+
+        <h3 id="chute">Chute <span class="badge" data-status="source">Danger</span></h3>
+        <p>Au terme d'une chute, une creature subit 1d6 degats contondants par tranche de 3 m de chute, jusqu'a un maximum de 20d6. La creature subit alors l'etat A terre, sauf si la chute ne lui a inflige aucun degat.</p>
+        <p>Une creature qui tombe a l'eau ou dans un autre liquide peut jouer sa Reaction pour effectuer un test de Force (Athletisme) ou de Dexterite (Acrobaties) DD 15, afin d'y entrer par les pieds ou la tete. Si le test est reussi, les eventuels degats de chute sont reduits de moitie.</p>
+
+        <h3 id="cible">Cible</h3>
+        <p>Une cible est une creature ou un objet ; elle est visee par un jet d'attaque, soumise a un jet de sauvegarde par un effet, ou designee pour recevoir les effets d'un sort ou d'un autre phenomene.</p>
+
+        <h3 id="classe-d-armure">Classe d'armure</h3>
+        <p>La classe d'armure (CA) est le nombre a atteindre dans le cadre d'un jet d'attaque. La CA figure le degre de difficulte pour toucher une cible.</p>
+        <p>Votre CA de base est egale a 10 + votre modificateur de Dexterite. Si une regle vous octroie un autre mode de calcul de la CA de base, c'est vous qui choisissez quelle formule de calcul employer ; vous ne pouvez pas en utiliser plus d'une a la fois. <em>Lire aussi</em> « Jet d'attaque ».</p>
+
+        <h3 id="competence">Competence</h3>
+        <p>Une competence est un domaine de specialisation associe a un test de caracteristique. Si vous avez la maitrise d'une competence, ajoutez votre bonus de maitrise lorsque vous effectuez un test de caracteristique associe a cette competence. <em>Lire aussi</em> chapitre 1 (« Maitrise »).</p>
+
+        <h3 id="concentration">Concentration</h3>
+        <p>Certains sorts et effets necessitent la Concentration pour rester actifs, comme stipule dans leur description. Si son createur perd sa Concentration, l'effet prend fin. Si l'effet a une duree maximale, son descriptif indique combien de temps son createur peut se concentrer sur lui : jusqu'a 1 minute, 1 heure, ou autre duree. Le createur peut rompre volontairement sa Concentration a tout moment (pas d'action requise). Les facteurs ci-apres brisent la Concentration.</p>
+        <p><strong>Autre effet necessitant la Concentration.</strong> Vous perdez la Concentration sur un effet des l'instant ou vous commencez a lancer un sort necessitant la Concentration ou activez un autre effet qui la requiert.</p>
+        <p><strong>Degats.</strong> Si vous subissez des degats, vous devez reussir un jet de sauvegarde de Constitution pour maintenir votre Concentration. Le DD est egal a 10 ou a la moitie des degats subis (arrondir a l'inferieur), le nombre le plus eleve etant retenu, jusqu'a un DD maximal de 30.</p>
+        <p><strong>Neutralise ou mort.</strong> Votre Concentration prend fin si vous subissez l'etat Neutralise ou si vous mourez.</p>
+
+        <h3 id="cone">Cone <span class="badge" data-status="source">Zone d'effet</span></h3>
+        <p>Un Cone est une zone d'effet qui s'etend en ligne droite a partir d'un point d'origine dans la direction choisie par son createur. Sa largeur en un point donne du Cone est toujours egale a la distance qui separe ce point de l'origine du Cone. La largeur d'un Cone est de 4,50 m, par exemple, au point de sa longueur distant de 4,50 m du point d'origine. L'effet qui cree un Cone stipule sa longueur maximale. Le point d'origine du Cone n'est pas situe dans la zone d'effet, sauf si son createur en decide autrement.</p>
+
+        <h3 id="coup-critique">Coup critique</h3>
+        <p>Si vous obtenez un 20 sur le d20 d'un jet d'attaque, il s'agit d'un <a href="./glossaire.html#coup-critique" data-ref="coup-critique">Coup critique</a> : l'attaque touche quels que soient les modificateurs afferents et la CA de la cible. Un Coup critique vous autorise a lancer des des supplementaires pour determiner les degats de l'attaque contre la cible. Ainsi, tous les des de degats de l'attaque sont lances deux fois et ajoutes les uns aux autres. Ajoutez ensuite les modificateurs applicables. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="creature">Creature</h3>
+        <p>Toutes les entites du jeu, y compris les personnages joueurs, sont des creatures. <em>Lire aussi</em> « <a href="./glossaire.html#type-de-creature" data-ref="type-de-creature">Type de creature</a> ».</p>
+
+        <h3 id="cube">Cube <span class="badge" data-status="source">Zone d'effet</span></h3>
+        <p>Un Cube est une zone d'effet qui s'etend en ligne droite a partir d'un point d'origine situe n'importe ou sur l'une des faces du Cube. L'effet qui cree un Cube specifie sa taille, a savoir la longueur de chaque arete. Le point d'origine d'un Cube n'est pas situe dans la zone d'effet, sauf si son createur en decide autrement.</p>
+
+        <h3 id="cylindre">Cylindre <span class="badge" data-status="source">Zone d'effet</span></h3>
+        <p>Un Cylindre est une zone d'effet qui s'etend en ligne droite a partir d'un point d'origine situe au centre de la partie superieure ou inferieure du Cylindre. L'effet qui cree un Cylindre specifie le rayon de la base du Cylindre et sa hauteur. Le point d'origine d'un Cylindre est situe dans sa zone d'effet.</p>
+      </section>
+
+      <!-- ================= D ================= -->
+      <section class="section" id="lettre-d">
+        <h2>D</h2>
+
+        <h3 id="danger">Danger</h3>
+        <p>Un danger est un peril lie a l'environnement. <em>Lire aussi</em> « Asphyxie », « Chute », « Deshydratation », « Embrasement » et « Malnutrition ».</p>
+
+        <h3 id="degats">Degats</h3>
+        <p>Les degats sont la representation chiffree des prejudices qui font perdre des points de vie a une creature ou a un objet.</p>
+
+        <h3 id="degre-de-difficulte">Degre de difficulte</h3>
+        <p>Dans le cadre des tests de caracteristique et des jets de sauvegarde, le nombre cible est appele degre de difficulte ou DD en abrege. <em>Lire aussi</em> chapitre 1 (« Tests d20 »).</p>
+
+        <h3 id="des-de-vie">Des de vie</h3>
+        <p>Les <a href="./glossaire.html#des-de-vie" data-ref="des-de-vie">des de vie</a>, ou DV en abrege, permettent de determiner le maximum de points de vie d'un personnage joueur, comme explique au chapitre 2. La plupart des monstres ont egalement des DV. Une creature peut depenser des DV pour recuperer des points de vie pendant un Repos court. <em>Lire aussi</em> « Repos court ».</p>
+
+        <h3 id="desavantage">Desavantage</h3>
+        <p>Si vous avez le Desavantage a un Test d20, lancez deux d20 et ne retenez que le resultat le plus faible. Un jet ne peut pas etre affecte par plus d'un Desavantage, et l'Avantage et le Desavantage sur un meme jet s'annulent. <em>Lire aussi</em> chapitre 1 (« Tests d20 »).</p>
+
+        <h3 id="desengagement">Desengagement <span class="badge" data-status="source">Action</span></h3>
+        <p>Si vous entreprenez l'action Desengagement, votre deplacement ne provoque pas d'attaque d'Opportunite jusqu'a la fin du tour.</p>
+
+        <h3 id="deshydratation">Deshydratation <span class="badge" data-status="source">Danger</span></h3>
+        <p>Une creature a besoin d'une certaine quantite d'eau <a href="./glossaire.html#par-jour" data-ref="par-jour">par jour</a> en fonction de sa categorie de taille, comme indique dans la table « Besoins quotidiens en eau ». Une creature qui boit moins de la moitie de ses besoins quotidiens en eau recoit 1 niveau d'Epuisement a la fin de la journee consideree. L'Epuisement provoque par la deshydratation ne peut pas etre dissipe tant que la creature n'a pas bu son quota d'eau pour une journee. <em>Lire aussi</em> « Epuisement ».</p>
+        <table>
+          <thead><tr><th>Cat. de taille</th><th>Eau</th></tr></thead>
+          <tbody>
+            <tr><td>TP</td><td>1 litre</td></tr>
+            <tr><td>P</td><td>4 litres</td></tr>
+            <tr><td>M</td><td>4 litres</td></tr>
+            <tr><td>G</td><td>16 litres</td></tr>
+            <tr><td>TG</td><td>64 litres</td></tr>
+            <tr><td>Gig</td><td>256 litres</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ================= E ================= -->
+      <section class="section" id="lettre-e">
+        <h2>E</h2>
+
+        <h3 id="effet-magique">Effet magique</h3>
+        <p>Un effet est qualifie de magique s'il est cree par un sort, un objet magique ou un phenomene qu'une regle qualifie de magique.</p>
+
+        <h3 id="effets-simultanes">Effets simultanes</h3>
+        <p>Si deux evenements ou plus se produisent en meme temps lors d'un meme tour, la personne a la table de jeu (qu'il s'agisse d'un joueur ou du MD) dont c'est le tour decide de l'ordre dans lequel ces choses se produisent. Si, par exemple, deux effets se produisent au debut du tour d'un personnage joueur, le joueur decide lequel des effets se produit en premier.</p>
+
+        <h3 id="effraye">Effraye <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Effraye, vous subissez les effets suivants.</p>
+        <p><strong>Effet sur les attaques et les tests de caracteristique.</strong> Vous subissez le Desavantage aux tests de caracteristique et aux jets d'attaque tant que la source de votre effroi est dans votre champ de vision.</p>
+        <p><strong>Impossible d'approcher.</strong> Vous ne pouvez pas vous rapprocher volontairement de la source de votre effroi.</p>
+
+        <h3 id="emanation">Emanation <span class="badge" data-status="source">Zone d'effet</span></h3>
+        <p>Une Emanation est une zone d'effet qui s'etend en ligne droite depuis une creature ou un objet, dans toutes les directions. L'effet qui cree une Emanation precise la distance a laquelle elle s'etend.</p>
+        <p>L'Emanation se deplace avec la creature ou l'objet qui est son origine, sauf en cas d'effet specifie comme instantane ou immobile.</p>
+        <p>L'origine d'une Emanation (creature ou objet) n'est pas incluse dans la zone d'effet, sauf si son createur en decide autrement.</p>
+
+        <h3 id="embrasement">Embrasement <span class="badge" data-status="source">Danger</span></h3>
+        <p>Une creature ou un objet victime d'embrasement subit 1d4 degats de feu au debut de chacun de ses tours. Au prix d'une action, vous pouvez eteindre le feu sur vous-meme en vous donnant l'etat A terre et en vous roulant au sol. Les flammes s'eteignent egalement si elles sont suffisamment arrosees ou plongees dans l'eau, ou etouffees d'une autre maniere.</p>
+
+        <h3 id="empoisonne">Empoisonne <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Empoisonne, vous subissez l'effet suivant.</p>
+        <p><strong>Effet sur les attaques et les tests de caracteristique.</strong> Vous subissez le Desavantage aux jets d'attaque et aux tests de caracteristique.</p>
+
+        <h3 id="en-peril">En peril</h3>
+        <p>Une creature est <a href="./glossaire.html#en-peril" data-ref="en-peril">En peril</a> des qu'il lui reste la moitie ou moins de ses points de vie.</p>
+
+        <h3 id="ennemi">Ennemi</h3>
+        <p>Une creature est votre ennemie si elle s'oppose a vous lors d'un combat, oeuvre activement a vous nuire ou est designee comme votre ennemie par les regles ou le MD.</p>
+
+        <h3 id="entrave">Entrave <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Entrave, vous subissez les effets suivants.</p>
+        <p><strong>Vitesse 0.</strong> Votre Vitesse est de 0 et ne peut pas augmenter.</p>
+        <p><strong>Effet sur les attaques.</strong> Les jets d'attaque contre vous ont l'Avantage, et vos jets d'attaque subissent le Desavantage.</p>
+        <p><strong>Effet sur les jets de sauvegarde.</strong> Vous subissez le Desavantage aux jets de sauvegarde de Dexterite.</p>
+
+        <h3 id="epuisement">Epuisement <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Epuisement, vous subissez les effets suivants.</p>
+        <p><strong>Niveaux d'Epuisement.</strong> Cet etat est cumulatif. Chaque fois que vous le recevez, vous subissez 1 niveau d'Epuisement. Vous mourez quand votre niveau d'Epuisement atteint 6.</p>
+        <p><strong>Tests d20 affectes.</strong> Lorsque vous effectuez un Test d20, le resultat est reduit de 2 fois votre niveau actuel d'Epuisement.</p>
+        <p><strong>Vitesse reduite.</strong> Votre Vitesse est reduite de 1,50 m x votre niveau actuel d'Epuisement.</p>
+        <p><strong>Suppression des niveaux d'Epuisement.</strong> Terminer un <a href="./glossaire.html#repos-long" data-ref="repos-long">Repos long</a> dissipe 1 niveau d'Epuisement. Lorsque votre niveau d'Epuisement atteint 0, l'etat prend fin pour vous.</p>
+
+        <h3 id="escalade">Escalade</h3>
+        <p>Lorsque vous escaladez, toute distance parcourue vous coute le double de deplacement (le triple en <a href="./glossaire.html#terrain-difficile" data-ref="terrain-difficile">Terrain difficile</a>). Ignorez ce cout supplementaire si vous disposez d'une <a href="./glossaire.html#vitesse-d-escalade" data-ref="vitesse-d-escalade">Vitesse d'escalade</a> et y recourez pour grimper.</p>
+        <p>A la discretion du MD, gravir une surface glissante ou presentant peu de prises peut necessiter de reussir un test de Force (Athletisme) DD 15.</p>
+
+        <h3 id="espace-inoccupe">Espace inoccupe</h3>
+        <p>Un espace est inoccupe si aucune creature ne s'y trouve et s'il n'est pas completement rempli par des objets.</p>
+
+        <h3 id="espace-occupe">Espace occupe</h3>
+        <p>Un espace est qualifie d'occupe si une creature s'y trouve ou s'il est entierement rempli par des objets.</p>
+
+        <h3 id="esquive">Esquive <span class="badge" data-status="source">Action</span></h3>
+        <p>Si vous entreprenez l'action Esquive, vous recevez les benefices suivants : jusqu'au debut de votre tour suivant, tout jet d'attaque effectue contre vous par un assaillant que vous voyez subit le Desavantage, et vos jets de sauvegarde de Dexterite ont l'Avantage.</p>
+        <p>Vous perdez ces benefices si vous subissez l'etat Neutralise ou si votre Vitesse tombe a 0.</p>
+
+        <h3 id="etat">Etat</h3>
+        <p>Un etat est une situation de jeu temporaire qui vous affecte. La definition d'un etat indique comment il affecte son destinataire, et diverses regles definissent comment mettre fin a un etat. Le present glossaire definit les etats suivants :</p>
+        <div class="pill-row">
+          <a class="pill" href="#a-terre">A terre</a>
+          <a class="pill" href="#agrippe">Agrippe</a>
+          <a class="pill" href="#assourdi">Assourdi</a>
+          <a class="pill" href="#aveugle">Aveugle</a>
+          <a class="pill" href="#charme">Charme</a>
+          <a class="pill" href="#effraye">Effraye</a>
+          <a class="pill" href="#empoisonne">Empoisonne</a>
+          <a class="pill" href="#entrave">Entrave</a>
+          <a class="pill" href="#epuisement">Epuisement</a>
+          <a class="pill" href="#etourdi">Etourdi</a>
+          <a class="pill" href="#inconscient">Inconscient</a>
+          <a class="pill" href="#invisible">Invisible</a>
+          <a class="pill" href="#neutralise">Neutralise</a>
+          <a class="pill" href="#paralyse">Paralyse</a>
+          <a class="pill" href="#petrifie">Petrifie</a>
+        </div>
+        <p class="note">Un etat n'est pas cumulable avec lui-meme ; le sujet subit un etat ou non. Seul l'etat Epuisement constitue une exception a cette regle. <em>Lire aussi</em> chapitre 1 (« Etats »).</p>
+
+        <h3 id="etourdi">Etourdi <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Etourdi, vous subissez les effets suivants.</p>
+        <p><strong>Neutralise.</strong> Vous subissez l'etat Neutralise.</p>
+        <p><strong>Effet sur les jets de sauvegarde.</strong> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dexterite.</p>
+        <p><strong>Effet sur les attaques.</strong> Les jets d'attaque contre vous ont l'Avantage.</p>
+
+        <h3 id="etude">Etude <span class="badge" data-status="source">Action</span></h3>
+        <p>Lorsque vous entreprenez l'action Etude, vous effectuez un test d'Intelligence en consultant votre memoire, un livre, un indice ou une autre source de savoir, a la recherche d'une information importante sur un sujet donne.</p>
+        <p>La table « Domaines de savoir » suggere quelle competence s'applique a divers domaines de savoir.</p>
+        <table>
+          <thead><tr><th>Competence</th><th>Domaines</th></tr></thead>
+          <tbody>
+            <tr><td>Arcanes</td><td>Sorts, objets magiques, symboles occultes, traditions magiques, plans d'existence et certaines creatures (Aberrations, Artificiels, Elementaires, Fees et Monstruosites)</td></tr>
+            <tr><td>Histoire</td><td>Evenements et personnages historiques, civilisations anciennes, guerres et certaines creatures (Geants et Humanoides)</td></tr>
+            <tr><td>Investigation</td><td>Pieges, enigmes, messages cryptes et gadgets divers</td></tr>
+            <tr><td>Nature</td><td>Terrain, flore, climat et certaines creatures (Betes, Dragons, Plantes et Vases)</td></tr>
+            <tr><td>Religion</td><td>Divinites, hierarchies et rites religieux, symboles sacres, cultes et certaines creatures (Celestes, Fielons, Morts-vivants)</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="expertise">Expertise</h3>
+        <p>L'Expertise est une aptitude qui ameliore l'efficacite d'une maitrise de competence. Lorsque vous effectuez un test de caracteristique avec une maitrise de competence pour laquelle vous avez l'Expertise, votre bonus de maitrise est double pour ce test, sauf s'il est deja double par une autre methode.</p>
+        <p>Lorsque vous recevez l'Expertise, vous la recevez pour une competence dont vous avez la maitrise. Vous ne pouvez pas recevoir l'Expertise plus d'une fois pour une meme maitrise de competence. <em>Lire aussi</em> chapitre 1 (« Maitrise »).</p>
+      </section>
+
+      <!-- ================= F ================= -->
+      <section class="section" id="lettre-f">
+        <h2>F</h2>
+
+        <h3 id="facteur-de-puissance">Facteur de puissance</h3>
+        <p>Le facteur de puissance (FP) synthetise la menace que represente un monstre oppose a un groupe de quatre personnages joueurs. Comparez le FP d'un monstre au niveau des personnages. Si son FP est plus eleve, le monstre constitue probablement un danger avere. Si ce FP est inferieur, le monstre ne doit pas representer une bien grande menace. Cela etant, les circonstances et le nombre de personnages joueurs peuvent modifier considerablement le niveau de menace d'un monstre en conditions de jeu reelles. Le <em><a href="../historiques/guide.html" data-ref="guide">Guide</a> du maitre</em> fournit des conseils au MD sur l'utilisation du FP pour la preparation de rencontres de combat. <em>Lire aussi</em> « <a href="./glossaire.html#profil-de-jeu" data-ref="profil-de-jeu">Profil de jeu</a> ».</p>
+
+        <h3 id="fiche-de-personnage">Fiche de personnage</h3>
+        <p>La <a href="./glossaire.html#fiche-de-personnage" data-ref="fiche-de-personnage">fiche de personnage</a> est le document papier ou numerique sur lequel vous consignez les informations relatives a votre personnage. <em>Lire aussi</em> chapitre 2.</p>
+
+        <h3 id="focaliseur-d-incantation">Focaliseur d'incantation</h3>
+        <p>Un <a href="./glossaire.html#focaliseur-d-incantation" data-ref="focaliseur-d-incantation">focaliseur d'incantation</a> est un objet que certaines creatures peuvent utiliser a la place des composantes materielles d'un sort, a la condition que ces dernieres ne soient pas detruites par le sort et n'aient pas de cout specifie. Certaines classes autorisent leurs membres a utiliser divers types de focaliseur d'incantation. <em>Lire aussi</em> chapitre 7 (« Incantation »).</p>
+
+        <h3 id="formation-aux-armures">Formation aux armures</h3>
+        <p>La <a href="./glossaire.html#formation-aux-armures" data-ref="formation-aux-armures">formation aux armures</a> vous permet d'utiliser les armures d'une certaine categorie sans les inconvenients afferents. Si vous portez une armure legere, intermediaire ou lourde sans avoir ete forme a son port, vous subissez le Desavantage a tous les Tests d20 qui impliquent la Force ou la Dexterite, et vous ne pouvez pas lancer de sorts. Si vous portez un bouclier sans avoir ete forme a son port, vous ne recevez pas son bonus de CA. <em>Lire aussi</em> « Desavantage » et chapitre 6 (« Armures »).</p>
+
+        <h3 id="furtivite">Furtivite <span class="badge" data-status="source">Action</span></h3>
+        <p>L'action Furtivite vous permet d'essayer de vous cacher. Pour ce faire, vous effectuez un test de Dexterite (Discretion) DD 15 a condition d'etre dans une zone de <a href="./glossaire.html#visibilite-nulle" data-ref="visibilite-nulle">Visibilite nulle</a>, derriere un Abri superieur ou un Abri total, et de ne pas etre dans le champ de vision d'un ennemi ; si vous voyez une creature, vous savez si celle-ci vous voit ou non.</p>
+        <p>En cas de reussite, vous beneficiez de l'etat Invisible tant que vous etes cache. Prenez note du resultat de ce test, qui est le DD a atteindre pour qu'une creature vous localise au moyen d'un test de Sagesse (Perception).</p>
+        <p>Vous cessez d'etre cache aussitot apres l'un des evenements suivants : vous emettez un son plus fort qu'un murmure, un ennemi vous detecte, vous effectuez un jet d'attaque ou lancez un sort a composante verbale.</p>
+      </section>
+
+      <!-- ================= H ================= -->
+      <section class="section" id="lettre-h">
+        <h2>H</h2>
+
+        <h3 id="harmonisation">Harmonisation</h3>
+        <p>Certains objets magiques necessitent qu'une creature cree un lien avec lui (on parle alors d'Harmonisation) avant qu'elle puisse recourir a ses proprietes magiques. Une meme creature ne peut pas s'harmoniser avec plus de trois objets magiques a la fois. <em>Lire aussi</em> chapitre 6 (« Objets magiques »).</p>
+
+        <h3 id="hostile">Hostile <span class="badge" data-status="source">Attitude</span></h3>
+        <p>Une creature Hostile vous considere sous un jour defavorable. Vous subissez le Desavantage aux tests de caracteristique visant a influencer une creature Hostile. <em>Lire aussi</em> « Influence ».</p>
+      </section>
+
+      <!-- ================= I ================= -->
+      <section class="section" id="lettre-i">
+        <h2>I</h2>
+
+        <h3 id="illusions">Illusions</h3>
+        <p>Les sorts et certains effets creent parfois des illusions magiques. L'effet considere definit ce que fait l'illusion, et quels sens ou facultes mentales elle abuse.</p>
+        <p>Si une illusion se manifeste dans l'espace, elle a beau etre intangible et denuee de poids, elle parait affectee par l'environnement comme si elle etait reelle, a moins que l'effet qui l'a creee ne specifie le contraire. L'illusion visuelle d'une creature, par exemple, projette une ombre et des reflets, et le vent semble affecter la creature illusoire. De meme, une illusion auditive se reverbere dans un espace avec echo.</p>
+
+        <h3 id="immunite">Immunite</h3>
+        <p>Si vous beneficiez de l'Immunite contre un type de degats ou un etat, celui-ci ne vous affecte en aucune maniere.</p>
+
+        <h3 id="inconscient">Inconscient <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Inconscient, vous subissez les effets suivants.</p>
+        <p><strong>Inerte.</strong> Vous subissez les etats A terre et Neutralise, et laissez choir tout ce que vous teniez. Lorsque cet etat prend fin, vous etes toujours A terre.</p>
+        <p><strong>Vitesse 0.</strong> Votre Vitesse est de 0 et ne peut pas augmenter.</p>
+        <p><strong>Effet sur les attaques.</strong> Les jets d'attaque contre vous ont l'Avantage.</p>
+        <p><strong>Effet sur les jets de sauvegarde.</strong> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dexterite.</p>
+        <p><strong>Coups critiques automatiques.</strong> Tout jet d'attaque qui vous touche est un Coup critique si l'assaillant qui la porte se trouve dans un rayon de 1,50 m.</p>
+        <p><strong>Denue de conscience.</strong> Vous n'avez pas conscience de ce qui vous entoure.</p>
+
+        <h3 id="indifferent">Indifferent <span class="badge" data-status="source">Attitude</span></h3>
+        <p>Une creature Indifferente ne souhaite ni vous aider ni vous gener. Indifferent est l'attitude par defaut des monstres. <em>Lire aussi</em> « Influence ».</p>
+
+        <h3 id="influence">Influence <span class="badge" data-status="source">Action</span></h3>
+        <p>Par l'action Influence, vous incitez un monstre a faire quelque chose. Decrivez ou incarnez la facon dont vous communiquez avec le monstre. Essayez-vous de tromper, d'intimider, d'amuser ou de persuader en douceur ? Le MD determine alors si le monstre se sent dispose, reticent ou hesitant suite a votre interaction ; ce jugement determine si un test de caracteristique est necessaire, comme explique ci-dessous.</p>
+        <p><strong>Dispose.</strong> Si votre requete est en accord avec les desirs du monstre, aucun test de caracteristique n'est necessaire ; il accede a votre demande par la methode qu'il prefere.</p>
+        <p><strong>Reticent.</strong> Si votre requete repugne au monstre ou est contraire a son alignement, aucun test de caracteristique n'est necessaire ; il vous oppose un refus.</p>
+        <p><strong>Hesitant.</strong> Si vous incitez le monstre a faire quelque chose et qu'il se montre hesitant, vous devez en passer par un test de caracteristique, lequel est affecte par l'attitude du monstre : Indifferent, Amical ou Hostile, chacun de ces termes etant defini dans le present glossaire. La table « Tests d'Influence » suggere quel test de caracteristique entreprendre en fonction de la facon dont vous interagissez avec le monstre. Le MD choisit le test, dont le DD par defaut est egal a 15 ou a la valeur d'Intelligence du monstre, selon ce qui est le plus eleve. En cas de reussite, le monstre accomplit ce qui lui est demande. En cas d'echec, vous devez attendre 24 heures (ou une autre duree definie par le MD) avant de l'exhorter a nouveau de la meme maniere.</p>
+        <table>
+          <thead><tr><th>Test de caracteristique</th><th>Interaction</th></tr></thead>
+          <tbody>
+            <tr><td>Charisme (Intimidation)</td><td>Intimider un monstre</td></tr>
+            <tr><td>Charisme (Persuasion)</td><td>Convaincre un monstre qui vous comprend</td></tr>
+            <tr><td>Charisme (Representation)</td><td>Amuser un monstre</td></tr>
+            <tr><td>Charisme (Tromperie)</td><td>Tromper un monstre qui vous comprend</td></tr>
+            <tr><td>Sagesse (Dressage)</td><td>Amadouer une Bete ou une Monstruosite</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="initiative">Initiative</h3>
+        <p>L'Initiative determine la sequence des tours durant un combat. Les regles de combat du chapitre 1 expliquent comment jouer l'Initiative.</p>
+        <p>Le MD preferera parfois demander aux combattants d'utiliser leur valeur d'Initiative au lieu de jouer l'Initiative. Votre valeur d'Initiative est egale a 10 + votre modificateur de Dexterite. Si vous avez l'Avantage au jet d'Initiative, augmentez de 5 votre valeur d'Initiative. Si vous subissez le Desavantage a ce meme jet, diminuez cette valeur de 5. <em>Lire aussi</em> chapitre 1 (« Combat »).</p>
+
+        <h3 id="inspiration-heroique">Inspiration heroique</h3>
+        <p>Si vous, personnage joueur, disposez de l'<a href="./glossaire.html#inspiration-heroique" data-ref="inspiration-heroique">Inspiration heroique</a>, vous pouvez la depenser pour rejouer aussitot tout de que vous venez de lancer, a condition de conserver ce nouveau jet.</p>
+        <p>Si vous recevez l'Inspiration heroique et l'avez deja, elle est perdue, sauf si vous la donnez a un personnage joueur qui en est depourvu.</p>
+
+        <h3 id="intention">Intention <span class="badge" data-status="source">Action</span></h3>
+        <p>L'action Intention consiste a attendre une circonstance particuliere avant d'agir. Pour ce faire, vous entreprenez cette action a votre tour, ce qui vous permet de jouer votre Reaction avant le debut de votre tour suivant.</p>
+        <p>Commencez par decider quelles circonstances perceptibles declencheront votre Reaction. Puis choisissez l'action que vous entreprendrez en reponse a ce declencheur (ou optez pour un deplacement n'excedant pas votre Vitesse). Ce pourrait etre par exemple : « Si le fanatique pose le pied sur la trappe, j'active le levier qui l'ouvre », ou « Si le <a href="../creatures/zombi.html" data-ref="zombi">zombi</a> s'approche de moi, je m'en eloigne. »</p>
+        <p>Lorsque le declencheur intervient, vous avez le choix entre jouer votre Reaction juste apres la fin du declencheur et ne pas tenir compte de celui-ci.</p>
+        <p>Lorsque votre Intention concerne l'incantation d'un sort, vous le lancez normalement (ce qui requiert de depenser les eventuelles ressources necessaires) mais retenez les energies magiques, que vous ne libererez qu'a l'intervention du declencheur en jouant votre Reaction. Pour pouvoir s'anticiper ainsi, le sort doit avoir un temps d'incantation d'une action, sachant que retenir ses energies vous demande de maintenir votre Concentration, ce que vous ne pouvez faire que jusqu'au debut de votre tour suivant. Si votre Concentration est rompue, le sort se dissipe sans prendre effet.</p>
+
+        <h3 id="invisible">Invisible <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Invisible, vous subissez les effets suivants.</p>
+        <p><strong>Surprise.</strong> Si vous etes Invisible au moment de jouer l'Initiative, vous avez l'Avantage a ce jet.</p>
+        <p><strong>Dissimule.</strong> Vous n'etes pas affecte par les effets qui exigent que la cible soit vue, sauf si le createur de l'effet vous « voit » par un biais ou un autre. Tout l'<a href="../equipement/index.html" data-ref="index-equipement">equipement</a> que vous portez est lui aussi dissimule.</p>
+        <p><strong>Effet sur les attaques.</strong> Les jets d'attaque contre vous subissent le Desavantage, et vos jets d'attaque ont l'Avantage. Si une creature vous voit par un biais ou un autre, vous ne recevez pas ce benefice contre elle.</p>
+      </section>
+
+      <!-- ================= J ================= -->
+      <section class="section" id="lettre-j">
+        <h2>J</h2>
+
+        <h3 id="jet-d-attaque">Jet d'attaque</h3>
+        <p>Un jet d'attaque est un Test d20 qui represente le fait de porter une attaque avec une arme, a mains nues ou avec un sort. <em>Lire aussi</em> chapitre 1 (« Tests d20 »).</p>
+
+        <h3 id="jet-de-degats">Jet de degats</h3>
+        <p>Un <a href="./glossaire.html#jet-de-degats" data-ref="jet-de-degats">jet de degats</a> est un jet de des, ajuste par tout modificateur applicable, qui inflige des degats a une cible. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="jet-de-sauvegarde">Jet de sauvegarde</h3>
+        <p>Un jet de sauvegarde, ou JS en abrege, represente une tentative d'echapper a une menace ou d'y resister. Vous effectuez en temps normal un jet de sauvegarde lorsqu'une regle vous y contraint, mais vous pouvez decider de rater ce JS sans faire de jet. Le resultat d'un JS est detaille dans l'effet qui l'a provoque. Si une cible contrainte d'effectuer un JS ne dispose pas de la valeur de caracteristique associee, elle echoue automatiquement. <em>Lire aussi</em> chapitre 1 (« Tests d20 »).</p>
+
+        <h3 id="jet-de-sauvegarde-contre-la-mort">Jet de sauvegarde contre la mort</h3>
+        <p>Un personnage joueur effectue un <a href="./glossaire.html#jet-de-sauvegarde-contre-la-mort" data-ref="jet-de-sauvegarde-contre-la-mort">jet de sauvegarde contre la mort</a> (JS contre la mort en abrege) s'il debute son tour avec 0 point de vie. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="js">JS</h3>
+        <p>JS est l'acronyme de « jet de sauvegarde ». <em>Lire aussi</em> « Jet de sauvegarde ».</p>
+      </section>
+
+      <!-- ================= L ================= -->
+      <section class="section" id="lettre-l">
+        <h2>L</h2>
+
+        <h3 id="ligne">Ligne <span class="badge" data-status="source">Zone d'effet</span></h3>
+        <p>Une Ligne est une zone d'effet qui s'etend en ligne droite a partir d'un point d'origine et couvre une zone definie par sa longueur et sa largeur. L'effet qui cree une Ligne specifie sa longueur et sa largeur. Le point d'origine d'une Ligne n'est pas situe dans la zone d'effet, sauf si son createur en decide autrement.</p>
+
+        <h3 id="lumiere-faible">Lumiere faible</h3>
+        <p>Une zone de <a href="./glossaire.html#lumiere-faible" data-ref="lumiere-faible">Lumiere faible</a> est a <a href="./glossaire.html#visibilite-reduite" data-ref="visibilite-reduite">Visibilite reduite</a>. <em>Lire aussi</em> « Visibilite reduite » et chapitre 1 (« Exploration »).</p>
+
+        <h3 id="lumiere-vive">Lumiere vive</h3>
+        <p>La <a href="./glossaire.html#lumiere-vive" data-ref="lumiere-vive">Lumiere vive</a> est synonyme d'eclairage normal. <em>Lire aussi</em> chapitre 1 (« Exploration »).</p>
+
+        <h3 id="lutte">Lutte</h3>
+        <p>Une creature peut tenter d'en agripper une autre. Les personnages agrippent generalement au moyen d'une attaque a mains nues. De nombreux monstres sont dotes d'attaques speciales qui leur permettent de rapidement agripper leur proie. Quelle que soit la facon dont la lutte est engagee, elle obeit aux regles ci-apres. <em>Lire aussi</em> « Attaque a mains nues » et « Agrippe ».</p>
+        <p><strong>Etat Agrippe.</strong> Reussir a agripper une creature lui inflige l'etat Agrippe.</p>
+        <p><strong>Une lutte par « main ».</strong> Une creature doit avoir une « main » libre pour en agripper une autre. Certains profils et effets du jeu autorisent une creature a engager la lutte avec un tentacule, ses machoires ou une autre partie de son corps. Quelle que soit la partie du corps utilisee par l'agrippeur, il ne peut agripper qu'une seule creature a la fois avec cette partie, et l'agrippeur doit mettre fin a la lutte s'il souhaite utiliser cette partie de son anatomie pour cibler une autre creature.</p>
+        <p><strong>Mettre fin a la lutte.</strong> Une creature Agrippee peut consacrer son action a effectuer un test de Force (Athletisme) ou de Dexterite (Acrobaties) contre le DD d'evasion de la lutte, mettant un terme a l'etat sur elle-meme en cas de reussite. L'etat prend fin egalement si l'agrippeur subit l'etat Neutralise ou si la distance entre la cible agrippee et l'agrippeur depasse la portee d'allonge de ce dernier. En outre, l'agrippeur peut a tout moment mettre fin a la lutte (pas d'action requise).</p>
+      </section>
+
+      <!-- ================= M ================= -->
+      <section class="section" id="lettre-m">
+        <h2>M</h2>
+
+        <h3 id="magie">Magie <span class="badge" data-status="source">Action</span></h3>
+        <p>Lorsque vous entreprenez l'action Magie, vous lancez un sort dont le temps d'incantation est une action ou recourez a une aptitude ou a un objet magique dont l'activation se fait au prix de l'action Magie.</p>
+        <p>Si vous lancez un sort dont le temps d'incantation est de 1 minute ou plus, vous devez entreprendre l'action Magie a chaque tour de l'incantation, et devez maintenir votre Concentration tout du long. Si cette Concentration est rompue, le sort echoue, mais vous ne depensez aucun emplacement de sort. <em>Lire aussi</em> « Concentration ».</p>
+
+        <h3 id="maitrise">Maitrise</h3>
+        <p>Si vous avez la maitrise de quelque chose, vous ajoutez votre bonus de maitrise a tout Test d20 effectue pour y recourir. Une creature peut posseder la maitrise d'une competence, d'un jet de sauvegarde, d'une arme ou d'un outil. <em>Lire aussi</em> chapitre 1 (« Maitrise »).</p>
+
+        <h3 id="maledictions">Maledictions</h3>
+        <p>Certains effets du jeu maudissent une creature ou un objet. L'effet qui confere une malediction definit comment agit celle-ci. Une malediction peut etre levee grace aux sorts <em><a href="../sorts/delivrance-des-maledictions.html" data-ref="delivrance-des-maledictions">delivrance des maledictions</a></em> et <em><a href="../sorts/restauration-supreme.html" data-ref="restauration-supreme">restauration supreme</a></em> ou par toute autre magie qui met explicitement fin aux maledictions.</p>
+
+        <h3 id="malnutrition">Malnutrition <span class="badge" data-status="source">Danger</span></h3>
+        <p>Une creature a besoin d'une certaine quantite de nourriture par jour en fonction de sa categorie de taille, comme indique dans la table « Besoins quotidiens en nourriture ». Une creature qui s'alimente, mais absorbe moins de la moitie de la nourriture necessaire pour une journee doit reussir un jet de sauvegarde de Constitution DD 10 sous peine de recevoir 1 niveau d'Epuisement a la fin de la journee. Une creature que ne mange rien pendant 5 jours recoit automatiquement 1 niveau d'Epuisement a la fin du cinquieme jour, ainsi qu'un niveau supplementaire a la fin de chaque jour suivant sans nourriture.</p>
+        <p>L'Epuisement provoque par la malnutrition ne peut pas etre elimine tant que la creature n'a pas absorbe la totalite de son quota pour une journee. <em>Lire aussi</em> « Epuisement ».</p>
+        <table>
+          <thead><tr><th>Cat. de taille</th><th>Nourriture</th></tr></thead>
+          <tbody>
+            <tr><td>TP</td><td>125 g</td></tr>
+            <tr><td>P</td><td>0,5 kg</td></tr>
+            <tr><td>M</td><td>0,5 kg</td></tr>
+            <tr><td>G</td><td>2 kg</td></tr>
+            <tr><td>TG</td><td>8 kg</td></tr>
+            <tr><td>Gig</td><td>32 kg</td></tr>
+          </tbody>
+        </table>
+
+        <h3 id="metamorphes">Metamorphes</h3>
+        <p>Si un effet, tel que Forme sauvage ou le sort <em>metamorphose</em>, vous permet de changer de forme, sa description precise ce qui vous arrive. Sauf indication contraire dans la description, tous les effets continus qui vous affectent (etats, sorts, maledictions, etc.) se repercutent d'une forme a l'autre. Si vous mourez, vous reprenez votre forme veritable.</p>
+
+        <h3 id="monstre">Monstre</h3>
+        <p>Toute creature sous le controle du MD est un monstre, meme si elle est bien intentionnee. <em>Lire aussi</em> « Creature » et « PNJ ».</p>
+
+        <h3 id="mort">Mort</h3>
+        <p>Une creature morte n'a pas de points de vie et ne peut pas en recuperer a moins d'etre au prealable ranimee par une magie telle que le sort <em><a href="../sorts/rappel-a-la-vie.html" data-ref="rappel-a-la-vie">rappel a la vie</a></em> ou <em><a href="../sorts/retour-a-la-vie.html" data-ref="retour-a-la-vie">retour a la vie</a></em>. Lorsqu'un tel sort est lance, l'esprit sait qui en est l'auteur et peut refuser. L'esprit d'une creature defunte a quitte son corps pour s'envoler vers les Plans Exterieurs, et pour ranimer la creature, il faut rappeler cet esprit.</p>
+        <p>Si la creature revient a la vie, c'est l'effet employe pour ce faire qui determine ses points de vie actuels. Sauf mention contraire, la creature revient a la vie avec tous les etats, contagions magiques et maledictions qui l'affectaient au moment de sa mort, pour peu que la duree de ces effets coure encore. Si la creature est morte avec des niveaux d'Epuisement, elle revient a la vie avec 1 niveau de moins. Si la creature etait harmonisee avec un ou plusieurs objets magiques, elle ne l'est plus.</p>
+      </section>
+
+      <!-- ================= N ================= -->
+      <section class="section" id="lettre-n">
+        <h2>N</h2>
+
+        <h3 id="nage">Nage</h3>
+        <p>Lorsque vous nagez, toute distance parcourue vous coute le double de deplacement (le triple en Terrain difficile). Ignorez ce cout supplementaire si vous disposez d'une <a href="./glossaire.html#vitesse-de-nage" data-ref="vitesse-de-nage">Vitesse de nage</a> et y recourez pour nager. Sur decision du MD, se deplacer sur une certaine distance en eau agitee peut necessiter de reussir un test de Force (Athletisme) DD 15.</p>
+
+        <h3 id="neutralise">Neutralise <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Neutralise, vous subissez les effets suivants.</p>
+        <p><strong>Inactif.</strong> Vous ne pouvez entreprendre ni action, ni action Bonus ni Reaction.</p>
+        <p><strong>Concentration brisee.</strong> Votre Concentration est brisee.</p>
+        <p><strong>Sans voix.</strong> Vous ne pouvez pas parler.</p>
+        <p><strong>Surpris.</strong> Si vous etes Neutralise au moment de jouer l'Initiative, vous subissez le Desavantage a ce jet.</p>
+      </section>
+
+      <!-- ================= O ================= -->
+      <section class="section" id="lettre-o">
+        <h2>O</h2>
+
+        <h3 id="objet">Objet</h3>
+        <p>Un objet est une chose qui ne vit pas, mais que l'on peut designer. Les batiments et les assemblages sont faits de plusieurs objets. <em>Lire aussi</em> « Bris des objets ».</p>
+
+        <h3 id="observation">Observation <span class="badge" data-status="source">Action</span></h3>
+        <p>Lorsque vous entreprenez l'action Observation, vous effectuez un test de Sagesse visant a discerner ce qui n'est pas evident. La table « Observation » suggere quelle competence entre en jeu lorsque vous effectuez cette action, en fonction de ce que vous essayez de detecter.</p>
+        <table>
+          <thead><tr><th>Competence</th><th>Chose a detecter</th></tr></thead>
+          <tbody>
+            <tr><td>Intuition</td><td>Etat d'esprit d'une creature</td></tr>
+            <tr><td>Medecine</td><td>Mal dont souffre une creature ou cause de sa mort</td></tr>
+            <tr><td>Perception</td><td>Creature ou objet dissimule</td></tr>
+            <tr><td>Survie</td><td>Traces ou nourriture</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ================= P ================= -->
+      <section class="section" id="lettre-p">
+        <h2>P</h2>
+
+        <h3 id="par-jour">Par jour</h3>
+        <p>Si une regle stipule que vous pouvez recourir a quelque chose un certain nombre de fois par jour, cela signifie que vous devez terminer un Repos long avant de pouvoir y recourir de nouveau une fois epuise votre quota d'utilisations.</p>
+
+        <h3 id="paralyse">Paralyse <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Paralyse, vous subissez les effets suivants.</p>
+        <p><strong>Neutralise.</strong> Vous subissez l'etat Neutralise.</p>
+        <p><strong>Vitesse 0.</strong> Votre Vitesse est de 0 et ne peut pas augmenter.</p>
+        <p><strong>Effet sur les jets de sauvegarde.</strong> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dexterite.</p>
+        <p><strong>Effet sur les attaques.</strong> Les jets d'attaque contre vous ont l'Avantage.</p>
+        <p><strong>Coups critiques automatiques.</strong> Tout jet d'attaque qui vous touche est un Coup critique si l'assaillant qui la porte se trouve dans un rayon de 1,50 m.</p>
+
+        <h3 id="perception-des-vibrations">Perception des vibrations</h3>
+        <p>Une creature dotee de la <a href="./glossaire.html#perception-des-vibrations" data-ref="perception-des-vibrations">Perception des vibrations</a> definit avec precision la position des creatures et des objets en mouvement a une portee definie, a condition qu'elle-meme et ce qu'elle detecte soient en contact physique avec la meme surface (par exemple le sol, un mur ou un plafond) ou le meme element liquide.</p>
+        <p>La Perception des vibrations ne permet pas de detecter les creatures ou les objets evoluant dans les airs, et n'est pas consideree comme une forme de vision.</p>
+
+        <h3 id="perception-passive">Perception passive</h3>
+        <p>La <a href="./glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a> est une valeur qui reflete le degre de vigilance d'une creature vis-a-vis de ce qui l'entoure. Le MD utilise cette valeur pour determiner si une creature remarque quelque chose sans effectuer consciemment un test de Sagesse (Perception).</p>
+        <p>La Perception passive d'une creature est egale a 10 + son bonus aux tests de Sagesse (Perception). Si la creature a l'Avantage a ce test, augmentez la valeur de 5. Si la creature subit le Desavantage, diminuez cette meme valeur de 5. La Perception passive d'un personnage de niveau 1 avec la maitrise de la competence Perception, par exemple, est de 14 (10 + 2 + 2). Si ce personnage a l'Avantage aux tests de Sagesse (Perception), cette valeur passe a 19.</p>
+
+        <h3 id="personnage-joueur">Personnage joueur</h3>
+        <p>Un personnage joueur (PJ en abrege) est une personnage controle par un joueur. <em>Lire aussi</em> chapitre 2.</p>
+
+        <h3 id="personnage-non-joueur">Personnage non-joueur</h3>
+        <p>Un personnage non-joueur (PNJ en abrege) est un monstre qui possede un nom et une personnalite distincte. <em>Lire aussi</em> « Monstre ».</p>
+
+        <h3 id="petrifie">Petrifie <span class="badge" data-status="source">Etat</span></h3>
+        <p>Tant que vous avez l'etat Petrifie, vous subissez les effets suivants.</p>
+        <p><strong>Transforme en substance inanimee.</strong> Vous etes transforme, ainsi que les objets non magiques que vous portez, en une substance inanimee et dense (generalement de la pierre). Votre poids est decuple et vous n'etes plus soumis au vieillissement.</p>
+        <p><strong>Neutralise.</strong> Vous subissez l'etat Neutralise.</p>
+        <p><strong>Vitesse 0.</strong> Votre Vitesse est de 0 et ne peut pas augmenter.</p>
+        <p><strong>Effet sur les attaques.</strong> Les jets d'attaque contre vous ont l'Avantage.</p>
+        <p><strong>Effet sur les jets de sauvegarde.</strong> Vous ratez automatiquement vos jets de sauvegarde de Force et de Dexterite.</p>
+        <p><strong>Resistance aux degats.</strong> Vous avez la Resistance a tous les degats.</p>
+        <p><strong>Immunite contre le poison.</strong> Vous avez l'Immunite contre l'etat Empoisonne.</p>
+
+        <h3 id="pointe">Pointe <span class="badge" data-status="source">Action</span></h3>
+        <p>Lorsque vous entreprenez l'action Pointe, vous recevez du deplacement supplementaire pour ce tour. Cette augmentation est egale a votre Vitesse, apres application d'eventuels modificateurs. Si vous disposez par exemple d'une Vitesse de 9 m, vous pouvez vous deplacer de 18 m a votre tour en entreprenant l'action Pointe. Si vous disposez d'une Vitesse de 9 m reduite a 4,50 m, vous pouvez vous deplacer de 9 m a votre tour avec l'action Pointe.</p>
+        <p>Si vous disposez d'une Vitesse speciale, de type <a href="./glossaire.html#vitesse-de-vol" data-ref="vitesse-de-vol">Vitesse de vol</a> ou Vitesse de nage, vous pouvez utiliser celle-ci a la place de votre Vitesse lorsque vous entreprenez cette action. Vous choisissez la Vitesse a utiliser chaque fois que vous l'entreprenez. <em>Lire aussi</em> « Vitesse ».</p>
+
+        <h3 id="points-d-experience">Points d'experience</h3>
+        <p>Relever des defis et terminer une aventure permet aux personnages d'engranger des <a href="./glossaire.html#points-d-experience" data-ref="points-d-experience">points d'experience</a> (PX en abrege), qui leur sont attribues par le maitre du donjon. Lorsque le total de PX d'un personnage depasse un certain seuil, son niveau de personnage augmente. Le <em>Guide du maitre</em> fournit des conseils relatifs a l'attribution des PX. <em>Lire aussi</em> chapitre 2 (« Progression en niveaux »).</p>
+
+        <h3 id="points-de-vie">Points de vie</h3>
+        <p>Les points de vie (pv en abrege) sont la mesure chiffree de la difficulte a tuer une creature ou detruire un objet. Les degats reduisent les points de vie, les soins les retablissent. Vous ne pouvez pas avoir plus de points de vie que votre maximum de points de vie, et vous ne pouvez pas en avoir moins de 0. <em>Lire aussi</em> « Bris des objets » et le chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="points-de-vie-temporaires">Points de vie temporaires</h3>
+        <p>Les <a href="./glossaire.html#points-de-vie-temporaires" data-ref="points-de-vie-temporaires">points de vie temporaires</a> sont octroyes par certains effets et agissent comme un matelas de securite contre la perte de points de vie reels. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="possession">Possession</h3>
+        <p>Certains effets font qu'une creature se retrouve possedee par une autre creature ou entite. Un effet de possession definit le mode de fonctionnement de la possession. La possession est empechee par le sort <em><a href="../sorts/protection-contre-le-mal-et-le-bien.html" data-ref="protection-contre-le-mal-et-le-bien">protection contre le mal et le bien</a></em> et dissipee par <em><a href="../sorts/dissipation-du-mal-et-du-bien.html" data-ref="dissipation-du-mal-et-du-bien">dissipation du mal et du bien</a></em>.</p>
+
+        <h3 id="profil-de-jeu">Profil de jeu</h3>
+        <p>Un profil de jeu, ou simplement « profil », reprend toutes les donnees de jeu d'un monstre. Chaque profil inclut les informations ci-apres, qui sont presentees apres le nom du monstre.</p>
+        <ul>
+          <li><strong>Categorie de taille.</strong> Un monstre est de taille TP, P, M, G, TG ou Gig. <em>Lire aussi</em> « Categorie de taille ».</li>
+          <li><strong>Type de creature.</strong> Cette entree indique la famille d'entites a laquelle appartient un monstre, ainsi que d'eventuels mots-cles descriptifs. <em>Lire aussi</em> « Type de creature ».</li>
+          <li><strong>Alignement.</strong> Un alignement est suggere pour le monstre, le MD determinant son alignement reel. <em>Lire aussi</em> « Alignement ».</li>
+          <li><strong>CA, Initiative et pv.</strong> Ces entrees fournissent la classe d'armure, l'Initiative et les points de vie du monstre, elements detailles au chapitre 1. Entre parentheses apres les points de vie figurent les des de vie du monstre, ainsi que l'eventuelle contribution de sa Constitution a son total de pv. Le modificateur d'Initiative est suivi d'une valeur d'Initiative entre parentheses. Certaines creatures creees par magie n'ont ni des de vie ni modificateur d'Initiative.</li>
+          <li><strong>Vitesse.</strong> Ici figure la Vitesse du monstre, ainsi que ses eventuelles Vitesses speciales. <em>Lire aussi</em> « Vitesse d'escalade », « <a href="./glossaire.html#vitesse-de-fouissement" data-ref="vitesse-de-fouissement">Vitesse de fouissement</a> », « Vitesse de nage », « Vitesse de reptation » et « Vitesse de vol ».</li>
+          <li><strong>Valeurs de caracteristique.</strong> Une table fournit les valeurs et modificateurs de caracteristique du monstre, et ses modificateurs de jet de sauvegarde, elements detailles au chapitre 1.</li>
+          <li><strong>Competences.</strong> Cette entree dresse la liste des eventuelles maitrises de competence du monstre. <em>Lire aussi</em> chapitre 1 (« Maitrise »).</li>
+          <li><strong>Resistances et Vulnerabilites.</strong> Ces entrees indiquent les eventuelles Resistances et Vulnerabilites du monstre. <em>Lire aussi</em> « Resistance » et « Vulnerabilite ».</li>
+          <li><strong>Immunites.</strong> Dans cette section figurent les eventuelles Immunites contre les etats et degats du monstre. <em>Lire aussi</em> « Immunite ».</li>
+          <li><strong>Equipement.</strong> Si le monstre possede un equipement qui peut etre donne ou recupere, il figure dans cette rubrique.</li>
+          <li><strong>Sens.</strong> Cette entree indique les sens speciaux du monstre, comme la <a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a>, ainsi que sa valeur de Perception passive. <em>Lire aussi</em> « Perception passive ».</li>
+          <li><strong>Langues.</strong> Cette entree enumere toutes les langues que le monstre comprend et parle.</li>
+          <li><strong>FP.</strong> Le facteur de puissance resume la menace que represente un monstre. Il est explique plus en detail dans le <em>Manuel des monstres</em>. Suivent les points d'experience que les personnages recoivent en triomphant du monstre et son bonus de maitrise. Certaines creatures creees par magie sont depourvue de FP. <em>Lire aussi</em> « Facteur de puissance » et « Points d'experience ».</li>
+          <li><strong>Traits.</strong> Les eventuels traits du monstre dressent la liste de ses aptitudes, certaines actives a tout moment, d'autres dans certaines situations.</li>
+          <li><strong>Actions.</strong> Le monstre peut entreprendre ces actions en plus de celles detaillees dans le present glossaire. <em>Lire aussi</em> chapitre 1 (« Actions »).</li>
+          <li><strong>Actions Bonus.</strong> Si le monstre dispose d'options d'action Bonus, celles-ci sont listees dans cette section.</li>
+          <li><strong>Reactions.</strong> Si le monstre dispose de Reactions speciales, celles-ci figurent dans cette section.</li>
+          <li><strong>Format des attaques.</strong> La section consacree aux attaques d'un monstre commence par identifier si l'attaque est une attaque a distance ou au corps a corps, puis fournit le bonus au jet d'attaque, sa portee ou son allonge, et ce qui se produit si l'attaque touche. Une attaque est dirigee contre une seule cible, sauf mention contraire.</li>
+          <li><strong>Format des jets de sauvegarde.</strong> Si un effet impose un jet de sauvegarde, son descriptif commence par indiquer le type de jet de sauvegarde requis, puis fournit le DD de sauvegarde, un resume des creatures soumises au JS et ce qui se passe en cas de JS reussi ou d'echec.</li>
+          <li><strong>Format des degats.</strong> Dans chaque profil figurent le plus souvent une somme fixe et la formule de des a lancer pour chaque occurrence de degats. Une attaque, par exemple, infligera 4 (1d4 + 2) degats en cas de reussite. Le MD determine s'il est preferable de recourir a la somme fixe ou de lancer les des qui figurent entre parentheses ; il n'est pas question d'additionner les deux.</li>
+        </ul>
+      </section>
+
+      <!-- ================= R ================= -->
+      <section class="section" id="lettre-r">
+        <h2>R</h2>
+
+        <h3 id="reaction">Reaction</h3>
+        <p>Une Reaction est une action speciale entreprise en reponse a un evenement declencheur defini dans la description de la Reaction. Vous pouvez jouer votre Reaction pendant le tour d'une autre creature, et si vous la jouez pendant votre tour, vous pouvez le faire meme si vous entreprenez egalement une action, une action Bonus, ou les deux. Une fois la Reaction jouee, vous ne pouvez pas en jouer d'autre avant le debut de votre tour suivant. L'attaque d'Opportunite est une Reaction accessible a toutes les creatures. <em>Lire aussi</em> « <a href="./glossaire.html#attaques-d-opportunite" data-ref="attaques-d-opportunite">Attaques d'Opportunite</a> » et chapitre 1 (« Actions »).</p>
+
+        <h3 id="rencontre">Rencontre</h3>
+        <p>Une rencontre est une scene, au cours d'une aventure, qui repose sur au moins l'un des trois piliers fondateurs du jeu : interactions sociales, exploration et combat. <em>Lire aussi</em> chapitre 1 (« Interactions sociales », « Exploration » et « Combat »).</p>
+
+        <h3 id="repos-court">Repos court</h3>
+        <p>Un Repos court est une periode d'inactivite d'au moins 1 heure durant laquelle une creature ne fait rien de plus fatigant que se restaurer, discuter, lire ou monter la <a href="../historiques/garde.html" data-ref="garde">garde</a>. Pour commencer un Repos court, vous devez avoir au moins 1 point de vie.</p>
+        <p><strong>Benefices du repos.</strong> Terminer un Repos court vous permet de recevoir les benefices suivants :</p>
+        <p><strong>Depense de des de vie.</strong> Vous pouvez depenser un ou plusieurs de vos des de vie pour recuperer des points de vie. Pour chaque de de vie ainsi depense, jetez le de et ajoutez-lui votre modificateur de Constitution. Vous recuperez autant de points de vie que le total obtenu (minimum 1). Apres chaque de de vie lance, vous pouvez decider d'en depenser d'autres.</p>
+        <p><strong>Aptitudes speciales.</strong> Certaines aptitudes sont rechargees au terme d'un Repos court. Si vous disposez de telles aptitudes, elles se rechargent de la facon stipulee dans leur description.</p>
+        <p><strong>Repos interrompu.</strong> Le Repos court est interrompu par les evenements suivants : determiner l'Initiative ; lancer un sort autre qu'un <a href="./glossaire.html#sort-mineur" data-ref="sort-mineur">sort mineur</a> ; subir des degats. Un Repos court interrompu n'octroie aucun benefice.</p>
+
+        <h3 id="repos-long">Repos long</h3>
+        <p>Le Repos long est une periode prolongee d'inactivite d'au moins 8 heures, disponible pour toute creature. Pendant un Repos long, vous dormez au moins 6 heures et accomplissez de menues taches pendant un maximum de 2 heures : se restaurer, discuter, lire ou monter la garde. Le sommeil vous impose l'etat Inconscient. Apres avoir termine un Repos long, vous devez attendre au moins 16 heures avant d'en commencer un autre.</p>
+        <p><strong>Benefices du repos.</strong> Pour commencer un Repos long, vous devez avoir au moins 1 point de vie. Terminer un Repos long vous permet de recevoir les benefices suivants :</p>
+        <p><strong>Recuperation de tous les pv.</strong> Vous recuperez tous les points de vie perdus et tous les des de vie depenses. Si votre maximum de points de vie avait ete reduit, il revient a la normale.</p>
+        <p><strong>Recuperation des valeurs de caracteristique.</strong> Si une ou plusieurs de vos valeurs de caracteristique avait ete reduite, toutes reviennent a la normale.</p>
+        <p><strong>Reduction de l'Epuisement.</strong> Si vous subissez l'etat Epuisement, le niveau de celui-ci diminue de 1.</p>
+        <p><strong>Aptitudes speciales.</strong> Certaines aptitudes sont rechargees au terme d'un Repos long. Si vous disposez de telles aptitudes, elles se rechargent de la facon stipulee dans leur description.</p>
+        <p><strong>Repos interrompu.</strong> Le Repos long est interrompu par les evenements suivants : determiner l'Initiative ; lancer un sort autre qu'un sort mineur ; subir des degats ; 1 heure de marche ou autre effort physique comparable. Si vous vous etes repose au moins 1 heure avant l'interruption, vous recevez les benefices d'un Repos court. <em>Lire aussi</em> « Repos court ». Vous pouvez reprendre un Repos long immediatement apres son interruption. Dans pareil cas, terminer le repos necessite 1 heure de plus par interruption.</p>
+
+        <h3 id="reptation">Reptation</h3>
+        <p>Lorsque vous rampez, toute distance parcourue vous coute le double de deplacement (le triple en Terrain difficile). <em>Lire aussi</em> « Vitesse ».</p>
+
+        <h3 id="resistance">Resistance</h3>
+        <p>Si vous beneficiez de la Resistance a un type de degats, ces degats sont reduits de moitie contre vous. La Resistance ne s'applique qu'une seule fois a des degats donnes. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="rituel">Rituel</h3>
+        <p>Si l'un de vos sorts prepares porte la mention « rituel », vous pouvez le lancer sous forme de rituel. Lancer le sort sous forme de rituel necessite 10 minutes de plus que l'incantation normale. En revanche, cela ne depense aucun emplacement, c'est pourquoi un sort lance comme rituel ne peut l'etre a un niveau superieur a la normale. <em>Lire aussi</em> chapitre 7.</p>
+      </section>
+
+      <!-- ================= S ================= -->
+      <section class="section" id="lettre-s">
+        <h2>S</h2>
+
+        <h3 id="saut">Saut</h3>
+        <p>Lorsque vous sautez, vous effectuez soit un <a href="./glossaire.html#saut-en-longueur" data-ref="saut-en-longueur">saut en longueur</a> (horizontal), soit un <a href="./glossaire.html#saut-en-hauteur" data-ref="saut-en-hauteur">saut en hauteur</a> (vertical). <em>Lire aussi</em> « Saut en longueur » et « Saut en hauteur ».</p>
+
+        <h3 id="saut-en-hauteur">Saut en hauteur</h3>
+        <p>Lorsque vous effectuez un saut en hauteur, vous bondissez d'une distance maximale egale a 90 cm + votre modificateur de Force multiplie par une course d'elan d'au moins 3 m. Dans le cas d'un saut en hauteur sans elan, vous ne vous elevez que de la moitie de cette hauteur. Quoi qu'il en soit, la distance couverte par le saut est decomptee normalement de votre deplacement.</p>
+        <p>Vous pouvez tendre les bras a la verticale durant le saut, d'une hauteur egale a la moitie de votre taille. Dans ces conditions, vous pouvez agripper une hauteur egale a la hauteur du saut plus une fois et demie votre taille.</p>
+
+        <h3 id="saut-en-longueur">Saut en longueur</h3>
+        <p>Lorsque vous effectuez un saut en longueur, vous faites un bond horizontal sur une distance maximale egale a votre valeur de Force multipliee par 30 cm a condition d'avoir pris une course d'elan d'au moins 3 m. Dans le cas d'un saut en longueur sans elan, vous ne parcourez que la moitie de cette distance. Dans les deux cas, la distance couverte par le saut est decomptee normalement de votre deplacement.</p>
+        <p>Si votre saut se termine en Terrain difficile, vous devez reussir un test de Dexterite (Acrobaties) DD 10 sous peine de subir l'etat A terre.</p>
+        <p>Cette regle part du principe que la hauteur atteinte pendant le saut n'a pas d'importance (saut par-dessus un ruisseau ou un gouffre, par exemple). Le MD peut vous imposer de reussir un test de Force (Athletisme) DD 10 pour franchir un obstacle bas (pas plus du quart de la longueur du saut), comme une haie ou une murette. En cas d'echec, vous heurtez l'obstacle.</p>
+
+        <h3 id="seuil-de-degats">Seuil de degats</h3>
+        <p>Une creature ou un objet presentant un seuil de degats a l'Immunite contre tous les degats, sauf quand une meme attaque ou un meme effet lui inflige une somme de degats superieure a ce seuil, auquel cas il subit pleinement les degats consideres. Les degats inferieurs a ce seuil, consideres comme superficiels, ne reduisent en rien les points de vie. Si, par exemple, un objet presente un seuil de degats de 10, il ne subit aucun degat si 9 degats lui sont infliges, ces degats etant inferieurs au seuil. Si le meme objet subit 11 points de degats, il les subit integralement.</p>
+
+        <h3 id="soins">Soins</h3>
+        <p>Les soins permettent de recuperer des points de vie. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="sort">Sort</h3>
+        <p>Un sort est un effet magique dont les proprietes sont decrites au chapitre 7.</p>
+
+        <h3 id="sort-mineur">Sort mineur</h3>
+        <p>Un sort mineur est un sort du niveau 0, qui se lance sans depenser d'emplacement de sort. <em>Lire aussi</em> chapitre 7.</p>
+
+        <h3 id="soutien">Soutien <span class="badge" data-status="source">Action</span></h3>
+        <p>Lorsque vous entreprenez l'action Soutien, vous faites l'une ou l'autre des deux choses ci-apres.</p>
+        <p><strong>Assister un test de caracteristique.</strong> Choisissez l'une de vos maitrises de competence ou d'outil, ainsi qu'un allie suffisamment proche pour que vous puissiez l'assister verbalement ou physiquement lorsqu'il entreprend un test de caracteristique. Cet allie a l'Avantage au prochain test de caracteristique qu'il entreprend avec la competence ou l'outil choisi. Ce benefice expire si l'allie n'y recourt pas avant le debut de votre tour suivant. C'est le MD qui decide si votre assistance est possible ou non.</p>
+        <p><strong>Assister un jet d'attaque.</strong> Vous distrayez momentanement un ennemi dans un rayon de 1,50 m, ce qui octroie l'Avantage au jet d'attaque suivant de l'un de vos allies contre cet ennemi. Ce benefice expire au debut de votre tour suivant.</p>
+
+        <h3 id="sphere">Sphere <span class="badge" data-status="source">Zone d'effet</span></h3>
+        <p>Une Sphere est une zone d'effet qui s'etend en ligne droite dans toutes les directions a partir d'un point d'origine. L'effet qui cree une Sphere stipule la distance a laquelle elle s'etend, ce qui constitue le rayon de la Sphere. Le point d'origine d'une Sphere est situe dans sa zone d'effet.</p>
+
+        <h3 id="stabilise">Stabilise</h3>
+        <p>Une creature est dite « Stabilisee » si elle a 0 point de vie mais n'a pas a effectuer de jets de sauvegarde contre la mort. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+
+        <h3 id="surprise">Surprise</h3>
+        <p>Une creature prise au depourvu au debut d'un combat est surprise, avec pour consequence de subir le Desavantage a son jet d'Initiative. <em>Lire aussi</em> chapitre 1 (« Combat »).</p>
+      </section>
+
+      <!-- ================= T ================= -->
+      <section class="section" id="lettre-t">
+        <h2>T</h2>
+
+        <h3 id="telepathie">Telepathie</h3>
+        <p>La telepathie est une faculte magique permettant a une creature de communiquer mentalement avec une autre creature a une portee definie. Pour saisir le sens de cette communication, sauf mention contraire, la creature contactee n'est pas tenue de maitriser une langue commune avec le <a href="../dons/telepathe.html" data-ref="telepathe">telepathe</a>, mais elle doit comprendre au moins une langue ou etre elle-meme telepathe.</p>
+        <p>Le telepathe n'a pas besoin de voir la creature contactee, et peut a tout moment debuter le contact telepathique ou y mettre un terme (pas d'action requise). Le contact telepathique ne peut pas etre initie et il est immediatement rompu si le telepathe ou l'autre creature subit l'etat Neutralise. Le contact telepathique est egalement rompu des que la creature contactee quitte la portee de la faculte telepathique, ou que le telepathe contacte une autre creature a portee.</p>
+        <p>Une creature non telepathe peut recevoir des messages telepathiques mais elle ne peut pas initier une telle conversation. Des qu'une conversation telepathique a debute, le non-telepathe peut communiquer mentalement avec le telepathe jusqu'a ce que la liaison telepathique prenne fin.</p>
+
+        <h3 id="teleportation">Teleportation</h3>
+        <p>La teleportation est un mode de transport magique particulier. Se teleporter, c'est disparaitre et reapparaitre ailleurs instantanement, sans avoir a se deplacer dans l'espace intermediaire. Ce mode de transport ne depense pas de deplacement sauf mention contraire dans une regle, et la teleportation ne provoque jamais d'attaque d'Opportunite.</p>
+        <p>Lorsque vous vous teleportez, tout l'equipement que vous portez se teleporte avec vous. Si vous touchez une autre creature en vous teleportant, cette creature ne se teleporte pas avec vous, sauf mention contraire dans l'effet de teleportation.</p>
+        <p>Si l'espace de destination de votre teleportation est occupe par une autre creature ou bloque par un obstacle solide, vous reapparaissez dans l'<a href="./glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> le plus proche de votre choix.</p>
+        <p>La description d'un effet de teleportation vous indique si vous devez voir la destination de cette teleportation.</p>
+
+        <h3 id="tenebres">Tenebres</h3>
+        <p>Une zone de Tenebres est une zone a Visibilite nulle. <em>Lire aussi</em> « Visibilite nulle » et chapitre 1 (« Exploration »).</p>
+
+        <h3 id="terrain-difficile">Terrain difficile</h3>
+        <p>Si un espace est un Terrain difficile, le deplacement y est double. Se deplacer de 1,50 m en Terrain difficile, par exemple, coute 3 m de deplacement. Le Terrain difficile n'est pas cumulatif ; soit un espace est un Terrain difficile, soit il ne l'est pas.</p>
+        <p>Un espace est un Terrain difficile s'il contient l'un des elements ci-apres ou quelque chose d'approchant :</p>
+        <ul>
+          <li>Creature qui n'est ni de taille TP ni votre allie</li>
+          <li>Mobilier adapte a votre categorie de taille ou aux creatures de taille superieure</li>
+          <li>Neige abondante, glace, eboulis ou taillis</li>
+          <li>Element liquide d'une profondeur intermediaire (entre mi-mollets et le niveau de la taille)</li>
+          <li>Ouverture etroite, concue pour une creature dont la categorie de taille est d'un cran inferieure a la votre</li>
+          <li>Pente de 20 degres ou plus</li>
+        </ul>
+
+        <h3 id="test-de-caracteristique">Test de caracteristique</h3>
+        <p>Un test de caracteristique est un Test d20 qui represente le recours a l'une des six caracteristiques, ou a une competence specifique associee a celle-ci, afin de surmonter une epreuve. <em>Lire aussi</em> chapitre 1 (« Tests d20 » et « Maitrise »).</p>
+
+        <h3 id="test-d20">Test d20</h3>
+        <p>La notion de Test d20 englobe les trois principaux jets de d20 du jeu : tests de caracteristique, jets d'attaque et jets de sauvegarde. Si un quelconque element du jeu affecte les Tests d20, il affecte ces trois jets. Il appartient au MD de determiner au cas par cas si un Test d20 se justifie. <em>Lire aussi</em> chapitre 1 (« Tests d20 »).</p>
+
+        <h3 id="type-de-creature">Type de creature</h3>
+        <p>Toutes les creatures, y compris les personnages joueurs, sont associees a un type, categorie propre au jeu. La plupart des personnages joueurs sont de type Humanoide. Voici les types de creature du jeu :</p>
+        <div class="pill-row">
+          <span class="pill">Aberration</span>
+          <span class="pill">Artificiel</span>
+          <span class="pill">Bete</span>
+          <span class="pill">Celeste</span>
+          <span class="pill">Dragon</span>
+          <span class="pill">Elementaire</span>
+          <span class="pill">Fee</span>
+          <span class="pill">Fielon</span>
+          <span class="pill">Geant</span>
+          <span class="pill">Humanoide</span>
+          <span class="pill">Monstruosite</span>
+          <span class="pill">Mort-vivant</span>
+          <span class="pill">Plante</span>
+          <span class="pill">Vase</span>
+        </div>
+        <p>Les types n'ont pas de regle en soi, mais certains elements techniques du jeu affectent distinctement les creatures de types differents.</p>
+      </section>
+
+      <!-- ================= V ================= -->
+      <section class="section" id="lettre-v">
+        <h2>V</h2>
+
+        <h3 id="visibilite-nulle">Visibilite nulle</h3>
+        <p>Vous subissez l'etat Aveugle lorsque vous essayez de voir quelque chose dans un espace a Visibilite nulle. <em>Lire aussi</em> « Aveugle », « Tenebres » et le chapitre 1 (« Exploration »).</p>
+
+        <h3 id="visibilite-reduite">Visibilite reduite</h3>
+        <p>Vous subissez le Desavantage aux tests de Sagesse (Perception) visant a voir quelque chose dans un espace a Visibilite reduite. <em>Lire aussi</em> « Lumiere faible » et chapitre 1 (« Exploration »).</p>
+
+        <h3 id="vision-aveugle">Vision aveugle</h3>
+        <p>Si vous disposez de la <a href="./glossaire.html#vision-aveugle" data-ref="vision-aveugle">Vision aveugle</a>, vous voyez a la portee specifiee sans vous appuyer sur le sens physique de la vue. A cette portee, vous voyez tout ce qui ne beneficie pas d'un Abri total, meme si vous subissez l'etat Aveugle ou vous trouvez dans les Tenebres. A cette portee, vous distinguez en outre ce qui a l'etat Invisible.</p>
+
+        <h3 id="vision-dans-le-noir">Vision dans le noir</h3>
+        <p>Si vous avez la Vision dans le noir, vous voyez dans des conditions de Lumiere faible a la portee indiquee comme s'il s'agissait d'une Lumiere vive, et dans les Tenebres a cette meme portee comme dans une zone de Lumiere faible. Dans les Tenebres, vous discernez les couleurs comme des nuances de gris. <em>Lire aussi</em> chapitre 1 (« Exploration »).</p>
+
+        <h3 id="vision-lucide">Vision lucide</h3>
+        <p>Si vous avez la <a href="./glossaire.html#vision-lucide" data-ref="vision-lucide">Vision lucide</a>, vous beneficiez d'une vision amelioree a une portee specifiee. A cette portee, votre vision s'affranchit des obstacles suivants :</p>
+        <p><strong>Tenebres.</strong> Vous voyez dans les Tenebres normales comme magiques.</p>
+        <p><strong>Invisibilite.</strong> Vous voyez les creatures et objets qui ont l'etat Invisible.</p>
+        <p><strong>Illusions visuelles.</strong> Les illusions visuelles vous paraissent transparentes, et vous reussissez automatiquement vos jets de sauvegarde contre elles.</p>
+        <p><strong>Metamorphoses.</strong> Vous distinguez la forme veritable de toute creature ou tout objet transforme par magie que vous voyez.</p>
+        <p><strong>Plan Ethere.</strong> Vous voyez dans le Plan Ethere. <em>Lire aussi</em> Annexe A (« Plans transitoires »).</p>
+
+        <h3 id="vitesse">Vitesse</h3>
+        <p>Chaque creature dispose d'une Vitesse, expression de la distance en metres qu'elle peut parcourir en se deplacant pendant son tour. <em>Lire aussi</em> « Escalade », « Fouissement », « Nage », « Reptation », « Saut », « Vol » et le chapitre 1 (« Combat »).</p>
+        <p><strong>Vitesses speciales.</strong> Certaines creatures ont des Vitesses speciales de type Vitesse d'escalade, Vitesse de fouissement, Vitesse de nage ou Vitesse de vol, chacune etant definie dans le present glossaire. Si vous disposez de plus d'un type de Vitesse, choisissez celle a laquelle vous recourez lors de votre deplacement ; vous pouvez passer d'une Vitesse a l'autre au cours du meme deplacement. Chaque fois que vous changez de mode, soustrayez la distance deja parcourue a la nouvelle Vitesse. Vous obtenez ainsi la distance que vous pouvez encore parcourir. Si cette soustraction vous donne 0 ou moins, vous ne pouvez pas recourir a la Vitesse resultante pour le deplacement en cours. Exemple : si vous disposez d'une Vitesse de 9 m et d'une Vitesse de vol de 12 m, vous pourriez voler 3 m, vous poser, marcher 3 m, puis reprendre les airs et voler sur 6 m de plus.</p>
+        <p><strong>Alterations de vos Vitesses.</strong> Si un effet augmente ou diminue momentanement votre Vitesse, toute Vitesse speciale dont vous disposez augmente ou diminue du meme montant pour la meme duree. Si, par exemple, votre Vitesse est reduite a 0 et que vous disposez d'une Vitesse d'escalade, celle-ci est egalement reduite a 0. De meme, si votre Vitesse est reduite de moitie et que vous disposez d'une Vitesse de vol, celle-ci est egalement reduite de moitie.</p>
+
+        <h3 id="vitesse-d-escalade">Vitesse d'escalade</h3>
+        <p>Une Vitesse d'escalade peut remplacer la Vitesse pour traverser une surface verticale sans avoir a depenser le deplacement supplementaire ordinairement associe a l'escalade. <em>Lire aussi</em> « Escalade » et « Vitesse ».</p>
+
+        <h3 id="vitesse-de-fouissement">Vitesse de fouissement</h3>
+        <p>Une creature dotee d'une Vitesse de fouissement peut profiter de cette Vitesse pour se mouvoir dans le sable, la terre, la boue ou la glace. La creature ne peut pas evoluer dans le roc, sauf si elle dispose d'un trait special qui lui permet de le faire. <em>Lire aussi</em> « Vitesse ».</p>
+
+        <h3 id="vitesse-de-nage">Vitesse de nage</h3>
+        <p>Une Vitesse de nage permet de nager sans la depense de deplacement supplementaire ordinairement associee a la nage. <em>Lire aussi</em> « Nage » et « Vitesse ».</p>
+
+        <h3 id="vitesse-de-vol">Vitesse de vol</h3>
+        <p>Une Vitesse de vol permet de se deplacer dans les airs. Tant que vous disposez d'une Vitesse de vol, vous restez en l'air jusqu'a ce que vous vous posiez, tombiez ou mouriez. <em>Lire aussi</em> « Vol » et « Vitesse ».</p>
+
+        <h3 id="vol">Vol</h3>
+        <p>Divers effets permettent a une creature de voler. Lorsque vous volez, vous tombez si vous subissez l'etat A terre, ou si votre Vitesse de vol est reduite a 0. Pour rester en l'air dans pareilles circonstances, vous devez disposer du <a href="./glossaire.html#vol-stationnaire" data-ref="vol-stationnaire">Vol stationnaire</a>. <em>Lire aussi</em> « Chute » et « Vitesse de vol ».</p>
+
+        <h3 id="vol-stationnaire">Vol stationnaire</h3>
+        <p>Certaines creatures peuvent rester en vol stationnaire, comme l'indique alors leur profil, et divers sorts et effets octroient cette meme capacite. Le vol stationnaire vous empeche de tomber dans certaines circonstances. <em>Lire aussi</em> « Vol ».</p>
+
+        <h3 id="vulnerabilite">Vulnerabilite</h3>
+        <p>Si vous presentez une Vulnerabilite a un type de degats, ils sont doubles contre vous. La Vulnerabilite ne s'applique qu'une seule fois a des degats donnes. <em>Lire aussi</em> chapitre 1 (« Degats et soins »).</p>
+      </section>
+
+      <!-- ================= Z ================= -->
+      <section class="section" id="lettre-z">
+        <h2>Z</h2>
+
+        <h3 id="zone-d-effet">Zone d'effet</h3>
+        <p>Les descriptions de nombreux sorts et aptitudes precisent qu'ils ont une zone d'effet, qui prend en regle generale l'une des six formes ci-apres. Ces formes sont definies ailleurs dans le present glossaire :</p>
+        <div class="pill-row">
+          <a class="pill" href="#cone">Cone</a>
+          <a class="pill" href="#cube">Cube</a>
+          <a class="pill" href="#cylindre">Cylindre</a>
+          <a class="pill" href="#emanation">Emanation</a>
+          <a class="pill" href="#ligne">Ligne</a>
+          <a class="pill" href="#sphere">Sphere</a>
+        </div>
+        <p>Chaque zone d'effet a un point d'origine, position depuis laquelle se deploient les energies de l'effet. Les regles propres a chaque forme specifient comment positionner ce point d'origine. Si toutes les lignes droites reliant le point d'origine a un endroit de la zone d'effet sont bloquees, cet endroit n'est pas inclus dans la zone d'effet. Pour bloquer une ligne, un obstacle doit offrir un Abri total. <em>Lire aussi</em> « Abri ».</p>
+        <p>Si le createur d'une zone d'effet place celle-ci en un point qu'il ne voit pas et qu'une obstruction (comme un mur) se dresse entre lui et ce point, le point d'origine se manifeste en realite de son cote de l'obstacle.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

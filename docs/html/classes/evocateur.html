@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evocateur — Sous-classe de Magicien</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Magicien|/classes/magicien.html; Evocateur">
+  <main>
+    <article class="sheet" data-entity="sous-classe" data-parent-class="magicien" data-id="evocateur" data-status="source" data-source="img:124">
+      <h1>Evocateur</h1>
+      <div class="pill-row">
+        <span class="badge" data-status="source">Extraction faite (img:124)</span>
+        <span class="pill">Sous-classe de <a href="magicien.html" data-ref="magicien">Magicien</a></span>
+      </div>
+      <p class="provenance">Creez des effets elementaires detonants</p>
+      <p>
+        Vos etudes magiques ont essentiellement porte sur les effets elementaires
+        les plus puissants : gel intense, flammes ardentes, tonnerre roulant,
+        crepitements de la foudre et corrosions de l'acide. Certains evocateurs
+        oeuvrent au service d'armees comme artilleurs specialises. D'autres
+        utilisent leur pouvoir pour proteger autrui, tandis que d'autres encore
+        cherchent avant tout a briller.
+      </p>
+
+      <section class="section">
+        <h2>Aptitudes par niveau</h2>
+        <table>
+          <thead>
+            <tr><th>Niveau de Magicien</th><th>Aptitude</th><th>Effet</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3</td>
+              <td>Evocateur erudit</td>
+              <td>
+                <p>Choisissez deux sorts de Magicien de l'ecole de l'Evocation, chacun du 2e niveau au maximum, et ajoutez-les gratuitement a votre grimoire.</p>
+                <p>En outre, chaque fois que vous recevez l'acces a un nouveau niveau d'emplacements de sort dans cette classe, vous pouvez ajouter gratuitement a votre grimoire un sort de Magicien de l'ecole de l'Evocation. Le sort choisi doit etre d'un niveau pour lequel vous disposez d'emplacements de sort.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">Sort mineur</a> appuye</td>
+              <td>
+                <p>Vos sorts mineurs restent redoutables pour les creatures qui croyaient s'y soustraire. Lorsque vous lancez un sort mineur sur une creature et que vous ratez votre <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> ou que la cible reussit son <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a>, celle-ci subit la moitie des degats eventuels du sort mineur mais aucun effet supplementaire de ce dernier.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><a href="../dons/faconneur.html" data-ref="faconneur">Faconneur</a> de sorts</td>
+              <td>
+                <p>Vous pouvez creer des niches protectrices au sein des zones d'effet de vos sorts d'Evocation. Lorsque vous lancez un sort d'Evocation qui affecte d'autres creatures que vous voyez, vous pouvez en designer un nombre n'excedant pas 1 + le niveau du sort. Les creatures choisies reussissent automatiquement leur jet de sauvegarde contre le sort et ne subissent aucun degat si elles etaient censees les reduire de moitie en cas de reussite.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Evocation amelioree</td>
+              <td>
+                <p>Chaque fois que vous lancez un sort de Magicien de l'ecole de l'Evocation, vous pouvez ajouter votre modificateur d'Intelligence a un <a href="../regles/glossaire.html#jet-de-degats" data-ref="jet-de-degats">jet de degats</a> de ce sort.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Surcharge magique</td>
+              <td>
+                <p>Vous savez desormais augmenter la puissance de vos sorts. Lorsque vous lancez un sort de Magicien avec un emplacement de sort du 1er au 5e niveau et infligeant des degats, vous pouvez infliger le maximum de degats avec ce sort au tour ou vous le lancez.</p>
+                <p>La premiere fois que vous procedez ainsi, vous ne subissez aucun effet indesirable. Si vous recourez de nouveau a cette aptitude avant d'avoir termine un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">Repos long</a>, vous subissez 2d12 degats necrotiques pour chaque niveau de l'emplacement de sort, aussitot apres l'avoir lance. Ces degats ne sont pas affectes par la Resistance et l'Immunite.</p>
+                <p>Chaque fois que vous reutilisez cette aptitude avant de terminer un Repos long, les degats necrotiques par niveau de sort augmentent de 1d12.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

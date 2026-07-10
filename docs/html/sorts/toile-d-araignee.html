@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toile d'araignee — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Toile d'araignee">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="toile-d-araignee" data-status="source"
+             data-source="img:339"
+             data-spell-level="2" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="18m" data-components="V,S,M" data-material="quelques filandres de toile d'araignee"
+             data-duration="conc-1h" data-classes="ensorceleur,magicien"
+             data-save="dex" data-damage-type="feu">
+
+      <h1>Toile d'araignee</h1>
+      <p class="provenance">Invocation du 2e niveau (<a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (quelques filandres de toile d'araignee)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 heure</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous invoquez une masse gluante de fils d'<a href="../creatures/araignee.html" data-ref="araignee">araignee</a> en un point que vous choisissez a portee. Pour toute la duree, cette toile remplit un Cube de 6 m depuis ce point d'origine. Elle constitue un <a href="../regles/glossaire.html#terrain-difficile" data-ref="terrain-difficile">Terrain difficile</a> et la Visibilite est reduite dans la zone.</p>
+        <p>Si les fils ne peuvent pas se fixer a deux volumes solides (comme des murs ou des arbres) et ne sont pas disposes en travers d'un sol, d'un mur ou d'un plafond, la toile s'effondre sur elle-meme et le sort prend fin au debut de votre tour suivant. Invoquee sur une surface plane, la toile presente une epaisseur de 1,50 m.</p>
+        <p>Quand une creature penetre pour la premiere fois d'un tour dans la toile ou qu'elle y commence son tour, elle doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite sous peine de subir l'etat Entrave tant qu'elle reste dans la toile et qu'elle ne s'en est pas liberee.</p>
+        <p>Une creature ainsi Entravee peut consacrer son action a effectuer un test de Force (Athletisme) assorti de votre DD de sauvegarde des sorts. En cas de reussite, elle n'est plus Entravee.</p>
+        <p>La toile est inflammable. Tout Cube de toile de 1,50 m expose aux flammes brule en 1 round et inflige 2d4 degats de feu a toute creature qui commence son tour dans les flammes.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit l'etat Entrave tant qu'elle reste dans la toile et qu'elle ne s'en est pas liberee.</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

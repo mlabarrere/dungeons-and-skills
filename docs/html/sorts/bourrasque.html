@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bourrasque — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Bourrasque">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="bourrasque" data-status="source"
+             data-source="img:250"
+             data-spell-level="2" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="perso" data-components="V,S,M" data-material="une graine de legumineuse"
+             data-duration="conc-1min" data-classes="druide,ensorceleur,magicien,rodeur"
+             data-save="for">
+
+      <h1>Bourrasque</h1>
+      <p class="provenance">Evocation du 2e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>, <a href="../classes/rodeur.html" data-ref="rodeur">Rodeur</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+        <span class="pill">Rodeur</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Personnelle</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (une graine de legumineuse)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Une Ligne de vent fort longue de 18 m et large de 3 m souffle depuis vous dans la direction de votre choix pour toute la duree. Toute creature prise dans la Ligne doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Force sous peine d'etre repoussee de 4,50 m de vous selon la direction de la Ligne. Une creature qui termine son tour dans la Ligne est soumise au meme JS.</p>
+        <p>Toute creature prise dans la Ligne qui se deplace vers vous doit consacrer le double de toute distance parcourue pour toute distance parcourue.</p>
+        <p>La bourrasque disperse les gaz et vapeurs, eteint les bougies et autres flammes exposees de la zone. Les flammes protegees, comme celles des lanternes, vacillent vigoureusement avec un risque de 50 % de s'eteindre.</p>
+        <p>Par une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> a vos tours suivants, vous pouvez changer la direction dans laquelle la Ligne jaillit de vous.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Force)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Repoussee de 4,50 m selon la direction de la Ligne.</td></tr>
+            <tr><td>Reussite</td><td>Non repoussee.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

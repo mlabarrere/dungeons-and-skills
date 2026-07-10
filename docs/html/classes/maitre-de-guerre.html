@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maitre de guerre — Sous-classe de Guerrier</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Guerrier|/classes/guerrier.html; Maitre de guerre">
+  <main>
+    <article class="sheet" data-entity="sous-classe" data-id="maitre-de-guerre" data-parent-class="guerrier" data-status="source" data-source="img:110">
+      <h1>Maitre de guerre</h1>
+      <p class="provenance">Sous-classe de <a href="guerrier.html" data-ref="guerrier">Guerrier</a> — Maitrisez des manoeuvres de combat elaborees.</p>
+      <div class="pill-row">
+        <span class="badge" data-status="source">Extraction faite (img:110)</span>
+        <span class="pill">Classe : Guerrier</span>
+      </div>
+
+      <section class="section">
+        <p>
+          Les maitres de guerre etudient l'art de la bataille, en se nourrissant de
+          techniques martiales transmises au gre des generations. Les plus accomplis
+          d'entre eux sont des figures talentueuses qui conjuguent competences martiales de
+          pointe et connaissance academique dans les domaines de l'histoire, de la theorie
+          et des arts.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Aptitudes par niveau</h2>
+
+        <h3>Niveau 3 : Disciple martial</h3>
+        <p>
+          Le Maitre de guerre recoit la maitrise d'un type d'<a href="../equipement/outils.html" data-ref="outils">outils</a> d'<a href="../historiques/artisan.html" data-ref="artisan">artisan</a> de son choix,
+          et celle d'une competence de son choix parmi les competences proposees au niveau 1
+          pour les Guerriers.
+        </p>
+
+        <h3 style="margin-top:12px;">Niveau 3 : Superiorite martiale</h3>
+        <p>
+          L'experience du champ de bataille affine ses techniques de combat. Il apprend des
+          manoeuvres alimentees par des des speciaux appeles des de Superiorite.
+        </p>
+        <ul>
+          <li><strong>Manoeuvres.</strong> Il apprend trois manoeuvres a choisir dans la section Options de manoeuvre. Il ne peut pas recourir a plus d'une manoeuvre par attaque. Il apprend deux nouvelles manoeuvres aux niveaux 7, 10 et 15 de Guerrier, et peut a chacune de ces etapes remplacer une manoeuvre connue par une autre.</li>
+          <li><strong>Des de Superiorite.</strong> Il dispose de quatre des de Superiorite, des d8. Tout de est depense quand il l'utilise et est recupere en terminant un <a href="../regles/glossaire.html#repos-court" data-ref="repos-court">Repos court</a> ou long. Il gagne un de supplementaire au niveau 7 (cinq des), puis un autre au niveau 15 (six des).</li>
+          <li><strong>Jets de sauvegarde.</strong> Si une manoeuvre impose un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a>, le DD est egal a 8 plus son modificateur de Force ou de Dexterite (au choix) et son bonus de maitrise.</li>
+        </ul>
+
+        <h3 style="margin-top:12px;">Niveau 7 : Observation de l'ennemi</h3>
+        <p>
+          Par une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a>, il discerne les forces et faiblesses d'une creature qu'il
+          voit dans un rayon de 9 m : il sait si elle dispose d'Immunites, de Resistances ou
+          de Vulnerabilites, et le cas echeant a quoi elles sont associees. Une fois cette
+          aptitude utilisee, il doit terminer un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">Repos long</a> pour y recourir de nouveau ; il
+          peut aussi en recuperer une utilisation en depensant un de de Superiorite (pas
+          d'action requise).
+        </p>
+
+        <h3 style="margin-top:12px;">Niveau 10 : Superiorite martiale amelioree</h3>
+        <p>Ses des de Superiorite deviennent des d10.</p>
+
+        <h3 style="margin-top:12px;">Niveau 15 : Implacable</h3>
+        <p>
+          Une fois par tour, lorsqu'il recourt a une manoeuvre, il peut lancer 1d8 et en
+          prendre le resultat au lieu de depenser un de de Superiorite.
+        </p>
+
+        <h3 style="margin-top:12px;">Niveau 18 : Superiorite martiale ultime</h3>
+        <p>Ses des de Superiorite deviennent des d12.</p>
+      </section>
+
+      <section class="section">
+        <h2>Options de manoeuvre</h2>
+        <p class="note">Manoeuvres presentees par ordre alphabetique.</p>
+        <table>
+          <thead><tr><th>Manoeuvre</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Attaque menacante</td><td>Lorsqu'il touche une creature avec un <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a>, il peut depenser un de de Superiorite pour tenter d'effrayer sa cible. Il l'ajoute au <a href="../regles/glossaire.html#jet-de-degats" data-ref="jet-de-degats">jet de degats</a> correspondant. La cible doit reussir un jet de sauvegarde de Sagesse sous peine de subir l'etat Effraye jusqu'a la fin de son tour suivant.</td></tr>
+            <tr><td>Attaque precise</td><td>Lorsqu'il rate un jet d'attaque, il peut depenser un de de Superiorite, le lancer et en ajouter le resultat au jet d'attaque, ce qui peut le convertir en reussite.</td></tr>
+            <tr><td>Autorite naturelle</td><td>Lorsqu'il effectue un test de Charisme (Intimidation, Representation ou Persuasion), il peut depenser un de de Superiorite pour l'ajouter au test.</td></tr>
+            <tr><td>Balayage</td><td>Lorsqu'il touche une creature par un jet d'attaque de corps a corps avec une arme ou a mains nues, il peut depenser un de de Superiorite pour tenter d'infliger des degats a une autre creature situee dans un rayon de 1,50 m de la premiere et a portee de son allonge. Si le resultat de l'attaque de depart aurait suffi a toucher la seconde creature, il lui inflige autant de degats que le resultat du de de Superiorite, du meme type que ceux de l'attaque de depart.</td></tr>
+            <tr><td>Belier</td><td>Lorsqu'il touche une creature par un jet d'attaque avec une arme ou a mains nues, il peut depenser un de de Superiorite pour tenter de repousser la cible. Il ajoute le de de Superiorite au jet de degats. Si elle est de taille G ou inferieur, la cible doit reussir un jet de sauvegarde de Force, sans quoi il l'eloigne de lui en ligne droite d'un maximum de 4,50 m.</td></tr>
+            <tr><td>Chasse-croise</td><td>Lorsqu'il est dans un rayon de 1,50 m d'une creature a son tour, il peut depenser un de de Superiorite pour echanger leurs places, a condition d'y consacrer au moins 1,50 m de deplacement, et que la creature soit consentante et ne subisse pas l'etat Neutralise. Ce deplacement ne provoque pas d'<a href="../regles/glossaire.html#attaques-d-opportunite" data-ref="attaques-d-opportunite">attaques d'Opportunite</a>. Il lance le de de Superiorite : jusqu'au debut de son tour suivant, lui ou l'autre creature (a sa convenance) recoit a la CA un bonus egal au resultat du de.</td></tr>
+            <tr><td>Croc-en-jambe</td><td>Lorsqu'il touche une creature par un jet d'attaque avec une arme ou a mains nues, il peut depenser un de de Superiorite pour l'ajouter au jet de degats. Si elle est de taille G ou inferieur, la cible doit reussir un jet de sauvegarde de Force, sous peine de subir l'etat A terre.</td></tr>
+            <tr><td>Desarmement</td><td>Lorsqu'il touche une creature avec un jet d'attaque, il peut depenser un de de Superiorite pour tenter de desarmer sa cible. Il l'ajoute au jet de degats. La cible doit reussir un jet de sauvegarde de Force, sous peine de lacher l'objet tenu de son choix, qui se retrouve au sol dans son espace.</td></tr>
+            <tr><td>Diversion</td><td>Lorsqu'il touche une creature avec un jet d'attaque, il peut depenser un de de Superiorite pour deconcentrer sa cible. Il l'ajoute au jet de degats. Le prochain jet d'attaque contre la cible effectue par une creature autre que lui recoit l'Avantage si cette attaque intervient avant le debut de son tour suivant.</td></tr>
+            <tr><td>Embuscade</td><td>Lorsqu'il effectue un test de Dexterite (Discretion) ou un jet d'Initiative, il peut depenser un de de Superiorite pour en ajouter le resultat au jet, a condition de ne pas subir l'etat Neutralise.</td></tr>
+            <tr><td>Evaluation tactique</td><td>Lorsqu'il effectue un test d'Intelligence (Histoire ou Investigation) ou de Sagesse (Intuition), il peut depenser un de de Superiorite pour l'ajouter au <a href="../regles/glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a>.</td></tr>
+            <tr><td>Feinte</td><td>Par une action Bonus, il peut depenser un de de Superiorite pour executer une feinte, en ciblant une creature dans un rayon de 1,50 m. Il a l'Avantage a son prochain jet d'attaque contre cette cible a ce tour. Si l'attaque touche, il ajoute le de de Superiorite au jet de degats.</td></tr>
+            <tr><td>Fente</td><td>Par une action Bonus, il peut depenser un de de Superiorite pour entreprendre l'action Pointe. S'il se deplace d'au moins 1,50 m en ligne droite juste avant de toucher avec une attaque de corps a corps dans le cadre de l'action Attaque de ce tour, il peut ajouter le de de Superiorite au jet de degats correspondant.</td></tr>
+            <tr><td>Instruction</td><td>Lorsqu'il entreprend l'action Attaque a son tour, il peut renoncer a l'une de ses attaques pour ordonner a l'un de ses compagnons de porter un coup. Il choisit une creature consentante qui le voit ou l'entend et depense un de de Superiorite. La creature peut aussitot jouer sa Reaction pour effectuer une attaque avec une arme ou a mains nues, en ajoutant le de de Superiorite au jet de degats si l'attaque touche.</td></tr>
+            <tr><td>Jeu de jambes defensif</td><td>Par une action Bonus, il peut depenser un de de Superiorite pour entreprendre l'action Desengagement. Il lance en outre le de et en ajoute le resultat a sa CA jusqu'au debut de son tour suivant.</td></tr>
+            <tr><td>Manoeuvre tactique</td><td>Lorsqu'il touche une creature avec un jet d'attaque, il peut depenser un de de Superiorite pour offrir une position avantageuse a l'un de ses compagnons d'<a href="../equipement/armes.html" data-ref="armes">armes</a>. Il ajoute le de au jet de degats, puis choisit une creature consentante qui le voit ou l'entend. Celle-ci peut jouer sa Reaction pour se deplacer a concurrence de la moitie de sa Vitesse sans provoquer d'attaque d'Opportunite de la cible de son attaque.</td></tr>
+            <tr><td>Parade</td><td>Lorsqu'une autre creature lui inflige des degats avec un jet d'attaque de corps a corps, il peut jouer une Reaction et depenser un de de Superiorite pour reduire ces degats du resultat obtenu en lancant le de de Superiorite + son modificateur de Force ou de Dexterite (au choix).</td></tr>
+            <tr><td>Provocation</td><td>Lorsqu'il touche une creature avec un jet d'attaque, il peut depenser un de de Superiorite pour tenter de pousser la cible a l'attaquer. Il l'ajoute au jet de degats. La cible doit reussir un jet de sauvegarde de Sagesse sous peine d'avoir le Desavantage aux jets d'attaque contre des cibles autres que lui jusqu'a la fin de son tour suivant.</td></tr>
+            <tr><td>Regain</td><td>Par une action Bonus, il peut depenser un de de Superiorite pour raffermir la determination de ses compagnons. Il choisit un allie qui le voit ou l'entend dans un rayon de 9 m. Cette creature acquiert un nombre de <a href="../regles/glossaire.html#points-de-vie-temporaires" data-ref="points-de-vie-temporaires">points de vie temporaires</a> egal au resultat du de + la moitie de son niveau de Guerrier (arrondie a l'inferieur).</td></tr>
+            <tr><td>Riposte</td><td>Lorsqu'une creature le rate avec un jet d'attaque de corps a corps, il peut jouer une Reaction et depenser un de de Superiorite pour effectuer contre elle une attaque de corps a corps avec une arme ou a mains nues. Si l'attaque touche, il ajoute le de de Superiorite au jet de degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

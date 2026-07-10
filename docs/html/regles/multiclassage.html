@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiclassage — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Multiclassage">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="multiclassage" data-status="source" data-source="img:44,45">
+      <h1>Multiclassage</h1>
+      <p class="provenance">Chapitre 2 — Creation de personnage (p. 44-45).</p>
+      <p class="note">Le multiclassage vous permet d'acquerir des niveaux dans plusieurs classes. Cette regle vous permet d'acquerir un niveau dans une nouvelle classe chaque fois que vous progressez en niveau, au lieu de simplement ajouter un niveau a votre classe existante. Ce faisant, vous conjuguez les aptitudes de ces classes pour elaborer un concept de personnage qui s'ecarte de ce que proposerait une seule classe.</p>
+
+      <section class="section">
+        <h2>Prerequis</h2>
+        <p>Pour avoir acces a une nouvelle classe, vous devez disposer d'une valeur de 13 dans la caracteristique principale de cette nouvelle classe et de votre ou vos classes existantes.</p>
+        <div class="callout info">Exemple : un <a href="../classes/barbare.html" data-ref="barbare">Barbare</a> qui decide de se multiclasser en <a href="../classes/druide.html" data-ref="druide">Druide</a> doit disposer d'au moins 13 en Force et en Sagesse, la Force etant la caracteristique principale des Barbares et la Sagesse celle des Druides.</div>
+        <div class="stub">
+          <p><span class="badge" data-status="manquant">Manquant documentaire</span> La table de prerequis par classe (caracteristique principale de chaque classe) n'apparait pas sur les images sources de cette page. Elle figure dans la description de chaque classe au chapitre 3.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Points d'experience</h2>
+        <p>Le cout en <a href="./glossaire.html#points-d-experience" data-ref="points-d-experience">points d'experience</a> demande par l'acquisition d'un niveau se base sur votre niveau de personnage total, comme indique sur la table Progression des personnages, et non sur votre niveau dans une classe donnee.</p>
+        <div class="callout info">Exemple : si vous etes un <a href="../classes/clerc.html" data-ref="clerc">Clerc</a> 6/<a href="../classes/guerrier.html" data-ref="guerrier">Guerrier</a> 1, vous devez gagner assez de PX pour atteindre le niveau 8 avant de pouvoir prendre un deuxieme niveau de Guerrier ou un septieme de Clerc.</div>
+      </section>
+
+      <section class="section">
+        <h2>Points de vie et des de vie</h2>
+        <p>Vous gagnez les <a href="./glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> de votre nouvelle classe selon ce qu'elle octroie au-dela du niveau 1. Vous n'acquerez les points de vie au niveau 1 d'une classe que lorsque votre niveau total de personnage est de 1.</p>
+        <p>Vous ajoutez les <a href="./glossaire.html#des-de-vie" data-ref="des-de-vie">des de vie</a> octroyes par toutes vos classes pour constituer votre reserve de des de vie. Si ces des sont du meme type, vous pouvez les regrouper.</p>
+        <div class="callout info">Exemple : le Guerrier et le <a href="../classes/paladin.html" data-ref="paladin">Paladin</a> utilisent tous deux le d10, si bien que les DV d'un Paladin 5/Guerrier 5 sont dix d10. Si vos classes vous octroient des DV de types differents, tenez un compte separe. Exemple : si vous etes un Clerc 5/Paladin 5, vous disposez comme DV de cinq d8 et de cinq d10.</div>
+      </section>
+
+      <section class="section">
+        <h2>Bonus de maitrise</h2>
+        <p>Votre bonus de maitrise se base sur votre niveau de personnage total, comme indique sur la table Progression des personnages, et non sur votre niveau dans une classe donnee.</p>
+        <div class="callout info">Exemple : si vous etes Guerrier 3/<a href="../classes/roublard.html" data-ref="roublard">Roublard</a> 2, votre bonus de maitrise est celui d'un personnage de niveau 5, soit +3.</div>
+      </section>
+
+      <section class="section">
+        <h2>Maitrises</h2>
+        <p>A l'acquisition de votre premier niveau dans une classe autre que celle de depart, vous ne gagnez que certaines des maitrises de depart de cette nouvelle classe, comme indique dans la description de chaque classe au chapitre 3.</p>
+      </section>
+
+      <section class="section">
+        <h2>Aptitudes de classe</h2>
+        <p>Lorsque vous acquerez un nouveau niveau dans une classe, vous obtenez les aptitudes associees a ce niveau. Certaines aptitudes sont soumises a des regles additionnelles dans le cas d'un multiclassage. Consultez les details concernant le multiclassage compris dans la description des classes concernees.</p>
+        <p>Des regles speciales s'appliquent a Attaque supplementaire, a Sorts et aux aptitudes qui modifient le calcul de la <a href="./glossaire.html#classe-d-armure" data-ref="classe-d-armure">classe d'armure</a> (comme <a href="../dons/defense.html" data-ref="defense">Defense</a> sans armure).</p>
+      </section>
+
+      <section class="section">
+        <h2>Classe d'armure</h2>
+        <p>Si vous disposez de plusieurs methodes de calcul de la classe d'armure, une seule d'entre elles peut s'appliquer a la fois.</p>
+        <div class="callout info">Exemple : un <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>/<a href="../classes/moine.html" data-ref="moine">Moine</a> dote de la Resistance draconique de l'Ensorceleur et de la Defense sans armure du Moine doit choisir laquelle de ces deux aptitudes s'applique pour le calcul de sa CA.</div>
+      </section>
+
+      <section class="section">
+        <h2>Attaque supplementaire</h2>
+        <p>Si vous recevez l'aptitude Attaque supplementaire par le biais de plus d'une classe, ces aptitudes ne se cumulent pas. Vous ne pouvez pas effectuer plus de deux attaques par le biais de cette aptitude, sauf si une aptitude mentionne le contraire (comme l'aptitude Double attaque supplementaire du Guerrier).</p>
+        <p>De meme, la manifestation Lame assoiffee de l'<a href="../classes/occultiste.html" data-ref="occultiste">Occultiste</a>, qui vous octroie l'aptitude Attaque supplementaire par l'intermediaire de votre arme de pacte, ne vous confere pas d'attaque additionnelle si vous disposez deja d'Attaque supplementaire.</p>
+      </section>
+
+      <section class="section">
+        <h2>Sorts</h2>
+        <p>Votre capacite a lancer des sorts depend en partie de vos niveaux combines dans vos diverses classes d'incantateur et en partie de vos niveaux specifiques dans ces classes. Quand vous disposez de l'aptitude Sorts par le biais d'une classe, les regles qui suivent s'appliquent. Si vous vous multiclassez et qu'une seule de vos classes vous octroie l'aptitude Sorts, ce sont les regles de cette classe qui s'appliquent.</p>
+
+        <h3>Sorts prepares</h3>
+        <p>Vous determinez separement quels sorts vous pouvez preparer pour chaque classe, comme le ferait un personnage qui n'a qu'une classe.</p>
+        <div class="callout info">Exemple : si vous etes Ensorceleur 3/<a href="../classes/rodeur.html" data-ref="rodeur">Rodeur</a> 4, vous pouvez preparer cinq sorts de Rodeur du 1er niveau et six sorts d'Ensorceleur du 1er ou 2e niveau (en plus des quatre sorts mineurs d'Ensorceleur).</div>
+        <p>Chaque sort que vous preparez est associe a l'une de vos classes, sachant que vous recourez a la caracteristique d'incantation de cette meme classe lorsque vous lancez ce sort.</p>
+
+        <h3 style="margin-top:12px;">Sorts mineurs</h3>
+        <p>Quand l'un de vos sorts mineurs est cense gagner en puissance a plus haut niveau, cette puissance accrue se base sur votre niveau total et non sur votre niveau dans une classe donnee, sauf mention contraire dans la description du sort.</p>
+      </section>
+
+      <section class="section">
+        <h2>Incantateurs multiclasses : emplacements par niveau de sort</h2>
+        <table>
+          <thead>
+            <tr><th>Niveau</th><th>1er</th><th>2e</th><th>3e</th><th>4e</th><th>5e</th><th>6e</th><th>7e</th><th>8e</th><th>9e</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>2</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>3</td><td>4</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>4</td><td>4</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>5</td><td>4</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>6</td><td>4</td><td>3</td><td>3</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>7</td><td>4</td><td>3</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>8</td><td>4</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>&mdash;</td><td>&mdash;</td></tr>
+            <tr><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>&mdash;</td></tr>
+            <tr><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>&mdash;</td></tr>
+            <tr><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:12px;">Emplacements de sort</h3>
+        <p>Pour determiner vos emplacements de sort disponibles, commencez par ajouter ce qui suit :</p>
+        <ul>
+          <li>Tous vos niveaux de <a href="../classes/barde.html" data-ref="barde">Barde</a>, Clerc, Druide, Ensorceleur et <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>.</li>
+          <li>La moitie de vos niveaux (arrondir au superieur) de Paladin et de Rodeur.</li>
+          <li>Le tiers de vos niveaux (arrondir a l'inferieur) de Guerrier si vous disposez de la sous-classe <a href="../classes/chevalier-occulte.html" data-ref="chevalier-occulte">Chevalier occulte</a> et de Roublard si vous avez la sous-classe <a href="../classes/arnaqueur-arcanique.html" data-ref="arnaqueur-arcanique">Arnaqueur arcanique</a>.</li>
+        </ul>
+        <p>Consultez alors la table Incantateur multiclasse en trouvant ce total dans la colonne Niveau. Pour toute classe dotee de l'aptitude Sorts, vous vous servez des emplacements indiques sur cette ligne pour lancer vos sorts d'un niveau donne.</p>
+        <p>Il peut arriver que la table vous octroie des emplacements de sort d'un niveau superieur aux sorts que vous pouvez preparer. Vous pouvez vous servir de ces emplacements, mais uniquement pour lancer vos sorts de niveau moindre. Quand vous lancez ainsi un sort de moindre niveau qui presente des effets accrus a plus haut niveau, comme <em><a href="../sorts/mains-brulantes.html" data-ref="mains-brulantes">mains brulantes</a></em>, vous pouvez deployer ces effets selon la regle normale.</p>
+        <div class="callout info">Exemple : si vous etes Ensorceleur 3/Rodeur 4, on considere que vous etes un personnage de niveau 5 pour determiner vos emplacements de sort (totalite de vos niveaux d'Ensorceleur plus la moitie de vos niveaux de Rodeur). Comme le montre la table Incantateur multiclasse, vous disposez de quatre emplacements du 1er niveau, trois du 2e niveau et deux du 3e niveau. Vous ne pouvez en revanche pas lancer de sort du 3e niveau, pas plus que vous ne pouvez preparer de sort du 2e niveau de Rodeur. Vous pouvez dans ce cas vous servir des emplacements de sort des niveaux correspondants pour lancer les sorts que vous preparez, avec la possibilite dans certains cas d'ameliorer leurs effets.</div>
+
+        <h3 style="margin-top:12px;">Magie de pacte</h3>
+        <p>Si vous disposez de l'aptitude Magie de pacte (tiree de la classe d'Occultiste) en plus de celle de Sorts, vous pouvez vous servir des emplacements de sort acquis par Magie de pacte pour lancer des sorts que vous avez prepares par le biais de classes dotees de l'aptitude Sorts ; de meme, les emplacements acquis par l'aptitude Sorts vous permettent de lancer les sorts d'Occultiste que vous avez prepares.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

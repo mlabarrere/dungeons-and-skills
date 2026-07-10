@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Araignee geante — Creature</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Creatures|/creatures/index.html; Araignee geante">
+  <main>
+    <article class="sheet" data-entity="creature" data-id="araignee-geante" data-status="source" data-source="img:346">
+      <h1>Araignee geante</h1>
+      <p class="provenance">Profil de creature (Annexe B). Bete de taille G, non alignee. Source : img:346.</p>
+
+      <section class="section">
+        <h2>Profil</h2>
+        <table>
+          <tbody>
+            <tr><th>Taille / Type</th><td>Bete de taille G, non alignee</td></tr>
+            <tr><th>FP</th><td>1 (200 PX ; BM +2)</td></tr>
+            <tr><th>CA</th><td>14</td></tr>
+            <tr><th>Initiative</th><td>+3 (13)</td></tr>
+            <tr><th>PV</th><td>26 (4d10 + 4)</td></tr>
+            <tr><th>Vitesse</th><td>9 m, escalade 9 m</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Caracteristiques</h2>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Score</th><th>Mod</th><th>JS</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Dexterite</td><td>16</td><td>+3</td><td>+3</td></tr>
+            <tr><td>Constitution</td><td>12</td><td>+1</td><td>+1</td></tr>
+            <tr><td>Intelligence</td><td>2</td><td>-4</td><td>-4</td></tr>
+            <tr><td>Sagesse</td><td>11</td><td>+0</td><td>+0</td></tr>
+            <tr><td>Charisme</td><td>4</td><td>-3</td><td>-3</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Competences, sens et langues</h2>
+        <table>
+          <tbody>
+            <tr><th>Competences</th><td>Discretion +7, Perception +4</td></tr>
+            <tr><th>Sens</th><td><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a> 18 m, <a href="../regles/glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a> 14</td></tr>
+            <tr><th>Langues</th><td>aucune</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Traits</h2>
+        <table>
+          <thead><tr><th>Trait</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Marche dans les toiles</td><td>L'<a href="./araignee.html" data-ref="araignee">araignee</a> n'est pas soumise aux contraintes de deplacement imposees par les toiles et connait la position de toute autre creature en contact avec la meme toile qu'elle.</td></tr>
+            <tr><td><a href="../sorts/pattes-d-araignee.html" data-ref="pattes-d-araignee">Pattes d'araignee</a></td><td>L'araignee peut parcourir les parois les plus difficiles a escalader, y compris les plafonds, sans passer par un <a href="../regles/glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a>.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Actions</h2>
+        <table>
+          <thead><tr><th>Action</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Morsure</td><td>Corps a corps : +5, allonge 1,50 m. Touche : 7 (1d8 + 3) degats perforants plus 7 (2d6) degats de poison.</td></tr>
+            <tr><td><a href="../sorts/toile-d-araignee.html" data-ref="toile-d-araignee">Toile d'araignee</a> (recharge 5-6)</td><td>JS Dexterite : DD 13, une creature que l'araignee voit dans un rayon de 18 m. Echec : la cible subit l'etat Entrave jusqu'a ce que la toile soit detruite (CA 10 ; 5 pv ; Vulnerabilite aux degats de feu ; Immunite contre les degats psychiques et de poison).</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

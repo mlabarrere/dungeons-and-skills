@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grimoire D&D — Accueil</title>
+  <link rel="stylesheet" href="assets/grimoire.css">
+</head>
+<body data-root="." data-breadcrumb="Accueil">
+  <main>
+    <article class="sheet">
+      <h1>Grimoire D&D</h1>
+      <p class="note">
+        Base documentaire de reference pour creer et faire evoluer les personnages
+        de la table. Source de verite en HTML. Aide personnelle, usage prive de table :
+        les images du livre (<code>docs/img/</code>) restent la verite ultime, le contenu
+        n'est pas une republication exhaustive des regles.
+      </p>
+
+      <section class="section">
+        <h2>Sections</h2>
+        <div class="grid-3">
+          <div class="field">
+            <span class="label">Regles du jeu (chap. 1)</span>
+            <p class="small-value"><a href="regles/comment-jouer.html">Comment jouer</a></p>
+            <p class="small-value"><a href="regles/tests-et-defis.html">Tests, JS, competences</a></p>
+            <p class="small-value"><a href="regles/combat.html">Combat</a></p>
+            <p class="small-value"><a href="regles/exploration.html">Exploration</a></p>
+            <p class="small-value"><a href="regles/interaction-sociale.html">Interaction sociale</a></p>
+            <p class="small-value"><a href="regles/glossaire.html">Glossaire &amp; etats</a></p>
+          </div>
+          <div class="field">
+            <span class="label">Creation &amp; regles avancees</span>
+            <p class="small-value"><a href="regles/creation-personnage.html">Creation de personnage</a></p>
+            <p class="small-value"><a href="regles/multiclassage.html">Multiclassage</a></p>
+            <p class="small-value"><a href="regles/langues.html">Langues</a></p>
+            <p class="small-value"><a href="regles/incantation.html">Incantation</a></p>
+            <p class="small-value"><a href="regles/babioles.html">Babioles</a></p>
+            <p class="small-value"><a href="regles/multivers.html">Le Multivers</a></p>
+            <p class="small-value"><a href="regles/protocole.html">Protocole (méthode fiches)</a></p>
+            <p class="small-value"><a href="regles/modele-graphe-provenance.html">Graphe de provenance</a></p>
+            <p class="small-value"><a href="regles/generateur-online.html">Cadrage du generateur</a></p>
+          </div>
+          <div class="field">
+            <span class="label">Classes</span>
+            <p class="small-value"><a href="classes/index.html">Les 12 classes + 48 sous-classes</a></p>
+          </div>
+          <div class="field">
+            <span class="label">Creatures</span>
+            <p class="small-value"><a href="creatures/index.html">Bestiaire (Annexe B)</a></p>
+            <p class="note">51 profils : betes de Forme sauvage, invocations, familiers.</p>
+          </div>
+          <div class="field">
+            <span class="label">Origines</span>
+            <p class="small-value"><a href="especes/index.html">Especes &amp; lignages</a></p>
+            <p class="small-value"><a href="historiques/index.html">Historiques</a></p>
+          </div>
+          <div class="field">
+            <span class="label"><a href="./dons/index.html" data-ref="index-dons">Dons</a></span>
+            <p class="small-value"><a href="dons/index.html">Index des dons</a></p>
+          </div>
+          <div class="field">
+            <span class="label"><a href="./equipement/index.html" data-ref="index-equipement">Equipement</a></span>
+            <p class="small-value"><a href="equipement/index.html">Armes, armures, outils, paquetages</a></p>
+          </div>
+          <div class="field">
+            <span class="label">Sorts</span>
+            <p class="small-value"><a href="sorts/index.html">Index des sorts (filtrable)</a></p>
+            <p class="note">388 sorts extraits (A a Z) ; index filtrable par niveau, ecole, classe.</p>
+          </div>
+          <div class="field">
+            <span class="label">Personnages</span>
+            <p class="small-value"><a href="personnages/index.html">Fiches de la table</a></p>
+            <p class="small-value"><a href="personnages/medicis.html">Medicis (druide 1)</a></p>
+          </div>
+          <div class="field">
+            <span class="label">Meta</span>
+            <p class="small-value"><a href="styleguide.html">Styleguide</a></p>
+            <p class="small-value"><a href="CONVENTIONS.md">Conventions d'ecriture</a></p>
+            <p class="small-value"><a href="UTILISATION.md">Comment utiliser la base (prompt)</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Comment lire une fiche</h2>
+        <p>Chaque valeur porte un statut : ce qui est <em>fourni</em> par le joueur,
+          <em>source</em> (regle du livre), <em>calcule</em>, <em>deduit</em>,
+          <em>recommande</em>, ou a traiter (<em>manquant</em>, <em>a arbitrer</em>,
+          <em>incoherent</em>, <em>conflit</em>). Voir la palette dans le
+          <a href="styleguide.html">styleguide</a>.</p>
+        <div class="pill-row">
+          <span class="badge" data-status="fourni">Fourni</span>
+          <span class="badge" data-status="source">Source</span>
+          <span class="badge" data-status="calcule">Calcule</span>
+          <span class="badge" data-status="deduit">Deduit</span>
+          <span class="badge" data-status="recommande">Recommande</span>
+          <span class="badge" data-status="manquant">Manquant</span>
+          <span class="badge" data-status="conflit">Conflit</span>
+        </div>
+      </section>
+
+      <div class="callout ok">
+        Base HTML (source de verite) quasi complete (livre 5.5) : 12 classes + 48 sous-classes,
+        10 especes (+ lignages), 16 historiques, 75 dons, equipement complet, 388 sorts (index
+        filtrable), 51 profils de creature, glossaire + etats, multivers, regles + graphe de
+        provenance en SVG. Maillage type Wikipedia en place : 3740 liens inter-fiches (docs/_engine/autolink.mjs). Etat de couverture : <code>docs/_analysis/couverture.md</code>.
+      </div>
+    </article>
+  </main>
+  <script src="assets/grimoire.js" defer></script>
+</body>
+</html>

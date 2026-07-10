@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tsunami — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Tsunami">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="tsunami" data-status="source"
+             data-source="img:341"
+             data-spell-level="8" data-school="invocation"
+             data-casting-time="1min" data-ritual="false" data-concentration="true"
+             data-range="1500m" data-components="V,S"
+             data-duration="conc-6round" data-classes="druide"
+             data-save="for" data-damage-type="contondant">
+
+      <h1>Tsunami</h1>
+      <p class="provenance">Invocation du 8e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 8</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">1 minute</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">1,5 km</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 6 rounds</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Une muraille d'eau se materialise en un point que vous choisissez a portee. Ce mur peut atteindre jusqu'a 90 m de longueur, 90 m de hauteur et 15 m d'epaisseur. Le mur persiste pour toute la duree.</p>
+        <p>Quand le mur apparait, chaque creature prise dans sa zone effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Force et subit 6d10 degats contondants en cas d'echec, la moitie en cas de reussite.</p>
+        <p>Au debut de chacun de vos tours suivant son apparition, le mur et toutes les creatures qu'il englobe s'eloignent de 15 m de vous. Toutes les creatures de taille TG ou inferieure qui occupent un espace dans lequel le mur se deplace doivent reussir un jet de sauvegarde de Force sous peine de subir 5d10 degats contondants. Une meme creature ne peut subir ces degats qu'une fois par round. A la fin du tour, la hauteur du mur diminue de 15 m et les degats qu'il peut infliger aux rounds suivants diminuent de 1d10. Une fois que la hauteur du mur est de 0 m, le sort prend fin.</p>
+        <p>Une creature prise dans le mur ne peut se deplacer qu'en nageant. La force de la vague est toutefois telle que la creature doit pour ce faire reussir un test de Force (Athletisme) contre le DD de sauvegarde du sort. En cas d'echec, elle ne peut pas se deplacer. Une creature qui se deplace hors du mur tombe au sol.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Force)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>6d10 degats contondants a l'apparition (5d10 puis degats decroissants les rounds suivants).</td></tr>
+            <tr><td>Reussite</td><td>Moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

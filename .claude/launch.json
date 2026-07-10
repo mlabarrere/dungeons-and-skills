@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "docs-root",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["docs/_engine/serve.mjs", "8000"],
+      "port": 8000
+    },
+    {
+      "name": "dnd-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "static-docs",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4599", "--directory", "docs/html/personnages"],
+      "port": 4599
+    },
+    {
+      "name": "grimoire-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4321", "--directory", "docs/html"],
+      "port": 4321
+    },
+    {
+      "name": "grimoire-static-alt",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4322", "--directory", "docs/html"],
+      "port": 4322
+    },
+    {
+      "name": "grimoire-verify",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4788", "--directory", "docs/html"],
+      "port": 4788
+    }
+  ]
+}

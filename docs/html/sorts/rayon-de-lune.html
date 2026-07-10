@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rayon de lune — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Rayon de lune">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="rayon-de-lune" data-status="source"
+             data-source="img:323"
+             data-spell-level="2" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="36m" data-components="V,S,M"
+             data-material="une feuille de cocculus"
+             data-duration="conc-1min" data-classes="druide"
+             data-save="con" data-damage-type="radiant">
+
+      <h1>Rayon de lune</h1>
+      <p class="provenance">Evocation du 2e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">36 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (une feuille de cocculus)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Un large rayon de lueur tenue argentee plonge sous forme d'un Cylindre de 1,50 m de rayon et 12 m de haut, centre sur un point a portee. Jusqu'a la fin du sort, le Cylindre est empli de <a href="../regles/glossaire.html#lumiere-faible" data-ref="lumiere-faible">Lumiere faible</a> et vous pouvez entreprendre l'action Magie a vos tours suivants pour deplacer le Cylindre d'un maximum de 18 m.</p>
+        <p>Lorsque le Cylindre apparait, toute creature prise a l'interieur effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Constitution. En cas d'echec, elle subit 2d10 degats radiants et, si elle est metamorphosee (par le sort <em>metamorphose</em>, par exemple), elle reprend sa forme veritable et ne peut plus en changer tant qu'elle reste dans le Cylindre. En cas de reussite, la creature subit uniquement la moitie de ces degats. Toute creature qui voit la zone du sort se deplacer dans son espace, ou qui penetre dans la zone ou y termine son tour est egalement soumise a ce JS. Une meme creature n'effectue en aucun cas ce JS plus d'une fois par tour.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Constitution)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 2d10 degats radiants et, si elle est metamorphosee, reprend sa forme veritable sans pouvoir en changer tant qu'elle reste dans le Cylindre.</td></tr>
+            <tr><td>Reussite</td><td>Subit uniquement la moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <table>
+          <thead><tr><th>Emplacement</th><th>Degats radiants</th></tr></thead>
+          <tbody>
+            <tr><td>Niveau 2</td><td>2d10</td></tr>
+            <tr><td>Par niveau au-dela du 2e</td><td>+1d10</td></tr>
+          </tbody>
+        </table>
+        <p class="note">« Emplacement de niveau superieur. Les degats augmentent de 1d10 par niveau d'emplacement au-dela du 2e. »</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

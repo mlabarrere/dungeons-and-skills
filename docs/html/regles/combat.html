@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combat — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Combat">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="combat" data-status="source" data-source="img:20,23">
+      <h1>Combat</h1>
+      <p class="note">Chapitre 1 « Comment jouer ». Regles d'action et de combat : ce que vous pouvez entreprendre a votre tour, comment se deroule un affrontement, comment on attaque et comment on gere les degats, les soins et la mort. <span class="badge" data-status="source">Source</span>  (p.15, 23-31).</p>
+
+      <section class="section" data-source="img:20">
+        <h2>Actions</h2>
+        <p>Lorsque votre activite ne se limite pas a un deplacement ou une simple communication, vous entreprenez generalement une action. La table Actions dresse la liste des actions principales du jeu, mieux detaillees dans le glossaire de regles. Personnages et monstres peuvent tenter d'autres activites que celles couvertes par ces actions ; de nombreuses aptitudes de classe fournissent d'autres options, et vous pouvez en improviser : le MD vous dira si l'action est possible et quel genre de <a href="./glossaire.html#test-d20" data-ref="test-d20">Test d20</a> effectuer, le cas echeant.</p>
+
+        <h3>Actions</h3>
+        <table>
+          <thead><tr><th>Action</th><th>Resume</th></tr></thead>
+          <tbody>
+            <tr><td>Attaque</td><td>Attaquer avec une arme ou une <a href="./glossaire.html#attaque-a-mains-nues" data-ref="attaque-a-mains-nues">attaque a mains nues</a>.</td></tr>
+            <tr><td>Desengagement</td><td>Votre deplacement ne provoque pas d'attaque d'Opportunite pour le reste du tour.</td></tr>
+            <tr><td>Esquive</td><td>Jusqu'au debut de votre tour suivant, les jets d'attaque vous visant ont le Desavantage et vous avez l'Avantage aux JS Dexterite. Vous perdez ce benefice si vous subissez l'etat Neutralise ou si votre Vitesse tombe a 0.</td></tr>
+            <tr><td>Etude</td><td>Effectuer un test d'Intelligence (Arcanes, Histoire, Investigation, Nature ou Religion).</td></tr>
+            <tr><td>Furtivite</td><td>Effectuer un test de Dexterite (Discretion).</td></tr>
+            <tr><td>Influence</td><td>Effectuer un test de Charisme (Intimidation, Persuasion, Representation ou Tromperie) ou de Sagesse (Dressage) pour faire evoluer l'attitude d'une creature.</td></tr>
+            <tr><td>Intention</td><td>S'appreter a entreprendre une action en reponse a un declencheur que vous definissez.</td></tr>
+            <tr><td>Magie</td><td>Lancer un sort, utiliser un objet magique ou recourir a une aptitude magique.</td></tr>
+            <tr><td>Observation</td><td>Effectuer un test de Sagesse (Intuition, Medecine, Perception ou Survie).</td></tr>
+            <tr><td>Pointe</td><td>Pour le reste du tour, vous beneficiez d'un deplacement supplementaire egal a votre Vitesse.</td></tr>
+            <tr><td>Soutien</td><td>Assister une autre creature pour un <a href="./glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a> ou un <a href="./glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a>, ou lui administrer les premiers soins.</td></tr>
+            <tr><td>Utilisation</td><td>Utiliser un objet non magique.</td></tr>
+          </tbody>
+        </table>
+        <p>Les actions peuvent aussi intervenir dans d'autres contextes : lors d'une interaction sociale, vous pouvez tenter d'influencer une creature ou recourir a l'action Observation pour interpreter son langage corporel, mais pas les deux en meme temps. De meme, en explorant un donjon, vous ne pouvez pas simultanement entreprendre l'action Observation pour chercher les pieges et l'action Soutien pour aider un autre personnage a debloquer une porte (avec l'action Utilisation).</p>
+
+        <h3>Une chose a la fois</h3>
+        <p>Le jeu recourt aux actions pour gerer ce que vous pouvez faire a un instant donne. Vous ne pouvez entreprendre qu'une seule action a la fois. Ce principe est primordial au combat.</p>
+
+        <h3>Actions Bonus</h3>
+        <p>Divers sorts, aptitudes de classe et autres capacites vous permettent d'entreprendre une action supplementaire a votre tour, ce qu'on appelle une <a href="./glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> (l'aptitude Ruse du <a href="../classes/roublard.html" data-ref="roublard">Roublard</a>, par exemple). Vous ne pouvez entreprendre une action Bonus que si une aptitude speciale, un sort ou un autre element du jeu specifie que vous pouvez accomplir quelque chose par une action Bonus ; sans cela, vous n'avez pas d'action Bonus a entreprendre. Vous ne pouvez entreprendre qu'une seule action Bonus par tour : s'il vous faut choisir laquelle si vous avez acces a plusieurs. Vous choisissez a quel moment de votre tour l'entreprendre, sauf mention contraire. Tout ce qui vous prive de la capacite a entreprendre des actions vous empeche aussi d'entreprendre une action Bonus.</p>
+
+        <h3>Reactions</h3>
+        <p>Certaines aptitudes speciales, situations et sorts vous permettent d'effectuer une action speciale appelee Reaction. Une Reaction est une reponse instantanee a un declencheur, qui peut intervenir a votre tour ou a celui de quelqu'un d'autre. L'attaque d'Opportunite est la Reaction la plus courante. Lorsque vous jouez votre Reaction, vous devez attendre le debut de votre tour suivant pour en jouer une nouvelle. Si la Reaction interrompt le tour d'une autre creature, celle-ci peut reprendre son tour juste apres la Reaction. En termes de sequence, une Reaction intervient aussitot apres son declencheur, sauf mention contraire.</p>
+      </section>
+
+      <section class="section" data-source="img:15">
+        <h2>Combat</h2>
+        <p>Les aventuriers font face a de nombreux monstres redoutables et d'infames adversaires. C'est dans ces moments qu'un combat eclate souvent.</p>
+
+        <h3>L'ordre du combat</h3>
+        <p>Le combat classique est un affrontement entre deux camps, qui se traduit par des coups portes avec diverses <a href="../equipement/armes.html" data-ref="armes">armes</a>, des feintes, des parades, des deplacements tactiques et des incantations de sorts. Le jeu structure le combat en cycles faits de rounds et de tours. Un round represente un intervalle d'environ 6 secondes dans l'univers de jeu. Au cours d'un round, chaque participant a la bataille joue un tour. L'ordre des tours est determine au debut du combat, lorsque chacun lance le de d'Initiative. Une fois que tout le monde a joue son tour, l'affrontement se prolonge par un round supplementaire si aucun des camps n'est vaincu.</p>
+
+        <h3>Combat etape par etape</h3>
+        <ol>
+          <li><strong>Definir les positions.</strong> Le maitre du donjon determine ou se trouvent les differents personnages et monstres. Prenant en compte l'ordre de marche des aventuriers ou les positions annoncees, le MD fixe le positionnement des adversaires, en decidant a quelle distance et dans quelle direction ils sont.</li>
+          <li><strong>Jouer l'Initiative.</strong> Tous les participants au combat jouent l'Initiative, pour determiner l'ordre des tours.</li>
+          <li><strong>Sequence des tours.</strong> Chaque participant joue son tour, selon l'ordre d'Initiative. Une fois que tous les participants ont joue leur tour, le round prend fin. Repetez cette etape jusqu'a ce que l'affrontement cesse.</li>
+        </ol>
+
+        <h3>Initiative</h3>
+        <p>L'Initiative determine la sequence des tours durant un combat. Lorsque le combat commence, chaque participant joue l'Initiative : chacun effectue un test de Dexterite qui determine son rang dans l'ordre d'Initiative. Le MD joue l'Initiative des monstres ; dans le cas d'un groupe de creatures identiques, il peut se contenter d'un seul jet, chaque membre du groupe ayant le meme rang.</p>
+        <ul>
+          <li><strong>Surprise.</strong> Si un combattant est surpris quand le combat s'engage, il a le Desavantage a son jet d'Initiative. Exemple : une creature embusquee engage le combat contre un adversaire qui ne se doute de rien ; cet adversaire est surpris.</li>
+          <li><strong>Ordre d'Initiative.</strong> Le total du test d'un combattant est appele rang d'Initiative ou simplement Initiative. Le MD classe les combattants par ordre decroissant de leur Initiative, definissant l'ordre dans lequel les participants agissent round apres round. L'ordre d'Initiative reste inchange d'un round a l'autre.</li>
+          <li><strong>Egalite.</strong> En cas d'egalite, le MD decide dans quel ordre agissent les monstres en question, tandis que les joueurs decident de l'ordre pour les PJ ex aequo. Entre un monstre et un <a href="./glossaire.html#personnage-joueur" data-ref="personnage-joueur">personnage joueur</a>, le MD tranche.</li>
+        </ul>
+
+        <h3>Votre tour</h3>
+        <p>A votre tour, vous pouvez vous deplacer d'une distance n'excedant pas votre Vitesse et entreprendre une action. Vous decidez ce qui intervient en premier entre votre deplacement et votre action. Les principales actions possibles figurent a « Actions », plus haut. Les aptitudes de personnage et les profils de monstre fournissent d'autres options.</p>
+        <ul>
+          <li><strong>Communiquer.</strong> Vous pouvez communiquer par les moyens disponibles, par quelques mots ou gestes brefs, sans depenser action ni deplacement. Les echanges plus longs, explications detaillees ou negociations avec l'ennemi demandent une action (le plus souvent l'action Influence).</li>
+          <li><strong>Interagir avec des objets ou l'environnement.</strong> Vous pouvez interagir avec un objet ou un element de l'environnement gratuitement, durant votre deplacement ou votre action (mais pas les deux), par exemple ouvrir une porte en plein deplacement. Pour interagir avec un second objet, il vous faut entreprendre l'action Utilisation. Le MD peut exiger l'action Utilisation quand un soin particulier est demande ou pour une difficulte inhabituelle.</li>
+          <li><strong>Ne rien faire a votre tour.</strong> Vous pouvez renoncer a votre deplacement ou a votre action, et meme ne rien faire du tout. Si vous n'arrivez pas a decider, rabattez-vous sur l'action Esquive ou l'action Intention.</li>
+        </ul>
+
+        <h3>Fin du combat</h3>
+        <p>Le combat prend fin lorsque l'un des camps est vaincu, que les creatures qui le composent aient trouve la mort, perdu connaissance, pris la fuite ou se soient rendues. La fin des hostilites peut aussi intervenir si les deux camps s'accordent pour y mettre un terme.</p>
+      </section>
+
+      <section class="section" data-source="img:24,25">
+        <h2>Deplacement et position</h2>
+        <p>A votre tour, vous pouvez vous deplacer d'une distance n'excedant pas votre Vitesse. Vous pouvez aussi decider de ne pas vous deplacer. Votre deplacement peut inclure des portions d'escalade, de nage, de reptation et de saut ; ces modes peuvent s'associer avec votre deplacement de base ou constituer l'integralite de votre deplacement. Quels que soient ces modes, vous deduisez la distance couverte par chacune de ces parties de votre Vitesse, jusqu'a ce qu'il ne vous en reste plus ou que vous ayez termine. La Vitesse d'un personnage se determine a sa creation ; celle d'un monstre est indiquee dans son profil.</p>
+
+        <h3>Terrain difficile</h3>
+        <p>Les combattants sont souvent ralentis par un <a href="./glossaire.html#terrain-difficile" data-ref="terrain-difficile">Terrain difficile</a> : meubles bas, gravats, taillis, escaliers raides, neige et boue en sont des exemples. Toute distance parcourue sur un Terrain difficile vous coute le double en termes de deplacement, meme quand plusieurs criteres de la zone en font un Terrain difficile.</p>
+
+        <h3>Jeu sur quadrillage</h3>
+        <p>Si vous jouez avec des plans quadrilles et des figurines ou jetons, respectez ces regles.</p>
+        <ul>
+          <li><strong>Cases.</strong> Chaque case represente un carre de 1,50 m de cote.</li>
+          <li><strong>Vitesse.</strong> Deplacez-vous case par case, en segmentant votre deplacement par tranches de 1,50 m. Pour savoir combien votre Vitesse represente de cases, divisez-la par 3 puis doublez le resultat. Ainsi, une Vitesse de 9 m correspond a 6 cases.</li>
+          <li><strong>Entrer dans une case.</strong> Penetrer dans une case demande un « droit d'entree » : 1 case de deplacement pour entrer dans une case inoccupee adjacente (orthogonalement ou diagonalement). Penetrer dans une case de Terrain difficile coute 2 cases de deplacement.</li>
+          <li><strong>Angles.</strong> Un deplacement en diagonale ne permet pas de traverser l'angle d'un mur, d'un gros arbre ou d'un autre element qui remplit son propre espace.</li>
+          <li><strong>Distances.</strong> Pour determiner la distance entre deux choses, comptez les cases a partir d'une case adjacente a l'une des choses en arretant le compte dans l'espace de l'autre, en empruntant le chemin le plus court.</li>
+        </ul>
+
+        <h3>Scinder son deplacement</h3>
+        <p>Vous pouvez scinder votre deplacement a votre tour, en le repartissant a votre guise avant et apres toute action, action Bonus et Reaction. Avec une Vitesse de 9 m, vous pouvez par exemple vous deplacer de 3 m, entreprendre une action, puis vous deplacer encore de 6 m.</p>
+
+        <h3>Plonger a terre</h3>
+        <p>A votre tour, vous pouvez vous octroyer l'etat A terre sans depenser d'action ni le moindre deplacement, a condition que votre Vitesse soit superieure a 0.</p>
+
+        <h3>Taille des creatures</h3>
+        <p>Toute creature se classe dans une <a href="./glossaire.html#categorie-de-taille" data-ref="categorie-de-taille">categorie de taille</a>, qui determine la largeur de l'espace carre qu'elle occupe sur un plan. Les categories vont de la plus petite (TP) a la plus grande (Gig). L'espace d'une creature correspond a la zone qu'elle controle au combat. La taille d'un personnage est determinee par son espece, celle d'un monstre figure sur son profil.</p>
+
+        <h3>Tailles et espaces des creatures</h3>
+        <table>
+          <thead><tr><th>Cat. de taille</th><th>Espace (metres)</th><th>Espace (cases)</th></tr></thead>
+          <tbody>
+            <tr><td>Tres petite (TP)</td><td>75 cm de cote</td><td>4 par case</td></tr>
+            <tr><td>Petite (P)</td><td>1,50 m de cote</td><td>1 case</td></tr>
+            <tr><td>Moyenne (M)</td><td>1,50 m de cote</td><td>1 case</td></tr>
+            <tr><td>Grande (G)</td><td>3 m de cote</td><td>4 cases (2 sur 2)</td></tr>
+            <tr><td>Tres grande (TG)</td><td>4,50 m de cote</td><td>9 cases (3 sur 3)</td></tr>
+            <tr><td>Gigantesque (Gig)</td><td>6 m de cote</td><td>16 cases (4 sur 4)</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Se deplacer au milieu d'autres creatures</h3>
+        <p>Au cours de votre deplacement, vous pouvez traverser l'espace d'un allie, d'une creature dotee de l'etat Neutralise, d'une creature de taille TP ou d'une creature dont la categorie de taille est superieure ou inferieure a la votre d'au moins deux crans. L'espace d'une autre creature est considere pour vous comme un Terrain difficile, sauf si elle est votre alliee ou de taille TP. Vous ne pouvez pas terminer volontairement votre deplacement dans un <a href="./glossaire.html#espace-occupe" data-ref="espace-occupe">espace occupe</a> par une autre creature. Si, pour une raison quelconque, vous terminez un tour dans un espace ou se trouve une autre creature, vous subissez l'etat A terre, sauf si vous etes de taille TP ou d'une categorie de taille superieure a celle de l'autre creature.</p>
+      </section>
+
+      <section class="section" data-source="img:25,26">
+        <h2>Effectuer une attaque</h2>
+        <p>Lorsque vous entreprenez l'action Attaque, vous effectuez une attaque. Certaines autres actions, actions Bonus et Reactions le permettent aussi. Que vous utilisiez une arme de corps a corps ou une arme a distance, ou que vous effectuiez votre jet d'attaque dans le cadre d'un sort, toute attaque obeit a la structure suivante :</p>
+        <ol>
+          <li><strong>Choisissez une cible.</strong> Designez une cible a portee de votre attaque : une creature, un objet ou un lieu.</li>
+          <li><strong>Determinez les modificateurs.</strong> Le MD determine si la cible dispose d'un abri et si un Avantage ou un Desavantage s'applique. Sorts, capacites speciales et autres effets peuvent entrainer des malus ou bonus a votre jet d'attaque.</li>
+          <li><strong>Resolvez l'attaque.</strong> Vous effectuez le jet d'attaque. S'il touche, vous determinez les degats, sauf si l'attaque specifie autre chose. Certaines attaques entrainent des effets speciaux en plus des degats ou a leur place.</li>
+        </ol>
+
+        <h3>Abri</h3>
+        <p>Les murs, arbres, creatures et autres obstacles peuvent fournir un abri, qui protege la creature. Il existe trois degres d'abri qui octroient chacun un benefice different. Une cible ne peut profiter d'un abri qu'en cas d'attaque ou d'effet provenant de l'autre cote de l'abri. Quand une cible se trouve derriere plusieurs elements d'abri, seul celui qui fournit le niveau de <a href="../dons/protection.html" data-ref="protection">protection</a> le plus eleve est pris en compte ; les degres ne se cumulent pas.</p>
+        <table>
+          <thead><tr><th>Degre</th><th>Benefice pour la cible</th><th>Octroye par</th></tr></thead>
+          <tbody>
+            <tr><td>Partiel</td><td>+2 a la CA et aux JS Dexterite</td><td>Une autre creature ou un objet qui protege au moins la moitie du corps de la cible.</td></tr>
+            <tr><td>Superieur</td><td>+5 a la CA et aux JS Dexterite</td><td>Un objet qui abrite au moins les trois quarts du corps de la cible.</td></tr>
+            <tr><td>Total</td><td>Ne peut etre directement ciblee</td><td>Un objet qui abrite integralement la cible.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Assaillants et cibles non visibles</h3>
+        <p>Lorsque vous effectuez un jet d'attaque contre une cible que vous ne voyez pas, vous avez le Desavantage au jet ; si la cible ne se trouve pas a l'endroit que vous visez, votre attaque rate. Lorsqu'une creature ne vous voit pas, vous avez l'Avantage aux jets d'attaque contre elle. Si vous etes cache quand vous effectuez un jet d'attaque, votre position est revelee que votre attaque touche ou rate.</p>
+
+        <h3>Attaques a distance</h3>
+        <p>Lorsque vous effectuez une attaque a distance, vous tirez a l'arc, lancez une hache ou des projectiles vers un adversaire distant. De nombreux sorts font aussi intervenir une attaque a distance.</p>
+        <ul>
+          <li><strong>Portee.</strong> Vous ne pouvez effectuer une attaque a distance que si votre cible se situe a une portee specifiee. Certaines attaques (comme celles a l'arc long) presentent deux portees : la plus petite est la portee normale, la plus grande la portee longue. Votre jet d'attaque a le Desavantage au-dela de la portee normale et vous ne pouvez pas attaquer une cible au-dela de la portee longue.</li>
+          <li><strong>En combat rapproche.</strong> Vous avez le Desavantage au jet d'attaque a distance si vous vous trouvez dans un rayon de 1,50 m d'un ennemi qui vous voit et qui ne subit pas l'etat Neutralise.</li>
+        </ul>
+
+        <h3>Attaques de corps a corps</h3>
+        <p>Une attaque de corps a corps vous permet d'attaquer une cible a portee d'allonge. Elle fait generalement intervenir une arme tenue en main ou une attaque a mains nues. De nombreux monstres attaquent avec griffes, crocs et autres parties du corps ; quelques sorts font aussi intervenir des attaques de corps a corps.</p>
+        <p><strong>Allonge.</strong> La plupart des creatures ont une allonge de 1,50 m et peuvent donc attaquer des cibles situees a 1,50 m ou moins lorsqu'elles effectuent une attaque de corps a corps. Certaines creatures disposent d'attaques de corps a corps dont l'allonge est superieure a 1,50 m, comme l'indique leur description.</p>
+
+        <h3>Attaques d'Opportunite</h3>
+        <p>Les combattants restent a l'affut des erreurs de l'ennemi. Si vous vous eloignez d'un ennemi sans prendre <a href="../historiques/garde.html" data-ref="garde">garde</a>, vous risquez de provoquer une attaque d'Opportunite.</p>
+        <ul>
+          <li><strong>Eviter les <a href="./glossaire.html#attaques-d-opportunite" data-ref="attaques-d-opportunite">attaques d'Opportunite</a>.</strong> Vous pouvez les eviter en entreprenant l'action Desengagement. Lorsque vous vous teleportez ou que l'on vous deplace sans y consacrer de deplacement, action ou Reaction, vous ne provoquez pas d'attaque d'Opportunite (par exemple si une explosion vous projette hors de la zone d'allonge d'un ennemi, ou si une chute vous eloigne).</li>
+          <li><strong>Effectuer une attaque d'Opportunite.</strong> Vous pouvez effectuer une attaque d'Opportunite lorsqu'une creature que vous voyez quitte votre zone d'allonge. Vous devez jouer votre Reaction pour effectuer une attaque de corps a corps avec une arme ou une attaque a mains nues, contre cette creature. L'attaque intervient juste avant que la creature ait quitte votre zone d'allonge.</li>
+        </ul>
+
+        <h3>Combat monte</h3>
+        <p>Une creature consentante dont la categorie de taille est au moins d'un cran superieure a un cavalier peut lui servir de monture si son anatomie le permet, en accord avec les regles suivantes.</p>
+        <ul>
+          <li><strong>Monter et descendre.</strong> Durant un deplacement, vous pouvez monter sur une creature situee dans un rayon de 1,50 m de vous ou en descendre. Il vous faut consacrer la moitie de votre Vitesse (arrondie a l'inferieur). Par exemple, avec une Vitesse de 9 m, monter sur un cheval coute 4,50 m de deplacement.</li>
+          <li><strong>Controler une monture.</strong> Vous ne pouvez controler une monture que si elle est formee a recevoir un cavalier. L'Initiative d'une monture controlee est la meme que la votre ; elle se deplace selon vos instructions durant votre tour, ou elle n'a que trois options d'action : Desengagement, Esquive et Pointe. Une monture independante (qui vous accepte comme cavalier mais ne se laisse pas controler) garde son propre rang d'Initiative et agit comme bon lui semble.</li>
+          <li><strong>Chuter de monture.</strong> Si un effet est sur le point de deplacer votre monture contre sa volonte alors que vous la montez, vous devez reussir un JS Dexterite DD 10 sous peine d'en tomber et de subir l'etat A terre dans un <a href="./glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> a 1,50 m ou moins de la monture. En combat monte, vous effectuez ce meme JS si vous ou votre monture etes jetes a terre.</li>
+        </ul>
+
+        <h3>Combat subaquatique</h3>
+        <p>Sous l'eau, les combats obeissent aux regles suivantes. Lorsqu'une creature qui n'est pas dotee d'une <a href="./glossaire.html#vitesse-de-nage" data-ref="vitesse-de-nage">Vitesse de nage</a> effectue une attaque de corps a corps sous l'eau avec une arme, elle a le Desavantage au jet d'attaque, sauf si l'arme inflige des degats perforants. Sous l'eau, une attaque a distance avec une arme rate automatiquement sa cible si celle-ci se trouve au-dela de la portee normale ; le jet d'attaque a le Desavantage contre une cible a portee normale. Enfin, tout ce qui se trouve sous l'eau recoit la Resistance aux degats de feu.</p>
+      </section>
+
+      <section class="section" data-source="img:27,28,29">
+        <h2>Degats et soins</h2>
+        <p>Les blessures et la mort constituent une menace recurrente dans D&amp;D. Elles sont gerees par les regles suivantes.</p>
+
+        <h3>Points de vie</h3>
+        <p>Les <a href="./glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> (ou simplement pv) representent la robustesse et l'envie de vivre. Votre maximum de points de vie correspond au nombre de points de vie dont vous disposez quand vous etes indemne. Vos points de vie actuels sont compris entre ce maximum et 0, valeur minimale absolue. Chaque fois que vous subissez des degats, ceux-ci sont deduits de vos points de vie. La perte de points de vie n'a aucun effet sur vos capacites jusqu'a ce que vous tombiez a 0. Si vos points de vie sont inferieurs ou egaux a la moitie de votre maximum, vous etes <a href="./glossaire.html#en-peril" data-ref="en-peril">En peril</a>, ce qui n'a pas d'effet mecanique en soi mais peut en activer d'autres.</p>
+
+        <h3>Jets de degats</h3>
+        <p>Chaque arme, sort ou capacite de monstre qui cause des dommages specifie les degats infliges. Vous lancez le ou les des de degats, ajoutez les eventuels modificateurs, puis infligez les degats totaux a la cible. Si un malus s'applique, il est possible d'infliger 0 degat, mais pas de degats negatifs. Lorsque vous attaquez avec une arme, vous ajoutez aux degats votre modificateur de caracteristique, le meme que celui du jet d'attaque. Sauf mention contraire, vous n'ajoutez pas votre modificateur de caracteristique a des degats fixes non issus d'un jet.</p>
+
+        <h3>Coups critiques</h3>
+        <p>Lorsque vous obtenez un <a href="./glossaire.html#coup-critique" data-ref="coup-critique">Coup critique</a>, vous infligez des degats supplementaires : lancez deux fois les des de degats, ajoutez-les, puis ajoutez normalement les modificateurs applicables. Exemple : un Coup critique avec une dague fait lancer 2d4 au lieu de 1d4, puis on ajoute les modificateurs. Si l'attaque fait intervenir d'autres des de degats (comme l'Attaque sournoise du Roublard), on les lance egalement deux fois.</p>
+
+        <h3>Jets de sauvegarde et degats</h3>
+        <ul>
+          <li><strong>Degats contre plusieurs cibles.</strong> Lorsqu'un effet inflige des degats et impose simultanement un <a href="./glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> a plusieurs cibles, vous ne jouez qu'une seule fois les degats ; le resultat s'applique a toutes les cibles. Ainsi, quand un <a href="../classes/magicien.html" data-ref="magicien">Magicien</a> lance <em><a href="../sorts/boule-de-feu.html" data-ref="boule-de-feu">boule de feu</a></em>, les des de degats ne sont lances qu'une fois pour toutes les creatures prises dans la deflagration.</li>
+          <li><strong>Reduction de moitie.</strong> De nombreux effets a jet de sauvegarde infligent des degats reduits de moitie (<a href="./glossaire.html#arrondis-a-l-inferieur" data-ref="arrondis-a-l-inferieur">arrondis a l'inferieur</a>) aux cibles qui reussissent leur JS. Ces demi-degats sont egaux a la moitie des degats qui seraient infliges en cas de JS rate.</li>
+        </ul>
+
+        <h3>Types de degats</h3>
+        <p>Chaque fois que des degats s'appliquent, ils ont un type (feu ou tranchants, par exemple). Les types de degats, enumeres dans le glossaire de regles, n'ont pas de regle en soi, mais d'autres elements de regle comme la Resistance font appel a eux.</p>
+
+        <h3>Resistances et Vulnerabilites</h3>
+        <p>Certains objets et creatures presentent une Resistance ou une Vulnerabilite a certains types de degats. Si vous beneficiez de la Resistance a un type de degats, ces degats sont reduits de moitie contre vous. Si vous presentez une Vulnerabilite, ils sont doubles contre vous.</p>
+        <ul>
+          <li><strong>Pas de cumul.</strong> Si plusieurs Resistances ou Vulnerabilites affectent un meme type de degats, une seule Resistance ou Vulnerabilite est prise en compte.</li>
+          <li><strong>Ordre d'application.</strong> Les modificateurs aux degats s'appliquent dans l'ordre suivant : ajustements (bonus, malus, multiplicateurs, etc.) en premier ; Resistance en deuxieme ; Vulnerabilite en troisieme.</li>
+        </ul>
+
+        <h3>Immunite</h3>
+        <p>Divers objets et creatures beneficient de l'Immunite contre certains degats et certains etats. L'Immunite contre un type de degats signifie que vous ne subissez jamais de degats de ce type ; contre un etat, elle indique que celui-ci ne peut pas vous affecter.</p>
+
+        <h3>Soins</h3>
+        <p>Les points de vie se recuperent par magie (le sort <em>soins</em>, une <em>potion de guerison</em>) ou par un <a href="./glossaire.html#repos-court" data-ref="repos-court">Repos court</a> ou long. Lorsqu'une guerison opere, ajoutez les points de vie restitues a vos points de vie actuels. Vos points de vie ne peuvent pas depasser votre maximum : tout exces de guerison est perdu. Exemple : si vous recevez 8 points de vie de guerison alors que vous en avez 14 et que votre maximum est de 20, vous n'en recuperez que 6, pas 8.</p>
+
+        <h3>Tomber a 0 point de vie</h3>
+        <p>Quand une creature tombe a 0 point de vie, soit elle meurt sur le coup, soit elle perd connaissance.</p>
+        <ul>
+          <li><strong>Mort des monstres.</strong> Un monstre meurt des qu'il tombe a 0 point de vie, mais le MD peut faire abstraction de cette regle pour un monstre donne et le traiter comme un personnage.</li>
+          <li><strong>Maximum de points de vie de 0.</strong> Une creature meurt si son maximum de points de vie atteint 0. Certains effets absorbent l'energie vitale et reduisent ce maximum.</li>
+          <li><strong>Degats massifs.</strong> Lorsque des degats font tomber un personnage a 0 point de vie et qu'il reste un excedent apres cette reduction, il meurt sur le coup si cet excedent est au moins egal a son maximum de points de vie. Exemple : maximum de 12, 6 pv actuels, 18 degats subis : il tombe a 0 avec un excedent de 12, egal a son maximum, donc il meurt.</li>
+          <li><strong>Trepas d'un personnage.</strong> Si votre personnage meurt, d'autres pourraient le ramener d'entre les morts (avec le sort <em><a href="../sorts/rappel-a-la-vie.html" data-ref="rappel-a-la-vie">rappel a la vie</a></em>, par exemple). Vous pouvez aussi discuter avec le MD de la creation d'un nouveau personnage.</li>
+          <li><strong>Perte de connaissance.</strong> Si vous tombez a 0 point de vie sans mourir sur le coup, vous recevez l'etat Inconscient jusqu'a ce que vous regagniez au moins 1 point de vie, et vous etes soumis aux jets de sauvegarde contre la mort.</li>
+        </ul>
+
+        <h3>Jets de sauvegarde contre la mort</h3>
+        <p>Chaque fois que vous commencez votre tour avec 0 point de vie, vous devez effectuer un JS special appele <a href="./glossaire.html#jet-de-sauvegarde-contre-la-mort" data-ref="jet-de-sauvegarde-contre-la-mort">jet de sauvegarde contre la mort</a>, afin de determiner si vous glissez vers le trepas ou vous accrochez a la vie. Contrairement aux autres JS, celui-ci n'est lie a aucune valeur de caracteristique.</p>
+        <ul>
+          <li><strong>Trois reussites / echecs.</strong> Lancez 1d20 : 10 ou plus est une reussite, sinon un echec. A la troisieme reussite, vous etes Stabilise ; au troisieme echec, vous mourez. Reussites et echecs n'ont pas besoin d'etre consecutifs ; les compteurs sont remis a zero lorsque vous recuperez au moins un point de vie ou etes Stabilise.</li>
+          <li><strong>Resultat de 1 ou 20.</strong> Un 1 sur le d20 vaut deux echecs. Un 20 vous fait recuperer 1 point de vie.</li>
+          <li><strong>Degats subis a 0 point de vie.</strong> Si vous subissez des degats a 0 point de vie, vous subissez un echec ; si ces degats correspondent a un Coup critique, deux echecs. Si les degats sont au moins egaux a votre maximum de points de vie, vous mourez.</li>
+        </ul>
+
+        <h3>Stabiliser un personnage</h3>
+        <p>Vous pouvez entreprendre l'action Soutien pour tenter de stabiliser une creature a 0 point de vie, ce qui demande de reussir un test de Sagesse (Medecine) DD 10. Une creature Stabilisee n'est pas soumise aux JS contre la mort, mais garde l'etat Inconscient. Si elle subit le moindre degat, elle n'est plus Stabilisee. Une creature Stabilisee qui n'est pas soignee recupere 1 point de vie au bout de 1d4 heures.</p>
+        <div class="callout"><strong><a href="./glossaire.html#assommer-une-creature" data-ref="assommer-une-creature">Assommer une creature</a>.</strong> Lorsque vous etes cense faire tomber une creature a 0 point de vie avec une attaque de corps a corps, vous pouvez a la place la reduire a 1 point de vie en lui imposant l'etat Inconscient. Elle entame alors un Repos court, a la fin duquel cet etat prend fin. L'etat prend aussi fin si elle recupere au moins 1 point de vie, ou si quelqu'un consacre une action a lui administrer les premiers secours et reussit un test de Sagesse (Medecine) DD 10.</div>
+
+        <h3>Points de vie temporaires</h3>
+        <p>Certains sorts et effets octroient des <a href="./glossaire.html#points-de-vie-temporaires" data-ref="points-de-vie-temporaires">points de vie temporaires</a>, sorte de matelas de securite contre la perte de veritables points de vie.</p>
+        <ul>
+          <li><strong>Priorite.</strong> Si vous disposez de points de vie temporaires et subissez des degats, ce sont ces points qui sont perdus en premier, tout excedent etant soustrait a vos veritables points de vie. Exemple : 5 pv temporaires et 7 degats subis : vous perdez les 5 temporaires, puis subissez 2 degats.</li>
+          <li><strong>Duree.</strong> Les points de vie temporaires persistent jusqu'a ce qu'ils soient depenses ou que vous terminiez un <a href="./glossaire.html#repos-long" data-ref="repos-long">Repos long</a>.</li>
+          <li><strong>Non cumulables.</strong> Ils ne se cumulent pas : si vous en avez deja et en recevez d'autres, c'est a vous de decider si vous gardez les votres ou les remplacez. Exemple : si un sort octroie 12 pv temporaires alors que vous en avez deja 10, vous pouvez en avoir 12 ou 10, mais pas 22.</li>
+          <li><strong>Ni points de vie ni soins.</strong> Les points de vie temporaires ne s'ajoutent pas a vos points de vie, les soins ne permettent pas de les recuperer, et leur acquisition n'est pas une guerison. Une creature a 0 point de vie qui acquiert des points de vie temporaires ne reprend pas connaissance : seule la guerison peut la sauver.</li>
+        </ul>
+
+        <h3>Les etats</h3>
+        <p>De nombreux effets imposent un etat, condition temporaire qui influe sur les capacites du sujet. Les etats suivants trouvent leur definition dans le glossaire de regles :</p>
+        <div class="pill-row">
+          <span class="pill">A terre</span>
+          <span class="pill">Agrippe</span>
+          <span class="pill">Assourdi</span>
+          <span class="pill">Aveugle</span>
+          <span class="pill">Charme</span>
+          <span class="pill">Effraye</span>
+          <span class="pill">Empoisonne</span>
+          <span class="pill">Entrave</span>
+          <span class="pill">Epuisement</span>
+          <span class="pill">Etourdi</span>
+          <span class="pill">Inconscient</span>
+          <span class="pill">Invisible</span>
+          <span class="pill">Neutralise</span>
+          <span class="pill">Paralyse</span>
+          <span class="pill">Petrifie</span>
+        </div>
+        <ul>
+          <li><strong>Duree.</strong> Un etat persiste pour toute la duree specifiee par l'effet qui l'a impose, ou jusqu'a ce qu'on y mette fin (l'etat A terre prend fin quand on se releve).</li>
+          <li><strong>Pas de cumul.</strong> Si plusieurs effets vous imposent le meme etat, chaque application a sa propre duree, mais les effets de l'etat n'empirent pas pour autant. Un etat n'a pas de degres de severite. L'etat Epuisement constitue une exception : ses effets empirent quand l'etat vous est impose alors que vous le subissez deja.</li>
+        </ul>
+        <div class="callout"><strong>Repos.</strong> Les aventuriers doivent se reposer. Toute creature peut prendre des Repos courts d'une heure en pleine journee ou un Repos long de 8 heures pour la cloturer. La recuperation de points de vie constitue l'un des principaux benefices des repos. Le glossaire de regles fournit les regles propres aux Repos courts et longs.</div>
+      </section>
+
+      <section class="section" data-source="img:30,31">
+        <h2>Exemples de combat</h2>
+        <p class="note">La base documentaire propose deux scenes jouees illustrant le tour par tour : un exemple d'affrontement contre des squelettes dans le chateau de Ravenloft, puis un exemple de combat et de degats montrant sorts, jets de sauvegarde de zone et destruction de creatures.</p>
+        <div class="callout info">Les dialogues detailles de ces exemples ne sont pas transcrits ici : se reporter aux pages sources (img:30 img:31).</div>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

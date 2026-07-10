@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tieffelin — Espece</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Especes|/especes/index.html; Tieffelin">
+  <main>
+    <article class="sheet" data-entity="espece" data-id="tieffelin" data-status="source" data-source="img:196">
+      <h1>Tieffelin</h1>
+      <p class="provenance">Espece du chapitre 4 (origines). Source : img:196.</p>
+
+      <section class="section">
+        <h2>Caracteristiques d'espece</h2>
+        <div class="grid-3">
+          <div class="field"><span class="label"><a href="../regles/glossaire.html#type-de-creature" data-ref="type-de-creature">Type de creature</a></span><span class="value">Humanoide</span></div>
+          <div class="field"><span class="label">Taille</span><span class="value">M ou P</span><span class="provenance">M (1,20 m a 2,15 m) ou P (90 cm a 1,20 m), a choisir a la selection.</span></div>
+          <div class="field"><span class="label">Vitesse</span><span class="value">9 m</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Traits speciaux</h2>
+        <table>
+          <thead><tr><th>Trait</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Heritage fielon</td><td>Choisir un heritage (abyssal, chtonien ou infernal) et recevoir son benefice de niveau 1. Aux niveaux 3 et 5, apprendre le sort indique dans la table ; ce sort est toujours prepare, lancable une fois sans emplacement (recupere apres un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">repos long</a>) ou avec un emplacement adequat. Caracteristique d'incantation : Intelligence, Sagesse ou Charisme, choisie a la selection de l'heritage.</td></tr>
+            <tr><td>Presence d'outre-monde</td><td>Vous connaissez le <a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">sort mineur</a> <em>thaumaturgie</em> ; il utilise la meme caracteristique d'incantation que le trait Heritage fielon.</td></tr>
+            <tr><td><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a></td><td>18 m.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Heritages fielons</h2>
+        <table>
+          <thead>
+            <tr><th>Heritage</th><th>Niveau 1</th><th>Niveau 3</th><th>Niveau 5</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Abyssal</strong></td>
+              <td>Resistance aux degats de poison ; sort mineur <em><a href="../sorts/bouffee-de-poison.html" data-ref="bouffee-de-poison">bouffee de poison</a></em>.</td>
+              <td><em><a href="../sorts/rayon-empoisonne.html" data-ref="rayon-empoisonne">rayon empoisonne</a></em></td>
+              <td><em><a href="../sorts/immobilisation-de-personne.html" data-ref="immobilisation-de-personne">immobilisation de personne</a></em></td>
+            </tr>
+            <tr>
+              <td><strong>Chtonien</strong></td>
+              <td>Resistance aux degats necrotiques ; sort mineur <em><a href="../sorts/contact-glacial.html" data-ref="contact-glacial">contact glacial</a></em>.</td>
+              <td><em><a href="../sorts/simulacre-de-vie.html" data-ref="simulacre-de-vie">simulacre de vie</a></em></td>
+              <td><em><a href="../sorts/rayon-affaiblissant.html" data-ref="rayon-affaiblissant">rayon affaiblissant</a></em></td>
+            </tr>
+            <tr>
+              <td><strong>Infernal</strong></td>
+              <td>Resistance aux degats de feu ; sort mineur <em><a href="../sorts/trait-de-feu.html" data-ref="trait-de-feu">trait de feu</a></em>.</td>
+              <td><em><a href="../sorts/represailles-infernales.html" data-ref="represailles-infernales">represailles infernales</a></em></td>
+              <td><em>tenebres</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="tieffelin-abyssal" data-entity="lignage" data-id="tieffelin-abyssal" data-source="img:196">
+        <h2>Heritage : Abyssal</h2>
+        <div class="pill-row">
+          <span class="pill">Resistance poison</span>
+          <span class="pill">N1 : bouffee de poison</span>
+          <span class="pill">N3 : rayon empoisonne</span>
+          <span class="pill">N5 : immobilisation de personne</span>
+        </div>
+        <p class="note">Lie a l'entropie des Abysses, au chaos du Pandemonium et au desespoir des Carceres ; la plupart ont du sang de demon.</p>
+      </section>
+
+      <section class="section" id="tieffelin-chtonien" data-entity="lignage" data-id="tieffelin-chtonien" data-source="img:196">
+        <h2>Heritage : Chtonien</h2>
+        <div class="pill-row">
+          <span class="pill">Resistance necrotique</span>
+          <span class="pill">N1 : contact glacial</span>
+          <span class="pill">N3 : simulacre de vie</span>
+          <span class="pill">N5 : rayon affaiblissant</span>
+        </div>
+        <p class="note">Attire par les Carceres, la Gehenne et l'Hades ; ancetre fielon Neutre Mauvais (guenaude nocturne, yugoloth, succube...).</p>
+      </section>
+
+      <section class="section" id="tieffelin-infernal" data-entity="lignage" data-id="tieffelin-infernal" data-source="img:196">
+        <h2>Heritage : Infernal</h2>
+        <div class="pill-row">
+          <span class="pill">Resistance feu</span>
+          <span class="pill">N1 : trait de feu</span>
+          <span class="pill">N3 : represailles infernales</span>
+          <span class="pill">N5 : tenebres</span>
+        </div>
+        <p class="note">Lie a la Gehenne, aux Neuf Enfers et a l'Acheron ; beaucoup ont un demon pour ancetre.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

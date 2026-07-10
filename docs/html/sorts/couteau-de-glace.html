@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Couteau de glace — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Couteau de glace">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="couteau-de-glace" data-status="source"
+             data-source="img:271"
+             data-spell-level="1" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="18m" data-components="S,M"
+             data-material="une goutte d'eau ou un morceau de glace"
+             data-duration="instantanee" data-classes="druide,ensorceleur,magicien"
+             data-save="dex" data-damage-type="froid">
+
+      <h1>Couteau de glace</h1>
+      <p class="provenance">Invocation du 1er niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 1</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">S, M (une goutte d'eau ou un morceau de glace)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous creez un fragment de glace que vous lancez sur une creature a portee. Effectuez une <a href="../regles/glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">attaque de sort</a> a distance contre la cible. Si l'attaque touche, la cible subit 1d10 degats perforants. Que l'attaque touche ou rate, le fragment explose alors. La cible et toutes les creatures situees dans un rayon de 1,50 m d'elle doivent reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite, sous peine de subir 2d6 degats de froid.</p>
+        <p class="note">Le sort inflige deux types de degats : les 1d10 degats perforants de l'attaque directe contre la cible, puis les 2d6 degats de froid de l'explosion (jet de sauvegarde de Dexterite pour la cible et les creatures a proximite).</p>
+
+        <h3 style="margin-top: 12px;">Effet de l'explosion (jet de sauvegarde de Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 2d6 degats de froid.</td></tr>
+            <tr><td>Reussite</td><td>Aucun degat de froid.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Emplacement de niveau superieur. Les degats de froid augmentent de 1d6 par niveau d'emplacement au-dela du 1er.</p>
+        <table>
+          <thead><tr><th>Emplacement</th><th>Degats de froid</th></tr></thead>
+          <tbody>
+            <tr><td>Niveau 1</td><td>2d6</td></tr>
+            <tr><td>Par niveau au-dela du 1er</td><td>+1d6</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

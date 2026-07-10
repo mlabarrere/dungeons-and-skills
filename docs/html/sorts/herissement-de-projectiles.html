@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Herissement de projectiles — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Herissement de projectiles">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="herissement-de-projectiles" data-status="source"
+             data-source="img:293"
+             data-spell-level="3" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="perso" data-components="V,S,M"
+             data-material="une arme de corps a corps ou a distance d'une valeur minimale de 1 pc"
+             data-duration="instantanee" data-classes="rodeur"
+             data-save="dex" data-damage-type="force">
+
+      <h1>Herissement de projectiles</h1>
+      <p class="provenance">Invocation du 3e niveau (<a href="../classes/rodeur.html" data-ref="rodeur">Rodeur</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 3</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="pill">Rodeur</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Personnelle</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (une arme de corps a corps ou a distance d'une valeur minimale de 1 pc)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous brandissez l'arme utilisee pour l'incantation afin d'invoquer une gerbe d'<a href="../equipement/armes.html" data-ref="armes">armes</a> spectrales identiques (ou de projectiles associes) jaillissant vers l'exterieur avant de disparaitre. Chaque creature que vous voyez et choisissez dans un Cone de 18 m effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite et subit 5d8 degats de force en cas d'echec, la moitie en cas de reussite.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 5d8 degats de force.</td></tr>
+            <tr><td>Reussite</td><td>Subit la moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <table>
+          <thead><tr><th>Emplacement</th><th>Degats de force</th></tr></thead>
+          <tbody>
+            <tr><td>Niveau 3</td><td>5d8</td></tr>
+            <tr><td>Par niveau au-dela du 3e</td><td>+1d8</td></tr>
+          </tbody>
+        </table>
+        <p class="note">« Emplacement de niveau superieur. Les degats augmentent de 1d8 par niveau d'emplacement au-dela du 3e. »</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teleportation — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Teleportation">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="teleportation" data-status="source"
+             data-source="img:334"
+             data-spell-level="7" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="3m" data-components="V"
+             data-duration="instantanee" data-classes="barde,ensorceleur,magicien"
+             data-save="-" data-damage-type="-">
+
+      <h1>Teleportation</h1>
+      <p class="provenance">Invocation du 7e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 7</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">3 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Ce sort vous transporte instantanement, ainsi que huit creatures consentantes que vous voyez a portee, ou bien un seul objet que vous voyez a portee, vers la destination selectionnee. Si vous ciblez un objet, il doit etre de taille G ou inferieure et ne doit pas etre porte par une creature non consentante.</p>
+        <p>Vous devez connaitre la destination que vous choisissez et elle doit se trouver sur le meme plan d'existence que vous. Votre niveau de familiarite avec la destination determine si vous y parvenez effectivement. Le MD lance 1d100 en consultant la table Resultat de teleportation et l'explication correspondante.</p>
+
+        <h3 style="margin-top: 12px;">Resultat de teleportation</h3>
+        <table>
+          <thead><tr><th>Familiarite</th><th>Incident</th><th>Zone comparable</th><th>Deviation</th><th>Sur place</th></tr></thead>
+          <tbody>
+            <tr><td>Cercle permanent</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>01-00</td></tr>
+            <tr><td>Objet lie</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>01-00</td></tr>
+            <tr><td>Grande familiarite</td><td>01-05</td><td>06-13</td><td>14-24</td><td>25-00</td></tr>
+            <tr><td>Vu plusieurs fois</td><td>01-33</td><td>34-43</td><td>44-53</td><td>54-00</td></tr>
+            <tr><td>Vu une fois ou decrit</td><td>01-43</td><td>44-53</td><td>54-73</td><td>74-00</td></tr>
+            <tr><td>Destination factice</td><td>01-50</td><td>51-00</td><td>&mdash;</td><td>&mdash;</td></tr>
+          </tbody>
+        </table>
+
+        <p><strong>Familiarite.</strong> Les termes de la colonne Familiarite de la table se comprennent comme suit :</p>
+        <ul>
+          <li>« Cercle permanent » fait reference a un <a href="./cercle-de-teleportation.html" data-ref="cercle-de-teleportation">cercle de teleportation</a> permanent dont vous connaissez la sequence de runes.</li>
+          <li>« Objet lie » indique que vous detenez un objet rapporte de la destination souhaitee au cours des six derniers mois, comme un livre issu de la bibliotheque d'un Magicien.</li>
+          <li>« Grande familiarite » correspond a un endroit ou vous avez passe du temps, un lieu que vous avez etudie en profondeur ou un site que vous voyez a l'incantation du sort.</li>
+          <li>« Vu plusieurs fois » represente un lieu que vous avez vu plus d'une fois, mais que vous connaissez finalement assez peu.</li>
+          <li>« Vu une fois ou decrit » correspond a un site que vous n'avez vu qu'une fois, eventuellement par magie, ou un endroit qu'on vous a decrit avec un certain detail, eventuellement par le biais d'une carte.</li>
+          <li>« Destination factice » correspond a un lieu qui n'existe pas. Vous avez par exemple tente de scruter le sanctuaire de l'ennemi, mais avez ete dupe par une illusion, a moins que vous cherchiez a atteindre un lieu qui n'existe plus.</li>
+        </ul>
+        <p><strong>Incident.</strong> La magie imprevisible de ce sort se traduit par une mesaventure. Chaque creature teleportee (ou l'objet cible) subit 3d10 degats de force et le MD rejoue sur la table pour voir ou vous terminez (plusieurs incidents consecutifs sont possibles, entrainant chaque fois des degats).</p>
+        <p><strong>Zone comparable.</strong> Vous et votre groupe terminez dans une zone differente dont l'ambiance et l'aspect se rapprochent de la destination souhaitee. Vous apparaissez a l'endroit comparable le plus proche. Si vous souhaitiez rejoindre votre laboratoire, par exemple, vous pourriez aboutir dans celui d'une autre personne de la meme ville.</p>
+        <p><strong>Deviation.</strong> Vous et votre groupe (ou l'objet cible) arrivez a 2d12 x 1,5 km et dans une direction aleatoire de la destination souhaitee. Lancez 1d8 pour la direction : 1, est ; 2, sud-est ; 3, sud ; 4, sud-ouest ; 5, ouest ; 6, nord-ouest ; 7, nord ; 8, nord-est.</p>
+        <p><strong>Sur place.</strong> Vous et votre groupe (ou l'objet cible) arrivez a l'endroit souhaite.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

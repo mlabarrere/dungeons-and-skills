@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detection des pensees — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Detection des pensees">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="detection-des-pensees" data-status="source"
+             data-source="img:275"
+             data-spell-level="2" data-school="divination"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="perso" data-components="V,S,M"
+             data-material="1 piece de cuivre"
+             data-duration="conc-1min" data-classes="barde,ensorceleur,magicien"
+             data-save="sag">
+
+      <h1>Detection des pensees</h1>
+      <p class="provenance">Divination du 2e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Divination</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Personnelle</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (1 piece de cuivre)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous activez l'un des effets ci-apres. A vos tours suivants jusqu'a la fin du sort, vous pouvez activer l'un des deux effets au prix de l'action Magie.</p>
+        <ul>
+          <li><strong>Perception des pensees.</strong> Vous percevez la presence de pensees dans un rayon de 9 m, si elles emanent de creatures maitrisant une langue ou telepathes. Vous ne lisez pas les pensees, mais savez qu'une creature pensante est presente, le cas echeant. Le sort est bloque par 30 cm de pierre, de terre ou de bois, par 2,5 cm de metal (une simple feuille dans le cas du plomb).</li>
+          <li><strong>Lecture des pensees.</strong> Dans un rayon de 9 m, ciblez une creature que vous voyez ou une creature que vous avez detectee avec l'option Perception des pensees. Vous savez ce qui occupe son esprit a l'instant present. Si la cible ne connait aucune langue et n'est pas <a href="../dons/telepathe.html" data-ref="telepathe">telepathe</a>, vous n'apprenez rien. Au prix de l'action Magie a votre tour suivant, vous pouvez tenter de sonder davantage l'esprit de la cible. Dans ce cas, la cible effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse.</li>
+        </ul>
+        <p>Dans les deux cas, la cible sait que vous sondez son esprit. De plus, a moins que vous reportiez votre attention sur les pensees d'une autre creature, la cible peut consacrer l'action de son tour a effectuer un test d'Intelligence (Arcanes) contre votre DD de sauvegarde des sorts ; en cas de reussite, le sort prend fin.</p>
+
+        <h3 style="margin-top: 12px;">Sondage approfondi (jet de sauvegarde de Sagesse)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Vous saisissez comment elle raisonne, vous percevez son etat emotionnel et ce qui l'anime ou la tracasse (une angoisse, une passion ou une haine, par exemple).</td></tr>
+            <tr><td>Reussite</td><td>Le sort prend fin.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

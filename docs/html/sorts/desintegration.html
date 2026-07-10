@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desintegration — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Desintegration">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="desintegration" data-status="source"
+             data-source="img:274"
+             data-spell-level="6" data-school="transmutation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="18m" data-components="V,S,M"
+             data-material="une magnetite et de la poussiere"
+             data-duration="instantanee" data-classes="ensorceleur,magicien"
+             data-save="dex" data-damage-type="force">
+
+      <h1>Desintegration</h1>
+      <p class="provenance">Transmutation du 6e niveau (<a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 6</span>
+        <span class="badge" data-status="source">Transmutation</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (une magnetite et de la poussiere)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous projetez un rayon vert vers une cible que vous voyez a portee. La cible peut etre une creature, un objet non magique ou une creation de force magique, telle que la paroi formee par <a href="./mur-de-force.html" data-ref="mur-de-force">mur de force</a>.</p>
+        <p>Une creature ciblee par ce sort effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite. En cas d'echec, elle subit 10d6 + 40 degats de force. Si ces degats la font tomber a 0 point de vie, elle est desintegree en poussiere grise avec tout ce qu'elle porte. La cible ne peut etre ramenee a la vie que par <a href="./resurrection-supreme.html" data-ref="resurrection-supreme">resurrection supreme</a> ou souhait.</p>
+        <p>Ce sort desintegre automatiquement un objet de taille G ou inferieure non magique, de meme qu'une creation de force magique dans la limite de cette taille. Dans le cas d'une taille TG ou superieure, la desintegration ne concerne qu'une portion equivalente a un Cube de 3 m.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 10d6 + 40 degats de force. Si elle tombe a 0 PV, elle est desintegree.</td></tr>
+            <tr><td>Reussite</td><td>Aucun degat.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Emplacement de niveau superieur. Les degats augmentent de 3d6 par niveau d'emplacement au-dela du 6e.</p>
+        <table>
+          <thead><tr><th>Emplacement</th><th>Degats de force</th></tr></thead>
+          <tbody>
+            <tr><td>Niveau 6</td><td>10d6 + 40</td></tr>
+            <tr><td>Par niveau au-dela du 6e</td><td>+3d6</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

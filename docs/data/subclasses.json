@@ -1,0 +1,2679 @@
+[
+  {
+    "id": "voie-de-l-arbre-monde",
+    "name": "Voie de l'Arbre-Monde",
+    "parentClass": "barbare",
+    "kind": "voie",
+    "ref": "../classes/voie-de-l-arbre-monde.html",
+    "source": "img:54",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Vitalite de l'arbre",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Branches de l'arbre",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rosee de racines",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Voyage au gre de l'arbre",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "voie-du-berserker",
+    "name": "Voie du Berserker",
+    "parentClass": "barbare",
+    "kind": "voie",
+    "ref": "../classes/voie-du-berserker.html",
+    "source": "img:55",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Frenesie",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rage aveugle",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Represailles",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Presence intimidante",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "voie-du-coeur-sauvage",
+    "name": "Voie du Coeur sauvage",
+    "parentClass": "barbare",
+    "kind": "voie",
+    "ref": "../classes/voie-du-coeur-sauvage.html",
+    "source": "img:56",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Orateur animal",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rage du predateur",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aspect de faune",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Orateur de la nature",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Puissance de la faune",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "voie-du-zelateur",
+    "name": "Voie du Zelateur",
+    "parentClass": "barbare",
+    "kind": "voie",
+    "ref": "../classes/voie-du-zelateur.html",
+    "source": "img:57",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Fureur divine",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Soldat des dieux",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Determination fanatique",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Presence zelee",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rage des dieux",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "college-de-la-danse",
+    "name": "College de la Danse",
+    "parentClass": "barde",
+    "kind": "college",
+    "ref": "../classes/college-de-la-danse.html",
+    "source": "img:64",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Pirouettes eblouissantes",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Deplacement exaltant",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Pirouettes coordonnees",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Esquive cavaliere",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "college-de-la-seduction",
+    "name": "College de la Seduction",
+    "parentClass": "barde",
+    "kind": "college",
+    "ref": "../classes/college-de-la-seduction.html",
+    "source": "img:66",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Magie envoutante",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Mante d'inspiration",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Mante de majeste",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Majeste souveraine",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "college-de-la-vaillance",
+    "name": "College de la Vaillance",
+    "parentClass": "barde",
+    "kind": "college",
+    "ref": "../classes/college-de-la-vaillance.html",
+    "source": "img:67",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Formation martiale",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Inspiration martiale",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Attaque supplementaire",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Magie de guerre",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "college-du-savoir",
+    "name": "College du Savoir",
+    "parentClass": "barde",
+    "kind": "college",
+    "ref": "../classes/college-du-savoir.html",
+    "source": "img:65",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Maitrises supplementaires",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Mots cinglants",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Decouvertes magiques",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Competence hors pair",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "college-du-savoir-competences",
+        "kind": "competence",
+        "count": 3,
+        "level": 3,
+        "note": "Maîtrise de trois compétences au choix"
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "domaine-de-la-guerre",
+    "name": "Domaine de la Guerre",
+    "parentClass": "clerc",
+    "kind": "domaine",
+    "ref": "../classes/domaine-de-la-guerre.html",
+    "source": "img:73",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Frappe guidee",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Pretre de guerre",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Benediction du dieu de la guerre",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Avatar de la bataille",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "arme-magique",
+        "arme-spirituelle",
+        "bouclier-de-la-foi",
+        "rayon-tracant"
+      ],
+      "5": [
+        "aura-du-croise",
+        "esprits-gardiens"
+      ],
+      "7": [
+        "bouclier-de-feu",
+        "liberte-de-mouvement"
+      ],
+      "9": [
+        "immobilisation-de-monstre",
+        "frappe-du-vent-d-acier"
+      ]
+    }
+  },
+  {
+    "id": "domaine-de-la-lumiere",
+    "name": "Domaine de la Lumiere",
+    "parentClass": "clerc",
+    "kind": "domaine",
+    "ref": "../classes/domaine-de-la-lumiere.html",
+    "source": "img:74",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Eclat protecteur",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Radiance de l'Aube",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Eclat protecteur ameliore",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aureole",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "detection-de-l-invisibilite",
+        "lueurs-feeriques",
+        "mains-brulantes",
+        "rayon-ardent"
+      ],
+      "5": [
+        "boule-de-feu",
+        "lumiere-du-jour"
+      ],
+      "7": [
+        "mur-de-feu",
+        "oeil-du-mage"
+      ],
+      "9": [
+        "colonne-de-flamme",
+        "scrutation"
+      ]
+    }
+  },
+  {
+    "id": "domaine-de-la-ruse",
+    "name": "Domaine de la Ruse",
+    "parentClass": "clerc",
+    "kind": "domaine",
+    "ref": "../classes/domaine-de-la-ruse.html",
+    "source": "img:75",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Faveur du filou",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Invocation de replique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Troc du filou",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Replique amelioree",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "charme-personne",
+        "deguisement",
+        "invisibilite",
+        "passage-sans-trace"
+      ],
+      "5": [
+        "antidetection",
+        "motif-hypnotique"
+      ],
+      "7": [
+        "confusion",
+        "porte-dimensionnelle"
+      ],
+      "9": [
+        "domination-de-personne",
+        "modification-de-memoire"
+      ]
+    }
+  },
+  {
+    "id": "domaine-de-la-vie",
+    "name": "Domaine de la Vie",
+    "parentClass": "clerc",
+    "kind": "domaine",
+    "ref": "../classes/domaine-de-la-vie.html",
+    "source": "img:77",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Disciple de la Vie",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Survivance",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Guerisseur beni",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Guerison supreme",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "aide",
+        "benediction",
+        "restauration-partielle",
+        "soins"
+      ],
+      "5": [
+        "mot-de-guerison-de-groupe",
+        "retour-a-la-vie"
+      ],
+      "7": [
+        "aura-de-vie",
+        "protection-contre-la-mort"
+      ],
+      "9": [
+        "restauration-supreme",
+        "soins-de-groupe"
+      ]
+    }
+  },
+  {
+    "id": "cercle-de-la-lune",
+    "name": "Cercle de la Lune",
+    "parentClass": "druide",
+    "kind": "cercle",
+    "ref": "../classes/cercle-de-la-lune.html",
+    "source": "img:86",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Formes du cercle",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Formes du cercle ameliorees",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Foulee selene",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Forme lunaire",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "poussiere-d-etoile",
+        "rayon-de-lune",
+        "soins"
+      ],
+      "5": [
+        "invocation-d-animaux"
+      ],
+      "7": [
+        "fontaine-de-lune"
+      ],
+      "9": [
+        "soins-de-groupe"
+      ]
+    }
+  },
+  {
+    "id": "cercle-de-la-terre",
+    "name": "Cercle de la Terre",
+    "parentClass": "druide",
+    "kind": "cercle",
+    "ref": "../classes/cercle-de-la-terre.html",
+    "source": "img:88",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aval de la terre",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ressourcement",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Protege de dame Nature",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sanctuaire de dame Nature",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "cercle-de-la-terre-environnement",
+        "kind": "environnement",
+        "count": 1,
+        "level": 3,
+        "note": "Type d'environnement re-choisi a chaque Repos long : determine les sorts de cercle prepares (spellsByEnvironment) et, au niv.10 (Protege de dame Nature), la resistance associee (+ immunite a l'etat Empoisonne)",
+        "from": {
+          "fromList": [
+            "aride",
+            "polaire",
+            "tempere",
+            "tropical"
+          ]
+        },
+        "appliesEffects": {
+          "aride": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "feu",
+              "level": 10
+            }
+          ],
+          "polaire": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "froid",
+              "level": 10
+            }
+          ],
+          "tempere": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "foudre",
+              "level": 10
+            }
+          ],
+          "tropical": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "poison",
+              "level": 10
+            }
+          ]
+        }
+      }
+    ],
+    "recommends": [],
+    "spellsByEnvironment": {
+      "aride": {
+        "3": [
+          "flou",
+          "mains-brulantes",
+          "trait-de-feu"
+        ],
+        "5": [
+          "boule-de-feu"
+        ],
+        "7": [
+          "fletrissement"
+        ],
+        "9": [
+          "mur-de-pierre"
+        ]
+      },
+      "polaire": {
+        "3": [
+          "immobilisation-de-personne",
+          "nappe-de-brouillard",
+          "rayon-de-givre"
+        ],
+        "5": [
+          "tempete-de-neige"
+        ],
+        "7": [
+          "tempete-de-grele"
+        ],
+        "9": [
+          "cone-de-froid"
+        ]
+      },
+      "tempere": {
+        "3": [
+          "foulee-brumeuse",
+          "poigne-electrique",
+          "sommeil"
+        ],
+        "5": [
+          "eclair"
+        ],
+        "7": [
+          "liberte-de-mouvement"
+        ],
+        "9": [
+          "passage-par-les-arbres"
+        ]
+      },
+      "tropical": {
+        "3": [
+          "aspersion-acide",
+          "rayon-empoisonne",
+          "toile-d-araignee"
+        ],
+        "5": [
+          "nuage-nauseabond"
+        ],
+        "7": [
+          "metamorphose"
+        ],
+        "9": [
+          "fleau-d-insectes"
+        ]
+      }
+    }
+  },
+  {
+    "id": "cercle-des-astres",
+    "name": "Cercle des Astres",
+    "parentClass": "druide",
+    "kind": "cercle",
+    "ref": "../classes/cercle-des-astres.html",
+    "source": "img:84",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Carte stellaire",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Forme stellaire",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Presage cosmique",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Constellations scintillantes",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Plenitude stellaire",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "cercle-des-mers",
+    "name": "Cercle des Mers",
+    "parentClass": "druide",
+    "kind": "cercle",
+    "ref": "../classes/cercle-des-mers.html",
+    "source": "img:87",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Courroux des mers",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Affinite aquatique",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Enfant de la tempete",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Offrande oceanique",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "bourrasque",
+        "fracassement",
+        "rayon-de-givre",
+        "nappe-de-brouillard",
+        "vague-tonnante"
+      ],
+      "5": [
+        "eclair",
+        "respiration-aquatique"
+      ],
+      "7": [
+        "controle-de-l-eau",
+        "tempete-de-grele"
+      ],
+      "9": [
+        "immobilisation-de-monstre",
+        "invocation-d-elementaire"
+      ]
+    }
+  },
+  {
+    "id": "sorcellerie-aberrante",
+    "name": "Sorcellerie aberrante",
+    "parentClass": "ensorceleur",
+    "kind": "sorcellerie",
+    "ref": "../classes/sorcellerie-aberrante.html",
+    "source": "img:97",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Discours telepathique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Defenses psychiques",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sorcellerie psionique",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Revelation incarnee",
+        "level": 14
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Distorsion implosive",
+        "level": 18
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "apaisement-des-emotions",
+        "detection-des-pensees",
+        "murmures-dissonants",
+        "piqure-mentale",
+        "tentacules-de-hadar"
+      ],
+      "5": [
+        "communication-a-distance",
+        "voracite-de-hadar"
+      ],
+      "7": [
+        "convocation-d-aberration",
+        "tentacules-noirs-d-evard"
+      ],
+      "9": [
+        "lien-telepathique-de-rary",
+        "telekinesie"
+      ]
+    }
+  },
+  {
+    "id": "sorcellerie-draconique",
+    "name": "Sorcellerie draconique",
+    "parentClass": "ensorceleur",
+    "kind": "sorcellerie",
+    "ref": "../classes/sorcellerie-draconique.html",
+    "source": "img:98",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Resistance draconique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Affinite elementaire",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ailes draconiques",
+        "level": 14
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Compagnon draconique",
+        "level": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "sorcellerie-draconique-ascendance",
+        "kind": "type-de-degats",
+        "count": 1,
+        "level": 6,
+        "from": {
+          "fromList": [
+            "acide",
+            "feu",
+            "foudre",
+            "froid",
+            "poison"
+          ]
+        },
+        "note": "Type de dégâts de l'Affinité élémentaire (niveau 6)"
+      }
+    ],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "injonction",
+        "modification-d-apparence",
+        "orbe-chromatique",
+        "souffle-du-dragon"
+      ],
+      "5": [
+        "terreur",
+        "vol"
+      ],
+      "7": [
+        "charme-monstre",
+        "oeil-du-mage"
+      ],
+      "9": [
+        "convocation-de-dragon",
+        "mythes-et-legendes"
+      ]
+    }
+  },
+  {
+    "id": "sorcellerie-mecanique",
+    "name": "Sorcellerie mecanique",
+    "parentClass": "ensorceleur",
+    "kind": "sorcellerie",
+    "ref": "../classes/sorcellerie-mecanique.html",
+    "source": "img:99",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Equilibre restaure",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bastion de loi",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Transe harmonique",
+        "level": 14
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Chevauchee mecanique",
+        "level": 18
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "aide",
+        "alarme",
+        "protection-contre-le-mal-et-le-bien",
+        "restauration-partielle"
+      ],
+      "5": [
+        "dissipation-de-la-magie",
+        "protection-contre-l-energie"
+      ],
+      "7": [
+        "convocation-d-artificiel",
+        "liberte-de-mouvement"
+      ],
+      "9": [
+        "mur-de-force",
+        "restauration-supreme"
+      ]
+    }
+  },
+  {
+    "id": "sorcellerie-sauvage",
+    "name": "Sorcellerie sauvage",
+    "parentClass": "ensorceleur",
+    "kind": "sorcellerie",
+    "ref": "../classes/sorcellerie-sauvage.html",
+    "source": "img:101",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bouffee de Sorcellerie sauvage",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Maree du chaos",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Comme par hasard",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Chaos controle",
+        "level": 14
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bouffee domptee",
+        "level": 18
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "champion",
+    "name": "Champion",
+    "parentClass": "guerrier",
+    "kind": "archetype-martial",
+    "ref": "../classes/champion.html",
+    "source": "img:103",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Athlete accompli",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Critique ameliore",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Style de combat supplementaire",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Heros du champ d'honneur",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Critique superieur",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Survivant",
+        "level": 18
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "chevalier-occulte",
+    "name": "Chevalier occulte",
+    "parentClass": "guerrier",
+    "kind": "archetype-martial",
+    "ref": "../classes/chevalier-occulte.html",
+    "source": "img:108",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "int",
+        "list": "magicien",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Arme occulte",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Magie de guerre",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Fragilisation occulte",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Charge arcanique",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Magie de guerre amelioree",
+        "level": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "chevalier-occulte-cantrips",
+        "kind": "cantrip",
+        "count": 2,
+        "level": 3,
+        "from": {
+          "fromSpellList": "magicien",
+          "level": 0
+        },
+        "note": "Deux sorts mineurs de Magicien au choix"
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "magicien",
+        "ids": [
+          "poigne-electrique",
+          "rayon-de-givre"
+        ]
+      },
+      {
+        "kind": "prepared",
+        "list": "magicien",
+        "ids": [
+          "bouclier",
+          "mains-brulantes",
+          "saut"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "maitre-de-guerre",
+    "name": "Maitre de guerre",
+    "parentClass": "guerrier",
+    "kind": "archetype-martial",
+    "ref": "../classes/maitre-de-guerre.html",
+    "source": "img:110",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Disciple martial",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Superiorite martiale",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Observation de l'ennemi",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Superiorite martiale amelioree",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Implacable",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Superiorite martiale ultime",
+        "level": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "maitre-de-guerre-manoeuvres",
+        "kind": "manoeuvre",
+        "count": 3,
+        "level": 3,
+        "note": "3 manoeuvres au niv.3 ; +2 aux niv.7/10/15 (progression non modelisee, builder niveau 1)",
+        "from": {
+          "fromList": [
+            "attaque-menacante",
+            "attaque-precise",
+            "autorite-naturelle",
+            "balayage",
+            "belier",
+            "chasse-croise",
+            "croc-en-jambe",
+            "desarmement",
+            "diversion",
+            "embuscade",
+            "evaluation-tactique",
+            "feinte",
+            "fente",
+            "instruction",
+            "jeu-de-jambes-defensif",
+            "manoeuvre-tactique",
+            "parade",
+            "provocation",
+            "regain",
+            "riposte"
+          ]
+        }
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "soldat-psi",
+    "name": "Soldat psi",
+    "parentClass": "guerrier",
+    "kind": "archetype-martial",
+    "ref": "../classes/soldat-psi.html",
+    "source": "img:112",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Pouvoir psionique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Adepte telekinetique",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Esprit blinde",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rempart de force",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Maitre telekinetique",
+        "level": 18
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "abjurateur",
+    "name": "Abjurateur",
+    "parentClass": "magicien",
+    "kind": "ecole-arcanique",
+    "ref": "../classes/abjurateur.html",
+    "source": "img:122",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Abjurateur erudit",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Egide arcanique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Egide projetee",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Briseur de sorts",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Resistance aux sorts",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "abjurateur-sorts-ecole",
+        "kind": "sort",
+        "count": 2,
+        "level": 3,
+        "from": {
+          "fromSpellList": "magicien",
+          "maxLevel": 2
+        },
+        "note": "Deux sorts de Magicien de l'école d'Abjuration (niveau <= 2) ajoutés au grimoire"
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "devin",
+    "name": "Devin",
+    "parentClass": "magicien",
+    "kind": "ecole-arcanique",
+    "ref": "../classes/devin.html",
+    "source": "img:123",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Devin erudit",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Presage",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Divination experte",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Troisieme oeil",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Presage renforce",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "devin-sorts-ecole",
+        "kind": "sort",
+        "count": 2,
+        "level": 3,
+        "from": {
+          "fromSpellList": "magicien",
+          "maxLevel": 2
+        },
+        "note": "Deux sorts de Magicien de l'école de Divination (niveau <= 2) ajoutés au grimoire"
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "evocateur",
+    "name": "Evocateur",
+    "parentClass": "magicien",
+    "kind": "ecole-arcanique",
+    "ref": "../classes/evocateur.html",
+    "source": "img:124",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Evocateur erudit",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sort mineur appuye",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Faconneur de sorts",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Evocation amelioree",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Surcharge magique",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "evocateur-sorts-ecole",
+        "kind": "sort",
+        "count": 2,
+        "level": 3,
+        "from": {
+          "fromSpellList": "magicien",
+          "maxLevel": 2
+        },
+        "note": "Deux sorts de Magicien de l'école d'Évocation (niveau <= 2) ajoutés au grimoire"
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "illusionniste",
+    "name": "Illusionniste",
+    "parentClass": "magicien",
+    "kind": "ecole-arcanique",
+    "ref": "../classes/illusionniste.html",
+    "source": "img:125",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Illusionniste erudit",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Illusions ameliorees",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Creatures fantasmagoriques",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Calque illusoire",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Realite chimerique",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "illusionniste-sorts-ecole",
+        "kind": "sort",
+        "count": 2,
+        "level": 3,
+        "from": {
+          "fromSpellList": "magicien",
+          "maxLevel": 2
+        },
+        "note": "Deux sorts de Magicien de l'école d'Illusion (niveau <= 2) ajoutés au grimoire"
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "credo-de-l-ombre",
+    "name": "Credo de l'Ombre",
+    "parentClass": "moine",
+    "kind": "credo",
+    "ref": "../classes/credo-de-l-ombre.html",
+    "source": "img:132",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Artiste des ombres",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Foulee d'ombre",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Foulee d'ombre amelioree",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Linceul d'ombre",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "credo-de-la-misericorde",
+    "name": "Credo de la Misericorde",
+    "parentClass": "moine",
+    "kind": "credo",
+    "ref": "../classes/credo-de-la-misericorde.html",
+    "source": "img:131",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Instruments de charite",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Main guerisseuse",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Main meurtrissante",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Caresse medicale",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Deluge de soins et de meurtrissures",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Main de l'ultime misericorde",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "credo-de-la-paume",
+    "name": "Credo de la Paume",
+    "parentClass": "moine",
+    "kind": "credo",
+    "ref": "../classes/credo-de-la-paume.html",
+    "source": "img:133",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Technique de la Paume",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Plenitude physique",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Foulee preste",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Paume vibratoire",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "credo-des-elements",
+    "name": "Credo des Elements",
+    "parentClass": "moine",
+    "kind": "credo",
+    "ref": "../classes/credo-des-elements.html",
+    "source": "img:130",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Harmonisation elementaire",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Manipulation des elements",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Decharge elementaire",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Excursion elementaire",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Incarnation elementaire",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "protecteur-archifee",
+    "name": "Protecteur Archifee",
+    "parentClass": "occultiste",
+    "kind": "protecteur",
+    "ref": "../classes/protecteur-archifee.html",
+    "source": "img:141",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Foulee des fees",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Echappatoire brumeuse",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Charmantes defenses",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Magie envoutante",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "apaisement-des-emotions",
+        "force-fantasmagorique",
+        "foulee-brumeuse",
+        "lueurs-feeriques",
+        "sommeil"
+      ],
+      "5": [
+        "clignotement",
+        "croissance-vegetale"
+      ],
+      "7": [
+        "domination-de-bete",
+        "invisibilite-supreme"
+      ],
+      "9": [
+        "apparence-trompeuse",
+        "domination-de-personne"
+      ]
+    }
+  },
+  {
+    "id": "protecteur-celeste",
+    "name": "Protecteur Celeste",
+    "parentClass": "occultiste",
+    "kind": "protecteur",
+    "ref": "../classes/protecteur-celeste.html",
+    "source": "img:142,143",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Lumiere guerisseuse",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ame radiante",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Resilience celeste",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Vengeance aveuglante",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "aide",
+        "flamme-sacree",
+        "lumiere",
+        "rayon-tracant",
+        "restauration-partielle",
+        "soins"
+      ],
+      "5": [
+        "lumiere-du-jour",
+        "retour-a-la-vie"
+      ],
+      "7": [
+        "gardien-de-la-foi",
+        "mur-de-feu"
+      ],
+      "9": [
+        "convocation-de-celeste",
+        "restauration-supreme"
+      ]
+    }
+  },
+  {
+    "id": "protecteur-fielon",
+    "name": "Protecteur Fielon",
+    "parentClass": "occultiste",
+    "kind": "protecteur",
+    "ref": "../classes/protecteur-fielon.html",
+    "source": "img:143",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Benediction du tenebreux",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Chance du tenebreux",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Resistance fielonne",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Traversee des enfers",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "injonction",
+        "mains-brulantes",
+        "rayon-ardent",
+        "suggestion"
+      ],
+      "5": [
+        "boule-de-feu",
+        "nuage-nauseabond"
+      ],
+      "7": [
+        "bouclier-de-feu",
+        "mur-de-feu"
+      ],
+      "9": [
+        "fleau-d-insectes",
+        "quete"
+      ]
+    }
+  },
+  {
+    "id": "protecteur-grand-ancien",
+    "name": "Protecteur Grand Ancien",
+    "parentClass": "occultiste",
+    "kind": "protecteur",
+    "ref": "../classes/protecteur-grand-ancien.html",
+    "source": "img:144",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Esprit eveille",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sorts psychiques",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Combattant clairvoyant",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bouclier mental",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Malefice occulte",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Asservissement",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "detection-des-pensees",
+        "force-fantasmagorique",
+        "fou-rire-de-tasha",
+        "murmures-dissonants"
+      ],
+      "5": [
+        "clairvoyance",
+        "voracite-de-hadar"
+      ],
+      "7": [
+        "confusion",
+        "convocation-d-aberration"
+      ],
+      "9": [
+        "modification-de-memoire",
+        "telekinesie"
+      ]
+    }
+  },
+  {
+    "id": "serment-de-devotion",
+    "name": "Serment de Devotion",
+    "parentClass": "paladin",
+    "kind": "serment",
+    "ref": "../classes/serment-de-devotion.html",
+    "source": "img:152,153",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Arme sacree",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aura de devotion",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Chatiment de protection",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Nimbe sacre",
+        "level": 20
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "bouclier-de-la-foi",
+        "protection-contre-le-mal-et-le-bien"
+      ],
+      "5": [
+        "aide",
+        "zone-de-verite"
+      ],
+      "9": [
+        "dissipation-de-la-magie",
+        "lueur-d-espoir"
+      ],
+      "13": [
+        "gardien-de-la-foi",
+        "liberte-de-mouvement"
+      ],
+      "17": [
+        "colonne-de-flamme",
+        "communion"
+      ]
+    }
+  },
+  {
+    "id": "serment-de-gloire",
+    "name": "Serment de Gloire",
+    "parentClass": "paladin",
+    "kind": "serment",
+    "ref": "../classes/serment-de-gloire.html",
+    "source": "img:153,154",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Athlete d'exception",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Chatiment d'exaltation",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aura d'entrain",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Defense glorieuse",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Legende vivante",
+        "level": 20
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "heroisme",
+        "rayon-tracant"
+      ],
+      "5": [
+        "amelioration-de-caracteristique",
+        "arme-magique"
+      ],
+      "9": [
+        "hate",
+        "protection-contre-l-energie"
+      ],
+      "13": [
+        "compulsion",
+        "liberte-de-mouvement"
+      ],
+      "17": [
+        "mythes-et-legendes",
+        "presence-royale-de-yolane"
+      ]
+    }
+  },
+  {
+    "id": "serment-de-vengeance",
+    "name": "Serment de Vengeance",
+    "parentClass": "paladin",
+    "kind": "serment",
+    "ref": "../classes/serment-de-vengeance.html",
+    "source": "img:154",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Voeu d'hostilite",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Vengeur implacable",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Esprit de la vengeance",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ange vengeur",
+        "level": 20
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "imprecation",
+        "marque-du-chasseur"
+      ],
+      "5": [
+        "foulee-brumeuse",
+        "immobilisation-de-personne"
+      ],
+      "9": [
+        "hate",
+        "protection-contre-l-energie"
+      ],
+      "13": [
+        "bannissement",
+        "porte-dimensionnelle"
+      ],
+      "17": [
+        "immobilisation-de-monstre",
+        "scrutation"
+      ]
+    }
+  },
+  {
+    "id": "serment-des-anciens",
+    "name": "Serment des Anciens",
+    "parentClass": "paladin",
+    "kind": "serment",
+    "ref": "../classes/serment-des-anciens.html",
+    "source": "img:151",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Courroux de la nature",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aura de garde",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sentinelle imperissable",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Champion des Anciens",
+        "level": 20
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "communication-avec-les-animaux",
+        "frappe-piegeuse"
+      ],
+      "5": [
+        "foulee-brumeuse",
+        "rayon-de-lune"
+      ],
+      "9": [
+        "croissance-vegetale",
+        "protection-contre-l-energie"
+      ],
+      "13": [
+        "peau-de-pierre",
+        "tempete-de-grele"
+      ],
+      "17": [
+        "communion-avec-la-nature",
+        "passage-par-les-arbres"
+      ]
+    }
+  },
+  {
+    "id": "belluaire",
+    "name": "Belluaire",
+    "parentClass": "rodeur",
+    "kind": "archetype-de-rodeur",
+    "ref": "../classes/belluaire.html",
+    "source": "img:160",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Compagnon primitif",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Coordination facilitee",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Fureur bestiale",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Partage des sorts",
+        "level": 15
+      }
+    ],
+    "choices": [
+      {
+        "id": "belluaire-compagnon",
+        "kind": "compagnon",
+        "count": 1,
+        "level": 3,
+        "from": {
+          "fromList": [
+            "bete-des-cieux",
+            "bete-des-mers",
+            "bete-des-terres"
+          ]
+        },
+        "note": "Profil du compagnon primitif au choix : Bete des cieux, Bete des mers ou Bete des terres"
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "chasseur",
+    "name": "Chasseur",
+    "parentClass": "rodeur",
+    "kind": "archetype-de-rodeur",
+    "ref": "../classes/chasseur.html",
+    "source": "img:162",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Proie du chasseur",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Savoir du Chasseur",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Tactiques defensives",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Proie du chasseur superieure",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Defense de chasseur superieure",
+        "level": 15
+      }
+    ],
+    "choices": [
+      {
+        "id": "chasseur-proie-du-chasseur",
+        "kind": "aptitude-sous-classe",
+        "count": 1,
+        "level": 3,
+        "note": "Proie du chasseur (niv.3), reoptable a chaque repos",
+        "from": {
+          "fromList": [
+            "briseur-de-hordes",
+            "gout-du-sang"
+          ]
+        }
+      },
+      {
+        "id": "chasseur-tactiques-defensives",
+        "kind": "aptitude-sous-classe",
+        "count": 1,
+        "level": 7,
+        "note": "Tactiques defensives (niv.7), reoptable a chaque repos",
+        "from": {
+          "fromList": [
+            "cauchemar-de-la-horde",
+            "defense-contre-les-attaques-multiples"
+          ]
+        }
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "traqueur-des-tenebres",
+    "name": "Traqueur des tenebres",
+    "parentClass": "rodeur",
+    "kind": "archetype-de-rodeur",
+    "ref": "../classes/traqueur-des-tenebres.html",
+    "source": "img:163",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Embuscade effrayante",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Vision ombreuse",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Mental d'acier",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rafale du traqueur",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Esquive des ombres",
+        "level": 15
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "deguisement"
+      ],
+      "5": [
+        "corde-enchantee"
+      ],
+      "9": [
+        "terreur"
+      ],
+      "13": [
+        "invisibilite-supreme"
+      ],
+      "17": [
+        "apparence-trompeuse"
+      ]
+    }
+  },
+  {
+    "id": "vagabond-feerique",
+    "name": "Vagabond feerique",
+    "parentClass": "rodeur",
+    "kind": "archetype-de-rodeur",
+    "ref": "../classes/vagabond-feerique.html",
+    "source": "img:164",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Charme mystique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Frappes effroyables",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Fascination detournee",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Renforts feeriques",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Vagabond des brumes",
+        "level": 15
+      }
+    ],
+    "choices": [
+      {
+        "id": "vagabond-feerique-charme-mystique-competence",
+        "kind": "competence",
+        "count": 1,
+        "level": 3,
+        "from": {
+          "fromSkillSet": [
+            "persuasion",
+            "representation",
+            "tromperie"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        },
+        "note": "Maitrise d'une competence au choix (Charme mystique) : Persuasion, Representation ou Tromperie"
+      }
+    ],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "charme-personne"
+      ],
+      "5": [
+        "foulee-brumeuse"
+      ],
+      "9": [
+        "convocation-de-fee"
+      ],
+      "13": [
+        "porte-dimensionnelle"
+      ],
+      "17": [
+        "double-illusoire"
+      ]
+    }
+  },
+  {
+    "id": "ame-aceree",
+    "name": "Ame aceree",
+    "parentClass": "roublard",
+    "kind": "archetype-de-roublard",
+    "ref": "../classes/ame-aceree.html",
+    "source": "img:170",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Lames psychiques",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Pouvoir psionique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Lames spirituelles",
+        "level": 9
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Voile psychique",
+        "level": 13
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rupture spirituelle",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "arnaqueur-arcanique",
+    "name": "Arnaqueur arcanique",
+    "parentClass": "roublard",
+    "kind": "archetype-de-roublard",
+    "ref": "../classes/arnaqueur-arcanique.html",
+    "source": "img:172",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "int",
+        "list": "magicien",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Passe-passe a distance",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Embuscade magique",
+        "level": 9
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Omnipresence",
+        "level": 13
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Voleur de sorts",
+        "level": 17
+      }
+    ],
+    "choices": [
+      {
+        "id": "arnaqueur-arcanique-cantrips",
+        "kind": "cantrip",
+        "count": 2,
+        "level": 3,
+        "from": {
+          "fromSpellList": "magicien",
+          "level": 0
+        },
+        "note": "main du mage plus deux sorts mineurs de Magicien au choix"
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "magicien",
+        "ids": [
+          "piqure-mentale",
+          "illusion-mineure"
+        ]
+      },
+      {
+        "kind": "prepared",
+        "list": "magicien",
+        "ids": [
+          "charme-personne",
+          "deguisement",
+          "nappe-de-brouillard"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "voleur",
+    "name": "Voleur",
+    "parentClass": "roublard",
+    "kind": "archetype-de-roublard",
+    "ref": "../classes/voleur.html",
+    "source": "img:175",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Mains lestes",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Monte-en-l'air",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Furtivite supreme",
+        "level": 9
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Utilisation d'objets magiques",
+        "level": 13
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Reflexes de voleur",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "assassin",
+    "name": "Assassin",
+    "parentClass": "roublard",
+    "kind": "archetype-de-roublard",
+    "ref": "../classes/assassin.html",
+    "source": "img:174",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Assassinat",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Outils d'assassin",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Expert en infiltration",
+        "level": 9
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Armes envenimees",
+        "level": 13
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Coup meurtrier",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  }
+]

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zombi — Creature</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Creatures|/creatures/index.html; Zombi">
+  <main>
+    <article class="sheet" data-entity="creature" data-id="zombi" data-status="source" data-source="img:359">
+      <h1>Zombi</h1>
+      <p class="provenance">Profil de creature (Annexe B, Profils de creature). Source : img:359.</p>
+
+      <section class="section">
+        <h2>En-tete</h2>
+        <table>
+          <tbody>
+            <tr><th>Taille et type</th><td>Mort-vivant de taille M, Neutre Mauvais</td></tr>
+            <tr><th>Initiative</th><td>-2 (8)</td></tr>
+            <tr><th>Facteur de puissance</th><td>1/4 (50 PX ; BM +2)</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Defense et deplacement</h2>
+        <table>
+          <tbody>
+            <tr><th>Classe d'armure</th><td>8</td></tr>
+            <tr><th>Points de vie</th><td>15 (2d8 + 6)</td></tr>
+            <tr><th>Vitesses</th><td>6 m</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Caracteristiques</h2>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Score</th><th>Mod</th><th>JS</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>13</td><td>+1</td><td>+1</td></tr>
+            <tr><td>Dexterite</td><td>6</td><td>-2</td><td>-2</td></tr>
+            <tr><td>Constitution</td><td>16</td><td>+3</td><td>+3</td></tr>
+            <tr><td>Intelligence</td><td>3</td><td>-4</td><td>-4</td></tr>
+            <tr><td>Sagesse</td><td>6</td><td>-2</td><td>+0</td></tr>
+            <tr><td>Charisme</td><td>5</td><td>-3</td><td>-3</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Details du profil</h2>
+        <table>
+          <tbody>
+            <tr><th>Immunites</th><td>poison ; Empoisonne, Epuisement</td></tr>
+            <tr><th>Sens</th><td><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a> 18 m, <a href="../regles/glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a> 8</td></tr>
+            <tr><th>Langues</th><td>comprend les langues qu'il maitrisait de son vivant mais ne parle pas</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Traits</h2>
+        <table>
+          <thead><tr><th>Nom</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Robustesse de la non-vie</td><td>Si des degats font tomber le zombi a 0 point de vie, il effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Constitution (DD egal a 5 + les degats subis), sauf en cas de degats radiants ou de <a href="../regles/glossaire.html#coup-critique" data-ref="coup-critique">Coup critique</a>. S'il reussit ce JS, le zombi se retrouve en fait a 1 point de vie.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Actions</h2>
+        <table>
+          <thead><tr><th>Nom</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Coup</td><td>Corps a corps : +3, allonge 1,50 m. Touche : 5 (1d8 + 1) degats contondants.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

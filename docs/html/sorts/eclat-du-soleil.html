@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eclat du soleil — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Eclat du soleil">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="eclat-du-soleil" data-status="source"
+             data-source="img:280"
+             data-spell-level="8" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="45m" data-components="V,S,M"
+             data-material="un morceau d'heliolite"
+             data-duration="instantanee" data-classes="clerc,druide,ensorceleur,magicien"
+             data-save="con" data-damage-type="radiant">
+
+      <h1>Eclat du soleil</h1>
+      <p class="provenance">Evocation du 8e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 8</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="pill">Clerc</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">45 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (un morceau d'heliolite)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>La lumiere du soleil brille soudain dans une Sphere de 18 m de rayon, centree sur un point que vous choisissez a portee. Chaque creature prise dans la Sphere effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Constitution. En cas d'echec, elle subit 12d6 degats radiants, ainsi que l'etat Aveugle pendant 1 minute. En cas de reussite, elle subit uniquement la moitie de ces degats.</p>
+        <p>Une creature Aveuglee par ce sort reitere le jet de sauvegarde de Constitution a la fin de chacun de ses tours et met un terme a l'effet sur elle-meme en cas de reussite.</p>
+        <p>Le sort dissipe dans la zone toutes les Tenebres qui resultent d'un sort.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Constitution)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 12d6 degats radiants et l'etat Aveugle pendant 1 minute.</td></tr>
+            <tr><td>Reussite</td><td>Subit la moitie des degats, sans etre Aveuglee.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

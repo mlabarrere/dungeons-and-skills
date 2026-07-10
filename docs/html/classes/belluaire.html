@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belluaire — Sous-classe de Rodeur</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Rodeur|/classes/rodeur.html; Belluaire">
+  <main>
+    <article class="sheet" data-entity="sous-classe" data-parent-class="rodeur" data-id="belluaire" data-status="source" data-source="img:160">
+      <h1>Belluaire</h1>
+      <div class="pill-row">
+        <span class="badge" data-status="source">Extraction faite (img:160)</span>
+        <span class="pill">Sous-classe de <a href="rodeur.html" data-ref="rodeur">Rodeur</a></span>
+      </div>
+      <p class="provenance">Forgez un lien avec une bete sauvage</p>
+      <p>
+        Le Belluaire noue un lien mystique avec un animal special, en faisant appel a
+        la magie primitive et a une connexion profonde avec le monde naturel.
+      </p>
+
+      <section class="section">
+        <h2>Niveau 3 : Compagnon primitif</h2>
+        <p>
+          Vous convoquez magiquement une bete primitive qui tire sa force de votre lien
+          avec la nature. Choisissez son profil : <strong>bete des cieux</strong>,
+          <strong>bete des mers</strong> ou <strong>bete des terres</strong>. Vous
+          determinez en outre de quel type d'animal il s'agit, en prenant une Bete
+          adaptee au profil. Quelle que soit la bete choisie, elle arbore des marques
+          primitives qui signalent son origine surnaturelle.
+        </p>
+        <p>
+          La bete est Amicale envers vous et vos compagnons, et elle obeit a vos
+          instructions. Elle disparait si vous mourez.
+        </p>
+        <p>
+          <strong>La Bete au combat.</strong> Au combat, la bete agit a votre tour. Elle
+          peut se deplacer et jouer sa Reaction de son propre chef, mais la seule action
+          qu'elle puisse entreprendre est Esquiver, sauf si vous consacrez une action
+          Bonus a lui donner l'ordre d'entreprendre une action qui figure dans son profil
+          ou une autre action. Vous pouvez egalement sacrifier l'une de vos attaques
+          lorsque vous entreprenez l'action Attaque pour ordonner a la bete d'entreprendre
+          l'action Frappe. Si vous subissez l'etat Neutralise, la bete agit de son propre
+          chef et n'est pas limitee a l'action Esquive.
+        </p>
+        <p>
+          <strong>Restaurer ou remplacer la Bete.</strong> Si la bete est morte depuis
+          moins d'une heure, vous pouvez consacrer l'action Magie a la toucher en depensant
+          un emplacement de sort. La bete revient a la vie au bout de 1 minute avec tous
+          ses <a href="../regles/glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a>.
+        </p>
+        <p>
+          Chaque fois que vous terminez un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">Repos long</a>, vous pouvez convoquer une bete
+          primitive differente, qui apparait en un <a href="../regles/glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> dans un rayon de 1,50 m.
+          Vous choisissez son profil et son apparence. Si vous controlez deja une bete
+          issue de cette aptitude, l'ancienne disparait lorsque la nouvelle apparait.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 7 : Coordination facilitee</h2>
+        <p>
+          Lorsque vous entreprenez une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> pour ordonner a votre compagnon
+          primitif d'effectuer une action, vous pouvez egalement donner l'ordre a la bete
+          d'entreprendre l'action Desengagement, Esquive, Pointe ou Soutien par une action
+          Bonus.
+        </p>
+        <p>
+          En outre, chaque fois qu'elle reussit un <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> et inflige des degats,
+          vous decidez si ce sont des degats de force ou son type de degats habituel.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 11 : Fureur bestiale</h2>
+        <p>
+          Lorsque vous ordonnez a votre compagnon primitif d'entreprendre l'action Frappe
+          de la Bete, celle-ci peut l'utiliser deux fois.
+        </p>
+        <p>
+          La premiere fois d'un tour qu'elle touche une creature sous l'effet de votre
+          <em><a href="../sorts/marque-du-chasseur.html" data-ref="marque-du-chasseur">marque du chasseur</a></em>, la bete inflige en outre des degats de force
+          supplementaires egaux au bonus de degats de ce sort.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 15 : Partage des sorts</h2>
+        <p>
+          Chaque fois que vous lancez un sort qui vous cible, vous pouvez decider qu'il
+          affecte aussi votre compagnon primitif a condition que la bete se trouve dans un
+          rayon de 9 m.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Profil : Bete des cieux</h2>
+        <p><em>Bete de taille P, Neutre</em></p>
+        <ul>
+          <li><strong>CA</strong> 13 + votre modificateur de Sagesse</li>
+          <li><strong>Pv</strong> 4 + le quadruple de votre niveau de Rodeur (la bete dispose d'autant de DV [des d6] que votre niveau de Rodeur)</li>
+          <li><strong>Vitesse</strong> 3 m, vol 18 m</li>
+        </ul>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Score</th><th>Mod.</th><th>JS</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>6</td><td>-2</td><td>-2</td></tr>
+            <tr><td>Dexterite</td><td>16</td><td>+3</td><td>+3</td></tr>
+            <tr><td>Constitution</td><td>13</td><td>+1</td><td>+1</td></tr>
+            <tr><td>Intelligence</td><td>8</td><td>-1</td><td>-1</td></tr>
+            <tr><td>Sagesse</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Charisme</td><td>11</td><td>+0</td><td>+0</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Sens</strong> <a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a> 18 m, <a href="../regles/glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a> 12</li>
+          <li><strong>Langues</strong> comprend les langues que vous parlez</li>
+          <li><strong>FP</strong> aucun (PX 0 ; BM egal a votre bonus de maitrise)</li>
+        </ul>
+        <p><strong>Traits.</strong></p>
+        <ul>
+          <li><strong>Lien primordial.</strong> Ajoutez votre bonus de maitrise a tout <a href="../regles/glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a> ou <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> effectue par la bete.</li>
+          <li><strong>Repli aerien.</strong> La bete ne provoque pas d'attaque d'Opportunite lorsqu'elle quitte la zone d'allonge d'un ennemi en volant.</li>
+        </ul>
+        <p><strong>Actions.</strong></p>
+        <ul>
+          <li><strong>Frappe de la Bete.</strong> Corps a corps : bonus egal a votre modificateur d'attaque des sorts, allonge 1,50 m. <em>Touche :</em> 1d4 + 3 + votre modificateur de Sagesse degats tranchants.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Profil : Bete des mers</h2>
+        <p><em>Bete de taille M, Neutre</em></p>
+        <ul>
+          <li><strong>CA</strong> 13 + votre modificateur de Sagesse</li>
+          <li><strong>Pv</strong> 5 + le quintuple de votre niveau de Rodeur (la bete dispose d'autant de DV [des d8] que votre niveau de Rodeur)</li>
+          <li><strong>Vitesse</strong> 1,50 m, nage 18 m</li>
+        </ul>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Score</th><th>Mod.</th><th>JS</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Dexterite</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Constitution</td><td>15</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Intelligence</td><td>8</td><td>-1</td><td>-1</td></tr>
+            <tr><td>Sagesse</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Charisme</td><td>11</td><td>+0</td><td>+0</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Sens</strong> Vision dans le noir 27 m, Perception passive 12</li>
+          <li><strong>Langues</strong> comprend les langues que vous parlez</li>
+          <li><strong>FP</strong> aucun (PX 0 ; BM egal a votre bonus de maitrise)</li>
+        </ul>
+        <p><strong>Traits.</strong></p>
+        <ul>
+          <li><strong>Amphibie.</strong> La bete peut respirer sous l'eau comme a l'air libre.</li>
+          <li><strong>Lien primordial.</strong> Ajoutez votre bonus de maitrise a tout test de caracteristique ou jet de sauvegarde effectue par la bete.</li>
+        </ul>
+        <p><strong>Actions.</strong></p>
+        <ul>
+          <li><strong>Frappe de la Bete.</strong> Corps a corps : bonus egal a votre modificateur d'attaque des sorts, allonge 1,50 m. <em>Touche :</em> 1d6 + 2 + votre modificateur de Sagesse degats contondants ou perforants (type au choix lors de la convocation de la bete), et la cible subit l'etat Agrippe (evasion DD egal a votre DD de sauvegarde des sorts).</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Profil : Bete des terres</h2>
+        <p><em>Bete de taille M, Neutre</em></p>
+        <ul>
+          <li><strong>CA</strong> 13 + votre modificateur de Sagesse</li>
+          <li><strong>Pv</strong> 5 + le quintuple de votre niveau de Rodeur (la bete dispose d'autant de DV [des d8] que votre niveau de Rodeur)</li>
+          <li><strong>Vitesse</strong> 12 m, escalade 12 m</li>
+        </ul>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Score</th><th>Mod.</th><th>JS</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Dexterite</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Constitution</td><td>15</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Intelligence</td><td>8</td><td>-1</td><td>-1</td></tr>
+            <tr><td>Sagesse</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>Charisme</td><td>11</td><td>+0</td><td>+0</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Sens</strong> Vision dans le noir 18 m, Perception passive 12</li>
+          <li><strong>Langues</strong> comprend les langues que vous parlez</li>
+          <li><strong>FP</strong> aucun (PX 0 ; BM egal a votre bonus de maitrise)</li>
+        </ul>
+        <p><strong>Traits.</strong></p>
+        <ul>
+          <li><strong>Lien primordial.</strong> Ajoutez votre bonus de maitrise a tout test de caracteristique ou jet de sauvegarde effectue par la bete.</li>
+        </ul>
+        <p><strong>Actions.</strong></p>
+        <ul>
+          <li><strong>Frappe de la Bete.</strong> Corps a corps : bonus egal a votre modificateur d'attaque des sorts, allonge 1,50 m. <em>Touche :</em> 1d8 + 2 + votre modificateur de Sagesse degats contondants, perforants ou tranchants (type au choix lors de la convocation de la bete). Si la bete s'est deplacee d'au moins 6 m en ligne droite vers la cible avant de toucher, la cible subit 1d6 degats supplementaires du meme type, ainsi que l'etat A terre s'il s'agit d'une creature de taille G ou inferieure.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

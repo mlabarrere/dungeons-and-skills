@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fleau d'insectes — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Fleau d'insectes">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="fleau-d-insectes" data-status="source"
+             data-source="img:286"
+             data-spell-level="5" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="90m" data-components="V,S,M"
+             data-material="un criquet"
+             data-duration="conc-10min" data-classes="clerc,druide,ensorceleur"
+             data-save="con" data-damage-type="perforant">
+
+      <h1>Fleau d'insectes</h1>
+      <p class="provenance">Invocation du 5e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 5</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Clerc</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Ensorceleur</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">90 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (un criquet)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 10 minutes</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Des nuees grouillantes de criquets emplissent une Sphere de 6 m de rayon centree sur un point que vous choisissez a portee. La Sphere persiste pour toute la duree, et sa zone est a <a href="../regles/glossaire.html#visibilite-reduite" data-ref="visibilite-reduite">Visibilite reduite</a> et constitue un <a href="../regles/glossaire.html#terrain-difficile" data-ref="terrain-difficile">Terrain difficile</a>.</p>
+        <p>Chaque creature prise dans la nuee a son apparition effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Constitution, et subit 4d10 degats perforants en cas d'echec, la moitie en cas de reussite. Une creature effectue aussi ce JS lorsqu'elle penetre dans la zone du sort pour la premiere fois d'un tour ou qu'elle y termine son tour. Une meme creature n'effectue en aucun cas ce JS plus d'une fois par tour.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Constitution)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 4d10 degats perforants.</td></tr>
+            <tr><td>Reussite</td><td>Subit la moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <table>
+          <thead><tr><th>Emplacement</th><th>Degats perforants</th></tr></thead>
+          <tbody>
+            <tr><td>Niveau 5</td><td>4d10</td></tr>
+            <tr><td>Par niveau au-dela du 5e</td><td>+1d10</td></tr>
+          </tbody>
+        </table>
+        <p class="note">« Emplacement de niveau superieur. Les degats augmentent de 1d10 par niveau d'emplacement au-dela du 5e. »</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

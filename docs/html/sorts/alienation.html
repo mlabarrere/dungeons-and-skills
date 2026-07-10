@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alienation — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Alienation">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="alienation" data-status="source"
+             data-source="img:237"
+             data-spell-level="8" data-school="enchantement"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="45m" data-components="V,S,M" data-material="l'anneau seul d'un trousseau de clefs"
+             data-duration="instantanee" data-classes="barde,druide,magicien,occultiste"
+             data-save="int" data-damage-type="psychique">
+
+      <h1>Alienation</h1>
+      <p class="provenance">Enchantement du 8e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>, <a href="../classes/occultiste.html" data-ref="occultiste">Occultiste</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 8</span>
+        <span class="badge" data-status="source">Enchantement</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Magicien</span>
+        <span class="pill">Occultiste</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">45 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (l'anneau seul d'un trousseau de clefs)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous assaillez l'esprit d'une creature que vous voyez a portee. La cible effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> d'Intelligence.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Intelligence)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 10d12 degats psychiques et ne peut pas lancer de sort ni entreprendre l'action Magie. A l'issue de chaque tranche de 30 jours, la cible reitere le JS et met un terme a l'effet en cas de reussite. Les sorts guerison, <a href="./restauration-supreme.html" data-ref="restauration-supreme">restauration supreme</a> et souhait mettent egalement chacun fin a l'effet.</td></tr>
+            <tr><td>Reussite</td><td>Subit uniquement la moitie de ces degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

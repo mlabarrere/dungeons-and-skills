@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Symbole — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Symbole">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="symbole" data-status="source"
+             data-source="img:333"
+             data-spell-level="7" data-school="abjuration"
+             data-casting-time="1min" data-ritual="false" data-concentration="false"
+             data-range="contact" data-components="V,S,M" data-material="poudre de diamant d'une valeur minimale de 1 000 po, que le sort detruit"
+             data-duration="dissipation" data-classes="barde,clerc,druide,magicien"
+             data-save="-" data-damage-type="necrotique">
+
+      <h1>Symbole</h1>
+      <p class="provenance">Abjuration du 7e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/clerc.html" data-ref="clerc">Clerc</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 7</span>
+        <span class="badge" data-status="source">Abjuration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Clerc</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">1 minute</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Contact</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (poudre de diamant d'une valeur minimale de 1 000 po, que le sort detruit)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Jusqu'a dissipation ou activation</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous inscrivez un glyphe nuisible a d'autres creatures, soit sur une surface (comme un pan de mur ou de sol), soit a l'interieur d'un objet que l'on peut fermer (comme un livre ou un coffre). Le glyphe peut recouvrir une zone dont le diametre ne depasse pas 3 m. Si vous optez pour un objet, celui-ci doit rester a sa place ; si on le deplace de plus de 3 m de l'endroit ou vous avez lance le sort, le glyphe est rompu et le sort prend fin sans avoir ete active.</p>
+        <p>Le glyphe est pratiquement imperceptible, au point qu'il faut reussir un test de Sagesse (Perception) assorti de votre DD de sauvegarde des sorts pour le remarquer.</p>
+        <p>Lors de l'inscription du glyphe, vous decidez de son declencheur et de l'effet porte par le symbole : discorde, douleur, etourdissement, mort, sommeil ou terreur. Chaque effet est explique ci-apres.</p>
+        <p><strong>Declencheur.</strong> Vous decidez ce qui le declenche a l'incantation du sort. Dans le cas des glyphes de surface, les declencheurs courants sont les suivants : toucher le glyphe, le fouler, retirer un objet qui le recouvre ou s'approcher dans un certain rayon. Pour les glyphes inscrits dans un objet, les declencheurs courants sont l'ouverture de l'objet et la vue du glyphe.</p>
+        <p>Vous pouvez preciser le declencheur afin que seules les creatures d'un type donne l'activent (le glyphe ne pourrait ainsi affecter que les Aberrations). Vous pouvez aussi definir les criteres de creatures qui ne declenchent pas le glyphe, comme le fait de prononcer un certain mot de passe.</p>
+        <p>Quand il s'active, le glyphe se met a luire en emplissant une Sphere de 18 m de rayon de <a href="../regles/glossaire.html#lumiere-faible" data-ref="lumiere-faible">Lumiere faible</a> pendant 10 minutes, apres quoi le sort prend fin. Chaque creature prise dans la Sphere au moment de l'activation du glyphe est ciblee par son effet, de meme que toute creature qui penetre dans la Sphere pour la premiere fois d'un tour ou y termine son tour. Une meme creature ne peut etre ciblee qu'une fois par tour.</p>
+        <ul>
+          <li><strong>Discorde.</strong> Chaque cible effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse. En cas d'echec, la cible se chamaille verbalement avec une autre creature pendant 1 minute. Tout ce temps, elle est incapable de communiquer de maniere coherente et ses jets d'attaque et tests de caracteristique s'effectuent avec le Desavantage.</li>
+          <li><strong>Douleur.</strong> Chaque cible doit reussir un jet de sauvegarde de Constitution sous peine de subir l'etat Neutralise pendant 1 minute.</li>
+          <li><strong>Etourdissement.</strong> Chaque cible doit reussir un jet de sauvegarde de Sagesse sous peine de subir l'etat Etourdi pendant 1 minute.</li>
+          <li><strong>Mort.</strong> Chaque cible effectue un jet de sauvegarde de Constitution et subit 10d10 degats necrotiques en cas d'echec, la moitie en cas de reussite.</li>
+          <li><strong>Sommeil.</strong> Chaque cible doit reussir un jet de sauvegarde de Sagesse sous peine de subir l'etat Inconscient pendant 10 minutes. Une telle creature reprend connaissance si elle subit des degats ou si quelqu'un consacre une action a la secouer.</li>
+          <li><strong>Terreur.</strong> Chaque cible doit reussir un jet de sauvegarde de Sagesse sous peine de subir l'etat Effraye pendant 1 minute. Tant qu'une cible est ainsi Effrayee, elle doit s'eloigner au minimum de 9 m du glyphe a chacun de ses tours si elle en a la possibilite.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

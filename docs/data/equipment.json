@@ -1,0 +1,1382 @@
+{
+ "_meta": {
+  "source": "docs/html/equipement/{armes,armures,outils,paquetages,aventurier}.html",
+  "refs": {
+   "armes": "img:45-47",
+   "armures": "img:48-49",
+   "outils": "img:50-51",
+   "paquetages": "img:53-57",
+   "aventurier": "img:52-59"
+  },
+  "note": "Couche machine derivee du HTML (source de verite). damageType normalise au singulier ; weight/cost conserves tels quels (avec unites, virgule decimale) depuis le HTML. dexMax : null=illimite (legeres), 2=intermediaires, 0=aucun (lourdes). baseAC bouclier = bonus (+2)."
+ },
+ "weapons": [
+  {
+   "id": "baton-de-combat",
+   "name": "Baton de combat",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d6",
+   "damageType": "contondant",
+   "properties": [
+    "Polyvalente (1d8)"
+   ],
+   "mastery": "Renversement",
+   "weight": "2 kg",
+   "cost": "2 pa"
+  },
+  {
+   "id": "dague",
+   "name": "Dague",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d4",
+   "damageType": "perforant",
+   "properties": [
+    "Finesse",
+    "Lancer (portee 6/18)",
+    "Legere"
+   ],
+   "mastery": "Coup double",
+   "range": "6/18",
+   "weight": "0,5 kg",
+   "cost": "2 po"
+  },
+  {
+   "id": "gourdin",
+   "name": "Gourdin",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d4",
+   "damageType": "contondant",
+   "properties": [
+    "Legere"
+   ],
+   "mastery": "Ralentissement",
+   "weight": "1 kg",
+   "cost": "1 pa"
+  },
+  {
+   "id": "hachette",
+   "name": "Hachette",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d6",
+   "damageType": "tranchant",
+   "properties": [
+    "Lancer (portee 6/18)",
+    "Legere"
+   ],
+   "mastery": "Ouverture",
+   "range": "6/18",
+   "weight": "1 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "javeline",
+   "name": "Javeline",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d6",
+   "damageType": "perforant",
+   "properties": [
+    "Lancer (portee 9/36)"
+   ],
+   "mastery": "Ralentissement",
+   "range": "9/36",
+   "weight": "1 kg",
+   "cost": "5 pa"
+  },
+  {
+   "id": "lance",
+   "name": "Lance",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d6",
+   "damageType": "perforant",
+   "properties": [
+    "Lancer (portee 6/18)",
+    "Polyvalente (1d8)"
+   ],
+   "mastery": "Sape",
+   "range": "6/18",
+   "weight": "1,5 kg",
+   "cost": "1 po"
+  },
+  {
+   "id": "marteau-leger",
+   "name": "Marteau leger",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d4",
+   "damageType": "contondant",
+   "properties": [
+    "Lancer (portee 6/18)",
+    "Legere"
+   ],
+   "mastery": "Coup double",
+   "range": "6/18",
+   "weight": "1 kg",
+   "cost": "2 po"
+  },
+  {
+   "id": "masse-d-armes",
+   "name": "Masse d'armes",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d6",
+   "damageType": "contondant",
+   "properties": [],
+   "mastery": "Sape",
+   "weight": "2 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "massue",
+   "name": "Massue",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "contondant",
+   "properties": [
+    "Deux mains"
+   ],
+   "mastery": "Poussee",
+   "weight": "5 kg",
+   "cost": "2 pa"
+  },
+  {
+   "id": "serpe",
+   "name": "Serpe",
+   "category": "courante",
+   "type": "cac",
+   "damage": "1d4",
+   "damageType": "tranchant",
+   "properties": [
+    "Legere"
+   ],
+   "mastery": "Coup double",
+   "weight": "1 kg",
+   "cost": "1 po"
+  },
+  {
+   "id": "arbalete-legere",
+   "name": "Arbalete legere",
+   "category": "courante",
+   "type": "distance",
+   "damage": "1d8",
+   "damageType": "perforant",
+   "properties": [
+    "Chargement",
+    "Deux mains",
+    "Munitions (portee 24/96 ; carreaux)"
+   ],
+   "mastery": "Ralentissement",
+   "range": "24/96",
+   "weight": "2,5 kg",
+   "cost": "25 po"
+  },
+  {
+   "id": "arc-court",
+   "name": "Arc court",
+   "category": "courante",
+   "type": "distance",
+   "damage": "1d6",
+   "damageType": "perforant",
+   "properties": [
+    "Deux mains",
+    "Munitions (portee 24/96 ; fleches)"
+   ],
+   "mastery": "Ouverture",
+   "range": "24/96",
+   "weight": "1 kg",
+   "cost": "25 po"
+  },
+  {
+   "id": "flechette",
+   "name": "Flechette",
+   "category": "courante",
+   "type": "distance",
+   "damage": "1d4",
+   "damageType": "perforant",
+   "properties": [
+    "Finesse",
+    "Lancer (portee 6/18)"
+   ],
+   "mastery": "Ouverture",
+   "range": "6/18",
+   "weight": "125 g",
+   "cost": "5 pc"
+  },
+  {
+   "id": "fronde",
+   "name": "Fronde",
+   "category": "courante",
+   "type": "distance",
+   "damage": "1d4",
+   "damageType": "contondant",
+   "properties": [
+    "Munitions (portee 9/36 ; billes)"
+   ],
+   "mastery": "Ralentissement",
+   "range": "9/36",
+   "weight": "-",
+   "cost": "1 pa"
+  },
+  {
+   "id": "cimeterre",
+   "name": "Cimeterre",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d6",
+   "damageType": "tranchant",
+   "properties": [
+    "Finesse",
+    "Legere"
+   ],
+   "mastery": "Coup double",
+   "weight": "1,5 kg",
+   "cost": "25 po"
+  },
+  {
+   "id": "coutille",
+   "name": "Coutille",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d10",
+   "damageType": "tranchant",
+   "properties": [
+    "Allonge",
+    "Deux mains",
+    "Lourde"
+   ],
+   "mastery": "Ecorchure",
+   "weight": "3 kg",
+   "cost": "20 po"
+  },
+  {
+   "id": "epee-a-deux-mains",
+   "name": "Epee a deux mains",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "2d6",
+   "damageType": "tranchant",
+   "properties": [
+    "Deux mains",
+    "Lourde"
+   ],
+   "mastery": "Ecorchure",
+   "weight": "3 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "epee-courte",
+   "name": "Epee courte",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d6",
+   "damageType": "perforant",
+   "properties": [
+    "Finesse",
+    "Legere"
+   ],
+   "mastery": "Ouverture",
+   "weight": "1 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "epee-longue",
+   "name": "Epee longue",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "tranchant",
+   "properties": [
+    "Polyvalente (1d10)"
+   ],
+   "mastery": "Sape",
+   "weight": "1,5 kg",
+   "cost": "15 po"
+  },
+  {
+   "id": "fleau-d-armes",
+   "name": "Fleau d'armes",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "contondant",
+   "properties": [],
+   "mastery": "Sape",
+   "weight": "1 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "fouet",
+   "name": "Fouet",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d4",
+   "damageType": "tranchant",
+   "properties": [
+    "Allonge",
+    "Finesse"
+   ],
+   "mastery": "Ralentissement",
+   "weight": "1,5 kg",
+   "cost": "2 po"
+  },
+  {
+   "id": "hache-a-deux-mains",
+   "name": "Hache a deux mains",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d12",
+   "damageType": "tranchant",
+   "properties": [
+    "Deux mains",
+    "Lourde"
+   ],
+   "mastery": "Enchainement",
+   "weight": "3,5 kg",
+   "cost": "30 po"
+  },
+  {
+   "id": "hache-d-armes",
+   "name": "Hache d'armes",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "tranchant",
+   "properties": [
+    "Polyvalente (1d10)"
+   ],
+   "mastery": "Renversement",
+   "weight": "2 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "hallebarde",
+   "name": "Hallebarde",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d10",
+   "damageType": "tranchant",
+   "properties": [
+    "Allonge",
+    "Deux mains",
+    "Lourde"
+   ],
+   "mastery": "Enchainement",
+   "weight": "3 kg",
+   "cost": "20 po"
+  },
+  {
+   "id": "lance-d-arcon",
+   "name": "Lance d'arcon",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d10",
+   "damageType": "perforant",
+   "properties": [
+    "Allonge",
+    "Deux mains (sauf a cheval)",
+    "Lourde"
+   ],
+   "mastery": "Renversement",
+   "weight": "3 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "maillet-d-armes",
+   "name": "Maillet d'armes",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "2d6",
+   "damageType": "contondant",
+   "properties": [
+    "Deux mains",
+    "Lourde"
+   ],
+   "mastery": "Renversement",
+   "weight": "5 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "marteau-de-guerre",
+   "name": "Marteau de guerre",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "contondant",
+   "properties": [
+    "Polyvalente (1d10)"
+   ],
+   "mastery": "Poussee",
+   "weight": "2,5 kg",
+   "cost": "15 po"
+  },
+  {
+   "id": "morgenstern",
+   "name": "Morgenstern",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "perforant",
+   "properties": [],
+   "mastery": "Sape",
+   "weight": "2 kg",
+   "cost": "15 po"
+  },
+  {
+   "id": "pic-de-guerre",
+   "name": "Pic de guerre",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "perforant",
+   "properties": [
+    "Polyvalente (1d10)"
+   ],
+   "mastery": "Sape",
+   "weight": "1 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "pique",
+   "name": "Pique",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d10",
+   "damageType": "perforant",
+   "properties": [
+    "Allonge",
+    "Deux mains",
+    "Lourde"
+   ],
+   "mastery": "Poussee",
+   "weight": "9 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "rapiere",
+   "name": "Rapiere",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "perforant",
+   "properties": [
+    "Finesse"
+   ],
+   "mastery": "Ouverture",
+   "weight": "1 kg",
+   "cost": "25 po"
+  },
+  {
+   "id": "trident",
+   "name": "Trident",
+   "category": "guerre",
+   "type": "cac",
+   "damage": "1d8",
+   "damageType": "perforant",
+   "properties": [
+    "Lancer (portee 6/18)",
+    "Polyvalente (1d10)"
+   ],
+   "mastery": "Renversement",
+   "range": "6/18",
+   "weight": "2 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "arbalete-de-poing",
+   "name": "Arbalete de poing",
+   "category": "guerre",
+   "type": "distance",
+   "damage": "1d6",
+   "damageType": "perforant",
+   "properties": [
+    "Chargement",
+    "Legere",
+    "Munitions (portee 9/36 ; carreaux)"
+   ],
+   "mastery": "Ouverture",
+   "range": "9/36",
+   "weight": "1,5 kg",
+   "cost": "75 po"
+  },
+  {
+   "id": "arbalete-lourde",
+   "name": "Arbalete lourde",
+   "category": "guerre",
+   "type": "distance",
+   "damage": "1d10",
+   "damageType": "perforant",
+   "properties": [
+    "Chargement",
+    "Deux mains",
+    "Lourde",
+    "Munitions (portee 30/120 ; carreaux)"
+   ],
+   "mastery": "Poussee",
+   "range": "30/120",
+   "weight": "9 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "arc-long",
+   "name": "Arc long",
+   "category": "guerre",
+   "type": "distance",
+   "damage": "1d8",
+   "damageType": "perforant",
+   "properties": [
+    "Deux mains",
+    "Lourde",
+    "Munitions (portee 45/180 ; fleches)"
+   ],
+   "mastery": "Ralentissement",
+   "range": "45/180",
+   "weight": "1 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "mousquet",
+   "name": "Mousquet",
+   "category": "guerre",
+   "type": "distance",
+   "damage": "1d12",
+   "damageType": "perforant",
+   "properties": [
+    "Chargement",
+    "Deux mains",
+    "Munitions (portee 12/36 ; balles)"
+   ],
+   "mastery": "Ralentissement",
+   "range": "12/36",
+   "weight": "5 kg",
+   "cost": "500 po"
+  },
+  {
+   "id": "pistolet",
+   "name": "Pistolet",
+   "category": "guerre",
+   "type": "distance",
+   "damage": "1d10",
+   "damageType": "perforant",
+   "properties": [
+    "Chargement",
+    "Munitions (portee 9/27 ; balles)"
+   ],
+   "mastery": "Ouverture",
+   "range": "9/27",
+   "weight": "1,5 kg",
+   "cost": "250 po"
+  },
+  {
+   "id": "sarbacane",
+   "name": "Sarbacane",
+   "category": "guerre",
+   "type": "distance",
+   "damage": "1",
+   "damageType": "perforant",
+   "properties": [
+    "Chargement",
+    "Munitions (portee 7,50/30 ; dards)"
+   ],
+   "mastery": "Ouverture",
+   "range": "7,50/30",
+   "weight": "0,5 kg",
+   "cost": "10 po"
+  }
+ ],
+ "armors": [
+  {
+   "id": "armure-matelassee",
+   "name": "Armure matelassee",
+   "category": "legere",
+   "baseAC": 11,
+   "dexMax": null,
+   "strengthReq": null,
+   "stealthDisadvantage": true,
+   "weight": "4 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "armure-de-cuir",
+   "name": "Armure de cuir",
+   "category": "legere",
+   "baseAC": 11,
+   "dexMax": null,
+   "strengthReq": null,
+   "stealthDisadvantage": false,
+   "weight": "5 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "armure-de-cuir-cloute",
+   "name": "Armure de cuir cloute",
+   "category": "legere",
+   "baseAC": 12,
+   "dexMax": null,
+   "strengthReq": null,
+   "stealthDisadvantage": false,
+   "weight": "6,5 kg",
+   "cost": "45 po"
+  },
+  {
+   "id": "armure-de-peaux",
+   "name": "Armure de peaux",
+   "category": "intermediaire",
+   "baseAC": 12,
+   "dexMax": 2,
+   "strengthReq": null,
+   "stealthDisadvantage": false,
+   "weight": "6 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "chemise-de-mailles",
+   "name": "Chemise de mailles",
+   "category": "intermediaire",
+   "baseAC": 13,
+   "dexMax": 2,
+   "strengthReq": null,
+   "stealthDisadvantage": false,
+   "weight": "10 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "armure-d-ecailles",
+   "name": "Armure d'ecailles",
+   "category": "intermediaire",
+   "baseAC": 14,
+   "dexMax": 2,
+   "strengthReq": null,
+   "stealthDisadvantage": true,
+   "weight": "22,5 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "cuirasse",
+   "name": "Cuirasse",
+   "category": "intermediaire",
+   "baseAC": 14,
+   "dexMax": 2,
+   "strengthReq": null,
+   "stealthDisadvantage": false,
+   "weight": "10 kg",
+   "cost": "400 po"
+  },
+  {
+   "id": "demi-plate",
+   "name": "Demi-plate",
+   "category": "intermediaire",
+   "baseAC": 15,
+   "dexMax": 2,
+   "strengthReq": null,
+   "stealthDisadvantage": true,
+   "weight": "20 kg",
+   "cost": "750 po"
+  },
+  {
+   "id": "broigne",
+   "name": "Broigne",
+   "category": "lourde",
+   "baseAC": 14,
+   "dexMax": 0,
+   "strengthReq": null,
+   "stealthDisadvantage": true,
+   "weight": "20 kg",
+   "cost": "30 po"
+  },
+  {
+   "id": "cotte-de-mailles",
+   "name": "Cotte de mailles",
+   "category": "lourde",
+   "baseAC": 16,
+   "dexMax": 0,
+   "strengthReq": 13,
+   "stealthDisadvantage": true,
+   "weight": "27,5 kg",
+   "cost": "75 po"
+  },
+  {
+   "id": "clibanion",
+   "name": "Clibanion",
+   "category": "lourde",
+   "baseAC": 17,
+   "dexMax": 0,
+   "strengthReq": 15,
+   "stealthDisadvantage": true,
+   "weight": "30 kg",
+   "cost": "200 po"
+  },
+  {
+   "id": "harnois",
+   "name": "Harnois",
+   "category": "lourde",
+   "baseAC": 18,
+   "dexMax": 0,
+   "strengthReq": 15,
+   "stealthDisadvantage": true,
+   "weight": "32,5 kg",
+   "cost": "1500 po"
+  },
+  {
+   "id": "bouclier",
+   "name": "Bouclier",
+   "category": "bouclier",
+   "baseAC": 2,
+   "dexMax": null,
+   "strengthReq": null,
+   "stealthDisadvantage": false,
+   "weight": "3 kg",
+   "cost": "10 po"
+  }
+ ],
+ "tools": [
+  {
+   "id": "materiel-d-alchimiste",
+   "name": "Materiel d'alchimiste",
+   "kind": "artisan",
+   "ability": "int",
+   "weight": "4 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "materiel-de-brasseur",
+   "name": "Materiel de brasseur",
+   "kind": "artisan",
+   "ability": "int",
+   "weight": "4,5 kg",
+   "cost": "20 po"
+  },
+  {
+   "id": "materiel-de-calligraphe",
+   "name": "Materiel de calligraphe",
+   "kind": "artisan",
+   "ability": "dex",
+   "weight": "2,5 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "materiel-de-peintre",
+   "name": "Materiel de peintre",
+   "kind": "artisan",
+   "ability": "sag",
+   "weight": "2,5 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "outils-de-bricoleur",
+   "name": "Outils de bricoleur",
+   "kind": "artisan",
+   "ability": "dex",
+   "weight": "5 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "outils-de-cartographe",
+   "name": "Outils de cartographe",
+   "kind": "artisan",
+   "ability": "sag",
+   "weight": "3 kg",
+   "cost": "15 po"
+  },
+  {
+   "id": "outils-de-charpentier",
+   "name": "Outils de charpentier",
+   "kind": "artisan",
+   "ability": "for",
+   "weight": "3 kg",
+   "cost": "8 po"
+  },
+  {
+   "id": "outils-de-cordonnier",
+   "name": "Outils de cordonnier",
+   "kind": "artisan",
+   "ability": "dex",
+   "weight": "2,5 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "outils-de-forgeron",
+   "name": "Outils de forgeron",
+   "kind": "artisan",
+   "ability": "for",
+   "weight": "4 kg",
+   "cost": "20 po"
+  },
+  {
+   "id": "outils-de-joaillier",
+   "name": "Outils de joaillier",
+   "kind": "artisan",
+   "ability": "int",
+   "weight": "1 kg",
+   "cost": "25 po"
+  },
+  {
+   "id": "outils-de-macon",
+   "name": "Outils de macon",
+   "kind": "artisan",
+   "ability": "for",
+   "weight": "4 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "outils-de-menuisier",
+   "name": "Outils de menuisier",
+   "kind": "artisan",
+   "ability": "dex",
+   "weight": "2,5 kg",
+   "cost": "1 po"
+  },
+  {
+   "id": "outils-de-potier",
+   "name": "Outils de potier",
+   "kind": "artisan",
+   "ability": "int",
+   "weight": "1,5 kg",
+   "cost": "10 po"
+  },
+  {
+   "id": "outils-de-souffleur-de-verre",
+   "name": "Outils de souffleur de verre",
+   "kind": "artisan",
+   "ability": "int",
+   "weight": "2,5 kg",
+   "cost": "30 po"
+  },
+  {
+   "id": "outils-de-tanneur",
+   "name": "Outils de tanneur",
+   "kind": "artisan",
+   "ability": "dex",
+   "weight": "2,5 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "outils-de-tisserand",
+   "name": "Outils de tisserand",
+   "kind": "artisan",
+   "ability": "dex",
+   "weight": "2,5 kg",
+   "cost": "1 po"
+  },
+  {
+   "id": "ustensiles-de-cuisinier",
+   "name": "Ustensiles de cuisinier",
+   "kind": "artisan",
+   "ability": "sag",
+   "weight": "4 kg",
+   "cost": "1 po"
+  },
+  {
+   "id": "accessoires-de-deguisement",
+   "name": "Accessoires de deguisement",
+   "kind": "autre",
+   "ability": "cha",
+   "weight": "1,5 kg",
+   "cost": "25 po"
+  },
+  {
+   "id": "boite-de-jeux",
+   "name": "Boite de jeux",
+   "kind": "autre",
+   "ability": "sag",
+   "weight": "-",
+   "cost": "variable"
+  },
+  {
+   "id": "instrument-de-musique",
+   "name": "Instrument de musique",
+   "kind": "autre",
+   "ability": "cha",
+   "weight": "variable",
+   "cost": "variable"
+  },
+  {
+   "id": "instruments-de-navigateur",
+   "name": "Instruments de navigateur",
+   "kind": "autre",
+   "ability": "sag",
+   "weight": "1 kg",
+   "cost": "25 po"
+  },
+  {
+   "id": "materiel-de-contrefacon",
+   "name": "Materiel de contrefacon",
+   "kind": "autre",
+   "ability": "dex",
+   "weight": "2,5 kg",
+   "cost": "15 po"
+  },
+  {
+   "id": "materiel-d-empoisonneur",
+   "name": "Materiel d'empoisonneur",
+   "kind": "autre",
+   "ability": "int",
+   "weight": "1 kg",
+   "cost": "50 po"
+  },
+  {
+   "id": "materiel-d-herboriste",
+   "name": "Materiel d'herboriste",
+   "kind": "autre",
+   "ability": "int",
+   "weight": "1,5 kg",
+   "cost": "5 po"
+  },
+  {
+   "id": "outils-de-voleur",
+   "name": "Outils de voleur",
+   "kind": "autre",
+   "ability": "dex",
+   "weight": "0,5 kg",
+   "cost": "25 po"
+  }
+ ],
+ "packs": [
+  {
+   "id": "paquetage-d-artiste",
+   "name": "Paquetage d'artiste",
+   "cost": "40 po",
+   "weight": "29 kg",
+   "contents": [
+    "Sac a dos",
+    "boite a amadou",
+    "cloche",
+    "3 costumes",
+    "8 flasques d'huile",
+    "9 jours de rations",
+    "lanterne sourde",
+    "miroir",
+    "outre",
+    "sac de couchage"
+   ]
+  },
+  {
+   "id": "paquetage-de-cambrioleur",
+   "name": "Paquetage de cambrioleur",
+   "cost": "16 po",
+   "weight": "21 kg",
+   "contents": [
+    "Sac a dos",
+    "billes",
+    "boite a amadou",
+    "10 bougies",
+    "cloche",
+    "corde",
+    "7 flasques d'huile",
+    "lanterne a capote",
+    "outre",
+    "pied-de-biche",
+    "5 jours de rations"
+   ]
+  },
+  {
+   "id": "paquetage-de-diplomate",
+   "name": "Paquetage de diplomate",
+   "cost": "39 po",
+   "weight": "19,5 kg",
+   "contents": [
+    "Beaux habits",
+    "boite a amadou",
+    "coffre",
+    "encre",
+    "2 etuis a cartes et parchemins",
+    "5 feuilles de papier",
+    "5 feuilles de parchemin",
+    "4 flasques d'huile",
+    "lampe",
+    "5 porte-plume",
+    "parfum"
+   ]
+  },
+  {
+   "id": "paquetage-d-ecclesiastique",
+   "name": "Paquetage d'ecclesiastique",
+   "cost": "33 po",
+   "weight": "14,5 kg",
+   "contents": [
+    "Sac a dos",
+    "boite a amadou",
+    "couverture",
+    "eau benite",
+    "lampe",
+    "7 jours de rations",
+    "robe"
+   ]
+  },
+  {
+   "id": "paquetage-d-erudit",
+   "name": "Paquetage d'erudit",
+   "cost": "40 po",
+   "weight": "11 kg",
+   "contents": [
+    "Sac a dos",
+    "boite a amadou",
+    "encre",
+    "lampe",
+    "livre",
+    "porte-plume",
+    "10 flasques d'huile",
+    "10 feuilles de parchemin"
+   ]
+  },
+  {
+   "id": "paquetage-d-explorateur",
+   "name": "Paquetage d'explorateur",
+   "cost": "10 po",
+   "weight": "27,5 kg",
+   "contents": [
+    "Sac a dos",
+    "sac de couchage",
+    "boite a amadou",
+    "corde",
+    "2 flasques d'huile",
+    "10 jours de rations",
+    "outre",
+    "10 torches"
+   ]
+  },
+  {
+   "id": "paquetage-d-exploration-souterraine",
+   "name": "Paquetage d'exploration souterraine",
+   "cost": "12 po",
+   "weight": "27,5 kg",
+   "contents": [
+    "Sac a dos",
+    "boite a amadou",
+    "chausse-trappes",
+    "corde",
+    "2 flasques d'huile",
+    "10 jours de rations",
+    "outre",
+    "pied-de-biche",
+    "10 torches"
+   ]
+  }
+ ],
+ "gear": [
+  {
+   "id": "baguette",
+   "name": "Baguette",
+   "cost": "10 po",
+   "weight": "0,5 kg",
+   "note": "focaliseur arcanique (Ensorceleur, Magicien, Occultiste)"
+  },
+  {
+   "id": "baton",
+   "name": "Baton",
+   "cost": "5 po",
+   "weight": "2 kg",
+   "note": "focaliseur arcanique ; aussi baton de combat"
+  },
+  {
+   "id": "cristal",
+   "name": "Cristal",
+   "cost": "10 po",
+   "weight": "0,5 kg",
+   "note": "focaliseur arcanique"
+  },
+  {
+   "id": "orbe",
+   "name": "Orbe",
+   "cost": "20 po",
+   "weight": "1,5 kg",
+   "note": "focaliseur arcanique"
+  },
+  {
+   "id": "sceptre",
+   "name": "Sceptre",
+   "cost": "10 po",
+   "weight": "1 kg",
+   "note": "focaliseur arcanique"
+  },
+  {
+   "id": "baguette-d-if",
+   "name": "Baguette d'if",
+   "cost": "10 po",
+   "weight": "0,5 kg",
+   "note": "focaliseur druidique (Druide, Rodeur)"
+  },
+  {
+   "id": "baton-en-bois",
+   "name": "Baton en bois",
+   "cost": "5 po",
+   "weight": "2 kg",
+   "note": "focaliseur druidique ; aussi baton de combat"
+  },
+  {
+   "id": "branche-de-houx",
+   "name": "Branche de houx",
+   "cost": "1 po",
+   "weight": "-",
+   "note": "focaliseur druidique"
+  },
+  {
+   "id": "amulette",
+   "name": "Amulette",
+   "cost": "5 po",
+   "weight": "0,5 kg",
+   "note": "symbole sacre (Clerc, Paladin) ; portee ou tenue"
+  },
+  {
+   "id": "embleme",
+   "name": "Embleme",
+   "cost": "5 po",
+   "weight": "-",
+   "note": "symbole sacre ; cousu sur une etoffe ou fixe sur un bouclier"
+  },
+  {
+   "id": "reliquaire",
+   "name": "Reliquaire",
+   "cost": "5 po",
+   "weight": "1 kg",
+   "note": "symbole sacre ; tenu"
+  },
+  {
+   "id": "balles-d-arme-a-feu",
+   "name": "Balles d'arme a feu",
+   "cost": "3 po",
+   "weight": "1 kg",
+   "note": "munition (x10 ; rangement Sacoche) ; pour mousquet et pistolet"
+  },
+  {
+   "id": "billes-de-fronde",
+   "name": "Billes de fronde",
+   "cost": "4 pc",
+   "weight": "750 g",
+   "note": "munition (x20 ; rangement Sacoche) ; pour fronde"
+  },
+  {
+   "id": "carreaux",
+   "name": "Carreaux",
+   "cost": "1 po",
+   "weight": "750 g",
+   "note": "munition (x20 ; rangement Etui) ; pour arbaletes"
+  },
+  {
+   "id": "dards",
+   "name": "Dards",
+   "cost": "1 po",
+   "weight": "0,5 kg",
+   "note": "munition (x50 ; rangement Sacoche) ; pour sarbacane"
+  },
+  {
+   "id": "fleches",
+   "name": "Fleches",
+   "cost": "1 po",
+   "weight": "0,5 kg",
+   "note": "munition (x20 ; rangement Carquois) ; pour arcs"
+  },
+  {
+   "id": "sacoche-a-composantes",
+   "name": "Sacoche a composantes",
+   "cost": "25 po",
+   "weight": "1 kg",
+   "note": "range toutes les composantes materielles gratuites des sorts"
+  },
+  {
+   "id": "sac-a-dos",
+   "name": "Sac a dos",
+   "cost": "2 po",
+   "weight": "2,5 kg"
+  },
+  {
+   "id": "torche",
+   "name": "Torche",
+   "cost": "1 pc",
+   "weight": "0,5 kg",
+   "note": "brule 1 h ; Lumiere vive 6 m + faible 6 m"
+  },
+  {
+   "id": "corde",
+   "name": "Corde",
+   "cost": "1 po",
+   "weight": "2,5 kg"
+  },
+  {
+   "id": "rations",
+   "name": "Rations",
+   "cost": "5 pa",
+   "weight": "1 kg"
+  },
+  {
+   "id": "potion-de-guerison",
+   "name": "Potion de guerison",
+   "cost": "50 po",
+   "weight": "250 g",
+   "note": "objet magique ; action Bonus ; recupere 2d4+2 PV"
+  },
+  {
+   "id": "trousse-de-soins",
+   "name": "Trousse de soins",
+   "cost": "5 po",
+   "weight": "1,5 kg",
+   "note": "10 charges ; stabilise une creature a 0 PV sans test de Medecine"
+  },
+  {
+   "id": "symbole-sacre",
+   "name": "Symbole sacre",
+   "note": "focaliseur d incantation sacre (amulette, embleme ou reliquaire)"
+  },
+  {
+   "id": "carquois",
+   "name": "Carquois",
+   "note": "contient jusqu a 20 munitions"
+  },
+  {
+   "id": "robe",
+   "name": "Robe"
+  },
+  {
+   "id": "grimoire",
+   "name": "Grimoire",
+   "note": "livre de sorts du magicien"
+  },
+  {
+   "id": "livre",
+   "name": "Livre"
+  },
+  {
+   "id": "branche-de-gui",
+   "name": "Branche de gui",
+   "note": "focaliseur druidique"
+  },
+  {
+   "id": "tenue-de-voyage",
+   "name": "Tenue de voyage",
+   "cost": "2 po",
+   "weight": "2 kg",
+   "note": "vetements resistants concus pour voyager (img:223,228)"
+  },
+  {
+   "id": "sac-de-couchage",
+   "name": "Sac de couchage",
+   "cost": "1 po",
+   "weight": "3,5 kg",
+   "note": "reussite auto des JS contre le froid extreme (img:223,228)"
+  },
+  {
+   "id": "beaux-habits",
+   "name": "Beaux habits",
+   "cost": "15 po",
+   "weight": "3 kg",
+   "note": "img:223"
+  },
+  {
+   "id": "costume",
+   "name": "Costume",
+   "cost": "5 po",
+   "weight": "2 kg",
+   "note": "Avantage pour se faire passer pour la personne represente (img:223,224)"
+  },
+  {
+   "id": "miroir",
+   "name": "Miroir",
+   "cost": "5 po",
+   "weight": "250 g",
+   "note": "miroir a main en acier (img:223,226)"
+  },
+  {
+   "id": "parfum",
+   "name": "Parfum",
+   "cost": "5 po",
+   "weight": "-",
+   "note": "flacon de 120 ml ; Avantage Persuasion pendant 1 h (img:223,227)"
+  },
+  {
+   "id": "lampe",
+   "name": "Lampe",
+   "cost": "5 pa",
+   "weight": "0,5 kg",
+   "note": "brule de l'huile ; Lumiere vive 4,50 m + faible 9 m (img:223,226)"
+  },
+  {
+   "id": "lanterne-a-capote",
+   "name": "Lanterne a capote",
+   "cost": "5 po",
+   "weight": "1 kg",
+   "note": "brule de l'huile ; Lumiere vive 9 m + faible 9 m (img:223,226)"
+  },
+  {
+   "id": "tente",
+   "name": "Tente",
+   "cost": "2 po",
+   "weight": "10 kg",
+   "note": "abrite jusqu a 2 creatures de taille P ou M (img:223,228)"
+  },
+  {
+   "id": "menottes",
+   "name": "Menottes",
+   "cost": "2 po",
+   "weight": "3 kg",
+   "note": "fournies avec une clef ; DD 20 Escamotage pour s'en liberer (img:223,226)"
+  },
+  {
+   "id": "pied-de-biche",
+   "name": "Pied-de-biche",
+   "cost": "2 po",
+   "weight": "2,5 kg",
+   "note": "Avantage aux tests de Force avec effet de levier (img:223,227)"
+  },
+  {
+   "id": "pelle",
+   "name": "Pelle",
+   "cost": "2 po",
+   "weight": "2,5 kg",
+   "note": "creuse un trou de 1,5 m de cote en 1 h (img:223,227)"
+  },
+  {
+   "id": "pot-en-fer",
+   "name": "Pot en fer",
+   "cost": "2 po",
+   "weight": "5 kg",
+   "note": "contient 4 litres de liquide (img:223,228)"
+  },
+  {
+   "id": "sacoche",
+   "name": "Sacoche",
+   "cost": "5 pa",
+   "weight": "0,5 kg",
+   "note": "contient jusqu a 3 kg pour 0,006 m3 (img:223,228)"
+  },
+  {
+   "id": "huile",
+   "name": "Huile",
+   "cost": "1 pa",
+   "weight": "0,5 kg",
+   "note": "flasque ; combustible pour lampe/lanterne ou arme de jet (img:223,226)"
+  },
+  {
+   "id": "parchemin",
+   "name": "Parchemin",
+   "cost": "1 pa",
+   "weight": "-",
+   "note": "une feuille contient environ 250 mots (img:223,227)"
+  },
+  {
+   "id": "livre-de-prieres",
+   "name": "Livre de prieres",
+   "cost": "25 po",
+   "weight": "2,5 kg",
+   "note": "livre (cf. Livre, img:223,226)"
+  },
+  {
+   "id": "livre-histoire",
+   "name": "Livre d'histoire",
+   "cost": "25 po",
+   "weight": "2,5 kg",
+   "note": "livre (cf. Livre, img:223,226)"
+  },
+  {
+   "id": "livre-philosophie",
+   "name": "Livre de philosophie",
+   "cost": "25 po",
+   "weight": "2,5 kg",
+   "note": "livre (cf. Livre, img:223,226)"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boule de feu a retardement — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Boule de feu a retardement">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="boule-de-feu-a-retardement" data-status="source"
+             data-source="img:250"
+             data-spell-level="7" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="45m" data-components="V,S,M" data-material="une boulette de guano de chauve-souris et de soufre"
+             data-duration="conc-1min" data-classes="ensorceleur,magicien"
+             data-save="dex" data-damage-type="feu">
+
+      <h1>Boule de feu a retardement</h1>
+      <p class="provenance">Evocation du 7e niveau (<a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 7</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">45 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (une boulette de guano de <a href="../creatures/chauve-souris.html" data-ref="chauve-souris">chauve-souris</a> et de soufre)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Un rayon de lumiere jaune jaillit de vous pour se condenser en un point que vous choisissez a portee sous forme d'une bille luisante pour toute la duree. Lorsque le sort prend fin, la bille explose et toute creature prise dans une Sphere de 6 m de rayon centree sur ce point effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite. Elle subit des degats de feu egaux aux degats accumules en cas d'echec, la moitie en cas de reussite.</p>
+        <p>Les degats de base du sort sont de 12d6 et les degats augmentent de 1d6 chaque fois que votre tour prend fin tandis que le sort persiste.</p>
+        <p>Si une creature touche physiquement la bille avant la fin de l'intervalle, elle effectue un jet de sauvegarde de Dexterite. En cas d'echec, le sort prend fin et la bille explose. En cas de reussite, la creature peut projeter la bille d'un maximum de 12 m. Si la bille penetre dans l'espace d'une creature ou heurte un objet solide, le sort prend fin et la bille explose.</p>
+        <p>Quand la bille explose, les objets inflammables pris dans la deflagration s'embrasent s'ils ne sont portes par personne.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Degats de feu egaux aux degats accumules (12d6 de base, +1d6 par fin de tour ecoulee).</td></tr>
+            <tr><td>Reussite</td><td>Moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Emplacement de niveau superieur. Les degats de base augmentent de 1d6 par niveau d'emplacement au-dela du 7e.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

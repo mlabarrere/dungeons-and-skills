@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abjurateur — Sous-classe de Magicien</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Magicien|/classes/magicien.html; Abjurateur">
+  <main>
+    <article class="sheet" data-entity="sous-classe" data-parent-class="magicien" data-id="abjurateur" data-status="source" data-source="img:122">
+      <h1>Abjurateur</h1>
+      <div class="pill-row">
+        <span class="badge" data-status="source">Extraction faite (img:122)</span>
+        <span class="pill">Sous-classe de <a href="magicien.html" data-ref="magicien">Magicien</a></span>
+      </div>
+      <p class="provenance">Protegez vos compagnons et bannissez les ennemis</p>
+      <p>
+        Votre etude de la magie se concentre sur les sorts qui bloquent, bannissent
+        ou protegent : qui mettent un terme aux effets nefastes, bannissent les
+        influences malefiques et veillent sur les faibles. On fait appel aux
+        abjurateurs chaque fois qu'il s'agit d'exorciser un esprit malin, de proteger
+        un lieu contre l'espionnage magique ou de refermer un portail ouvrant sur
+        d'autres plans d'existence. Les groupes d'aventuriers apprecient d'avoir un
+        abjurateur parmi eux pour la <a href="../dons/protection.html" data-ref="protection">protection</a> qu'il offre contre les attaques
+        Hostiles, qu'elles soient magiques ou non.
+      </p>
+
+      <section class="section">
+        <h2>Aptitudes par niveau</h2>
+        <table>
+          <thead>
+            <tr><th>Niveau de Magicien</th><th>Aptitude</th><th>Effet</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3</td>
+              <td>Abjurateur erudit</td>
+              <td>
+                <p>Choisissez deux sorts de Magicien de l'ecole de l'Abjuration, chacun du 2e niveau au maximum, et ajoutez-les gratuitement a votre grimoire.</p>
+                <p>En outre, chaque fois que vous recevez l'acces a un nouveau niveau d'emplacements de sort dans cette classe, vous pouvez ajouter gratuitement a votre grimoire un sort de Magicien de l'ecole de l'Abjuration. Le sort choisi doit etre d'un niveau pour lequel vous disposez d'emplacements de sort.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Egide arcanique</td>
+              <td>
+                <p>Tisser un voile magique autour de vous permet de vous proteger. Lorsque vous lancez un sort d'Abjuration avec un emplacement de sort, vous pouvez simultanement utiliser un brin de la magie du sort pour creer une egide magique sur vous-meme, qui persiste jusqu'a ce que vous ayez termine un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">Repos long</a>. Cette egide dispose d'un maximum de <a href="../regles/glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> egal a deux fois votre niveau de Magicien + votre modificateur d'Intelligence. Chaque fois que vous subissez des degats, l'egide les subit a votre place, et si vous avez des Resistances ou Vulnerabilites, appliquez-les avant de reduire les points de vie de l'egide. Si ces degats reduisent l'egide a 0 point de vie, vous subissez les eventuels degats residuels. Quand l'egide se retrouve a 0 point de vie, elle ne peut plus absorber de degats mais sa magie demeure.</p>
+                <p>Chaque fois que vous lancez un sort d'Abjuration avec un emplacement de sort, l'egide regagne un nombre de points de vie egal a deux fois le niveau de l'emplacement depense. Par une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a>, vous pouvez aussi depenser un emplacement de sort. L'egide regagne un nombre de points de vie egal a deux fois le niveau de l'emplacement depense.</p>
+                <p>Une fois l'egide creee, vous ne pouvez plus la recreer avant d'avoir termine un Repos long.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Egide projetee</td>
+              <td>
+                <p>Lorsqu'une creature que vous voyez dans un rayon de 9 m subit des degats, vous pouvez jouer votre Reaction pour que votre Egide arcanique absorbe ces degats. Si ces degats reduisent l'egide a 0 point de vie, la creature protegee subit les eventuels degats residuels. Si cette creature a des Resistances ou Vulnerabilites, appliquez-les avant de reduire les points de vie de l'egide.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Briseur de sorts</td>
+              <td>
+                <p>Les sorts <em>contresort</em> et <em><a href="../sorts/dissipation-de-la-magie.html" data-ref="dissipation-de-la-magie">dissipation de la magie</a></em> sont toujours consideres comme prepares pour vous. Vous pouvez en outre lancer <em>dissipation de la magie</em> par une action Bonus, et ajouter votre bonus de maitrise au <a href="../regles/glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a> associe.</p>
+                <p>Lorsque vous lancez l'un ou l'autre sort avec un emplacement de sort, cet emplacement n'est pas depense si le sort ne parvient pas a contrecarrer un sort.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Resistance aux sorts</td>
+              <td>
+                <p>Vous avez l'Avantage aux jets de sauvegarde contre les sorts et la Resistance aux degats des sorts.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

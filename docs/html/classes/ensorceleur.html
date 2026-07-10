@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ensorceleur — Classe</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Ensorceleur">
+  <main>
+    <article class="sheet" data-entity="classe" data-id="ensorceleur" data-status="source" data-source="img:91">
+      <h1>Ensorceleur</h1>
+      <div class="pill-row">
+        <span class="badge" data-status="source">Extraction faite (img:91 a 139)</span>
+        <span class="pill">Caracteristique : Charisme</span>
+        <span class="pill">De de vie : d6</span>
+        <span class="pill">Lanceur de sorts inne</span>
+      </div>
+      <p class="note">
+        Conversion fidele des pages 91 a 96 (images p92 a 139). L'Ensorceleur
+        manie une magie innee gravee dans son etre : il ne l'apprend pas, il la
+        canalise. Il puise dans une reserve de points de Sorcellerie pour alimenter
+        la Metamagie et creer des effets varies.
+      </p>
+
+      <section class="section">
+        <h2>Role de la classe</h2>
+        <p>
+          L'Ensorceleur est un lanceur de sorts spontane dont la puissance arcanique
+          reside dans son etre, brute et indomptee. La benediction d'un dragon, une
+          exposition a une magie etrange ou un heritage familial peuvent en etre
+          l'origine.
+        </p>
+        <ul>
+          <li>infliger des degats de zone et du controle grace a un large eventail de sorts ;</li>
+          <li>modeler ses sorts par la Metamagie (portee, duree, discretion, degats) ;</li>
+          <li>convertir emplacements et points de Sorcellerie selon les besoins ;</li>
+          <li>couvrir les competences sociales (Persuasion, Intimidation, Tromperie).</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Traits de base</h2>
+        <table>
+          <thead><tr><th>Element</th><th>Valeur</th></tr></thead>
+          <tbody>
+            <tr><td>Caracteristique principale</td><td>Charisme</td></tr>
+            <tr><td>De de vie</td><td>d6 par niveau d'Ensorceleur</td></tr>
+            <tr><td>Jets de sauvegarde maitrises</td><td>Constitution et Charisme</td></tr>
+            <tr><td>Competences</td><td>2 au choix parmi Arcanes, Intimidation, Intuition, Persuasion, Religion et Tromperie</td></tr>
+            <tr><td><a href="../equipement/armes.html" data-ref="armes">Armes</a></td><td>Armes courantes</td></tr>
+            <tr><td>Armures</td><td>Aucune</td></tr>
+            <tr><td>Focaliseur</td><td>Focaliseur arcanique</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Equipement de depart</h2>
+        <table>
+          <thead><tr><th>Option</th><th>Contenu</th></tr></thead>
+          <tbody>
+            <tr><td>A</td><td>Lance, 2 dagues, focaliseur arcanique (cristal), paquetage d'exploration souterraine et 28 po</td></tr>
+            <tr><td>B</td><td>50 po</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Table : Aptitudes de l'Ensorceleur</h2>
+        <p class="note">Colonnes 1 a 9 = emplacements de sort par niveau de sort.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Niv.</th><th>Maitrise</th><th>Aptitudes de classe</th>
+              <th>Points de Sorcellerie</th><th>Sorts mineurs</th><th>Sorts prepares</th>
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>+2</td><td>Sorts, Sorcellerie innee</td><td>-</td><td>4</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>2</td><td>+2</td><td>Metamagie, Reserve arcanique</td><td>2</td><td>4</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>3</td><td>+2</td><td>Sous-classe d'Ensorceleur</td><td>3</td><td>4</td><td>6</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>4</td><td>+2</td><td><a href="../dons/amelioration-de-caracteristique.html" data-ref="amelioration-de-caracteristique">Amelioration de caracteristique</a></td><td>4</td><td>5</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>5</td><td>+3</td><td>Restauration ensorcelee</td><td>5</td><td>5</td><td>9</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>6</td><td>+3</td><td>Aptitude de sous-classe</td><td>6</td><td>5</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>7</td><td>+3</td><td>Sorcellerie incarnee</td><td>7</td><td>5</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>8</td><td>+3</td><td>Amelioration de caracteristique</td><td>8</td><td>5</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>9</td><td>+4</td><td>-</td><td>9</td><td>6</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>10</td><td>+4</td><td>Metamagie</td><td>10</td><td>6</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>11</td><td>+4</td><td>-</td><td>11</td><td>6</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>12</td><td>+4</td><td>Amelioration de caracteristique</td><td>12</td><td>6</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>13</td><td>+5</td><td>-</td><td>13</td><td>6</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+            <tr><td>14</td><td>+5</td><td>Aptitude de sous-classe</td><td>14</td><td>6</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+            <tr><td>15</td><td>+5</td><td>-</td><td>15</td><td>6</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>-</td></tr>
+            <tr><td>16</td><td>+5</td><td>Amelioration de caracteristique</td><td>16</td><td>6</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>-</td></tr>
+            <tr><td>17</td><td>+6</td><td>Metamagie</td><td>17</td><td>6</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>18</td><td>+6</td><td>Aptitude de sous-classe</td><td>18</td><td>6</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>19</td><td>+6</td><td>Faveur epique</td><td>19</td><td>6</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>20</td><td>+6</td><td>Apotheose arcanique</td><td>20</td><td>6</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 1 : Sorts</h2>
+        <p>
+          Le Charisme est la caracteristique d'incantation de l'Ensorceleur. Un
+          focaliseur arcanique peut servir de <a href="../regles/glossaire.html#focaliseur-d-incantation" data-ref="focaliseur-d-incantation">focaliseur d'incantation</a>.
+        </p>
+        <ul>
+          <li><strong>Sorts mineurs.</strong> Vous connaissez quatre sorts mineurs d'Ensorceleur au choix. Recommandes : <em><a href="../sorts/eruption-ensorcelee.html" data-ref="eruption-ensorcelee">eruption ensorcelee</a></em>, <em>lumiere</em>, <em><a href="../sorts/poigne-electrique.html" data-ref="poigne-electrique">poigne electrique</a></em>, <em>prestidigitation</em>. Vous pouvez remplacer un <a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">sort mineur</a> a chaque niveau gagne, et apprenez un sort mineur supplementaire aux niveaux 4 et 10.</li>
+          <li><strong>Emplacements de sort.</strong> La table indique vos emplacements pour lancer les sorts du 1er niveau et superieur ; ils sont recuperes a la fin d'un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">Repos long</a>.</li>
+          <li><strong>Sorts prepares du 1er niveau et plus.</strong> Vous preparez la liste de sorts que vous pouvez lancer. Pour commencer, choisissez deux sorts d'Ensorceleur du 1er niveau (recommandes : <em><a href="../sorts/detection-de-la-magie.html" data-ref="detection-de-la-magie">detection de la magie</a></em> et <em><a href="../sorts/mains-brulantes.html" data-ref="mains-brulantes">mains brulantes</a></em>). Le nombre de sorts prepares augmente selon la colonne Sorts prepares.</li>
+          <li><strong>Modification des sorts prepares.</strong> A chaque niveau gagne, vous pouvez remplacer un sort de votre liste par un autre sort d'Ensorceleur pour lequel vous disposez d'un emplacement.</li>
+        </ul>
+        <p class="note">
+          Si une autre aptitude d'Ensorceleur vous octroie des sorts toujours
+          prepares, ces sorts ne comptent pas dans le nombre de sorts prepares mais
+          sont consideres comme des sorts d'Ensorceleur.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 1 : Sorcellerie innee</h2>
+        <p>
+          Un evenement de votre passe a fait eclore une magie bouillonnante. Par une
+          <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a>, vous liberez cette magie pendant 1 minute :
+        </p>
+        <ul>
+          <li>le DD de sauvegarde de vos sorts d'Ensorceleur augmente de 1 ;</li>
+          <li>vous avez l'Avantage aux jets d'attaque des sorts d'Ensorceleur que vous lancez.</li>
+        </ul>
+        <p>Vous pouvez recourir a cette aptitude deux fois, et recuperez ce quota en terminant un Repos long.</p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 2 : Metamagie</h2>
+        <p>
+          Vous recevez deux options de Metamagie au choix parmi les Options de
+          metamagie ci-dessous. Les options modifient ponctuellement le sort que vous
+          lancez ; pour y recourir, vous depensez leur cout en points de Sorcellerie.
+        </p>
+        <ul>
+          <li>vous ne pouvez appliquer qu'une option de Metamagie a l'incantation d'un sort, sauf si l'option precise le contraire ;</li>
+          <li>a chaque niveau gagne, vous pouvez remplacer une option connue par une autre ;</li>
+          <li>vous recevez deux options supplementaires au niveau 10 et deux de plus au niveau 17.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 2 : Reserve arcanique</h2>
+        <p>
+          Cette reserve est figuree par des points de Sorcellerie. Vous disposez de 2
+          points au niveau 2 et en recevez davantage selon la colonne Points de
+          Sorcellerie de la table. Vous ne pouvez pas depasser le total indique a
+          votre niveau et recuperez tous les points depenses a la fin d'un Repos long.
+        </p>
+        <ul>
+          <li><strong>Conversion d'emplacements de sort en points de Sorcellerie.</strong> Depenser un emplacement de sort vous octroie un nombre de points de Sorcellerie egal au niveau de l'emplacement (pas d'action requise).</li>
+          <li><strong>Creation d'emplacements de sort.</strong> Par une action Bonus, transformez des points de Sorcellerie non depenses en un emplacement de sort (voir la table). Vous ne pouvez pas creer d'emplacement au-dessus du 5e niveau. Tout emplacement ainsi cree disparait quand vous terminez un Repos long.</li>
+        </ul>
+        <h3>Table : Creation d'emplacements de sort</h3>
+        <table>
+          <thead><tr><th>Niveau d'emplacement</th><th>Cout en points de Sorcellerie</th><th>Niveau d'Ensorceleur minimum</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>2</td><td>2</td></tr>
+            <tr><td>2</td><td>3</td><td>3</td></tr>
+            <tr><td>3</td><td>5</td><td>5</td></tr>
+            <tr><td>4</td><td>6</td><td>7</td></tr>
+            <tr><td>5</td><td>7</td><td>9</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aptitudes par niveau (suite)</h2>
+        <h3>Niveau 3 : Sous-classe d'Ensorceleur</h3>
+        <p>Vous recevez la sous-classe d'Ensorceleur de votre choix (voir plus bas). Vous beneficiez ensuite de ses aptitudes a certains niveaux, a concurrence de votre niveau actuel.</p>
+
+        <h3 style="margin-top:12px;">Niveau 4 : Amelioration de caracteristique</h3>
+        <p>Vous recevez le don Amelioration de caracteristique ou un autre don pour lequel vous remplissez les conditions. De nouveau aux niveaux 8, 12 et 16.</p>
+
+        <h3 style="margin-top:12px;">Niveau 5 : Restauration ensorcelee</h3>
+        <p>En terminant un <a href="../regles/glossaire.html#repos-court" data-ref="repos-court">Repos court</a>, vous recuperez les points de Sorcellerie depenses a concurrence de la moitie de votre niveau d'Ensorceleur (arrondi a l'inferieur). Une fois cette aptitude utilisee, vous devez terminer un Repos long pour y recourir de nouveau.</p>
+
+        <h3 style="margin-top:12px;">Niveau 7 : Sorcellerie incarnee</h3>
+        <p>S'il ne vous reste aucune utilisation de Sorcellerie innee, vous pouvez y recourir en depensant 2 points de Sorcellerie et l'activez par une action Bonus. En outre, tant que Sorcellerie innee est active, vous pouvez utiliser jusqu'a deux de vos options de Metamagie pour chaque sort que vous lancez.</p>
+
+        <h3 style="margin-top:12px;">Niveau 19 : Faveur epique</h3>
+        <p>Vous recevez un don de Faveur epique (cf. chapitre 5) ou un autre don de votre choix. <a href="../dons/faveur-de-deplacement-dimensionnel.html" data-ref="faveur-de-deplacement-dimensionnel">Faveur de Deplacement dimensionnel</a> est recommande.</p>
+
+        <h3 style="margin-top:12px;">Niveau 20 : Apotheose arcanique</h3>
+        <p>Tant que votre aptitude Sorcellerie innee est active, vous pouvez recourir a une option de Metamagie a chacun de vos tours sans depenser de points de Sorcellerie.</p>
+        <p class="note">Metamagie est aussi accrue aux niveaux 10 et 17 (options supplementaires) ; ces jalons figurent dans la table.</p>
+      </section>
+
+      <section class="section">
+        <h2>Options de Metamagie</h2>
+        <p class="note">Presentees par ordre alphabetique. Le cout est exprime en points de Sorcellerie.</p>
+        <table>
+          <thead><tr><th>Option</th><th>Cout</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Sort accelere</td><td>2 pts</td><td>Un sort dont le temps d'incantation est d'1 action passe a 1 action Bonus. Vous ne pouvez pas ainsi modifier un sort si vous avez deja lance un sort du 1er niveau ou superieur ce tour, ni lancer un tel sort ensuite si vous avez deja modifie un sort de cette maniere.</td></tr>
+            <tr><td>Sort ample</td><td>1 pt</td><td>Un sort de portee &ge; 1,50 m voit sa portee doublee. Un sort de portee "contact" voit sa portee passer a 9 m.</td></tr>
+            <tr><td>Sort chercheur</td><td>1 pt</td><td>Sur un <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> de sort rate, relancer le d20 (le nouveau jet s'applique). Cumulable avec une autre option de Metamagie durant la meme incantation.</td></tr>
+            <tr><td>Sort etendu</td><td>1 pt</td><td>Un sort de duree &ge; 1 minute voit sa duree doublee (max 24 heures). Si le sort exige la Concentration, Avantage aux JS pour la maintenir.</td></tr>
+            <tr><td>Sort intensifie</td><td>2 pts</td><td>Un sort qui contraint une creature a un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> : imposer le Desavantage a une cible sur ses JS contre ce sort.</td></tr>
+            <tr><td>Sort jumeau</td><td>1 pt</td><td>Un sort lancable a un niveau superieur pour cibler une creature supplementaire : depenser 1 pt pour augmenter de 1 son niveau effectif.</td></tr>
+            <tr><td>Sort prevenant</td><td>1 pt</td><td>Un sort qui contraint des creatures a un JS : proteger un nombre de creatures ne depassant pas votre modificateur de Charisme (min 1). Elles reussissent automatiquement leur JS et ne subissent aucun degat en cas de reussite.</td></tr>
+            <tr><td>Sort renforce</td><td>1 pt</td><td>Quand vous determinez aleatoirement les degats d'un sort, relancer un nombre de des egal a votre modificateur de Charisme (min 1). Cumulable avec une autre option de Metamagie.</td></tr>
+            <tr><td>Sort subtil</td><td>1 pt</td><td>Lancer un sort sans ses composantes verbale, somatique ou materielle, sauf les composantes materielles que le sort consomme ou dont le cout est exprime dans son descriptif.</td></tr>
+            <tr><td>Sort transmute</td><td>1 pt</td><td>Un sort qui inflige des degats d'acide, feu, foudre, froid, poison ou tonnerre : changer ce type pour un autre de cette liste.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 3 : Sous-classes</h2>
+        <p>Choisissez une sous-classe (Sorcellerie) au niveau 3 :</p>
+        <div class="pill-row">
+          <a class="pill" href="sorcellerie-draconique.html" data-ref="sorcellerie-draconique">Sorcellerie draconique</a>
+          <a class="pill" href="sorcellerie-aberrante.html" data-ref="sorcellerie-aberrante">Sorcellerie aberrante</a>
+          <a class="pill" href="sorcellerie-mecanique.html" data-ref="sorcellerie-mecanique">Sorcellerie mecanique</a>
+          <a class="pill" href="sorcellerie-sauvage.html" data-ref="sorcellerie-sauvage">Sorcellerie sauvage</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Liste des sorts d'Ensorceleur</h2>
+        <p class="note">Colonne Special : C = Concentration, R = rituel, M = composante materielle specifique.</p>
+
+        <h3>Sorts mineurs (niveau 0)</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/aspersion-acide.html" data-ref="aspersion-acide">aspersion acide</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/bouffee-de-poison.html" data-ref="bouffee-de-poison">bouffee de poison</a></td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/contact-glacial.html" data-ref="contact-glacial">contact glacial</a></td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/coup-au-but.html" data-ref="coup-au-but">coup au but</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/coup-de-tonnerre.html" data-ref="coup-de-tonnerre">coup de tonnerre</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>elementalisme</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>eruption ensorcelee</td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/faux-amis.html" data-ref="faux-amis">faux amis</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/illusion-mineure.html" data-ref="illusion-mineure">illusion mineure</a></td><td>Illusion</td><td>-</td></tr>
+            <tr><td>lumiere</td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/lumieres-dansantes.html" data-ref="lumieres-dansantes">lumieres dansantes</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/main-du-mage.html" data-ref="main-du-mage">main du mage</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td>message</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/piqure-mentale.html" data-ref="piqure-mentale">piqure mentale</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>poigne electrique</td><td>Evocation</td><td>-</td></tr>
+            <tr><td>prestidigitation</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/rayon-de-givre.html" data-ref="rayon-de-givre">rayon de givre</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>reparation</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/trait-de-feu.html" data-ref="trait-de-feu">trait de feu</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/voile-defensif.html" data-ref="voile-defensif">voile defensif</a></td><td>Abjuration</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3>1er niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/armure-du-mage.html" data-ref="armure-du-mage">armure du mage</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>bouclier</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>charme-personne</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/comprehension-des-langues.html" data-ref="comprehension-des-langues">comprehension des langues</a></td><td>Divination</td><td>R</td></tr>
+            <tr><td><a href="../sorts/couleurs-dansantes.html" data-ref="couleurs-dansantes">couleurs dansantes</a></td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/couteau-de-glace.html" data-ref="couteau-de-glace">couteau de glace</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td>deguisement</td><td>Illusion</td><td>-</td></tr>
+            <tr><td>detection de la magie</td><td>Divination</td><td>C, R</td></tr>
+            <tr><td><a href="../sorts/feuille-morte.html" data-ref="feuille-morte">feuille morte</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>graisse</td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/image-silencieuse.html" data-ref="image-silencieuse">image silencieuse</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td>mains brulantes</td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/nappe-de-brouillard.html" data-ref="nappe-de-brouillard">nappe de brouillard</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/orbe-chromatique.html" data-ref="orbe-chromatique">orbe chromatique</a></td><td>Evocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/projectile-magique.html" data-ref="projectile-magique">projectile magique</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/rayon-empoisonne.html" data-ref="rayon-empoisonne">rayon empoisonne</a></td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/repli-expeditif.html" data-ref="repli-expeditif">repli expeditif</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>saut</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/simulacre-de-vie.html" data-ref="simulacre-de-vie">simulacre de vie</a></td><td>Necromancie</td><td>-</td></tr>
+            <tr><td>sommeil</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/trait-ensorcele.html" data-ref="trait-ensorcele">trait ensorcele</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/vague-tonnante.html" data-ref="vague-tonnante">vague tonnante</a></td><td>Evocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>2e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>agrandissement/rapetissement</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>amelioration de caracteristique</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/arme-magique.html" data-ref="arme-magique">arme magique</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>bourrasque</td><td>Evocation</td><td>C</td></tr>
+            <tr><td>cecite/surdite</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/couronne-du-dement.html" data-ref="couronne-du-dement">couronne du dement</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>deblocage</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/detection-de-l-invisibilite.html" data-ref="detection-de-l-invisibilite">detection de l'invisibilite</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/detection-des-pensees.html" data-ref="detection-des-pensees">detection des pensees</a></td><td>Divination</td><td>C</td></tr>
+            <tr><td><a href="../sorts/epine-mentale.html" data-ref="epine-mentale">epine mentale</a></td><td>Divination</td><td>C</td></tr>
+            <tr><td>flou</td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/force-fantasmagorique.html" data-ref="force-fantasmagorique">force fantasmagorique</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/foulee-brumeuse.html" data-ref="foulee-brumeuse">foulee brumeuse</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td>fracassement</td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/image-miroir.html" data-ref="image-miroir">image miroir</a></td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/immobilisation-de-personne.html" data-ref="immobilisation-de-personne">immobilisation de personne</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>invisibilite</td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/lame-de-feu.html" data-ref="lame-de-feu">lame de feu</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td>levitation</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/modification-d-apparence.html" data-ref="modification-d-apparence">modification d'apparence</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/nuee-de-dagues.html" data-ref="nuee-de-dagues">nuee de dagues</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/pattes-d-araignee.html" data-ref="pattes-d-araignee">pattes d'araignee</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/rayon-ardent.html" data-ref="rayon-ardent">rayon ardent</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/souffle-du-dragon.html" data-ref="souffle-du-dragon">souffle du dragon</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/sphere-de-feu.html" data-ref="sphere-de-feu">sphere de feu</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td>suggestion</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>tenebres</td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/toile-d-araignee.html" data-ref="toile-d-araignee">toile d'araignee</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/vigueur-arcanique.html" data-ref="vigueur-arcanique">vigueur arcanique</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">vision dans le noir</a></td><td>Transmutation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>3e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/boule-de-feu.html" data-ref="boule-de-feu">boule de feu</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/caresse-du-vampire.html" data-ref="caresse-du-vampire">caresse du vampire</a></td><td>Necromancie</td><td>C</td></tr>
+            <tr><td>clairvoyance</td><td>Divination</td><td>C, M</td></tr>
+            <tr><td>clignotement</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>contresort</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/dissipation-de-la-magie.html" data-ref="dissipation-de-la-magie">dissipation de la magie</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/don-des-langues.html" data-ref="don-des-langues">don des langues</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td>eclair</td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/forme-gazeuse.html" data-ref="forme-gazeuse">forme gazeuse</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>hate</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/image-majeure.html" data-ref="image-majeure">image majeure</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td>lenteur</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/lumiere-du-jour.html" data-ref="lumiere-du-jour">lumiere du jour</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/marche-sur-l-onde.html" data-ref="marche-sur-l-onde">marche sur l'onde</a></td><td>Transmutation</td><td>R</td></tr>
+            <tr><td><a href="../sorts/motif-hypnotique.html" data-ref="motif-hypnotique">motif hypnotique</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/nuage-nauseabond.html" data-ref="nuage-nauseabond">nuage nauseabond</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/protection-contre-l-energie.html" data-ref="protection-contre-l-energie">protection contre l'energie</a></td><td>Abjuration</td><td>C</td></tr>
+            <tr><td><a href="../sorts/respiration-aquatique.html" data-ref="respiration-aquatique">respiration aquatique</a></td><td>Transmutation</td><td>R</td></tr>
+            <tr><td><a href="../sorts/tempete-de-neige.html" data-ref="tempete-de-neige">tempete de neige</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td>terreur</td><td>Illusion</td><td>C</td></tr>
+            <tr><td>vol</td><td>Transmutation</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3>4e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>bannissement</td><td>Abjuration</td><td>C</td></tr>
+            <tr><td><a href="../sorts/bouclier-de-feu.html" data-ref="bouclier-de-feu">bouclier de feu</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>charme-monstre</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>confusion</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/domination-de-bete.html" data-ref="domination-de-bete">domination de bete</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>fletrissement</td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/invisibilite-supreme.html" data-ref="invisibilite-supreme">invisibilite supreme</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td>metamorphose</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mur-de-feu.html" data-ref="mur-de-feu">mur de feu</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/peau-de-pierre.html" data-ref="peau-de-pierre">peau de pierre</a></td><td>Transmutation</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/porte-dimensionnelle.html" data-ref="porte-dimensionnelle">porte dimensionnelle</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/sphere-de-vitriol.html" data-ref="sphere-de-vitriol">sphere de vitriol</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/tempete-de-grele.html" data-ref="tempete-de-grele">tempete de grele</a></td><td>Evocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>5e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/animation-des-objets.html" data-ref="animation-des-objets">animation des objets</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/apparence-trompeuse.html" data-ref="apparence-trompeuse">apparence trompeuse</a></td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/brume-mortelle.html" data-ref="brume-mortelle">brume mortelle</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/cercle-de-teleportation.html" data-ref="cercle-de-teleportation">cercle de teleportation</a></td><td>Invocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/cone-de-froid.html" data-ref="cone-de-froid">cone de froid</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>creation</td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/domination-de-personne.html" data-ref="domination-de-personne">domination de personne</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/fleau-d-insectes.html" data-ref="fleau-d-insectes">fleau d'insectes</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/immobilisation-de-monstre.html" data-ref="immobilisation-de-monstre">immobilisation de monstre</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/main-de-bigby.html" data-ref="main-de-bigby">main de Bigby</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mur-de-pierre.html" data-ref="mur-de-pierre">mur de pierre</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/perturbations-synaptiques.html" data-ref="perturbations-synaptiques">perturbations synaptiques</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>telekinesie</td><td>Transmutation</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3>6e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/cercle-de-mort.html" data-ref="cercle-de-mort">cercle de mort</a></td><td>Necromancie</td><td>M</td></tr>
+            <tr><td><a href="../sorts/chaine-d-eclairs.html" data-ref="chaine-d-eclairs">chaine d'eclairs</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>desintegration</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/glissement-de-terrain.html" data-ref="glissement-de-terrain">glissement de terrain</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/globe-d-invulnerabilite.html" data-ref="globe-d-invulnerabilite">globe d'invulnerabilite</a></td><td>Abjuration</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mauvais-oeil.html" data-ref="mauvais-oeil">mauvais oeil</a></td><td>Necromancie</td><td>C</td></tr>
+            <tr><td>petrification</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/portail-arcanique.html" data-ref="portail-arcanique">portail arcanique</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/rayon-de-soleil.html" data-ref="rayon-de-soleil">rayon de soleil</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/sphere-glacee-d-otiluke.html" data-ref="sphere-glacee-d-otiluke">Sphere glacee d'Otiluke</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/suggestion-de-groupe.html" data-ref="suggestion-de-groupe">suggestion de groupe</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/vision-supreme.html" data-ref="vision-supreme">vision supreme</a></td><td>Divination</td><td>M</td></tr>
+          </tbody>
+        </table>
+
+        <h3>7e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/boule-de-feu-a-retardement.html" data-ref="boule-de-feu-a-retardement">boule de feu a retardement</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/changement-de-plan.html" data-ref="changement-de-plan">changement de plan</a></td><td>Invocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/doigt-de-mort.html" data-ref="doigt-de-mort">doigt de mort</a></td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/embruns-prismatiques.html" data-ref="embruns-prismatiques">embruns prismatiques</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/forme-etheree.html" data-ref="forme-etheree">forme etheree</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/inversion-de-la-gravite.html" data-ref="inversion-de-la-gravite">inversion de la gravite</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>teleportation</td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/tempete-de-feu.html" data-ref="tempete-de-feu">tempete de feu</a></td><td>Evocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>8e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>demi-plan</td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/domination-de-monstre.html" data-ref="domination-de-monstre">domination de monstre</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/eclat-du-soleil.html" data-ref="eclat-du-soleil">eclat du soleil</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/mot-de-pouvoir-etourdissant.html" data-ref="mot-de-pouvoir-etourdissant">mot de pouvoir etourdissant</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/nuage-incendiaire.html" data-ref="nuage-incendiaire">nuage incendiaire</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/tremblement-de-terre.html" data-ref="tremblement-de-terre">tremblement de terre</a></td><td>Transmutation</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3>9e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/arret-du-temps.html" data-ref="arret-du-temps">arret du temps</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/mot-de-pouvoir-mortel.html" data-ref="mot-de-pouvoir-mortel">mot de pouvoir mortel</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/nuee-de-meteores.html" data-ref="nuee-de-meteores">nuee de meteores</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>portail</td><td>Invocation</td><td>C, M</td></tr>
+            <tr><td>souhait</td><td>Invocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div class="callout">
+        <strong>A noter sur la fiche :</strong> Charisme prioritaire ; Constitution
+        pour les PV et la concentration ; Dexterite pour la CA. Notez le total de
+        points de Sorcellerie, les options de Metamagie connues et les utilisations
+        de Sorcellerie innee. La liste des sorts prepares est a completer selon les
+        choix effectifs du joueur.
+      </div>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

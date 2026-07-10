@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suggestion — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Suggestion">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="suggestion" data-status="source"
+             data-source="img:333"
+             data-spell-level="2" data-school="enchantement"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="9m" data-components="V,M" data-material="une goutte de miel"
+             data-duration="conc-8h" data-classes="barde,ensorceleur,magicien,occultiste"
+             data-save="sag" data-damage-type="-">
+
+      <h1>Suggestion</h1>
+      <p class="provenance">Enchantement du 2e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>, <a href="../classes/occultiste.html" data-ref="occultiste">Occultiste</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Enchantement</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+        <span class="pill">Occultiste</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">9 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, M (une goutte de miel)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 8 heures</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous suggerez une ligne de conduite par 25 mots ou moins afin d'influencer magiquement une creature que vous voyez a portee et vous entend et vous comprend. La suggestion doit paraitre raisonnable et ne pas presenter de risque evident d'infliger des degats a la cible ni a ses allies. Vous pourriez ainsi formuler : « Recupere la clef de la chambre forte de la secte et apporte-la-moi. » Ou bien : « Cesse de combattre, quitte la bibliotheque sans faire d'histoires et ne reviens pas. »</p>
+        <p>La cible doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse sous peine de subir l'etat Charme pour toute la duree ou jusqu'a ce que vous ou l'un de vos allies lui infligiez des degats. La cible Charmee se soumet a la suggestion de son mieux. L'activite suggeree peut s'etendre sur toute la duree, mais s'il est possible de l'accomplir plus tot, le sort prend fin sur la cible des qu'elle en a termine.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Sagesse)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit l'etat Charme et se soumet a la suggestion pour toute la duree (ou jusqu'a subir des degats de votre part ou de vos allies).</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

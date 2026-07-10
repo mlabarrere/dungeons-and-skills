@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aversion/attirance — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Aversion/attirance">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="aversion-attirance" data-status="source"
+             data-source="img:247"
+             data-spell-level="8" data-school="enchantement"
+             data-casting-time="1h" data-ritual="false" data-concentration="false"
+             data-range="18m" data-components="V,S,M" data-material="un melange de vinaigre et de miel"
+             data-duration="10jours" data-classes="barde,druide,magicien"
+             data-save="sag">
+
+      <h1>Aversion/attirance</h1>
+      <p class="provenance">Enchantement du 8e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 8</span>
+        <span class="badge" data-status="source">Enchantement</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">1 heure</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (un melange de vinaigre et de miel)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">10 jours</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>A l'incantation, choisissez si le sort produit de l'aversion ou de l'attirance, et ciblez une creature ou un objet de taille TG ou inferieure. Specifiez alors une categorie de creatures, comme les dragons rouges, les gobelins ou les vampires. Toute creature de la categorie designee effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse quand elle entre dans un rayon de 36 m de la cible. Ce qui arrive a une telle creature si elle rate son JS depend de votre choix : attirance ou aversion.</p>
+        <p><strong>Attirance.</strong> La creature subit l'etat Charme. La creature Charmee doit consacrer le deplacement de ses tours a se rapprocher autant que possible de la cible par le chemin le plus sur. Si la creature se trouve dans un rayon de 1,50 m de la cible, elle ne peut s'en eloigner volontairement. Si la cible inflige des degats a la creature Charmee, cette derniere peut reiterer le JS Sagesse pour mettre un terme a l'effet, comme decrit ci-apres.</p>
+        <p><strong>Aversion.</strong> La creature subit l'etat Effraye. La creature Effrayee doit consacrer le deplacement de ses tours a s'eloigner autant que possible de la cible par le chemin le plus sur.</p>
+        <p><strong>Mettre fin a l'effet.</strong> Une creature ainsi Charmee ou Effrayee qui termine son tour au-dela de 36 m de la cible effectue un jet de sauvegarde de Sagesse. En cas de reussite, la creature n'est plus affectee par la cible. Une creature qui reussit son JS contre cet effet est immunisee contre celui-ci pendant 1 minute, apres quoi elle peut de nouveau etre affectee.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Sagesse, a l'entree dans un rayon de 36 m)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit l'etat Charme (attirance) ou Effraye (aversion), selon le choix fait a l'incantation.</td></tr>
+            <tr><td>Reussite</td><td>N'est pas affectee (et devient immunisee 1 minute si le JS est reussi pour mettre fin a l'effet).</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

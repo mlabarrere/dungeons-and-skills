@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apparence trompeuse — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Apparence trompeuse">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="apparence-trompeuse" data-status="source"
+             data-source="img:240"
+             data-spell-level="5" data-school="illusion"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="9m" data-components="V,S"
+             data-duration="8h" data-classes="barde,ensorceleur,magicien"
+             data-save="cha">
+
+      <h1>Apparence trompeuse</h1>
+      <p class="provenance">Illusion du 5e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 5</span>
+        <span class="badge" data-status="source">Illusion</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">9 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">8 heures</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous modifiez de maniere illusoire l'aspect des creatures que vous choisissez parmi celles que vous voyez a portee. Une creature non consentante peut effectuer un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Charisme. En cas de reussite, elle n'est pas affectee par le sort.</p>
+        <p>Vous pouvez donner le meme aspect a chaque cible ou varier les illusions. Le sort altere l'aspect du corps des cibles comme de leur <a href="../equipement/index.html" data-ref="index-equipement">equipement</a>. Vous pouvez aussi les faire paraitre plus grandes ou plus petites, individuellement, a concurrence de 30 cm, et les faire passer pour plus lourdes ou plus legeres. Le nouvel aspect de chaque cible doit presenter la meme configuration de membres que la sienne, mais les details de l'illusion sont pour le reste laisses a votre guise. Le sort persiste pour toute la duree.</p>
+        <p>Les changements apportes par le sort ne resistent pas a un examen physique. Exemple : si le sort ajoute un chapeau a l'accoutrement d'une creature, ce couvre-chef n'est pas tangible.</p>
+        <p>Une creature peut entreprendre l'action Etude pour examiner une cible et effectuer un test d'Intelligence (Investigation) assorti de votre DD de sauvegarde des sorts. En cas de reussite, elle se rend compte que la cible est deguisee.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Charisme, cible non consentante)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Son aspect est modifie de maniere illusoire pour toute la duree.</td></tr>
+            <tr><td>Reussite</td><td>Elle n'est pas affectee par le sort.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

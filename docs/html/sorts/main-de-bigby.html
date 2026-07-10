@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main de Bigby — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Main de Bigby">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="main-de-bigby" data-status="source"
+             data-source="img:302"
+             data-spell-level="5" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="36m" data-components="V,S,M"
+             data-material="une coquille d'oeuf et un gant"
+             data-duration="conc-1min" data-classes="ensorceleur,magicien"
+             data-save="dex" data-damage-type="force">
+
+      <h1>Main de Bigby</h1>
+      <p class="provenance">Evocation du 5e niveau (<a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 5</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">36 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (une coquille d'oeuf et un gant)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous creez une main de taille G faite d'energies magiques chatoyantes. Elle apparait dans un <a href="../regles/glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> que vous voyez a portee. La main persiste pendant toute la duree et se deplace sous votre controle, en reproduisant les mouvements de votre propre main.</p>
+        <p>La main est un objet dote d'une CA de 20 et de <a href="../regles/glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> egaux a votre maximum de points de vie. S'il tombe a 0 point de vie, le sort prend fin. La main n'occupe pas son espace.</p>
+        <p>A l'incantation du sort, ainsi que par une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> a vos tours suivants, vous pouvez deplacer la main d'un maximum de 18 m puis lui faire produire l'un des effets suivants :</p>
+        <ul>
+          <li><strong>Main agrippeuse.</strong> La main tente d'agripper une creature de taille TG ou inferieure situee dans un rayon de 1,50 m d'elle. La cible doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite sous peine de subir l'etat Agrippe, le DD d'evasion etant egal a votre DD de sauvegarde des sorts. Tant que la main agrippe la cible, vous pouvez entreprendre une action Bonus pour que la main la broie et lui inflige des degats contondants egaux a 4d6 plus votre modificateur de caracteristique d'incantation.</li>
+          <li><strong>Main imperieuse.</strong> La main tente de pousser une creature de taille TG ou inferieure situee dans un rayon de 1,50 m d'elle. La cible doit reussir un jet de sauvegarde de Force, sans quoi la main la repousse d'un maximum de 1,50 m, plus 1,50 m multiplie par votre modificateur de caracteristique d'incantation. La main se deplace avec la cible pour rester dans un rayon de 1,50 m d'elle.</li>
+          <li><strong>Main interposee.</strong> La main vous octroie un Abri partiel contre les attaques et effets emanant de son espace ou qui le traversent. De plus, son espace est considere comme un <a href="../regles/glossaire.html#terrain-difficile" data-ref="terrain-difficile">Terrain difficile</a> pour vos ennemis.</li>
+          <li><strong>Poing serre.</strong> La main frappe une cible dans un rayon de 1,50 m d'elle. Effectuez une <a href="../regles/glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">attaque de sort</a> au corps a corps. Si l'attaque touche, la cible subit 5d8 degats de force.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Les degats de l'option poing serre augmentent de 2d8 et ceux de main agrippeuse de 2d6 par niveau d'emplacement au-dela du 5e.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

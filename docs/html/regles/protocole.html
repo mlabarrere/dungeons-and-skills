@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protocole de creation — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Protocole">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="protocole" data-status="source" data-source="md:protocole-creation-personnage">
+      <h1>Protocole de creation de personnage</h1>
+      <p class="note">Objectif : creer une fiche a partir des Markdown du repo, sans utiliser les images sources. Le protocole doit remplir toutes les cases calculables, identifier les choix manquants, distinguer donnees certaines / deduites / a arbitrer, et produire des recommandations sans masquer les choix du joueur ou du MD.</p>
+
+      <section class="section">
+        <h2>Statuts d'information</h2>
+        <p class="note">Chaque donnee importante est classee dans l'un de ces statuts. Vocabulaire rendu par <code>.badge[data-status]</code>.</p>
+        <table>
+          <thead><tr><th>Statut</th><th>Badge</th><th>Signification</th></tr></thead>
+          <tbody>
+            <tr><td>Fourni</td><td><span class="badge" data-status="fourni">Fourni</span></td><td>Donne explicitement par le joueur.</td></tr>
+            <tr><td>Source</td><td><span class="badge" data-status="source">Source</span></td><td>Trouve directement dans un Markdown de reference.</td></tr>
+            <tr><td>Calcule</td><td><span class="badge" data-status="calcule">Calcule</span></td><td>Derive par formule depuis des donnees fournies ou source.</td></tr>
+            <tr><td>Deduit</td><td><span class="badge" data-status="deduit">Deduit</span></td><td>Probable, mais non explicitement confirme.</td></tr>
+            <tr><td>Manquant</td><td><span class="badge" data-status="manquant">Manquant</span></td><td>Necessaire pour finir la fiche.</td></tr>
+            <tr><td>A arbitrer</td><td><span class="badge" data-status="arbitrer">A arbitrer</span></td><td>Demande une decision du MD ou une regle de table.</td></tr>
+            <tr><td>Incoherent</td><td><span class="badge" data-status="incoherent">Incoherent</span></td><td>Deux donnees se contredisent ou un calcul ne correspond pas.</td></tr>
+            <tr><td>Conflit</td><td><span class="badge" data-status="conflit">Conflit</span></td><td>Un choix joueur duplique ou contredit une option deja accordee par une autre source.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Sources Markdown</h2>
+        <table>
+          <thead><tr><th>Fichier</th><th>Role</th></tr></thead>
+          <tbody>
+            <tr><td><code>creation-personnage.md</code></td><td>Procedure generale, calculs, caracteristiques, progression, formules.</td></tr>
+            <tr><td><code>classes/&lt;classe&gt;.md</code></td><td>Traits de classe, aptitudes, maitrises, sorts, progression.</td></tr>
+            <tr><td><code>origines.md</code></td><td>Historiques, especes, lignages, langues, traits d'origine.</td></tr>
+            <tr><td><code>dons.md</code></td><td><a href="../dons/index.html" data-ref="index-dons">Dons</a> d'origine, dons generaux, prerequis, effets.</td></tr>
+            <tr><td><code>equipement.md</code></td><td><a href="../equipement/armes.html" data-ref="armes">Armes</a>, armures, <a href="../equipement/outils.html" data-ref="outils">outils</a>, <a href="../equipement/paquetages.html" data-ref="paquetages">paquetages</a>, prix, poids, proprietes.</td></tr>
+            <tr><td><code>sorts-selectionnes.md</code></td><td>Sorts effectivement choisis ou disponibles pour les joueurs.</td></tr>
+            <tr><td><code>personnages/&lt;nom&gt;.md</code></td><td>Fiche de travail du personnage.</td></tr>
+            <tr><td><code>modele-graphe-provenance.md</code></td><td>Modele des noeuds, aretes, statuts et lectures du graphe.</td></tr>
+          </tbody>
+        </table>
+        <div class="callout">Les images ne doivent pas etre utilisees pendant la creation d'un personnage. Si une information manque dans les Markdown, le resultat indique que la base documentaire est incomplete.</div>
+      </section>
+
+      <section class="section">
+        <h2>Audit trail obligatoire</h2>
+        <p>Chaque fiche doit permettre de comprendre pourquoi une case est remplie : pas seulement une valeur finale, mais la chaine de justification.</p>
+        <p class="note">Format minimal recommande :</p>
+        <table>
+          <thead><tr><th>Case</th><th>Valeur</th><th>Statut</th><th>Pourquoi / preuve</th></tr></thead>
+          <tbody>
+            <tr><td>Exemple</td><td>Exemple</td><td>Source / Calcule</td><td>Fichier ou choix qui justifie la valeur.</td></tr>
+          </tbody>
+        </table>
+        <h3 style="margin-top:12px;">Regles</h3>
+        <ul>
+          <li>toute valeur issue d'une classe doit citer la classe ou l'aptitude ;</li>
+          <li>toute valeur issue de l'espece doit citer le trait ou lignage ;</li>
+          <li>toute valeur issue de l'historique doit citer l'historique ;</li>
+          <li>toute valeur issue d'un don doit citer le don ;</li>
+          <li>tout calcul doit afficher la formule ;</li>
+          <li>tout doublon doit etre visible dans une section <em>Conflits et alertes</em> ;</li>
+          <li>un objet compose doit etre decompose sans perdre le lien, par exemple <code>focaliseur druidique (baton de combat)</code> produit a la fois un focaliseur et un objet <em>baton de combat</em>.</li>
+        </ul>
+        <div class="callout info">Besoin central : un joueur ou un MD doit pouvoir demander « pourquoi ce sort, cette maitrise ou cette arme est sur la fiche ? » et trouver la reponse sans refaire toute la creation. Voir <a href="modele-graphe-provenance.html" data-ref="modele-graphe-provenance">le modele de graphe de provenance</a>.</div>
+      </section>
+
+      <section class="section">
+        <h2>Structure de sortie d'une fiche auditee</h2>
+        <p class="note">Structure stable, lisible par un joueur, un MD et plus tard par un outil. 23 sections attendues :</p>
+        <div class="grid-3">
+          <ol>
+            <li>Identite.</li>
+            <li>Sources utilisees.</li>
+            <li>Caracteristiques.</li>
+            <li>Valeurs derivees principales.</li>
+            <li><a href="./glossaire.html#points-de-vie" data-ref="points-de-vie">Points de vie</a> et <a href="../dons/defense.html" data-ref="defense">defense</a>.</li>
+            <li>Jets de sauvegarde.</li>
+            <li>Competences.</li>
+            <li>Capacites de classe.</li>
+          </ol>
+          <ol start="9">
+            <li>Traits d'espece.</li>
+            <li>Dons.</li>
+            <li>Entrainement et maitrises.</li>
+            <li>Langues.</li>
+            <li><a href="../equipement/index.html" data-ref="index-equipement">Equipement</a>.</li>
+            <li>Liens avec objets magiques.</li>
+            <li>Armes et attaques.</li>
+            <li>Incantation.</li>
+          </ol>
+          <ol start="17">
+            <li>Sorts mineurs.</li>
+            <li>Sorts prepares et toujours prepares.</li>
+            <li>Emplacements et ressources.</li>
+            <li>Conflits et alertes.</li>
+            <li>Questions restantes.</li>
+            <li>Recommandations separees des faits.</li>
+            <li>Etat de completude.</li>
+          </ol>
+        </div>
+        <p class="note">Les sections de combat et de magie doivent utiliser des tableaux explicites (armes, sorts mineurs, sorts prepares, incantation).</p>
+      </section>
+
+      <section class="section">
+        <h2>Questionnaire pour une fiche officielle</h2>
+        <p class="note">Chaque reponse devient une donnee Fournie, Source, Calculee, Deduite, Manquante, A arbitrer ou Incoherente. Regroupe par theme en onglets.</p>
+        <div class="tabs">
+          <button data-tab="q-identite">Identite</button>
+          <button data-tab="q-carac">Caracteristiques</button>
+          <button data-tab="q-defense">Defense &amp; mouvement</button>
+          <button data-tab="q-js-comp">JS &amp; competences</button>
+          <button data-tab="q-maitrises">Maitrises &amp; combat</button>
+          <button data-tab="q-sorts">Sorts</button>
+          <button data-tab="q-traits">Traits &amp; equipement</button>
+          <button data-tab="q-rp">Roleplay</button>
+        </div>
+
+        <div class="tabpanel" id="q-identite">
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Quel est le nom du personnage ?</td><td>Nom sur la fiche.</td></tr>
+              <tr><td>Quel est son niveau ?</td><td>Maitrise, PV, aptitudes, sorts.</td></tr>
+              <tr><td>Quelle est sa classe ?</td><td>Traits, JS, competences, PV, sorts.</td></tr>
+              <tr><td>A-t-il une sous-classe ?</td><td>Aptitudes specialisees.</td></tr>
+              <tr><td>Quel est son historique ?</td><td>Don, competences, outils, equipement.</td></tr>
+              <tr><td>Quelle est son espece ?</td><td>Taille, vitesse, traits, langues, sorts.</td></tr>
+              <tr><td>A-t-il un lignage ou sous-type ?</td><td>Traits supplementaires.</td></tr>
+              <tr><td>Quel est son alignement ?</td><td>Roleplay.</td></tr>
+              <tr><td>Age, taille, poids, apparence ?</td><td>Description.</td></tr>
+              <tr><td>Pronoms / genre si notes ?</td><td>Description.</td></tr>
+              <tr><td>Nom de joueur ?</td><td>Suivi de table.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabpanel" id="q-carac">
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Quelle methode a ete utilisee pour les caracteristiques ?</td><td>Controle qualite.</td></tr>
+              <tr><td>Quelles sont les valeurs brutes ?</td><td>Calcul des modificateurs.</td></tr>
+              <tr><td>Les bonus d'historique sont-ils deja inclus ?</td><td>Eviter double comptage.</td></tr>
+              <tr><td>Une valeur depasse-t-elle 20 ?</td><td>Detecter une anomalie.</td></tr>
+              <tr><td>Des dons modifient-ils les caracteristiques ?</td><td>Mise a jour des valeurs.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabpanel" id="q-defense">
+          <h3>Points de vie et defense</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Quels sont les PV maximums ?</td><td>Case PV max.</td></tr>
+              <tr><td>PV calcules ou fixes par le MD ?</td><td>Controle d'incoherence.</td></tr>
+              <tr><td>Quels sont les PV actuels / temporaires ?</td><td>Suivi de jeu.</td></tr>
+              <tr><td>Quel est le de de vie et combien de des ?</td><td><a href="./glossaire.html#repos-court" data-ref="repos-court">Repos court</a>.</td></tr>
+              <tr><td>Quelle armure / bouclier ? Dexterite limitee ?</td><td>CA.</td></tr>
+              <tr><td>Aptitude ou don modifiant la CA ?</td><td>CA finale.</td></tr>
+              <tr><td>Resistances, immunites, vulnerabilites ?</td><td>Defense.</td></tr>
+            </tbody>
+          </table>
+          <h3 style="margin-top:12px;">Deplacement &amp; initiative</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Vitesse de base ? Escalade / nage / vol ?</td><td>Mouvement.</td></tr>
+              <tr><td>Armure, aptitude ou sort modifiant la vitesse ?</td><td>Mouvement.</td></tr>
+              <tr><td>Modificateur de Dexterite ?</td><td>Initiative de base.</td></tr>
+              <tr><td>Aptitude / don modifiant l'initiative ?</td><td>Initiative finale.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabpanel" id="q-js-comp">
+          <h3>Jets de sauvegarde</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Quels JS sont maitrises par la classe ?</td><td>Cases cochees.</td></tr>
+              <tr><td>Un don / espece / aptitude ajoute-t-il une maitrise de JS ?</td><td>Cases cochees.</td></tr>
+              <tr><td>Bonus special ou avantage sur certains JS ?</td><td>Notes.</td></tr>
+            </tbody>
+          </table>
+          <h3 style="margin-top:12px;">Competences</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Competences de classe / historique / espece / don ?</td><td>Cases cochees.</td></tr>
+              <tr><td>Expertise sur une competence ?</td><td>Double maitrise.</td></tr>
+              <tr><td>Doublon de competence ?</td><td>A arbitrer.</td></tr>
+              <tr><td>Competences restant a choisir ?</td><td>Choix manquants.</td></tr>
+            </tbody>
+          </table>
+          <h3 style="margin-top:12px;">Liste de competences et caracteristique habituelle</h3>
+          <table>
+            <thead><tr><th>Competence</th><th>Carac.</th><th>Competence</th><th>Carac.</th></tr></thead>
+            <tbody>
+              <tr><td>Acrobaties</td><td>Dexterite</td><td>Intuition</td><td>Sagesse</td></tr>
+              <tr><td>Arcanes</td><td>Intelligence</td><td>Investigation</td><td>Intelligence</td></tr>
+              <tr><td>Athletisme</td><td>Force</td><td>Medecine</td><td>Sagesse</td></tr>
+              <tr><td>Discretion</td><td>Dexterite</td><td>Nature</td><td>Intelligence</td></tr>
+              <tr><td>Dressage</td><td>Sagesse</td><td>Perception</td><td>Sagesse</td></tr>
+              <tr><td>Escamotage</td><td>Dexterite</td><td>Persuasion</td><td>Charisme</td></tr>
+              <tr><td>Histoire</td><td>Intelligence</td><td>Representation</td><td>Charisme</td></tr>
+              <tr><td>Intimidation</td><td>Charisme</td><td>Religion</td><td>Intelligence</td></tr>
+              <tr><td>Tromperie</td><td>Charisme</td><td>Survie</td><td>Sagesse</td></tr>
+            </tbody>
+          </table>
+          <h3 style="margin-top:12px;">Sens passifs</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Quelle est la <a href="./glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a> ? Maitrisee / Expertise ?</td><td>Fiche principale / calcul.</td></tr>
+              <tr><td><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a> et portee ?</td><td>Exploration.</td></tr>
+              <tr><td><a href="./glossaire.html#vision-aveugle" data-ref="vision-aveugle">Vision aveugle</a>, <a href="./glossaire.html#perception-des-vibrations" data-ref="perception-des-vibrations">perception des vibrations</a>, autre sens ?</td><td>Exploration / combat.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabpanel" id="q-maitrises">
+          <h3>Maitrises hors competences</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Quelles armes / armures / boucliers maitrises ?</td><td>Attaques, CA.</td></tr>
+              <tr><td>Quels outils, instruments, vehicules, artisanats ?</td><td>Outils.</td></tr>
+              <tr><td>Quelles langues connues ? Langues rares autorisees ?</td><td>Roleplay ; A arbitrer.</td></tr>
+            </tbody>
+          </table>
+          <h3 style="margin-top:12px;">Combat et attaques</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Quelles armes equipees ? Carac. de chaque attaque ?</td><td>Bonus d'attaque.</td></tr>
+              <tr><td>L'arme est-elle maitrisee ?</td><td>Bonus d'attaque.</td></tr>
+              <tr><td>Degats, types, proprietes d'armes ?</td><td>Attaques / notes.</td></tr>
+              <tr><td>Attaques speciales ou <a href="./glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">attaque de sort</a> ?</td><td>Actions / sorts.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabpanel" id="q-sorts">
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Le personnage lance-t-il des sorts ?</td><td>Section sorts.</td></tr>
+              <tr><td>Caracteristique d'incantation par source ?</td><td>DD et attaque de sort.</td></tr>
+              <tr><td>Combien de sorts mineurs par source, et lesquels ?</td><td>Sorts mineurs.</td></tr>
+              <tr><td>Combien de sorts prepares, et lesquels ?</td><td>Sorts prepares.</td></tr>
+              <tr><td>Quels sorts toujours prepares ?</td><td>Notes.</td></tr>
+              <tr><td>Emplacements par niveau et recuperation ?</td><td>Ressources / repos.</td></tr>
+              <tr><td>Doublons de sorts entre classe, espece et don ?</td><td>A arbitrer.</td></tr>
+              <tr><td>Focaliseur ? Concentration / rituel / composantes ?</td><td>Incantation / notes.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabpanel" id="q-traits">
+          <h3>Traits, dons et aptitudes</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Traits de classe / espece / historique actifs ?</td><td>Aptitudes.</td></tr>
+              <tr><td>Quels dons sont actifs ?</td><td>Dons.</td></tr>
+              <tr><td>Ressources a suivre ?</td><td>Cases / compteurs.</td></tr>
+              <tr><td>Aptitudes recuperees au repos court / long ?</td><td>Ressources.</td></tr>
+            </tbody>
+          </table>
+          <h3 style="margin-top:12px;">Equipement et argent</h3>
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Equipement de classe : option A ou B ?</td><td>Inventaire.</td></tr>
+              <tr><td>Equipement d'historique : option A ou B ?</td><td>Inventaire.</td></tr>
+              <tr><td>Armure / bouclier / armes portes ?</td><td>CA / attaques.</td></tr>
+              <tr><td>Outils et focaliseurs possedes ?</td><td>Maitrises / sorts.</td></tr>
+              <tr><td>Combien de pieces d'or restent ? Poids suivi ?</td><td>Argent / inventaire.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabpanel" id="q-rp">
+          <table>
+            <thead><tr><th>Question</th><th>Utilisation</th></tr></thead>
+            <tbody>
+              <tr><td>Traits de personnalite a noter ?</td><td>Roleplay.</td></tr>
+              <tr><td>Ideaux, liens et defauts ?</td><td>Roleplay.</td></tr>
+              <tr><td>Qui compte pour le personnage ?</td><td>Backstory.</td></tr>
+              <tr><td>Que cherche-t-il en aventure ? Peur principale ?</td><td>Backstory.</td></tr>
+              <tr><td>Allies, contacts ou organisations connus ?</td><td>Campagne.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Ordre de traitement</h2>
+        <ol>
+          <li>Creer ou ouvrir <code>personnages/&lt;nom&gt;.md</code>.</li>
+          <li>Reporter les donnees fournies sans les modifier.</li>
+          <li>Charger les donnees de classe depuis <code>classes/&lt;classe&gt;.md</code>.</li>
+          <li>Charger l'historique et l'espece depuis <code>origines.md</code>.</li>
+          <li>Charger les dons imposes ou choisis depuis <code>dons.md</code>.</li>
+          <li>Charger l'equipement depuis <code>equipement.md</code> si les options sont choisies.</li>
+          <li>Charger les sorts depuis <code>sorts-selectionnes.md</code> ou les listes de classe deja extraites.</li>
+          <li>Calculer les valeurs derivees.</li>
+          <li>Identifier les choix automatiques deja imposes par classe, espece, historique ou don.</li>
+          <li>Identifier les choix restants.</li>
+          <li>Identifier les conflits et doublons.</li>
+          <li>Lister les choix manquants.</li>
+          <li>Lister les incoherences.</li>
+          <li>Proposer des recommandations separees des donnees certaines.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>Choix automatiques, choix restants et conflits</h2>
+        <p>Une fiche ne doit pas redemander un choix deja impose par une source :</p>
+        <ul>
+          <li>une langue donnee automatiquement par une classe est notee <span class="badge" data-status="source">Source</span>, pas demandee ;</li>
+          <li>un sort donne automatiquement par une espece est note <span class="badge" data-status="source">Source</span>, pas compte comme choix libre ;</li>
+          <li>un don impose par un historique est ajoute automatiquement ;</li>
+          <li>un choix joueur qui duplique une option automatique est marque <span class="badge" data-status="conflit">Conflit</span> avec une remediation.</li>
+        </ul>
+        <p class="note">Quand une table permet de choisir ou de tirer au hasard : ne pas tirer sans accord explicite ; lister les options presentes dans les MD ; indiquer le de si la table existe ; sinon marquer <span class="badge" data-status="manquant">Manquant documentaire</span>.</p>
+        <div class="callout error">Un conflit ne doit jamais etre corrige silencieusement. La fiche contient toujours les deux chemins concurrents et une remediation proposee.</div>
+        <table>
+          <thead><tr><th>Element</th><th>Source 1</th><th>Source 2</th><th>Type de conflit</th><th>Remediation proposee</th></tr></thead>
+          <tbody>
+            <tr><td>Exemple</td><td>Exemple</td><td>Exemple</td><td>Doublon</td><td>Remplacer un choix libre par une option non dupliquee.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Calculs systematiques</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Caracteristiques</h3>
+            <p class="note">Noter la valeur, calculer le modificateur, verifier l'application des bonus d'historique, verifier qu'aucune valeur ne depasse 20 sauf regle explicite.</p>
+            <h3 style="margin-top:12px;">Niveau et maitrise</h3>
+            <p class="note">Niveau 1 : bonus de maitrise +2 ; sinon table de progression de <a href="creation-personnage.html" data-ref="creation-personnage">creation-personnage</a>.</p>
+            <h3 style="margin-top:12px;">Points de vie</h3>
+            <p class="note"><code>PV niveau 1 = maximum du de de vie de classe + modificateur de Constitution</code>. Niveaux suivants : moyenne fixe, jet de de, ou regle de table. Si les PV fournis ne correspondent pas, marquer <span class="badge" data-status="incoherent">Incoherent</span> ou <span class="badge" data-status="arbitrer">A arbitrer</span>.</p>
+            <h3 style="margin-top:12px;">Classe d'armure</h3>
+            <p class="note"><code>CA sans armure = 10 + modificateur de Dexterite</code>. Verifier ensuite armure, bouclier, limite de Dexterite, aptitude, don, objet special. Si l'equipement n'est pas choisi, ne calculer que la CA sans armure et marquer la CA equipee manquante.</p>
+          </div>
+          <div>
+            <h3>Initiative</h3>
+            <p class="note"><code>Initiative = modificateur de Dexterite</code> (+ dons, aptitudes, objets si documentes).</p>
+            <h3 style="margin-top:12px;">Jets de sauvegarde</h3>
+            <p class="note"><code>JS non maitrise = modificateur de caracteristique</code> ; <code>JS maitrise = modificateur + bonus de maitrise</code>. Les JS maitrises viennent principalement de la classe.</p>
+            <h3 style="margin-top:12px;">Competences</h3>
+            <p class="note"><code>Non maitrisee = modificateur</code> ; <code>Maitrisee = modificateur + maitrise</code> ; <code>Expertise = modificateur + 2 x maitrise</code>. Un doublon n'est pas cumule automatiquement : <span class="badge" data-status="arbitrer">A arbitrer</span> ou regle documentee.</p>
+            <h3 style="margin-top:12px;">Perception passive</h3>
+            <p class="note"><code>Perception passive = 10 + modificateur de Sagesse (Perception)</code> (+ maitrise si Perception maitrisee).</p>
+            <h3 style="margin-top:12px;">Sorts</h3>
+            <p class="note"><code>DD des sorts = 8 + modificateur d'incantation + bonus de maitrise</code> ; <code>Attaque de sort = modificateur d'incantation + bonus de maitrise</code>. Noter separement sorts mineurs, prepares, toujours prepares, emplacements, recuperation. Un sort donne par plusieurs sources est signale comme doublon possible / <span class="badge" data-status="conflit">Conflit</span>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Choix manquants &amp; recommandations</h2>
+        <h3>Format des choix manquants</h3>
+        <table>
+          <thead><tr><th>Priorite</th><th>Source</th><th>Choix manquant</th><th>Options connues</th><th>Impact</th></tr></thead>
+          <tbody>
+            <tr><td>Haute</td><td>Classe</td><td>Exemple</td><td>Exemple</td><td>Bloque un calcul ou une case.</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Priorites : <strong>Haute</strong> bloque la fiche ou un calcul important ; <strong>Moyenne</strong> utile en jeu mais pas bloquant ; <strong>Basse</strong> detail narratif ou optimisation.</p>
+        <h3 style="margin-top:12px;">Format des recommandations</h3>
+        <table>
+          <thead><tr><th>Sujet</th><th>Recommandation</th><th>Raison</th><th>A valider par</th></tr></thead>
+          <tbody>
+            <tr><td><a href="./glossaire.html#sort-mineur" data-ref="sort-mineur">Sort mineur</a></td><td>Remplacer un doublon</td><td>Evite de perdre un choix</td><td>Joueur / MD</td></tr>
+          </tbody>
+        </table>
+        <div class="callout">Les recommandations sont separees des faits : marquees <span class="badge" data-status="recommande">Recommande</span>, jamais <span class="badge" data-status="source">Source</span>. Ne jamais remplacer un choix joueur sans le signaler.</div>
+      </section>
+
+      <section class="section">
+        <h2>Controle qualite</h2>
+        <p>Avant de considerer une fiche exploitable :</p>
+        <ul>
+          <li>verifier que toutes les donnees viennent des Markdown ;</li>
+          <li>verifier les calculs principaux ;</li>
+          <li>verifier les doublons de maitrise, sorts ou equipement ;</li>
+          <li>verifier les incoherences entre PV, niveau, classe et Constitution ;</li>
+          <li>verifier que chaque choix manquant est liste ;</li>
+          <li>verifier que chaque recommandation est separee des donnees certaines.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Cas Medicis comme test</h2>
+        <p><a href="../personnages/medicis.html" data-ref="medicis">Medicis</a> sert de test du protocole. Resultat attendu :</p>
+        <ul>
+          <li>la fiche doit pouvoir etre initialisee depuis les Markdown ;</li>
+          <li>les calculs de base doivent etre remplis ;</li>
+          <li>les choix manquants doivent etre explicites ;</li>
+          <li>l'incoherence des PV doit etre visible ;</li>
+          <li>le doublon potentiel <em>druidisme</em> doit etre visible ;</li>
+          <li>aucune image ne doit etre consultee pendant la generation finale.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

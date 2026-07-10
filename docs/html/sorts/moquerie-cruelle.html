@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moquerie cruelle — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Moquerie cruelle">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="moquerie-cruelle" data-status="source"
+             data-source="img:309"
+             data-spell-level="0" data-school="enchantement"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="18m" data-components="V"
+             data-duration="instantanee" data-classes="barde"
+             data-save="sag" data-damage-type="psychique">
+
+      <h1>Moquerie cruelle</h1>
+      <p class="provenance">Enchantement mineur (<a href="../classes/barde.html" data-ref="barde">Barde</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source"><a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">Sort mineur</a></span>
+        <span class="badge" data-status="source">Enchantement</span>
+        <span class="pill">Barde</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous adressez un chapelet d'insultes assaisonnees de subtils enchantements a une creature que vous voyez ou entendez a portee. La cible doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse sous peine de subir 1d6 degats psychiques, ainsi que le Desavantage a son prochain <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> intervenant avant la fin de son tour suivant.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Sagesse)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 1d6 degats psychiques et le Desavantage a son prochain jet d'attaque avant la fin de son tour suivant.</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Amelioration de sort mineur</h2>
+        <p>Les degats augmentent de 1d6 lorsque vous atteignez les niveaux 5 (2d6), 11 (3d6) et 17 (4d6).</p>
+        <table>
+          <thead><tr><th>Niveau de personnage</th><th>Degats psychiques</th></tr></thead>
+          <tbody>
+            <tr><td>1-4</td><td>1d6</td></tr>
+            <tr><td>5-10</td><td>2d6</td></tr>
+            <tr><td>11-16</td><td>3d6</td></tr>
+            <tr><td>17-20</td><td>4d6</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

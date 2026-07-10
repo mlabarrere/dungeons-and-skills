@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modele de graphe de provenance — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Graphe de provenance">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="modele-graphe-provenance" data-status="source" data-source="md:modele-graphe-provenance">
+      <h1>Modele de graphe de provenance</h1>
+      <p class="note">Objectif : representer les regles, choix, calculs et cases de fiche comme un graphe oriente de provenance. Deux questions symetriques : depuis une case (« pourquoi ai-je cette valeur ? ») et depuis une source (« qu'est-ce que <a href="../historiques/guide.html" data-ref="guide">Guide</a> / <a href="../classes/druide.html" data-ref="druide">Druide</a> / <a href="../especes/elfe.html" data-ref="elfe">Elfe</a> sylvestre m'apporte ? »).</p>
+
+      <section class="section">
+        <h2>Schema de demonstration</h2>
+        <p class="note">Exemple de graphe instancie sur Medicis. Noeuds types (Choix / Source / Effet / Case / Calcul) et aretes typees (choisit, accorde, calcule, remplit). Ce schema remplace les blocs ASCII des sources.</p>
+        <svg viewBox="0 0 980 560" role="img" aria-labelledby="graph-title graph-desc" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; border:1px solid var(--line); border-radius:10px; background:var(--page);">
+          <title id="graph-title">Graphe de provenance de Medicis</title>
+          <desc id="graph-desc">Medicis choisit la classe Druide, l'espece Elfe sylvestre et une Constitution de 14. Druide accorde Druidique qui remplit les Langues. Elfe sylvestre accorde le sort druidisme qui remplit les Sorts mineurs. La Constitution calcule les <a href="./glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a>.</desc>
+          <style>
+            .node text { font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-weight: 650; }
+            .node .kind { font-size: 10px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+            .node .lbl { font-size: 13px; }
+            .n-choix rect { fill: var(--accent); }
+            .n-choix text { fill: #ffffff; }
+            .n-source rect { fill: var(--info-line); }
+            .n-source text { fill: #ffffff; }
+            .n-effet rect { fill: var(--warn-line); }
+            .n-effet text { fill: #3b2a00; }
+            .n-case rect { fill: var(--ok-line); }
+            .n-case text { fill: #06310f; }
+            .n-calc rect { fill: var(--page); stroke: var(--info-line); stroke-width: 2; stroke-dasharray: 5 3; }
+            .n-calc text { fill: var(--ink); }
+            .node rect { rx: 9; ry: 9; }
+            .edge { fill: none; stroke-width: 2; }
+            .e-choisit { stroke: var(--accent); }
+            .e-accorde { stroke: var(--info-line); }
+            .e-calcule { stroke: var(--warn-line); }
+            .e-remplit { stroke: var(--ok-line); }
+            .elabel { font-family: Inter, ui-sans-serif, sans-serif; font-size: 11px; font-weight: 700; fill: var(--muted); }
+          </style>
+
+          <defs>
+            <marker id="ah-choisit" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" style="fill: var(--accent);"/>
+            </marker>
+            <marker id="ah-accorde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" style="fill: var(--info-line);"/>
+            </marker>
+            <marker id="ah-calcule" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" style="fill: var(--warn-line);"/>
+            </marker>
+            <marker id="ah-remplit" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" style="fill: var(--ok-line);"/>
+            </marker>
+          </defs>
+
+          <!-- Aretes (tracees avant les noeuds pour passer dessous) -->
+          <!-- Medicis -> Druide (choisit) -->
+          <path class="edge e-choisit" d="M190,258 C220,180 220,150 250,132" marker-end="url(#ah-choisit)"/>
+          <text class="elabel" x="205" y="180">choisit</text>
+          <!-- Medicis -> Elfe (choisit) -->
+          <path class="edge e-choisit" d="M190,278 L250,278" marker-end="url(#ah-choisit)"/>
+          <text class="elabel" x="204" y="271">choisit</text>
+          <!-- Medicis -> Constitution (choisit) -->
+          <path class="edge e-choisit" d="M190,298 C220,376 220,406 250,424" marker-end="url(#ah-choisit)"/>
+          <text class="elabel" x="205" y="392">choisit</text>
+          <!-- Druide -> Druidique (accorde) -->
+          <path class="edge e-accorde" d="M420,120 C450,96 450,86 480,80" marker-end="url(#ah-accorde)"/>
+          <text class="elabel" x="432" y="94">accorde</text>
+          <!-- Elfe -> Druidisme (accorde) -->
+          <path class="edge e-accorde" d="M420,278 L480,278" marker-end="url(#ah-accorde)"/>
+          <text class="elabel" x="430" y="271">accorde</text>
+          <!-- Constitution -> Calcul PV (calcule) -->
+          <path class="edge e-calcule" d="M420,436 L480,436" marker-end="url(#ah-calcule)"/>
+          <text class="elabel" x="432" y="429">calcule</text>
+          <!-- Druidique -> Langues (remplit) -->
+          <path class="edge e-remplit" d="M650,80 L730,80" marker-end="url(#ah-remplit)"/>
+          <text class="elabel" x="662" y="73">remplit</text>
+          <!-- Druidisme -> Sorts mineurs (remplit) -->
+          <path class="edge e-remplit" d="M650,278 C680,254 680,244 730,224" marker-end="url(#ah-remplit)"/>
+          <text class="elabel" x="662" y="262">remplit</text>
+          <!-- Calcul PV -> PV case (calcule) -->
+          <path class="edge e-calcule" d="M650,436 L730,436" marker-end="url(#ah-calcule)"/>
+          <text class="elabel" x="662" y="429">calcule</text>
+
+          <!-- Noeuds -->
+          <g class="node n-choix">
+            <rect x="20" y="248" width="170" height="60"/>
+            <text class="kind" x="34" y="272">Choix joueur</text>
+            <text class="lbl" x="34" y="292">Medicis</text>
+          </g>
+
+          <g class="node n-source">
+            <rect x="250" y="100" width="170" height="56"/>
+            <text class="kind" x="264" y="122">Source regle</text>
+            <text class="lbl" x="264" y="142">Classe Druide</text>
+          </g>
+          <g class="node n-source">
+            <rect x="250" y="250" width="170" height="56"/>
+            <text class="kind" x="264" y="272">Source regle</text>
+            <text class="lbl" x="264" y="292">Elfe sylvestre</text>
+          </g>
+          <g class="node n-source">
+            <rect x="250" y="408" width="170" height="56"/>
+            <text class="kind" x="264" y="430">Donnee fournie</text>
+            <text class="lbl" x="264" y="450">Constitution 14</text>
+          </g>
+
+          <g class="node n-effet">
+            <rect x="480" y="52" width="170" height="56"/>
+            <text class="kind" x="494" y="74">Effet / aptitude</text>
+            <text class="lbl" x="494" y="94">Druidique</text>
+          </g>
+          <g class="node n-effet">
+            <rect x="480" y="250" width="170" height="56"/>
+            <text class="kind" x="494" y="272">Effet / sort</text>
+            <text class="lbl" x="494" y="292">Druidisme</text>
+          </g>
+          <g class="node n-calc">
+            <rect x="480" y="408" width="170" height="56"/>
+            <text class="kind" x="494" y="430">Calcul</text>
+            <text class="lbl" x="494" y="450">8 + mod Con (+2)</text>
+          </g>
+
+          <g class="node n-case">
+            <rect x="730" y="52" width="170" height="56"/>
+            <text class="kind" x="744" y="74">Case fiche</text>
+            <text class="lbl" x="744" y="94">Langues</text>
+          </g>
+          <g class="node n-case">
+            <rect x="730" y="196" width="170" height="56"/>
+            <text class="kind" x="744" y="218">Case fiche</text>
+            <text class="lbl" x="744" y="238">Sorts mineurs</text>
+          </g>
+          <g class="node n-case">
+            <rect x="730" y="408" width="170" height="56"/>
+            <text class="kind" x="744" y="430">Case fiche</text>
+            <text class="lbl" x="744" y="450">PV = 10</text>
+          </g>
+        </svg>
+
+        <div class="pill-row" style="margin-top:10px;">
+          <span class="pill">Choix joueur</span>
+          <span class="pill">Source regle</span>
+          <span class="pill">Effet / aptitude / sort</span>
+          <span class="pill">Calcul</span>
+          <span class="pill">Case de fiche</span>
+        </div>
+        <p class="note">Aretes : <strong>choisit</strong> (personnage vers choix), <strong>accorde</strong> (source vers consequence automatique), <strong>calcule</strong> (donnees vers calcul et calcul vers case), <strong>remplit</strong> (effet vers case de fiche).</p>
+      </section>
+
+      <section class="section">
+        <h2>Deux graphes complementaires</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Graphe de regles</h3>
+            <p class="note">Vient des Markdown de reference. Il decrit ce qu'une source accorde ou requiert, independamment d'un personnage.</p>
+            <p class="provenance">Historique Guide &rarr; Don <a href="../dons/initie-a-la-magie.html" data-ref="initie-a-la-magie">Initie a la magie</a> (Druide) &rarr; 2 sorts mineurs + 1 sort niveau 1 + caracteristique d'incantation.</p>
+            <p class="provenance">Classe Druide &rarr; <a href="../equipement/index.html" data-ref="index-equipement">Equipement</a> option A &rarr; Focaliseur druidique (baton de combat) &rarr; objet + role focaliseur + arme.</p>
+          </div>
+          <div>
+            <h3>Graphe de personnage</h3>
+            <p class="note">Instancie les regles avec les choix du joueur.</p>
+            <p class="provenance">Medicis &rarr; Guide &rarr; Initie a la magie &rarr; choix manquants : 2 sorts mineurs, 1 sort niveau 1.</p>
+            <p class="provenance">Medicis &rarr; Druide &rarr; Druidique &rarr; sort toujours prepare : <a href="../sorts/communication-avec-les-animaux.html" data-ref="communication-avec-les-animaux">communication avec les animaux</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Types de noeuds</h2>
+        <table>
+          <thead><tr><th>Type</th><th>Exemples</th><th>Role</th></tr></thead>
+          <tbody>
+            <tr><td>Personnage</td><td>Medicis</td><td>Racine d'un graphe instancie.</td></tr>
+            <tr><td>Choix joueur</td><td>Classe Druide, Guide, Elfe sylvestre</td><td>Decision fournie.</td></tr>
+            <tr><td>Source regle</td><td>Classe, historique, espece, lignage, don</td><td>Source documentaire.</td></tr>
+            <tr><td>Aptitude</td><td>Druidique, Sens aiguises</td><td>Trait qui donne des effets.</td></tr>
+            <tr><td>Don</td><td>Initie a la magie</td><td>Source secondaire d'effets.</td></tr>
+            <tr><td>Maitrise</td><td>Perception, <a href="../equipement/armes.html" data-ref="armes">armes</a> courantes, <a href="../equipement/outils.html" data-ref="outils">outils</a></td><td>Case ou capacite de fiche.</td></tr>
+            <tr><td>Objet</td><td>Baton de combat, arc court</td><td>Element d'inventaire.</td></tr>
+            <tr><td>Role d'objet</td><td>Focaliseur, arme, armure</td><td>Usage d'un objet.</td></tr>
+            <tr><td>Sort</td><td>Druidisme, communication avec les animaux</td><td>Sort connu, choisi ou prepare.</td></tr>
+            <tr><td>Calcul</td><td>CA, PV, DD des sorts</td><td>Valeur derivee.</td></tr>
+            <tr><td>Case fiche</td><td>Attaques, langues, <a href="../dons/index.html" data-ref="index-dons">dons</a>, sorts prepares</td><td>Destination visible.</td></tr>
+            <tr><td>Choix requis</td><td>Langue, sort, ordre primitif</td><td>Trou a remplir.</td></tr>
+            <tr><td>Conflit</td><td>Doublon druidisme</td><td>Alerte a resoudre.</td></tr>
+            <tr><td>Recommandation</td><td>Sort conseille, equipement conseille</td><td>Proposition issue d'une source, non encore choisie.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Types d'aretes</h2>
+        <table>
+          <thead><tr><th>Relation</th><th>Sens</th><th>Exemple</th></tr></thead>
+          <tbody>
+            <tr><td><code>choisit</code></td><td>Personnage &rarr; choix joueur</td><td>Medicis choisit Druide.</td></tr>
+            <tr><td><code>accorde</code></td><td>Source &rarr; consequence automatique</td><td>Druide accorde Druidique.</td></tr>
+            <tr><td><code>requiert_choix</code></td><td>Source &rarr; choix requis</td><td>Initie a la magie requiert 2 sorts mineurs.</td></tr>
+            <tr><td><code>instancie</code></td><td>Choix joueur &rarr; source regle</td><td>Guide instancie Historique Guide.</td></tr>
+            <tr><td><code>calcule</code></td><td>Donnees &rarr; calcul</td><td>Con + d8 calcule PV.</td></tr>
+            <tr><td><code>remplit</code></td><td>Effet &rarr; case fiche</td><td>Druidique remplit Langues.</td></tr>
+            <tr><td><code>utilise</code></td><td>Calcul &rarr; donnee source</td><td>CA utilise armure de cuir.</td></tr>
+            <tr><td><code>duplique</code></td><td>Source &rarr; meme consequence</td><td>Elfe sylvestre et Druide donnent druidisme.</td></tr>
+            <tr><td><code>decompose</code></td><td>Objet compose &rarr; composants</td><td>Focaliseur druidique (baton) decompose baton + focaliseur.</td></tr>
+            <tr><td><code>bloque</code></td><td>Manquant &rarr; case fiche</td><td>Sorts prepares manquants bloquent la section Sorts.</td></tr>
+            <tr><td><code>recommande</code></td><td>Source &rarr; option conseillee</td><td>Druide recommande druidisme et flammes.</td></tr>
+            <tr><td><code>pre_remplit</code></td><td>Recommandation &rarr; choix requis</td><td>Sort conseille propose dans l'interface.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Statuts sur les noeuds ou aretes</h2>
+        <table>
+          <thead><tr><th>Statut</th><th>Usage</th></tr></thead>
+          <tbody>
+            <tr><td>Automatique</td><td>Accorde par une source sans choix supplementaire.</td></tr>
+            <tr><td>Fourni</td><td>Donne par le joueur.</td></tr>
+            <tr><td>Calcule</td><td>Produit par une formule.</td></tr>
+            <tr><td>Choix requis</td><td>Decision restante.</td></tr>
+            <tr><td>Manquant documentaire</td><td>Source absente des MD.</td></tr>
+            <tr><td>Conflit</td><td>Deux chemins incompatibles ou redondants.</td></tr>
+            <tr><td>Possible</td><td>Chemin plausible mais non prouve.</td></tr>
+            <tr><td>Remplace</td><td>Remediation validee.</td></tr>
+            <tr><td>Recommande</td><td>Propose par la source, pas encore valide par le joueur.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Direction du graphe et DAG</h2>
+        <p>Le graphe principal va des causes vers les consequences : <em>source ou choix &rarr; aptitude / don / objet / maitrise / sort &rarr; calcul ou case de fiche</em>. La lecture inverse (case &larr; effet &larr; source) est indispensable pour l'audit ; l'application doit afficher les deux.</p>
+        <p>Le graphe est principalement un DAG si on separe bien sources, choix, effets, cases et alertes. Il peut devenir cyclique si on melange une case finale avec sa propre justification.</p>
+        <div class="callout error">A eviter : <em>Sort prepare &rarr; section Sorts &rarr; validation des sorts &rarr; Sort prepare</em>. Regle pratique : les calculs et validations lisent le graphe, mais ne redeviennent pas des prerequis de leurs propres sources.</div>
+      </section>
+
+      <section class="section">
+        <h2>Automatique, recommande, choisi</h2>
+        <p class="note">Ces trois statuts restent separes.</p>
+        <table>
+          <thead><tr><th>Statut</th><th>Effet dans le graphe</th><th>Effet dans l'interface</th></tr></thead>
+          <tbody>
+            <tr><td><span class="badge" data-status="source">Automatique</span></td><td>Ajoute directement un noeud de fiche.</td><td>Rempli sans demander au joueur.</td></tr>
+            <tr><td><span class="badge" data-status="recommande">Recommande</span></td><td>Ajoute une option conseillee.</td><td>Pre-remplit ou met en avant, mais reste modifiable.</td></tr>
+            <tr><td><span class="badge" data-status="fourni">Choisi</span></td><td>Valide une option.</td><td>Devient une source effective pour la fiche.</td></tr>
+          </tbody>
+        </table>
+        <p class="provenance">Druide niveau 1 &rarr; recommande druidisme, recommande flammes, choix requis : 2 sorts mineurs. Si le joueur accepte, Medicis choisit druidisme + flammes. Le moteur detecte alors : druidisme deja accorde par Elfe sylvestre &rarr; <span class="badge" data-status="conflit">Conflit : doublon</span>.</p>
+        <div class="callout"><strong>Communication avec les animaux</strong> est un sort toujours prepare via Druidique. Il ne remplace pas les 4 sorts prepares recommandes du druide niveau 1, sauf regle contraire documentee.</div>
+      </section>
+
+      <section class="section">
+        <h2>Exemples de chemins</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Pourquoi communication avec les animaux ?</h3>
+            <p class="provenance">communication avec les animaux &larr; sort toujours prepare &larr; Druidique &larr; Druide niveau 1 &larr; Classe Druide &larr; Medicis choisit Druide.</p>
+            <h3 style="margin-top:12px;">Qu'apporte Guide a Medicis ?</h3>
+            <p class="provenance">Medicis choisit Guide &rarr; Historique Guide &rarr; Discretion, Survie, Outils de cartographe, Initie a la magie (Druide), Equipement Guide A. Puis Initie a la magie &rarr; 2 sorts mineurs + 1 sort niveau 1 + caracteristique d'incantation.</p>
+          </div>
+          <div>
+            <h3>Pourquoi un baton de combat ?</h3>
+            <p class="provenance">Baton de combat &larr; objet de depart &larr; Focaliseur druidique (baton de combat) &larr; Equipement Druide option A &larr; Classe Druide &larr; Medicis choisit Druide.</p>
+            <p class="provenance">Baton de combat &rarr; role focaliseur druidique &rarr; case Incantation ; et baton de combat &rarr; role arme courante &rarr; attaque +2, 1d6 contondants ou 1d8 a deux mains &rarr; case Armes et attaques.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Representation tabulaire (noeuds / aretes)</h2>
+        <p class="note">Format minimal pour un graphe lisible en Markdown ou consommable par une application.</p>
+        <h3>Noeuds</h3>
+        <table>
+          <thead><tr><th>Id</th><th>Type</th><th>Libelle</th><th>Statut</th><th>Source documentaire</th></tr></thead>
+          <tbody>
+            <tr><td><code>node:medicis</code></td><td>Personnage</td><td>Medicis</td><td><span class="badge" data-status="fourni">Fourni</span></td><td><code>personnages/medicis.md</code></td></tr>
+            <tr><td><code>node:druide</code></td><td>Source regle</td><td>Classe Druide</td><td><span class="badge" data-status="source">Source</span></td><td><code>classes/druide.md</code></td></tr>
+            <tr><td><code>node:druidique</code></td><td>Aptitude</td><td>Druidique</td><td><span class="badge" data-status="source">Source</span></td><td><code>classes/druide.md</code></td></tr>
+            <tr><td><code>node:langues</code></td><td>Case fiche</td><td>Langues</td><td><span class="badge" data-status="calcule">Calcule</span></td><td>—</td></tr>
+          </tbody>
+        </table>
+        <h3 style="margin-top:12px;">Aretes</h3>
+        <table>
+          <thead><tr><th>De</th><th>Relation</th><th>Vers</th><th>Statut</th><th>Pourquoi</th></tr></thead>
+          <tbody>
+            <tr><td><code>node:medicis</code></td><td>choisit</td><td><code>node:druide</code></td><td><span class="badge" data-status="fourni">Fourni</span></td><td>Classe donnee par le joueur.</td></tr>
+            <tr><td><code>node:druide</code></td><td>accorde</td><td><code>node:druidique</code></td><td><span class="badge" data-status="source">Automatique</span></td><td>Druide niveau 1.</td></tr>
+            <tr><td><code>node:druidique</code></td><td>remplit</td><td><code>node:langues</code></td><td><span class="badge" data-status="source">Automatique</span></td><td>Druidique ajoute la langue druidique.</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Pour les fiches humaines, les tables « Depuis les cases » et « Depuis les sources » restent plus lisibles. Pour une application, le format noeuds / aretes est plus <a href="../dons/robuste.html" data-ref="robuste">robuste</a>. Le modele accepte les relations many-to-one, one-to-many et many-to-many.</p>
+      </section>
+
+      <section class="section">
+        <h2>Controle qualite du graphe</h2>
+        <p>Un graphe de personnage est acceptable si :</p>
+        <ul>
+          <li>chaque case importante a au moins un chemin de provenance ;</li>
+          <li>chaque choix automatique est relie a sa source ;</li>
+          <li>chaque choix requis est visible comme noeud <em>Choix requis</em> ;</li>
+          <li>chaque conflit a les deux chemins concurrents ;</li>
+          <li>chaque calcul <a href="../historiques/garde.html" data-ref="garde">garde</a> ses entrees ;</li>
+          <li>aucun effet n'est seulement « devine » sans statut ;</li>
+          <li>les objets composes sont decomposes en objet concret et roles.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

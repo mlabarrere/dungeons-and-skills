@@ -1,0 +1,61 @@
+{
+  "id": "creation-niveau-1",
+  "label": "Creation de personnage (niveau 1)",
+  "level": 1,
+  "ref": "../regles/creation-personnage.html",
+  "note": "Graphe de decision deterministe. Les noeuds FIXES ci-dessous fixent l'ordre et les choix de tete ; les choix dynamiques (competences, cantrips, sorts prepares, ordre de classe, bonus d'historique, langues, equipement A/B) sont deduits par resolver.mjs a partir des `choices[]` des entites selectionnees (classe, sous-classe, espece, lignage, historique).",
+  "abilityMethods": [
+    { "id": "standard", "label": "Valeurs standard", "values": [15, 14, 13, 12, 10, 8] },
+    { "id": "achat-points", "label": "Achat par points (27)", "budget": 27,
+      "costs": { "8": 0, "9": 1, "10": 2, "11": 3, "12": 4, "13": 5, "14": 7, "15": 9 }, "min": 8, "max": 15 },
+    { "id": "des", "label": "Jets de des (4d6 garde 3)", "roll": "4d6kh3", "count": 6 }
+  ],
+  "steps": [
+    { "id": "classe", "label": "1. Classe", "nodes": [
+      { "id": "classe", "type": "single", "label": "Choisir une classe",
+        "optionsFrom": { "catalog": "classes" }, "produces": "class-source" },
+      { "id": "sous-classe", "type": "single", "label": "Choisir une sous-classe",
+        "optionsFrom": { "subclassesOf": "classe" },
+        "when": { "subclassLevelEquals": 1 },
+        "note": "Affiche seulement si la classe choisit sa sous-classe au niveau 1 ; sinon differe au niveau 3." } ] },
+
+    { "id": "origines", "label": "2. Origines", "nodes": [
+      { "id": "espece", "type": "single", "label": "Choisir une espece",
+        "optionsFrom": { "catalog": "species" }, "produces": "species-source" },
+      { "id": "lignage", "type": "single", "label": "Choisir un lignage / heritage",
+        "optionsFrom": { "lineagesOf": "espece" }, "when": { "hasLineages": "espece" }, "produces": "lineage-source" },
+      { "id": "historique", "type": "single", "label": "Choisir un historique",
+        "optionsFrom": { "catalog": "backgrounds" }, "produces": "background-source" } ] },
+
+    { "id": "caracteristiques", "label": "3. Caracteristiques", "nodes": [
+      { "id": "methode", "type": "single", "label": "Methode de generation",
+        "optionsFrom": { "list": ["standard", "achat-points", "des"] } },
+      { "id": "valeurs", "type": "ability-scores", "label": "Attribuer For/Dex/Con/Int/Sag/Cha",
+        "dependsOn": ["methode"] },
+      { "id": "bonus-historique", "type": "ability-bonus", "label": "Bonus d'historique (+2/+1 ou +1/+1/+1)",
+        "fromChoicesOf": "historique", "kind": "bonus-caracteristique" } ] },
+
+    { "id": "competences-langues", "label": "4. Competences, langues, dons d'origine", "nodes": [
+      { "id": "competences", "type": "aggregate-choices", "kind": "competence-classe",
+        "label": "Competences (classe)", "dedupeAgainstGranted": true },
+      { "id": "don-origine", "type": "aggregate-choices", "kind": "don",
+        "label": "Don d'origine (via historique)", "expandFeatChoices": true },
+      { "id": "langues", "type": "aggregate-choices", "kind": "langue",
+        "label": "Langues", "optionsFrom": { "fromLanguages": "courante" }, "dedupeAgainstGranted": true } ] },
+
+    { "id": "sorts", "label": "5. Sorts", "when": { "isSpellcaster": true }, "nodes": [
+      { "id": "cantrips", "type": "aggregate-choices", "kind": "cantrip",
+        "label": "Sorts mineurs", "dedupeAgainstGranted": true, "showRecommendations": true },
+      { "id": "prepares", "type": "aggregate-choices", "kind": "prepared",
+        "label": "Sorts prepares", "dedupeAgainstGranted": true, "showRecommendations": true } ] },
+
+    { "id": "equipement", "label": "6. Equipement", "nodes": [
+      { "id": "equipement-classe", "type": "aggregate-choices", "kind": "equipement",
+        "label": "Equipement (option A / B)" } ] },
+
+    { "id": "finalisation", "label": "7. Finalisation", "nodes": [
+      { "id": "identite", "type": "text", "label": "Nom, alignement, description", "optional": true },
+      { "id": "calcul", "type": "compute", "label": "Fiche calculee",
+        "note": "resolver.toCharacterModel(answers) -> build-character.computeCharacter -> fiche + sheet-lint." } ] }
+  ]
+}

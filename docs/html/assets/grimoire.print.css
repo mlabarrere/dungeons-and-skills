@@ -1,0 +1,42 @@
+/* ==========================================================================
+   grimoire.print.css — regles d'impression du grimoire D&D
+   Importe par grimoire.css via @import "grimoire.print.css" print;
+   Cible : rendu A4 propre des fiches, actions ecran masquees.
+   ========================================================================== */
+
+body {
+  background: #fff;
+}
+
+main {
+  max-width: none;
+  padding: 0;
+}
+
+.sheet {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.print-actions,
+.breadcrumb,
+.tabs,
+.site-footer {
+  display: none;
+}
+
+/* Onglets : tout imprimer, meme les panneaux caches a l'ecran */
+.tabpanel[hidden] {
+  display: block !important;
+}
+
+.section {
+  break-inside: avoid;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

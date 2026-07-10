@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barde — Classe</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Barde">
+  <main>
+    <article class="sheet" data-entity="classe" data-id="barde" data-status="source" data-source="img:59">
+      <h1>Barde</h1>
+      <div class="pill-row">
+        <span class="badge" data-status="source">Extraction faite (img:59)</span>
+        <span class="pill">Caracteristique : Charisme</span>
+        <span class="pill">De de vie : d8</span>
+        <span class="pill">Lanceur complet</span>
+      </div>
+      <p class="note">
+        Conversion fidele des images p59, 105 (traits, table, aptitudes 1-3),
+        110 (aptitudes 4-20), 107 et 108 (liste des sorts). Les quatre Colleges
+        (sous-classes) sont detailles sur leurs propres pages.
+      </p>
+
+      <section class="section">
+        <h2>Role de la classe</h2>
+        <p>
+          Les Bardes invoquent la magie au gre de la musique, de la danse et des
+          vers. Ils excellent dans l'inspiration d'autrui, l'apaisement des maux, la
+          demoralisation de l'adversaire et les illusions. Ils estiment que le
+          multivers fut faconne par le Verbe de la creation et que les vestiges de
+          ces paroles originelles resonnent encore sur chaque plan d'existence ; la
+          magie bardique tente d'exploiter ces mots qui transcendent tout idiome.
+        </p>
+        <p>
+          Leur vie se consacre aux voyages, a l'accumulation de savoir et au conte,
+          et depend des bonnes graces du public.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Traits de base</h2>
+        <table>
+          <thead><tr><th>Element</th><th>Valeur</th></tr></thead>
+          <tbody>
+            <tr><td>Caracteristique principale</td><td>Charisme</td></tr>
+            <tr><td>De de vie</td><td>d8 par niveau de Barde</td></tr>
+            <tr><td>Jets de sauvegarde maitrises</td><td>Dexterite et Charisme</td></tr>
+            <tr><td>Maitrises de competence</td><td>3 competences au choix (cf. chapitre 1)</td></tr>
+            <tr><td>Maitrises d'arme</td><td><a href="../equipement/armes.html" data-ref="armes">Armes</a> courantes</td></tr>
+            <tr><td>Maitrises d'<a href="../equipement/outils.html" data-ref="outils">outils</a></td><td>3 instruments de musique au choix (cf. chapitre 6)</td></tr>
+            <tr><td><a href="../regles/glossaire.html#formation-aux-armures" data-ref="formation-aux-armures">Formation aux armures</a></td><td>Armures legeres</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Equipement de depart</h2>
+        <table>
+          <thead><tr><th>Option</th><th>Contenu</th></tr></thead>
+          <tbody>
+            <tr><td>A</td><td>Armure de cuir, 2 dagues, instrument de musique de votre choix, paquetage d'<a href="../historiques/artiste.html" data-ref="artiste">artiste</a> et 19 po</td></tr>
+            <tr><td>B</td><td>90 po</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Devenir Barde</h2>
+        <h3>En tant que personnage de niveau 1</h3>
+        <ul>
+          <li>recevez tous les traits de l'encadre Traits de base du Barde ;</li>
+          <li>recevez les aptitudes de niveau 1 du Barde (table Aptitudes du Barde).</li>
+        </ul>
+        <h3 style="margin-top:12px;">En tant que personnage multiclasse</h3>
+        <ul>
+          <li>recevez les traits suivants : De de vie, maitrise d'une competence au choix, maitrise d'un instrument de musique au choix et formation aux armures legeres ;</li>
+          <li>recevez les aptitudes de niveau 1 du Barde ; referez-vous aux regles du multiclassage (chapitre 2) pour les emplacements de sort.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Table Aptitudes du Barde</h2>
+        <p class="note">Colonnes 1 a 9 = emplacements de sort par niveau de sort.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Niv.</th><th>Bonus maitrise</th><th>Aptitudes de classe</th>
+              <th>De bardique</th><th>Sorts mineurs</th><th>Sorts prepares</th>
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>+2</td><td>Inspiration bardique, Sorts</td><td>d6</td><td>2</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>2</td><td>+2</td><td>Expertise, Touche-a-tout</td><td>d6</td><td>2</td><td>5</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>3</td><td>+2</td><td>Sous-classe de Barde</td><td>d6</td><td>2</td><td>6</td><td>4</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>4</td><td>+2</td><td><a href="../dons/amelioration-de-caracteristique.html" data-ref="amelioration-de-caracteristique">Amelioration de caracteristique</a></td><td>d6</td><td>3</td><td>7</td><td>4</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>5</td><td>+3</td><td>Source d'inspiration</td><td>d8</td><td>3</td><td>9</td><td>4</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>6</td><td>+3</td><td>Aptitude de sous-classe</td><td>d8</td><td>3</td><td>10</td><td>4</td><td>3</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>7</td><td>+3</td><td>Contre-charme</td><td>d8</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>8</td><td>+3</td><td>Amelioration de caracteristique</td><td>d8</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>9</td><td>+4</td><td>Expertise</td><td>d8</td><td>3</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>10</td><td>+4</td><td>Secrets magiques</td><td>d10</td><td>4</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>11</td><td>+4</td><td>-</td><td>d10</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>12</td><td>+4</td><td>Amelioration de caracteristique</td><td>d10</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
+            <tr><td>13</td><td>+5</td><td>-</td><td>d10</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+            <tr><td>14</td><td>+5</td><td>Aptitude de sous-classe</td><td>d10</td><td>4</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>-</td><td>-</td></tr>
+            <tr><td>15</td><td>+5</td><td>-</td><td>d12</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>-</td></tr>
+            <tr><td>16</td><td>+5</td><td>Amelioration de caracteristique</td><td>d12</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>-</td></tr>
+            <tr><td>17</td><td>+6</td><td>-</td><td>d12</td><td>4</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>18</td><td>+6</td><td>Inspiration superieure</td><td>d12</td><td>4</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>19</td><td>+6</td><td>Faveur epique</td><td>d12</td><td>4</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>20</td><td>+6</td><td>Verbe de la creation</td><td>d12</td><td>4</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 1 — Inspiration bardique</h2>
+        <p>
+          Vous pouvez inspirer autrui, surnaturellement, par vos paroles, votre
+          musique ou vos danses. Cette inspiration est representee par votre de
+          d'Inspiration bardique, un d6.
+        </p>
+        <ul>
+          <li><strong>Utilisation.</strong> Par une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a>, vous inspirez une autre creature qui vous voit ou vous entend dans un rayon de 18 m. Cette creature recoit l'un de vos des d'Inspiration bardique. Une meme creature ne peut pas disposer de plus d'un de a la fois.</li>
+          <li>Une fois au cours de l'heure a venir, lorsque la creature rate un <a href="../regles/glossaire.html#test-d20" data-ref="test-d20">Test d20</a>, elle peut lancer le de d'Inspiration bardique et en ajouter le resultat au Test d20, ce qui peut convertir l'echec en reussite. Le de est depense des qu'il est lance.</li>
+          <li><strong>Nombre d'utilisations.</strong> Egal a votre modificateur de Charisme (minimum une fois) ; recupere en terminant un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">Repos long</a>.</li>
+          <li><strong>A plus haut niveau.</strong> Le de devient un d8 au niveau 5, un d10 au niveau 10 et un d12 au niveau 15 (voir colonne De bardique de la table).</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 1 — Sorts</h2>
+        <p>Vous avez appris a lancer des sorts au gre de votre expression artistique.</p>
+        <ul>
+          <li><strong>Sorts mineurs.</strong> Vous connaissez deux sorts mineurs choisis dans la liste du Barde. <em><a href="../sorts/lumieres-dansantes.html" data-ref="lumieres-dansantes">Lumieres dansantes</a></em> et <em><a href="../sorts/moquerie-cruelle.html" data-ref="moquerie-cruelle">moquerie cruelle</a></em> sont recommandes. Chaque fois que vous gagnez un niveau de Barde, vous pouvez remplacer l'un de vos sorts mineurs. Aux niveaux 4 puis 10, vous apprenez un <a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">sort mineur</a> supplementaire (colonne Sorts mineurs de la table).</li>
+          <li><strong>Emplacements de sort.</strong> La table indique le nombre d'emplacements pour lancer vos sorts du 1er niveau et superieur ; recuperes en terminant un Repos long.</li>
+          <li><strong>Sorts prepares du 1er niveau et plus.</strong> Preparez la liste des sorts que cette aptitude vous permet de lancer. Pour commencer, choisissez quatre sorts du 1er niveau issus de la liste du Barde. <em>Charme-personne</em>, <em><a href="../sorts/couleurs-dansantes.html" data-ref="couleurs-dansantes">couleurs dansantes</a></em>, <em><a href="../sorts/mot-de-guerison.html" data-ref="mot-de-guerison">mot de guerison</a></em> et <em><a href="../sorts/murmures-dissonants.html" data-ref="murmures-dissonants">murmures dissonants</a></em> sont recommandes.</li>
+          <li>Le nombre de sorts prepares augmente selon la colonne Sorts prepares de la table. Chaque fois que vous gagnez un niveau de Barde, vous pouvez remplacer un sort prepare par un autre sort de Barde.</li>
+          <li><strong>Caracteristique d'incantation.</strong> Charisme.</li>
+          <li><strong><a href="../regles/glossaire.html#focaliseur-d-incantation" data-ref="focaliseur-d-incantation">Focaliseur d'incantation</a>.</strong> Un instrument de musique.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 2 — Expertise</h2>
+        <p>
+          Vous recevez l'Expertise dans deux de vos maitrises de competence au choix.
+          Persuasion et Representation sont recommandees si vous en avez la maitrise.
+          Au niveau 9 de Barde, vous recevez l'Expertise dans deux maitrises de
+          competences supplementaires au choix.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 2 — Touche-a-tout</h2>
+        <p>
+          Vous pouvez ajouter la moitie de votre bonus de maitrise (arrondi a
+          l'inferieur) a tout <a href="../regles/glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a> que vous effectuez sans avoir la
+          maitrise de competence associee, a condition que votre bonus de maitrise ne
+          s'y applique pas par ailleurs.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 3 — Sous-classe de Barde</h2>
+        <p>Vous recevez la sous-classe (College) de votre choix. Les quatre Colleges sont detailles sur leurs propres pages :</p>
+        <div class="pill-row">
+          <span class="pill"><a href="college-de-la-danse.html" data-ref="college-de-la-danse">College de la Danse</a></span>
+          <span class="pill"><a href="college-du-savoir.html" data-ref="college-du-savoir">College du Savoir</a></span>
+          <span class="pill"><a href="college-de-la-seduction.html" data-ref="college-de-la-seduction">College de la Seduction</a></span>
+          <span class="pill"><a href="college-de-la-vaillance.html" data-ref="college-de-la-vaillance">College de la Vaillance</a></span>
+        </div>
+        <p class="note">Vous beneficiez des aptitudes de la sous-classe choisie, a concurrence de votre niveau actuel de Barde.</p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 4 — Amelioration de caracteristique</h2>
+        <p>
+          Vous recevez le don Amelioration de caracteristique (cf. chapitre 5) ou un
+          autre don de votre choix pour lequel vous remplissez les conditions. Vous
+          recevez de nouveau cette aptitude aux niveaux 8, 12 et 16.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 5 — Source d'inspiration</h2>
+        <ul>
+          <li>Vous recuperez desormais tout votre quota d'Inspiration bardique lorsque vous terminez un <a href="../regles/glossaire.html#repos-court" data-ref="repos-court">Repos court</a> ou long.</li>
+          <li>De plus, vous pouvez depenser un emplacement de sort (pas d'action requise) pour recuperer une utilisation d'Inspiration bardique.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 6 — Aptitude de sous-classe</h2>
+        <p>Vous recevez une aptitude accordee par votre College au niveau 6.</p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 7 — Contre-charme</h2>
+        <p>
+          Vous pouvez recourir a des notes de musique ou des mots de pouvoir pour
+          contrer les effets qui influent sur l'esprit. Si vous ou une creature dans un
+          rayon de 9 m rate un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> contre un effet qui impose l'etat
+          Charme ou Effraye, vous pouvez jouer une Reaction pour que le JS soit rejoue,
+          le nouveau jet se faisant avec l'Avantage.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 9 — Expertise</h2>
+        <p>Vous recevez l'Expertise dans deux maitrises de competences supplementaires au choix.</p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 10 — Secrets magiques</h2>
+        <p>
+          Vous avez appris les secrets de diverses traditions magiques. Chaque fois que
+          vous atteignez un niveau de Barde (y compris le present niveau) et que le
+          nombre de Sorts prepares augmente dans la table, vous pouvez choisir l'un de
+          vos nouveaux sorts prepares dans la liste du Barde, du <a href="./clerc.html" data-ref="clerc">Clerc</a>, du <a href="./druide.html" data-ref="druide">Druide</a> ou du
+          <a href="./magicien.html" data-ref="magicien">Magicien</a> ; ces sorts sont consideres comme des sorts de Barde. De plus, chaque
+          fois que vous remplacez un sort prepare pour la classe de Barde, vous pouvez le
+          remplacer par un sort issu de n'importe laquelle de ces listes.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 18 — Inspiration superieure</h2>
+        <p>
+          Lorsque vous lancez l'Initiative, vous recuperez des utilisations d'Inspiration
+          bardique s'il vous en reste une ou moins, jusqu'a en avoir deux.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 19 — Faveur epique</h2>
+        <p>
+          Vous recevez un don de Faveur epique (cf. chapitre 5) ou un autre don de votre
+          choix pour lequel vous remplissez les conditions. <a href="../dons/faveur-de-memoire-magique.html" data-ref="faveur-de-memoire-magique">Faveur de memoire magique</a> est
+          recommande.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Niveau 20 — Verbe de la creation</h2>
+        <p>
+          Vous avez maitrise deux des paroles du Verbe de la creation : celles de la vie
+          et de la mort. Les sorts <em><a href="../sorts/mot-de-pouvoir-guerisseur.html" data-ref="mot-de-pouvoir-guerisseur">mot de pouvoir guerisseur</a></em> et
+          <em><a href="../sorts/mot-de-pouvoir-mortel.html" data-ref="mot-de-pouvoir-mortel">mot de pouvoir mortel</a></em> sont desormais constamment prepares en ce qui
+          vous concerne. Lorsque vous lancez l'un de ces sorts, vous pouvez cibler une
+          seconde creature si elle se trouve dans un rayon de 3 m de la premiere cible.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Liste des sorts de Barde</h2>
+        <p class="note">
+          Colonne Special : C = Concentration, R = Rituel, M = composante materielle
+          specifique.
+        </p>
+
+        <h3>Sorts mineurs (niveau 0)</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/coup-au-but.html" data-ref="coup-au-but">coup au but</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/coup-de-tonnerre.html" data-ref="coup-de-tonnerre">coup de tonnerre</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/faux-amis.html" data-ref="faux-amis">faux amis</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/illusion-mineure.html" data-ref="illusion-mineure">illusion mineure</a></td><td>Illusion</td><td>-</td></tr>
+            <tr><td>lumiere</td><td>Evocation</td><td>-</td></tr>
+            <tr><td>lumieres dansantes</td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/main-du-mage.html" data-ref="main-du-mage">main du mage</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td>message</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>moquerie cruelle</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/poussiere-d-etoile.html" data-ref="poussiere-d-etoile">poussiere d'etoile</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td>prestidigitation</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>reparation</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/voile-defensif.html" data-ref="voile-defensif">voile defensif</a></td><td>Abjuration</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 1er niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/amitie-avec-les-animaux.html" data-ref="amitie-avec-les-animaux">amitie avec les animaux</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>charme-personne</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/communication-avec-les-animaux.html" data-ref="communication-avec-les-animaux">communication avec les animaux</a></td><td>Divination</td><td>R</td></tr>
+            <tr><td><a href="../sorts/comprehension-des-langues.html" data-ref="comprehension-des-langues">comprehension des langues</a></td><td>Divination</td><td>R</td></tr>
+            <tr><td>couleurs dansantes</td><td>Illusion</td><td>-</td></tr>
+            <tr><td>deguisement</td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/detection-de-la-magie.html" data-ref="detection-de-la-magie">detection de la magie</a></td><td>Divination</td><td>C, R</td></tr>
+            <tr><td><a href="../sorts/feuille-morte.html" data-ref="feuille-morte">feuille morte</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/fou-rire-de-tasha.html" data-ref="fou-rire-de-tasha">fou rire de Tasha</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/grande-foulee.html" data-ref="grande-foulee">grande foulee</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>heroisme</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>identification</td><td>Divination</td><td>R, M</td></tr>
+            <tr><td><a href="../sorts/image-silencieuse.html" data-ref="image-silencieuse">image silencieuse</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td>imprecation</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>injonction</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/lueurs-feeriques.html" data-ref="lueurs-feeriques">lueurs feeriques</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td>mot de guerison</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>murmures dissonants</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/serviteur-invisible.html" data-ref="serviteur-invisible">serviteur invisible</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td>soins</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>sommeil</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/texte-illusoire.html" data-ref="texte-illusoire">texte illusoire</a></td><td>Illusion</td><td>R, M</td></tr>
+            <tr><td><a href="../sorts/vague-tonnante.html" data-ref="vague-tonnante">vague tonnante</a></td><td>Evocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 2e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>agrandissement/rapetissement</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>aide</td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>amelioration de caracteristique</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/apaisement-des-emotions.html" data-ref="apaisement-des-emotions">apaisement des emotions</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/bouche-magique.html" data-ref="bouche-magique">bouche magique</a></td><td>Illusion</td><td>R, M</td></tr>
+            <tr><td>cecite/surdite</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/couronne-du-dement.html" data-ref="couronne-du-dement">couronne du dement</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>deblocage</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/detection-de-l-invisibilite.html" data-ref="detection-de-l-invisibilite">detection de l'invisibilite</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/detection-des-pensees.html" data-ref="detection-des-pensees">detection des pensees</a></td><td>Divination</td><td>C</td></tr>
+            <tr><td><a href="../sorts/discours-captivant.html" data-ref="discours-captivant">discours captivant</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/force-fantasmagorique.html" data-ref="force-fantasmagorique">force fantasmagorique</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td>fracassement</td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/image-miroir.html" data-ref="image-miroir">image miroir</a></td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/immobilisation-de-personne.html" data-ref="immobilisation-de-personne">immobilisation de personne</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>invisibilite</td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/localisation-d-animaux-ou-de-plantes.html" data-ref="localisation-d-animaux-ou-de-plantes">localisation d'animaux ou de plantes</a></td><td>Divination</td><td>R</td></tr>
+            <tr><td><a href="../sorts/localisation-d-objet.html" data-ref="localisation-d-objet">localisation d'objet</a></td><td>Divination</td><td>C</td></tr>
+            <tr><td><a href="../sorts/messager-animal.html" data-ref="messager-animal">messager animal</a></td><td>Enchantement</td><td>R</td></tr>
+            <tr><td><a href="../sorts/metal-brulant.html" data-ref="metal-brulant">metal brulant</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/nuee-de-dagues.html" data-ref="nuee-de-dagues">nuee de dagues</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/restauration-partielle.html" data-ref="restauration-partielle">restauration partielle</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>silence</td><td>Illusion</td><td>C, R</td></tr>
+            <tr><td>suggestion</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/zone-de-verite.html" data-ref="zone-de-verite">zone de verite</a></td><td>Enchantement</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 3e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>antidetection</td><td>Abjuration</td><td>M</td></tr>
+            <tr><td>clairvoyance</td><td>Divination</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/communication-a-distance.html" data-ref="communication-a-distance">communication a distance</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/communication-avec-les-morts.html" data-ref="communication-avec-les-morts">communication avec les morts</a></td><td>Necromancie</td><td>-</td></tr>
+            <tr><td><a href="../sorts/communication-avec-les-plantes.html" data-ref="communication-avec-les-plantes">communication avec les plantes</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/croissance-vegetale.html" data-ref="croissance-vegetale">croissance vegetale</a></td><td>Transmutation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/dissipation-de-la-magie.html" data-ref="dissipation-de-la-magie">dissipation de la magie</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/don-des-langues.html" data-ref="don-des-langues">don des langues</a></td><td>Divination</td><td>-</td></tr>
+            <tr><td><a href="../sorts/etat-cadaverique.html" data-ref="etat-cadaverique">etat cadaverique</a></td><td>Necromancie</td><td>R</td></tr>
+            <tr><td><a href="../sorts/glyphe-de-garde.html" data-ref="glyphe-de-garde">glyphe de garde</a></td><td>Abjuration</td><td>M</td></tr>
+            <tr><td><a href="../sorts/image-majeure.html" data-ref="image-majeure">image majeure</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td>lenteur</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>malediction</td><td>Necromancie</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mot-de-guerison-de-groupe.html" data-ref="mot-de-guerison-de-groupe">mot de guerison de groupe</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/motif-hypnotique.html" data-ref="motif-hypnotique">motif hypnotique</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/nuage-nauseabond.html" data-ref="nuage-nauseabond">nuage nauseabond</a></td><td>Invocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/petite-hutte-de-leomund.html" data-ref="petite-hutte-de-leomund">petite hutte de Leomund</a></td><td>Evocation</td><td>R</td></tr>
+            <tr><td>terreur</td><td>Illusion</td><td>C</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 4e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/assassin-imaginaire.html" data-ref="assassin-imaginaire">assassin imaginaire</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td>charme-monstre</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>compulsion</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>confusion</td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/fontaine-de-lune.html" data-ref="fontaine-de-lune">fontaine de lune</a></td><td>Evocation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/invisibilite-supreme.html" data-ref="invisibilite-supreme">invisibilite supreme</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/liberte-de-mouvement.html" data-ref="liberte-de-mouvement">liberte de mouvement</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/localisation-de-creature.html" data-ref="localisation-de-creature">localisation de creature</a></td><td>Divination</td><td>C</td></tr>
+            <tr><td>metamorphose</td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/porte-dimensionnelle.html" data-ref="porte-dimensionnelle">porte dimensionnelle</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/terrain-hallucinatoire.html" data-ref="terrain-hallucinatoire">terrain hallucinatoire</a></td><td>Illusion</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 5e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/animation-des-objets.html" data-ref="animation-des-objets">animation des objets</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td><a href="../sorts/apparence-trompeuse.html" data-ref="apparence-trompeuse">apparence trompeuse</a></td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/cercle-de-teleportation.html" data-ref="cercle-de-teleportation">cercle de teleportation</a></td><td>Invocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/domination-de-personne.html" data-ref="domination-de-personne">domination de personne</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/double-illusoire.html" data-ref="double-illusoire">double illusoire</a></td><td>Illusion</td><td>C</td></tr>
+            <tr><td><a href="../sorts/entrave-planaire.html" data-ref="entrave-planaire">entrave planaire</a></td><td>Abjuration</td><td>M</td></tr>
+            <tr><td>eveil</td><td>Transmutation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/immobilisation-de-monstre.html" data-ref="immobilisation-de-monstre">immobilisation de monstre</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/lien-telepathique-de-rary.html" data-ref="lien-telepathique-de-rary">lien telepathique de Rary</a></td><td>Divination</td><td>R</td></tr>
+            <tr><td><a href="../sorts/modification-de-memoire.html" data-ref="modification-de-memoire">modification de memoire</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/mythes-et-legendes.html" data-ref="mythes-et-legendes">mythes et legendes</a></td><td>Divination</td><td>M</td></tr>
+            <tr><td><a href="../sorts/perturbations-synaptiques.html" data-ref="perturbations-synaptiques">perturbations synaptiques</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/presence-royale-de-yolane.html" data-ref="presence-royale-de-yolane">presence royale de Yolane</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td>quete</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/rappel-a-la-vie.html" data-ref="rappel-a-la-vie">rappel a la vie</a></td><td>Necromancie</td><td>M</td></tr>
+            <tr><td><a href="../sorts/restauration-supreme.html" data-ref="restauration-supreme">restauration supreme</a></td><td>Abjuration</td><td>M</td></tr>
+            <tr><td>scrutation</td><td>Divination</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/soins-de-groupe.html" data-ref="soins-de-groupe">soins de groupe</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>songe</td><td>Illusion</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 6e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/danse-irresistible-d-otto.html" data-ref="danse-irresistible-d-otto">danse irresistible d'Otto</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/festin-des-heros.html" data-ref="festin-des-heros">festin des heros</a></td><td>Invocation</td><td>M</td></tr>
+            <tr><td><a href="../sorts/illusion-programmee.html" data-ref="illusion-programmee">illusion programmee</a></td><td>Illusion</td><td>M</td></tr>
+            <tr><td><a href="../sorts/mauvais-oeil.html" data-ref="mauvais-oeil">mauvais oeil</a></td><td>Necromancie</td><td>C</td></tr>
+            <tr><td>orientation</td><td>Divination</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/protections-et-sceaux.html" data-ref="protections-et-sceaux">protections et sceaux</a></td><td>Abjuration</td><td>M</td></tr>
+            <tr><td><a href="../sorts/suggestion-de-groupe.html" data-ref="suggestion-de-groupe">suggestion de groupe</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/vision-supreme.html" data-ref="vision-supreme">vision supreme</a></td><td>Divination</td><td>M</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 7e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/cage-de-force.html" data-ref="cage-de-force">cage de force</a></td><td>Evocation</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/embruns-prismatiques.html" data-ref="embruns-prismatiques">embruns prismatiques</a></td><td>Evocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/epee-de-mordenkainen.html" data-ref="epee-de-mordenkainen">epee de Mordenkainen</a></td><td>Evocation</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/forme-etheree.html" data-ref="forme-etheree">forme etheree</a></td><td>Invocation</td><td>-</td></tr>
+            <tr><td><a href="../sorts/image-projetee.html" data-ref="image-projetee">image projetee</a></td><td>Illusion</td><td>C, M</td></tr>
+            <tr><td><a href="../sorts/manoir-somptueux-de-mordenkainen.html" data-ref="manoir-somptueux-de-mordenkainen">manoir somptueux de Mordenkainen</a></td><td>Invocation</td><td>M</td></tr>
+            <tr><td>mirage</td><td>Illusion</td><td>-</td></tr>
+            <tr><td><a href="../sorts/mot-de-pouvoir-fortifiant.html" data-ref="mot-de-pouvoir-fortifiant">mot de pouvoir fortifiant</a></td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>regeneration</td><td>Transmutation</td><td>-</td></tr>
+            <tr><td>resurrection</td><td>Necromancie</td><td>M</td></tr>
+            <tr><td>symbole</td><td>Abjuration</td><td>M</td></tr>
+            <tr><td>teleportation</td><td>Invocation</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 8e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td>alienation</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>aversion/attirance</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>bagou</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/domination-de-monstre.html" data-ref="domination-de-monstre">domination de monstre</a></td><td>Enchantement</td><td>C</td></tr>
+            <tr><td><a href="../sorts/esprit-impenetrable.html" data-ref="esprit-impenetrable">esprit impenetrable</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td><a href="../sorts/mot-de-pouvoir-etourdissant.html" data-ref="mot-de-pouvoir-etourdissant">mot de pouvoir etourdissant</a></td><td>Enchantement</td><td>-</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sorts de Barde du 9e niveau</h3>
+        <table>
+          <thead><tr><th>Sort</th><th>Ecole</th><th>Special</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../sorts/metamorphose-supreme.html" data-ref="metamorphose-supreme">metamorphose supreme</a></td><td>Transmutation</td><td>C</td></tr>
+            <tr><td>mot de pouvoir guerisseur</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td>mot de pouvoir mortel</td><td>Enchantement</td><td>-</td></tr>
+            <tr><td><a href="../sorts/mur-prismatique.html" data-ref="mur-prismatique">mur prismatique</a></td><td>Abjuration</td><td>-</td></tr>
+            <tr><td>premonition</td><td>Divination</td><td>-</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>A noter sur la fiche</h2>
+        <ul>
+          <li>Charisme : caracteristique prioritaire (incantation, DD de sauvegarde des sorts, quota d'Inspiration bardique).</li>
+          <li>Dexterite : utile pour la CA et les jets de sauvegarde maitrises.</li>
+          <li>Constitution : utile pour les PV et la concentration.</li>
+          <li>Noter le de d'Inspiration bardique courant (d6 -> d8 -> d10 -> d12) et le nombre d'utilisations.</li>
+          <li>Instrument de musique : focaliseur d'incantation.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Styleguide — Grimoire D&D</title>
+  <link rel="stylesheet" href="assets/grimoire.css">
+</head>
+<body data-root="." data-breadcrumb="Accueil|/index.html; Styleguide">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet">
+      <h1>Styleguide du grimoire</h1>
+      <p class="note">
+        Reference visuelle de tous les composants fournis par
+        <code>assets/grimoire.css</code>. Si une page s'affiche differemment
+        d'ici, c'est qu'elle triche avec du style inline : a corriger.
+      </p>
+
+      <section class="section">
+        <h2>Badges de statut <code>.badge[data-status]</code></h2>
+        <div class="pill-row">
+          <span class="badge" data-status="fourni">Fourni</span>
+          <span class="badge" data-status="source">Source</span>
+          <span class="badge" data-status="calcule">Calcule</span>
+          <span class="badge" data-status="deduit">Deduit</span>
+          <span class="badge" data-status="recommande">Recommande</span>
+          <span class="badge" data-status="arbitrer">A arbitrer</span>
+          <span class="badge" data-status="manquant">Manquant</span>
+          <span class="badge" data-status="incoherent">Incoherent</span>
+          <span class="badge" data-status="conflit">Conflit</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Callouts <code>.callout</code></h2>
+        <div class="callout ok"><strong>OK :</strong> point resolu et justifie.</div>
+        <div class="callout"><strong>Attention :</strong> point a confirmer.</div>
+        <div class="callout error"><strong>Erreur :</strong> conflit ou incoherence.</div>
+        <div class="callout info"><strong>Info :</strong> note explicative.</div>
+      </section>
+
+      <section class="section">
+        <h2>Cartes de synthese <code>.summary .card</code></h2>
+        <div class="summary">
+          <div class="card ok"><h3>Resolu</h3><ul><li>Exemple</li><li>Exemple</li></ul></div>
+          <div class="card warn"><h3>Deduit</h3><ul><li>Exemple</li></ul></div>
+          <div class="card bad"><h3>A valider</h3><ul><li>Exemple</li></ul></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Caracteristiques <code>.score-grid</code></h2>
+        <div class="score-grid">
+          <div class="score"><span class="name">For</span><span class="mod">+0</span><span class="raw">10</span></div>
+          <div class="score"><span class="name">Dex</span><span class="mod">+0</span><span class="raw">11</span></div>
+          <div class="score"><span class="name">Con</span><span class="mod">+2</span><span class="raw">14</span></div>
+          <div class="score"><span class="name">Int</span><span class="mod">+2</span><span class="raw">14</span></div>
+          <div class="score"><span class="name">Sag</span><span class="mod">+3</span><span class="raw">17</span></div>
+          <div class="score"><span class="name">Cha</span><span class="mod">+2</span><span class="raw">14</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Pastilles <code>.pill-row</code></h2>
+        <div class="pill-row">
+          <span class="pill"><a href="./equipement/armes.html" data-ref="armes">Armes</a> courantes</span>
+          <span class="pill">Armures legeres</span>
+          <span class="pill">Boucliers</span>
+          <span class="pill">Materiel d'herboriste</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Table de provenance</h2>
+        <table>
+          <thead><tr><th>Element</th><th>Chemin de provenance</th><th>Statut</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><a href="./sorts/communication-avec-les-animaux.html" data-ref="communication-avec-les-animaux">Communication avec les animaux</a></td>
+              <td class="provenance">Sort toujours prepare &lt;- Druidique &lt;- <a href="./classes/druide.html" data-ref="druide">Druide</a> niveau 1</td>
+              <td><span class="badge" data-status="source">Source</span></td>
+            </tr>
+            <tr>
+              <td>Druidisme (choix druide)</td>
+              <td class="provenance"><a href="./regles/glossaire.html#sort-mineur" data-ref="sort-mineur">Sort mineur</a> choisi &lt;- Druide ; deja donne par <a href="./especes/elfe.html" data-ref="elfe">Elfe</a> sylvestre</td>
+              <td><span class="badge" data-status="conflit">Conflit</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Onglets <code>.tabs</code> / <code>.tabpanel</code></h2>
+        <div class="tabs">
+          <button data-tab="sg-tab-1">Niveau 1</button>
+          <button data-tab="sg-tab-2">Niveau 2</button>
+        </div>
+        <div class="tabpanel" id="sg-tab-1"><p>Contenu du niveau 1.</p></div>
+        <div class="tabpanel" id="sg-tab-2"><p>Contenu du niveau 2.</p></div>
+      </section>
+
+      <section class="section">
+        <h2>Index d'entites <code>.entity-table</code></h2>
+        <table class="entity-table">
+          <thead><tr><th>Entite</th><th>Carac. cle</th><th>Statut</th></tr></thead>
+          <tbody>
+            <tr><td><span class="name"><a href="#">Druide</a></span></td><td>Sagesse</td><td><span class="badge" data-status="source">Extraite</span></td></tr>
+            <tr data-status="manquant"><td><span class="name"><a href="./classes/barbare.html" data-ref="barbare">Barbare</a></span></td><td>Force</td><td><span class="badge" data-status="manquant">Manquant</span></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div class="stub" data-status="manquant">
+        <h2>Encart « manquant documentaire » <code>.stub</code></h2>
+        <p>Cette entite n'est pas couverte par les images du livre. A extraire ou a completer ; ne rien inventer.</p>
+      </div>
+    </article>
+  </main>
+  <script src="assets/grimoire.js" defer></script>
+</body>
+</html>

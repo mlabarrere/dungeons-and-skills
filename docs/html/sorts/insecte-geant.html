@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insecte geant — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Insecte geant">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="insecte-geant" data-status="source"
+             data-source="img:296"
+             data-spell-level="4" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="18m" data-components="V,S"
+             data-duration="conc-10min" data-classes="druide"
+             data-save="con">
+
+      <h1>Insecte geant</h1>
+      <p class="provenance">Invocation du 4e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 4</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 10 minutes</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous convoquez une <a href="../creatures/araignee.html" data-ref="araignee">araignee</a>, une guepe ou un mille-pattes (choisissez a l'incantation du sort), en version geante. La creature se manifeste en un <a href="../regles/glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> que vous voyez a portee et reprend le profil de l'insecte geant. La forme retenue determine certains details du profil. La creature disparait quand le sort prend fin, mais egalement si elle tombe a 0 point de vie.</p>
+        <p>La creature constitue un allie pour vous et vos allies. Au combat, la creature partage votre rang d'Initiative, mais elle joue son tour juste apres vous. Elle obeit a vos instructions verbales (pas d'action requise de votre part). Sans ordre de votre part, elle entreprend l'action Esquive et consacre son deplacement a se mettre a l'abri du danger.</p>
+      </section>
+
+      <section class="section">
+        <h2>Insecte geant</h2>
+        <p class="note">Bete de taille G, non alignee</p>
+        <table>
+          <tbody>
+            <tr><td><strong>CA</strong></td><td>11 + niveau du sort</td></tr>
+            <tr><td><strong>Pv</strong></td><td>30 + 10 par niveau du sort au-dela du 4e</td></tr>
+            <tr><td><strong>Vitesse</strong></td><td>12 m, escalade 12 m, vol 12 m (guepe uniquement)</td></tr>
+          </tbody>
+        </table>
+        <table>
+          <thead><tr><th>Car.</th><th>Score</th><th>Mod.</th><th>JS</th></tr></thead>
+          <tbody>
+            <tr><td>FOR</td><td>17</td><td>+3</td><td>+3</td></tr>
+            <tr><td>DEX</td><td>13</td><td>+1</td><td>+1</td></tr>
+            <tr><td>CON</td><td>15</td><td>+2</td><td>+2</td></tr>
+            <tr><td>INT</td><td>4</td><td>-3</td><td>-3</td></tr>
+            <tr><td>SAG</td><td>14</td><td>+2</td><td>+2</td></tr>
+            <tr><td>CHA</td><td>3</td><td>-4</td><td>-4</td></tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr><td><strong>Sens</strong></td><td><a href="./vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a> 18 m, <a href="../regles/glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a> 12</td></tr>
+            <tr><td><strong>Langues</strong></td><td>comprend les langues que vous connaissez</td></tr>
+            <tr><td><strong>FP</strong></td><td>aucun (PX 0 ; BM egal a votre bonus de maitrise)</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top: 12px;">Traits</h3>
+        <p><strong><a href="./pattes-d-araignee.html" data-ref="pattes-d-araignee">Pattes d'araignee</a>.</strong> L'insecte peut parcourir les parois les plus difficiles a escalader, y compris les plafonds, sans passer par un <a href="../regles/glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a>.</p>
+
+        <h3 style="margin-top: 12px;">Actions</h3>
+        <p><strong>Attaques multiples.</strong> L'insecte effectue autant d'attaques que la moitie du niveau de ce sort (arrondir a l'inferieur).</p>
+        <p><strong>Piqure toxique.</strong> <em>Corps a corps :</em> bonus egal a votre modificateur d'attaque des sorts, allonge 3 m. <em>Touche :</em> 1d6 + 3 + niveau du sort degats perforants, plus 1d4 degats de poison.</p>
+        <p><strong>Jet de toile (araignee uniquement).</strong> <em>A distance :</em> bonus egal a votre modificateur d'attaque des sorts, portee 18 m. <em>Touche :</em> 1d10 + 3 + niveau du sort degats contondants, et la Vitesse de la cible tombe a 0 jusqu'au debut du tour suivant de l'insecte.</p>
+
+        <h3 style="margin-top: 12px;">Actions Bonus</h3>
+        <p><strong>Crachat venimeux (mille-pattes uniquement).</strong> <em>JS Constitution :</em> votre DD de sauvegarde des sorts, une creature que l'insecte voit dans un rayon de 3 m. <em>Echec :</em> la cible subit l'etat Empoisonne jusqu'au debut du tour suivant de l'insecte.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

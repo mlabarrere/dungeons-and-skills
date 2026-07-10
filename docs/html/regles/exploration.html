@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exploration — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Exploration">
+  <main>
+    <article class="sheet"
+             data-entity="regle" data-id="exploration" data-status="source" data-source="img:19..17">
+      <h1>Exploration</h1>
+      <p class="note">Chapitre 1 — Comment jouer. Contenu fidele aux pages 19 a 22 de la base documentaire.</p>
+      <p>L'exploration consiste a prospecter des lieux sombres et dangereux qui regorgent de mysteres. Les regles de cette section detaillent la maniere dont les aventuriers interagissent avec l'environnement de tels sites.</p>
+
+      <section class="section" data-source="img:19">
+        <h2>Materiel d'aventure</h2>
+        <p>Quand les aventuriers explorent, leur <a href="../equipement/index.html" data-ref="index-equipement">equipement</a> leur est utile de bien des facons. Ils peuvent ainsi atteindre des endroits peu accessibles avec une echelle, percevoir ce qui leur echapperait grace a une torche ou autre source de lumiere, crocheter les portes et coffres verrouilles avec des <a href="../equipement/outils.html" data-ref="outils">outils</a> de <a href="../classes/voleur.html" data-ref="voleur">voleur</a>, et ralentir leurs poursuivants avec des chausse-trappes.</p>
+        <p>Vous trouverez les regles sur les nombreux objets utiles en aventure au chapitre 6. Les objets des sections « Outils » et « <a href="../equipement/aventurier.html" data-ref="aventurier">Equipement d'aventurier</a> » de ce chapitre sont particulierement interessants. Les <a href="../equipement/armes.html" data-ref="armes">armes</a> du meme chapitre ne se limitent pas aux batailles ; un baton de combat, par exemple, peut servir a appuyer sur un poussoir peu engageant dont vous preferez eviter le contact.</p>
+      </section>
+
+      <section class="section" data-source="img:19">
+        <h2>Vision et eclairage</h2>
+        <p>Certaines taches d'aventurier, telles que detecter le danger, frapper l'ennemi et designer la cible d'un sort, dependent de la vision, c'est pourquoi les effets qui limitent la Visibilite peuvent vous gener.</p>
+
+        <h3>Visibilite</h3>
+        <p>Certaines zones sont a <a href="./glossaire.html#visibilite-nulle" data-ref="visibilite-nulle">Visibilite nulle</a> ou reduite. Dans une zone a <a href="./glossaire.html#visibilite-reduite" data-ref="visibilite-reduite">Visibilite reduite</a>, comme en conditions de <a href="./glossaire.html#lumiere-faible" data-ref="lumiere-faible">Lumiere faible</a>, dans un brouillard leger ou une vegetation moderee, les creatures ont le Desavantage aux tests de Sagesse (Perception) bases sur la vue.</p>
+        <p>Dans une zone a Visibilite nulle, comme dans les Tenebres, dans un brouillard epais ou une vegetation tres dense, tout est opaque. Vous subissez alors l'etat Aveugle (cf. glossaire de regles) lorsque vous tentez d'y voir quelque chose.</p>
+
+        <h3>Lumiere</h3>
+        <p>La presence ou l'absence de lumiere determine la categorie d'eclairage d'une zone, comme definie ci-apres.</p>
+        <table>
+          <thead><tr><th>Categorie</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td><a href="./glossaire.html#lumiere-vive" data-ref="lumiere-vive">Lumiere vive</a></td><td>Une Lumiere vive permet a la plupart des creatures de voir normalement. Un ciel charge suffit a produire une Lumiere vive, de meme que les torches, lanternes, flammes et autres sources de lumiere, du moins dans un certain rayon.</td></tr>
+            <tr><td>Lumiere faible</td><td>Une Lumiere faible, ou penombre, produit une zone a Visibilite reduite. Une zone de Lumiere faible fait souvent la transition entre la Lumiere vive et les Tenebres environnantes. La douce lueur du crepuscule et de l'aube compte aussi comme Lumiere faible. De meme, la pleine lune peut baigner le paysage de Lumiere faible.</td></tr>
+            <tr><td>Tenebres</td><td>Les Tenebres creent une zone a Visibilite nulle. En exterieur et de nuit, les personnages sont exposes aux Tenebres (meme avec du clair de lune), comme c'est le cas au fond d'un donjon non eclaire, ou dans une zone de Tenebres magiques.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Sens speciaux</h3>
+        <p>Certaines creatures sont pourvues de sens speciaux qui favorisent leur perception dans certaines situations. Le glossaire de regles definit les sens speciaux suivants :</p>
+        <div class="pill-row">
+          <span class="pill"><a href="./glossaire.html#vision-aveugle" data-ref="vision-aveugle">Vision aveugle</a></span>
+          <span class="pill"><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a></span>
+          <span class="pill"><a href="./glossaire.html#perception-des-vibrations" data-ref="perception-des-vibrations">Perception des vibrations</a></span>
+          <span class="pill"><a href="./glossaire.html#vision-lucide" data-ref="vision-lucide">Vision lucide</a></span>
+        </div>
+      </section>
+
+      <section class="section" data-source="img:19">
+        <h2>Se cacher</h2>
+        <p>Il n'est pas rare qu'aventuriers et monstres se cachent, que ce soit pour s'epier, se glisser dans le dos d'un gardien ou tendre une embuscade. C'est le maitre du donjon qui decide quand les circonstances permettent de se cacher. Lorsque vous tentez de vous cacher, vous entreprenez l'action Furtivite.</p>
+      </section>
+
+      <section class="section" data-source="img:19,20">
+        <h2>Interagir avec des objets</h2>
+        <p>Les interactions avec des objets se resolvent souvent simplement. Le joueur indique au MD ce que son personnage fait, comme actionner un levier ou ouvrir une porte, et le MD lui decrit ce qui se passe. Certaines regles encadrent toutefois ce qu'il est possible de faire avec un objet, comme detaille ci-apres.</p>
+
+        <h3>Qu'est-ce qu'un objet ?</h3>
+        <p>Dans le cadre de ces regles, nous ne traitons que des objets inanimes et distincts tels que fenetres, portes, epees, livres, tables, chaises et pierres. Un batiment ou un vehicule entier, compose de nombreux objets, n'est pas considere comme un objet.</p>
+
+        <h3>Interactions passageres</h3>
+        <p>Quand le temps manque, comme c'est le cas au combat, les interactions avec les objets sont limitees : une interaction gratuite par tour. Celle-ci doit intervenir durant le deplacement ou l'action de la creature. Pour toute interaction additionnelle, il faut entreprendre l'action Utilisation, comme explique dans la section « Combat », plus loin dans ce chapitre.</p>
+
+        <h3>Trouver un objet cache</h3>
+        <p>Lorsque votre personnage cherche ce qui peut etre cache, comme un passage secret ou un piege, le MD vous demande generalement d'effectuer un test de Sagesse (Perception), a condition que l'endroit ou vous precisez que votre PJ fouille soit a proximite de ce qui est cache. En cas de reussite, vous trouvez cette chose ou remarquez des details decisifs, voire les deux.</p>
+        <p>Si la zone de fouille que vous specifiez pour votre PJ n'est nullement proche de ce qui est cache, aucun test de Sagesse (Perception) ne le revelera, quel qu'en soit le resultat.</p>
+
+        <h3>Transport des objets</h3>
+        <p>Vous pouvez generalement porter votre equipement et votre tresor sans vous soucier du poids de tous ces objets. Si vous tentez de transporter un objet particulierement lourd ou un grand nombre d'objets plus legers, le MD peut vous soumettre aux regles de <a href="./glossaire.html#capacite-de-charge" data-ref="capacite-de-charge">capacite de charge</a> du glossaire de regles.</p>
+
+        <h3>Bris des objets</h3>
+        <p>Au prix d'une action, vous pouvez briser ou detruire automatiquement un objet non magique fragile tel qu'un recipient en verre ou un morceau de papier. Si vous comptez endommager un objet plus <a href="../dons/robuste.html" data-ref="robuste">robuste</a>, le MD peut recourir aux regles de <a href="./glossaire.html#bris-des-objets" data-ref="bris-des-objets">bris des objets</a> du glossaire de regles.</p>
+      </section>
+
+      <section class="section" data-source="img:20">
+        <h2>Dangers</h2>
+        <p>Les monstres constituent les principaux perils des personnages, mais d'autres menaces les attendent. Le glossaire de regles definit les dangers suivants :</p>
+        <div class="pill-row">
+          <span class="pill">Brulures</span>
+          <span class="pill">Chutes</span>
+          <span class="pill">Asphyxie</span>
+          <span class="pill">Deshydratation</span>
+          <span class="pill">Malnutrition</span>
+        </div>
+      </section>
+
+      <section class="section" data-source="img:20">
+        <h2>Voyage</h2>
+        <p>Au fil d'une aventure, les personnages seront parfois amenes a couvrir de longues distances dans le cadre de voyages pouvant durer des heures, voire des jours. Le MD peut resumer un tel voyage sans devoir calculer precisement les distances et les temps de trajet, ou bien recourir scrupuleusement aux regles d'allure de voyage.</p>
+        <p>Quand chaque seconde compte et que la precision est de mise, reportez-vous aux regles de deplacement de la section « Combat », plus loin dans ce chapitre.</p>
+
+        <h3>Ordre de marche</h3>
+        <p>Les aventuriers sont censes fixer un ordre de marche pour leurs trajets, que ce soit en exterieur ou en interieur. L'ordre de marche permet de determiner facilement quels personnages sont affectes par les pieges, lesquels sont susceptibles de detecter l'ennemi et lesquels sont les plus proches de ces adversaires quand un combat eclate. Vous pouvez modifier l'ordre de marche hors des combats et le consigner a votre guise : sur un bout de papier, par exemple, ou en disposant des figurines.</p>
+
+        <h3>Allure de voyage</h3>
+        <p>Quand il se deplace hors des combats, un groupe peut evoluer a allure rapide, normale ou lente, comme indique sur la table Allure de voyage. La table indique la distance que le groupe peut couvrir dans un certain intervalle ; si le groupe est a dos de cheval ou d'une autre monture, il peut couvrir le double de cette distance en une heure, apres quoi les montures doivent prendre un <a href="./glossaire.html#repos-court" data-ref="repos-court">Repos court</a> ou long pour pouvoir reprendre a une allure si soutenue (le chapitre 6 propose une selection de montures et leurs prix de vente). Le <a href="../historiques/guide.html" data-ref="guide">Guide</a> du maitre propose des regles qui limitent ces choix selon le type de terrain.</p>
+        <table>
+          <caption>Allure de voyage — Distance parcourue par...</caption>
+          <thead><tr><th>Allure</th><th>Minute</th><th>Heure</th><th>Jour</th></tr></thead>
+          <tbody>
+            <tr><td>Rapide</td><td>120 m</td><td>6 km</td><td>45 km</td></tr>
+            <tr><td>Normale</td><td>90 m</td><td>4,5 km</td><td>36 km</td></tr>
+            <tr><td>Lente</td><td>60 m</td><td>3 km</td><td>27 km</td></tr>
+          </tbody>
+        </table>
+        <p>Chaque allure de voyage s'accompagne d'effets mecaniques, comme indique ci-apres.</p>
+        <ul>
+          <li><strong>Rapide.</strong> Un <a href="../historiques/voyageur.html" data-ref="voyageur">voyageur</a> qui evolue a allure rapide a le Desavantage aux tests de Sagesse (Perception ou Survie) et Dexterite (Discretion).</li>
+          <li><strong>Normale.</strong> Un voyageur qui evolue a allure normale a le Desavantage aux tests de Dexterite (Discretion).</li>
+          <li><strong>Lente.</strong> Un voyageur qui evolue a allure lente a l'Avantage aux tests de Sagesse (Perception ou Survie).</li>
+        </ul>
+
+        <h3>Vehicules</h3>
+        <p>Celles et ceux qui voyagent en chariot, en caleche ou a bord d'un autre vehicule terrestre peuvent opter pour une allure normale. A bord d'un bateau, c'est l'embarcation qui determine la Vitesse ; les passagers ne choisissent pas leur allure de voyage. Si la taille du navire et celle de l'equipage le permettent, il est dans certains cas possible de voguer jusqu'a 24 heures <a href="./glossaire.html#par-jour" data-ref="par-jour">par jour</a>. Le chapitre propose des vehicules avec leurs prix de vente.</p>
+      </section>
+
+      <section class="section" data-source="img:21,22">
+        <h2>Exemple d'exploration</h2>
+        <p>Dans cette scene, les personnages joueurs inspectent un site mysterieux et potentiellement dangereux. Ils evoluent dans un environnement donne et interagissent avec ce qu'ils y trouvent.</p>
+        <p class="note">Les personnages explorent le chateau de Ravenloft ; le MD leur decrit la piece dans laquelle ils viennent d'entrer.</p>
+
+        <div class="grid-2">
+          <div>
+            <p><strong>Jerome (MD)</strong> : L'atre flamboyant emplit cette salle d'une lumiere chaude. L'eclat des flammes se reflete sur un tisonnier non loin de la cheminee. Des etageres chargees de vieux livres tapissent les murs. Un gigantesque tableau encadre d'or est suspendu a l'aplomb de l'atre. Le feu illumine le portrait, qui ressemble a s'y meprendre a Ireena Kolyana.</p>
+            <p><strong>Philippe (Gareth)</strong> : Le tableau a l'air de dater de quand ?</p>
+            <p><strong>Zoe (Mirabelle)</strong> : Je vais jeter un oeil aux livres !</p>
+            <p><strong>Jerome</strong> : D'accord, j'y reviens dans une minute. Sasha et Nadia, que font vos persos ?</p>
+            <p><strong>Sasha (Shriff)</strong> : Je reste pres de la porte, epee au clair, aux aguets. Cet endroit me donne la chair de poule !</p>
+            <p><strong>Nadia (Auro)</strong> : Je m'approche de la cheminee. Un bon feu, c'est pas pour me deplaire. Mais je guette aussi le danger.</p>
+            <p><strong>Jerome</strong> : Entendu. Bon, Philippe, fais-nous un test d'Intelligence (Histoire) puisque Gareth observe le tableau.</p>
+            <p><strong>Philippe</strong> : Je n'ai pas la maitrise d'Histoire, mais tentons quand meme. Ca me fait... oh ! Un 20 ! Pour un total de... 20 !</p>
+            <p><strong>Jerome</strong> : Deux choses sautent aux yeux de Gareth au sujet du tableau. La premiere, c'est que les vetements de la dame semblent d'une autre epoque. La deuxieme, que la peinture s'ecaille par endroits, le tout etant recouvert d'une pellicule de suie. Tu dirais que le tableau a bien quelques siecles.</p>
+            <p><strong>Philippe</strong> : Du coup, une ancetre d'Ireena ? A moins qu'elle soit deja une vampire et qu'elle pretende que Strahd l'a mordue pour noyer le poisson.</p>
+            <p><strong>Jerome</strong> : Qui sait ? Apres ; Mirabelle se penche sur les livres ?</p>
+            <p><strong>Zoe</strong> : Oui, j'en prends un au hasard.</p>
+            <p><strong>Jerome</strong> : L'ouvrage, intitule Des demeures du divin parmi les royaumes celestes et infernaux, est redige en commun.</p>
+            <p><strong>Sasha</strong> : Tu viens de l'inventer, le titre ?</p>
+            <p><strong>Jerome</strong> : Ah, vous ne le saurez jamais. En feuilletant le livre, tu remarques son style tres academique, presque abscons.</p>
+            <p><strong>Zoe</strong> : D'accord, je le remets a sa place et j'en prends un autre.</p>
+            <p><strong>Jerome</strong> : Shriff et Auro, vous faites autre chose ?</p>
+            <p><strong>Nadia</strong> : Je saisis le tisonnier pour tapoter les buches embrasees.</p>
+            <p><strong>Jerome</strong> : Des que tu souleves le tisonnier, tu entends un grincement, puis le fond de la cheminee s'escamote sur le cote pour devoiler une autre piece !</p>
+            <p><strong>Nadia</strong> : « Euh, les gens ? J'ai trouve un truc ! » Je vois quelque chose dans la salle qui suit ?</p>
+            <p><strong>Jerome</strong> : Par-dela les flammes et la fumee, tu distingues un tas de pieces rutilantes amassees a cote d'un coffre.</p>
+            <p><strong>Nadia</strong> : Quelqu'un sait comment on eteint rapidement un feu ?</p>
+            <p><strong>Philippe</strong> : C'est pas toi qui m'as chambre quand je preparais <a href="../sorts/creation-ou-destruction-d-eau.html" data-ref="creation-ou-destruction-d-eau">creation ou destruction d'eau</a> ? Je saisis mon symbole sacre et je lance le sort pour inonder les braises.</p>
+            <p><strong>Jerome</strong> : Que dit la description du sort ?</p>
+            <p><strong>Philippe</strong> : Il cree 40 litres d'eau qui pleuvent dans un Cube de 9 metres, ce qui eteint les flammes.</p>
+            <p><strong>Jerome</strong> : Parfait ! Le feu est eteint. Sans la lumiere des flammes, vous devez de nouveau compter sur la lueur magique de l'epee de Shriff, qui projette vos ombres dans la salle revelee. Vous distinguez malgre tout, a travers les bouffees de fumee persistante, un coffre ferme, pose au sol, entoure de tas de pieces. Le mur d'en face presente deux appliques : l'une porte une torche eteinte dotee d'une base metallique ouvragee, l'autre est vide. Un <a href="../creatures/squelette.html" data-ref="squelette">squelette</a> en harnois brise git contre ce meme mur, une main sur la gorge tandis que l'autre est crispee sur une torche identique a celle de l'applique.</p>
+            <p><strong>Nadia</strong> : Je vais voir le coffre !</p>
+            <p><strong>Jerome</strong> : Et les autres ?</p>
+            <p><strong>Philippe</strong> : Gareth entre dans la salle pour examiner le squelette.</p>
+            <p><strong>Zoe</strong> : Je monte la <a href="../historiques/garde.html" data-ref="garde">garde</a> de ce cote de l'atre.</p>
+            <p><strong>Sasha</strong> : Je n'ai pas bouge de la premiere porte.</p>
+            <p><strong>Jerome</strong> : Nadia, le coffre est de tres belle facture, avec de superbes ferrures et des pieds griffus.</p>
+            <p><strong>Nadia</strong> : J'essaie de l'ouvrir. Il est verrouille ?</p>
+            <p><strong>Jerome</strong> : Il n'est pas verrouille et s'ouvre sans peine... en liberant un nuage de vapeurs douceatres.</p>
+            <p><strong>Nadia</strong> : Oh non.</p>
+            <p><strong>Jerome</strong> : Oh si. Auro et Gareth, vous allez me faire un JS Constitution.</p>
+            <p><strong>Nadia</strong> : Desolee, Philippe ! Ca fait 8 pour moi.</p>
+            <p><strong>Philippe</strong> : Et 5 pour Gareth.</p>
+            <p><strong>Jerome</strong> : Les vapeurs emplissent vous poumons et vous sentez un sinistre frisson vous saisir. Votre corps se raidit. Vous subissez tous les deux l'etat Paralyse !</p>
+          </div>
+          <div>
+            <div class="callout">
+              <p><strong>Personne n'est oublie.</strong> L'exploration est libre ; quand ils parcourent le donjon, les joueurs ne sont pas soumis au tour par tour comme pour les combats. Le MD s'assure toutefois regulierement que la situation est claire pour tout le monde, y compris la position et les activites de chacun.</p>
+            </div>
+            <div class="callout">
+              <p><strong>L'importance du travail d'equipe.</strong> Les personnages joueurs oeuvrent pour un objectif commun. Ils progressent ensemble dans le donjon et cooperent pour en surmonter les epreuves. Quand les PJ entrent dans la salle, ils en examinent divers aspects. Quand Auro decouvre un passage secret au fond de l'atre, vers le milieu de l'exemple, les PJ se concertent pour l'examiner et Gareth trouve un moyen d'eviter les flammes. On pourrait croire que le personnage de Sasha ne fait pas grand-chose, mais Shriff protege le groupe en faisant le guet a la porte.</p>
+            </div>
+            <div class="callout">
+              <p><strong>Lancer les des, avec ou sans maitrise.</strong> Vous avez toujours une chance de reussir un <a href="./glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a>, meme si vous n'avez pas la maitrise de la competence associee. Dans cet exemple, Philippe obtient un 20 sans maitrise. Le d20 reserve bien des surprises dans les parties ; des surprises que le MD a pour charge d'interpreter.</p>
+            </div>
+            <div class="callout info">
+              <p><strong>Trouver ce qui est cache.</strong> Les environnements d'aventure regorgent de secrets : pieges, portes derobees, planches branlantes et tresors caches. Les personnages recourent souvent aux tests de Sagesse pour decouvrir ces choses (cf. l'action Observation dans le glossaire de regles), mais il arrive qu'ils les debusquent par accident, comme c'est ici le cas d'Auro.</p>
+            </div>
+            <div class="callout info">
+              <p><strong>Incantation.</strong> De nombreux personnages ont la faculte de lancer des sorts, aux effets incroyablement varies. Certains sorts brillent surtout au combat, ou ils infligent des degats et imposent des etats. D'autres sont particulierement utiles en exploration. Si vous jouez un incantateur, munissez-vous d'une combinaison de sorts de combat et de sorts utilitaires, pour mieux affronter les defis varies qui vous attendent.</p>
+            </div>
+            <div class="callout info">
+              <p><strong>Sur le bout des doigts.</strong> Avant de lancer un sort, ouvrez votre Manuel des joueurs a la page de sa description. Ne comptez pas sur le MD pour connaitre les details de votre sort ; c'est a vous de repondre a toute question sur le sujet.</p>
+            </div>
+            <div class="callout info">
+              <p><strong>Vision et eclairage.</strong> Le MD determine ce que les aventuriers percoivent, ce qui lui demande de prendre en compte les sources de lumiere comme les flammes dansantes de l'atre et l'epee luisante de Shriff, ainsi que les elements qui genent la vision tels que la fumee et le brouillard. Pour plus de details, consultez « Vision et eclairage », plus haut dans ce chapitre.</p>
+            </div>
+            <div class="callout info">
+              <p><strong>Jets de sauvegarde.</strong> Un <a href="./glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> permet de savoir si une creature evite quelque chose ou y resiste. Quand le coffre libere ses vapeurs toxiques, les personnages de Philippe et Nadia effectuent chacun un JS Constitution. La Constitution, l'une des six caracteristiques qui mesurent les capacites des creatures, a trait a la vigueur et l'endurance. Quand ces aventuriers ratent leur JS, les vapeurs leur infligent l'etat Paralyse. Pour plus de details, consultez « Les etats », plus loin dans ce chapitre.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

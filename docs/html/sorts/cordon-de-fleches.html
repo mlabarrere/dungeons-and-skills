@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cordon de fleches — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Cordon de fleches">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="cordon-de-fleches" data-status="source"
+             data-source="img:270"
+             data-spell-level="2" data-school="transmutation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="contact" data-components="V,S,M"
+             data-material="une tresse decorative"
+             data-duration="8h" data-classes="rodeur"
+             data-save="dex" data-damage-type="perforant">
+
+      <h1>Cordon de fleches</h1>
+      <p class="provenance">Transmutation du 2e niveau (<a href="../classes/rodeur.html" data-ref="rodeur">Rodeur</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Transmutation</span>
+        <span class="pill">Rodeur</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Contact</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (une tresse decorative)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">8 heures</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous touchez quatre fleches ou carreaux non magiques et les plantez dans le sol dans votre espace. Jusqu'a la fin du sort, on ne peut extraire physiquement ces projectiles du sol et, chaque fois qu'une creature autre que vous penetre dans un espace a 9 m ou moins de l'un de ces objets pour la premiere fois d'un tour ou qu'elle y termine son tour, l'objet en question jaillit vers elle pour la frapper. La creature doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite, sous peine de subir 2d4 degats perforants. Le projectile est alors detruit. Le sort prend fin quand plus aucun de ces projectiles n'est fiche dans le sol.</p>
+        <p>Vous pouvez a l'incantation de ce sort designer autant de creatures que vous le souhaitez, que le sort ignorera.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 2d4 degats perforants ; le projectile est detruit.</td></tr>
+            <tr><td>Reussite</td><td>Aucun degat.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Emplacement de niveau superieur. Le nombre de projectiles qui peuvent etre affectes augmente de deux par niveau d'emplacement au-dela du 2e.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

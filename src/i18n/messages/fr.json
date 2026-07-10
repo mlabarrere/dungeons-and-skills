@@ -1,0 +1,90 @@
+{
+  "app": {
+    "title": "Grimoire — fiches D&D avec provenance",
+    "description": "Générateur de fiches D&D 2024 déterministe : chaque valeur explique pourquoi elle est là.",
+    "loading": "Chargement…"
+  },
+  "nav": {
+    "brand": "Grimoire · fiches D&D",
+    "tagline": "Provenance & audit trail",
+    "myCharacters": "Mes persos",
+    "newCharacter": "+ Nouveau",
+    "createCharacter": "+ Créer un personnage",
+    "noCharacters": "Aucun personnage.",
+    "duplicate": "Dupliquer",
+    "delete": "Supprimer",
+    "confirmDelete": "Supprimer « {name} » ? Cette action est définitive.",
+    "print": "Imprimer la fiche",
+    "alertsCount": "{n} alerte(s) sur ce perso",
+    "untitled": "Sans nom"
+  },
+  "builder": {
+    "choose": "— choisir —",
+    "noChoiceNeeded": "Aucun choix requis pour ce bloc (selon les entités choisies).",
+    "noOptions": "Aucune option (dépend d'un choix précédent).",
+    "otherChoices": "Autres choix (spécifiques classe / espèce / sous-classe)",
+    "recoLegend": "★ = recommandé par le livre (jamais imposé).",
+    "chooseMethodFirst": "Choisir d'abord une méthode ci-dessus.",
+    "chooseBackgroundFirst": "Choisir un historique d'abord.",
+    "standardHelp": "Valeurs standard : chacune une seule fois.",
+    "pointBuyCost": "Coût : {spent}/{budget} points",
+    "pointBuyOver": "(dépassement !)",
+    "diceHelp": "Lancez 4d6 en gardant les 3 meilleurs, puis saisissez les valeurs (le moteur ne lance pas les dés).",
+    "bonusRule": "Règle : {rule}.",
+    "name": "Nom",
+    "alignment": "Alignement",
+    "computedLive": "La fiche est calculée en direct dans le panneau de droite."
+  },
+  "sheet": {
+    "abilities": "Caractéristiques",
+    "derived": "Valeurs dérivées",
+    "armorClass": "CA",
+    "armorClassShield": "CA (bouclier)",
+    "initiative": "Initiative",
+    "hitPoints": "Points de vie",
+    "hitDice": "Dés de vie",
+    "passivePerception": "Perception passive",
+    "proficiencyBonus": "Bonus de maîtrise",
+    "savingThrows": "Jets de sauvegarde",
+    "skills": "Compétences",
+    "casting": "Incantation",
+    "spellDc": "DD",
+    "spellAtk": "Attaque",
+    "cantrips": "Sorts mineurs",
+    "prepared": "Sorts préparés",
+    "features": "Aptitudes",
+    "equipment": "Équipement",
+    "languages": "Langues",
+    "tools": "Outils",
+    "proficient": "maîtrise",
+    "empty": "—",
+    "whyValue": "Pourquoi cette valeur ?",
+    "alwaysPrepared": "toujours préparé (hors quota)"
+  },
+  "status": {
+    "fourni": "Fourni",
+    "source": "Automatique",
+    "calcule": "Calculé",
+    "deduit": "Déduit",
+    "recommande": "Recommandé",
+    "arbitrer": "À arbitrer",
+    "manquant": "Manquant",
+    "conflit": "Conflit"
+  },
+  "validation": {
+    "title": "Validation",
+    "ok": "0 erreur — fiche valide",
+    "errors": "{n} erreur(s)",
+    "counters": "Compteurs",
+    "remaining": "Choix restants / conflits",
+    "noneRemaining": "Aucun choix en attente.",
+    "overflow": "dépassement"
+  },
+  "alerts": {
+    "none": "Aucune alerte : tous les choix sont résolus et sans conflit.",
+    "Conflit": "Conflit",
+    "Manquant": "Choix manquant",
+    "Recommande": "Recommandation",
+    "Incoherent": "Incohérence"
+  }
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reincarnation — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Reincarnation">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="reincarnation" data-status="source"
+             data-source="img:324"
+             data-spell-level="5" data-school="necromancie"
+             data-casting-time="1h" data-ritual="false" data-concentration="false"
+             data-range="contact" data-components="V,S,M"
+             data-material="des huiles rares d'une valeur minimale de 1 000 po, que le sort detruit"
+             data-duration="instantanee" data-classes="druide">
+
+      <h1>Reincarnation</h1>
+      <p class="provenance">Necromancie du 5e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 5</span>
+        <span class="badge" data-status="source">Necromancie</span>
+        <span class="pill">Druide</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">1 heure</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Contact</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (des huiles rares d'une valeur minimale de 1 000 po, que le sort detruit)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous touchez physiquement un Humanoide mort ou l'un de ses restes. Si la creature n'est pas morte depuis plus de 10 jours, le sort forme un nouveau corps et appelle son ame pour prendre possession de ce corps. Lancez 1d10 en consultant la table suivante pour determiner l'espece du nouveau corps ou laissez le MD choisir directement une espece jouable.</p>
+
+        <table>
+          <thead><tr><th>1d10</th><th>Espece</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><a href="../especes/aasimar.html" data-ref="aasimar">Aasimar</a></td></tr>
+            <tr><td>2</td><td><a href="../especes/drakeide.html" data-ref="drakeide">Drakeide</a></td></tr>
+            <tr><td>3</td><td><a href="../especes/elfe.html" data-ref="elfe">Elfe</a></td></tr>
+            <tr><td>4</td><td><a href="../especes/gnome.html" data-ref="gnome">Gnome</a></td></tr>
+            <tr><td>5</td><td><a href="../especes/goliath.html" data-ref="goliath">Goliath</a></td></tr>
+            <tr><td>6</td><td><a href="../especes/halfelin.html" data-ref="halfelin">Halfelin</a></td></tr>
+            <tr><td>7</td><td><a href="../especes/humain.html" data-ref="humain">Humain</a></td></tr>
+            <tr><td>8</td><td><a href="../especes/nain.html" data-ref="nain">Nain</a></td></tr>
+            <tr><td>9</td><td>Orc</td></tr>
+            <tr><td>10</td><td><a href="../especes/tieffelin.html" data-ref="tieffelin">Tieffelin</a></td></tr>
+          </tbody>
+        </table>
+
+        <p>La creature reincarnee, qui fait les choix proposes par la description de l'espece, se souvient de son ancienne vie et de ses experiences. Elle conserve les capacites dont elle disposait sous sa forme d'origine, si ce n'est qu'elle perd les traits de l'ancienne forme et acquiert ceux de la nouvelle.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

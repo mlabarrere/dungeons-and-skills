@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armures - Equipement</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Equipement|/equipement/index.html; Armures">
+  <main>
+    <article class="sheet" data-entity="equipement" data-id="armures" data-status="source" data-source="img:219">
+      <h1>Armures et boucliers</h1>
+      <p class="note">Tables des armures (source de verite : images 48-49). Colonnes : <a href="../regles/glossaire.html#classe-d-armure" data-ref="classe-d-armure">classe d'armure</a>, Force requise, Discretion, poids, prix. <span class="badge" data-status="source">Source</span></p>
+      <section class="section"><h2>Armures legeres</h2>
+        <table>
+          <thead><tr><th>Armure</th><th>CA</th><th>Force</th><th>Discretion</th><th>Poids</th><th>Prix</th></tr></thead>
+          <tbody>
+            <tr><td>Armure matelassee</td><td>11 + modificateur de Dex</td><td>-</td><td>Desavantage</td><td>4 kg</td><td>5 po</td></tr>
+            <tr><td>Armure de cuir</td><td>11 + modificateur de Dex</td><td>-</td><td>-</td><td>5 kg</td><td>10 po</td></tr>
+            <tr><td>Armure de cuir cloute</td><td>12 + modificateur de Dex</td><td>-</td><td>-</td><td>6,5 kg</td><td>45 po</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="section"><h2>Armures intermediaires</h2>
+        <table>
+          <thead><tr><th>Armure</th><th>CA</th><th>Force</th><th>Discretion</th><th>Poids</th><th>Prix</th></tr></thead>
+          <tbody>
+            <tr><td>Armure de peaux</td><td>12 + modificateur de Dex (max 2)</td><td>-</td><td>-</td><td>6 kg</td><td>10 po</td></tr>
+            <tr><td>Chemise de mailles</td><td>13 + modificateur de Dex (max 2)</td><td>-</td><td>-</td><td>10 kg</td><td>50 po</td></tr>
+            <tr><td>Armure d'ecailles</td><td>14 + modificateur de Dex (max 2)</td><td>-</td><td>Desavantage</td><td>22,5 kg</td><td>50 po</td></tr>
+            <tr><td>Cuirasse</td><td>14 + modificateur de Dex (max 2)</td><td>-</td><td>-</td><td>10 kg</td><td>400 po</td></tr>
+            <tr><td>Demi-plate</td><td>15 + modificateur de Dex (max 2)</td><td>-</td><td>Desavantage</td><td>20 kg</td><td>750 po</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="section"><h2>Armures lourdes</h2>
+        <table>
+          <thead><tr><th>Armure</th><th>CA</th><th>Force</th><th>Discretion</th><th>Poids</th><th>Prix</th></tr></thead>
+          <tbody>
+            <tr><td>Broigne</td><td>14</td><td>-</td><td>Desavantage</td><td>20 kg</td><td>30 po</td></tr>
+            <tr><td>Cotte de mailles</td><td>16</td><td>For 13</td><td>Desavantage</td><td>27,5 kg</td><td>75 po</td></tr>
+            <tr><td>Clibanion</td><td>17</td><td>For 15</td><td>Desavantage</td><td>30 kg</td><td>200 po</td></tr>
+            <tr><td>Harnois</td><td>18</td><td>For 15</td><td>Desavantage</td><td>32,5 kg</td><td>1500 po</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="section"><h2>Boucliers</h2>
+        <table>
+          <thead><tr><th>Objet</th><th>CA</th><th>Force</th><th>Discretion</th><th>Poids</th><th>Prix</th></tr></thead>
+          <tbody>
+            <tr><td>Bouclier</td><td>+2</td><td>-</td><td>-</td><td>3 kg</td><td>10 po</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="section"><h2>Regles d'armure</h2>
+        <ul>
+          <li>Categorie : armures legeres (enfilees ou retirees en 1 minute), intermediaires (enfilees en 5 minutes, retirees en 1 minute) ou lourdes (enfilees en 10 minutes, retirees en 5 minutes).</li>
+          <li>Force : si une valeur figure dans cette colonne, l'armure reduit la Vitesse de 3 m si la Force du porteur est inferieure au nombre indique.</li>
+          <li>Discretion : Desavantage signifie Desavantage aux tests de Dexterite (Discretion).</li>
+          <li><a href="../regles/glossaire.html#formation-aux-armures" data-ref="formation-aux-armures">Formation aux armures</a> : seules les personnes formees en font un usage efficace ; la classe et les aptitudes determinent la formation.</li>
+          <li>Porter une armure sans formation impose le Desavantage a tous les Tests d20 impliquant Force ou Dexterite, et empeche de lancer des sorts.</li>
+          <li>Le bonus de CA d'un bouclier ne s'applique que si le personnage est forme au port du bouclier.</li>
+          <li>Une creature ne peut porter qu'une armure et un bouclier a la fois.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

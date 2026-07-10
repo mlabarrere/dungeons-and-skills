@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elfe — Espece</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Especes|/especes/index.html; Elfe">
+  <main>
+    <article class="sheet" data-entity="espece" data-id="elfe" data-status="source" data-source="img:188">
+      <h1>Elfe</h1>
+      <p class="provenance">Espece du chapitre 4 (origines). Source : img:188.</p>
+
+      <section class="section">
+        <h2>Caracteristiques d'espece</h2>
+        <div class="grid-3">
+          <div class="field"><span class="label"><a href="../regles/glossaire.html#type-de-creature" data-ref="type-de-creature">Type de creature</a></span><span class="value">Humanoide</span></div>
+          <div class="field"><span class="label">Taille</span><span class="value">M</span><span class="provenance">Moyenne, entre 1,50 m et 1,85 m.</span></div>
+          <div class="field"><span class="label">Vitesse</span><span class="value">9 m</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Traits speciaux</h2>
+        <table>
+          <thead><tr><th>Trait</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>Ascendance feerique</td><td>Avantage aux jets de sauvegarde visant a eviter l'etat Charme ou a y mettre un terme.</td></tr>
+            <tr><td>Lignage elfique</td><td>Choisir un lignage (drow, elfe sylvestre ou haut-elfe) et recevoir son benefice de niveau 1. Aux niveaux 3 et 5, apprendre le sort indique dans la table ; ce sort est toujours prepare, lancable une fois sans emplacement (recupere apres un <a href="../regles/glossaire.html#repos-long" data-ref="repos-long">repos long</a>) ou avec un emplacement adequat. Caracteristique d'incantation : Intelligence, Sagesse ou Charisme, choisie a la selection du lignage.</td></tr>
+            <tr><td>Sens aiguises</td><td>Maitrise d'une competence au choix : Intuition, Perception ou Survie.</td></tr>
+            <tr><td>Transe</td><td>Pas de sommeil ; la magie ne peut pas vous endormir. Repos long possible en 4 h de transe meditative en restant en eveil.</td></tr>
+            <tr><td><a href="../sorts/vision-dans-le-noir.html" data-ref="vision-dans-le-noir">Vision dans le noir</a></td><td>18 m.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Lignages elfiques</h2>
+        <table>
+          <thead>
+            <tr><th>Lignage</th><th>Niveau 1</th><th>Niveau 3</th><th>Niveau 5</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Drow</strong></td>
+              <td>Vision dans le noir portee a 36 m ; <a href="../regles/glossaire.html#sort-mineur" data-ref="sort-mineur">sort mineur</a> <em><a href="../sorts/lumieres-dansantes.html" data-ref="lumieres-dansantes">lumieres dansantes</a></em>.</td>
+              <td><em><a href="../sorts/lueurs-feeriques.html" data-ref="lueurs-feeriques">lueurs feeriques</a></em></td>
+              <td><em>tenebres</em></td>
+            </tr>
+            <tr>
+              <td><strong>Elfe sylvestre</strong></td>
+              <td>Vitesse portee a 10,50 m ; sort mineur <em>druidisme</em>.</td>
+              <td><em><a href="../sorts/grande-foulee.html" data-ref="grande-foulee">grande foulee</a></em></td>
+              <td><em><a href="../sorts/passage-sans-trace.html" data-ref="passage-sans-trace">passage sans trace</a></em></td>
+            </tr>
+            <tr>
+              <td><strong>Haut-elfe</strong></td>
+              <td>Sort mineur <em>prestidigitation</em>, remplacable apres chaque repos long par un autre sort mineur de la liste du <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>.</td>
+              <td><em><a href="../sorts/detection-de-la-magie.html" data-ref="detection-de-la-magie">detection de la magie</a></em></td>
+              <td><em><a href="../sorts/foulee-brumeuse.html" data-ref="foulee-brumeuse">foulee brumeuse</a></em></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="drow" data-entity="lignage" data-id="drow" data-source="img:188">
+        <h2>Lignage : Drow</h2>
+        <div class="pill-row">
+          <span class="pill">Vision dans le noir 36 m</span>
+          <span class="pill">N1 : lumieres dansantes</span>
+          <span class="pill">N3 : lueurs feeriques</span>
+          <span class="pill">N5 : tenebres</span>
+        </div>
+        <p class="note">Elfes le plus souvent originaires de l'Outreterre, faconnes par ce monde souterrain ; certains en conservent la magie.</p>
+      </section>
+
+      <section class="section" id="elfe-sylvestre" data-entity="lignage" data-id="elfe-sylvestre" data-source="img:188">
+        <h2>Lignage : Elfe sylvestre</h2>
+        <div class="pill-row">
+          <span class="pill">Vitesse 10,50 m</span>
+          <span class="pill">N1 : druidisme</span>
+          <span class="pill">N3 : grande foulee</span>
+          <span class="pill">N5 : passage sans trace</span>
+        </div>
+        <p class="note">Elfes porteurs de la magie des forets vierges (aussi nommes elfes sauvages, verts ou forestiers). Lignage retenu pour <a href="../personnages/medicis.html" data-ref="medicis">Medicis</a>.</p>
+      </section>
+
+      <section class="section" id="haut-elfe" data-entity="lignage" data-id="haut-elfe" data-source="img:188">
+        <h2>Lignage : Haut-elfe</h2>
+        <div class="pill-row">
+          <span class="pill">N1 : prestidigitation (remplacable)</span>
+          <span class="pill">N3 : detection de la magie</span>
+          <span class="pill">N5 : foulee brumeuse</span>
+        </div>
+        <p class="note">Elfes impregnes de la magie des passages entre Feerie et Plan Materiel (elfes du soleil ou de la lune, silvanesti, qualinesti, aereni selon les mondes).</p>
+      </section>
+
+      <section class="section">
+        <h2>Ce que ca apporte</h2>
+        <p class="note">Entites liees a cette espece dans le grimoire :</p>
+        <ul>
+          <li><a href="../personnages/medicis.html" data-ref="medicis">Medicis</a> — elfe sylvestre (vitesse 10,50 m, druidisme, vision 18 m, transe, ascendance feerique, sens aiguises = Perception).</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

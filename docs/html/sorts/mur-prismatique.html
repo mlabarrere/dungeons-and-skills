@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mur prismatique — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Mur prismatique">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="mur-prismatique" data-status="source"
+             data-source="img:312"
+             data-spell-level="9" data-school="abjuration"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="18m" data-components="V,S"
+             data-duration="10min" data-classes="barde,magicien"
+             data-save="dex" data-damage-type="-">
+
+      <h1>Mur prismatique</h1>
+      <p class="provenance">Abjuration du 9e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 9</span>
+        <span class="badge" data-status="source">Abjuration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">10 minutes</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Un plan multicolore de lueurs chatoyantes s'erige sous forme d'un mur vertical opaque centre sur un point a portee, avec les dimensions maximales suivantes : longueur 27 m, hauteur 9 m et epaisseur 2,5 cm. Vous pouvez au lieu de cela lui donner la forme d'un globe d'un diametre maximal de 9 m, centre sur un point a portee. Le mur persiste pour toute la duree. Si vous positionnez le mur en un <a href="../regles/glossaire.html#espace-occupe" data-ref="espace-occupe">espace occupe</a> par une creature, le sort prend fin aussitot sans effet.</p>
+        <p>Le mur produit une <a href="../regles/glossaire.html#lumiere-vive" data-ref="lumiere-vive">Lumiere vive</a> sur une distance de 30 m et une <a href="../regles/glossaire.html#lumiere-faible" data-ref="lumiere-faible">Lumiere faible</a> sur 30 m de plus. Vous et les creatures que vous designez a l'incantation du sort pouvez sans risque traverser le mur et rester a proximite. Si une autre creature qui voit le mur s'approche dans un rayon de 6 m de sa zone ou y commence son tour, elle doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Constitution sous peine de subir l'etat Aveugle pendant 1 minute.</p>
+        <p>Le mur est constitue de sept couches, chacune d'une couleur differente. Lorsqu'une creature tente de penetrer le mur ou de le traverser, elle le fait couche apres couche jusqu'a toutes les avoir franchies. Chaque couche contraint la creature a un jet de sauvegarde de Dexterite pour eviter d'etre affectee par les proprietes de la couche, decrites dans la table Couches prismatiques.</p>
+        <p>On peut detruire le mur (CA 10), couche par couche, de la rouge a la violette, par des moyens propres a chaque couche. Quand une couche est detruite, elle disparait pour toute la duree. Un <em><a href="./champ-antimagie.html" data-ref="champ-antimagie">champ antimagie</a></em> reste sans effet sur le mur, tandis que <em><a href="./dissipation-de-la-magie.html" data-ref="dissipation-de-la-magie">dissipation de la magie</a></em> n'affecte que la couche violette.</p>
+
+        <h3 style="margin-top: 12px;">Couches prismatiques</h3>
+        <table>
+          <thead><tr><th>Ordre</th><th>Effets</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><strong>Rouge.</strong> Echec au JS : 12d6 degats de feu. JS reussi : 1/2 degats. Effets supplementaires : les attaques a distance non magiques ne peuvent traverser cette couche, detruite si elle subit au moins 25 degats de froid.</td></tr>
+            <tr><td>2</td><td><strong>Orange.</strong> Echec au JS : 12d6 degats d'acide. JS reussi : 1/2 degats. Effets supplementaires : les attaques magiques a distance ne peuvent traverser cette couche, detruite par un vent fort (comme celui produit par <em>bourrasque</em>).</td></tr>
+            <tr><td>3</td><td><strong>Jaune.</strong> Echec au JS : 12d6 degats de foudre. JS reussi : 1/2 degats. Effets supplementaires : la couche se detruit si elle subit au moins 60 degats de force.</td></tr>
+            <tr><td>4</td><td><strong>Verte.</strong> Echec au JS : 12d6 degats de poison. JS reussi : 1/2 degats. Effets supplementaires : le sort <em>passe-muraille</em>, ou autre sort de niveau superieur ou egal capable d'ouvrir un portail sur une surface solide, detruit cette couche.</td></tr>
+            <tr><td>5</td><td><strong>Bleue.</strong> Echec au JS : 12d6 degats de froid. JS reussi : 1/2 degats. Effets supplementaires : la couche se detruit si elle subit au moins 25 degats de feu.</td></tr>
+            <tr><td>6</td><td><strong>Indigo.</strong> Echec au JS : la cible subit l'etat Entrave et effectue un jet de sauvegarde de Constitution a la fin de chacun de ses tours. Si elle se sauvegarde trois fois, l'etat prend fin. Si elle rate trois fois le JS, elle subit l'etat Petrifie jusqu'a en etre liberee par un effet tel que <em><a href="./restauration-supreme.html" data-ref="restauration-supreme">restauration supreme</a></em>. Ces reussites et echecs n'ont pas besoin d'etre consecutifs ; notez-les quelque part, jusqu'a ce que la cible atteigne un total de trois pour l'un ou l'autre. Effets supplementaires : les sorts ne peuvent pas traverser cette couche, detruite par la Lumiere vive du sort <em><a href="./lumiere-du-jour.html" data-ref="lumiere-du-jour">lumiere du jour</a></em>.</td></tr>
+            <tr><td>7</td><td><strong>Violette.</strong> Echec au JS : la cible subit l'etat Aveugle et effectue un jet de sauvegarde de Sagesse au debut de votre tour suivant. En cas de reussite, l'etat prend fin. En cas d'echec, l'etat prend fin, et la creature est teleportee dans un autre plan d'existence (choisi par le MD). Effets supplementaires : <em>dissipation de la magie</em> detruit cette couche.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parole divine — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Parole divine">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="parole-divine" data-status="source"
+             data-source="img:314"
+             data-spell-level="7" data-school="evocation"
+             data-casting-time="action-bonus" data-ritual="false" data-concentration="false"
+             data-range="9m" data-components="V"
+             data-duration="instantanee" data-classes="clerc"
+             data-save="cha" data-damage-type="-">
+
+      <h1>Parole divine</h1>
+      <p class="provenance">Evocation du 7e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 7</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="pill">Clerc</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value"><a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">Action bonus</a></span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">9 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous prononcez une parole porteuse de la puissance des Plans Superieurs. Chaque creature que vous choisissez a portee effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Charisme. En cas d'echec, une cible dotee de 50 <a href="../regles/glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a> ou moins subit un effet qui depend de ses points de vie actuels, comme indique sur la table Effets de parole divine.</p>
+        <p>Quels que soient ses points de vie actuels, une cible Celeste, Elementaire, Fee ou Fielon qui rate son JS est renvoyee d'office dans son plan d'origine (s'il ne s'y trouve pas deja) et ne peut revenir sur votre plan actuel pendant 24 heures, sauf par le biais du sort <em>souhait</em>.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Charisme)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Une cible de 50 PV ou moins subit l'effet indique par la table Effets de parole divine (selon ses PV actuels).</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top: 12px;">Effets de parole divine</h3>
+        <table>
+          <thead><tr><th>Points de vie</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>0-20</td><td>La cible meurt.</td></tr>
+            <tr><td>21-30</td><td>La cible subit les etats Assourdi, Aveugle et Etourdi pendant 1 heure.</td></tr>
+            <tr><td>31-40</td><td>La cible subit les etats Assourdi et Aveugle pendant 10 minutes.</td></tr>
+            <tr><td>41-50</td><td>La cible subit l'etat Assourdi pendant 1 minute.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

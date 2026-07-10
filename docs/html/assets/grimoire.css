@@ -1,0 +1,552 @@
+/* ==========================================================================
+   grimoire.css — feuille de style partagee du grimoire D&D (source de verite HTML)
+   --------------------------------------------------------------------------
+   Le design system est leve verbatim de docs/html/personnages/medicis.html
+   (premiere fiche aboutie) puis complete des composants transverses :
+   fil d'Ariane, tableaux d'entites, badges [data-status], footer, onglets, stub.
+   Regles d'impression isolees dans grimoire.print.css (importe ci-dessous).
+   Voir docs/html/CONVENTIONS.md pour l'usage.
+   ========================================================================== */
+
+@import "grimoire.print.css" print;
+
+/* --- Tokens ------------------------------------------------------------- */
+:root {
+  --bg: #f8fafc;
+  --page: #ffffff;
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #d1d5db;
+  --soft: #f3f4f6;
+  --warn-bg: #fffbeb;
+  --warn-line: #f59e0b;
+  --bad-bg: #fef2f2;
+  --bad-line: #ef4444;
+  --ok-bg: #f0fdf4;
+  --ok-line: #22c55e;
+  --info-bg: #eff6ff;
+  --info-line: #3b82f6;
+  --accent: #6d28d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* SVG (graphe de provenance, schemas) : bloc pour que width:100% + viewBox
+   calcule bien la hauteur ; sinon le svg reste inline et s'effondre. */
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Tables ------------------------------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 7px 8px;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background: var(--soft);
+  font-weight: 650;
+}
+
+/* --- Conteneur fiche / page --------------------------------------------- */
+.sheet {
+  background: var(--page);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 18px;
+}
+
+.identity {
+  border: 2px solid var(--ink);
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.field {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 54px;
+}
+
+.label {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.value {
+  display: block;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.small-value {
+  display: block;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+/* --- Grilles utilitaires ------------------------------------------------ */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.section {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 14px;
+  break-inside: avoid;
+}
+
+/* --- Caracteristiques --------------------------------------------------- */
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.score {
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px 4px;
+}
+
+.score .name {
+  display: block;
+  font-size: 11px;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.score .mod {
+  display: block;
+  font-size: 24px;
+  font-weight: 750;
+  margin-top: 4px;
+}
+
+.score .raw {
+  display: inline-block;
+  min-width: 34px;
+  margin-top: 4px;
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--soft);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+/* --- Pastilles ---------------------------------------------------------- */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.note {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* --- Callouts ----------------------------------------------------------- */
+.callout {
+  border-left: 4px solid var(--warn-line);
+  background: var(--warn-bg);
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.callout.error {
+  border-left-color: var(--bad-line);
+  background: var(--bad-bg);
+}
+
+.callout.ok {
+  border-left-color: var(--ok-line);
+  background: var(--ok-bg);
+}
+
+.callout.info {
+  border-left-color: var(--info-line);
+  background: var(--info-bg);
+}
+
+/* --- Cartes de synthese ------------------------------------------------- */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.summary .card {
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.summary .card.ok {
+  border-left-color: var(--ok-line);
+  background: var(--ok-bg);
+}
+
+.summary .card.warn {
+  border-left-color: var(--warn-line);
+  background: var(--warn-bg);
+}
+
+.summary .card.bad {
+  border-left-color: var(--bad-line);
+  background: var(--bad-bg);
+}
+
+.summary .card h3 {
+  margin-bottom: 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.summary .card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.summary .card li {
+  margin-bottom: 3px;
+  font-size: 12.5px;
+}
+
+/* --- Provenance & statuts ---------------------------------------------- */
+.provenance {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Compat historique : .status.source/.warn/.bad utilises par medicis.html.
+   Nouvelle convention : badge pilote par l'attribut [data-status]. */
+.status {
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.source {
+  color: #166534;
+}
+
+.status.warn {
+  color: #92400e;
+}
+
+.status.bad {
+  color: #991b1b;
+}
+
+/* Badge unifie : <span class="badge" data-status="source|calcule|fourni|
+   deduit|recommande|arbitrer|manquant|incoherent|conflit">Libelle</span> */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  background: #fff;
+}
+
+.badge[data-status="source"] { color: #166534; border-color: var(--ok-line); background: var(--ok-bg); }
+.badge[data-status="calcule"] { color: #1e40af; border-color: var(--info-line); background: var(--info-bg); }
+.badge[data-status="fourni"] { color: #3730a3; border-color: #6366f1; background: #eef2ff; }
+.badge[data-status="deduit"] { color: #92400e; border-color: var(--warn-line); background: var(--warn-bg); }
+.badge[data-status="recommande"] { color: #6d28d9; border-color: #8b5cf6; background: #f5f3ff; }
+.badge[data-status="arbitrer"] { color: #92400e; border-color: var(--warn-line); background: var(--warn-bg); }
+.badge[data-status="manquant"] { color: #991b1b; border-color: var(--bad-line); background: var(--bad-bg); }
+.badge[data-status="incoherent"] { color: #991b1b; border-color: var(--bad-line); background: var(--bad-bg); }
+.badge[data-status="conflit"] { color: #991b1b; border-color: var(--bad-line); background: var(--bad-bg); }
+
+/* --- Fil d'Ariane (injecte par grimoire.js si data-breadcrumb present) --- */
+.breadcrumb {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.breadcrumb a {
+  color: var(--muted);
+}
+
+.breadcrumb .sep {
+  margin: 0 6px;
+  color: var(--line);
+}
+
+/* --- Tableaux d'index d'entites ----------------------------------------- */
+.entity-table td .name {
+  font-weight: 650;
+}
+
+.entity-table tr[data-status="manquant"] td:first-child {
+  color: var(--muted);
+}
+
+/* --- Sorts : en-tete, montee en puissance, effet de sauvegarde -------- */
+/* Ligne de tags sous le titre d'un sort (reutilise .pill-row pour la mise
+   en page ; ici juste un rappel semantique). */
+.spell-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0 4px;
+}
+
+/* Table "Effet du jet de sauvegarde" a 2 lignes Echec / Reussite. */
+.save-outcome th:first-child,
+.save-outcome td:first-child {
+  white-space: nowrap;
+  font-weight: 650;
+  width: 8.5rem;
+}
+
+/* --- Barre de filtres (index interactif des sorts) --------------------- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filters input,
+.filters select {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.filters label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.filter-count {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 650;
+  color: var(--muted);
+}
+
+tr[hidden] {
+  display: none;
+}
+
+/* --- Encart "manquant documentaire" standardise ------------------------- */
+.stub {
+  border: 1px dashed var(--bad-line);
+  background: var(--bad-bg);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 14px;
+}
+
+.stub h2 {
+  margin-bottom: 6px;
+}
+
+/* --- Onglets (actives par grimoire.js) ---------------------------------- */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 12px;
+}
+
+.tabs button {
+  border: 1px solid var(--line);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background: var(--soft);
+  color: var(--ink);
+  padding: 6px 12px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.tabs button[aria-selected="true"] {
+  background: var(--page);
+  border-color: var(--ink);
+}
+
+.tabpanel[hidden] {
+  display: none;
+}
+
+/* --- Actions & boutons -------------------------------------------------- */
+.print-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+button {
+  border: 1px solid #111827;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+/* --- Footer commun (injecte par grimoire.js) ---------------------------- */
+.site-footer {
+  max-width: 1180px;
+  margin: 24px auto 0;
+  padding: 16px 24px 32px;
+  color: var(--muted);
+  font-size: 12px;
+  border-top: 1px solid var(--line);
+}
+
+/* --- Responsive --------------------------------------------------------- */
+@media (max-width: 900px) {
+  main {
+    padding: 12px;
+  }
+
+  .header,
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .meta-grid,
+  .score-grid,
+  .summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+  }
+}

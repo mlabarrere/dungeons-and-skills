@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mur de feu — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Mur de feu">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="mur-de-feu" data-status="source"
+             data-source="img:311"
+             data-spell-level="4" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="36m" data-components="V,S,M" data-material="un morceau de charbon"
+             data-duration="conc-1min" data-classes="druide,ensorceleur,magicien"
+             data-save="dex" data-damage-type="feu">
+
+      <h1>Mur de feu</h1>
+      <p class="provenance">Evocation du 4e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 4</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">36 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (un morceau de charbon)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous creez un mur de flammes sur une surface solide a portee. Vous pouvez ainsi eriger un mur dont la hauteur n'excede pas 6 m et l'epaisseur 30 cm ; pour le reste, vous avez le choix entre un mur droit long d'un maximum de 18 m et un mur circulaire dont le diametre ne depasse pas 6 m. Ce mur opaque persiste pour toute la duree.</p>
+        <p>Quand le mur apparait, chaque creature prise dans sa zone effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite et subit 5d8 degats de feu en cas d'echec, la moitie en cas de reussite.</p>
+        <p>L'un des cotes du mur que vous choisissez a l'incantation du sort inflige 5d8 degats de feu a toute creature qui termine son tour a 3 m ou moins de ce cote ou dans le mur. Une creature qui penetre dans le mur pour la premiere fois d'un tour ou qui y termine son tour subit ces memes degats. L'autre cote du mur n'inflige pas de degats.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 5d8 degats de feu.</td></tr>
+            <tr><td>Reussite</td><td>Subit la moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p>Les degats augmentent de 1d8 par niveau d'emplacement au-dela du 4e.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

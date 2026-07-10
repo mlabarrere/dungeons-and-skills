@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sommeil — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Sommeil">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="sommeil" data-status="source"
+             data-source="img:330"
+             data-spell-level="1" data-school="enchantement"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="18m" data-components="V,S,M"
+             data-material="une pincee de sable ou des petales de rose"
+             data-duration="conc-1min" data-classes="barde,ensorceleur,magicien"
+             data-save="sag">
+
+      <h1>Sommeil</h1>
+      <p class="provenance">Enchantement du 1er niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 1</span>
+        <span class="badge" data-status="source">Enchantement</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (une pincee de sable ou des petales de rose)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Chaque creature que vous choisissez dans une Sphere de 1,50 m centree sur un point a portee doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse sous peine de subir l'etat Neutralise jusqu'a la fin de son tour suivant et de reiterer le JS a la fin de cet intervalle. Si la cible rate ce second JS, elle subit l'etat Inconscient pour toute la duree. Le sort prend fin sur toute cible qui subit des degats ou qui recoit une secousse energique d'une autre creature situee dans un rayon de 1,50 m d'elle.</p>
+        <p>Les creatures qui ne dorment pas, comme les elfes, et celles qui ont l'Immunite contre l'Epuisement reussissent automatiquement leur JS contre ce sort.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Sagesse)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit l'etat Neutralise jusqu'a la fin de son tour suivant, puis reitere le JS ; si ce second JS echoue, subit l'etat Inconscient pour toute la duree.</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

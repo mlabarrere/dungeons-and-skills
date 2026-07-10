@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incantation — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Incantation">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="regle" data-id="incantation" data-status="source"
+             data-source="img:232">
+
+      <h1>Sorts — Regles d'incantation</h1>
+      <p class="provenance">Chapitre 7 : regles d'incantation (Sorts). Sources : img p232, p233, p234, p235.</p>
+      <p>Ce chapitre fournit les regles d'incantation des sorts. Il comprend en outre les descriptions de sorts typiques des mondes de Dungeons &amp; Dragons. Ces sorts sont employes par de nombreux objets magiques, monstres et aptitudes de classe.</p>
+
+      <section class="section">
+        <h2>Acquisition de sorts</h2>
+        <p>Avant de pouvoir lancer un sort, celui-ci doit etre prepare dans votre esprit ou accessible par le biais d'un objet magique tel qu'un <em>parchemin de sort</em>. Vos aptitudes vous indiquent quels sorts vous pouvez lancer, le cas echeant ; si certains d'entre eux sont toujours prepares ; et si vous pouvez modifier la liste de sorts que vous avez prepares.</p>
+
+        <h3>Preparation des sorts</h3>
+        <p>Si vous disposez d'une liste de sorts du 1er niveau et plus a preparer, l'aptitude Sorts vous indique combien de sorts de votre liste vous pouvez changer et a quelle frequence, comme resume dans la table Preparation des sorts par classe.</p>
+
+        <h3>Preparation des sorts par classe</h3>
+        <table>
+          <thead><tr><th>Classe</th><th>Changez quand vous...</th><th>Nombre de sorts</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../classes/barde.html" data-ref="barde">Barde</a></td><td>gagnez un niveau</td><td>Un</td></tr>
+            <tr><td><a href="../classes/clerc.html" data-ref="clerc">Clerc</a></td><td>terminez un <a href="./glossaire.html#repos-long" data-ref="repos-long">Repos long</a></td><td>Libre</td></tr>
+            <tr><td><a href="../classes/druide.html" data-ref="druide">Druide</a></td><td>terminez un Repos long</td><td>Libre</td></tr>
+            <tr><td><a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a></td><td>gagnez un niveau</td><td>Un</td></tr>
+            <tr><td><a href="../classes/magicien.html" data-ref="magicien">Magicien</a></td><td>terminez un Repos long</td><td>Libre</td></tr>
+            <tr><td><a href="../classes/occultiste.html" data-ref="occultiste">Occultiste</a></td><td>gagnez un niveau</td><td>Un</td></tr>
+            <tr><td><a href="../classes/paladin.html" data-ref="paladin">Paladin</a></td><td>terminez un Repos long</td><td>Un</td></tr>
+            <tr><td><a href="../classes/rodeur.html" data-ref="rodeur">Rodeur</a></td><td>terminez un Repos long</td><td>Un</td></tr>
+          </tbody>
+        </table>
+        <p>La plupart des monstres incantateurs ne modifient pas leur liste de sorts prepares, mais le MD peut parfaitement modifier ces listes.</p>
+
+        <h3>Sorts toujours prepares</h3>
+        <p>Certaines aptitudes vous octroient un sort qui est toujours prepare en ce qui vous concerne. Si vous disposez aussi d'une liste de sorts prepares que vous pouvez changer, un sort toujours prepare n'est pas decompte du nombre de sorts de cette liste.</p>
+
+        <div class="callout info">
+          <h3>Incantation en armure</h3>
+          <p>Vous devez avoir la maitrise de l'armure que vous portez pour lancer un sort. Sans cela, l'armure vous est trop inconfortable pour la moindre incantation.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <p>La description de chaque sort se compose de donnees qui vous fournissent les details propres a son incantation. Les sections qui suivent vous expliquent ces elements qui suivent le nom du sort.</p>
+
+        <h3>Niveau de sort</h3>
+        <p>Chaque sort presente un niveau allant de 0 a 9, indique dans la description du sort. Le niveau d'un sort est une bonne indication de sa puissance. Les sorts mineurs, sorts rudimentaires que les personnages lancent presque machinalement, sont de niveau 0. Les regles propres a chaque classe d'incantateur indiquent quand les personnages correspondants ont acces aux sorts des differents niveaux.</p>
+
+        <h3>Emplacements de sort</h3>
+        <p>Lancer un sort du 1er niveau ou superieur est ereintant, c'est pourquoi tout incantateur ne peut en jeter qu'un nombre limite de sorts avant de devoir prendre du Repos. Les emplacements de sort constituent le gros du potentiel magique d'un incantateur. Chaque classe d'incantateur octroie un nombre limite d'emplacements de sort de niveaux donnes. Un Magicien de niveau 3 est ainsi dote de quatre emplacements du 1er niveau et de deux du 2e niveau.</p>
+        <p>Lorsque vous lancez un sort, vous depensez un emplacement au moins egal a celui du sort, et « remplissez » en quelque sorte l'emplacement avec le sort. On peut voir les emplacements de sort comme des sillons d'une taille donnee, etroite pour un emplacement du 1er niveau, de plus en plus large pour ceux de niveau superieur. Un sort du 1er niveau s'insere ainsi dans n'importe quel emplacement, mais un sort du 2e niveau ne pourra tenir que dans un emplacement du 2e niveau ou plus. Ainsi, quand une Magicienne de niveau 3 lance <em><a href="../sorts/projectile-magique.html" data-ref="projectile-magique">projectile magique</a></em>, sort du 1er niveau, elle depense l'un de ses quatre emplacements du 1er niveau, si bien qu'il lui en reste trois.</p>
+        <p>Terminer un Repos long restitue tous les emplacements de sort depenses.</p>
+
+        <h3>Incantation sans emplacement</h3>
+        <p>Plusieurs biais permettent de lancer un sort sans depenser d'emplacement :</p>
+        <ul>
+          <li><strong>Sorts mineurs.</strong> Un <a href="./glossaire.html#sort-mineur" data-ref="sort-mineur">sort mineur</a> se lance sans emplacement de sort.</li>
+          <li><strong>Rituels.</strong> Pour certains sorts, le mot-cle « rituel » apparait a la ligne Temps d'incantation. On peut lancer un tel sort selon les regles normales d'incantation ou comme rituel. Lancer le sort sous forme de rituel demande 10 minutes de plus que l'incantation normale, mais ne depense pas d'emplacement de sort. Pour lancer un sort comme rituel, l'incantateur doit l'avoir prepare.</li>
+          <li><strong>Capacites speciales.</strong> Certains personnages et monstres sont dotes de capacites speciales leur permettant de lancer certains sorts sans utiliser d'emplacement. Ils restent generalement limites par un autre critere, comme un nombre d'utilisations quotidiennes du sort.</li>
+          <li><strong>Objets magiques.</strong> Les <em>parchemins de sort</em> et d'autres objets magiques renferment des sorts que l'on peut lancer sans emplacement. La description d'un tel objet indique le nombre qu'il offre d'incantations du sort.</li>
+        </ul>
+
+        <h3>Emplacement de niveau superieur</h3>
+        <p>Lorsqu'un personnage lance un sort en utilisant un emplacement dont le niveau est superieur a celui du sort, le sort est considere pour cette incantation comme du niveau correspondant. Ainsi, lorsqu'une Magicienne lance <em>projectile magique</em> en utilisant un emplacement du 2e niveau, ce <em>projectile magique</em> est du 2e niveau. Dans les faits, le sort prend toute la place que lui offre l'emplacement.</p>
+        <p>Certains sorts, comme <em>projectile magique</em> et <em>soins</em>, produisent des effets plus puissants lorsqu'on les lance a plus haut niveau, comme l'indique leur description.</p>
+
+        <h3>Ecoles de magie</h3>
+        <p>Chaque sort est associe a une ecole de magie. Celles-ci sont enumerees dans la table Ecoles de magie. Ces categories participent a la description des sorts ; elles n'ont pas de regles propres, mais d'autres regles s'y referent.</p>
+        <table>
+          <thead><tr><th>Ecole</th><th>Effets typiques</th></tr></thead>
+          <tbody>
+            <tr><td>Abjuration</td><td>Empeche ou inverse les effets nocifs</td></tr>
+            <tr><td>Divination</td><td>Revele des informations</td></tr>
+            <tr><td>Enchantement</td><td>Influence l'esprit</td></tr>
+            <tr><td>Evocation</td><td>Canalise les energies pour produire des effets souvent destructeurs</td></tr>
+            <tr><td>Illusion</td><td>Trompe l'esprit ou les sens</td></tr>
+            <tr><td>Invocation</td><td>Transporte des creatures ou des objets</td></tr>
+            <tr><td>Necromancie</td><td>Manipule la vie et la mort</td></tr>
+            <tr><td>Transmutation</td><td>Transforme des creatures ou des objets</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Listes de sorts de classe</h3>
+        <p>Quand un sort figure dans la liste de sorts d'une classe, le nom de celle-ci apparait entre parentheses apres l'ecole de magie du sort. Certaines aptitudes ajoutent un sort a la liste d'un personnage alors meme qu'il n'est pas issu d'une classe entre parentheses.</p>
+
+        <h3>Temps d'incantation</h3>
+        <p>L'incantation de la plupart des sorts demande l'action Magie, mais certains se lancent par une <a href="./glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> ou une Reaction, ou bien au gre de 1 minute ou d'un temps plus long. La ligne Temps d'incantation d'un sort indique cet aspect.</p>
+        <p><strong>Un sort a emplacement par tour.</strong> A un tour donne, vous ne pouvez depenser qu'un seul emplacement pour lancer un sort. Cette regle implique donc que vous ne pouvez pas, au meme tour, lancer un sort a emplacement par l'action Magie et un autre par une action Bonus.</p>
+        <p><strong>Declencheurs de Reaction et d'action Bonus.</strong> Un sort dont le temps d'incantation est d'une Reaction se lance en reponse a un declencheur indique a la ligne Temps d'incantation du sort. Certains sorts presentant un temps d'incantation d'une action Bonus se lancent aussi en reponse a un declencheur defini dans la description.</p>
+        <p><strong>Temps d'incantation superieurs.</strong> L'incantation de certains sorts (notamment ceux qu'on lance comme rituels) demande davantage de temps : plusieurs minutes, voire plusieurs heures. Quand vous lancez un sort dont le temps d'incantation est de 1 minute ou plus, vous devez entreprendre l'action Magie a chaque tour de l'incantation et devez maintenir votre Concentration tout du long (cf. glossaire de regles). Si votre Concentration est rompue, le sort echoue, mais vous ne depensez aucun emplacement. Pour retenter l'incantation, vous devez recommencer depuis le debut.</p>
+
+        <h3>Portee</h3>
+        <p>La portee d'un sort indique a quelle distance de l'incantateur les effets peuvent prendre leur origine, la description du sort precisant quels effets sont limites par cette portee. La portee prend generalement l'une des formes suivantes :</p>
+        <ul>
+          <li><strong>Distance.</strong> La portee est exprimee en metres.</li>
+          <li><strong>Contact.</strong> Les effets du sort prennent leur origine sur quelque chose que l'incantateur doit toucher directement (a portee d'allonge), comme indique dans la description.</li>
+          <li><strong>Personnelle.</strong> Le sort est lance sur l'incantateur ou emane de lui, comme indique dans la description.</li>
+        </ul>
+        <p>Quand un sort presente des effets mobiles, ceux-ci ne sont pas contraints par la portee sauf mention contraire dans la description.</p>
+
+        <h3>Composantes</h3>
+        <p>Les composantes d'un sort correspondent aux conditions physiques dans lesquelles l'incantateur doit le lancer. La description de chaque sort indique s'il demande des composantes verbales (V), somatiques (S) ou materielles (M). Si le lanceur est dans l'incapacite de fournir l'une ou l'autre de ces composantes, il ne peut pas lancer le sort.</p>
+        <p><strong>Verbale (V).</strong> Une composante verbale se traduit par des psalmodies mystiques ou esoteriques, incomprehensibles pour les non-inities. Ces paroles se prononcent a un volume normal. Les paroles seules ne constituent pas la source de puissance du sort, mais l'alliance des sons, des variations de voix et des resonances permet de reveiller la trame de la magie. Ainsi, une creature baillonnee ou prise dans une zone de silence ne pourra pas lancer un sort dote d'une composante verbale.</p>
+        <p><strong>Somatique (S).</strong> Une composante somatique correspond a un enchainement de gestes energiques ou subtils et complexes. L'incantateur doit avoir au moins une main disponible pour executer cette gestuelle.</p>
+        <p><strong>Materielle (M).</strong> L'incantation de certains sorts passe par des materiaux specifiques, indiques entre parentheses a la ligne Composantes. Sauf mention contraire, ces materiaux ne sont pas detruits par le sort. L'incantateur doit avoir une main libre pour acceder a ces composantes, sachant que ce peut etre la main qui lui permet d'executer les composantes somatiques.</p>
+        <p>Quand un sort ne detruit pas les materiaux et n'associe pas de cout a ceux-ci, l'incantateur peut recourir a une sacoche a composantes (cf. chapitre 6) plutot que de devoir fournir les materiaux demandes, ou bien a un <a href="./glossaire.html#focaliseur-d-incantation" data-ref="focaliseur-d-incantation">focaliseur d'incantation</a> s'il dispose d'une aptitude autorisant cette substitution. Vous devez avoir une main libre pour utiliser une sacoche a composantes et vous devez tenir un focaliseur d'incantation dans la main pour vous en servir, sauf mention contraire (descriptions au chapitre 6).</p>
+        <div class="callout info">
+          <h3>Creation de composantes verbales</h3>
+          <p>Si vous souhaitez formuler les composantes verbales, vous pouvez en inventer les paroles. Quelle que soit votre approche pour ce faire, le but est de trouver une formule facile a prononcer, mais denuee de sens dans le monde reel. La methode suivante peut faire l'affaire : prenez le nom du sort, isolez chaque lettre qui le compose en supprimant les doublons, et reordonnez ces lettres pour composer un terme imaginaire. Exemple : <em><a href="../sorts/boule-de-feu.html" data-ref="boule-de-feu">boule de feu</a></em> compte trois <em>e</em> et deux <em>u</em>, mais si on <a href="../historiques/garde.html" data-ref="garde">garde</a> les lettres individuelles et qu'on les reordonne, on peut obtenir les termes <em>fuol deb</em> ou <em>dofbuel</em>.</p>
+        </div>
+
+        <h3>Duree</h3>
+        <p>La duree d'un sort represente l'intervalle de temps s'ecoulant entre le debut et la fin du sort une fois lance. Elle prend generalement l'une des formes suivantes :</p>
+        <ul>
+          <li><strong>Concentration.</strong> Une duree demandant de se concentrer est traitee selon les regles de la Concentration (cf. glossaire de regles).</li>
+          <li><strong>Instantanee.</strong> Une duree « instantanee » indique que le sort ne se produit qu'un instant et disparait aussitot.</li>
+          <li><strong>Intervalle de temps.</strong> Une duree exprimee par un intervalle de temps indique combien de temps le sort persiste, en rounds, minutes, heures ou autre. Ainsi, quand la ligne « Duree » indique « 1 minute », le sort prend fin une minute apres son incantation. Tant que cet intervalle de temps est en cours, vous pouvez revoquer le sort (pas d'action requise) a condition de ne pas subir l'etat Neutralise.</li>
+        </ul>
+
+        <h3>Effets</h3>
+        <p>Les effets d'un sort sont detailles apres la ligne Duree. Ces details precisent comment agit le sort, qui n'obeit pas aux lois de la physique ordinaire ; outre les effets decrits, l'interpretation est laissee a la discretion du MD. Quels que soient les effets, ils s'accompagnent le plus souvent de cibles, de jets de sauvegarde, de jets d'attaque, ou de ces trois aspects, detailles ci-apres.</p>
+
+        <h3>Cibles</h3>
+        <p>Un sort demande generalement au lanceur de choisir la ou les cibles qu'il compte affecter par sa magie. La description d'un sort indique s'il cible des creatures, des objets ou autre chose.</p>
+        <p><em>Un chemin degage jusqu'a la cible.</em> L'incantateur ne peut pas cibler un point, une creature ou un objet disposant d'un Abri total vis-a-vis de lui.</p>
+        <p><em>Se cibler.</em> Quand un sort vous permet de cibler une creature de votre choix, vous pouvez vous prendre pour cible, sauf s'il est specifie que cette creature doit etre Hostile ou differente de vous.</p>
+        <p><em>Zones d'effet.</em> Certains sorts, comme <em><a href="../sorts/vague-tonnante.html" data-ref="vague-tonnante">vague tonnante</a></em>, couvrent une zone appelee <a href="./glossaire.html#zone-d-effet" data-ref="zone-d-effet">zone d'effet</a>, definie dans le glossaire de regles. Cette zone determine ce que le sort cible. La description d'un sort specifie s'il s'accompagne d'une zone d'effet, qui prend generalement l'une des formes suivantes : Cone, Cube, Cylindre, Emanation, Ligne ou Sphere.</p>
+        <p><em>Conscience d'etre cible.</em> Si le sort n'a pas d'effet perceptible, les creatures ignorent qu'elles en ont ete les cibles. Un sort qui produit des eclairs n'echappera a personne, mais un effet plus subtil comme une tentative de lire les pensees passe inapercu, sauf si la description du sort specifie le contraire.</p>
+        <p><em>Cibles non valides.</em> Si vous lancez un sort sur quelqu'un ou quelque chose qu'il ne peut pas affecter, il ne se passe rien pour la cible, mais l'emplacement de sort correspondant est depense si l'incantation en demandait un. Si le sort etait cense rester sans effet sur une cible ayant reussi son <a href="./glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a>, la cible non valide semble avoir reussi son JS, alors qu'elle n'en a en realite pas effectue (ce qui ne donne pas d'indice sur la non-validite de la cible). Sans cela, vous remarquez juste que le sort n'a rien produit chez la cible.</p>
+
+        <h3>Jets de sauvegarde</h3>
+        <p>De nombreux sorts specifient qu'une cible effectue un jet de sauvegarde pour eviter tout ou partie de leurs effets. La description indique alors quelle caracteristique est associee au JS et ce qui se passe en cas de reussite ou d'echec. Voici comment calculer le DD de vos sorts :</p>
+        <p><strong>DD de sauvegarde des sorts</strong> = 8 + votre modificateur de caracteristique d'incantation + votre bonus de maitrise</p>
+
+        <h3>Jets d'attaque</h3>
+        <p>Certains sorts demandent au lanceur d'effectuer un <a href="./glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> pour determiner si l'effet touche une cible. Voici comment calculer le modificateur d'attaque de vos sorts :</p>
+        <p><strong>Modificateur d'attaque des sorts</strong> = votre modificateur de caracteristique d'incantation + votre bonus de maitrise</p>
+
+        <h3>Combiner les effets</h3>
+        <p>Les effets de sorts differents coexistent tant que leurs durees se chevauchent. A l'inverse, les effets d'un meme sort lance plusieurs fois ne se cumulent pas. Au lieu de cela, c'est l'effet le plus puissant qui s'applique (celui qui procure le bonus le plus eleve, par exemple) tant qu'ils sont simultanement actifs. Si les incantations d'un meme sort sont de puissance equivalente, c'est l'effet le plus recent qui s'impose tant qu'ils sont simultanement actifs. Ainsi, lorsque deux Clercs lancent <em>benediction</em> sur la meme cible, celle-ci ne recoit qu'une fois les benefices du sort et non pas deux des supplementaires. Si les durees des sorts se chevauchent, toutefois, l'effet se prolonge jusqu'au terme de la deuxieme <em>benediction</em>.</p>
+        <div class="callout info">
+          <h3>Identifier un sort actif</h3>
+          <p>Vous pouvez tenter d'identifier un sort d'apres ses effets perceptibles tant qu'il est actif. Pour ce faire, vous devez entreprendre l'action Etude et reussir un test d'Intelligence (Arcanes) DD 15.</p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

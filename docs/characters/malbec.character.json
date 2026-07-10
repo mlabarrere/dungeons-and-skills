@@ -1,0 +1,96 @@
+{
+  "id": "malbec",
+  "identity": { "name": "Malbec", "level": 1, "alignment": null,
+    "species": "Tieffelin", "lineage": "Abyssal", "className": "Clerc", "background": "Acolyte" },
+  "abilityScores": { "for": 13, "dex": 12, "con": 12, "int": 13, "sag": 18, "cha": 11,
+    "note": "base For13 Dex12 Con12 Int11 Sag17 Cha11 + bonus Acolyte +1 Sag / +2 Int (applique)" },
+
+  "sources": [
+    { "id": "clerc-1", "kind": "class-level", "label": "Clerc niveau 1",
+      "ref": "../classes/clerc.html", "source": "img:9-11",
+      "effects": [
+        { "type": "grants", "what": "hitDie", "die": 8 },
+        { "type": "grants", "what": "savingThrowProficiency", "value": "sag" },
+        { "type": "grants", "what": "savingThrowProficiency", "value": "cha" },
+        { "type": "grants", "what": "armorTraining", "value": "legere" },
+        { "type": "grants", "what": "armorTraining", "value": "intermediaire" },
+        { "type": "grants", "what": "shieldTraining" },
+        { "type": "grants", "what": "weaponProficiency", "value": "armes courantes" },
+        { "type": "grants", "what": "spellcasting", "ability": "sag", "list": "clerc" },
+        { "type": "grants", "what": "cantripSlots", "count": 3, "list": "clerc" },
+        { "type": "grants", "what": "preparedSlots", "count": 4, "list": "clerc", "minLevel": 1 },
+        { "type": "requiresChoice", "kind": "ordreDivin", "count": 1, "from": "Protecteur | Thaumaturge" },
+        { "type": "requiresChoice", "kind": "competence-clerc", "count": 2, "from": "liste de clerc" }
+      ] },
+
+    { "id": "tieffelin-abyssal", "kind": "lineage", "label": "Tieffelin abyssal",
+      "ref": "../especes/tieffelin.html#tieffelin-abyssal", "source": "img:30-31",
+      "effects": [
+        { "type": "grants", "what": "speed", "value": "9m" },
+        { "type": "grants", "what": "sense", "value": "vision dans le noir", "range": "18m" },
+        { "type": "grants", "what": "resistance", "value": "poison" },
+        { "type": "grants", "what": "spellcasting", "ability": "sag", "list": "espece" },
+        { "type": "grants", "what": "cantrip", "spell": "thaumaturgie", "list": "espece" },
+        { "type": "grants", "what": "cantrip", "spell": "bouffee-de-poison", "list": "espece" },
+        { "type": "grants", "what": "futureSpell", "level": 3, "spell": "rayon-empoisonne" },
+        { "type": "grants", "what": "futureSpell", "level": 5, "spell": "immobilisation-de-personne" }
+      ] },
+
+    { "id": "acolyte", "kind": "background", "label": "Historique Acolyte",
+      "ref": "../historiques/acolyte.html", "source": "img:19",
+      "effects": [
+        { "type": "grants", "what": "skillProficiency", "value": "Intuition" },
+        { "type": "grants", "what": "skillProficiency", "value": "Religion" },
+        { "type": "grants", "what": "toolProficiency", "value": "materiel de calligraphe" },
+        { "type": "grants", "what": "feat", "id": "initie-a-la-magie-clerc" },
+        { "type": "grants", "what": "equipmentBundle", "id": "acolyte-A" }
+      ] },
+
+    { "id": "initie-a-la-magie-clerc", "kind": "feat", "label": "Initie a la magie (Clerc)",
+      "ref": "../dons/initie-a-la-magie.html", "source": "img:34",
+      "effects": [
+        { "type": "grants", "what": "cantripSlots", "count": 2, "list": "initie-clerc" },
+        { "type": "grants", "what": "alwaysPreparedSpell", "spell": "mot-de-guerison", "list": "clerc" },
+        { "type": "grants", "what": "oncePerLongRestCasting", "spell": "mot-de-guerison" }
+      ] }
+  ],
+
+  "choices": [
+    { "id": "ch-ordre", "satisfies": "ordreDivin", "value": "thaumaturge", "label": "Ordre divin : Thaumaturge", "status": "recommande",
+      "effects": [ { "type": "grants", "what": "cantripSlots", "count": 1, "list": "clerc" },
+                   { "type": "effect", "what": "bonusToChecks", "domain": "savoir sacre" } ] },
+    { "id": "ch-comp-1", "satisfies": "competence-clerc", "value": "Medecine", "label": "Competence clerc : Medecine", "status": "recommande",
+      "effects": [ { "type": "grants", "what": "skillProficiency", "value": "Medecine" } ] },
+    { "id": "ch-comp-2", "satisfies": "competence-clerc", "value": "Histoire", "label": "Competence clerc : Histoire", "status": "recommande",
+      "effects": [ { "type": "grants", "what": "skillProficiency", "value": "Histoire" } ] }
+  ],
+
+  "equipment": [
+    { "object": "chemise de mailles", "from": "clerc-A", "roles": ["armure"],
+      "armor": { "base": 13, "dexMax": 2 } },
+    { "object": "bouclier", "from": "clerc-A", "roles": ["bouclier"], "shield": true },
+    { "object": "masse d'armes", "from": "clerc-A", "roles": ["arme"],
+      "weapon": { "damage": "1d6", "type": "contondant", "ability": "for" } },
+    { "object": "symbole sacre", "from": "clerc-A", "roles": ["focaliseur d'incantation"] }
+  ],
+
+  "spells": {
+    "cantrips": [
+      { "id": "thaumaturgie", "label": "Thaumaturgie", "list": "espece", "origin": "granted", "status": "source", "sourceId": "tieffelin-abyssal" },
+      { "id": "bouffee-de-poison", "label": "Bouffee de poison", "list": "espece", "origin": "granted", "status": "source", "sourceId": "tieffelin-abyssal" },
+      { "id": "flamme-sacree", "label": "Flamme sacree", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "clerc-1" },
+      { "id": "mot-de-radiance", "label": "Mot de radiance", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "clerc-1" },
+      { "id": "glas", "label": "Glas", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "clerc-1" },
+      { "id": "assistance", "label": "Assistance", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "ch-ordre" },
+      { "id": "stabilisation", "label": "Stabilisation", "list": "initie-clerc", "origin": "chosen", "status": "recommande", "sourceId": "initie-a-la-magie-clerc" },
+      { "id": "resistance", "label": "Resistance", "list": "initie-clerc", "origin": "chosen", "status": "recommande", "sourceId": "initie-a-la-magie-clerc" }
+    ],
+    "prepared": [
+      { "id": "benediction", "label": "Benediction", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "clerc-1" },
+      { "id": "soins", "label": "Soins", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "clerc-1" },
+      { "id": "rayon-tractant", "label": "Rayon tractant", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "clerc-1" },
+      { "id": "bouclier-de-la-foi", "label": "Bouclier de la foi", "list": "clerc", "origin": "chosen", "status": "recommande", "sourceId": "clerc-1" },
+      { "id": "mot-de-guerison", "label": "Mot de guerison", "list": "clerc", "origin": "alwaysPrepared", "status": "source", "sourceId": "initie-a-la-magie-clerc" }
+    ]
+  }
+}

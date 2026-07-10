@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Force fantasmagorique — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Force fantasmagorique">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="force-fantasmagorique" data-status="source"
+             data-source="img:288"
+             data-spell-level="2" data-school="illusion"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="18m" data-components="V,S,M"
+             data-material="un peu de laine brute"
+             data-duration="conc-1min" data-classes="barde,ensorceleur,magicien"
+             data-save="int" data-damage-type="psychique">
+
+      <h1>Force fantasmagorique</h1>
+      <p class="provenance">Illusion du 2e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Illusion</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Barde</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (un peu de laine brute)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous tentez de concevoir une illusion dans l'esprit d'une creature que vous voyez a portee. La cible effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> d'Intelligence. Si elle le rate, vous creez un objet, une creature ou autre forme fantasmatique dont le volume n'excede pas un Cube de 3 m. Seule la cible le percoit pour toute la duree, la perception de la temperature et d'autres sens de la creature.</p>
+        <p>Au prix de l'action Etude, la cible peut examiner la manifestation en effectuant un test d'Intelligence (Investigation) contre le DD de sauvegarde du sort. En cas de reussite, elle perce l'illusion et le sort prend fin.</p>
+        <p>Tant qu'elle est affectee par le sort, la cible considere ce qu'elle percoit comme reel et tout ce qui est incoherent dans ses interactions avec l'illusion se justifie a son sens. Exemple : une cible foule un pont fantasmatique enjambant un gouffre et survit a la chute ; elle reste convaincue de l'existence du pont et attribue sa chute a autre chose.</p>
+        <p>Une cible affectee peut meme subir des degats de l'illusion si celle-ci represente une creature redoutable ou un danger autre. A chacun de vos tours, si la cible se trouve dans un rayon de 1,50 m de l'illusion ou dans sa zone, une telle force fantasmatique peut lui infliger 2d8 degats psychiques. Dans son esprit, les degats sont du type adapte a l'illusion.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Intelligence)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>L'illusion se manifeste dans son esprit pour toute la duree (pouvant infliger 2d8 degats psychiques par tour).</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

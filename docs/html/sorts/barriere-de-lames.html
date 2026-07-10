@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barriere de lames — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Barriere de lames">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="barriere-de-lames" data-status="source"
+             data-source="img:248"
+             data-spell-level="6" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="27m" data-components="V,S"
+             data-duration="conc-10min" data-classes="clerc"
+             data-save="dex" data-damage-type="force">
+
+      <h1>Barriere de lames</h1>
+      <p class="provenance">Evocation du 6e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 6</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Clerc</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">27 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 10 minutes</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous creez un mur de lames tourbillonnantes d'energie magique. Le mur apparait a portee et persiste pour toute la duree. Vous erigez ainsi un mur dont la hauteur n'excede pas 6 m et l'epaisseur 1,50 m ; pour le reste, vous avez le choix entre creer un mur droit long de 30 m au maximum ou un mur circulaire dont le diametre ne depasse pas 18 m. Le mur octroie un Abri superieur et son espace constitue un <a href="../regles/glossaire.html#terrain-difficile" data-ref="terrain-difficile">Terrain difficile</a>.</p>
+        <p>Toute creature prise dans l'espace du mur effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite, et subit 6d10 degats de force en cas d'echec, la moitie en cas de reussite. Une creature effectue aussi ce JS si elle penetre dans l'espace du mur ou y termine son tour. Une meme creature n'effectue en aucun cas ce JS plus d'une fois par tour.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>6d10 degats de force.</td></tr>
+            <tr><td>Reussite</td><td>Moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

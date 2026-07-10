@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sphere de feu — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Sphere de feu">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="sphere-de-feu" data-status="source"
+             data-source="img:331"
+             data-spell-level="2" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="18m" data-components="V,S,M" data-material="une boule de cire"
+             data-duration="conc-1min" data-classes="druide,ensorceleur,magicien"
+             data-save="dex" data-damage-type="feu">
+
+      <h1>Sphere de feu</h1>
+      <p class="provenance">Invocation du 2e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 2</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Ensorceleur</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (une boule de cire)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous produisez une Sphere de flammes de 1,50 m de diametre qui apparait au sol en un <a href="../regles/glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> a portee. Elle persiste pour toute la duree. Toute creature qui termine son tour dans un rayon de 1,50 m de la Sphere effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite et subit 2d6 degats de feu en cas d'echec, la moitie en cas de reussite.</p>
+        <p>Par une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a>, vous pouvez deplacer la Sphere d'un maximum de 9 m, en la faisant rouler sur le sol. Si vous deplacez la Sphere dans l'espace d'une creature, celle-ci effectue un jet de sauvegarde contre les degats de la Sphere, puis la Sphere cesse de se deplacer pour ce tour.</p>
+        <p>Lorsque vous deplacez la Sphere, vous pouvez lui faire franchir des obstacles dont la hauteur ne depasse pas 1,50 m et des fosses d'une largeur maximale de 3 m. La Sphere embrase les objets inflammables qui ne sont portes par personne, produit une <a href="../regles/glossaire.html#lumiere-vive" data-ref="lumiere-vive">Lumiere vive</a> sur un rayon de 6 m et une <a href="../regles/glossaire.html#lumiere-faible" data-ref="lumiere-faible">Lumiere faible</a> sur 6 m de plus.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>2d6 degats de feu.</td></tr>
+            <tr><td>Reussite</td><td>Moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Emplacement de niveau superieur. Les degats augmentent de 1d6 par niveau d'emplacement au-dela du 2e.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

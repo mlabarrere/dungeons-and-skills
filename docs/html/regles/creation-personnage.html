@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creation de personnage — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Creation de personnage">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="creation-personnage" data-status="source" data-source="img:36,38">
+      <h1>Creation de personnage</h1>
+      <p class="provenance">Chapitre 2 (PHB 2024), pages 36 et 38-43. Conversion fidele des etapes, tables et formules.</p>
+
+      <section class="section">
+        <h2>Vue d'ensemble</h2>
+        <p>La creation d'un personnage se deroule en cinq etapes :</p>
+        <ol>
+          <li>choisir une classe ;</li>
+          <li>determiner ses origines : historique, espece et deux langues ;</li>
+          <li>determiner les six valeurs de caracteristique ;</li>
+          <li>choisir un alignement ;</li>
+          <li>finaliser la fiche : aptitudes, PV, CA, attaques, incantation, nom et details.</li>
+        </ol>
+        <div class="callout info">Un groupe typique de D&amp;D comprend un Clerc, un Guerrier, un Magicien et un Roublard : ces quatre classes offrent un melange equilibre de facultes. Variantes possibles : Clerc (remplacer par Barde ou Druide) ; Guerrier (Barbare, Moine, Paladin ou Rodeur) ; Magicien (Barde, Ensorceleur ou Occultiste) ; Roublard (Barde ou Rodeur).</div>
+      </section>
+
+      <section class="section" data-source="img:199">
+        <h2>Etape 1 — Choisir une classe</h2>
+        <p>Le choix d'une classe est la decision la plus importante de la creation : il guidera de nombreux choix des etapes suivantes. Consulter l'index des classes puis la fiche detaillee de la classe retenue.</p>
+        <p>Noter sur la fiche : la classe et son niveau (au niveau 1, le personnage debute avec 0 PX) ; les <a href="./glossaire.html#points-d-experience" data-ref="points-d-experience">points d'experience</a> (PX) accumules ; les formations aux armures octroyees par la classe ; les aptitudes de classe du niveau 1. Le bonus de maitrise d'un personnage de niveau 1 est de +2.</p>
+        <p><a href="../classes/index.html" data-ref="classes">Voir l'index des classes</a>.</p>
+        <div class="stub">
+          <strong>Manquant documentaire.</strong> Le detail de l'etape 1 « Choisir une classe » (pages 32 a 35) n'a pas ete photographie dans ce lot. Les elements ci-dessus proviennent des renvois presents pages 36 et suivantes ; se reporter aux fiches de classe pour le detail.
+        </div>
+      </section>
+
+      <section class="section" data-source="img:36">
+        <h2>Etape 2 — Determiner ses origines</h2>
+        <p>Determiner les origines d'un personnage demande d'opter pour un historique, pour une espece et pour deux langues. La combinaison de l'historique, de l'espece et des langues aide a imaginer les jeunes annees du personnage.</p>
+
+        <h3>Choisir un historique</h3>
+        <p>Opter pour un historique de personnage, choisi parmi ceux du chapitre 4 (le MD peut en proposer d'autres). L'historique retenu a une influence sur l'etape 3, lorsqu'il s'agira de determiner les valeurs de caracteristique. En cas d'hesitation, la table « Valeurs de caracteristique et historiques » indique les associations les plus favorables entre historiques et caracteristiques ; la caracteristique principale de la classe est l'element cle.</p>
+
+        <h3 style="margin-top:12px;">Valeurs de caracteristique et historiques</h3>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Historiques</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td><a href="../historiques/artisan.html" data-ref="artisan">Artisan</a>, <a href="../historiques/artiste.html" data-ref="artiste">Artiste</a>, <a href="../historiques/fermier.html" data-ref="fermier">Fermier</a>, <a href="../historiques/garde.html" data-ref="garde">Garde</a>, <a href="../historiques/marin.html" data-ref="marin">Marin</a>, <a href="../historiques/noble.html" data-ref="noble">Noble</a>, <a href="../historiques/soldat.html" data-ref="soldat">Soldat</a></td></tr>
+            <tr><td>Dexterite</td><td>Artisan, Artiste, <a href="../historiques/charlatan.html" data-ref="charlatan">Charlatan</a>, <a href="../historiques/criminel.html" data-ref="criminel">Criminel</a>, <a href="../historiques/guide.html" data-ref="guide">Guide</a>, Marin, <a href="../historiques/scribe.html" data-ref="scribe">Scribe</a>, Soldat, <a href="../historiques/voyageur.html" data-ref="voyageur">Voyageur</a></td></tr>
+            <tr><td>Constitution</td><td>Charlatan, Criminel, <a href="../historiques/ermite.html" data-ref="ermite">Ermite</a>, Fermier, Guide, <a href="../historiques/marchand.html" data-ref="marchand">Marchand</a>, <a href="../historiques/sage.html" data-ref="sage">Sage</a>, Soldat</td></tr>
+            <tr><td>Intelligence</td><td><a href="../historiques/acolyte.html" data-ref="acolyte">Acolyte</a>, Artisan, Criminel, Garde, Marchand, Noble, Sage, Scribe</td></tr>
+            <tr><td>Sagesse</td><td>Acolyte, Fermier, Garde, Guide, Ermite, Marin, Sage, Scribe, Voyageur</td></tr>
+            <tr><td>Charisme</td><td>Acolyte, Artiste, Charlatan, Ermite, Marchand, Noble, Voyageur</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:14px;">Don d'origine</h3>
+        <p>Chaque historique octroie un don, qui confere des capacites particulieres. Les <a href="../dons/index.html" data-ref="index-dons">dons</a> sont detailles au chapitre 5. Noter le don sur la <a href="./glossaire.html#fiche-de-personnage" data-ref="fiche-de-personnage">fiche de personnage</a>.</p>
+
+        <h3 style="margin-top:14px;">Maitrises</h3>
+        <p>L'historique octroie la maitrise de deux competences et d'un type d'<a href="../equipement/outils.html" data-ref="outils">outils</a>. La classe octroie egalement des maitrises (voir sa description au chapitre 3). La table Aptitudes de la classe indique le bonus de maitrise, de +2 pour un personnage de niveau 1 ; d'autres valeurs liees a ces maitrises sont consignees a l'etape 5.</p>
+
+        <h3 style="margin-top:14px;">Equipement de depart</h3>
+        <p>L'historique et la classe fournissent tous deux un <a href="../equipement/index.html" data-ref="index-equipement">equipement</a> de depart. Toute la monnaie gagnee a cette etape peut aussitot se depenser pour du materiel du chapitre 6. On peut de plus acquerir gratuitement une babiole. L'equipement est detaille au chapitre 6 ; pour l'heure, noter simplement tout le materiel retenu.</p>
+
+        <h3 style="margin-top:14px;">Choisir une espece</h3>
+        <p>Choisir une espece pour le personnage. Les options detaillees au chapitre 4 sont :</p>
+        <div class="pill-row">
+          <span class="pill"><a href="../especes/aasimar.html" data-ref="aasimar">aasimar</a></span>
+          <span class="pill"><a href="../especes/drakeide.html" data-ref="drakeide">drakeide</a></span>
+          <span class="pill"><a href="../especes/elfe.html" data-ref="elfe">elfe</a></span>
+          <span class="pill"><a href="../especes/gnome.html" data-ref="gnome">gnome</a></span>
+          <span class="pill"><a href="../especes/goliath.html" data-ref="goliath">goliath</a></span>
+          <span class="pill"><a href="../especes/halfelin.html" data-ref="halfelin">halfelin</a></span>
+          <span class="pill"><a href="../especes/humain.html" data-ref="humain">humain</a></span>
+          <span class="pill"><a href="../especes/nain.html" data-ref="nain">nain</a></span>
+          <span class="pill"><a href="../especes/orc.html" data-ref="orc">orc</a></span>
+          <span class="pill"><a href="../especes/tieffelin.html" data-ref="tieffelin">tieffelin</a></span>
+        </div>
+        <p class="note">Une fois l'espece choisie, consigner ses traits. La <a href="./glossaire.html#categorie-de-taille" data-ref="categorie-de-taille">categorie de taille</a> et la Vitesse du personnage sont determinees par son espece.</p>
+
+        <h3 style="margin-top:14px;">Langues</h3>
+        <p>Un personnage connait au moins trois langues : le commun, plus deux langues courantes (tirees au hasard ou choisies). Voir la page dediee : <a href="./langues.html" data-ref="langues">Langues</a>.</p>
+      </section>
+
+      <section class="section" data-source="img:38">
+        <h2>Etape 3 — Determiner les valeurs de caracteristique</h2>
+        <p>Pour determiner les valeurs de caracteristique, generer six nombres selon l'une des methodes ci-apres, puis les attribuer aux six caracteristiques : Force, Dexterite, Constitution, Intelligence, Sagesse et Charisme.</p>
+
+        <h3>Generer les valeurs</h3>
+        <p>Determiner les valeurs selon l'une des methodes suivantes (le MD peut en preferer une) :</p>
+        <ul>
+          <li><strong>Valeurs standard.</strong> Reprendre les six valeurs : 15, 14, 13, 12, 10, 8.</li>
+          <li><strong>Generation aleatoire.</strong> Lancer quatre d6 et noter le total des trois des les plus eleves. Repeter l'operation cinq fois de plus, pour obtenir six nombres.</li>
+          <li><strong>Acquisition par points.</strong> Disposer de 27 points a depenser pour l'acquisition des valeurs. Le cout de chaque valeur est indique dans la table ci-dessous (exemple : une valeur de 14 coute 7 des 27 points).</li>
+        </ul>
+
+        <h3 style="margin-top:14px;">Cout des valeurs de caracteristique</h3>
+        <table>
+          <thead><tr><th>Valeur</th><th>Cout</th><th>Valeur</th><th>Cout</th></tr></thead>
+          <tbody>
+            <tr><td>8</td><td>0</td><td>12</td><td>4</td></tr>
+            <tr><td>9</td><td>1</td><td>13</td><td>5</td></tr>
+            <tr><td>10</td><td>2</td><td>14</td><td>7</td></tr>
+            <tr><td>11</td><td>3</td><td>15</td><td>9</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:14px;">Attribuer les valeurs</h3>
+        <p>Une fois les six valeurs generees, les repartir entre Force, Dexterite, Constitution, Intelligence, Sagesse et Charisme, en gardant a l'esprit la caracteristique principale de la classe. Noter aussi les modificateurs. Avec l'option des valeurs standard, la table « Valeurs standard par classe » peut guider la repartition : elle associe les valeurs les plus elevees aux caracteristiques principales de chaque classe.</p>
+
+        <h3 style="margin-top:14px;">Valeurs standard par classe</h3>
+        <table>
+          <thead>
+            <tr><th>Classe</th><th>For</th><th>Dex</th><th>Con</th><th>Int</th><th>Sag</th><th>Cha</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="../classes/barbare.html" data-ref="barbare">Barbare</a></td><td>15</td><td>13</td><td>14</td><td>10</td><td>12</td><td>8</td></tr>
+            <tr><td><a href="../classes/barde.html" data-ref="barde">Barde</a></td><td>8</td><td>14</td><td>12</td><td>13</td><td>10</td><td>15</td></tr>
+            <tr><td><a href="../classes/clerc.html" data-ref="clerc">Clerc</a></td><td>14</td><td>8</td><td>13</td><td>10</td><td>15</td><td>12</td></tr>
+            <tr><td><a href="../classes/druide.html" data-ref="druide">Druide</a></td><td>8</td><td>12</td><td>14</td><td>13</td><td>15</td><td>10</td></tr>
+            <tr><td><a href="../classes/ensorceleur.html" data-ref="ensorceleur">Ensorceleur</a></td><td>10</td><td>13</td><td>14</td><td>8</td><td>12</td><td>15</td></tr>
+            <tr><td><a href="../classes/guerrier.html" data-ref="guerrier">Guerrier</a></td><td>15</td><td>14</td><td>13</td><td>8</td><td>10</td><td>12</td></tr>
+            <tr><td><a href="../classes/magicien.html" data-ref="magicien">Magicien</a></td><td>8</td><td>12</td><td>13</td><td>15</td><td>14</td><td>10</td></tr>
+            <tr><td><a href="../classes/moine.html" data-ref="moine">Moine</a></td><td>12</td><td>15</td><td>13</td><td>10</td><td>14</td><td>8</td></tr>
+            <tr><td><a href="../classes/occultiste.html" data-ref="occultiste">Occultiste</a></td><td>8</td><td>14</td><td>13</td><td>12</td><td>10</td><td>15</td></tr>
+            <tr><td><a href="../classes/paladin.html" data-ref="paladin">Paladin</a></td><td>15</td><td>10</td><td>13</td><td>8</td><td>12</td><td>14</td></tr>
+            <tr><td><a href="../classes/rodeur.html" data-ref="rodeur">Rodeur</a></td><td>12</td><td>15</td><td>13</td><td>8</td><td>14</td><td>10</td></tr>
+            <tr><td><a href="../classes/roublard.html" data-ref="roublard">Roublard</a></td><td>12</td><td>15</td><td>13</td><td>14</td><td>10</td><td>8</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:14px;">Ajuster les valeurs</h3>
+        <p>Une fois les valeurs attribuees, les ajuster selon l'historique. L'historique cite trois caracteristiques ; on augmente l'une d'elles de 2 et une autre de 1, ou bien on augmente les trois de 1. Ces augmentations ne peuvent en aucun cas porter une valeur au-dessus de 20.</p>
+        <div class="callout">Historiques et especes d'anciens ouvrages : les historiques d'anciens ouvrages ne donnent pas d'ajustements de caracteristique. Si l'on reprend un tel historique, ajuster comme ci-dessus. Pour les especes d'anciens ouvrages qui presentent des augmentations de caracteristique, ne pas en tenir compte : seules celles de l'historique s'appliquent. Enfin, si l'historique choisi ne fournit pas de don, le personnage recoit le don d'origines de son choix.</div>
+
+        <h3 style="margin-top:14px;">Determiner les modificateurs</h3>
+        <p>Determiner les modificateurs associes en se referant a la table ci-dessous, puis inscrire le modificateur a cote de chaque valeur.</p>
+        <table>
+          <thead><tr><th>Valeur</th><th>Modificateur</th><th>Valeur</th><th>Modificateur</th></tr></thead>
+          <tbody>
+            <tr><td>3</td><td>-4</td><td>12-13</td><td>+1</td></tr>
+            <tr><td>4-5</td><td>-3</td><td>14-15</td><td>+2</td></tr>
+            <tr><td>6-7</td><td>-2</td><td>16-17</td><td>+3</td></tr>
+            <tr><td>8-9</td><td>-1</td><td>18-19</td><td>+4</td></tr>
+            <tr><td>10-11</td><td>+0</td><td>20</td><td>+5</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:14px;">Apparence et personnalite</h3>
+        <p>Les tables suivantes suggerent des epithetes descriptives selon que la caracteristique correspondante est elevee ou basse (jet de 1d4 possible).</p>
+        <div class="grid-2">
+          <div>
+            <h3>Force</h3>
+            <table>
+              <thead><tr><th>1d4</th><th>Elevee</th><th>Basse</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Musculeux</td><td>Faible</td></tr>
+                <tr><td>2</td><td>Athletique</td><td>Frele</td></tr>
+                <tr><td>3</td><td>Protecteur</td><td>Complexe</td></tr>
+                <tr><td>4</td><td>Direct</td><td>Fuyant</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Dexterite</h3>
+            <table>
+              <thead><tr><th>1d4</th><th>Elevee</th><th>Basse</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Felin</td><td>Nerveux</td></tr>
+                <tr><td>2</td><td>Dynamique</td><td>Gauche</td></tr>
+                <tr><td>3</td><td>Remuant</td><td>Hesitant</td></tr>
+                <tr><td>4</td><td>Pose</td><td>Febrile</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Constitution</h3>
+            <table>
+              <thead><tr><th>1d4</th><th>Elevee</th><th>Basse</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Energique</td><td>Chetif</td></tr>
+                <tr><td>2</td><td>Vigoureux</td><td>Delicat</td></tr>
+                <tr><td>3</td><td><a href="../dons/robuste.html" data-ref="robuste">Robuste</a></td><td>Lethargique</td></tr>
+                <tr><td>4</td><td>Solide</td><td>Fragile</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Intelligence</h3>
+            <table>
+              <thead><tr><th>1d4</th><th>Elevee</th><th>Basse</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Resolu</td><td>Fruste</td></tr>
+                <tr><td>2</td><td>Rationnel</td><td>Irrationnel</td></tr>
+                <tr><td>3</td><td>Pedagogue</td><td>Inculte</td></tr>
+                <tr><td>4</td><td>Curieux</td><td>Superficiel</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Sagesse</h3>
+            <table>
+              <thead><tr><th>1d4</th><th>Elevee</th><th>Basse</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Serein</td><td>Impulsif</td></tr>
+                <tr><td>2</td><td>Prevenant</td><td>Etourdi</td></tr>
+                <tr><td>3</td><td>Attentif</td><td>Inattentif</td></tr>
+                <tr><td>4</td><td>Circonspect</td><td>Naif</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Charisme</h3>
+            <table>
+              <thead><tr><th>1d4</th><th>Eleve</th><th>Bas</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Charmant</td><td>Ergoteur</td></tr>
+                <tr><td>2</td><td>Digne</td><td>Morne</td></tr>
+                <tr><td>3</td><td>Hilarant</td><td>Reserve</td></tr>
+                <tr><td>4</td><td>Exaltant</td><td>Indelicat</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-source="img:39,40">
+        <h2>Etape 4 — Choisir un alignement</h2>
+        <p>Choisir l'alignement du personnage parmi les options ci-apres et le noter sur la fiche. L'alignement illustre globalement les valeurs ethiques et les ideaux d'une creature : il combine deux aspects, la moralite (bon, mauvais ou neutre) et le point de vue vis-a-vis de l'ordre (loyal, chaotique ou neutre).</p>
+        <div class="callout">D&amp;D part du principe que les personnages joueurs ne sont pas d'alignement mauvais. Consulter le MD avant de creer un personnage mauvais.</div>
+
+        <h3>Les neuf alignements</h3>
+        <div class="pill-row">
+          <span class="pill">loyal bon</span>
+          <span class="pill">neutre bon</span>
+          <span class="pill">chaotique bon</span>
+          <span class="pill">loyal neutre</span>
+          <span class="pill">neutre</span>
+          <span class="pill">chaotique neutre</span>
+          <span class="pill">loyal mauvais</span>
+          <span class="pill">neutre mauvais</span>
+          <span class="pill">chaotique mauvais</span>
+        </div>
+        <table>
+          <thead><tr><th>Alignement</th><th>Comportement classique</th></tr></thead>
+          <tbody>
+            <tr><td>Loyal Bon (LB)</td><td>S'efforce de faire le bien selon les attentes de la societe ; combat l'injustice et protege les innocents sans hesiter.</td></tr>
+            <tr><td>Neutre Bon (NB)</td><td>Fait au mieux en s'adaptant aux regles, sans s'y contraindre strictement ; aide les autres selon leurs besoins.</td></tr>
+            <tr><td>Chaotique Bon (CB)</td><td>Agit selon sa conscience, sans se soucier des attentes de la societe ; par exemple, reverse aux indigents l'or saisi a un baron cruel.</td></tr>
+            <tr><td>Loyal Neutre (LN)</td><td>Se conduit en accord avec la loi, les traditions ou un code personnel, sans se laisser influencer par les necessiteux ni les tentations du mal.</td></tr>
+            <tr><td>Neutre (N)</td><td>Prefere eviter les questions morales et ne pas prendre parti, agissant au cas par cas du mieux possible.</td></tr>
+            <tr><td>Chaotique Neutre (CN)</td><td>Agit comme bon lui semble, sa liberte comptant plus que tout le reste ; par exemple, une canaille qui erre en vivant d'expedients.</td></tr>
+            <tr><td>Loyal Mauvais (LM)</td><td>S'approprie methodiquement ce qu'il desire tout en restant dans le cadre de la loyaute, de la tradition ou de l'ordre.</td></tr>
+            <tr><td>Neutre Mauvais (NM)</td><td>Se moque du mal qu'il peut causer pour assouvir ses desirs ; par exemple, vole et tue comme bon lui semble.</td></tr>
+            <tr><td>Chaotique Mauvais (CM)</td><td>Violence gratuite motivee par la haine ou la soif de sang ; desseins animes par la vengeance et les ravages.</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Creatures non alignees : la plupart des creatures denuees de raison n'ont pas d'alignement. Les requins, bien que predateurs sauvages, ne sont pas fonciarement mauvais ; ils sont non alignes.</p>
+
+        <h3 style="margin-top:14px;">Traits de personnalite par alignement</h3>
+        <p>Ces listes peuvent evoquer la personnalite d'un aventurier a partir des deux aspects de son alignement (jet de 1d4 possible).</p>
+        <table>
+          <thead><tr><th>Alignement</th><th>1d4</th><th>Trait associe</th></tr></thead>
+          <tbody>
+            <tr><td rowspan="4">Chaotique</td><td>1</td><td>Vantard</td></tr>
+            <tr><td>2</td><td>Inconsidere</td></tr>
+            <tr><td>3</td><td>Rebelle</td></tr>
+            <tr><td>4</td><td>Egocentrique</td></tr>
+            <tr><td rowspan="4">Bon</td><td>1</td><td>Compatissant</td></tr>
+            <tr><td>2</td><td>Secourable</td></tr>
+            <tr><td>3</td><td>Honnete</td></tr>
+            <tr><td>4</td><td>Bienfaisant</td></tr>
+            <tr><td rowspan="4">Mauvais</td><td>1</td><td>Malhonnete</td></tr>
+            <tr><td>2</td><td>Vindicatif</td></tr>
+            <tr><td>3</td><td>Cruel</td></tr>
+            <tr><td>4</td><td>Cupide</td></tr>
+            <tr><td rowspan="4">Loyal</td><td>1</td><td>Cooperatif</td></tr>
+            <tr><td>2</td><td>Fiable</td></tr>
+            <tr><td>3</td><td>Critique</td></tr>
+            <tr><td>4</td><td>Methodique</td></tr>
+            <tr><td rowspan="4">Neutre</td><td>1</td><td>Egoiste</td></tr>
+            <tr><td>2</td><td>Indifferent</td></tr>
+            <tr><td>3</td><td>Taiseux</td></tr>
+            <tr><td>4</td><td>Pragmatique</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" data-source="img:40,41">
+        <h2>Etape 5 — Finaliser</h2>
+        <p>Il s'agit desormais de remplir le reste de la fiche de personnage.</p>
+
+        <h3>Consigner les aptitudes de classe</h3>
+        <p>Consulter la table Aptitudes de la classe au chapitre 3 et noter les aptitudes de niveau 1. Certaines aptitudes offrent des choix : lire toutes ses aptitudes et faire son choix parmi les options, le cas echeant.</p>
+
+        <h3 style="margin-top:14px;">Valeurs a noter</h3>
+        <ul>
+          <li><strong>Jets de sauvegarde.</strong> Pour tout JS maitrise, ajouter le bonus de maitrise au modificateur de caracteristique correspondant et noter le total.</li>
+          <li><strong>Competences.</strong> Pour toute competence maitrisee, ajouter le bonus de maitrise au modificateur de caracteristique correspondant et noter le total.</li>
+          <li><strong><a href="./glossaire.html#perception-passive" data-ref="perception-passive">Perception passive</a>.</strong> Valeur de la conscience globale de l'environnement lorsque le personnage ne cherche pas activement quelque chose. Perception passive = 10 + modificateur aux tests de Sagesse (Perception). Exemple : Sagesse 15 et maitrise de Perception donnent une Perception passive de 14 (10 + 2 de Sagesse + 2 de maitrise).</li>
+          <li><strong><a href="./glossaire.html#points-de-vie" data-ref="points-de-vie">Points de vie</a>.</strong> La classe et le modificateur de Constitution determinent le maximum de points de vie au niveau 1 (voir table ci-dessous).</li>
+          <li><strong><a href="./glossaire.html#des-de-vie" data-ref="des-de-vie">Des de vie</a>.</strong> La description de classe indique le type de de des des de vie (DV). Au niveau 1, le personnage dispose de 1 de de vie. Les DV se depensent pour recuperer des points de vie pendant un <a href="./glossaire.html#repos-court" data-ref="repos-court">Repos court</a>.</li>
+          <li><strong>Initiative.</strong> Noter le modificateur de Dexterite dans l'espace attribue a l'Initiative.</li>
+          <li><strong><a href="./glossaire.html#classe-d-armure" data-ref="classe-d-armure">Classe d'armure</a>.</strong> Sans armure ni bouclier, la CA de base est egale a 10 plus le modificateur de Dexterite. Une armure ou un bouclier obeit aux regles du chapitre 6 ; certaines aptitudes entrainent un calcul different.</li>
+        </ul>
+
+        <h3 style="margin-top:14px;">Points de vie au niveau 1 par classe</h3>
+        <table>
+          <thead><tr><th>Classe</th><th>Maximum de points de vie</th></tr></thead>
+          <tbody>
+            <tr><td>Barbare</td><td>12 + modificateur de Con</td></tr>
+            <tr><td>Guerrier, Paladin ou Rodeur</td><td>10 + modificateur de Con</td></tr>
+            <tr><td>Barde, Clerc, Druide, Moine, Occultiste ou Roublard</td><td>8 + modificateur de Con</td></tr>
+            <tr><td>Ensorceleur ou Magicien</td><td>6 + modificateur de Con</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top:14px;">Attaques</h3>
+        <p>Consigner les <a href="../equipement/armes.html" data-ref="armes">armes</a> de depart dans la section Armes et sorts mineurs offensifs. Le bonus d'attaque d'une arme maitrisee est l'un des deux suivants, sauf mention contraire dans les proprietes de l'arme :</p>
+        <table>
+          <thead><tr><th>Type d'attaque</th><th>Bonus d'attaque</th></tr></thead>
+          <tbody>
+            <tr><td>Corps a corps</td><td>modificateur de Force + bonus de maitrise</td></tr>
+            <tr><td>A distance</td><td>modificateur de Dexterite + bonus de maitrise</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Le modificateur de caracteristique s'applique aussi aux jets de degats d'une arme donnee (voir chapitre 6).</p>
+
+        <h3 style="margin-top:14px;">Incantation</h3>
+        <p>Noter le DD de sauvegarde des sorts et le bonus a l'attaque des sorts, selon les formules suivantes :</p>
+        <table>
+          <thead><tr><th>Element</th><th>Calcul</th></tr></thead>
+          <tbody>
+            <tr><td>DD de sauvegarde des sorts</td><td>8 + modificateur de caracteristique d'incantation + bonus de maitrise</td></tr>
+            <tr><td>Bonus d'<a href="./glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">attaque de sort</a></td><td>modificateur de caracteristique d'incantation + bonus de maitrise</td></tr>
+          </tbody>
+        </table>
+        <p>La caracteristique d'incantation pour un sort donne est determinee par l'aptitude qui permet de le lancer. Si la classe octroie l'aptitude Sorts ou Magie de pacte, la table Aptitudes correspondante indique le nombre d'emplacements de sort, le nombre de sorts mineurs connus et le nombre de sorts que l'on peut preparer. Selectionner ses sorts mineurs et ses sorts prepares, puis les noter avec son quota d'emplacements de sort.</p>
+
+        <h3 style="margin-top:14px;">Nommer le personnage</h3>
+        <p>Donner un nom au personnage et le noter sur la fiche.</p>
+
+        <h3 style="margin-top:14px;">Les ultimes details</h3>
+        <p>A l'approche de la conclusion, songer aux derniers details narratifs :</p>
+        <ul>
+          <li>Quel est son genre ?</li>
+          <li>Quelle personne ou communaute est la plus chere a son coeur ?</li>
+          <li>Quelle est sa pire crainte ?</li>
+          <li>Dans ses aventures, est-il en quete de savoir, de fortune, de gloire, d'illumination, de justice, de misericorde, de pouvoir ou d'autre chose ?</li>
+        </ul>
+      </section>
+
+      <section class="section" data-source="img:41">
+        <h2>Progression en niveaux</h2>
+        <p>Au fil de ses aventures, le personnage gagne de l'experience, representee par les points d'experience (PX). La table Progression des personnages indique les PX requis pour atteindre les niveaux et le bonus de maitrise correspondant. Quand le total de PX egale ou depasse le nombre indique dans la colonne Points d'experience, le personnage accede au niveau correspondant.</p>
+        <h3>Progression des personnages</h3>
+        <table>
+          <thead><tr><th>Niveau</th><th>Points d'experience</th><th>Bonus de maitrise</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>0</td><td>+2</td></tr>
+            <tr><td>2</td><td>300</td><td>+2</td></tr>
+            <tr><td>3</td><td>900</td><td>+2</td></tr>
+            <tr><td>4</td><td>2 700</td><td>+2</td></tr>
+            <tr><td>5</td><td>6 500</td><td>+3</td></tr>
+            <tr><td>6</td><td>14 000</td><td>+3</td></tr>
+            <tr><td>7</td><td>23 000</td><td>+3</td></tr>
+            <tr><td>8</td><td>34 000</td><td>+3</td></tr>
+            <tr><td>9</td><td>48 000</td><td>+4</td></tr>
+            <tr><td>10</td><td>64 000</td><td>+4</td></tr>
+            <tr><td>11</td><td>85 000</td><td>+4</td></tr>
+            <tr><td>12</td><td>100 000</td><td>+4</td></tr>
+            <tr><td>13</td><td>120 000</td><td>+5</td></tr>
+            <tr><td>14</td><td>140 000</td><td>+5</td></tr>
+            <tr><td>15</td><td>165 000</td><td>+5</td></tr>
+            <tr><td>16</td><td>195 000</td><td>+5</td></tr>
+            <tr><td>17</td><td>225 000</td><td>+6</td></tr>
+            <tr><td>18</td><td>265 000</td><td>+6</td></tr>
+            <tr><td>19</td><td>305 000</td><td>+6</td></tr>
+            <tr><td>20</td><td>355 000</td><td>+6</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" data-source="img:42">
+        <h2>Acquisition d'un niveau</h2>
+        <p>Lorsque le personnage gagne un niveau, respecter les etapes suivantes :</p>
+        <ol>
+          <li><strong>Choisir une classe.</strong> La plupart des personnages progressent au sein d'une meme classe ; on peut toutefois acquerir un niveau dans une autre classe selon les regles de multiclassage.</li>
+          <li><strong>Ajuster les points de vie et des de vie.</strong> Chaque niveau octroie 1 de de vie supplementaire. Lancer ce DV, ajouter le modificateur de Constitution au resultat, puis ajouter cette somme (minimum 1) au maximum de points de vie. Au lieu de lancer, on peut prendre la valeur fixe (table ci-dessous).</li>
+          <li><strong>Consigner les nouvelles aptitudes de classe.</strong> Consulter la table Aptitudes de la classe au chapitre 3 et noter les aptitudes acquises. Si une nouvelle aptitude offre des choix, faire sa selection.</li>
+          <li><strong>Ajuster le bonus de maitrise.</strong> Le bonus de maitrise augmente a certains niveaux (voir table Progression des personnages). A chaque augmentation, ajuster tous les nombres de la fiche qui integrent le bonus de maitrise.</li>
+          <li><strong>Ajuster les modificateurs de caracteristique.</strong> Si un don augmente une valeur de caracteristique et que la nouvelle valeur est paire, le modificateur evolue ; ajuster tous les nombres concernes. Lorsque le modificateur de Constitution augmente de 1, le maximum de points de vie augmente de 1 par niveau. Exemple : au niveau 8, une Constitution qui passe de 17 a 18 fait passer le modificateur a +4 ; le maximum de PV augmente alors de 8, en plus des PV acquis au niveau 8.</li>
+        </ol>
+
+        <h3>Points de vie fixes par classe</h3>
+        <table>
+          <thead><tr><th>Classe</th><th>Points de vie par niveau</th></tr></thead>
+          <tbody>
+            <tr><td>Barbare</td><td>7 + modificateur de Con</td></tr>
+            <tr><td>Guerrier, Paladin ou Rodeur</td><td>6 + modificateur de Con</td></tr>
+            <tr><td>Barde, Clerc, Druide, Moine, Occultiste ou Roublard</td><td>5 + modificateur de Con</td></tr>
+            <tr><td>Ensorceleur ou Magicien</td><td>4 + modificateur de Con</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" data-source="img:43">
+        <h2>Echelons de jeu</h2>
+        <p>A chaque nouveau niveau, les personnages acquierent de nouvelles capacites. On peut considerer l'arc narratif selon quatre echelons de jeu. Ces echelons ne sont assortis d'aucune regle ; ils rappellent que l'experience de jeu evolue au fil de l'acquisition de niveaux.</p>
+        <table>
+          <thead><tr><th>Echelon</th><th>Niveaux</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>Echelon 1</td><td>1 a 4</td><td>Les personnages apprennent les ficelles de l'aventure et leurs premieres aptitudes de classe, et optent pour une sous-classe. Les dangers menacent generalement des fermes locales ou des villages.</td></tr>
+            <tr><td>Echelon 2</td><td>5 a 10</td><td>Aventuriers a part entiere. Les incantateurs accedent a des sorts emblematiques (<a href="../sorts/boule-de-feu.html" data-ref="boule-de-feu">boule de feu</a>, eclair, <a href="../sorts/rappel-a-la-vie.html" data-ref="rappel-a-la-vie">rappel a la vie</a>) ; la plupart des classes martiales portent plusieurs attaques par round. Les dangers menacent des cites et de petits royaumes.</td></tr>
+            <tr><td>Echelon 3</td><td>11 a 16</td><td>Aventuriers d'exception. De nombreux incantateurs apprennent des sorts qui ont un impact sur la realite ; d'autres personnages gagnent en attaques ou en prouesses martiales. Les menaces touchent tout un pays, voire plusieurs.</td></tr>
+            <tr><td>Echelon 4</td><td>17 a 20</td><td>Sommet des aptitudes de classe : des parangons d'heroisme dont les reussites et echecs peuvent decider du destin du monde et de l'ordre du multivers.</td></tr>
+          </tbody>
+        </table>
+        <div class="callout">Dons supplementaires au niveau 20 : le MD peut octroyer un don de son choix pour chaque tranche de 30 000 PX accumulee au-dela des 355 000 PX. Les dons de Faveur epique sont particulierement adaptes.</div>
+      </section>
+
+      <section class="section" data-source="img:43">
+        <h2>Commencer a plus haut niveau</h2>
+        <p>Le MD peut faire debuter le groupe a un niveau superieur a 1. Commencer au niveau 3 est meme une bonne idee pour un groupe de joueurs chevronnes.</p>
+        <p><strong>Creer son personnage.</strong> La creation de plus haut niveau reprend les etapes ci-avant et les regles de progression apres le niveau 1. On debute avec autant de PX que le minimum requis pour son niveau de depart (exemple : commencer au niveau 10 donne 64 000 PX).</p>
+        <p><strong>Equipement de depart.</strong> Le personnage ne se contente pas de l'equipement d'un PJ de niveau 1 et peut disposer d'un ou plusieurs objets magiques. La table ci-dessous sert de guide ; le MD indique quel equipement acheter avec l'argent de depart. Les armes a feu (chapitre 6) sont trop cheres pour un niveau 1, mais peuvent etre disponibles a l'achat si le MD le souhaite.</p>
+        <h3>Equipement de depart a plus haut niveau</h3>
+        <table>
+          <thead><tr><th>Niveau de depart</th><th>Equipement et fonds</th><th>Objets magiques</th></tr></thead>
+          <tbody>
+            <tr><td>2-4</td><td>Equipement de depart standard</td><td>1 courant</td></tr>
+            <tr><td>5-10</td><td>500 po plus 1d10 x 25 po, plus l'equipement de depart standard</td><td>1 courant, 1 peu courant</td></tr>
+            <tr><td>11-16</td><td>5 000 po plus 1d10 x 250 po, plus l'equipement de depart standard</td><td>2 courants, 3 peu courants, 1 rare</td></tr>
+            <tr><td>17-20</td><td>20 000 po plus 1d10 x 250 po, plus l'equipement de depart standard</td><td>2 courants, 4 peu courants, 3 rares, 1 tres rare</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

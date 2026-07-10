@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rayon tracant — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Rayon tracant">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="rayon-tracant" data-status="source"
+             data-source="img:324"
+             data-spell-level="1" data-school="evocation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="36m" data-components="V,S"
+             data-duration="1round" data-classes="clerc"
+             data-save="-" data-damage-type="radiant">
+
+      <h1>Rayon tracant</h1>
+      <p class="provenance">Evocation du 1er niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 1</span>
+        <span class="badge" data-status="source">Evocation</span>
+        <span class="pill">Clerc</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">36 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">1 round</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous projetez un trait de lumiere vers une creature a portee. Effectuez une <a href="../regles/glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">attaque de sort</a> a distance contre la cible. Si l'attaque touche, la cible subit 4d6 degats radiants et le prochain <a href="../regles/glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> effectue contre elle avant la fin de votre tour suivant a l'Avantage.</p>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <table>
+          <thead><tr><th>Emplacement</th><th>Degats radiants</th></tr></thead>
+          <tbody>
+            <tr><td>Niveau 1</td><td>4d6</td></tr>
+            <tr><td>Par niveau au-dela du 1er</td><td>+1d6</td></tr>
+          </tbody>
+        </table>
+        <p class="note">« Emplacement de niveau superieur. Les degats augmentent de 1d6 par niveau d'emplacement au-dela du 1er. »</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatiment de courroux — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Chatiment de courroux">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="chatiment-de-courroux" data-status="source"
+             data-source="img:254"
+             data-spell-level="1" data-school="necromancie"
+             data-casting-time="action-bonus" data-ritual="false" data-concentration="false"
+             data-range="perso" data-components="V"
+             data-duration="1min" data-classes="paladin"
+             data-save="sag" data-damage-type="necrotique">
+
+      <h1>Chatiment de courroux</h1>
+      <p class="provenance">Necromancie du 1er niveau (<a href="../classes/paladin.html" data-ref="paladin">Paladin</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 1</span>
+        <span class="badge" data-status="source">Necromancie</span>
+        <span class="pill">Paladin</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="small-value"><a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">Action bonus</a>, que vous entreprenez aussitot apres avoir touche une creature avec une arme de corps a corps ou une <a href="../regles/glossaire.html#attaque-a-mains-nues" data-ref="attaque-a-mains-nues">attaque a mains nues</a></span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Personnelle</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>La cible subit 1d6 degats necrotiques supplementaires et doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse sous peine de subir l'etat Effraye jusqu'a la fin du sort. Une cible ainsi Effrayee reitere le JS a la fin de chacun de ses tours et met un terme au sort sur elle-meme en cas de reussite.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Sagesse)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit l'etat Effraye jusqu'a la fin du sort (JS reitere a la fin de chacun de ses tours).</td></tr>
+            <tr><td>Reussite</td><td>N'est pas Effrayee (subit uniquement les 1d6 degats necrotiques).</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p>Les degats augmentent de 1d6 par niveau d'emplacement au-dela du 1er.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

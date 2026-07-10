@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentacules noirs d'Evard — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Tentacules noirs d'Evard">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="tentacules-noirs-d-evard" data-status="source"
+             data-source="img:338"
+             data-spell-level="4" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="27m" data-components="V,S,M" data-material="un tentacule"
+             data-duration="conc-1min" data-classes="magicien"
+             data-save="for" data-damage-type="contondant">
+
+      <h1>Tentacules noirs d'Evard</h1>
+      <p class="provenance">Invocation du 4e niveau (<a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 4</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">27 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (un tentacule)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Des tentacules fretillants d'un noir d'ebene surgissent du sol et emplissent un espace de 6 m de cote que vous voyez a portee. Pour toute la duree, ces tentacules transforment le sol de la zone en <a href="../regles/glossaire.html#terrain-difficile" data-ref="terrain-difficile">Terrain difficile</a>.</p>
+        <p>Toute creature prise dans la zone effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Force. En cas d'echec, elle subit 3d6 degats contondants, ainsi que l'etat Entrave jusqu'a la fin du sort. Une creature effectue aussi ce JS si elle penetre dans la zone ou y termine son tour. Une meme creature n'effectue en aucun cas ce JS plus d'une fois par tour.</p>
+        <p>Une creature Entravee peut entreprendre une action pour effectuer un test de Force (Athletisme) assorti de votre DD de sauvegarde des sorts, et met un terme a l'etat sur elle-meme en cas de reussite.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Force)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>3d6 degats contondants et subit l'etat Entrave jusqu'a la fin du sort.</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

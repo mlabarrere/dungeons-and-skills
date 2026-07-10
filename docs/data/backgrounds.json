@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "acolyte",
+    "name": "Acolyte",
+    "kind": "historique",
+    "ref": "../historiques/acolyte.html",
+    "source": "img:178",
+    "abilityScores": {
+      "abilities": [
+        "int",
+        "sag",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "intuition",
+      "religion"
+    ],
+    "toolProficiency": "materiel-de-calligraphe",
+    "feat": "initie-a-la-magie",
+    "featClass": "clerc",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "materiel-de-calligraphe",
+          "livre-de-prieres",
+          "symbole-sacre",
+          "parchemin-10-feuilles",
+          "robe"
+        ],
+        "gp": 8
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "intuition"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "religion"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-de-calligraphe"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "initie-a-la-magie"
+      }
+    ],
+    "choices": [
+      {
+        "id": "acolyte-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "artisan",
+    "name": "Artisan",
+    "kind": "historique",
+    "ref": "../historiques/artisan.html",
+    "source": "img:178",
+    "abilityScores": {
+      "abilities": [
+        "for",
+        "dex",
+        "int"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "investigation",
+      "persuasion"
+    ],
+    "toolProficiency": "outils-d-artisan",
+    "feat": "faconneur",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "outils-d-artisan",
+          "2-sacoches",
+          "tenue-de-voyage"
+        ],
+        "gp": 32
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "investigation"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "persuasion"
+      },
+      {
+        "type": "requiresChoice",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "outils-d-artisan"
+        }
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "faconneur"
+      }
+    ],
+    "choices": [
+      {
+        "id": "artisan-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "int"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      },
+      {
+        "id": "artisan-outils",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "outils-d-artisan"
+        }
+      }
+    ]
+  },
+  {
+    "id": "artiste",
+    "name": "Artiste",
+    "kind": "historique",
+    "ref": "../historiques/artiste.html",
+    "source": "img:179",
+    "abilityScores": {
+      "abilities": [
+        "for",
+        "dex",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "acrobaties",
+      "representation"
+    ],
+    "toolProficiency": "instrument-de-musique",
+    "feat": "musicien",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "instrument-de-musique",
+          "2-costumes",
+          "miroir",
+          "parfum",
+          "tenue-de-voyage"
+        ],
+        "gp": 11
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "acrobaties"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "representation"
+      },
+      {
+        "type": "requiresChoice",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "instrument-de-musique"
+        }
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "musicien"
+      }
+    ],
+    "choices": [
+      {
+        "id": "artiste-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      },
+      {
+        "id": "artiste-instrument",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "instrument-de-musique"
+        }
+      }
+    ]
+  },
+  {
+    "id": "charlatan",
+    "name": "Charlatan",
+    "kind": "historique",
+    "ref": "../historiques/charlatan.html",
+    "source": "img:179",
+    "abilityScores": {
+      "abilities": [
+        "dex",
+        "con",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "escamotage",
+      "tromperie"
+    ],
+    "toolProficiency": "materiel-de-contrefacon",
+    "feat": "doue",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "materiel-de-contrefacon",
+          "beaux-habits",
+          "costume"
+        ],
+        "gp": 15
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "escamotage"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "tromperie"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-de-contrefacon"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "doue"
+      }
+    ],
+    "choices": [
+      {
+        "id": "charlatan-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "con",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "criminel",
+    "name": "Criminel",
+    "kind": "historique",
+    "ref": "../historiques/criminel.html",
+    "source": "img:180",
+    "abilityScores": {
+      "abilities": [
+        "dex",
+        "con",
+        "int"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "discretion",
+      "escamotage"
+    ],
+    "toolProficiency": "outils-de-voleur",
+    "feat": "vigilant",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "2-dagues",
+          "outils-de-voleur",
+          "2-sacoches",
+          "pied-de-biche",
+          "tenue-de-voyage"
+        ],
+        "gp": 16
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "discretion"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "escamotage"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "outils-de-voleur"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "vigilant"
+      }
+    ],
+    "choices": [
+      {
+        "id": "criminel-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "con",
+          "int"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "ermite",
+    "name": "Ermite",
+    "kind": "historique",
+    "ref": "../historiques/ermite.html",
+    "source": "img:180",
+    "abilityScores": {
+      "abilities": [
+        "con",
+        "sag",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "medecine",
+      "religion"
+    ],
+    "toolProficiency": "materiel-d-herboriste",
+    "feat": "guerisseur",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "baton-de-combat",
+          "materiel-d-herboriste",
+          "huile-3-flasques",
+          "lampe",
+          "livre-philosophie",
+          "sac-de-couchage",
+          "tenue-de-voyage"
+        ],
+        "gp": 16
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "medecine"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "religion"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-d-herboriste"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "guerisseur"
+      }
+    ],
+    "choices": [
+      {
+        "id": "ermite-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "con",
+          "sag",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "fermier",
+    "name": "Fermier",
+    "kind": "historique",
+    "ref": "../historiques/fermier.html",
+    "source": "img:181",
+    "abilityScores": {
+      "abilities": [
+        "for",
+        "con",
+        "sag"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "dressage",
+      "nature"
+    ],
+    "toolProficiency": "outils-de-charpentier",
+    "feat": "robuste",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "serpe",
+          "outils-de-charpentier",
+          "trousse-de-soins",
+          "pelle",
+          "pot-en-fer",
+          "tenue-de-voyage"
+        ],
+        "gp": 30
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "dressage"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "nature"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "outils-de-charpentier"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "robuste"
+      }
+    ],
+    "choices": [
+      {
+        "id": "fermier-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "con",
+          "sag"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "garde",
+    "name": "Garde",
+    "kind": "historique",
+    "ref": "../historiques/garde.html",
+    "source": "img:181",
+    "abilityScores": {
+      "abilities": [
+        "for",
+        "int",
+        "sag"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "athletisme",
+      "perception"
+    ],
+    "toolProficiency": "boite-de-jeux",
+    "feat": "vigilant",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "arbalete-legere",
+          "20-carreaux",
+          "carquois",
+          "lance",
+          "boite-de-jeux",
+          "lanterne-a-capote",
+          "menottes",
+          "tenue-de-voyage"
+        ],
+        "gp": 12
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "athletisme"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "perception"
+      },
+      {
+        "type": "requiresChoice",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "vigilant"
+      }
+    ],
+    "choices": [
+      {
+        "id": "garde-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "int",
+          "sag"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      },
+      {
+        "id": "garde-boite-de-jeux",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      }
+    ]
+  },
+  {
+    "id": "guide",
+    "name": "Guide",
+    "kind": "historique",
+    "ref": "../historiques/guide.html",
+    "source": "img:182",
+    "abilityScores": {
+      "abilities": [
+        "dex",
+        "con",
+        "sag"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "discretion",
+      "survie"
+    ],
+    "toolProficiency": "outils-de-cartographe",
+    "feat": "initie-a-la-magie",
+    "featClass": "druide",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "arc-court",
+          "20-fleches",
+          "carquois",
+          "outils-de-cartographe",
+          "sac-de-couchage",
+          "tente",
+          "tenue-de-voyage"
+        ],
+        "gp": 3
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "discretion"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "survie"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "outils-de-cartographe"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "initie-a-la-magie"
+      }
+    ],
+    "choices": [
+      {
+        "id": "guide-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "con",
+          "sag"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "marchand",
+    "name": "Marchand",
+    "kind": "historique",
+    "ref": "../historiques/marchand.html",
+    "source": "img:182",
+    "abilityScores": {
+      "abilities": [
+        "con",
+        "int",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "dressage",
+      "persuasion"
+    ],
+    "toolProficiency": "instruments-de-navigateur",
+    "feat": "chanceux",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "instruments-de-navigateur",
+          "2-sacoches",
+          "tenue-de-voyage"
+        ],
+        "gp": 22
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "dressage"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "persuasion"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "instruments-de-navigateur"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "chanceux"
+      }
+    ],
+    "choices": [
+      {
+        "id": "marchand-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "con",
+          "int",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "marin",
+    "name": "Marin",
+    "kind": "historique",
+    "ref": "../historiques/marin.html",
+    "source": "img:183",
+    "abilityScores": {
+      "abilities": [
+        "for",
+        "dex",
+        "sag"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "acrobaties",
+      "perception"
+    ],
+    "toolProficiency": "instruments-de-navigateur",
+    "feat": "bagarreur-de-tavernes",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "dague",
+          "instruments-de-navigateur",
+          "corde",
+          "tenue-de-voyage"
+        ],
+        "gp": 20
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "acrobaties"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "perception"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "instruments-de-navigateur"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "bagarreur-de-tavernes"
+      }
+    ],
+    "choices": [
+      {
+        "id": "marin-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "sag"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "noble",
+    "name": "Noble",
+    "kind": "historique",
+    "ref": "../historiques/noble.html",
+    "source": "img:183",
+    "abilityScores": {
+      "abilities": [
+        "for",
+        "int",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "histoire",
+      "persuasion"
+    ],
+    "toolProficiency": "boite-de-jeux",
+    "feat": "doue",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "boite-de-jeux",
+          "beaux-habits",
+          "parfum"
+        ],
+        "gp": 29
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "histoire"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "persuasion"
+      },
+      {
+        "type": "requiresChoice",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "doue"
+      }
+    ],
+    "choices": [
+      {
+        "id": "noble-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "int",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      },
+      {
+        "id": "noble-boite-de-jeux",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "kind": "historique",
+    "ref": "../historiques/sage.html",
+    "source": "img:184",
+    "abilityScores": {
+      "abilities": [
+        "con",
+        "int",
+        "sag"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "arcanes",
+      "histoire"
+    ],
+    "toolProficiency": "materiel-de-calligraphe",
+    "feat": "initie-a-la-magie",
+    "featClass": "magicien",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "baton-de-combat",
+          "materiel-de-calligraphe",
+          "livre-histoire",
+          "parchemin-8-feuilles",
+          "robe"
+        ],
+        "gp": 8
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "arcanes"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "histoire"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-de-calligraphe"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "initie-a-la-magie"
+      }
+    ],
+    "choices": [
+      {
+        "id": "sage-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "con",
+          "int",
+          "sag"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "scribe",
+    "name": "Scribe",
+    "kind": "historique",
+    "ref": "../historiques/scribe.html",
+    "source": "img:184",
+    "abilityScores": {
+      "abilities": [
+        "dex",
+        "int",
+        "sag"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "investigation",
+      "perception"
+    ],
+    "toolProficiency": "materiel-de-calligraphe",
+    "feat": "doue",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "materiel-de-calligraphe",
+          "beaux-habits",
+          "lampe",
+          "huile-3-flasques",
+          "parchemin-12-feuilles"
+        ],
+        "gp": 23
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "investigation"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "perception"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-de-calligraphe"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "doue"
+      }
+    ],
+    "choices": [
+      {
+        "id": "scribe-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "int",
+          "sag"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "soldat",
+    "name": "Soldat",
+    "kind": "historique",
+    "ref": "../historiques/soldat.html",
+    "source": "img:185",
+    "abilityScores": {
+      "abilities": [
+        "for",
+        "dex",
+        "con"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "athletisme",
+      "intimidation"
+    ],
+    "toolProficiency": "boite-de-jeux",
+    "feat": "sauvagerie-martiale",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "arc-court",
+          "20-fleches",
+          "carquois",
+          "lance",
+          "boite-de-jeux",
+          "trousse-de-soins",
+          "tenue-de-voyage"
+        ],
+        "gp": 14
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "athletisme"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "intimidation"
+      },
+      {
+        "type": "requiresChoice",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "sauvagerie-martiale"
+      }
+    ],
+    "choices": [
+      {
+        "id": "soldat-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      },
+      {
+        "id": "soldat-boite-de-jeux",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      }
+    ]
+  },
+  {
+    "id": "voyageur",
+    "name": "Voyageur",
+    "kind": "historique",
+    "ref": "../historiques/voyageur.html",
+    "source": "img:185",
+    "abilityScores": {
+      "abilities": [
+        "dex",
+        "sag",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "discretion",
+      "intuition"
+    ],
+    "toolProficiency": "outils-de-voleur",
+    "feat": "chanceux",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "2-dagues",
+          "outils-de-voleur",
+          "boite-de-jeux",
+          "sac-de-couchage",
+          "2-sacoches",
+          "tenue-de-voyage"
+        ],
+        "gp": 16
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "discretion"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "intuition"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "outils-de-voleur"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "chanceux"
+      }
+    ],
+    "choices": [
+      {
+        "id": "voyageur-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "sag",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  }
+]

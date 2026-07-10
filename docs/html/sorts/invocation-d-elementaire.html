@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invocation d'elementaire — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Invocation d'elementaire">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="invocation-d-elementaire" data-status="source"
+             data-source="img:298"
+             data-spell-level="5" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="18m" data-components="V,S"
+             data-duration="conc-10min" data-classes="druide,magicien"
+             data-save="dex" data-damage-type="-">
+
+      <h1>Invocation d'elementaire</h1>
+      <p class="provenance">Invocation du 5e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 5</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">18 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 10 minutes</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous invoquez un esprit intangible de taille G issu des Plans Elementaires, qui apparait en un <a href="../regles/glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> a portee. Choisissez l'element de l'esprit, qui definit son type de degats : air (foudre), eau (froid), feu (feu) ou terre (tonnerre). L'esprit persiste pour toute la duree.</p>
+        <p>Chaque fois qu'une creature que vous voyez penetre dans l'espace de l'esprit ou commence son tour dans un rayon de 10 m de celui-ci, vous pouvez la contraindre a un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite si l'esprit n'a pas de creature Entravee. En cas d'echec, la cible subit 8d8 degats du type associe a l'esprit, ainsi que l'etat Entrave jusqu'a la fin du sort. Au debut de chacun de ses tours, la cible Entravee reitere le JS. En cas d'echec, elle subit 4d8 degats du type de l'esprit. En cas de reussite, elle n'est plus Entravee par l'esprit.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>8d8 degats du type de l'esprit + etat Entrave (JS reitere en debut de tour, 4d8 a l'echec).</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet (ou plus Entravee au JS suivant).</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">Les degats augmentent de 2d8 par niveau d'emplacement au-dela du 5e.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

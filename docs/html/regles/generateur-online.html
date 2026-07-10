@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadrage du generateur online — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Cadrage du generateur">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="generateur-online" data-status="source" data-source="md:generateur-online">
+      <h1>Generateur online de personnage — cadrage produit</h1>
+      <p class="note">Document de reference. Objectif final : une application web deployable sur Vercel qui <a href="../historiques/guide.html" data-ref="guide">guide</a> la creation d'un personnage D&D 2024 / 5.5 et remplit une fiche imprimable au fil de l'eau. Le repo Markdown reste la source de verite ; les images du livre ne doivent pas etre necessaires au fonctionnement.</p>
+
+      <section class="section">
+        <h2>Experience cible</h2>
+        <ul>
+          <li>a gauche : un assistant de creation avec etapes, choix restants, conflits, recommandations et alertes ;</li>
+          <li>a droite : une <a href="./glossaire.html#fiche-de-personnage" data-ref="fiche-de-personnage">fiche de personnage</a> visuelle, proche de la fiche officielle, prete a imprimer ;</li>
+          <li>une mise a jour immediate quand le joueur change un choix ;</li>
+          <li>une sortie imprimable via le navigateur ;</li>
+          <li>une separation claire entre faits, calculs, choix manquants, conflits et recommandations.</li>
+        </ul>
+        <p class="note">Le joueur ne doit pas avoir a connaitre toutes les regles : l'interface ne demande que ce qui ne peut pas etre deduit depuis les sources Markdown.</p>
+      </section>
+
+      <section class="section">
+        <h2>Principes non negociables</h2>
+        <ul>
+          <li>Les fichiers Markdown sont la source documentaire.</li>
+          <li>Les images ne sont pas utilisees par l'application.</li>
+          <li>Un choix automatique ne doit jamais etre redemande.</li>
+          <li>Un conflit ne doit jamais etre corrige silencieusement.</li>
+          <li>Une recommandation ne doit jamais etre confondue avec une regle certaine.</li>
+          <li>La fiche imprimable doit etre reproductible a partir d'un etat de personnage sauvegarde.</li>
+          <li>Les contenus repris du livre restent des aides personnelles de reference, pas une republication exhaustive publique.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Role du LLM</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Le LLM est utile pour</h3>
+            <ul>
+              <li>extraire et normaliser les informations Markdown pendant la construction ;</li>
+              <li>aider a detecter les trous documentaires ;</li>
+              <li>proposer des remediations lisibles ;</li>
+              <li>expliquer les conflits ou les choix au joueur.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Calculs a codifier (pas le LLM en production)</h3>
+            <div class="pill-row">
+              <span class="pill">modificateurs</span>
+              <span class="pill">bonus de maitrise</span>
+              <span class="pill"><a href="./glossaire.html#points-de-vie" data-ref="points-de-vie">points de vie</a></span>
+              <span class="pill">CA</span>
+              <span class="pill">initiative</span>
+              <span class="pill">jets de sauvegarde</span>
+              <span class="pill">competences</span>
+              <span class="pill"><a href="./glossaire.html#perception-passive" data-ref="perception-passive">perception passive</a></span>
+              <span class="pill">DD des sorts</span>
+              <span class="pill">attaques de sort</span>
+              <span class="pill">attaques d'<a href="../equipement/armes.html" data-ref="armes">armes</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Architecture cible</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Stack recommandee</h3>
+            <ul>
+              <li>Next.js App Router sur Vercel ;</li>
+              <li>TypeScript ;</li>
+              <li>donnees de regles versionnees dans le repo ;</li>
+              <li>moteur de generation cote client ou serveur selon les besoins ;</li>
+              <li>rendu imprimable en HTML/CSS avec stylesheet <code>print</code>.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Structure possible</h3>
+            <p class="provenance">app/ &mdash; page.tsx, character/[id]/page.tsx, print/[id]/page.tsx</p>
+            <p class="provenance">src/data/ &mdash; rules.generated.json</p>
+            <p class="provenance">src/domain/ &mdash; character.ts, rules.ts, validation.ts, calculations.ts</p>
+            <p class="provenance">src/components/ &mdash; builder/, sheet/, alerts/</p>
+            <p class="provenance">docs/md/</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Pipeline Markdown vers donnees</h2>
+        <ol>
+          <li>Maintenir les fichiers <code>docs/md/*.md</code>.</li>
+          <li>Ajouter des sections et tableaux stables dans les MD.</li>
+          <li>Generer un fichier <code>rules.generated.json</code> depuis les MD.</li>
+          <li>Valider le JSON avec un schema.</li>
+          <li>Faire tourner les tests du moteur sur des personnages exemples, dont Medicis.</li>
+        </ol>
+        <p class="note">Le JSON genere ne remplace pas les MD ; il sert de format applicatif.</p>
+      </section>
+
+      <section class="section">
+        <h2>Donnees applicatives minimales</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Entree (CharacterInput)</h3>
+            <p class="provenance">name, level, classId, backgroundId, speciesId, lineageId?, abilityScores (Record&lt;Ability, number&gt;), choices (CharacterChoice[]), notes?</p>
+          </div>
+          <div>
+            <h3>Sortie (CharacterBuild)</h3>
+            <p class="provenance">input, facts (Fact[]), derived (DerivedValue[]), sheet (PrintableSheet), missingChoices, conflicts, recommendations</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Etats a afficher</h2>
+        <p class="note">Chaque information affichee <a href="../historiques/garde.html" data-ref="garde">garde</a> son statut.</p>
+        <table>
+          <thead><tr><th>Statut</th><th>Badge</th><th>Affichage attendu</th></tr></thead>
+          <tbody>
+            <tr><td>Fourni</td><td><span class="badge" data-status="fourni">Fourni</span></td><td>Valeur saisie par le joueur.</td></tr>
+            <tr><td>Source</td><td><span class="badge" data-status="source">Source</span></td><td>Valeur issue des regles Markdown.</td></tr>
+            <tr><td>Calcule</td><td><span class="badge" data-status="calcule">Calcule</span></td><td>Valeur calculee par le moteur.</td></tr>
+            <tr><td>Deduit</td><td><span class="badge" data-status="deduit">Deduit</span></td><td>Valeur probable, a confirmer.</td></tr>
+            <tr><td>Manquant</td><td><span class="badge" data-status="manquant">Manquant</span></td><td>Choix requis.</td></tr>
+            <tr><td>A arbitrer</td><td><span class="badge" data-status="arbitrer">A arbitrer</span></td><td>Decision MD ou table.</td></tr>
+            <tr><td>Incoherent</td><td><span class="badge" data-status="incoherent">Incoherent</span></td><td>Donnees incompatibles.</td></tr>
+            <tr><td>Conflit</td><td><span class="badge" data-status="conflit">Conflit</span></td><td>Choix duplique ou contradictoire.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Fiche imprimable</h2>
+        <p>La fiche imprimable doit etre une page HTML/CSS, pas forcement un PDF rempli. Approche recommandee : recreer une fiche claire en HTML ; utiliser des zones fixes et un CSS <code>@media print</code> ; verifier le rendu A4 ; proposer un bouton <em>Imprimer</em> qui appelle <code>window.print()</code>. Le PDF officiel sert de reference visuelle, mais le rendu final est controle par l'application.</p>
+      </section>
+
+      <section class="section">
+        <h2>Fonctionnement guide</h2>
+        <ol>
+          <li>Identite : nom, niveau, classe, historique, espece, lignage.</li>
+          <li>Caracteristiques : valeurs et methode.</li>
+          <li>Choix automatiques : afficher ce qui est deja accorde.</li>
+          <li>Choix restants : poser uniquement les choix non resolus.</li>
+          <li><a href="../equipement/index.html" data-ref="index-equipement">Equipement</a> : option de classe, option d'historique, objets portes.</li>
+          <li>Sorts : distinguer sorts automatiques, choisis, prepares.</li>
+          <li>Validation : conflits, incoherences, manques.</li>
+          <li>Impression : fiche finale et resume des alertes.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>Tests de reference (Medicis)</h2>
+        <p><a href="../personnages/medicis.html" data-ref="medicis">Medicis</a> devient le premier test de bout en bout. Le test verifie :</p>
+        <ul>
+          <li>que les PV sont calcules depuis <a href="../classes/druide.html" data-ref="druide">druide</a> niveau 1 et Constitution ;</li>
+          <li>que les JS maitrises viennent de la classe ;</li>
+          <li>que les competences viennent de la classe, de l'historique et de l'espece ;</li>
+          <li>que <em>druidisme</em> automatique d'<a href="../especes/elfe.html" data-ref="elfe">elfe</a> sylvestre est detecte ;</li>
+          <li>que <em><a href="../sorts/communication-avec-les-animaux.html" data-ref="communication-avec-les-animaux">communication avec les animaux</a></em> automatique du druide est detecte ;</li>
+          <li>que les doublons de sorts sont signales ;</li>
+          <li>que l'equipement compose comme <em>focaliseur druidique (baton de combat)</em> est decomposable ;</li>
+          <li>que la CA et les attaques sont calculees depuis l'equipement porte.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Roadmap</h2>
+        <div class="grid-2">
+          <div class="field">
+            <span class="label">Phase 1 — Stabiliser les MD</span>
+            <p class="small-value">Completer les trous documentaires, normaliser les tableaux lus par machine, ajouter les cas ambigus au protocole, finaliser Medicis comme fiche de test.</p>
+          </div>
+          <div class="field">
+            <span class="label">Phase 2 — Creer le moteur</span>
+            <p class="small-value">Definir les types TypeScript, convertir les MD en JSON, coder les calculs stables, la detection des choix manquants et des conflits.</p>
+          </div>
+          <div class="field">
+            <span class="label">Phase 3 — Construire l'interface</span>
+            <p class="small-value">Assistant de saisie, panneau d'alertes, fiche live, mode impression.</p>
+          </div>
+          <div class="field">
+            <span class="label">Phase 4 — Deployer</span>
+            <p class="small-value">Projet Next.js sur Vercel, build de validation, tests de non-regression avec Medicis et les autres personnages de la table.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Questions ouvertes</h2>
+        <table>
+          <thead><tr><th>Sujet</th><th>Question</th><th>Impact</th></tr></thead>
+          <tbody>
+            <tr><td>Sauvegarde</td><td>Personnages stockes en local, dans le repo, ou en base ?</td><td>Produit / confidentialite.</td></tr>
+            <tr><td>Authentification</td><td>Application privee pour la table ou partageable ?</td><td>Vercel / securite.</td></tr>
+            <tr><td>Multilingue</td><td>Francais seulement au depart, ou structure prete pour plusieurs langues ?</td><td>Modele de donnees.</td></tr>
+            <tr><td>Fiche officielle</td><td>Reproduire une fiche proche ou remplir un PDF officiel ?</td><td>Complexite technique.</td></tr>
+            <tr><td>Sources</td><td>Jusqu'ou peut-on exposer les textes de regles dans une app web ?</td><td>Legal / diffusion.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

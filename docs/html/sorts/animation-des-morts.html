@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animation des morts — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Animation des morts">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="animation-des-morts" data-status="source"
+             data-source="img:238,239"
+             data-spell-level="3" data-school="necromancie"
+             data-casting-time="1min" data-ritual="false" data-concentration="false"
+             data-range="3m" data-components="V,S,M" data-material="une goutte de sang, un morceau de chair et une pincee de poudre d'os"
+             data-duration="instantanee" data-classes="clerc,magicien">
+
+      <h1>Animation des morts</h1>
+      <p class="provenance">Necromancie du 3e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 3</span>
+        <span class="badge" data-status="source">Necromancie</span>
+        <span class="pill">Clerc</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">1 minute</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">3 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="small-value">V, S, M (une goutte de sang, un morceau de chair et une pincee de poudre d'os)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Instantanee</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Choisissez un tas d'os ou un cadavre a portee, tire d'un Humanoide de taille M ou P. La cible devient un Mort-vivant : un <a href="../creatures/squelette.html" data-ref="squelette">squelette</a> si vous avez opte pour des os ou un <a href="../creatures/zombi.html" data-ref="zombi">zombi</a> si vous avez choisi un cadavre (profil de la creature en annexe B).</p>
+        <p>A chacun de vos tours, vous pouvez consacrer une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> a donner des ordres mentaux a toute creature que vous avez creee par ce sort et qui se trouve dans un rayon de 18 m. Vous pouvez ainsi controler plusieurs creatures, en les choisissant, a condition de leur intimer le meme ordre. Vous decidez quelle action la creature va entreprendre et ou elle se deplacera a son tour suivant, ou vous pouvez vous contenter de donner une instruction generale, comme garder une salle ou un couloir. Sans instruction de votre part, la creature entreprend l'action Esquive et ne se deplace que pour eviter les dangers. Une fois qu'elle a recu un ordre, la creature s'y soumet jusqu'a ce que la tache soit accomplie.</p>
+        <p>La creature reste sous votre controle pendant 24 heures, apres quoi elle cesse d'obeir aux ordres que vous lui avez donnes. Pour en garder le controle pendant 24 heures de plus, vous devez relancer ce sort sur lui avant la fin des 24 heures en cours. Relancer le sort ainsi reaffirme votre emprise sur un maximum de quatre creatures que vous avez animees par ce sort, au lieu d'en animer une nouvelle.</p>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p class="note">« Emplacement de niveau superieur. Vous prenez ou prolongez le controle de deux Morts-vivants supplementaires par niveau d'emplacement au-dela du 3e. Chacune de ces creatures doit etre issue d'un tas d'os ou cadavre different. »</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

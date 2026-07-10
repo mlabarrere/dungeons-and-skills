@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mur d'epines — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Mur d'epines">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="mur-d-epines" data-status="source"
+             data-source="img:310"
+             data-spell-level="6" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="36m" data-components="V,S,M" data-material="une poignee d'epines"
+             data-duration="conc-10min" data-classes="druide"
+             data-save="dex" data-damage-type="perforant">
+
+      <h1>Mur d'epines</h1>
+      <p class="provenance">Invocation du 6e niveau (<a href="../classes/druide.html" data-ref="druide">Druide</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 6</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Druide</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">36 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (une poignee d'epines)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 10 minutes</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous creez un mur fait d'un enchevetrement vegetal herisse d'epines acerees. Le mur apparait a portee sur une surface solide et persiste pour toute la duree. Vous pouvez ainsi eriger un mur dont l'epaisseur n'excede pas 1,50 m ; pour le reste, vous avez le choix entre un mur droit long d'un maximum de 18 m et haut de 3 m ou moins, et un mur circulaire dont le diametre et la hauteur ne depassent pas 6 m. Le mur bloque le champ de vision.</p>
+        <p>Quand le mur apparait, chaque creature prise dans sa zone effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite et subit 7d8 degats perforants en cas d'echec, la moitie en cas de reussite.</p>
+        <p>Une creature peut se deplacer a travers ces ronces, mais l'operation est lente et douloureuse. Toute distance parcourue a travers le mur lui coute le quadruple en termes de deplacement. De plus, la premiere fois d'un tour qu'une creature penetre dans la haie ou qu'elle y termine son propre tour, elle effectue un jet de sauvegarde de Dexterite et subit 7d8 degats tranchants en cas d'echec, la moitie en cas de reussite. Une meme creature n'effectue en aucun cas ce JS plus d'une fois par tour.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit la totalite des degats (7d8 perforants a l'apparition ; 7d8 tranchants a la traversee).</td></tr>
+            <tr><td>Reussite</td><td>Subit la moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Aux niveaux superieurs</h2>
+        <p>Les degats des deux types augmentent de 1d8 par niveau d'emplacement au-dela du 6e.</p>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

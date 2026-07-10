@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Controle du climat — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Controle du climat">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="controle-du-climat" data-status="source"
+             data-source="img:261"
+             data-spell-level="8" data-school="transmutation"
+             data-casting-time="10min" data-ritual="false" data-concentration="true"
+             data-range="perso" data-components="V,S,M" data-material="de l'encens qui brule"
+             data-duration="conc-8h" data-classes="clerc,druide,magicien"
+             data-save="-" data-damage-type="-">
+
+      <h1>Controle du climat</h1>
+      <p class="provenance">Transmutation du 8e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 8</span>
+        <span class="badge" data-status="source">Transmutation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Clerc</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">10 minutes</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">Personnelle</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (de l'encens qui brule)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 8 heures</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Vous prenez le controle du climat dans un rayon de 7,5 km pour toute la duree. Vous devez vous trouver en exterieur pour lancer ce sort, qui prend fin prematurement des que vous etes a l'interieur.</p>
+        <p>A l'incantation du sort, vous alterez les conditions climatiques du moment, determinees par le MD. Vous pouvez modifier les precipitations, la temperature et le vent. Les nouvelles conditions mettent 1d4 x 10 minutes a prendre effet. Apres ce laps de temps, vous pouvez a nouveau alterer les conditions. Quand le sort prend fin, le temps revient progressivement a la normale.</p>
+        <p>Lorsque vous changez les conditions climatiques, identifiez celles du moment dans les tables qui suivent et changez-en le stade d'un cran, vers le haut ou le bas. Lorsque vous modifiez le vent, vous pouvez en changer la direction.</p>
+
+        <h3 style="margin-top: 12px;">Precipitations</h3>
+        <table>
+          <thead><tr><th>Stade</th><th>Conditions</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Ciel degage</td></tr>
+            <tr><td>2</td><td>Quelques nuages</td></tr>
+            <tr><td>3</td><td>Ciel charge ou brume au sol</td></tr>
+            <tr><td>4</td><td>Pluie, grele ou neige</td></tr>
+            <tr><td>5</td><td>Pluie torrentielle, grele battante ou blizzard</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top: 12px;">Temperature</h3>
+        <table>
+          <thead><tr><th>Stade</th><th>Conditions</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Caniculaire</td></tr>
+            <tr><td>2</td><td>Chaud</td></tr>
+            <tr><td>3</td><td>Doux</td></tr>
+            <tr><td>4</td><td>Frais</td></tr>
+            <tr><td>5</td><td>Froid</td></tr>
+            <tr><td>6</td><td>Glacial</td></tr>
+          </tbody>
+        </table>
+
+        <h3 style="margin-top: 12px;">Vent</h3>
+        <table>
+          <thead><tr><th>Stade</th><th>Conditions</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Calme</td></tr>
+            <tr><td>2</td><td>Vent modere</td></tr>
+            <tr><td>3</td><td>Vent fort</td></tr>
+            <tr><td>4</td><td>Vent violent</td></tr>
+            <tr><td>5</td><td>Tempete</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

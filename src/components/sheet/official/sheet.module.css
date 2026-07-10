@@ -1,0 +1,839 @@
+/* Fiche officielle D&D 2024 — styles scopés (aucune dépendance à Tailwind).
+   Conçu pour être embeddable proprement et imprimable (Letter/A4).
+   Réf. visuelle : docs/_analysis/character_sheet/page{1,2}_{en,fr}.png */
+
+.sheet {
+  /* palette fidèle : traits gris, encre noire, papier crème très clair */
+  --line: #6b6b6b;
+  --line-soft: #9a9a9a;
+  --line-faint: #c4c4c4;
+  --ink: #1c1a17;
+  --muted: #6a6459;
+  --paper: #ffffff;
+  --grid: rgba(60, 55, 45, 0.07);
+  --fill: #2a2622;
+
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* --- Feuille format US Letter (816 × 1056 @96dpi) --- */
+.page {
+  position: relative;
+  width: 816px;
+  min-height: 1056px;
+  box-sizing: border-box;
+  padding: 22px;
+  background: var(--paper);
+  background-image:
+    radial-gradient(rgba(120, 110, 95, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--line-faint);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* rivets décoratifs aux 4 coins de la feuille */
+.rivet {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--line-soft);
+  border-radius: 50%;
+  background: var(--paper);
+  z-index: 3;
+}
+.rivetTL { top: 9px; left: 9px; }
+.rivetTR { top: 9px; right: 9px; }
+.rivetBL { bottom: 9px; left: 9px; }
+.rivetBR { bottom: 9px; right: 9px; }
+
+/* ---------- Cartes / cadres ----------
+   Cadre à coins biseautés + double filet, dessiné par deux pseudo-éléments
+   (le contenu n'est PAS rogné : les éléments qui dépassent — ex. case Valeur —
+   restent visibles). */
+.card {
+  position: relative;
+  --bevel: 8px;
+  background: transparent;
+  padding: 8px;
+}
+/* filet extérieur (couleur trait) */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: var(--line);
+  clip-path: polygon(
+    var(--bevel) 0, calc(100% - var(--bevel)) 0, 100% var(--bevel),
+    100% calc(100% - var(--bevel)), calc(100% - var(--bevel)) 100%,
+    var(--bevel) 100%, 0 calc(100% - var(--bevel)), 0 var(--bevel)
+  );
+}
+/* remplissage papier + second filet très léger (double trait) */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 1.4px;
+  z-index: 0;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.4px var(--paper),
+    inset 0 0 0 2.6px rgba(107, 107, 107, 0.22);
+  clip-path: polygon(
+    var(--bevel) 0, calc(100% - var(--bevel)) 0, 100% var(--bevel),
+    100% calc(100% - var(--bevel)), calc(100% - var(--bevel)) 100%,
+    var(--bevel) 100%, 0 calc(100% - var(--bevel)), 0 var(--bevel)
+  );
+}
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+.card > .cardInner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Typographie ---------- */
+.label {
+  font-size: 8.5px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  line-height: 1.05;
+}
+.sectionTitle {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ink);
+  margin: 1px 0 5px;
+}
+.cardTitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--ink);
+}
+
+/* Marque centrale */
+.wordmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2px 0 4px;
+}
+.wordmark hr {
+  flex: 1;
+  border: none;
+  border-top: 1.3px solid var(--line);
+  margin: 0;
+}
+.wordmarkText {
+  font-family: var(--font-cinzel), Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.wordmarkText .amp {
+  font-style: italic;
+  padding: 0 2px;
+}
+
+/* ---------- Champs remplissables ---------- */
+.line {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  padding: 1px 2px;
+  color: var(--ink);
+  min-width: 0;
+}
+.line:focus {
+  outline: none;
+  border-bottom-color: var(--ink);
+  background: rgba(123, 160, 91, 0.08);
+}
+.write {
+  width: 100%;
+  flex: 1;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  padding: 2px;
+  resize: none;
+  color: var(--ink);
+}
+.write:focus {
+  outline: none;
+  background: rgba(123, 160, 91, 0.06);
+}
+
+/* zone lignée façon papier millimétré */
+.grid {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 13px 13px;
+  background-position: -1px -1px;
+}
+
+/* Pastille de maîtrise (cercle cochable) */
+.dot {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: none;
+  width: 11px;
+  height: 11px;
+  border: 1.4px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+}
+.dot:checked {
+  background: var(--fill);
+  box-shadow: inset 0 0 0 1.6px var(--paper);
+}
+.dot:focus-visible {
+  outline: 2px solid var(--ring, #7ba05b);
+  outline-offset: 1px;
+}
+
+/* Case losange (death saves, spell slots, armor training, attunement) */
+.diamond {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: none;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border: 1.4px solid var(--line);
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+}
+.diamond:checked {
+  background: var(--fill);
+  box-shadow: inset 0 0 0 1.6px var(--paper);
+}
+.diamond:focus-visible {
+  outline: 2px solid var(--ring, #7ba05b);
+  outline-offset: 1px;
+}
+
+/* ---------- PAGE 1 : en-tête ---------- */
+.headerRow {
+  display: grid;
+  grid-template-columns: 1fr 96px 92px 1fr;
+  gap: 8px;
+  align-items: stretch;
+}
+.identity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 12px 14px;
+}
+.idLine {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.idGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 14px;
+}
+.idField {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+/* oval niveau / xp — forme propre, sans cadre biseauté */
+.oval,
+.shield {
+  --no-frame: 1;
+}
+.oval::before,
+.oval::after,
+.shield::before,
+.shield::after {
+  display: none;
+}
+.oval {
+  border: 1.4px solid var(--line);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 6px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 2px var(--paper),
+    inset 0 0 0 3.4px rgba(107, 107, 107, 0.32);
+}
+.ovalCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.ovalCell input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font: inherit;
+  text-align: center;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--ink);
+}
+.ovalCell input:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+
+/* bouclier CA */
+.shield {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 6px;
+  color: var(--ink);
+}
+.shield svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.shield .cardTitle,
+.shield .acValue,
+.shield .shieldBox {
+  position: relative;
+  z-index: 1;
+}
+.acValue {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  width: 56px;
+  margin-top: 6px;
+  color: var(--ink);
+}
+.acValue:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+.shieldBox {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  margin-bottom: 8px;
+}
+
+/* HP / dés de vie / JS mort */
+.statTriple {
+  display: grid;
+  grid-template-columns: 1.55fr 0.8fr 0.85fr;
+  gap: 0;
+}
+.statTriple > div {
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+}
+.statTriple > div + div {
+  border-left: 1.2px solid var(--line);
+}
+.hpGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 2px 8px;
+  flex: 1;
+}
+.hpBig { grid-column: 1 / 2; grid-row: 1 / 3; }
+.bigNum {
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--ink);
+}
+.bigNum:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+.stackField {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.deathRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: space-between;
+}
+.diamonds { display: flex; gap: 5px; }
+
+/* ---------- PAGE 1 : corps ---------- */
+.body {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  flex: 1;
+}
+.leftBlock {
+  width: 300px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.abilityCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  align-items: start;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rightBlock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+/* petite carte info (prof bonus) */
+.miniStat {
+  padding: 6px 8px 8px;
+  text-align: center;
+}
+.miniStat .cardTitle { margin-bottom: 5px; }
+.miniStat input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  width: 80%;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--ink);
+}
+.miniStat input:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+
+/* carte caractéristique */
+.ability { padding: 5px 7px 6px; }
+.ability .cardTitle { margin-bottom: 2px; }
+.abilityTop {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 2px 0 0;
+}
+.circle {
+  width: 56px;
+  height: 56px;
+  border: 1.4px solid var(--line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 3px rgba(107, 107, 107, 0.16);
+}
+.circle input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  width: 100%;
+  color: var(--ink);
+}
+.circle input:focus { outline: none; }
+.scoreBox {
+  position: absolute;
+  right: 9px;
+  top: 40px;
+  width: 30px;
+  z-index: 2;
+  border: 1.3px solid var(--line);
+  border-radius: 5px;
+  background: var(--paper);
+  text-align: center;
+}
+.scoreBox input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  width: 100%;
+  padding: 1px 0;
+  color: var(--ink);
+}
+.scoreBox input:focus { outline: none; }
+.abilityLabels {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 2px 1px;
+  border-bottom: 1.2px solid var(--line);
+  margin-bottom: 3px;
+}
+.skillRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 1px 0;
+}
+.skillRow .mini {
+  width: 26px;
+  border: none;
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
+  text-align: center;
+  font-size: 11px;
+  font: inherit;
+  padding: 0;
+  color: var(--ink);
+}
+.skillRow .mini:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+.skillRow .skillName {
+  font-size: 11px;
+  flex: 1;
+}
+.skillRow.saving .skillName {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* inspiration héroïque */
+.heroic { padding: 6px 8px 7px; align-items: center; text-align: center; }
+.heroic .cardTitle { margin-bottom: 4px; }
+.heroicStar { display: flex; justify-content: center; padding: 2px 0; }
+
+/* barre init / speed / size / passive */
+.infoBar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.infoBox {
+  padding: 6px 8px 10px;
+  text-align: center;
+}
+.infoBox .cardTitle { font-size: 11px; margin-bottom: 6px; }
+.infoBox input {
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  width: 90%;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--ink);
+}
+.infoBox input:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+
+/* table armes */
+.weapons { padding: 8px 10px; }
+.wTable { width: 100%; border-collapse: collapse; margin-top: 3px; }
+.wTable col.cName { width: 46%; }
+.wTable col.cAtk { width: 16%; }
+.wTable col.cDmg { width: 20%; }
+.wTable col.cNotes { width: 18%; }
+.wTable th {
+  font-size: 9px;
+  color: var(--muted);
+  font-weight: 500;
+  text-align: left;
+  padding: 0 6px 3px;
+  border-bottom: 1px solid var(--line-soft);
+  white-space: nowrap;
+}
+.wTable td {
+  padding: 0;
+  border-bottom: 1px solid var(--line-faint);
+  border-left: 1px solid var(--line-faint);
+}
+.wTable td:first-child { border-left: none; }
+.wTable input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  padding: 5px 6px;
+  color: var(--ink);
+}
+.wTable input:focus { outline: none; background: rgba(123, 160, 91, 0.08); }
+
+/* zones texte lignées */
+.textArea {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 10px;
+}
+.textArea .sectionTitle { flex: none; }
+.textAreaBody {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+.twoColFeatures { position: relative; }
+.twoColFeatures .divider {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 50%;
+  width: 1px;
+  background: var(--line-soft);
+}
+.featRow { display: flex; gap: 8px; }
+.featRow > * { flex: 1; }
+
+/* formations & maîtrises */
+.equip { padding: 8px 10px; }
+.armorTrain {
+  display: flex;
+  align-items: center;
+  gap: 6px 9px;
+  flex-wrap: wrap;
+  padding: 4px 0 6px;
+}
+.armorTrain .label { max-width: 58px; flex: none; }
+.armorOpt {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 9px;
+  white-space: nowrap;
+}
+.armorTrain .diamond { width: 10px; height: 10px; }
+.equipField { margin-top: 4px; }
+.equipField .label { margin-bottom: 2px; }
+.equipBox { height: 92px; border: 1px solid var(--line-faint); border-radius: 4px; }
+.equipLine {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  border-bottom: 1px solid var(--line-soft);
+  padding-bottom: 2px;
+  margin-top: 6px;
+}
+.equipLine input { flex: 1; border: none; background: transparent; font: inherit; font-size: 12px; color: var(--ink); }
+.equipLine input:focus { outline: none; }
+
+/* ---------- PAGE 2 ---------- */
+.p2Top {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 8px;
+}
+.castStats { display: flex; flex-direction: column; }
+.castStats .castHead { padding: 6px 8px 4px; }
+.castStats .castRow {
+  padding: 8px;
+  border-top: 1.2px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.castStats .castRow .label { flex: 1; }
+.castStats .castRow input {
+  width: 40px;
+  border: none;
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  font: inherit;
+  color: var(--ink);
+}
+.castStats .castRow input:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+
+.slots { padding: 8px 14px 10px; }
+.slotsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 12px;
+  margin-top: 4px;
+}
+.slotCol {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.slotHead {
+  display: flex;
+  font-size: 8px;
+  color: var(--muted);
+  padding-left: 54px;
+}
+.slotHead .hTotal { width: 20px; text-align: center; flex: none; }
+.slotHead .hExp { flex: 1; text-align: center; }
+.slotRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.slotRow .slotLabel {
+  font-size: 8.5px;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.01em;
+  width: 54px;
+  flex: none;
+  white-space: nowrap;
+}
+.slotRow .slotTotal {
+  width: 16px;
+  flex: none;
+  border: none;
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
+  text-align: center;
+  font: inherit;
+  font-size: 11px;
+  color: var(--ink);
+}
+.slotRow .slotTotal:focus { outline: none; }
+.slotDiamonds { display: flex; gap: 2px; margin-left: auto; }
+.slotDiamonds .diamond { width: 10px; height: 10px; }
+
+/* table sorts */
+.spellsTable { flex: 1; padding: 8px 10px; }
+.spTable { width: 100%; border-collapse: collapse; }
+.spTable th {
+  font-size: 8.5px;
+  color: var(--muted);
+  font-weight: 500;
+  text-align: left;
+  vertical-align: bottom;
+  padding: 0 4px 3px;
+  border-bottom: 1px solid var(--line-soft);
+  line-height: 1.05;
+}
+.spTable td {
+  border-bottom: 1px solid var(--line-faint);
+  padding: 0;
+  height: 22px;
+}
+.spTable input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 11px;
+  padding: 1px 4px;
+  color: var(--ink);
+}
+.spTable input:focus { outline: none; background: rgba(123, 160, 91, 0.08); }
+.crmCell { display: flex; align-items: center; justify-content: center; gap: 5px; }
+.crmMark { display: flex; align-items: center; gap: 2px; font-size: 9px; color: var(--muted); }
+.crmMark .diamond { width: 9px; height: 9px; }
+
+/* colonne droite page 2 */
+.p2Right { display: flex; flex-direction: column; gap: 8px; }
+.growCard { display: flex; flex-direction: column; padding: 8px 10px; }
+.growCard .sectionTitle { flex: none; }
+.growBody { flex: 1; display: flex; min-height: 0; }
+.subLabelLine {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  border-top: 1px solid var(--line-faint);
+  padding-top: 4px;
+  margin-top: 4px;
+}
+.subLabelLine input { flex: 1; border: none; background: transparent; font: inherit; font-size: 12px; color: var(--ink); }
+.subLabelLine input:focus { outline: none; }
+.attuneRow { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+.attuneRow input { flex: 1; border: none; border-bottom: 1px solid var(--line-soft); background: transparent; font: inherit; font-size: 12px; color: var(--ink); }
+.attuneRow input:focus { outline: none; }
+
+.coins { padding: 8px 10px; }
+.coinsGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-top: 4px; }
+.coin { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.coin .label { text-align: center; }
+.coinBox {
+  width: 100%;
+  border: 1.2px solid var(--line);
+  border-radius: 5px;
+  text-align: center;
+}
+.coinBox input { width: 100%; border: none; background: transparent; text-align: center; font: inherit; font-size: 13px; padding: 5px 0; color: var(--ink); }
+.coinBox input:focus { outline: none; background: rgba(123, 160, 91, 0.1); }
+
+.p2Footer {
+  margin-top: auto;
+  padding-top: 6px;
+  font-size: 8px;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* bandeau décoratif haut de page 2 */
+.p2Banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 54px;
+}
+.p2Banner .dd {
+  font-family: var(--font-cinzel), Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.p2Banner hr { flex: 1; border: none; border-top: 1.3px solid var(--line); }
+
+/* ---------- Impression ---------- */
+@media print {
+  .sheet { gap: 0; }
+  .page {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    width: 100%;
+    min-height: 0;
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+}

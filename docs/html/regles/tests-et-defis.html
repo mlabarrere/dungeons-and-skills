@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tests et defis — Regles</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/regles/creation-personnage.html; Tests et defis">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet" data-entity="regle" data-id="tests-et-defis" data-status="source" data-source="img:11..10">
+      <h1>Tests et defis</h1>
+      <p class="provenance">Manuel des joueurs 2024, chapitre 1 « Comment jouer » (p.10-14). Caracteristiques, Tests d20, jets de sauvegarde, jets d'attaque, Avantage/Desavantage, maitrise et competences.</p>
+
+      <section class="section" data-source="img:10">
+        <h2>Les six caracteristiques</h2>
+        <p>Toutes les creatures, personnages comme monstres, sont dotees de six caracteristiques representant leurs attributs physiques et mentaux, comme indique sur la table Description des caracteristiques.</p>
+        <h3>Description des caracteristiques</h3>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Valeur representant...</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>La puissance physique</td></tr>
+            <tr><td>Dexterite</td><td>L'agilite, les reflexes et l'equilibre</td></tr>
+            <tr><td>Constitution</td><td>La sante et l'endurance</td></tr>
+            <tr><td>Intelligence</td><td>Les capacites de raisonnement et la memoire</td></tr>
+            <tr><td>Sagesse</td><td>Le discernement et la fermete mentale</td></tr>
+            <tr><td>Charisme</td><td>La confiance en soi, l'aplomb et le charme naturel</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Valeurs de caracteristique</h3>
+        <p>Chaque caracteristique est representee par une valeur allant de 1 a 20 (ce maximum peut monter jusqu'a 30 dans le cas de certains monstres). Cette valeur est un ordre de grandeur relatif.</p>
+        <table>
+          <thead><tr><th>Valeur</th><th>Signification</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Valeur minimale en conditions normales. Quand un effet reduit une valeur a 0, la description de l'effet explique ce qui se passe.</td></tr>
+            <tr><td>2-9</td><td>Capacites faibles.</td></tr>
+            <tr><td>10-11</td><td>Moyenne humaine.</td></tr>
+            <tr><td>12-19</td><td>Capacites remarquables.</td></tr>
+            <tr><td>20</td><td>Valeur maximale pour un aventurier, sauf mention contraire d'une aptitude.</td></tr>
+            <tr><td>21-29</td><td>Capacites extraordinaires.</td></tr>
+            <tr><td>30</td><td>Valeur theorique maximale.</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Modificateurs de caracteristique</h3>
+        <p>Chaque caracteristique s'accompagne d'un modificateur qui s'applique chaque fois que vous effectuez un <a href="./glossaire.html#test-d20" data-ref="test-d20">Test d20</a> associe a cette caracteristique. Le modificateur derive de sa valeur, comme le montre la table.</p>
+        <table>
+          <thead><tr><th>Valeur</th><th>Modificateur</th><th>Valeur</th><th>Modificateur</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>-5</td><td>16-17</td><td>+3</td></tr>
+            <tr><td>2-3</td><td>-4</td><td>18-19</td><td>+4</td></tr>
+            <tr><td>4-5</td><td>-3</td><td>20-21</td><td>+5</td></tr>
+            <tr><td>6-7</td><td>-2</td><td>22-23</td><td>+6</td></tr>
+            <tr><td>8-9</td><td>-1</td><td>24-25</td><td>+7</td></tr>
+            <tr><td>10-11</td><td>+0</td><td>26-27</td><td>+8</td></tr>
+            <tr><td>12-13</td><td>+1</td><td>28-29</td><td>+9</td></tr>
+            <tr><td>14-15</td><td>+2</td><td>30</td><td>+10</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" data-source="img:10">
+        <h2>Tests d20</h2>
+        <p>Quand le resultat d'une action est incertain, le jeu s'appuie sur le jet d'un d20 pour determiner si la tache est couronnee de succes ou si elle echoue. Ces jets appeles « Tests d20 » se presentent sous trois formes : tests de caracteristique, jets d'attaque et jets de sauvegarde. Ils passent par les etapes suivantes :</p>
+        <ol>
+          <li><strong>Lancez 1d20.</strong> Plus le resultat est eleve, plus il est favorable. Si le jet s'effectue avec l'Avantage ou le Desavantage, vous lancez deux d20 mais ne gardez qu'un resultat ; le plus eleve si vous avez l'Avantage, le plus faible si vous avez le Desavantage.</li>
+          <li><strong>Ajoutez les modificateurs</strong> au nombre obtenu sur le d20 :
+            <ul>
+              <li>Le modificateur de caracteristique concerne.</li>
+              <li>Votre bonus de maitrise si la situation le justifie.</li>
+              <li>Les bonus et malus lies aux circonstances (aptitudes de classe, sorts ou autres elements).</li>
+            </ul>
+          </li>
+          <li><strong>Comparez le total au nombre cible.</strong> Si la somme du resultat du d20 et des modificateurs egale ou depasse le nombre cible, le Test d20 est reussi. Dans le cas contraire, il est rate. Le MD fixe le nombre cible. Pour les tests de caracteristique et les jets de sauvegarde, le nombre cible est appele <a href="./glossaire.html#degre-de-difficulte" data-ref="degre-de-difficulte">degre de difficulte</a> (DD). Pour les jets d'attaque, on parle de <a href="./glossaire.html#classe-d-armure" data-ref="classe-d-armure">classe d'armure</a> (CA).</li>
+        </ol>
+      </section>
+
+      <section class="section" data-source="img:10">
+        <h2>Tests de caracteristique</h2>
+        <p>Un <a href="./glossaire.html#test-de-caracteristique" data-ref="test-de-caracteristique">test de caracteristique</a> intervient quand une creature puise dans son talent ou sa formation pour surmonter une epreuve, comme forcer une porte bloquee, crocheter une serrure, divertir une foule ou decrypter un code. Le MD et les regles font generalement appel a ces tests lorsque ce que tente une creature a une probabilite d'echouer et qu'il ne s'agit pas d'une attaque.</p>
+        <h3>Modificateur de caracteristique</h3>
+        <p>Un test de caracteristique tire son nom de la caracteristique a laquelle il est associe : un test de Force, un test d'Intelligence, etc. La caracteristique associee se decide selon la situation.</p>
+        <h3>Tests de caracteristique typiques</h3>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Effectuez un test pour...</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>Soulever, pousser, tirer ou briser quelque chose</td></tr>
+            <tr><td>Dexterite</td><td>Vous deplacer avec agilite, vivacite ou furtivite</td></tr>
+            <tr><td>Constitution</td><td>Repousser les limites ordinaires de votre organisme</td></tr>
+            <tr><td>Intelligence</td><td>Mettre votre raison ou votre memoire a l'epreuve</td></tr>
+            <tr><td>Sagesse</td><td>Observer l'environnement ou les comportements</td></tr>
+            <tr><td>Charisme</td><td>Influencer, divertir ou tromper autrui</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Bonus de maitrise</h3>
+        <p>Votre bonus de maitrise s'ajoute a un test de caracteristique lorsque le MD statue qu'une maitrise de competence ou d'outil s'y applique et que vous disposez de cette maitrise. Ainsi, quand une regle indique un test de Force (Acrobaties ou Athletisme), vous pouvez ajouter votre bonus de maitrise au test si vous disposez de la maitrise de la competence Acrobaties ou Athletisme.</p>
+
+        <h3>Degre de difficulte</h3>
+        <p>Le degre de difficulte d'un test de caracteristique represente la difficulte de la tache. Plus une tache est ardue, plus le DD est eleve. Les regles fournissent les DD de certains tests, mais c'est toujours le MD qui tranche.</p>
+        <h3>Degres de difficulte courants</h3>
+        <table>
+          <thead><tr><th>La tache est...</th><th>DD</th></tr></thead>
+          <tbody>
+            <tr><td>Tres facile</td><td>5</td></tr>
+            <tr><td>Facile</td><td>10</td></tr>
+            <tr><td>Moderee</td><td>15</td></tr>
+            <tr><td>Difficile</td><td>20</td></tr>
+            <tr><td>Tres difficile</td><td>25</td></tr>
+            <tr><td>Presque impossible</td><td>30</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" data-source="img:11">
+        <h2>Jets de sauvegarde</h2>
+        <p>Un <a href="./glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a>, souvent abrege en JS, represente une tentative d'echapper ou de resister a un danger, tel qu'une deflagration, une bouffee de vapeurs toxiques ou un sort qui menace d'envahir votre esprit. On ne choisit generalement pas d'effectuer un JS ; vous devez vous y soumettre lorsque votre personnage ou un monstre est en danger. Le resultat est detaille par l'effet qui l'a provoque. Si vous ne comptez pas resister a l'effet, vous pouvez rater volontairement votre JS sans lancer le de.</p>
+        <h3>Modificateur de caracteristique</h3>
+        <p>Un jet de sauvegarde tire son nom de la caracteristique a laquelle il est associe : un JS Constitution, un JS Sagesse, etc. La caracteristique associee depend du type d'effet auquel on tente de resister, comme le montre la table Jets de sauvegarde typiques.</p>
+        <h3>Jets de sauvegarde typiques</h3>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Effectuez un JS pour...</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>Vous opposer a une force physique</td></tr>
+            <tr><td>Dexterite</td><td>Esquiver un danger physique</td></tr>
+            <tr><td>Constitution</td><td>Supporter un danger toxique</td></tr>
+            <tr><td>Intelligence</td><td>Percer une illusion</td></tr>
+            <tr><td>Sagesse</td><td>Resister a un assaut mental</td></tr>
+            <tr><td>Charisme</td><td>Affirmer votre identite</td></tr>
+          </tbody>
+        </table>
+        <h3>Bonus de maitrise</h3>
+        <p>Vous ajoutez votre bonus de maitrise a un JS si vous disposez de la maitrise de ce type de jet de sauvegarde.</p>
+        <h3>Degre de difficulte</h3>
+        <p>Le degre de difficulte d'un jet de sauvegarde est determine par l'effet qui le provoque ou par le MD. Exemple : quand un sort vous impose un JS, le DD est fixe par la caracteristique d'incantation du lanceur et son bonus de maitrise. Les aptitudes de monstre qui engendrent des JS en specifient le DD.</p>
+      </section>
+
+      <section class="section" data-source="img:12">
+        <h2>Jets d'attaque</h2>
+        <p>Un <a href="./glossaire.html#jet-d-attaque" data-ref="jet-d-attaque">jet d'attaque</a> permet de determiner si une attaque touche sa cible. Le jet d'attaque touche si son resultat est superieur ou egal a la classe d'armure de la cible. Les jets d'attaque interviennent generalement lors d'affrontements, selon les regles de la section « Combat », mais le MD peut aussi y faire appel en d'autres circonstances, comme lors d'un concours de tir a l'arc.</p>
+        <h3>Modificateur de caracteristique</h3>
+        <p>La table Caracteristiques de jet d'attaque indique quel modificateur de caracteristique s'applique selon le type de jet d'attaque.</p>
+        <h3>Caracteristiques de jet d'attaque</h3>
+        <table>
+          <thead><tr><th>Caracteristique</th><th>Type d'attaque</th></tr></thead>
+          <tbody>
+            <tr><td>Force</td><td>Attaque de corps a corps avec une arme ou <a href="./glossaire.html#attaque-a-mains-nues" data-ref="attaque-a-mains-nues">attaque a mains nues</a> (cf. glossaire de regles)</td></tr>
+            <tr><td>Dexterite</td><td>Attaque a distance avec une arme</td></tr>
+            <tr><td>Variable</td><td><a href="./glossaire.html#attaque-de-sort" data-ref="attaque-de-sort">Attaque de sort</a> (la caracteristique est determinee par l'aptitude Sorts de l'incantateur, cf. chapitre 7)</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Certaines aptitudes permettent de recourir a d'autres modificateurs. Ainsi, la propriete Finesse (cf. chapitre 6) permet de choisir entre Force et Dexterite lorsqu'on utilise une arme dotee de cette propriete.</p>
+        <h3>Bonus de maitrise</h3>
+        <p>Vous ajoutez votre bonus de maitrise au jet d'attaque lorsque vous attaquez avec une arme dont vous avez la maitrise, ainsi que lorsque vous attaquez avec un sort.</p>
+      </section>
+
+      <section class="section" data-source="img:12">
+        <h2>Classe d'armure</h2>
+        <p>La classe d'armure (ou CA) d'une creature represente sa capacite a eviter les blessures au combat. La CA d'un personnage se determine a sa creation (cf. chapitre 2), tandis que celle d'un monstre apparait dans son <a href="./glossaire.html#profil-de-jeu" data-ref="profil-de-jeu">profil de jeu</a>. Toutes les creatures debutent avec le meme calcul :</p>
+        <p class="note"><strong>CA de base = 10 + modificateur de Dexterite de la creature.</strong></p>
+        <p>La CA d'une creature peut ensuite etre modifiee par l'armure, des objets magiques, des sorts et autres elements.</p>
+        <p><strong>Une seule CA de base.</strong> Certains sorts et aptitudes de classe fournissent une autre methode de calcul pour la CA. Un personnage dote de plusieurs aptitudes qui offrent diverses methodes doit en choisir une ; une meme creature ne peut pas etre affectee par plus d'une methode de calcul.</p>
+      </section>
+
+      <section class="section" data-source="img:12">
+        <h2>Resultat de 20 ou 1 sur le de</h2>
+        <p>Si vous obtenez un 20 sur le d20 (on dit aussi « 20 naturel ») d'un jet d'attaque, l'attaque touche quels que soient les modificateurs engages et la CA de la cible. C'est ce que l'on appelle un <a href="./glossaire.html#coup-critique" data-ref="coup-critique">Coup critique</a> (cf. « Combat »).</p>
+        <p>Si vous obtenez un 1 sur le d20 (on dit aussi « 1 naturel ») d'un jet d'attaque, l'attaque rate, quels que soient les modificateurs engages et la CA de la cible.</p>
+      </section>
+
+      <section class="section" data-source="img:12">
+        <h2>Avantage et Desavantage</h2>
+        <p>Il arrive qu'un Test d20 soit modifie par l'Avantage ou le Desavantage. L'Avantage reflete des circonstances favorables autour d'un jet de d20, tandis que le Desavantage represente des conditions defavorables. C'est generalement par l'intermediaire d'aptitudes ou d'actions speciales que l'on recoit l'Avantage ou le Desavantage. Le MD peut aussi statuer que les circonstances l'octroient ou l'imposent.</p>
+        <h3>Lancez deux d20</h3>
+        <p>Lorsque vous effectuez un jet avec l'Avantage ou le Desavantage, vous lancez un second d20 avec le premier. Vous ne retenez que le plus eleve des deux des si vous avez l'Avantage, le plus faible si vous avez le Desavantage. Si vous avez le Desavantage et obtenez par exemple 18 et 3 sur les des, vous gardez le 3. Avec l'Avantage, c'est le 18 que vous retenez.</p>
+        <h3>Ils ne se cumulent pas</h3>
+        <p>Quand plusieurs circonstances s'appliquent a un jet de des et que chacune octroie l'Avantage, vous ne lancez pas plus de deux d20. De meme pour le Desavantage. Si des circonstances vous octroient l'Avantage tout en vous imposant le Desavantage, le jet n'a en definitive ni l'un ni l'autre, et vous lancez donc un seul d20. Cela reste vrai meme si plusieurs conditions imposent le Desavantage et qu'une seule octroie l'Avantage, ou inversement.</p>
+        <h3>Cas des jets qu'on rejoue</h3>
+        <p>Lorsque vous avez l'Avantage ou le Desavantage et qu'un element du jeu vous permet de relancer le d20 ou de le remplacer, vous ne pouvez relancer ou remplacer qu'un seul de. Vous choisissez lequel.</p>
+        <p class="note">Exemple : si vous avez l'<a href="./glossaire.html#inspiration-heroique" data-ref="inspiration-heroique">Inspiration heroique</a> et obtenez 3 et 18 sur les d20 d'un test de caracteristique effectue avec Avantage ou Desavantage, vous pouvez depenser votre Inspiration heroique pour relancer l'un de ces des, mais pas les deux.</p>
+
+        <div class="callout">
+          <h3>Inspiration heroique</h3>
+          <p>Il arrive que le MD ou une regle vous octroie l'Inspiration heroique. Si vous en disposez, vous pouvez la depenser pour rejouer aussitot tout de que vous venez de lancer, a condition de conserver ce nouveau jet.</p>
+          <p><strong>Une seule a la fois.</strong> Vous ne pouvez en aucun cas disposer de plus d'une Inspiration heroique a la fois. Si, pour une raison quelconque, vous en recevez une alors que vous en disposez deja, vous pouvez la confier a un <a href="./glossaire.html#personnage-joueur" data-ref="personnage-joueur">personnage joueur</a> de votre groupe qui n'en est pas pourvu.</p>
+          <p><strong>Recevoir l'Inspiration heroique.</strong> Votre MD peut vous l'octroyer pour diverses raisons. En general, il l'accorde lorsque vous accomplissez un geste heroique, incarnez remarquablement votre personnage ou que votre prestation s'avere particulierement divertissante. D'autres regles permettent d'en acquerir : les personnages humains commencent ainsi chaque journee avec l'Inspiration heroique.</p>
+        </div>
+      </section>
+
+      <section class="section" data-source="img:13">
+        <h2>Maitrise</h2>
+        <p>Les personnages et monstres se distinguent dans divers domaines. Toutes les creatures sont dotees d'un bonus de maitrise, qui reflete l'impact de l'apprentissage sur leurs capacites. Le bonus de maitrise d'un personnage augmente au gre de son acquisition de niveaux (cf. chapitre 2). Le bonus de maitrise d'un monstre decoule de son <a href="./glossaire.html#facteur-de-puissance" data-ref="facteur-de-puissance">facteur de puissance</a> (cf. glossaire de regles).</p>
+        <p>Ce bonus s'applique a un Test d20 lorsque la creature est dotee de la maitrise d'une competence, d'un jet de sauvegarde ou d'un objet dont elle se sert pour le Test d20. Le bonus est egalement employe pour les attaques de sort et pour le calcul du DD de sauvegarde des sorts.</p>
+        <h3>Bonus de maitrise</h3>
+        <table>
+          <thead><tr><th>Niveau ou FP</th><th>Bonus</th><th>Niveau ou FP</th><th>Bonus</th></tr></thead>
+          <tbody>
+            <tr><td>Jusqu'a 4</td><td>+2</td><td>17-20</td><td>+6</td></tr>
+            <tr><td>5-8</td><td>+3</td><td>21-24</td><td>+7</td></tr>
+            <tr><td>9-12</td><td>+4</td><td>25-28</td><td>+8</td></tr>
+            <tr><td>13-16</td><td>+5</td><td>29-30</td><td>+9</td></tr>
+          </tbody>
+        </table>
+        <h3>Le bonus ne se cumule pas</h3>
+        <p>Votre bonus de maitrise ne peut pas s'ajouter plus d'une fois a un jet de de ou a un nombre. Ainsi, quand une regle vous permet d'effectuer un test de Charisme (Persuasion ou Tromperie), vous ajoutez votre bonus de maitrise si vous maitrisez l'une de ces competences, mais ne l'appliquez pas deux fois si vous maitrisez les deux.</p>
+        <p>Il peut en revanche arriver que le bonus de maitrise soit multiplie ou divise (double ou reduit de moitie) avant son application. Ainsi, l'aptitude Expertise (cf. glossaire de regles) double le bonus de maitrise pour certains tests de caracteristique. Chaque fois que le bonus est employe, on ne peut le multiplier ou le diviser qu'une seule fois.</p>
+      </section>
+
+      <section class="section" data-source="img:14">
+        <h2>Competences</h2>
+        <p>La plupart des tests de caracteristique font intervenir une competence, associee a un ensemble de choses que les creatures peuvent tenter par un tel test. C'est toujours le MD qui tranche pour savoir si une competence s'applique a une situation donnee.</p>
+        <p>Si une creature maitrise une competence, elle applique son bonus de maitrise aux tests de caracteristique qui font intervenir cette competence. Sans cette maitrise, la creature peut effectuer des tests de caracteristique associes a la competence, mais elle n'applique pas son bonus de maitrise. Exemple : si un personnage tente de gravir une falaise, le MD peut lui demander un test de Force (Athletisme).</p>
+        <h3>Competences</h3>
+        <table>
+          <thead><tr><th>Competence</th><th>Caracteristique</th><th>Exemples d'application</th></tr></thead>
+          <tbody>
+            <tr><td>Acrobaties</td><td>Dexterite</td><td>Rester debout lorsque l'equilibre est precaire ou accomplir un exercice acrobatique.</td></tr>
+            <tr><td>Arcanes</td><td>Intelligence</td><td>Se souvenir de details concernant des sorts, des objets magiques ou les plans d'existence.</td></tr>
+            <tr><td>Athletisme</td><td>Force</td><td>Sauter plus loin que la normale, garder la tete hors de l'eau dans des flots violents ou briser quelque chose.</td></tr>
+            <tr><td>Discretion</td><td>Dexterite</td><td>Se soustraire a l'attention en se deplacant sans faire de bruit et en se cachant.</td></tr>
+            <tr><td>Dressage</td><td>Sagesse</td><td>Apaiser ou dresser un animal, ou lui faire adopter un certain comportement.</td></tr>
+            <tr><td>Escamotage</td><td>Dexterite</td><td>Faire les poches, dissimuler un petit objet ou executer un tour de passe-passe.</td></tr>
+            <tr><td>Histoire</td><td>Intelligence</td><td>Se souvenir de details historiques (evenements, peuples, nations et cultures).</td></tr>
+            <tr><td>Intimidation</td><td>Charisme</td><td>Impressionner ou menacer quelqu'un pour qu'il obtempere.</td></tr>
+            <tr><td>Intuition</td><td>Sagesse</td><td>Reconnaitre l'humeur et les intentions des gens.</td></tr>
+            <tr><td>Investigation</td><td>Intelligence</td><td>Retrouver des informations obscures dans des ouvrages ou deduire le fonctionnement des choses a partir d'indices.</td></tr>
+            <tr><td>Medecine</td><td>Sagesse</td><td>Diagnostiquer une maladie ou determiner les causes de morts recentes.</td></tr>
+            <tr><td>Nature</td><td>Intelligence</td><td>Se souvenir de details sur l'environnement, le relief, la faune, la flore et le climat.</td></tr>
+            <tr><td>Perception</td><td>Sagesse</td><td>Par l'intermediaire d'un ou plusieurs sens, detecter ce qui peut echapper a d'autres.</td></tr>
+            <tr><td>Persuasion</td><td>Charisme</td><td>Convaincre autrui sans le brusquer, en toute sincerite.</td></tr>
+            <tr><td>Religion</td><td>Intelligence</td><td>Se souvenir de details sur les dieux, les rituels religieux et les symboles sacres.</td></tr>
+            <tr><td>Representation</td><td>Charisme</td><td>Jouer la comedie ou de la musique, conter une histoire ou danser.</td></tr>
+            <tr><td>Survie</td><td>Sagesse</td><td>Remonter une piste, trouver de la nourriture, s'orienter dans la nature et eviter les dangers sauvages.</td></tr>
+            <tr><td>Tromperie</td><td>Charisme</td><td>Mentir de maniere convaincante ou se deguiser sans eveiller les soupcons.</td></tr>
+          </tbody>
+        </table>
+        <h3>Determination de la competence</h3>
+        <p>Les maitrises de competence de depart d'un personnage sont determinees a sa creation et les maitrises de competence des monstres apparaissent dans leur profil.</p>
+
+        <div class="callout">
+          <h3>Competences et caracteristiques inhabituelles</h3>
+          <p>Chaque maitrise de competence est associee a un test de caracteristique. Ainsi, la competence Intimidation est associee au Charisme. Dans certaines situations, le MD peut vous autoriser a appliquer votre maitrise de competence a un autre test de caracteristique. Exemple : si un personnage tente d'intimider quelqu'un par une demonstration de puissance physique, le MD peut demander un test de Force (Intimidation) au lieu d'un test de Charisme (Intimidation). Le personnage effectue alors un test de Force, en ajoutant son bonus de maitrise s'il a la maitrise d'Intimidation.</p>
+        </div>
+      </section>
+
+      <section class="section" data-source="img:14">
+        <h2>Maitrise des jets de sauvegarde</h2>
+        <p>La maitrise d'un jet de sauvegarde permet au personnage d'ajouter son bonus de maitrise aux JS correspondants. Si vous avez par exemple la maitrise des jets de sauvegarde de Sagesse, vous pouvez appliquer votre bonus de maitrise aux JS Sagesse. Certains monstres disposent egalement de maitrises de jet de sauvegarde, comme l'indique leur profil.</p>
+        <p>Chaque classe dispose de la maitrise d'au moins deux jets de sauvegarde, pour illustrer comment la classe forme a se soustraire ou a resister a certaines menaces. Ainsi, les Magiciens maitrisent les JS Intelligence et Sagesse ; ils ont appris a resister aux attaques mentales.</p>
+      </section>
+
+      <section class="section" data-source="img:14">
+        <h2>Maitrises d'equipement</h2>
+        <p>Un personnage acquiert la maitrise de divers <a href="../equipement/outils.html" data-ref="outils">outils</a> et <a href="../equipement/armes.html" data-ref="armes">armes</a>, par le biais de sa classe et de son historique. On compte deux categories de maitrises d'<a href="../equipement/index.html" data-ref="index-equipement">equipement</a> :</p>
+        <ul>
+          <li><strong>Armes.</strong> N'importe qui peut tenir une arme, mais la maitrise vous rend plus efficace dans son maniement. Si vous avez la maitrise d'une arme, vous ajoutez votre bonus de maitrise aux jets d'attaque correspondants.</li>
+          <li><strong>Outils.</strong> Si vous avez la maitrise d'un outil, vous pouvez ajouter votre bonus de maitrise aux tests de caracteristique correspondants. Si vous avez la maitrise de la competence egalement associee a ce test, vous avez aussi l'Avantage au test. Ainsi, vous pouvez conjointement tirer profit d'une maitrise de competence et d'une maitrise d'outil a un meme test de caracteristique.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

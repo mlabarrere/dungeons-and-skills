@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Controle de l'eau — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Controle de l'eau">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="controle-de-l-eau" data-status="source"
+             data-source="img:262"
+             data-spell-level="4" data-school="transmutation"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="90m" data-components="V,S,M" data-material="un melange d'eau et de poussiere"
+             data-duration="conc-10min" data-classes="clerc,druide,magicien"
+             data-save="for" data-damage-type="contondant">
+
+      <h1>Controle de l'eau</h1>
+      <p class="provenance">Transmutation du 4e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>, <a href="../classes/druide.html" data-ref="druide">Druide</a>, <a href="../classes/magicien.html" data-ref="magicien">Magicien</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 4</span>
+        <span class="badge" data-status="source">Transmutation</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Clerc</span>
+        <span class="pill">Druide</span>
+        <span class="pill">Magicien</span>
+      </div>
+
+      <p class="note">Description repartie sur deux images ; texte assemble depuis p262 et p263.</p>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">90 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S, M (un melange d'eau et de poussiere)</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 10 minutes</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Jusqu'a la fin du sort, vous controlez tout volume d'eau compris dans la zone que vous designez, un Cube dont l'arete ne depasse pas 30 m, en y appliquant l'un des effets suivants. Au prix de l'action Magie a vos tours suivants, vous pouvez repeter le meme effet ou en choisir un autre.</p>
+
+        <p><strong>Controle du courant.</strong> Vous reorientez le cours des eaux de la zone a votre guise, meme si les flots doivent surmonter des obstacles, grimper aux murs ou couler dans une direction insolite. Les eaux s'ecoulent selon vos instructions, mais une fois qu'elles quittent la zone, la nature reprend ses droits et le courant s'adapte au terrain. Les eaux continuent dans la direction de votre choix jusqu'a la fin du sort ou jusqu'a ce que vous optiez pour un autre effet.</p>
+
+        <p><strong>Crue.</strong> Vous faites monter le niveau de toutes les eaux dormantes de la zone d'un maximum de 6 m. Si vous choisissez une zone comprise dans un grand plan d'eau, vous engendrez en fait une vague haute de 6 m qui part d'un cote de la zone et deferle vers l'autre avant de s'ecraser. Tous les vehicules de taille TG ou inferieure pris sur son passage sont emportes de l'autre cote. Tous les vehicules de taille TG ou inferieure frappes par la vague ont 25 % de risque de chavirer. Le niveau de l'eau reste haut jusqu'a la fin du sort ou jusqu'a ce que vous optiez pour un autre effet. Si cet effet a produit une vague, celle-ci se repete au debut de votre tour suivant tant que persiste l'effet de crue.</p>
+
+        <p><strong>Separation des eaux.</strong> Vous scindez les eaux de la zone pour creer une tranchee. Cette fosse s'etend sur toute la zone du sort, les eaux separees formant une paroi verticale de chaque cote. La tranchee reste en place jusqu'a la fin du sort ou jusqu'a ce que vous optiez pour un autre effet. Les eaux la remplissent ensuite progressivement en l'espace d'un round, jusqu'a retrouver leur niveau initial.</p>
+
+        <p><strong>Tourbillon.</strong> Vous engendrez la creation d'un tourbillon au centre de la zone, d'une surface minimale de 15 m de cote et d'une profondeur d'au moins 7,50 m. Le tourbillon persiste jusqu'a ce que vous optiez pour un autre effet ou que le sort prenne fin. Les remous sont larges de 1,50 m a leur base pour atteindre jusqu'a 15 m au sommet, pour une hauteur de 7,50 m. Toute creature immergee dans l'eau et situee dans un rayon de 7,50 m du tourbillon est tiree de 3 m vers les remous. Lorsqu'une creature entre dans les remous pour la premiere fois d'un tour ou y termine son tour, elle effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Force. En cas d'echec, elle subit 2d8 degats contondants. En cas de reussite, la creature subit la moitie de ces degats. Une creature peut s'eloigner du tourbillon a la nage a condition de consacrer au prealable une action a s'en extraire et de reussir un test de Force (Athletisme) assorti de votre DD de sauvegarde des sorts.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Force, effet Tourbillon)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 2d8 degats contondants.</td></tr>
+            <tr><td>Reussite</td><td>Subit la moitie de ces degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

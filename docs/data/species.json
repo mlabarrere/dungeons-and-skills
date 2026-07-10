@@ -1,0 +1,747 @@
+[
+  {
+    "id": "aasimar",
+    "name": "Aasimar",
+    "kind": "espece",
+    "ref": "../especes/aasimar.html",
+    "source": "img:176",
+    "size": "M ou P",
+    "speed": "9m",
+    "effects": [
+      {
+        "type": "grants",
+        "what": "cantrip",
+        "spell": "lumiere",
+        "list": "espece",
+        "ability": "cha"
+      },
+      {
+        "type": "grants",
+        "what": "resistance",
+        "value": "necrotiques"
+      },
+      {
+        "type": "grants",
+        "what": "resistance",
+        "value": "radiants"
+      },
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision dans le noir",
+        "range": "18m"
+      }
+    ],
+    "choices": [],
+    "lineages": []
+  },
+  {
+    "id": "drakeide",
+    "name": "Drakeide",
+    "kind": "espece",
+    "ref": "../especes/drakeide.html",
+    "source": "img:187",
+    "size": "M",
+    "speed": "9m",
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision dans le noir",
+        "range": "18m"
+      }
+    ],
+    "choices": [
+      {
+        "id": "drakeide-ascendance-draconique",
+        "kind": "ancetre-draconique",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "airain",
+            "argent",
+            "blanc",
+            "bleu",
+            "bronze",
+            "cuivre",
+            "noir",
+            "or",
+            "rouge",
+            "vert"
+          ]
+        },
+        "appliesEffects": {
+          "airain": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "feu"
+            }
+          ],
+          "argent": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "froid"
+            }
+          ],
+          "blanc": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "froid"
+            }
+          ],
+          "bleu": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "foudre"
+            }
+          ],
+          "bronze": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "foudre"
+            }
+          ],
+          "cuivre": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "acide"
+            }
+          ],
+          "noir": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "acide"
+            }
+          ],
+          "or": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "feu"
+            }
+          ],
+          "rouge": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "feu"
+            }
+          ],
+          "vert": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "poison"
+            }
+          ]
+        },
+        "note": "Determine aussi le type de degats du trait Souffle (1d10, +1d10 aux niveaux 5/11/17)."
+      }
+    ],
+    "lineages": []
+  },
+  {
+    "id": "elfe",
+    "name": "Elfe",
+    "kind": "espece",
+    "ref": "../especes/elfe.html",
+    "source": "img:188",
+    "size": "M",
+    "speed": "9m",
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision dans le noir",
+        "range": "18m"
+      }
+    ],
+    "choices": [
+      {
+        "id": "elfe-sens-aiguises",
+        "kind": "competence",
+        "count": 1,
+        "from": {
+          "fromSkillSet": [
+            "intuition",
+            "perception",
+            "survie"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      }
+    ],
+    "lineages": [
+      {
+        "id": "drow",
+        "name": "Drow",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "sense",
+            "value": "vision dans le noir",
+            "range": "36m"
+          },
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "lumieres-dansantes",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 3,
+            "spell": "lueurs-feeriques",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 5,
+            "spell": "tenebres",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "drow-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      },
+      {
+        "id": "elfe-sylvestre",
+        "name": "Elfe sylvestre",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "speed",
+            "value": "10.5m"
+          },
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "druidisme",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 3,
+            "spell": "grande-foulee",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 5,
+            "spell": "passage-sans-trace",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "elfe-sylvestre-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      },
+      {
+        "id": "haut-elfe",
+        "name": "Haut-elfe",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "prestidigitation",
+            "list": "espece",
+            "replaceableFrom": {
+              "fromSpellList": "magicien",
+              "level": 0
+            }
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 3,
+            "spell": "detection-de-la-magie",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 5,
+            "spell": "foulee-brumeuse",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "haut-elfe-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      }
+    ]
+  },
+  {
+    "id": "gnome",
+    "name": "Gnome",
+    "kind": "espece",
+    "ref": "../especes/gnome.html",
+    "source": "img:190",
+    "size": "P",
+    "speed": "9m",
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision dans le noir",
+        "range": "18m"
+      }
+    ],
+    "choices": [],
+    "lineages": [
+      {
+        "id": "gnome-des-forets",
+        "name": "Gnome des forets",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "illusion-mineure",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "alwaysPreparedSpell",
+            "spell": "communication-avec-les-animaux",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "gnome-des-forets-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      },
+      {
+        "id": "gnome-des-roches",
+        "name": "Gnome des roches",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "prestidigitation",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "reparation",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "gnome-des-roches-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      }
+    ]
+  },
+  {
+    "id": "goliath",
+    "name": "Goliath",
+    "kind": "espece",
+    "ref": "../especes/goliath.html",
+    "source": "img:191",
+    "size": "M",
+    "speed": "10.5m",
+    "effects": [],
+    "choices": [
+      {
+        "id": "goliath-ascendance-gigante",
+        "kind": "benefice-gigant",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "brulure-ignee",
+            "endurance-de-la-pierre",
+            "froid-mordant",
+            "renversement-des-coteaux",
+            "saut-des-nuees",
+            "tonnerre-des-cieux"
+          ]
+        },
+        "appliesEffects": {
+          "brulure-ignee": [],
+          "endurance-de-la-pierre": [],
+          "froid-mordant": [],
+          "renversement-des-coteaux": [],
+          "saut-des-nuees": [],
+          "tonnerre-des-cieux": []
+        },
+        "note": "Benefice d'Ascendance gigante (feature activable, PB fois/repos long) : Brulure ignee (geants du feu, +1d10 feu), Endurance de la pierre (geants des pierres, reduction de degats Reaction 1d12+Con), Froid mordant (geants du givre, +1d6 froid et -3m Vitesse), Renversement des coteaux (geants des collines, A terre), Saut des nuees (geants des nuages, teleportation 9m action Bonus), Tonnerre des cieux (geants des tempetes, 1d8 tonnerre en Reaction)."
+      }
+    ],
+    "lineages": []
+  },
+  {
+    "id": "halfelin",
+    "name": "Halfelin",
+    "kind": "espece",
+    "ref": "../especes/halfelin.html",
+    "source": "img:192",
+    "size": "P",
+    "speed": "9m",
+    "effects": [],
+    "choices": [],
+    "lineages": []
+  },
+  {
+    "id": "humain",
+    "name": "Humain",
+    "kind": "espece",
+    "ref": "../especes/humain.html",
+    "source": "img:193",
+    "size": "M ou P",
+    "speed": "9m",
+    "effects": [],
+    "choices": [
+      {
+        "id": "humain-competent",
+        "kind": "competence",
+        "count": 1,
+        "from": {
+          "fromSkillSet": [
+            "acrobaties",
+            "arcanes",
+            "athletisme",
+            "discretion",
+            "dressage",
+            "escamotage",
+            "histoire",
+            "intimidation",
+            "intuition",
+            "investigation",
+            "medecine",
+            "nature",
+            "perception",
+            "persuasion",
+            "religion",
+            "representation",
+            "survie",
+            "tromperie"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "humain-polyvalent",
+        "kind": "don-origine",
+        "count": 1,
+        "from": {
+          "fromFeatCategory": "origines"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "feat"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "don-origine",
+        "ids": [
+          "doue"
+        ]
+      }
+    ],
+    "lineages": []
+  },
+  {
+    "id": "nain",
+    "name": "Nain",
+    "kind": "espece",
+    "ref": "../especes/nain.html",
+    "source": "img:194",
+    "size": "M",
+    "speed": "9m",
+    "effects": [
+      {
+        "type": "grants",
+        "what": "resistance",
+        "value": "poison"
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Resistance naine",
+        "note": "Resistance aux degats de poison + Avantage aux JdS pour eviter ou terminer l'etat Empoisonne sur soi"
+      },
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision dans le noir",
+        "range": "36m"
+      },
+      {
+        "type": "grants",
+        "what": "bonusHitPointsPerLevel",
+        "value": 1
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Connaissance de la pierre"
+      }
+    ],
+    "choices": [],
+    "lineages": []
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "kind": "espece",
+    "ref": "../especes/orc.html",
+    "source": "img:195",
+    "size": "M",
+    "speed": "9m",
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision dans le noir",
+        "range": "36m"
+      }
+    ],
+    "choices": [],
+    "lineages": []
+  },
+  {
+    "id": "tieffelin",
+    "name": "Tieffelin",
+    "kind": "espece",
+    "ref": "../especes/tieffelin.html",
+    "source": "img:196",
+    "size": "M ou P",
+    "speed": "9m",
+    "effects": [
+      {
+        "type": "grants",
+        "what": "cantrip",
+        "spell": "thaumaturgie",
+        "list": "espece"
+      },
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision dans le noir",
+        "range": "18m"
+      }
+    ],
+    "choices": [],
+    "lineages": [
+      {
+        "id": "tieffelin-abyssal",
+        "name": "Abyssal",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "resistance",
+            "value": "poison"
+          },
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "bouffee-de-poison",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 3,
+            "spell": "rayon-empoisonne",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 5,
+            "spell": "immobilisation-de-personne",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "tieffelin-abyssal-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      },
+      {
+        "id": "tieffelin-chtonien",
+        "name": "Chtonien",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "resistance",
+            "value": "necrotiques"
+          },
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "contact-glacial",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 3,
+            "spell": "simulacre-de-vie",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 5,
+            "spell": "rayon-affaiblissant",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "tieffelin-chtonien-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      },
+      {
+        "id": "tieffelin-infernal",
+        "name": "Infernal",
+        "effects": [
+          {
+            "type": "grants",
+            "what": "resistance",
+            "value": "feu"
+          },
+          {
+            "type": "grants",
+            "what": "cantrip",
+            "spell": "trait-de-feu",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 3,
+            "spell": "represailles-infernales",
+            "list": "espece"
+          },
+          {
+            "type": "grants",
+            "what": "futureSpell",
+            "level": 5,
+            "spell": "tenebres",
+            "list": "espece"
+          }
+        ],
+        "choices": [
+          {
+            "id": "tieffelin-infernal-caracteristique-incantation",
+            "kind": "spellcasting-ability",
+            "count": 1,
+            "from": {
+              "fromList": [
+                "int",
+                "sag",
+                "cha"
+              ]
+            }
+          }
+        ],
+        "recommends": []
+      }
+    ]
+  }
+]

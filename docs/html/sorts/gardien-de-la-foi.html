@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gardien de la foi — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Gardien de la foi">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="gardien-de-la-foi" data-status="source"
+             data-source="img:291"
+             data-spell-level="4" data-school="invocation"
+             data-casting-time="action" data-ritual="false" data-concentration="false"
+             data-range="9m" data-components="V"
+             data-duration="8h" data-classes="clerc"
+             data-save="dex" data-damage-type="radiant">
+
+      <h1>Gardien de la foi</h1>
+      <p class="provenance">Invocation du 4e niveau (<a href="../classes/clerc.html" data-ref="clerc">Clerc</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 4</span>
+        <span class="badge" data-status="source">Invocation</span>
+        <span class="pill">Clerc</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">9 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">8 heures</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Un gardien spectral de taille G apparait pour toute la duree et flotte en un <a href="../regles/glossaire.html#espace-inoccupe" data-ref="espace-inoccupe">espace inoccupe</a> que vous voyez a portee. Le gardien, invulnerable, occupe cet espace et se presente sous une forme adaptee a votre divinite ou pantheon.</p>
+        <p>Tout ennemi qui se deplace dans un espace a 3 m ou moins du gardien pour la premiere fois d'un tour ou qui y commence son tour effectue un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Dexterite et subit 20 degats radiants en cas d'echec, la moitie en cas de reussite. Le gardien disparait apres avoir inflige un total de 60 degats.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Dexterite)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit 20 degats radiants.</td></tr>
+            <tr><td>Reussite</td><td>Subit la moitie des degats.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>

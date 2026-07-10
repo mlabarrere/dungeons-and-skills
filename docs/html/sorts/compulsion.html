@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compulsion — Sort</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Sorts|/sorts/index.html; Compulsion">
+  <main>
+    <div class="print-actions">
+      <button type="button" data-print>Imprimer</button>
+    </div>
+
+    <article class="sheet"
+             data-entity="sort" data-id="compulsion" data-status="source"
+             data-source="img:259"
+             data-spell-level="4" data-school="enchantement"
+             data-casting-time="action" data-ritual="false" data-concentration="true"
+             data-range="9m" data-components="V,S"
+             data-duration="conc-1min" data-classes="barde"
+             data-save="sag" data-damage-type="-">
+
+      <h1>Compulsion</h1>
+      <p class="provenance">Enchantement du 4e niveau (<a href="../classes/barde.html" data-ref="barde">Barde</a>)</p>
+      <div class="spell-tags">
+        <span class="badge" data-status="source">Niveau 4</span>
+        <span class="badge" data-status="source">Enchantement</span>
+        <span class="badge" data-status="source">Concentration</span>
+        <span class="pill">Barde</span>
+      </div>
+
+      <section class="section">
+        <h2>Incantation</h2>
+        <div class="meta-grid">
+          <div class="field"><span class="label">Temps d'incantation</span><span class="value">Action</span></div>
+          <div class="field"><span class="label">Portee</span><span class="value">9 m</span></div>
+          <div class="field"><span class="label">Composantes</span><span class="value">V, S</span></div>
+          <div class="field"><span class="label">Duree</span><span class="value">Concentration, jusqu'a 1 minute</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>Chaque creature de votre choix parmi celles que vous voyez a portee doit reussir un <a href="../regles/glossaire.html#jet-de-sauvegarde" data-ref="jet-de-sauvegarde">jet de sauvegarde</a> de Sagesse sous peine de subir l'etat Charme jusqu'a la fin du sort.</p>
+        <p>Pour toute la duree, vous pouvez par une <a href="../regles/glossaire.html#action-bonus" data-ref="action-bonus">action Bonus</a> designer une direction qui vous est horizontale. Chaque cible Charmee doit, a son tour suivant, consacrer autant de son deplacement que possible a se deplacer dans cette direction, selon le chemin le plus sur. Une fois ce deplacement termine, la cible reitere le JS et met un terme au sort sur elle-meme en cas de reussite.</p>
+
+        <h3 style="margin-top: 12px;">Effet du jet de sauvegarde (Sagesse)</h3>
+        <table class="save-outcome">
+          <thead><tr><th>Resultat</th><th>Effet sur la creature</th></tr></thead>
+          <tbody>
+            <tr><td>Echec</td><td>Subit l'etat Charme jusqu'a la fin du sort ; peut etre forcee de se deplacer dans la direction designee (JS reitere apres ce deplacement).</td></tr>
+            <tr><td>Reussite</td><td>Aucun effet.</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>
