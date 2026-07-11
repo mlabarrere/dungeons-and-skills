@@ -47,3 +47,11 @@ next-env.d.ts
 # fiches de perso remplies / PDF (donnees perso — jamais versionnees ni distribuees)
 # Les gabarits vierges peuvent etre re-ajoutes explicitement : git add -f <fichier>.pdf
 *.pdf
+
+# benchmark scratch (fichiers answers temporaires écrits par le runner/sous-agents)
+/answers*.json
+*.tmp.json
+
+# divers scratch de bench
+/_bench_tmp*.json
+/_tmp*.json

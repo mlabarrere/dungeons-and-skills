@@ -46,8 +46,13 @@ All notable changes to this project are documented here. The format is based on
 - Removed the v1 benchmark files (scorer/tasks/arms/run/gen-grounded) — superseded, no duplication.
 
 ### Honesty
-- Only the `bare` `dnd-build` condition has **real** model data (exploratory pilot). The full
-  ablation and reasoning matrix are implemented but **not run** (no API key); no figure is invented.
+- Ran a **real exploratory ablation** for `dnd-build` (5 characters, Haiku/Sonnet/Opus) via
+  model sub-agents: `bare` vs `skill-engine`, the latter actually running the engine. Atomic
+  error rate 14–21% (bare) → 0–0.6% (skill-engine); a −96% to −100% relative reduction
+  (`benchmarks/reports/pilot-build-ablation.md`). `skill-engine` is not a flat 0 (real
+  transcription slips), i.e. a measured model result, not injected engine output.
+- Still **not run** (no figure fabricated): the `grounding-only` / `skill-only` / `full-project`
+  conditions, the reasoning-level sweep, and the check/lookup/help ablations.
 
 ### Security / privacy
 - Removed hard-coded personal file paths from `docs/_analysis/*` and `docs/_engine/autolink.mjs`

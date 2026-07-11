@@ -1,0 +1,1 @@
+{"class":"Fighter","species":"Dwarf","lineage":"Hill Dwarf","background":"Soldier","abilityScores":{"for":15,"dex":13,"con":14,"int":8,"sag":12,"cha":10},"proficiencyBonus":2,"armorClass":17,"hitPoints":12,"passivePerception":13,"savingThrowProficiencies":["for","con"],"skillProficiencies":["Athletics","Perception"],"cantrips":[],"preparedSpells":[],"fightingStyle":"Defense"}

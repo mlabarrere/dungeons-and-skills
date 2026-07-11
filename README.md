@@ -58,28 +58,38 @@ HP, each spell, each factual claim…) that are wrong. Each skill has its own ta
 metrics; five conditions can be compared (`bare` → `full-project`); the full method is in
 [benchmarks/README.md](benchmarks/README.md).
 
-**Exploratory pilot — real models, `bare` condition, `dnd-build`** (Haiku/Sonnet/Opus answered
-from memory with no tools; 2 builds, n=1; [report](benchmarks/reports/pilot-build-bare.md)):
+**Exploratory ablation — real models, `dnd-build`, 5 characters each**
+([report](benchmarks/reports/pilot-build-ablation.md)). `bare` = the model builds from memory,
+no tools; `skill-engine` = the same model reads the skill and actually runs the engine
+(`node engine/cli.mjs`) and interprets the output itself:
 
-![Atomic error rate per model in the bare condition, with 95% confidence intervals: roughly 15% (Haiku), 10% (Sonnet), 12% (Opus).](assets/bench-errors.svg)
+![Atomic error rate per model, bare vs skill-engine, with 95% CIs: Haiku 21.0% -> 0.6%, Sonnet 14.2% -> 0.0%, Opus 15.3% -> 0.6%.](assets/bench-errors.svg)
 
-The mistakes are real: a missed species hit-point bonus, the wrong prepared-spell count, the
-wrong pair of saving throws, or quietly changing the ability scores the brief had fixed.
+| Model | bare (no skill) | skill-engine | relative reduction | perfect sheets |
+|---|--:|--:|--:|---|
+| Haiku 4.5 | 21.0% | **0.6%** | −97% | 0/5 → 4/5 |
+| Sonnet 5 | 14.2% | **0.0%** | −100% | 1/5 → 5/5 |
+| Opus 4.8 | 15.3% | **0.6%** | −96% | 0/5 → 5/5 |
+
+From memory even the strongest model gets ~1 in 7 verifiable facts wrong (missed species
+hit-point bonus, wrong prepared-spell count, wrong saving throws, changed the briefed scores).
+Reading the skill and running the engine drops that to near zero — and, tellingly, `skill-engine`
+is **not** a flat 0: Haiku and Opus each slipped once transcribing an engine value, so this is a
+measured model result, not the engine's own output injected.
 
 ![Error taxonomy for the bare condition: wrong-count, derived-stat-error, brief-violation, wrong-value.](assets/bench-taxonomy.svg)
 
-> This pilot measures only the **bare** condition, so it shows how often an ungrounded model errs
-> — **not** yet the improvement from the skill. The full ablation
-> (`grounding-only` / `skill-only` / `skill-engine` / `full-project`) and the multi-reasoning
-> matrix are implemented but need API keys to run; they are **not measured here** and no figure
-> for them is fabricated. The scorer itself is proven by a deterministic oracle run that scores
-> 34/34 tasks at zero errors ([self-check](benchmarks/reports/oracle-selfcheck.md)).
+> Honest limits: this ablation is **`dnd-build` only, 5 characters, n=1** — exploratory, not a
+> league table. The intermediate conditions (`grounding-only`, `skill-only`, `full-project`), the
+> reasoning-level sweep, and the other three skills' ablations are implemented but not yet run at
+> scale. The scorer itself is proven by a deterministic oracle run scoring 34/34 tasks at zero
+> errors ([self-check](benchmarks/reports/oracle-selfcheck.md)); no unrun figure is fabricated.
 
 ```bash
 npm run bench:oracle                       # deterministic self-consistency (offline, 0 errors)
-npm run bench:replay                       # score real captured outputs offline
+npm run bench:replay -- --skills dnd-build --conditions bare,skill-engine   # re-score the captures
 node benchmarks/runner.mjs --backend live --conditions bare,grounding-only,skill-only,skill-engine \
-  --models haiku,sonnet,opus --reasoning off,high --reps 5 --dry-run   # real ablation (needs a key)
+  --models haiku,sonnet,opus --reasoning off,high --reps 5 --dry-run        # widen it (needs a key)
 ```
 
 ## Documentation
