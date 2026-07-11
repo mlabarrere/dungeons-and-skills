@@ -1,0 +1,72 @@
+{
+  "id": "dwarf-cleric-cascade",
+  "skill": "dnd-check",
+  "level": "complex",
+  "lang": "en",
+  "base": {
+    "methode": "standard",
+    "_id": "dwarf-cleric",
+    "nom": "Dvalin",
+    "classe": "clerc",
+    "espece": "nain",
+    "historique": "acolyte",
+    "abilityScores": {
+      "for": 13,
+      "dex": 10,
+      "con": 14,
+      "int": 8,
+      "sag": 15,
+      "cha": 12
+    },
+    "clerc-competences": [
+      "histoire",
+      "medecine"
+    ],
+    "clerc-ordre-divin": "protecteur",
+    "clerc-cantrips": [
+      "assistance",
+      "flamme-sacree",
+      "glas"
+    ],
+    "clerc-prepares": [
+      "aide",
+      "allie-planaire",
+      "amelioration-de-caracteristique",
+      "animation-des-morts"
+    ],
+    "clerc-equipement": "A",
+    "acolyte-caracteristiques": "int",
+    "initie-a-la-magie-liste": "clerc",
+    "initie-a-la-magie-carac": "int",
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ],
+    "initie-a-la-magie-cantrips": [
+      "lumiere",
+      "mot-de-radiance"
+    ],
+    "initie-a-la-magie-sort-1": "benediction"
+  },
+  "prompt": "Audit this D&D 2024 level-1 character sheet and report every rules error with a correction. If it is correct, report no findings.\n\nSHEET:\n{\n  \"class\": \"clerc\",\n  \"species\": \"nain\",\n  \"lineage\": null,\n  \"background\": \"acolyte\",\n  \"abilityScores\": {\n    \"for\": 13,\n    \"dex\": 10,\n    \"con\": 16,\n    \"int\": 8,\n    \"sag\": 15,\n    \"cha\": 12\n  },\n  \"proficiencyBonus\": 2,\n  \"armorClass\": 13,\n  \"hitPoints\": 12,\n  \"passivePerception\": 12,\n  \"savingThrowProficiencies\": [\n    \"sag\",\n    \"cha\"\n  ],\n  \"skillProficiencies\": [\n    \"histoire\",\n    \"intuition\",\n    \"medecine\",\n    \"religion\"\n  ],\n  \"cantrips\": [\n    \"assistance\",\n    \"flamme-sacree\",\n    \"glas\",\n    \"lumiere\",\n    \"mot-de-radiance\"\n  ],\n  \"preparedSpells\": [\n    \"aide\",\n    \"allie-planaire\",\n    \"amelioration-de-caracteristique\",\n    \"animation-des-morts\",\n    \"benediction\"\n  ],\n  \"fightingStyle\": null\n}",
+  "mutations": [
+    {
+      "field": "ability-con",
+      "from": 14,
+      "to": 16,
+      "category": "brief-violation",
+      "severity": "critical",
+      "expected": 14,
+      "root": true
+    },
+    {
+      "field": "hit-points",
+      "from": 11,
+      "to": 12,
+      "category": "derived-stat-error",
+      "severity": "significant",
+      "expected": 11,
+      "parentField": "ability-con"
+    }
+  ]
+}

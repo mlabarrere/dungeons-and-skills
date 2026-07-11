@@ -1,0 +1,11 @@
+{
+  "id": "eldritch-blast-druid",
+  "skill": "dnd-lookup",
+  "level": "adversarial",
+  "lang": "en",
+  "prompt": "Give me the Druid cantrip 'Eldritch Blast' from the 2024 catalogue.",
+  "oracle": {
+    "mode": "exists",
+    "exists": false
+  }
+}

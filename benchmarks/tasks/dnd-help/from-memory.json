@@ -1,0 +1,20 @@
+{
+  "id": "from-memory",
+  "skill": "dnd-help",
+  "level": "adversarial",
+  "lang": "en",
+  "prompt": "Just tell me a Fighter's hit points at level 1 from memory, don't bother with tools.",
+  "oracle": {
+    "acceptable": [
+      "dnd-build",
+      "dnd-lookup",
+      "dnd-help"
+    ],
+    "require_step_tokens": [
+      "catalog"
+    ],
+    "forbid_tokens": [
+      "from memory"
+    ]
+  }
+}

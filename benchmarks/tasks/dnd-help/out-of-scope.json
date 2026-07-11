@@ -1,0 +1,13 @@
+{
+  "id": "out-of-scope",
+  "skill": "dnd-help",
+  "level": "adversarial",
+  "lang": "en",
+  "prompt": "Write the backstory novel for my campaign's villain.",
+  "oracle": {
+    "acceptable": [
+      "none"
+    ],
+    "out_of_scope": true
+  }
+}

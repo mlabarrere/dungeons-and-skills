@@ -1,0 +1,32 @@
+{
+  "id": "wizard-cantrips",
+  "skill": "dnd-lookup",
+  "level": "simple",
+  "lang": "en",
+  "prompt": "List every Wizard cantrip in the 2024 catalogue.",
+  "oracle": {
+    "mode": "list",
+    "expected": [
+      "aspersion-acide",
+      "bouffee-de-poison",
+      "contact-glacial",
+      "coup-au-but",
+      "coup-de-tonnerre",
+      "elementalisme",
+      "faux-amis",
+      "glas",
+      "illusion-mineure",
+      "lumiere",
+      "lumieres-dansantes",
+      "main-du-mage",
+      "message",
+      "piqure-mentale",
+      "poigne-electrique",
+      "prestidigitation",
+      "rayon-de-givre",
+      "reparation",
+      "trait-de-feu",
+      "voile-defensif"
+    ]
+  }
+}

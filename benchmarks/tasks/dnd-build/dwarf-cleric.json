@@ -1,0 +1,54 @@
+{
+  "id": "dwarf-cleric",
+  "skill": "dnd-build",
+  "level": "intermediate",
+  "caster": true,
+  "lang": "en",
+  "seed": 20260711,
+  "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: nain clerc, acolyte background, ability scores {\"for\":13,\"dex\":10,\"con\":14,\"int\":8,\"sag\":15,\"cha\":12}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
+  "reference": {
+    "methode": "standard",
+    "_id": "dwarf-cleric",
+    "nom": "Dvalin",
+    "classe": "clerc",
+    "espece": "nain",
+    "historique": "acolyte",
+    "abilityScores": {
+      "for": 13,
+      "dex": 10,
+      "con": 14,
+      "int": 8,
+      "sag": 15,
+      "cha": 12
+    },
+    "clerc-competences": [
+      "histoire",
+      "medecine"
+    ],
+    "clerc-ordre-divin": "protecteur",
+    "clerc-cantrips": [
+      "assistance",
+      "flamme-sacree",
+      "glas"
+    ],
+    "clerc-prepares": [
+      "aide",
+      "allie-planaire",
+      "amelioration-de-caracteristique",
+      "animation-des-morts"
+    ],
+    "clerc-equipement": "A",
+    "acolyte-caracteristiques": "int",
+    "initie-a-la-magie-liste": "clerc",
+    "initie-a-la-magie-carac": "int",
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ],
+    "initie-a-la-magie-cantrips": [
+      "lumiere",
+      "mot-de-radiance"
+    ],
+    "initie-a-la-magie-sort-1": "benediction"
+  }
+}

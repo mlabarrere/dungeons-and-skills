@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Benchmark run record",
+  "type": "object",
+  "required": ["key", "skill", "task", "model", "condition", "reasoning", "rep", "backend", "provenance", "status", "manifest"],
+  "properties": {
+    "key": { "type": "string" },
+    "skill": { "enum": ["dnd-build", "dnd-check", "dnd-lookup", "dnd-help"] },
+    "task": { "type": "string" },
+    "model": { "type": "string" },
+    "condition": { "enum": ["bare", "grounding-only", "skill-only", "skill-engine", "full-project", "oracle"] },
+    "reasoning": { "type": "string" },
+    "rep": { "type": "number" },
+    "backend": { "enum": ["oracle", "fixture", "replay", "live"] },
+    "provenance": { "enum": ["oracle", "fixture", "replay", "live"] },
+    "status": { "enum": ["ok", "not-run", "not-supported", "error"] },
+    "errors": { "type": "array" },
+    "metrics": { "type": ["object", "null"] },
+    "manifest": {
+      "type": "object",
+      "required": ["git_commit", "seed", "condition", "reasoning_level", "repetition", "prompt_hash", "skill_hash", "tool_access"]
+    }
+  },
+  "additionalProperties": true
+}

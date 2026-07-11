@@ -1,0 +1,11 @@
+{
+  "id": "nonexistent-spell",
+  "skill": "dnd-lookup",
+  "level": "adversarial",
+  "lang": "en",
+  "prompt": "What are the effects of the spell 'Chronomancy Surge' in this catalogue?",
+  "oracle": {
+    "mode": "exists",
+    "exists": false
+  }
+}

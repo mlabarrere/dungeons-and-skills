@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Benchmark task",
+  "type": "object",
+  "required": ["id", "skill", "level", "lang"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "skill": { "enum": ["dnd-build", "dnd-check", "dnd-lookup", "dnd-help"] },
+    "level": { "enum": ["simple", "intermediate", "complex", "adversarial"] },
+    "lang": { "enum": ["fr", "en"] },
+    "prompt": { "type": "string" },
+    "seed": { "type": "number" },
+    "caster": { "type": "boolean" },
+    "reference": { "type": "object" },
+    "base": { "type": "object" },
+    "mutations": { "type": "array", "items": { "type": "object", "required": ["field", "category", "severity"] } },
+    "oracle": { "type": "object" }
+  },
+  "additionalProperties": true
+}

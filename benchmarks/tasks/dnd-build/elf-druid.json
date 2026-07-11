@@ -1,0 +1,56 @@
+{
+  "id": "elf-druid",
+  "skill": "dnd-build",
+  "level": "intermediate",
+  "caster": true,
+  "lang": "en",
+  "seed": 20260711,
+  "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: elfe (elfe-sylvestre) druide, guide background, ability scores {\"for\":10,\"dex\":14,\"con\":13,\"int\":12,\"sag\":15,\"cha\":8}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
+  "reference": {
+    "methode": "standard",
+    "_id": "elf-druid",
+    "nom": "Sylwen",
+    "classe": "druide",
+    "espece": "elfe",
+    "lignage": "elfe-sylvestre",
+    "historique": "guide",
+    "abilityScores": {
+      "for": 10,
+      "dex": 14,
+      "con": 13,
+      "int": 12,
+      "sag": 15,
+      "cha": 8
+    },
+    "druide-competences": [
+      "arcanes",
+      "dressage"
+    ],
+    "druide-ordre-primitif": "gardien",
+    "druide-cantrips": [
+      "assistance",
+      "bouffee-de-poison"
+    ],
+    "druide-prepares": [
+      "agrandissement-rapetissement",
+      "aide",
+      "alienation",
+      "amelioration-de-caracteristique"
+    ],
+    "druide-equipement": "A",
+    "elfe-sens-aiguises": "intuition",
+    "elfe-sylvestre-caracteristique-incantation": "int",
+    "guide-caracteristiques": "dex",
+    "initie-a-la-magie-liste": "druide",
+    "initie-a-la-magie-carac": "int",
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ],
+    "initie-a-la-magie-cantrips": [
+      "coup-de-tonnerre",
+      "crosse-des-druides"
+    ],
+    "initie-a-la-magie-sort-1": "amitie-avec-les-animaux"
+  }
+}

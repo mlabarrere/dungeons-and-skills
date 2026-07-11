@@ -1,0 +1,55 @@
+{
+  "id": "goliath-barbarian-cascade",
+  "skill": "dnd-check",
+  "level": "complex",
+  "lang": "en",
+  "base": {
+    "methode": "standard",
+    "_id": "goliath-barbarian",
+    "nom": "Karn",
+    "classe": "barbare",
+    "espece": "goliath",
+    "historique": "soldat",
+    "abilityScores": {
+      "for": 15,
+      "dex": 14,
+      "con": 14,
+      "int": 8,
+      "sag": 10,
+      "cha": 12
+    },
+    "barbare-competences": [
+      "dressage",
+      "nature"
+    ],
+    "barbare-equipement": "A",
+    "goliath-ascendance-gigante": "brulure-ignee",
+    "soldat-caracteristiques": "for",
+    "soldat-boite-de-jeux": "boite-de-jeux",
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ]
+  },
+  "prompt": "Audit this D&D 2024 level-1 character sheet and report every rules error with a correction. If it is correct, report no findings.\n\nSHEET:\n{\n  \"class\": \"barbare\",\n  \"species\": \"goliath\",\n  \"lineage\": null,\n  \"background\": \"soldat\",\n  \"abilityScores\": {\n    \"for\": 15,\n    \"dex\": 14,\n    \"con\": 16,\n    \"int\": 8,\n    \"sag\": 10,\n    \"cha\": 12\n  },\n  \"proficiencyBonus\": 2,\n  \"armorClass\": 12,\n  \"hitPoints\": 15,\n  \"passivePerception\": 10,\n  \"savingThrowProficiencies\": [\n    \"for\",\n    \"con\"\n  ],\n  \"skillProficiencies\": [\n    \"athletisme\",\n    \"dressage\",\n    \"intimidation\",\n    \"nature\"\n  ],\n  \"cantrips\": [],\n  \"preparedSpells\": [],\n  \"fightingStyle\": null\n}",
+  "mutations": [
+    {
+      "field": "ability-con",
+      "from": 14,
+      "to": 16,
+      "category": "brief-violation",
+      "severity": "critical",
+      "expected": 14,
+      "root": true
+    },
+    {
+      "field": "hit-points",
+      "from": 14,
+      "to": 15,
+      "category": "derived-stat-error",
+      "severity": "significant",
+      "expected": 14,
+      "parentField": "ability-con"
+    }
+  ]
+}

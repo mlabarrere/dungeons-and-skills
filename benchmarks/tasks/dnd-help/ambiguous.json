@@ -1,0 +1,15 @@
+{
+  "id": "ambiguous",
+  "skill": "dnd-help",
+  "level": "intermediate",
+  "lang": "en",
+  "prompt": "Can you help me with my character?",
+  "oracle": {
+    "acceptable": [
+      "dnd-help",
+      "dnd-build",
+      "dnd-check"
+    ],
+    "clarify": true
+  }
+}

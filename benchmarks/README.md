@@ -1,59 +1,99 @@
-# Benchmarks — errors per character creation
+# Benchmarks (v2)
 
-**Objective metric:** the number of D&D 2024 rules errors in a character a model creates.
-Lower is better; the goal is to show how far *grounding* (forcing the model to use the bundled
-catalog + engine instead of its training memory) drives that number down.
+Measures, **per skill**, how useful each skill actually is — objectively, with an explicit
+denominator, and without ever passing off the engine's own output as a model's. See
+[AUDIT.md](AUDIT.md) for what changed from v1 and why.
 
-## Why this can be objective
+## The objective metric
 
-Unlike "quality", a character sheet is decidable. We already ship a deterministic oracle — the
-engine (`engine/`) computes AC/HP/save-DCs/spell-counts and the resolver defines the legal
-options. So [`scorer.mjs`](scorer.mjs) can score *any* character with **no LLM and no judgement**:
-it recomputes the truth and counts each deviation, tagged by type.
+**Atomic error rate** = erroneous scorable units ÷ total scorable units × 100. Each task
+declares verifiable *units* (class, species, each ability, AC, HP, each skill, each spell, each
+factual claim, each procedure step…). Every unit ends `correct | incorrect | missing |
+extraneous | not-applicable | not-scorable`; the last two are **excluded from every
+denominator**. Alongside it we report the **severity-weighted** rate (minor 1 / significant 3 /
+critical 5, denominator documented in `scoring.mjs`), the **perfect rate** (% responses with
+zero errors), the **invalid rate** (% with a critical error), raw/mean/median errors, and
+root-cause vs cascade counts. No percentage is ever printed without its denominator.
 
-### Error taxonomy
+Errors carry a stable [taxonomy](taxonomy.mjs) (25 categories × 3 severities) and link
+cascades to a root cause via `parent_error_id`.
 
-`math-ac` · `math-hp` · `math-pp` · `math-pb` · `math-saves` (computed value wrong) ·
-`invented-{skill,cantrip,prepared,style}` (not in the catalog — wrong edition / hallucinated) ·
-`illegal-{skill,cantrip,prepared,style}` (real, but not legal for this build / on the wrong list) ·
-`wrong-count-{skills,cantrips,prepared}` (too many/few) · `illegal-spells-noncaster` ·
-`ignored-brief` (changed the class/species/scores the brief fixed).
+## Backends — engine output is never a model result
 
-The scorer resolves French **and** English names (via `data/labels.en.json` + `aliases.en.json`)
-so it measures *rules* errors, not FR/EN translation. It accepts AC with or without a carried
-shield. The measuring instrument itself is unit-tested in [`tests/bench.test.mjs`](../tests/bench.test.mjs).
+| Backend | What it is | Labelled |
+|---|---|---|
+| `oracle` | the engine's correct answer | `provenance: oracle` — a self-consistency check, **never** a model row |
+| `fixture` | a synthetic, hand-authored response (CI/demo) | synthetic |
+| `replay` | a real captured model output (`captures/`) | real |
+| `live` | a real API call (needs a key; runs the `run_engine` tool loop) | real |
 
-## Arms
+The oracle backend must score **0 errors on every task** — that is the proof the scorer works
+(`npm run bench:oracle` + `benchmarks/ci-guard.mjs`).
 
-- **bare** — the model builds the character from its own knowledge (the control).
-- **grounded** — the model is told to distrust its training and use the catalog/engine. When it
-  runs `engine/cli.mjs` its output is the engine's, so it scores **0 by construction**.
+## Conditions (ablation) and their isolation
 
-See [`arms.mjs`](arms.mjs) for the exact prompts and the required JSON output format.
+`bare` · `grounding-only` · `skill-only` · `skill-engine` · `full-project`
+(see [conditions.mjs](conditions.mjs)). Isolation is enforced there and asserted in
+`tests/bench.test.mjs`: `bare` receives no grounding, no skill and no tools; `skill-only` gets
+the skill but no engine; only `skill-engine`/`full-project` may call `run_engine`. In an
+engine-enabled condition the **model** calls the tool and interprets the result — the engine is
+never injected as the answer. Conditions a platform cannot provide are recorded `not-supported`,
+never estimated.
 
-## Running it
+## Per-skill scorers + oracles (colocated in `skills/`)
+
+- **dnd-build** — engine oracle; scores brief compliance, legality, derived-stat maths, counts,
+  invented/edition content, with cascade linking.
+- **dnd-check** — planted, annotated errors; scores true/false positives/negatives →
+  precision / recall / F1, correction correctness, and penalises invented errors hard.
+- **dnd-lookup** — catalogue-derived expected sets; scores recall (omissions), precision
+  (foreign items), and correct recognition of "not in the catalogue".
+- **dnd-help** — authored routing oracle; scores skill selection, procedure coverage and the
+  grounding reflex.
+
+## Corpora
+
+Versioned under `tasks/<skill>/`, generated deterministically (seeded) by `tasks/gen.mjs`:
+build **12**, check **24**, lookup **6**, help **8**. Build references are solved and validated
+by the engine (0 lint errors). `--suite pilot` caps at 10/skill; `--suite full` uses all. Add a
+task by dropping a valid file (or extending the generator) — permanent id, recorded seed.
+
+## Commands
 
 ```bash
-# Offline replay of captured outputs (reproducible, no API key):
-node benchmarks/run.mjs --replay --models haiku,sonnet,opus --arms bare,grounded
-node benchmarks/report.mjs --out results/<date>.md
+npm run bench:gen                 # (re)generate the corpora (seeded)
+npm run bench:oracle              # deterministic self-consistency run (0 errors expected)
+npm run bench:replay              # score real captured outputs offline
+npm run bench:report -- --in results/runs.<id>.json --out reports/<name>.md
+npm run bench:charts -- --in results/runs.<id>.json --condition bare
+npm run bench:validate            # JSON-schema validation + scorer tests
 
-# Live, real models (needs ANTHROPIC_API_KEY), with reasoning levels:
-node benchmarks/run.mjs --live --models haiku,sonnet,opus --arms bare,grounded --reasoning off,high --reps 5
-node benchmarks/report.mjs --out results/<date>.md
+# real models (needs ANTHROPIC_API_KEY; copy config/models.example.json -> models.json):
+node benchmarks/runner.mjs --backend live --skills dnd-build,dnd-check,dnd-lookup,dnd-help \
+  --models haiku,sonnet,opus --conditions bare,grounding-only,skill-only,skill-engine \
+  --reasoning off,high --reps 5 --seed 20260711 --dry-run   # drop --dry-run to execute
 ```
 
-`run.mjs` writes `results/runs.json`; `report.mjs` aggregates it to a Markdown table (mean errors
-per model × arm × reasoning, the reduction, and the taxonomy).
+Model API ids/prices live in `config/models.json` (never hardcoded). `--dry-run` prints the
+matrix and a rough cost ceiling; the runner refuses to start if the estimate exceeds `--max-usd`.
+Every run writes a provenance manifest (git commit, catalogue/engine/scorer/task hashes, seed,
+prompt hash, tool access) and is replayable offline from `captures/`.
 
-## The pilot in `results/`
+## What has actually been run (strictly separated)
 
-[`results/2026-07-11-pilot.md`](results/2026-07-11-pilot.md) is a small **real** run: the three
-Claude models answered the two build briefs **from memory, with no tools** (captured in
-`captures/bare.<model>.<task>.json`), scored by the oracle. Grounded outputs are engine-produced.
-It is a pilot (2 tasks, n=1) — widen it with `--reps` and `--live` for tighter numbers, and add
-tasks by dropping a valid `examples/<id>.answers.json` and a `tasks.mjs` entry.
+- **Deterministic (offline):** the oracle self-consistency run — 34/34 tasks at 0 errors
+  ([reports/oracle-selfcheck.md](reports/oracle-selfcheck.md)). This tests the instrument, not a
+  model.
+- **Real model data (exploratory pilot):** the **`bare`** condition of `dnd-build` for
+  Haiku/Sonnet/Opus, from `captures/` (models answered from memory, no tools)
+  ([reports/pilot-build-bare.md](reports/pilot-build-bare.md)). 2 tasks, n=1 — exploratory.
+- **Synthetic:** `fixtures/` — for pipeline/CI demonstration only; never presented as a result.
+- **Not yet run:** the full ablation (`grounding-only`/`skill-only`/`skill-engine`/`full-project`)
+  and multi-reasoning matrix require API keys and are **not** measured here. No number for them is
+  fabricated.
 
-Headline: even the strongest model averages a few rules errors per character from memory
-(missed species HP bonuses, wrong spell counts, a wrong saving-throw pair, changing the briefed
-scores); grounded, all three score 0. Reproduce: the commands above.
+## Limits
+
+Pilot scale (small n); lookup/help corpora are below the 10/skill pilot target and should be
+grown; `full-project` needs the real multi-skill runtime to be meaningful; prices in
+`models.example.json` are examples to verify.

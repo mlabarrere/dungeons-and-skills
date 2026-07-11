@@ -1,0 +1,39 @@
+{
+  "id": "human-fighter",
+  "skill": "dnd-build",
+  "level": "simple",
+  "caster": false,
+  "lang": "en",
+  "seed": 20260711,
+  "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: humain guerrier, garde background, ability scores {\"for\":15,\"dex\":14,\"con\":13,\"int\":10,\"sag\":12,\"cha\":8}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
+  "reference": {
+    "methode": "standard",
+    "_id": "human-fighter",
+    "nom": "Bram",
+    "classe": "guerrier",
+    "espece": "humain",
+    "historique": "garde",
+    "abilityScores": {
+      "for": 15,
+      "dex": 14,
+      "con": 13,
+      "int": 10,
+      "sag": 12,
+      "cha": 8
+    },
+    "guerrier-competences": [
+      "acrobaties",
+      "dressage"
+    ],
+    "guerrier-style-de-combat": "archerie",
+    "guerrier-equipement": "A",
+    "humain-competent": "acrobaties",
+    "humain-polyvalent": "bagarreur-de-tavernes",
+    "garde-caracteristiques": "for",
+    "garde-boite-de-jeux": "boite-de-jeux",
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ]
+  }
+}

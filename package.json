@@ -11,8 +11,15 @@
     "lint": "eslint",
     "skill:build": "node scripts/build-bundles.mjs && node scripts/build-adapters.mjs",
     "skill:check": "node scripts/check-sync.mjs && node scripts/check-rule-copies.mjs",
-    "bench": "node benchmarks/run.mjs",
+    "bench:gen": "node benchmarks/tasks/gen.mjs",
+    "bench:pilot": "node benchmarks/runner.mjs --suite pilot --backend replay",
+    "bench:full": "node benchmarks/runner.mjs --suite full --backend live",
+    "bench:replay": "node benchmarks/runner.mjs --backend replay",
+    "bench:oracle": "node benchmarks/runner.mjs --backend oracle",
+    "bench:score": "node benchmarks/runner.mjs --backend replay",
     "bench:report": "node benchmarks/report.mjs",
+    "bench:charts": "node benchmarks/charts.mjs",
+    "bench:validate": "node benchmarks/validate.mjs && node --test \"tests/bench.test.mjs\"",
     "test": "node --test \"tests/*.test.mjs\""
   },
   "dependencies": {

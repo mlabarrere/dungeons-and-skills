@@ -1,0 +1,25 @@
+{
+  "id": "druid-cantrips",
+  "skill": "dnd-lookup",
+  "level": "simple",
+  "lang": "en",
+  "prompt": "List every level-0 (cantrip) spell on the Druid spell list in the 2024 catalogue.",
+  "oracle": {
+    "mode": "list",
+    "expected": [
+      "assistance",
+      "bouffee-de-poison",
+      "coup-de-tonnerre",
+      "crosse-des-druides",
+      "druidisme",
+      "elementalisme",
+      "flammes",
+      "fouet-epineux",
+      "message",
+      "poussiere-d-etoile",
+      "reparation",
+      "resistance",
+      "stabilisation"
+    ]
+  }
+}

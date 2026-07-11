@@ -1,0 +1,12 @@
+{
+  "_note": "Copy to models.json (git-ignored) and adjust. Model API ids and prices live HERE, never hardcoded in the runner. Prices are EXAMPLES in USD per 1M tokens — verify against current provider pricing before trusting any cost figure; they only feed --cost estimates.",
+  "providers": {
+    "anthropic": { "endpoint": "https://api.anthropic.com/v1/messages", "apiVersion": "2023-06-01", "keyEnv": "ANTHROPIC_API_KEY" }
+  },
+  "models": {
+    "haiku":  { "provider": "anthropic", "api_id": "claude-haiku-4-5-20251001", "reasoning": ["off"],                    "price_per_mtok": { "input": 1,  "output": 5 } },
+    "sonnet": { "provider": "anthropic", "api_id": "claude-sonnet-5",           "reasoning": ["off", "low", "medium", "high"], "price_per_mtok": { "input": 3,  "output": 15 } },
+    "opus":   { "provider": "anthropic", "api_id": "claude-opus-4-8",           "reasoning": ["off", "low", "medium", "high"], "price_per_mtok": { "input": 15, "output": 75 } }
+  },
+  "reasoning_budget_tokens": { "off": 0, "low": 2000, "medium": 4000, "high": 8000 }
+}

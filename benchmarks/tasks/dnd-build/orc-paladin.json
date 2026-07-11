@@ -1,0 +1,40 @@
+{
+  "id": "orc-paladin",
+  "skill": "dnd-build",
+  "level": "intermediate",
+  "caster": true,
+  "lang": "en",
+  "seed": 20260711,
+  "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: orc paladin, soldat background, ability scores {\"for\":15,\"dex\":10,\"con\":14,\"int\":8,\"sag\":12,\"cha\":13}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
+  "reference": {
+    "methode": "standard",
+    "_id": "orc-paladin",
+    "nom": "Gorm",
+    "classe": "paladin",
+    "espece": "orc",
+    "historique": "soldat",
+    "abilityScores": {
+      "for": 15,
+      "dex": 10,
+      "con": 14,
+      "int": 8,
+      "sag": 12,
+      "cha": 13
+    },
+    "paladin-competences": [
+      "intuition",
+      "medecine"
+    ],
+    "paladin-prepares": [
+      "aide",
+      "appel-de-destrier"
+    ],
+    "paladin-equipement": "A",
+    "soldat-caracteristiques": "for",
+    "soldat-boite-de-jeux": "boite-de-jeux",
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ]
+  }
+}

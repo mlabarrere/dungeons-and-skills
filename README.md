@@ -49,41 +49,38 @@ node engine/cli.mjs check   sheet.character.json    # audit an existing sheet
 Worked examples live in [examples/](examples/) (`dwarf-fighter`, `elf-druid` — answers plus the
 expected sheet).
 
-## Does grounding actually help?
+## How good is each skill? (benchmarks)
 
 The measure is objective and needs no human judgement: a **deterministic scorer** rebuilds each
-character with the engine and counts every rules error, by type. Two arms are compared — **bare**
-(the model builds from memory) and **grounded** (the model is made to use the catalogue and
-engine).
+answer from the engine and counts every rules error, by category and severity. The headline
+number is the **atomic error rate** — the share of *verifiable units* (class, each ability, AC,
+HP, each spell, each factual claim…) that are wrong. Each skill has its own tasks, oracle and
+metrics; five conditions can be compared (`bare` → `full-project`); the full method is in
+[benchmarks/README.md](benchmarks/README.md).
 
-In the pilot the three Claude models each built the two briefs from memory, with no tools; the
-grounded figures are what the engine produces. Even the strongest model averages a few rules
-errors per character from memory. Grounded, all three score zero.
+**Exploratory pilot — real models, `bare` condition, `dnd-build`** (Haiku/Sonnet/Opus answered
+from memory with no tools; 2 builds, n=1; [report](benchmarks/reports/pilot-build-bare.md)):
 
-![Rules errors per created character: bare 3.5 (Haiku), 2.5 (Sonnet), 3.0 (Opus); grounded 0 for all three.](assets/benchmark-errors.svg)
+![Atomic error rate per model in the bare condition, with 95% confidence intervals: roughly 15% (Haiku), 10% (Sonnet), 12% (Opus).](assets/bench-errors.svg)
 
-| Model | Bare (no skill) | Grounded (skill) |
-|---|--:|--:|
-| Haiku 4.5 | 3.5 errors/character | **0.0** |
-| Sonnet 5 | 2.5 errors/character | **0.0** |
-| Opus 4.8 | 3.0 errors/character | **0.0** |
+The mistakes are real: a missed species hit-point bonus, the wrong prepared-spell count, the
+wrong pair of saving throws, or quietly changing the ability scores the brief had fixed.
 
-The mistakes are real ones: a missed species hit-point bonus, the wrong number of prepared
-spells, the wrong pair of saving throws, or quietly changing the ability scores the brief had
-fixed.
+![Error taxonomy for the bare condition: wrong-count, derived-stat-error, brief-violation, wrong-value.](assets/bench-taxonomy.svg)
 
-![Error types in the bare arm: too few or many skills (5), wrong hit points (3), wrong prepared count (3), wrong cantrip count (2), wrong passive Perception (2), wrong armour class (1), wrong saving throws (1), changed the brief (1).](assets/benchmark-taxonomy.svg)
-
-Full method and how to reproduce (more repeats, live API, reasoning levels):
-[benchmarks/README.md](benchmarks/README.md) · [pilot report](benchmarks/results/2026-07-11-pilot.md).
+> This pilot measures only the **bare** condition, so it shows how often an ungrounded model errs
+> — **not** yet the improvement from the skill. The full ablation
+> (`grounding-only` / `skill-only` / `skill-engine` / `full-project`) and the multi-reasoning
+> matrix are implemented but need API keys to run; they are **not measured here** and no figure
+> for them is fabricated. The scorer itself is proven by a deterministic oracle run that scores
+> 34/34 tasks at zero errors ([self-check](benchmarks/reports/oracle-selfcheck.md)).
 
 ```bash
-npm run bench -- --replay --models haiku,sonnet,opus --arms bare,grounded
-npm run bench:report -- --out results/mine.md
+npm run bench:oracle                       # deterministic self-consistency (offline, 0 errors)
+npm run bench:replay                       # score real captured outputs offline
+node benchmarks/runner.mjs --backend live --conditions bare,grounding-only,skill-only,skill-engine \
+  --models haiku,sonnet,opus --reasoning off,high --reps 5 --dry-run   # real ablation (needs a key)
 ```
-
-> The pilot is small (2 builds, one run each): it is directional, not a league table. Widen it
-> with `--reps`, `--live` and more tasks.
 
 ## Documentation
 

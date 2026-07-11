@@ -1,0 +1,49 @@
+{
+  "id": "human-ranger",
+  "skill": "dnd-build",
+  "level": "intermediate",
+  "caster": true,
+  "lang": "en",
+  "seed": 20260711,
+  "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: humain rodeur, guide background, ability scores {\"for\":12,\"dex\":15,\"con\":13,\"int\":8,\"sag\":14,\"cha\":10}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
+  "reference": {
+    "methode": "standard",
+    "_id": "human-ranger",
+    "nom": "Wren",
+    "classe": "rodeur",
+    "espece": "humain",
+    "historique": "guide",
+    "abilityScores": {
+      "for": 12,
+      "dex": 15,
+      "con": 13,
+      "int": 8,
+      "sag": 14,
+      "cha": 10
+    },
+    "rodeur-competences": [
+      "athletisme",
+      "dressage",
+      "intuition"
+    ],
+    "rodeur-prepares": [
+      "aide",
+      "alarme"
+    ],
+    "rodeur-equipement": "A",
+    "humain-competent": "acrobaties",
+    "humain-polyvalent": "bagarreur-de-tavernes",
+    "guide-caracteristiques": "dex",
+    "initie-a-la-magie-liste": "druide",
+    "initie-a-la-magie-carac": "int",
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ],
+    "initie-a-la-magie-cantrips": [
+      "assistance",
+      "bouffee-de-poison"
+    ],
+    "initie-a-la-magie-sort-1": "amitie-avec-les-animaux"
+  }
+}

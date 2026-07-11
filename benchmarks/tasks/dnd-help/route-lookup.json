@@ -1,0 +1,15 @@
+{
+  "id": "route-lookup",
+  "skill": "dnd-help",
+  "level": "simple",
+  "lang": "en",
+  "prompt": "What does the spell Shillelagh do in 2024?",
+  "oracle": {
+    "acceptable": [
+      "dnd-lookup"
+    ],
+    "require_step_tokens": [
+      "catalog"
+    ]
+  }
+}

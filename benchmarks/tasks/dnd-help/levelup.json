@@ -1,0 +1,16 @@
+{
+  "id": "levelup",
+  "skill": "dnd-help",
+  "level": "adversarial",
+  "lang": "en",
+  "prompt": "Level my character up to level 5.",
+  "oracle": {
+    "acceptable": [
+      "dnd-help",
+      "dnd-build"
+    ],
+    "require_step_tokens": [
+      "manquant documentaire"
+    ]
+  }
+}

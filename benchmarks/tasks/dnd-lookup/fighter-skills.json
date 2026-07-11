@@ -1,0 +1,21 @@
+{
+  "id": "fighter-skills",
+  "skill": "dnd-lookup",
+  "level": "simple",
+  "lang": "en",
+  "prompt": "Which skills can a Fighter choose from at level 1?",
+  "oracle": {
+    "mode": "list",
+    "expected": [
+      "acrobaties",
+      "athletisme",
+      "dressage",
+      "histoire",
+      "intuition",
+      "intimidation",
+      "perception",
+      "persuasion",
+      "survie"
+    ]
+  }
+}

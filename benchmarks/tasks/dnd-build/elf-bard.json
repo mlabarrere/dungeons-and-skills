@@ -1,0 +1,56 @@
+{
+  "id": "elf-bard",
+  "skill": "dnd-build",
+  "level": "complex",
+  "caster": true,
+  "lang": "en",
+  "seed": 20260711,
+  "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: elfe (haut-elfe) barde, artiste background, ability scores {\"for\":8,\"dex\":14,\"con\":12,\"int\":10,\"sag\":13,\"cha\":15}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
+  "reference": {
+    "methode": "standard",
+    "_id": "elf-bard",
+    "nom": "Lyric",
+    "classe": "barde",
+    "espece": "elfe",
+    "lignage": "haut-elfe",
+    "historique": "artiste",
+    "abilityScores": {
+      "for": 8,
+      "dex": 14,
+      "con": 12,
+      "int": 10,
+      "sag": 13,
+      "cha": 15
+    },
+    "barde-competences": [
+      "arcanes",
+      "athletisme",
+      "discretion"
+    ],
+    "barde-instruments": [
+      "instrument-de-musique"
+    ],
+    "barde-cantrips": [
+      "coup-au-but",
+      "coup-de-tonnerre"
+    ],
+    "barde-prepares": [
+      "agrandissement-rapetissement",
+      "aide",
+      "alienation",
+      "amelioration-de-caracteristique"
+    ],
+    "barde-equipement": "A",
+    "elfe-sens-aiguises": "intuition",
+    "haut-elfe-caracteristique-incantation": "int",
+    "artiste-caracteristiques": "for",
+    "artiste-instrument": "instrument-de-musique",
+    "musicien-instruments": [
+      "instrument-de-musique"
+    ],
+    "origine-langues-choix": [
+      "draconique",
+      "elfique"
+    ]
+  }
+}

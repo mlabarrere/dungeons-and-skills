@@ -21,10 +21,33 @@ All notable changes to this project are documented here. The format is based on
   (correctness, behavior, catalog, adapters, packaging) with CI on Windows + Linux.
 - Open-source scaffolding: LICENSE (MIT), ATTRIBUTION.md, INSTALL.md, PLATFORMS.md,
   CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md, issue/PR templates.
-- Benchmark suite (`benchmarks/`): a deterministic error scorer (errors per character creation,
-  by taxonomy), bare-vs-grounded arms, a replay + live (Anthropic API) runner with reasoning
-  levels, a report generator, and a real subagent pilot across Haiku/Sonnet/Opus
-  (`results/2026-07-11-pilot.md`): bare 2.5–3.5 errors/char, grounded 0.
+- Benchmark suite v1 (`benchmarks/`): a deterministic error scorer and a bare-vs-grounded
+  subagent pilot on `dnd-build`.
+
+## [Unreleased] — benchmarks v2
+
+### Changed / added
+- Rebuilt the benchmark system per-skill and research-grade (see `benchmarks/AUDIT.md`):
+  - **Atomic error rate** with explicit denominators + severity-weighted rate; perfect/invalid
+    rates; root-cause vs cascade linking; a 25-category taxonomy (`taxonomy.mjs`, `scoring.mjs`).
+  - **Per-skill oracles + scorers** for build/check/lookup/help (`benchmarks/skills/`), incl.
+    precision/recall/F1 for the checker and catalogue-grounded recall/precision for lookup.
+  - **Five isolated conditions** (`bare` → `full-project`) with enforced tool access
+    (`conditions.mjs`); engine output is labelled `oracle`, never a model result.
+  - **Config-driven models** (`config/models.example.json`) — no API id hardcoded in logic.
+  - **Runner** (`runner.mjs`) with replay + live (tool loop) backends, run manifest/provenance,
+    `--dry-run`, cost ceiling, resume, randomised seeded order; **stats** (bootstrap CI,
+    percentiles, paired) in `stats.mjs`.
+  - **Seeded corpora** (`tasks/gen.mjs`): build 12 (engine-validated), check 24, lookup 6, help 8.
+  - **Schemas + validator** (`schemas/`, `validate.mjs`); **charts** (`charts.mjs`); reports with
+    CIs and provenance (`report.mjs`).
+  - Tests: oracle self-consistency (34/34 at 0), mutation, condition-isolation, taxonomy,
+    denominator, stats, no-fabrication (`tests/bench.test.mjs`); CI runs the offline gates only.
+- Removed the v1 benchmark files (scorer/tasks/arms/run/gen-grounded) — superseded, no duplication.
+
+### Honesty
+- Only the `bare` `dnd-build` condition has **real** model data (exploratory pilot). The full
+  ablation and reasoning matrix are implemented but **not run** (no API key); no figure is invented.
 
 ### Security / privacy
 - Removed hard-coded personal file paths from `docs/_analysis/*` and `docs/_engine/autolink.mjs`

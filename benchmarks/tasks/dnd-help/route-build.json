@@ -1,0 +1,16 @@
+{
+  "id": "route-build",
+  "skill": "dnd-help",
+  "level": "simple",
+  "lang": "en",
+  "prompt": "I want to roll up a new level 1 dwarf fighter. Where do I start?",
+  "oracle": {
+    "acceptable": [
+      "dnd-build"
+    ],
+    "require_step_tokens": [
+      "engine/cli.mjs",
+      "options"
+    ]
+  }
+}

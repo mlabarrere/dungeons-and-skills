@@ -1,0 +1,16 @@
+{
+  "_note": "Default matrix + guards. Every field is overridable by a CLI flag (see runner.mjs).",
+  "skills": ["dnd-build", "dnd-check", "dnd-lookup", "dnd-help"],
+  "models": ["haiku", "sonnet", "opus"],
+  "conditions": ["bare", "grounding-only", "skill-only", "skill-engine", "full-project"],
+  "reasoning": ["off"],
+  "reps": 3,
+  "seed": 20260711,
+  "suite": "pilot",
+  "lang": "en",
+  "parallelism": 1,
+  "timeoutMs": 120000,
+  "maxUsd": 5,
+  "maxTokens": 2000000,
+  "randomizeOrder": true
+}
