@@ -2,9 +2,10 @@
    Groupe chaque classe avec ses sous-classes (data-parent-class).
    Usage : node docs/_analysis/build-classes-index.mjs */
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const DIR = "C:/Users/mickael.labarrere/OneDrive - Accenture/Personal/DnD/docs/html/classes";
+const DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "html", "classes");
 
 function attr(tag, name) { const m = tag.match(new RegExp(name + '\\s*=\\s*"([^"]*)"')); return m ? m[1] : ""; }
 function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }

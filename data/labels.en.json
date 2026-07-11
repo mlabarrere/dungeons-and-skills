@@ -1,0 +1,31 @@
+{
+  "_note": "FR-id -> EN label overlay for multilingual output. HAND-AUTHORED (not generated). Internal ids stay French kebab-case (engine keys); this maps them to official D&D 2024 English names. Structural entities are authoritative here; subclasses/feats/spells are an incremental extension (scripts/check-sync.mjs reports coverage). See rules/grounding.md.",
+  "classes": {
+    "barbare": "Barbarian", "barde": "Bard", "clerc": "Cleric", "druide": "Druid",
+    "ensorceleur": "Sorcerer", "guerrier": "Fighter", "magicien": "Wizard", "moine": "Monk",
+    "occultiste": "Warlock", "paladin": "Paladin", "rodeur": "Ranger", "roublard": "Rogue"
+  },
+  "species": {
+    "aasimar": "Aasimar", "drakeide": "Dragonborn", "elfe": "Elf", "gnome": "Gnome",
+    "goliath": "Goliath", "halfelin": "Halfling", "humain": "Human", "nain": "Dwarf",
+    "orc": "Orc", "tieffelin": "Tiefling"
+  },
+  "backgrounds": {
+    "acolyte": "Acolyte", "artisan": "Artisan", "artiste": "Entertainer", "charlatan": "Charlatan",
+    "criminel": "Criminal", "ermite": "Hermit", "fermier": "Farmer", "garde": "Guard",
+    "guide": "Guide", "marchand": "Merchant", "marin": "Sailor", "noble": "Noble",
+    "sage": "Sage", "scribe": "Scribe", "soldat": "Soldier", "voyageur": "Wayfarer"
+  },
+  "skills": {
+    "Acrobaties": "Acrobatics", "Arcanes": "Arcana", "Athletisme": "Athletics",
+    "Discretion": "Stealth", "Dressage": "Animal Handling", "Escamotage": "Sleight of Hand",
+    "Histoire": "History", "Intimidation": "Intimidation", "Intuition": "Insight",
+    "Investigation": "Investigation", "Medecine": "Medicine", "Nature": "Nature",
+    "Perception": "Perception", "Persuasion": "Persuasion", "Representation": "Performance",
+    "Religion": "Religion", "Tromperie": "Deception", "Survie": "Survival"
+  },
+  "statuses": {
+    "fourni": "provided", "source": "granted", "calcule": "computed", "deduit": "derived",
+    "recommande": "recommended", "arbitrer": "ruling needed", "manquant": "missing", "conflit": "conflict"
+  }
+}

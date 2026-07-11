@@ -1,9 +1,10 @@
 /* Regenere docs/html/especes/index.html a partir des pages especes/*.html.
    Usage : node docs/_analysis/build-especes-index.mjs */
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const DIR = "C:/Users/mickael.labarrere/OneDrive - Accenture/Personal/DnD/docs/html/especes";
+const DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "html", "especes");
 function attr(t, n) { const m = t.match(new RegExp(n + '\\s*=\\s*"([^"]*)"')); return m ? m[1] : ""; }
 function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
 

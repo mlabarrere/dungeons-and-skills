@@ -1,0 +1,762 @@
+[
+ {
+  "id": "a-terre",
+  "label": "A terre Etat",
+  "ref": "../regles/glossaire.html#a-terre"
+ },
+ {
+  "id": "abri",
+  "label": "Abri",
+  "ref": "../regles/glossaire.html#abri"
+ },
+ {
+  "id": "action",
+  "label": "Action Action",
+  "ref": "../regles/glossaire.html#action"
+ },
+ {
+  "id": "action-bonus",
+  "label": "Action Bonus",
+  "ref": "../regles/glossaire.html#action-bonus"
+ },
+ {
+  "id": "agrippe",
+  "label": "Agrippe Etat",
+  "ref": "../regles/glossaire.html#agrippe"
+ },
+ {
+  "id": "alignement",
+  "label": "Alignement",
+  "ref": "../regles/glossaire.html#alignement"
+ },
+ {
+  "id": "allie",
+  "label": "Allie",
+  "ref": "../regles/glossaire.html#allie"
+ },
+ {
+  "id": "allonge",
+  "label": "Allonge",
+  "ref": "../regles/glossaire.html#allonge"
+ },
+ {
+  "id": "amical",
+  "label": "Amical Attitude",
+  "ref": "../regles/glossaire.html#amical"
+ },
+ {
+  "id": "arme",
+  "label": "Arme",
+  "ref": "../regles/glossaire.html#arme"
+ },
+ {
+  "id": "armes-improvisees",
+  "label": "Armes improvisees",
+  "ref": "../regles/glossaire.html#armes-improvisees"
+ },
+ {
+  "id": "arrondis-a-l-inferieur",
+  "label": "Arrondis a l'inferieur",
+  "ref": "../regles/glossaire.html#arrondis-a-l-inferieur"
+ },
+ {
+  "id": "asphyxie",
+  "label": "Asphyxie Danger",
+  "ref": "../regles/glossaire.html#asphyxie"
+ },
+ {
+  "id": "assommer-une-creature",
+  "label": "Assommer une creature",
+  "ref": "../regles/glossaire.html#assommer-une-creature"
+ },
+ {
+  "id": "assourdi",
+  "label": "Assourdi Etat",
+  "ref": "../regles/glossaire.html#assourdi"
+ },
+ {
+  "id": "attaque",
+  "label": "Attaque Action",
+  "ref": "../regles/glossaire.html#attaque"
+ },
+ {
+  "id": "attaque-a-mains-nues",
+  "label": "Attaque a mains nues",
+  "ref": "../regles/glossaire.html#attaque-a-mains-nues"
+ },
+ {
+  "id": "attaque-d-arme",
+  "label": "Attaque d'arme",
+  "ref": "../regles/glossaire.html#attaque-d-arme"
+ },
+ {
+  "id": "attaque-de-sort",
+  "label": "Attaque de sort",
+  "ref": "../regles/glossaire.html#attaque-de-sort"
+ },
+ {
+  "id": "attaques-d-opportunite",
+  "label": "Attaques d'Opportunite",
+  "ref": "../regles/glossaire.html#attaques-d-opportunite"
+ },
+ {
+  "id": "attitude",
+  "label": "Attitude",
+  "ref": "../regles/glossaire.html#attitude"
+ },
+ {
+  "id": "avantage",
+  "label": "Avantage",
+  "ref": "../regles/glossaire.html#avantage"
+ },
+ {
+  "id": "aventure",
+  "label": "Aventure",
+  "ref": "../regles/glossaire.html#aventure"
+ },
+ {
+  "id": "aveugle",
+  "label": "Aveugle Etat",
+  "ref": "../regles/glossaire.html#aveugle"
+ },
+ {
+  "id": "bris-des-objets",
+  "label": "Bris des objets",
+  "ref": "../regles/glossaire.html#bris-des-objets"
+ },
+ {
+  "id": "campagne",
+  "label": "Campagne",
+  "ref": "../regles/glossaire.html#campagne"
+ },
+ {
+  "id": "capacite-de-charge",
+  "label": "Capacite de charge",
+  "ref": "../regles/glossaire.html#capacite-de-charge"
+ },
+ {
+  "id": "categorie-de-taille",
+  "label": "Categorie de taille",
+  "ref": "../regles/glossaire.html#categorie-de-taille"
+ },
+ {
+  "id": "charme",
+  "label": "Charme Etat",
+  "ref": "../regles/glossaire.html#charme"
+ },
+ {
+  "id": "chute",
+  "label": "Chute Danger",
+  "ref": "../regles/glossaire.html#chute"
+ },
+ {
+  "id": "cible",
+  "label": "Cible",
+  "ref": "../regles/glossaire.html#cible"
+ },
+ {
+  "id": "classe-d-armure",
+  "label": "Classe d'armure",
+  "ref": "../regles/glossaire.html#classe-d-armure"
+ },
+ {
+  "id": "competence",
+  "label": "Competence",
+  "ref": "../regles/glossaire.html#competence"
+ },
+ {
+  "id": "concentration",
+  "label": "Concentration",
+  "ref": "../regles/glossaire.html#concentration"
+ },
+ {
+  "id": "cone",
+  "label": "Cone Zone d'effet",
+  "ref": "../regles/glossaire.html#cone"
+ },
+ {
+  "id": "coup-critique",
+  "label": "Coup critique",
+  "ref": "../regles/glossaire.html#coup-critique"
+ },
+ {
+  "id": "creature",
+  "label": "Creature",
+  "ref": "../regles/glossaire.html#creature"
+ },
+ {
+  "id": "cube",
+  "label": "Cube Zone d'effet",
+  "ref": "../regles/glossaire.html#cube"
+ },
+ {
+  "id": "cylindre",
+  "label": "Cylindre Zone d'effet",
+  "ref": "../regles/glossaire.html#cylindre"
+ },
+ {
+  "id": "danger",
+  "label": "Danger",
+  "ref": "../regles/glossaire.html#danger"
+ },
+ {
+  "id": "degats",
+  "label": "Degats",
+  "ref": "../regles/glossaire.html#degats"
+ },
+ {
+  "id": "degre-de-difficulte",
+  "label": "Degre de difficulte",
+  "ref": "../regles/glossaire.html#degre-de-difficulte"
+ },
+ {
+  "id": "des-de-vie",
+  "label": "Des de vie",
+  "ref": "../regles/glossaire.html#des-de-vie"
+ },
+ {
+  "id": "desavantage",
+  "label": "Desavantage",
+  "ref": "../regles/glossaire.html#desavantage"
+ },
+ {
+  "id": "desengagement",
+  "label": "Desengagement Action",
+  "ref": "../regles/glossaire.html#desengagement"
+ },
+ {
+  "id": "deshydratation",
+  "label": "Deshydratation Danger",
+  "ref": "../regles/glossaire.html#deshydratation"
+ },
+ {
+  "id": "effet-magique",
+  "label": "Effet magique",
+  "ref": "../regles/glossaire.html#effet-magique"
+ },
+ {
+  "id": "effets-simultanes",
+  "label": "Effets simultanes",
+  "ref": "../regles/glossaire.html#effets-simultanes"
+ },
+ {
+  "id": "effraye",
+  "label": "Effraye Etat",
+  "ref": "../regles/glossaire.html#effraye"
+ },
+ {
+  "id": "emanation",
+  "label": "Emanation Zone d'effet",
+  "ref": "../regles/glossaire.html#emanation"
+ },
+ {
+  "id": "embrasement",
+  "label": "Embrasement Danger",
+  "ref": "../regles/glossaire.html#embrasement"
+ },
+ {
+  "id": "empoisonne",
+  "label": "Empoisonne Etat",
+  "ref": "../regles/glossaire.html#empoisonne"
+ },
+ {
+  "id": "en-peril",
+  "label": "En peril",
+  "ref": "../regles/glossaire.html#en-peril"
+ },
+ {
+  "id": "ennemi",
+  "label": "Ennemi",
+  "ref": "../regles/glossaire.html#ennemi"
+ },
+ {
+  "id": "entrave",
+  "label": "Entrave Etat",
+  "ref": "../regles/glossaire.html#entrave"
+ },
+ {
+  "id": "epuisement",
+  "label": "Epuisement Etat",
+  "ref": "../regles/glossaire.html#epuisement"
+ },
+ {
+  "id": "escalade",
+  "label": "Escalade",
+  "ref": "../regles/glossaire.html#escalade"
+ },
+ {
+  "id": "espace-inoccupe",
+  "label": "Espace inoccupe",
+  "ref": "../regles/glossaire.html#espace-inoccupe"
+ },
+ {
+  "id": "espace-occupe",
+  "label": "Espace occupe",
+  "ref": "../regles/glossaire.html#espace-occupe"
+ },
+ {
+  "id": "esquive",
+  "label": "Esquive Action",
+  "ref": "../regles/glossaire.html#esquive"
+ },
+ {
+  "id": "etat",
+  "label": "Etat",
+  "ref": "../regles/glossaire.html#etat"
+ },
+ {
+  "id": "etourdi",
+  "label": "Etourdi Etat",
+  "ref": "../regles/glossaire.html#etourdi"
+ },
+ {
+  "id": "etude",
+  "label": "Etude Action",
+  "ref": "../regles/glossaire.html#etude"
+ },
+ {
+  "id": "expertise",
+  "label": "Expertise",
+  "ref": "../regles/glossaire.html#expertise"
+ },
+ {
+  "id": "facteur-de-puissance",
+  "label": "Facteur de puissance",
+  "ref": "../regles/glossaire.html#facteur-de-puissance"
+ },
+ {
+  "id": "fiche-de-personnage",
+  "label": "Fiche de personnage",
+  "ref": "../regles/glossaire.html#fiche-de-personnage"
+ },
+ {
+  "id": "focaliseur-d-incantation",
+  "label": "Focaliseur d'incantation",
+  "ref": "../regles/glossaire.html#focaliseur-d-incantation"
+ },
+ {
+  "id": "formation-aux-armures",
+  "label": "Formation aux armures",
+  "ref": "../regles/glossaire.html#formation-aux-armures"
+ },
+ {
+  "id": "furtivite",
+  "label": "Furtivite Action",
+  "ref": "../regles/glossaire.html#furtivite"
+ },
+ {
+  "id": "harmonisation",
+  "label": "Harmonisation",
+  "ref": "../regles/glossaire.html#harmonisation"
+ },
+ {
+  "id": "hostile",
+  "label": "Hostile Attitude",
+  "ref": "../regles/glossaire.html#hostile"
+ },
+ {
+  "id": "illusions",
+  "label": "Illusions",
+  "ref": "../regles/glossaire.html#illusions"
+ },
+ {
+  "id": "immunite",
+  "label": "Immunite",
+  "ref": "../regles/glossaire.html#immunite"
+ },
+ {
+  "id": "inconscient",
+  "label": "Inconscient Etat",
+  "ref": "../regles/glossaire.html#inconscient"
+ },
+ {
+  "id": "indifferent",
+  "label": "Indifferent Attitude",
+  "ref": "../regles/glossaire.html#indifferent"
+ },
+ {
+  "id": "influence",
+  "label": "Influence Action",
+  "ref": "../regles/glossaire.html#influence"
+ },
+ {
+  "id": "initiative",
+  "label": "Initiative",
+  "ref": "../regles/glossaire.html#initiative"
+ },
+ {
+  "id": "inspiration-heroique",
+  "label": "Inspiration heroique",
+  "ref": "../regles/glossaire.html#inspiration-heroique"
+ },
+ {
+  "id": "intention",
+  "label": "Intention Action",
+  "ref": "../regles/glossaire.html#intention"
+ },
+ {
+  "id": "invisible",
+  "label": "Invisible Etat",
+  "ref": "../regles/glossaire.html#invisible"
+ },
+ {
+  "id": "jet-d-attaque",
+  "label": "Jet d'attaque",
+  "ref": "../regles/glossaire.html#jet-d-attaque"
+ },
+ {
+  "id": "jet-de-degats",
+  "label": "Jet de degats",
+  "ref": "../regles/glossaire.html#jet-de-degats"
+ },
+ {
+  "id": "jet-de-sauvegarde",
+  "label": "Jet de sauvegarde",
+  "ref": "../regles/glossaire.html#jet-de-sauvegarde"
+ },
+ {
+  "id": "jet-de-sauvegarde-contre-la-mort",
+  "label": "Jet de sauvegarde contre la mort",
+  "ref": "../regles/glossaire.html#jet-de-sauvegarde-contre-la-mort"
+ },
+ {
+  "id": "js",
+  "label": "JS",
+  "ref": "../regles/glossaire.html#js"
+ },
+ {
+  "id": "ligne",
+  "label": "Ligne Zone d'effet",
+  "ref": "../regles/glossaire.html#ligne"
+ },
+ {
+  "id": "lumiere-faible",
+  "label": "Lumiere faible",
+  "ref": "../regles/glossaire.html#lumiere-faible"
+ },
+ {
+  "id": "lumiere-vive",
+  "label": "Lumiere vive",
+  "ref": "../regles/glossaire.html#lumiere-vive"
+ },
+ {
+  "id": "lutte",
+  "label": "Lutte",
+  "ref": "../regles/glossaire.html#lutte"
+ },
+ {
+  "id": "magie",
+  "label": "Magie Action",
+  "ref": "../regles/glossaire.html#magie"
+ },
+ {
+  "id": "maitrise",
+  "label": "Maitrise",
+  "ref": "../regles/glossaire.html#maitrise"
+ },
+ {
+  "id": "maledictions",
+  "label": "Maledictions",
+  "ref": "../regles/glossaire.html#maledictions"
+ },
+ {
+  "id": "malnutrition",
+  "label": "Malnutrition Danger",
+  "ref": "../regles/glossaire.html#malnutrition"
+ },
+ {
+  "id": "metamorphes",
+  "label": "Metamorphes",
+  "ref": "../regles/glossaire.html#metamorphes"
+ },
+ {
+  "id": "monstre",
+  "label": "Monstre",
+  "ref": "../regles/glossaire.html#monstre"
+ },
+ {
+  "id": "mort",
+  "label": "Mort",
+  "ref": "../regles/glossaire.html#mort"
+ },
+ {
+  "id": "nage",
+  "label": "Nage",
+  "ref": "../regles/glossaire.html#nage"
+ },
+ {
+  "id": "neutralise",
+  "label": "Neutralise Etat",
+  "ref": "../regles/glossaire.html#neutralise"
+ },
+ {
+  "id": "objet",
+  "label": "Objet",
+  "ref": "../regles/glossaire.html#objet"
+ },
+ {
+  "id": "observation",
+  "label": "Observation Action",
+  "ref": "../regles/glossaire.html#observation"
+ },
+ {
+  "id": "par-jour",
+  "label": "Par jour",
+  "ref": "../regles/glossaire.html#par-jour"
+ },
+ {
+  "id": "paralyse",
+  "label": "Paralyse Etat",
+  "ref": "../regles/glossaire.html#paralyse"
+ },
+ {
+  "id": "perception-des-vibrations",
+  "label": "Perception des vibrations",
+  "ref": "../regles/glossaire.html#perception-des-vibrations"
+ },
+ {
+  "id": "perception-passive",
+  "label": "Perception passive",
+  "ref": "../regles/glossaire.html#perception-passive"
+ },
+ {
+  "id": "personnage-joueur",
+  "label": "Personnage joueur",
+  "ref": "../regles/glossaire.html#personnage-joueur"
+ },
+ {
+  "id": "personnage-non-joueur",
+  "label": "Personnage non-joueur",
+  "ref": "../regles/glossaire.html#personnage-non-joueur"
+ },
+ {
+  "id": "petrifie",
+  "label": "Petrifie Etat",
+  "ref": "../regles/glossaire.html#petrifie"
+ },
+ {
+  "id": "pointe",
+  "label": "Pointe Action",
+  "ref": "../regles/glossaire.html#pointe"
+ },
+ {
+  "id": "points-d-experience",
+  "label": "Points d'experience",
+  "ref": "../regles/glossaire.html#points-d-experience"
+ },
+ {
+  "id": "points-de-vie",
+  "label": "Points de vie",
+  "ref": "../regles/glossaire.html#points-de-vie"
+ },
+ {
+  "id": "points-de-vie-temporaires",
+  "label": "Points de vie temporaires",
+  "ref": "../regles/glossaire.html#points-de-vie-temporaires"
+ },
+ {
+  "id": "possession",
+  "label": "Possession",
+  "ref": "../regles/glossaire.html#possession"
+ },
+ {
+  "id": "profil-de-jeu",
+  "label": "Profil de jeu",
+  "ref": "../regles/glossaire.html#profil-de-jeu"
+ },
+ {
+  "id": "reaction",
+  "label": "Reaction",
+  "ref": "../regles/glossaire.html#reaction"
+ },
+ {
+  "id": "rencontre",
+  "label": "Rencontre",
+  "ref": "../regles/glossaire.html#rencontre"
+ },
+ {
+  "id": "repos-court",
+  "label": "Repos court",
+  "ref": "../regles/glossaire.html#repos-court"
+ },
+ {
+  "id": "repos-long",
+  "label": "Repos long",
+  "ref": "../regles/glossaire.html#repos-long"
+ },
+ {
+  "id": "reptation",
+  "label": "Reptation",
+  "ref": "../regles/glossaire.html#reptation"
+ },
+ {
+  "id": "resistance",
+  "label": "Resistance",
+  "ref": "../regles/glossaire.html#resistance"
+ },
+ {
+  "id": "rituel",
+  "label": "Rituel",
+  "ref": "../regles/glossaire.html#rituel"
+ },
+ {
+  "id": "saut",
+  "label": "Saut",
+  "ref": "../regles/glossaire.html#saut"
+ },
+ {
+  "id": "saut-en-hauteur",
+  "label": "Saut en hauteur",
+  "ref": "../regles/glossaire.html#saut-en-hauteur"
+ },
+ {
+  "id": "saut-en-longueur",
+  "label": "Saut en longueur",
+  "ref": "../regles/glossaire.html#saut-en-longueur"
+ },
+ {
+  "id": "seuil-de-degats",
+  "label": "Seuil de degats",
+  "ref": "../regles/glossaire.html#seuil-de-degats"
+ },
+ {
+  "id": "soins",
+  "label": "Soins",
+  "ref": "../regles/glossaire.html#soins"
+ },
+ {
+  "id": "sort",
+  "label": "Sort",
+  "ref": "../regles/glossaire.html#sort"
+ },
+ {
+  "id": "sort-mineur",
+  "label": "Sort mineur",
+  "ref": "../regles/glossaire.html#sort-mineur"
+ },
+ {
+  "id": "soutien",
+  "label": "Soutien Action",
+  "ref": "../regles/glossaire.html#soutien"
+ },
+ {
+  "id": "sphere",
+  "label": "Sphere Zone d'effet",
+  "ref": "../regles/glossaire.html#sphere"
+ },
+ {
+  "id": "stabilise",
+  "label": "Stabilise",
+  "ref": "../regles/glossaire.html#stabilise"
+ },
+ {
+  "id": "surprise",
+  "label": "Surprise",
+  "ref": "../regles/glossaire.html#surprise"
+ },
+ {
+  "id": "telepathie",
+  "label": "Telepathie",
+  "ref": "../regles/glossaire.html#telepathie"
+ },
+ {
+  "id": "teleportation",
+  "label": "Teleportation",
+  "ref": "../regles/glossaire.html#teleportation"
+ },
+ {
+  "id": "tenebres",
+  "label": "Tenebres",
+  "ref": "../regles/glossaire.html#tenebres"
+ },
+ {
+  "id": "terrain-difficile",
+  "label": "Terrain difficile",
+  "ref": "../regles/glossaire.html#terrain-difficile"
+ },
+ {
+  "id": "test-de-caracteristique",
+  "label": "Test de caracteristique",
+  "ref": "../regles/glossaire.html#test-de-caracteristique"
+ },
+ {
+  "id": "test-d20",
+  "label": "Test d20",
+  "ref": "../regles/glossaire.html#test-d20"
+ },
+ {
+  "id": "type-de-creature",
+  "label": "Type de creature",
+  "ref": "../regles/glossaire.html#type-de-creature"
+ },
+ {
+  "id": "visibilite-nulle",
+  "label": "Visibilite nulle",
+  "ref": "../regles/glossaire.html#visibilite-nulle"
+ },
+ {
+  "id": "visibilite-reduite",
+  "label": "Visibilite reduite",
+  "ref": "../regles/glossaire.html#visibilite-reduite"
+ },
+ {
+  "id": "vision-aveugle",
+  "label": "Vision aveugle",
+  "ref": "../regles/glossaire.html#vision-aveugle"
+ },
+ {
+  "id": "vision-dans-le-noir",
+  "label": "Vision dans le noir",
+  "ref": "../regles/glossaire.html#vision-dans-le-noir"
+ },
+ {
+  "id": "vision-lucide",
+  "label": "Vision lucide",
+  "ref": "../regles/glossaire.html#vision-lucide"
+ },
+ {
+  "id": "vitesse",
+  "label": "Vitesse",
+  "ref": "../regles/glossaire.html#vitesse"
+ },
+ {
+  "id": "vitesse-d-escalade",
+  "label": "Vitesse d'escalade",
+  "ref": "../regles/glossaire.html#vitesse-d-escalade"
+ },
+ {
+  "id": "vitesse-de-fouissement",
+  "label": "Vitesse de fouissement",
+  "ref": "../regles/glossaire.html#vitesse-de-fouissement"
+ },
+ {
+  "id": "vitesse-de-nage",
+  "label": "Vitesse de nage",
+  "ref": "../regles/glossaire.html#vitesse-de-nage"
+ },
+ {
+  "id": "vitesse-de-vol",
+  "label": "Vitesse de vol",
+  "ref": "../regles/glossaire.html#vitesse-de-vol"
+ },
+ {
+  "id": "vol",
+  "label": "Vol",
+  "ref": "../regles/glossaire.html#vol"
+ },
+ {
+  "id": "vol-stationnaire",
+  "label": "Vol stationnaire",
+  "ref": "../regles/glossaire.html#vol-stationnaire"
+ },
+ {
+  "id": "vulnerabilite",
+  "label": "Vulnerabilite",
+  "ref": "../regles/glossaire.html#vulnerabilite"
+ },
+ {
+  "id": "zone-d-effet",
+  "label": "Zone d'effet",
+  "ref": "../regles/glossaire.html#zone-d-effet"
+ }
+]

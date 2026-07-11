@@ -43,3 +43,7 @@ next-env.d.ts
 # backups de session (ne pas versionner)
 /_batches_backup_*.zip
 /_catalog_backup_*.zip
+
+# fiches de perso remplies / PDF (donnees perso — jamais versionnees ni distribuees)
+# Les gabarits vierges peuvent etre re-ajoutes explicitement : git add -f <fichier>.pdf
+*.pdf

@@ -20,8 +20,9 @@
    ========================================================================== */
 import { readdirSync, readFileSync, writeFileSync, statSync } from "node:fs";
 import { join, relative, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "C:/Users/mickael.labarrere/OneDrive - Accenture/Personal/DnD/docs/html";
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "html");
 const DRY = process.argv.includes("--dry");
 
 function walk(d) {

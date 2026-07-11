@@ -1,0 +1,13 @@
+{
+  "name": "dnd-2024-builder",
+  "owner": {
+    "name": "D&D 2024 Character Builder contributors"
+  },
+  "plugins": [
+    {
+      "name": "dnd-2024-builder",
+      "source": "./",
+      "description": "D&D 2024 character builder skills (build, check, lookup, help)."
+    }
+  ]
+}

@@ -2,9 +2,10 @@
    Usage : node docs/_analysis/build-sorts-index.mjs
    Ne touche que la zone entre <!-- SORTS:START --> et <!-- SORTS:END -->. */
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const SORTS = "C:/Users/mickael.labarrere/OneDrive - Accenture/Personal/DnD/docs/html/sorts";
+const SORTS = join(dirname(fileURLToPath(import.meta.url)), "..", "html", "sorts");
 const INDEX = join(SORTS, "index.html");
 
 function attr(tag, name) {

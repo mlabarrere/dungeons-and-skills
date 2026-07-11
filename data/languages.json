@@ -1,0 +1,112 @@
+{
+ "courantes": [
+  {
+   "die": "-",
+   "name": "Commun",
+   "origin": "Sigil",
+   "rarity": "courante"
+  },
+  {
+   "die": "1",
+   "name": "Draconique",
+   "origin": "Dragons",
+   "rarity": "courante"
+  },
+  {
+   "die": "2-3",
+   "name": "Elfique",
+   "origin": "Elfes",
+   "rarity": "courante"
+  },
+  {
+   "die": "4",
+   "name": "Geant",
+   "origin": "Geants",
+   "rarity": "courante"
+  },
+  {
+   "die": "5",
+   "name": "Gnome",
+   "origin": "Gnomes",
+   "rarity": "courante"
+  },
+  {
+   "die": "6",
+   "name": "Gobelin",
+   "origin": "Gobelinoides",
+   "rarity": "courante"
+  },
+  {
+   "die": "7-8",
+   "name": "Halfelin",
+   "origin": "Halfelins",
+   "rarity": "courante"
+  },
+  {
+   "die": "9",
+   "name": "Langue multiverselle des signes",
+   "origin": "Sigil",
+   "rarity": "courante"
+  },
+  {
+   "die": "10-11",
+   "name": "Nain",
+   "origin": "Nains",
+   "rarity": "courante"
+  },
+  {
+   "die": "12",
+   "name": "Orc",
+   "origin": "Orcs",
+   "rarity": "courante"
+  }
+ ],
+ "rares": [
+  {
+   "name": "Abyssal",
+   "origin": "Demons des Abysses",
+   "rarity": "rare"
+  },
+  {
+   "name": "Argot des voleurs",
+   "origin": "Diverses guildes criminelles",
+   "rarity": "rare"
+  },
+  {
+   "name": "Celeste",
+   "origin": "Celestes",
+   "rarity": "rare"
+  },
+  {
+   "name": "Commun des profondeurs",
+   "origin": "Outreterre",
+   "rarity": "rare"
+  },
+  {
+   "name": "Druidique",
+   "origin": "Cercles druidiques",
+   "rarity": "rare"
+  },
+  {
+   "name": "Infernal",
+   "origin": "Diables des Neuf Enfers",
+   "rarity": "rare"
+  },
+  {
+   "name": "Primordial*",
+   "origin": "Elementaires",
+   "rarity": "rare"
+  },
+  {
+   "name": "Profond",
+   "origin": "Aberrations",
+   "rarity": "rare"
+  },
+  {
+   "name": "Sylvestre",
+   "origin": "Feerie",
+   "rarity": "rare"
+  }
+ ],
+ "ref": "../regles/langues.html"
+}

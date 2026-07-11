@@ -3,7 +3,7 @@
   "identity": { "name": "Medicis", "level": 1, "alignment": "Neutre bon",
     "species": "Elfe", "lineage": "Elfe sylvestre", "className": "Druide", "background": "Guide" },
   "abilityScores": { "for": 10, "dex": 11, "con": 14, "int": 14, "sag": 17, "cha": 14,
-    "note": "fournis, jetes aux des (4d6) — confirme par le joueur" },
+    "note": "fournis (methode 4d6 garde 3)" },
 
   "sources": [
     { "id": "druide-1", "kind": "class-level", "label": "Druide niveau 1",
@@ -73,7 +73,12 @@
       "effects": [ { "type": "grants", "what": "language", "value": "elfique" } ] },
     { "id": "ch-lang-2", "satisfies": "langue", "value": "geant", "label": "Langue : Geant", "status": "fourni",
       "effects": [ { "type": "grants", "what": "language", "value": "geant" } ] },
-    { "id": "ch-carac-initie", "satisfies": "carac-incantation-initie", "value": "sag", "label": "Initie : caracteristique Sagesse", "status": "fourni" }
+    { "id": "ch-carac-initie", "satisfies": "carac-incantation-initie", "value": "sag", "label": "Initie : caracteristique Sagesse", "status": "fourni" },
+    { "id": "ch-sort-initie", "satisfies": "sort-niv1-initie", "value": "baies-nourricieres", "label": "Initie a la magie : sort niveau 1 = Baies nourricieres", "status": "fourni",
+      "effects": [
+        { "type": "grants", "what": "alwaysPreparedSpell", "spell": "baies-nourricieres", "list": "initie-druide" },
+        { "type": "grants", "what": "oncePerLongRestCasting", "spell": "baies-nourricieres" }
+      ] }
   ],
 
   "equipment": [
@@ -92,14 +97,19 @@
   "spells": {
     "cantrips": [
       { "id": "druidisme", "label": "Druidisme", "list": "espece", "origin": "granted", "status": "source", "sourceId": "elfe-sylvestre" },
-      { "id": "flammes", "label": "Flammes", "list": "druide", "origin": "chosen", "status": "recommande", "sourceId": "druide-1" }
+      { "id": "flammes", "label": "Flammes", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
+      { "id": "crosse-des-druides", "label": "Crosse des druides", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
+      { "id": "poussiere-d-etoile", "label": "Poussiere d'etoile", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "ch-ordre" },
+      { "id": "assistance", "label": "Assistance", "list": "initie-druide", "origin": "chosen", "status": "fourni", "sourceId": "initie-a-la-magie-druide" },
+      { "id": "stabilisation", "label": "Stabilisation", "list": "initie-druide", "origin": "chosen", "status": "fourni", "sourceId": "initie-a-la-magie-druide" }
     ],
     "prepared": [
       { "id": "communication-avec-les-animaux", "label": "Communication avec les animaux", "list": "druide", "origin": "alwaysPrepared", "status": "source", "sourceId": "druide-1" },
-      { "id": "amitie-avec-les-animaux", "label": "Amitie avec les animaux", "list": "druide", "origin": "chosen", "status": "recommande", "sourceId": "druide-1" },
-      { "id": "lueurs-feeriques", "label": "Lueurs feeriques", "list": "druide", "origin": "chosen", "status": "recommande", "sourceId": "druide-1" },
-      { "id": "soins", "label": "Soins", "list": "druide", "origin": "chosen", "status": "recommande", "sourceId": "druide-1" },
-      { "id": "vague-tonnante", "label": "Vague tonnante", "list": "druide", "origin": "chosen", "status": "recommande", "sourceId": "druide-1" }
+      { "id": "amitie-avec-les-animaux", "label": "Amitie avec les animaux", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
+      { "id": "lueurs-feeriques", "label": "Lueurs feeriques", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
+      { "id": "soins", "label": "Soins", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
+      { "id": "vague-tonnante", "label": "Vague tonnante", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
+      { "id": "baies-nourricieres", "label": "Baies nourricieres", "list": "initie-druide", "origin": "alwaysPrepared", "status": "source", "sourceId": "initie-a-la-magie-druide" }
     ]
   }
 }

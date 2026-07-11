@@ -1,9 +1,10 @@
 /* Valide les pages de sorts : presence et valeurs d'enum des data-*.
    Usage : node docs/_analysis/spellcheck.mjs */
 import { readdirSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const SORTS = "C:/Users/mickael.labarrere/OneDrive - Accenture/Personal/DnD/docs/html/sorts";
+const SORTS = join(dirname(fileURLToPath(import.meta.url)), "..", "html", "sorts");
 
 const SCHOOLS = ["abjuration", "invocation", "divination", "enchantement", "evocation", "illusion", "necromancie", "transmutation"];
 const CASTING = ["action", "action-bonus", "reaction", "1min", "10min", "1h", "8h", "12h", "24h"];

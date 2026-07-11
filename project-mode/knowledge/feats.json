@@ -1,0 +1,2237 @@
+[
+  {
+    "id": "bagarreur-de-tavernes",
+    "name": "Bagarreur de tavernes",
+    "kind": "don",
+    "ref": "../dons/bagarreur-de-tavernes.html",
+    "source": "img:200",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes-improvisees"
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "chanceux",
+    "name": "Chanceux",
+    "kind": "don",
+    "ref": "../dons/chanceux.html",
+    "source": "img:200",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "luckPoints",
+        "value": "bonus-de-maitrise",
+        "note": "Points de chance = bonus de maitrise, recuperes a un Repos long ; Avantage sur un Test d20 ou Desavantage a une attaque adverse."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "doue",
+    "name": "Doue",
+    "kind": "don",
+    "ref": "../dons/doue.html",
+    "source": "img:201",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": true,
+    "effects": [],
+    "choices": [
+      {
+        "id": "doue-maitrises",
+        "kind": "competence-ou-outil",
+        "count": 3,
+        "from": {
+          "fromCompetencesOuOutils": "toutes"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillOrToolProficiency"
+        },
+        "note": "Combinaison au choix de trois competences ou outils."
+      }
+    ]
+  },
+  {
+    "id": "faconneur",
+    "name": "Faconneur",
+    "kind": "don",
+    "ref": "../dons/faconneur.html",
+    "source": "img:201",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "discount",
+        "value": "20%",
+        "note": "Ristourne de 20 % sur les objets non magiques ; Faconnage rapide en Repos long."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faconneur-outils",
+        "kind": "outil-artisan",
+        "count": 3,
+        "from": {
+          "fromToolSet": [
+            "outils-de-bricoleur",
+            "outils-de-charpentier",
+            "outils-de-forgeron",
+            "outils-de-macon",
+            "outils-de-menuisier",
+            "outils-de-potier",
+            "outils-de-tanneur",
+            "outils-de-tisserand"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "toolProficiency"
+        }
+      }
+    ]
+  },
+  {
+    "id": "guerisseur",
+    "name": "Guerisseur",
+    "kind": "don",
+    "ref": "../dons/guerisseur.html",
+    "source": "img:201",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "healing",
+        "note": "Soigneur de bataille (trousse de soins) et retirage des des de soins sur un 1."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "initie-a-la-magie",
+    "name": "Initie a la magie",
+    "kind": "don",
+    "ref": "../dons/initie-a-la-magie.html",
+    "source": "img:201",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": true,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "choix:initie-a-la-magie-carac",
+        "list": "choix:initie-a-la-magie-liste",
+        "note": "Caracteristique et liste selon les choix."
+      }
+    ],
+    "choices": [
+      {
+        "id": "initie-a-la-magie-liste",
+        "kind": "liste-sorts",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "clerc",
+            "druide",
+            "magicien"
+          ]
+        }
+      },
+      {
+        "id": "initie-a-la-magie-carac",
+        "kind": "caracteristique-incantation",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "int",
+            "sag",
+            "cha"
+          ]
+        }
+      },
+      {
+        "id": "initie-a-la-magie-cantrips",
+        "kind": "cantrip",
+        "count": 2,
+        "from": {
+          "fromChoice": "initie-a-la-magie-liste",
+          "level": 0
+        }
+      },
+      {
+        "id": "initie-a-la-magie-sort-1",
+        "kind": "prepared",
+        "count": 1,
+        "from": {
+          "fromChoice": "initie-a-la-magie-liste",
+          "level": 1
+        },
+        "note": "Toujours prepare, lancable une fois sans emplacement (recupere en Repos long)."
+      }
+    ]
+  },
+  {
+    "id": "musicien",
+    "name": "Musicien",
+    "kind": "don",
+    "ref": "../dons/musicien.html",
+    "source": "img:201",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "heroicInspiration",
+        "note": "Chant d'encouragement : Inspiration heroique a un nombre d'allies = bonus de maitrise, apres un repos."
+      }
+    ],
+    "choices": [
+      {
+        "id": "musicien-instruments",
+        "kind": "instrument",
+        "count": 3,
+        "from": {
+          "fromToolSet": "instruments-de-musique"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "toolProficiency"
+        }
+      }
+    ]
+  },
+  {
+    "id": "robuste",
+    "name": "Robuste",
+    "kind": "don",
+    "ref": "../dons/robuste.html",
+    "source": "img:202",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "hitPointMaximum",
+        "note": "+2 x niveau de personnage a l'acquisition, puis +2 PV a chaque niveau gagne ensuite."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "sauvagerie-martiale",
+    "name": "Sauvagerie martiale",
+    "kind": "don",
+    "ref": "../dons/sauvagerie-martiale.html",
+    "source": "img:202",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageReroll",
+        "note": "1 fois par tour, relancer les des de degats d'une arme et garder le meilleur resultat."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "vigilant",
+    "name": "Vigilant",
+    "kind": "don",
+    "ref": "../dons/vigilant.html",
+    "source": "img:202",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "initiative",
+        "note": "Ajoute le bonus de maitrise a l'Initiative ; peut echanger son Initiative avec un allie."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "adepte-elementaire",
+    "name": "Adepte elementaire",
+    "kind": "don",
+    "ref": "../dons/adepte-elementaire.html",
+    "source": "img:202",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; aptitude Sorts ou Magie de pacte",
+    "repeatable": true,
+    "effects": [],
+    "choices": [
+      {
+        "id": "adepte-elementaire-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "adepte-elementaire-energie",
+        "kind": "type-degats",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "acide",
+            "feu",
+            "foudre",
+            "froid",
+            "tonnerre"
+          ]
+        },
+        "note": "Vos sorts ignorent la Resistance a ce type ; les 1 sur les des de degats de ce type comptent comme 2."
+      }
+    ]
+  },
+  {
+    "id": "affinite-feerique",
+    "name": "Affinite feerique",
+    "kind": "don",
+    "ref": "../dons/affinite-feerique.html",
+    "source": "img:202",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "alwaysPreparedSpell",
+        "spell": "foulee-brumeuse"
+      }
+    ],
+    "choices": [
+      {
+        "id": "affinite-feerique-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "affinite-feerique-sort",
+        "kind": "prepared",
+        "count": 1,
+        "from": {
+          "fromSpellSchools": [
+            "divination",
+            "enchantement"
+          ],
+          "level": 1
+        },
+        "note": "Toujours prepare, lancable sans emplacement (Repos long), caracteristique d'incantation = celle augmentee par ce don."
+      }
+    ]
+  },
+  {
+    "id": "affinite-ombreuse",
+    "name": "Affinite ombreuse",
+    "kind": "don",
+    "ref": "../dons/affinite-ombreuse.html",
+    "source": "img:202",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "alwaysPreparedSpell",
+        "spell": "invisibilite"
+      }
+    ],
+    "choices": [
+      {
+        "id": "affinite-ombreuse-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "affinite-ombreuse-sort",
+        "kind": "prepared",
+        "count": 1,
+        "from": {
+          "fromSpellSchools": [
+            "illusion",
+            "necromancie"
+          ],
+          "level": 1
+        },
+        "note": "Toujours prepare, lancable sans emplacement (Repos long), caracteristique d'incantation = celle augmentee par ce don."
+      }
+    ]
+  },
+  {
+    "id": "amelioration-de-caracteristique",
+    "name": "Amelioration de caracteristique",
+    "kind": "don",
+    "ref": "../dons/amelioration-de-caracteristique.html",
+    "source": "img:238,239",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": true,
+    "effects": [],
+    "choices": [
+      {
+        "id": "asc-choix",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+2 sur une caracteristique, ou +1 sur deux (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "athlete",
+    "name": "Athlete",
+    "kind": "don",
+    "ref": "../dons/athlete.html",
+    "source": "img:202",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Force ou Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "speed",
+        "value": "vitesse-escalade",
+        "note": "Vitesse d'escalade egale a la Vitesse ; se relever coute 1,50 m ; saut apres 1,50 m de deplacement."
+      }
+    ],
+    "choices": [
+      {
+        "id": "athlete-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "broyeur",
+    "name": "Broyeur",
+    "kind": "don",
+    "ref": "../dons/broyeur.html",
+    "source": "img:203",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "note": "Bourrade sur degats contondants (1 fois/tour) ; Avantage apres un critique contondant."
+      }
+    ],
+    "choices": [
+      {
+        "id": "broyeur-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "con"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "chef-cuisinier",
+    "name": "Chef cuisinier",
+    "kind": "don",
+    "ref": "../dons/chef-cuisinier.html",
+    "source": "img:203",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "ustensiles-de-cuisinier"
+      }
+    ],
+    "choices": [
+      {
+        "id": "chef-cuisinier-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "con",
+          "sag"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "cogneur-lourd",
+    "name": "Cogneur lourd",
+    "kind": "don",
+    "ref": "../dons/cogneur-lourd.html",
+    "source": "img:203",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Force 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "note": "Degats +bonus de maitrise avec arme Lourde ; attaque bonus (Abattage) apres critique/mise a 0 PV."
+      }
+    ],
+    "choices": [
+      {
+        "id": "cogneur-lourd-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "combattant-a-deux-armes",
+    "name": "Combattant a deux armes",
+    "kind": "don",
+    "ref": "../dons/combattant-a-deux-armes.html",
+    "source": "img:203",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Force ou Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Combat a deux armes ameliore et degainage rapide de deux armes."
+      }
+    ],
+    "choices": [
+      {
+        "id": "combattant-a-deux-armes-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "combattant-monte",
+    "name": "Combattant monte",
+    "kind": "don",
+    "ref": "../dons/combattant-monte.html",
+    "source": "img:203",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Frappe montee (Avantage), protection de la monture, deviation d'attaque vers soi."
+      }
+    ],
+    "choices": [
+      {
+        "id": "combattant-monte-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "sag"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "comedien",
+    "name": "Comedien",
+    "kind": "don",
+    "ref": "../dons/comedien.html",
+    "source": "img:203",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Charisme 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "skillBonus",
+        "note": "Avantage aux tests d'imposture ; imitation de sons et de voix."
+      }
+    ],
+    "choices": [
+      {
+        "id": "comedien-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "discret",
+    "name": "Discret",
+    "kind": "don",
+    "ref": "../dons/discret.html",
+    "source": "img:204",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision-aveugle",
+        "range": 3
+      }
+    ],
+    "choices": [
+      {
+        "id": "discret-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "duelliste-defensif",
+    "name": "Duelliste defensif",
+    "kind": "don",
+    "ref": "../dons/duelliste-defensif.html",
+    "source": "img:204",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "armorClass",
+        "note": "Parade : Reaction pour ajouter le bonus de maitrise a la CA (arme de Finesse)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "duelliste-defensif-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "empoigneur",
+    "name": "Empoigneur",
+    "kind": "don",
+    "ref": "../dons/empoigneur.html",
+    "source": "img:204",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Force ou Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Frappe + Lutte simultanees, Avantage contre creature Agrippee, deplacement gratuit d'une creature Agrippee."
+      }
+    ],
+    "choices": [
+      {
+        "id": "empoigneur-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "empoisonneur",
+    "name": "Empoisonneur",
+    "kind": "don",
+    "ref": "../dons/empoisonneur.html",
+    "source": "img:204",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-d-empoisonneur",
+        "note": "Poison virulent (ignore la Resistance poison) et preparation de doses."
+      }
+    ],
+    "choices": [
+      {
+        "id": "empoisonneur-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "int"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "esprit-affute",
+    "name": "Esprit affute",
+    "kind": "don",
+    "ref": "../dons/esprit-affute.html",
+    "source": "img:204",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Intelligence 13 ou plus",
+    "repeatable": false,
+    "effects": [],
+    "choices": [
+      {
+        "id": "esprit-affute-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "esprit-affute-erudition",
+        "kind": "competence-ou-expertise",
+        "count": 1,
+        "from": {
+          "fromSkillSet": [
+            "arcanes",
+            "histoire",
+            "investigation",
+            "nature",
+            "religion"
+          ]
+        },
+        "note": "Maitrise si absente, sinon Expertise."
+      }
+    ]
+  },
+  {
+    "id": "expert",
+    "name": "Expert",
+    "kind": "don",
+    "ref": "../dons/expert.html",
+    "source": "img:204",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [],
+    "choices": [
+      {
+        "id": "expert-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "expert-competence",
+        "kind": "competence",
+        "count": 1,
+        "from": {
+          "fromSkillSet": "toutes"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "expert-expertise",
+        "kind": "expertise",
+        "count": 1,
+        "from": {
+          "fromSkillSet": "competences-maitrisees"
+        },
+        "note": "Expertise sur une competence maitrisee sans Expertise."
+      }
+    ]
+  },
+  {
+    "id": "expert-de-la-charge",
+    "name": "Expert de la charge",
+    "kind": "don",
+    "ref": "../dons/expert-de-la-charge.html",
+    "source": "img:205",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Force ou Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Pointe amelioree (+3 m) et attaque de charge (bonus 1d8 ou repousse)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "expert-de-la-charge-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "figure-de-proue",
+    "name": "Figure de proue",
+    "kind": "don",
+    "ref": "../dons/figure-de-proue.html",
+    "source": "img:205",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Sagesse ou Charisme 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "temporaryHitPoints",
+        "note": "Representation galvanisante : PV temporaires a 6 allies apres un repos."
+      }
+    ],
+    "choices": [
+      {
+        "id": "figure-de-proue-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "formation-aux-armes-de-guerre",
+    "name": "Formation aux armes de guerre",
+    "kind": "don",
+    "ref": "../dons/formation-aux-armes-de-guerre.html",
+    "source": "img:205",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes de guerre"
+      }
+    ],
+    "choices": [
+      {
+        "id": "formation-aux-armes-de-guerre-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "gaillard",
+    "name": "Gaillard",
+    "kind": "don",
+    "ref": "../dons/gaillard.html",
+    "source": "img:205",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "recovery",
+        "note": "Avantage aux sauvegardes contre la mort ; action Bonus pour depenser un DV et recuperer des PV."
+      }
+    ],
+    "choices": [
+      {
+        "id": "gaillard-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "con"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "incantateur-d-elite",
+    "name": "Incantateur d'elite",
+    "kind": "don",
+    "ref": "../dons/incantateur-d-elite.html",
+    "source": "img:205",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; aptitude Sorts ou Magie de pacte",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "spellCombat",
+        "note": "Ignore les abris pour les attaques de sort, pas de Desavantage au contact, +18 m de portee sur les sorts d'attaque."
+      }
+    ],
+    "choices": [
+      {
+        "id": "incantateur-d-elite-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "mage-de-guerre",
+    "name": "Mage de guerre",
+    "kind": "don",
+    "ref": "../dons/mage-de-guerre.html",
+    "source": "img:205",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; aptitude Sorts ou Magie de pacte",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "spellCombat",
+        "note": "Avantage aux sauvegardes de Concentration ; sort reactif ; composante somatique mains occupees."
+      }
+    ],
+    "choices": [
+      {
+        "id": "mage-de-guerre-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "magie-rituelle",
+    "name": "Magie rituelle",
+    "kind": "don",
+    "ref": "../dons/magie-rituelle.html",
+    "source": "img:205",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Intelligence, Sagesse ou Charisme 13 ou plus",
+    "repeatable": false,
+    "effects": [],
+    "choices": [
+      {
+        "id": "magie-rituelle-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "magie-rituelle-sorts",
+        "kind": "prepared-rituel",
+        "count": "bonus-de-maitrise",
+        "from": {
+          "fromSpellTag": "rituel",
+          "level": 1
+        },
+        "note": "Sorts rituels de 1er niveau toujours prepares ; +1 a chaque hausse du bonus de maitrise. Caracteristique = celle augmentee par le don."
+      }
+    ]
+  },
+  {
+    "id": "maitre-d-armes",
+    "name": "Maitre d'armes",
+    "kind": "don",
+    "ref": "../dons/maitre-d-armes.html",
+    "source": "img:206",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [],
+    "choices": [
+      {
+        "id": "maitre-d-armes-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "maitre-d-armes-bottes",
+        "kind": "botte-arme",
+        "count": 3,
+        "from": {
+          "fromWeaponMastery": "maitrisees"
+        },
+        "note": "Propriete botte de 3 armes courantes ou de guerre maitrisees ; modifiable a chaque Repos long."
+      }
+    ]
+  },
+  {
+    "id": "maitre-d-hast",
+    "name": "Maitre d'hast",
+    "kind": "don",
+    "ref": "../dons/maitre-d-hast.html",
+    "source": "img:206",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Force ou Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Frappe double (action Bonus) et frappe reactive avec baton/lance/arme Lourde+Allonge."
+      }
+    ],
+    "choices": [
+      {
+        "id": "maitre-d-hast-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "maitre-des-armures-intermediaires",
+    "name": "Maitre des armures intermediaires",
+    "kind": "don",
+    "ref": "../dons/maitre-des-armures-intermediaires.html",
+    "source": "img:206",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; formation aux armures intermediaires",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "requires",
+        "precondition": "armorTraining:intermediaire"
+      },
+      {
+        "type": "effect",
+        "what": "armorClass",
+        "note": "En armure intermediaire, ajoute 3 (au lieu de 2) a la CA si Dexterite 16+."
+      }
+    ],
+    "choices": [
+      {
+        "id": "maitre-des-armures-intermediaires-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "maitre-des-armures-lourdes",
+    "name": "Maitre des armures lourdes",
+    "kind": "don",
+    "ref": "../dons/maitre-des-armures-lourdes.html",
+    "source": "img:206",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; formation aux armures lourdes",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "requires",
+        "precondition": "armorTraining:lourde"
+      },
+      {
+        "type": "effect",
+        "what": "damageReduction",
+        "note": "En armure lourde, reduit les degats contondants/perforants/tranchants d'un montant = bonus de maitrise."
+      }
+    ],
+    "choices": [
+      {
+        "id": "maitre-des-armures-lourdes-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "con"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "maitre-des-boucliers",
+    "name": "Maitre des boucliers",
+    "kind": "don",
+    "ref": "../dons/maitre-des-boucliers.html",
+    "source": "img:207",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; formation aux boucliers",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "requires",
+        "precondition": "shieldTraining"
+      },
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Coup de bouclier (repousse/A terre) et interposition de bouclier (Reaction)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "maitre-des-boucliers-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "maitre-arbaletrier",
+    "name": "Maitre-arbaletrier",
+    "kind": "don",
+    "ref": "../dons/maitre-arbaletrier.html",
+    "source": "img:206",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Ignore la propriete Chargement des arbaletes, pas de Desavantage au contact, attaque secondaire a l'arbalete Legere."
+      }
+    ],
+    "choices": [
+      {
+        "id": "maitre-arbaletrier-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "mobile",
+    "name": "Mobile",
+    "kind": "don",
+    "ref": "../dons/mobile.html",
+    "source": "img:207",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Dexterite ou Constitution 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "speed",
+        "value": "+3m",
+        "note": "Pointe ignore le Terrain difficile ; les attaques d'Opportunite subissent le Desavantage."
+      }
+    ],
+    "choices": [
+      {
+        "id": "mobile-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "con"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "observateur",
+    "name": "Observateur",
+    "kind": "don",
+    "ref": "../dons/observateur.html",
+    "source": "img:207",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Intelligence ou Sagesse 13 ou plus",
+    "repeatable": false,
+    "effects": [],
+    "choices": [
+      {
+        "id": "observateur-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag"
+        ],
+        "rule": "+1 (max 20)"
+      },
+      {
+        "id": "observateur-competence",
+        "kind": "competence-ou-expertise",
+        "count": 1,
+        "from": {
+          "fromSkillSet": [
+            "intuition",
+            "investigation",
+            "perception"
+          ]
+        },
+        "note": "Maitrise si absente, sinon Expertise."
+      }
+    ]
+  },
+  {
+    "id": "perforateur",
+    "name": "Perforateur",
+    "kind": "don",
+    "ref": "../dons/perforateur.html",
+    "source": "img:207",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "note": "Relance d'un de de degats perforants (1/tour) ; de supplementaire sur critique perforant."
+      }
+    ],
+    "choices": [
+      {
+        "id": "perforateur-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "protection-intermediaire",
+    "name": "Protection intermediaire",
+    "kind": "don",
+    "ref": "../dons/protection-intermediaire.html",
+    "source": "img:207",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; formation aux armures legeres",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "requires",
+        "precondition": "armorTraining:legere"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "intermediaire"
+      }
+    ],
+    "choices": [
+      {
+        "id": "protection-intermediaire-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "protection-legere",
+    "name": "Protection legere",
+    "kind": "don",
+    "ref": "../dons/protection-legere.html",
+    "source": "img:207",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "shieldTraining"
+      }
+    ],
+    "choices": [
+      {
+        "id": "protection-legere-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "protection-lourde",
+    "name": "Protection lourde",
+    "kind": "don",
+    "ref": "../dons/protection-lourde.html",
+    "source": "img:207",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; formation aux armures intermediaires",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "requires",
+        "precondition": "armorTraining:intermediaire"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "lourde"
+      }
+    ],
+    "choices": [
+      {
+        "id": "protection-lourde-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "con"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "resilient",
+    "name": "Resilient",
+    "kind": "don",
+    "ref": "../dons/resilient.html",
+    "source": "img:208",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "choix:resilient-carac"
+      }
+    ],
+    "choices": [
+      {
+        "id": "resilient-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20) sur une caracteristique dont on n'a pas la maitrise des sauvegardes ; accorde la maitrise de cette sauvegarde."
+      }
+    ]
+  },
+  {
+    "id": "sentinelle",
+    "name": "Sentinelle",
+    "kind": "don",
+    "ref": "../dons/sentinelle.html",
+    "source": "img:208",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Force ou Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Gardien (attaque d'Opportunite elargie) et immobilisation (Vitesse 0) sur attaque d'Opportunite."
+      }
+    ],
+    "choices": [
+      {
+        "id": "sentinelle-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "telekinesiste",
+    "name": "Telekinesiste",
+    "kind": "don",
+    "ref": "../dons/telekinesiste.html",
+    "source": "img:208",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "cantrip",
+        "spell": "main-du-mage",
+        "note": "Lancable sans composante V/S, main Invisible, portee et distance +9 m. Caracteristique = celle augmentee par le don. Bourrade telekinetique par action Bonus."
+      }
+    ],
+    "choices": [
+      {
+        "id": "telekinesiste-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "telepathe",
+    "name": "Telepathe",
+    "kind": "don",
+    "ref": "../dons/telepathe.html",
+    "source": "img:208",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "alwaysPreparedSpell",
+        "spell": "detection-des-pensees",
+        "note": "Lancable sans emplacement ni composante (Repos long). Parole telepathique a 18 m. Caracteristique = celle augmentee par le don."
+      }
+    ],
+    "choices": [
+      {
+        "id": "telepathe-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "tireur-d-elite",
+    "name": "Tireur d'elite",
+    "kind": "don",
+    "ref": "../dons/tireur-d-elite.html",
+    "source": "img:208",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus ; Dexterite 13 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Ignore les abris, pas de Desavantage au contact ni a longue portee avec arme a distance."
+      }
+    ],
+    "choices": [
+      {
+        "id": "tireur-d-elite-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "trancheur",
+    "name": "Trancheur",
+    "kind": "don",
+    "ref": "../dons/trancheur.html",
+    "source": "img:208",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Coupe-jarret (Vitesse -3 m, 1/tour) et Desavantage aux attaques de la cible sur critique tranchant."
+      }
+    ],
+    "choices": [
+      {
+        "id": "trancheur-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "tueur-de-mages",
+    "name": "Tueur de mages",
+    "kind": "don",
+    "ref": "../dons/tueur-de-mages.html",
+    "source": "img:209",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Briseur de concentration (Desavantage a la sauvegarde) et Esprit preserve (reussir un JS mental rate)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "tueur-de-mages-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "archerie",
+    "name": "Archerie",
+    "kind": "don",
+    "ref": "../dons/archerie.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "attackBonus",
+        "value": 2,
+        "note": "+2 aux jets d'attaque avec armes a distance."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "armes-a-deux-mains",
+    "name": "Armes a deux mains",
+    "kind": "don",
+    "ref": "../dons/armes-a-deux-mains.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "note": "Les 1 et 2 des des de degats d'une arme Deux mains/Polyvalente comptent comme des 3."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "armes-de-lancer",
+    "name": "Armes de lancer",
+    "kind": "don",
+    "ref": "../dons/armes-de-lancer.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "value": 2,
+        "note": "+2 aux degats avec une arme a distance a propriete Lancer."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "combat-a-deux-armes",
+    "name": "Combat a deux armes",
+    "kind": "don",
+    "ref": "../dons/combat-a-deux-armes.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "note": "Ajoute le modificateur de caracteristique aux degats de l'attaque supplementaire (arme Legere)."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "combat-a-mains-nues",
+    "name": "Combat a mains nues",
+    "kind": "don",
+    "ref": "../dons/combat-a-mains-nues.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "unarmedStrike",
+        "note": "Attaque a mains nues 1d6 (d8 sans arme ni bouclier) + Force ; 1d4 par tour a une creature Agrippee."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "combat-en-aveugle",
+    "name": "Combat en aveugle",
+    "kind": "don",
+    "ref": "../dons/combat-en-aveugle.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision-aveugle",
+        "range": 3
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "defense",
+    "name": "Defense",
+    "kind": "don",
+    "ref": "../dons/defense.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "armorClass",
+        "value": 1,
+        "note": "+1 a la CA en armure legere, intermediaire ou lourde."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "duel",
+    "name": "Duel",
+    "kind": "don",
+    "ref": "../dons/duel.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "value": 2,
+        "note": "+2 aux degats avec une arme de corps a corps tenue a une main sans autre arme."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "interception",
+    "name": "Interception",
+    "kind": "don",
+    "ref": "../dons/interception.html",
+    "source": "img:209",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Reaction pour reduire les degats d'une attaque touchant une creature proche de 1d10 + bonus de maitrise (bouclier ou arme requis)."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "protection",
+    "name": "Protection",
+    "kind": "don",
+    "ref": "../dons/protection.html",
+    "source": "img:210",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "requires",
+        "precondition": "shieldTraining"
+      },
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Reaction pour imposer le Desavantage a une attaque contre une cible proche (bouclier requis)."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "faveur-d-attaque-irresistible",
+    "name": "Faveur d'attaque irresistible",
+    "kind": "don",
+    "ref": "../dons/faveur-d-attaque-irresistible.html",
+    "source": "img:210",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Degats physiques ignorent la Resistance ; frappe ecrasante sur un 20."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-d-attaque-irresistible-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-competence",
+    "name": "Faveur de competence",
+    "kind": "don",
+    "ref": "../dons/faveur-de-competence.html",
+    "source": "img:210",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "toutes",
+        "note": "Maitrise de toutes les competences."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-competence-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      },
+      {
+        "id": "faveur-de-competence-expertise",
+        "kind": "expertise",
+        "count": 1,
+        "from": {
+          "fromSkillSet": "competences-maitrisees"
+        },
+        "note": "Expertise sur une competence sans Expertise."
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-deplacement-dimensionnel",
+    "name": "Faveur de deplacement dimensionnel",
+    "kind": "don",
+    "ref": "../dons/faveur-de-deplacement-dimensionnel.html",
+    "source": "img:210",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Entrechats dimensionnels : se teleporter de 9 m apres une action Attaque ou Magie."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-deplacement-dimensionnel-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-l-esprit-nocturne",
+    "name": "Faveur de l'esprit nocturne",
+    "kind": "don",
+    "ref": "../dons/faveur-de-l-esprit-nocturne.html",
+    "source": "img:210",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "resistance",
+        "note": "En Lumiere faible/Tenebres : Invisible (action Bonus) et Resistance a tous les degats sauf psychiques et radiants."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-l-esprit-nocturne-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-memoire-magique",
+    "name": "Faveur de memoire magique",
+    "kind": "don",
+    "ref": "../dons/faveur-de-memoire-magique.html",
+    "source": "img:210",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus ; aptitude Sorts",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "spellCombat",
+        "note": "Incantation gratuite : 1d4 par sort de niveau 1-4 ; si le chiffre = niveau de l'emplacement, il n'est pas depense."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-memoire-magique-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-prouesse-martiale",
+    "name": "Faveur de prouesse martiale",
+    "kind": "don",
+    "ref": "../dons/faveur-de-prouesse-martiale.html",
+    "source": "img:210",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Visee infaillible : transformer une attaque ratee en touche (indisponible jusqu'au tour suivant)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-prouesse-martiale-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-recuperation",
+    "name": "Faveur de recuperation",
+    "kind": "don",
+    "ref": "../dons/faveur-de-recuperation.html",
+    "source": "img:210",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "recovery",
+        "note": "Baroud d'honneur (tomber a 1 PV, regagner la moitie du max) et regain de vitalite (reserve de 10d10)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-recuperation-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-resistance-aux-energies",
+    "name": "Faveur de Resistance aux energies",
+    "kind": "don",
+    "ref": "../dons/faveur-de-resistance-aux-energies.html",
+    "source": "img:211",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [],
+    "choices": [
+      {
+        "id": "faveur-de-resistance-aux-energies-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      },
+      {
+        "id": "faveur-de-resistance-aux-energies-resistances",
+        "kind": "resistance",
+        "count": 2,
+        "from": {
+          "fromList": [
+            "acide",
+            "feu",
+            "foudre",
+            "froid",
+            "necrotiques",
+            "poison",
+            "psychiques",
+            "radiants",
+            "tonnerre"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "resistance"
+        },
+        "note": "Modifiable a chaque Repos long. Detournement d'energie par Reaction."
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-vigueur",
+    "name": "Faveur de vigueur",
+    "kind": "don",
+    "ref": "../dons/faveur-de-vigueur.html",
+    "source": "img:211",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "hitPointMaximum",
+        "value": 40,
+        "note": "Maximum de PV +40 ; PV supplementaires = modificateur de Constitution a chaque soin (1/tour)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-vigueur-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-vision-lucide",
+    "name": "Faveur de vision lucide",
+    "kind": "don",
+    "ref": "../dons/faveur-de-vision-lucide.html",
+    "source": "img:211",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision-lucide",
+        "range": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-vision-lucide-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-vitesse",
+    "name": "Faveur de vitesse",
+    "kind": "don",
+    "ref": "../dons/faveur-de-vitesse.html",
+    "source": "img:211",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "speed",
+        "value": "+9m",
+        "note": "Expert en desengagement (action Bonus, met fin a Agrippe)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-vitesse-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-du-destin",
+    "name": "Faveur du destin",
+    "kind": "don",
+    "ref": "../dons/faveur-du-destin.html",
+    "source": "img:211",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Destin aiguille : 2d4 en bonus/malus a un Test d20 (soi ou creature a 18 m)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-du-destin-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "for",
+          "dex",
+          "con",
+          "int",
+          "sag",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  }
+]

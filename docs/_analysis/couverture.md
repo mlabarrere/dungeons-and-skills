@@ -21,7 +21,7 @@ Manifeste Batch 3 : `docs/_analysis/batch3_manifest.csv`.
 
 ## Sources trouvees
 
-- Dossier principal : `C:\Users\mickael.labarrere\OneDrive - Accenture\Personal\DnD`
+- Dossier principal : racine du dépôt
 - Images du livre : `docs/img`
 - Nombre d'images : 59 JPEG
 - Dimensions : toutes les images font 1536 x 2048 px

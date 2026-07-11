@@ -1,0 +1,77 @@
+[
+ {
+  "id": "a-terre",
+  "label": "A terre Etat",
+  "ref": "../regles/glossaire.html#a-terre"
+ },
+ {
+  "id": "agrippe",
+  "label": "Agrippe Etat",
+  "ref": "../regles/glossaire.html#agrippe"
+ },
+ {
+  "id": "assourdi",
+  "label": "Assourdi Etat",
+  "ref": "../regles/glossaire.html#assourdi"
+ },
+ {
+  "id": "aveugle",
+  "label": "Aveugle Etat",
+  "ref": "../regles/glossaire.html#aveugle"
+ },
+ {
+  "id": "charme",
+  "label": "Charme Etat",
+  "ref": "../regles/glossaire.html#charme"
+ },
+ {
+  "id": "effraye",
+  "label": "Effraye Etat",
+  "ref": "../regles/glossaire.html#effraye"
+ },
+ {
+  "id": "empoisonne",
+  "label": "Empoisonne Etat",
+  "ref": "../regles/glossaire.html#empoisonne"
+ },
+ {
+  "id": "entrave",
+  "label": "Entrave Etat",
+  "ref": "../regles/glossaire.html#entrave"
+ },
+ {
+  "id": "epuisement",
+  "label": "Epuisement Etat",
+  "ref": "../regles/glossaire.html#epuisement"
+ },
+ {
+  "id": "etourdi",
+  "label": "Etourdi Etat",
+  "ref": "../regles/glossaire.html#etourdi"
+ },
+ {
+  "id": "inconscient",
+  "label": "Inconscient Etat",
+  "ref": "../regles/glossaire.html#inconscient"
+ },
+ {
+  "id": "invisible",
+  "label": "Invisible Etat",
+  "ref": "../regles/glossaire.html#invisible"
+ },
+ {
+  "id": "neutralise",
+  "label": "Neutralise Etat",
+  "ref": "../regles/glossaire.html#neutralise"
+ },
+ {
+  "id": "paralyse",
+  "label": "Paralyse Etat",
+  "ref": "../regles/glossaire.html#paralyse"
+ },
+ {
+  "id": "petrifie",
+  "label": "Petrifie Etat",
+  "ref": "../regles/glossaire.html#petrifie"
+ }
+]
