@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export PDF — Methodologie &amp; pieges</title>
+  <link rel="stylesheet" href="../assets/grimoire.css">
+</head>
+<body data-root=".." data-breadcrumb="Accueil|/index.html; Regles|/index.html; Export PDF">
+  <main>
+    <article class="sheet" data-entity="regle" data-id="export-pdf" data-status="source">
+      <h1>Export PDF — remplir une fiche de personnage</h1>
+      <p class="note">
+        Methodologie pour remplir un PDF de fiche fourni a partir des donnees deja
+        etablies (voir <a href="protocole.html" data-ref="protocole">protocole</a>).
+        Chaque regle ci-dessous vient d'un bug reel rencontre : c'est un journal
+        anti-regression. A appliquer integralement avant de livrer un PDF.
+      </p>
+
+      <section class="section">
+        <h2>Principe : trois passes, jamais une seule</h2>
+        <p>Un PDF n'est jamais « termine » apres une generation. Il subit trois
+          controles independants sur <strong>la meme version finale</strong> :</p>
+        <ol>
+          <li><strong>Donnees &amp; regles</strong> : recalcul independant (modificateurs, JS, competences, CA, PV, DD/attaque de sort, PP), avant d'ecrire.</li>
+          <li><strong>Technique &amp; visuel</strong> : rouvrir le fichier depuis le disque, rendre chaque page (200-300 dpi), zoomer les zones denses.</li>
+          <li><strong>Comparaison finale</strong> : relire les valeurs <em>reellement presentes</em> dans le PDF et les confronter a la table de reference.</li>
+        </ol>
+        <p class="note">Interdit : ecrire « c'est bon / verifie / parfait » sans les controles chiffres qui le prouvent.</p>
+      </section>
+
+      <section class="section">
+        <h2>Journal anti-regression (piege rencontre &rarr; parade)</h2>
+        <table>
+          <thead>
+            <tr><th>Piege rencontre</th><th>Cause</th><th>Parade (regle)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fiche remplacee par une autre plus facile</td>
+              <td>Choix par confort technique</td>
+              <td>Analyser <strong>tous</strong> les PDF, prioriser ceux avec champs <a href="../regles/glossaire.html" data-ref="glossaire">AcroForm</a>, mais le document demande reste prioritaire : toute substitution doit etre justifiee explicitement. <span class="badge" data-status="source">Regle</span></td>
+            </tr>
+            <tr>
+              <td>Valeurs sur la mauvaise ligne (competences : Nature affichait +6, Investigation/Medecine/Perspicacite decales)</td>
+              <td>Le <em>nom interne</em> du champ ne correspond pas au <em>libelle imprime</em> en face (ex. champ <code>Intuition</code> place sous le libelle « Investigation »)</td>
+              <td>Toujours mapper par le <strong>libelle imprime reellement en face</strong> (coordonnees), jamais par le nom du widget. Extraire le texte statique voisin et apparier par position verticale. <span class="badge" data-status="conflit">Cause n&deg;1 d'erreur</span></td>
+            </tr>
+            <tr>
+              <td>« Sagesse » dans la case « SORTS A PREPARER CHAQUE JOUR »</td>
+              <td>Meme cause : champ nomme <code>SpellcastingAbility</code> place sous un libelle qui attend un <strong>nombre</strong></td>
+              <td>Verifier le libelle imprime SOUS/EN FACE de chaque champ d'en-tete avant d'y ecrire. Un champ « caracteristique » peut en realite etre un compteur.</td>
+            </tr>
+            <tr>
+              <td>Accents supprimes (Materiel, legeres, Benediction...)</td>
+              <td>Habitude « base HTML sans accents » appliquee a tort</td>
+              <td>Le livrable PDF <strong>conserve tous les accents</strong> (<code>e/e/e a i o u c</code>). La convention sans-accents ne concerne que le contenu HTML de la base, pas les exports. <span class="badge" data-status="source">Regle</span></td>
+            </tr>
+            <tr>
+              <td>Accents casses chez le lecteur (« s avec un chapeau »)</td>
+              <td>Le lecteur PDF re-genere l'affichage via le drapeau <code>NeedAppearances</code> avec une police qui mappe mal les accents</td>
+              <td>Apres remplissage, generer les apparences (<code>/AP</code>) et mettre <code>NeedAppearances=false</code> pour forcer l'apparence integree. En dernier recours : aplatir (sans rasteriser les pages).</td>
+            </tr>
+            <tr>
+              <td>Nom de sort errone recopie (« rayon tractant »)</td>
+              <td>Coquille dans la source de la classe (<code>clerc.html</code>) reprise sans controle</td>
+              <td>Croiser chaque nom propre / sort avec sa <strong>page dediee</strong> (<code>sorts/</code>, <code>especes/</code>...) : le vrai nom etait « rayon tracant ».</td>
+            </tr>
+            <tr>
+              <td>Listes en pave illisible, sans puces</td>
+              <td>Retours a la ligne seuls</td>
+              <td>Prefixer chaque element d'une liste longue par « <code>- </code> » (maitrises, langues, equipement, capacites).</td>
+            </tr>
+            <tr>
+              <td>Le script de verification donnait de faux resultats</td>
+              <td>Libelle compare avec sa balise « (DEX) » ; case « cochee » testee par <code>!= ''</code> (les cases vides comptees cochees)</td>
+              <td>Normaliser les libelles (retirer parentheses et accents) ; tester une case par <code>field_value == on_state()</code>. <strong>Un outil de verif doit d'abord etre teste</strong> (0 faux positif) avant d'y faire confiance.</td>
+            </tr>
+            <tr>
+              <td>Widget « Annot is not bound to a page » / valeurs videes</td>
+              <td>Objets widget stockes puis mis a jour plus tard ; appariement par <code>id()</code> entre deux parcours du generateur (objets differents)</td>
+              <td>Remplir et <code>update()</code> dans une <strong>seule passe sur widgets vivants</strong>. Apparier par <code>field_name</code> (stable) ; ne pas conserver les objets widget.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <h2>Workflow de reference</h2>
+        <ol>
+          <li><strong>Analyse</strong> : lister les PDF, detecter AcroForm, inventorier chaque champ (nom, type, page, rectangle). Choisir le fichier et justifier. Enregistrer le <code>sha256</code> de la source.</li>
+          <li><strong>Table de reference</strong> : recalculer toutes les valeurs (passe 1) avant d'ecrire. Aucune donnee inventee ; champ non defini = vide + liste des manques.</li>
+          <li><strong>Correspondance</strong> : pour chaque champ, etablir « libelle imprime &rarr; coordonnees &rarr; nom interne &rarr; valeur ». Se fier au libelle, pas au nom.</li>
+          <li><strong>Remplissage</strong> : une seule passe live ; AcroForm en priorite. Police sobre compatible FR (Helvetica), accents conserves. Tailles coherentes, auto-reduction sans passer sous un seuil lisible. Tirets pour les listes.</li>
+          <li><strong>Cases &amp; listes verticales</strong> : cocher par position/libelle imprime, verifie par <code>on_state()</code>.</li>
+          <li><strong>Sorts</strong> : annotation compacte et exacte quand ca tient (ex. <code>Flamme sacree : JS Dex14, 1d8 rad</code>), effet verifie sur la page du sort.</li>
+          <li><strong>Rendu</strong> : <code>NeedAppearances=false</code>, ne pas modifier la source, sortir un nom distinct, conserver pages et dimensions.</li>
+          <li><strong>Trois passes</strong> (ci-dessus) sur la version finale ; corriger et recommencer la passe concernee tant qu'il reste un ecart.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>Checklist de livraison</h2>
+        <div class="pill-row">
+          <span class="pill">Source inchangee (sha256)</span>
+          <span class="pill">Pages &amp; dimensions identiques</span>
+          <span class="pill">Nom de fichier distinct et clair</span>
+          <span class="pill">Chaque valeur en face du bon libelle imprime</span>
+          <span class="pill">Cases cochees au bon endroit</span>
+          <span class="pill">Accents FR presents et rendus</span>
+          <span class="pill">Listes a tirets</span>
+          <span class="pill">Sorts annotes</span>
+          <span class="pill">3 passes faites avec resultats chiffres</span>
+          <span class="pill">Champs non definis laisses vides + listes</span>
+        </div>
+        <div class="callout">
+          Une seule case non satisfaite interdit la livraison : corriger, puis
+          recommencer les controles concernes.
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="../assets/grimoire.js" defer></script>
+</body>
+</html>
