@@ -2,7 +2,12 @@
 
 *[English](README.md)*
 
-![licence : MIT](https://img.shields.io/badge/license-MIT-black) ![règles : D&D 2024 (5.5)](https://img.shields.io/badge/r%C3%A8gles-D%26D%202024%20(5.5)-black) ![langue : FR + EN](https://img.shields.io/badge/langue-FR%20%2B%20EN-black)
+[![CI](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml/badge.svg)](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml)
+![licence : MIT](https://img.shields.io/badge/licence-MIT-black)
+![règles : D&D 2024 (5.5)](https://img.shields.io/badge/r%C3%A8gles-D%26D%202024%20(5.5)-black)
+![skills : 4](https://img.shields.io/badge/skills-build%20·%20check%20·%20lookup%20·%20help-black)
+![langues : FR + EN](https://img.shields.io/badge/langues-FR%20%2B%20EN-black)
+![ancré](https://img.shields.io/badge/ancr%C3%A9-z%C3%A9ro%20r%C3%A8gle%20invent%C3%A9e-black)
 
 Un projet multi-skills, multi-plateformes et testé qui aide n'importe quel assistant IA (Claude,
 ChatGPT, Cursor, Copilot…) à **construire et vérifier des personnages Dungeons & Dragons 2024

@@ -2,7 +2,12 @@
 
 *[Français](README.fr.md)*
 
-![licence: MIT](https://img.shields.io/badge/licence-MIT-black) ![rules: D&D 2024 (5.5)](https://img.shields.io/badge/rules-D%26D%202024%20(5.5)-black) ![languages: FR + EN](https://img.shields.io/badge/languages-FR%20%2B%20EN-black)
+[![CI](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml/badge.svg)](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml)
+![licence: MIT](https://img.shields.io/badge/licence-MIT-black)
+![rules: D&D 2024 (5.5)](https://img.shields.io/badge/rules-D%26D%202024%20(5.5)-black)
+![skills: 4](https://img.shields.io/badge/skills-build%20·%20check%20·%20lookup%20·%20help-black)
+![languages: FR + EN](https://img.shields.io/badge/languages-FR%20%2B%20EN-black)
+![grounded](https://img.shields.io/badge/grounded-no%20hallucinated%20rules-black)
 
 A multi-skill, multi-platform, tested project that helps any AI assistant (Claude, ChatGPT,
 Cursor, Copilot and friends) **build and check Dungeons & Dragons 2024 ("5.5") characters** — and
