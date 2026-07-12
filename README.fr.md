@@ -1,4 +1,4 @@
-# Générateur de personnages D&D 2024 — un pack de skills « ancré »
+# Dungeons & Skills — pack de skills D&D 2024 « ancré »
 
 *[English](README.md)*
 

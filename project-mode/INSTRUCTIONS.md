@@ -1,4 +1,4 @@
-# D&D 2024 Character Builder — Project instructions
+# Dungeons & Skills — Project instructions (D&D 2024 character builder)
 
 Paste this whole file into a Claude Project's or ChatGPT Project's custom instructions, and
 upload everything in `project-mode/knowledge/` (the rules catalog `*.json`, `schema.md` and

@@ -1,4 +1,4 @@
-# D&D 2024 Character Builder — a grounded skill pack
+# Dungeons & Skills — a grounded D&D 2024 skill pack
 
 *[Français](README.fr.md)*
 

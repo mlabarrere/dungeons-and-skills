@@ -1,9 +1,9 @@
 {
-  "name": "dnd-app",
+  "name": "dungeons-and-skills",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
-  "author": { "name": "D&D 2024 Character Builder contributors" },
+  "author": { "name": "Dungeons & Skills contributors" },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

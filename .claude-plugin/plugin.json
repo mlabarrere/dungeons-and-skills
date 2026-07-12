@@ -1,9 +1,9 @@
 {
-  "name": "dnd-2024-builder",
+  "name": "dungeons-and-skills",
   "version": "0.1.0",
   "description": "Build and check rules-accurate D&D 2024 (5.5) characters, grounded in a bundled catalog.",
   "author": {
-    "name": "D&D 2024 Character Builder contributors"
+    "name": "Dungeons & Skills contributors"
   },
   "skills": "./skills",
   "commands": "./commands"

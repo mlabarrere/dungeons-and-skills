@@ -4,9 +4,6 @@ The project works two ways: as an **agent skill/rule pack** (an AI assistant loa
 the always-on rule) and as a **Project knowledge bundle** (paste instructions + upload files into
 a Claude/ChatGPT Project). Pick the row for your tool.
 
-> Repository slug below is written as `<owner>/<repo>` because the public name is not finalized
-> yet. Replace it with the real slug once published.
-
 ## Prerequisites
 
 - **Node.js 18+** on your `PATH` — the deterministic engine (`engine/cli.mjs`) runs on Node.
@@ -16,8 +13,8 @@ a Claude/ChatGPT Project). Pick the row for your tool.
   `data/`, `skills/` and `rules/` from the working directory.
 
 ```bash
-git clone https://github.com/<owner>/<repo>.git
-cd <repo>
+git clone https://github.com/mlabarrere/dungeons-and-skills.git
+cd dungeons-and-skills
 node engine/cli.mjs build examples/dwarf-fighter.answers.json   # smoke test → a sheet, 0 errors
 ```
 
@@ -30,8 +27,8 @@ The four skills in `skills/` are auto-discovered; invoke them with `/dnd-build`,
 **As a plugin (once published):**
 
 ```
-/plugin marketplace add <owner>/<repo>
-/plugin install dnd-2024-builder@dnd-2024-builder
+/plugin marketplace add mlabarrere/dungeons-and-skills
+/plugin install dungeons-and-skills@dungeons-and-skills
 ```
 
 (Two separate prompts.) The plugin manifest is `.claude-plugin/plugin.json`; it points at

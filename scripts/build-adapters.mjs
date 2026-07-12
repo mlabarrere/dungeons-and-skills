@@ -53,7 +53,7 @@ function main() {
   // Claude Code plugin manifests (point at skills/ + commands/).
   const pkg = JSON.parse(readFileSync(join(ROOT, "package.json"), "utf8"));
   written.push(write(".claude-plugin/plugin.json", JSON.stringify({
-    name: "dnd-2024-builder",
+    name: "dungeons-and-skills",
     version: pkg.version || "0.1.0",
     description: "Build and check rules-accurate D&D 2024 (5.5) characters, grounded in a bundled catalog.",
     author: { name: pkg.author?.name || "" },
@@ -61,12 +61,12 @@ function main() {
     commands: "./commands",
   }, null, 2) + "\n"));
   written.push(write(".claude-plugin/marketplace.json", JSON.stringify({
-    name: "dnd-2024-builder",
+    name: "dungeons-and-skills",
     owner: { name: pkg.author?.name || "" },
     plugins: [{
-      name: "dnd-2024-builder",
+      name: "dungeons-and-skills",
       source: "./",
-      description: "D&D 2024 character builder skills (build, check, lookup, help).",
+      description: "Dungeons & Skills — grounded D&D 2024 character-builder skills (build, check, lookup, help).",
     }],
   }, null, 2) + "\n"));
 

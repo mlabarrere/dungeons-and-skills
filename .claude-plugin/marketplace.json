@@ -1,13 +1,13 @@
 {
-  "name": "dnd-2024-builder",
+  "name": "dungeons-and-skills",
   "owner": {
-    "name": "D&D 2024 Character Builder contributors"
+    "name": "Dungeons & Skills contributors"
   },
   "plugins": [
     {
-      "name": "dnd-2024-builder",
+      "name": "dungeons-and-skills",
       "source": "./",
-      "description": "D&D 2024 character builder skills (build, check, lookup, help)."
+      "description": "Dungeons & Skills — grounded D&D 2024 character-builder skills (build, check, lookup, help)."
     }
   ]
 }

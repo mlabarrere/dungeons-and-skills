@@ -1,5 +1,5 @@
 <!-- GENERATED from AGENTS.md by scripts/build-adapters.mjs — do not edit. -->
-# D&D 2024 Character Builder — always-on rules
+# Dungeons & Skills — always-on rules (D&D 2024 character builder)
 
 Compact, host-agnostic instruction set for any agent that lacks skill support. This section
 (between the `dnd-builder` markers) is the canonical rule text; `scripts/build-adapters.mjs`
