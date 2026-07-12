@@ -1,8 +1,8 @@
 /* ==========================================================================
-   grimoire.js — comportements partages des pages du grimoire D&D
+   ds.js — comportements partages des pages du Dungeons & Skills D&D
    --------------------------------------------------------------------------
    Aucun framework, aucun build. Chaque page charge ce script en fin de <body> :
-     <script src="../assets/grimoire.js" defer></script>
+     <script src="../assets/ds.js" defer></script>
    Fonctions :
    1. Fil d'Ariane : injecte depuis <body data-breadcrumb="Accueil|/index.html;
       Classes|/classes/index.html; Druide">  (paires "libelle|href" separees par ;
@@ -69,7 +69,7 @@
     var footer = document.createElement("footer");
     footer.className = "site-footer";
     footer.innerHTML =
-      'Grimoire D&D — base documentaire HTML (source de verite). ' +
+      'Dungeons & Skills — base documentaire HTML (source de verite). ' +
       'Aide personnelle de reference, usage prive de table. ' +
       '<a href="' + root + '/index.html">Accueil</a> · ' +
       '<a href="' + root + '/styleguide.html">Styleguide</a>';

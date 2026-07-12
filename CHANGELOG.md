@@ -24,6 +24,25 @@ All notable changes to this project are documented here. The format is based on
 - Benchmark suite v1 (`benchmarks/`): a deterministic error scorer and a bare-vs-grounded
   subagent pilot on `dnd-build`.
 
+## [Unreleased] — public-ready ("Dungeons & Skills")
+
+### Changed
+- Completed the **Grimoire → Dungeons & Skills** rebrand: renamed the HTML base assets
+  `grimoire.*` → `ds.*` and updated ~640 references, the home title/H1, the injected footer, and
+  the Next.js UI strings (`scripts/rebrand.mjs`). The game term *grimoire* (a wizard's spellbook)
+  is intentionally kept in the catalogue.
+
+### Security / legal
+- **Stopped versioning the book scans.** Untracked and git-ignored `docs/img/` (351 page scans),
+  `docs/_analysis/character_sheet/` and `docs/_analysis/contact_*.jpg` — kept locally/privately.
+  The catalogue only carries `img:<page>` citations; `resolve-source.mjs` degrades gracefully.
+  (History purge of these paths is done at release time.)
+
+### Added
+- Publish-readiness: 400×400 logo (`assets/logo.svg`), enriched plugin/marketplace manifests
+  (homepage, license, keywords, icon), a zero-dependency installer (`install.mjs` + `bin`,
+  runnable via `npx github:…`), and a README Quickstart table per host.
+
 ## [Unreleased] — benchmarks v2
 
 ### Changed / added

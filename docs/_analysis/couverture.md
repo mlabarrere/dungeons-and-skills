@@ -4,7 +4,9 @@ Etat au 2026-07-09.
 
 **Base convertie en HTML.** La source de verite est desormais `docs/html/` (voir
 `docs/html/index.html`). Les Markdown d'extraction sont archives en lecture seule dans
-`docs/_source-md/`. Les images `docs/img/` (Batch 1/2/3) restent la verite ultime.
+`docs/_source-md/`. Les images `docs/img/` (Batch 1/2/3) restent la verite ultime **en local**
+— elles ne sont **PAS versionnees** (contenu du livre, gardees privees ; voir `.gitignore`).
+Le catalogue ne cite que des references `img:<page>`, jamais les fichiers.
 
 ## Batch 3 — re-scan complet du livre (2026-07-09)
 
@@ -62,7 +64,7 @@ Deux paires d'images sont des doublons exacts d'apres leur hash MD5 :
 ```text
 docs/html/
   index.html            styleguide.html   CONVENTIONS.md   UTILISATION.md
-  assets/               grimoire.css / grimoire.print.css / grimoire.js
+  assets/               ds.css / ds.print.css / ds.js
   regles/               creation-personnage, protocole, modele-graphe-provenance (SVG), generateur-online
   classes/              index + clerc/druide/rodeur + 9 stubs
   especes/              index + elfe/tieffelin (+ lignages) + 8 stubs

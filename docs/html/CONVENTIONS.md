@@ -1,13 +1,13 @@
-# Conventions du grimoire HTML
+# Conventions du Dungeons & Skills HTML
 
-Ce dossier `docs/html/` est la **source de verite** du grimoire D&D. Chaque
+Ce dossier `docs/html/` est la **source de verite** du Dungeons & Skills D&D. Chaque
 entite de jeu (classe, espece, historique, don, objet, sort, personnage) est
 **une page HTML**. Les anciens Markdown sont archives dans `docs/_source-md/`
 comme provenance d'extraction ; les images `docs/img/` restent la verite ultime.
 
 ## Regle d'or
 
-- **Zero CSS inline de style.** Toute page charge `assets/grimoire.css`. Les
+- **Zero CSS inline de style.** Toute page charge `assets/ds.css`. Les
   couleurs, tables, badges, callouts viennent de la feuille partagee. Voir le
   rendu de chaque composant dans [styleguide.html](styleguide.html).
 - **Une entite = une page.** Nom de fichier = identifiant en kebab-case, sans
@@ -29,7 +29,7 @@ sans href pour la page courante.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Druide — Classe</title>
-  <link rel="stylesheet" href="../assets/grimoire.css">
+  <link rel="stylesheet" href="../assets/ds.css">
 </head>
 <body data-root=".." data-breadcrumb="Accueil|/index.html; Classes|/classes/index.html; Druide">
   <main>
@@ -39,12 +39,12 @@ sans href pour la page courante.
       <!-- sections ... -->
     </article>
   </main>
-  <script src="../assets/grimoire.js" defer></script>
+  <script src="../assets/ds.js" defer></script>
 </body>
 </html>
 ```
 
-Le fil d'Ariane et le footer sont **injectes par `grimoire.js`** : ne pas les
+Le fil d'Ariane et le footer sont **injectes par `ds.js`** : ne pas les
 ecrire a la main.
 
 ## Attributs machine (data-*)

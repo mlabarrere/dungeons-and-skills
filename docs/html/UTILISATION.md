@@ -1,4 +1,4 @@
-# Utiliser la base documentaire du Grimoire D&D
+# Utiliser la base documentaire du Dungeons & Skills
 
 Prompt de reference a donner en tete de session a Claude Code (ou tout agent) pour
 qu'il utilise correctement cette base. Copie tout le bloc ci-dessous.
@@ -32,7 +32,7 @@ Tu travailles avec une base documentaire D&D 2024 (5.5) en **HTML**, situee dans
 - `classes/`, `especes/`, `historiques/`, `dons/`, `equipement/`, `sorts/` — une entite
   = une page ; chaque dossier a un `index.html`. Les entites non extraites sont des stubs.
 - `personnages/` — fiches de la table.
-- `assets/grimoire.css` + `grimoire.js` — design system partage (ne jamais dupliquer
+- `assets/ds.css` + `ds.js` — design system partage (ne jamais dupliquer
   de CSS ; toute page les reference).
 
 ## 4. Statuts (toujours qualifier une donnee)
@@ -53,7 +53,7 @@ Relie les entites par des liens : `<a href="../classes/druide.html" data-ref="dr
    sources, calcule les valeurs derivees (PV, CA, JS, competences, DD/attaque de sort…),
    liste choix automatiques, choix restants, conflits, incoherences, manques.
 3. Produis une **fiche HTML** dans `personnages/` en suivant le squelette de
-   `CONVENTIONS.md` : `<link>` vers `../assets/grimoire.css`, `<script>` `grimoire.js`,
+   `CONVENTIONS.md` : `<link>` vers `../assets/ds.css`, `<script>` `ds.js`,
    `data-root`/`data-breadcrumb`/`data-entity="personnage"`. Reutilise les composants
    (`.summary`, `.section`, tables de provenance, `.badge[data-status]`). Zero CSS inline.
 4. Separe toujours **faits** (source/calcule) des **recommandations**, et rends chaque

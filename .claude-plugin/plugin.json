@@ -1,10 +1,23 @@
 {
   "name": "dungeons-and-skills",
   "version": "0.1.0",
-  "description": "Build and check rules-accurate D&D 2024 (5.5) characters, grounded in a bundled catalog.",
+  "description": "Build and check rules-accurate D&D 2024 (5.5) characters, grounded in a bundled catalog — never the model's memory.",
   "author": {
     "name": "Dungeons & Skills contributors"
   },
+  "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-skills",
+    "agent-skills",
+    "dnd",
+    "dnd-2024",
+    "5e",
+    "character-builder",
+    "grounding",
+    "anti-hallucination"
+  ],
+  "icon": "./assets/logo.svg",
   "skills": "./skills",
   "commands": "./commands"
 }

@@ -55,3 +55,8 @@ next-env.d.ts
 # divers scratch de bench
 /_bench_tmp*.json
 /_tmp*.json
+
+# Contenu du livre (scans) — jamais versionne, garde en local/prive
+docs/img/
+docs/_analysis/character_sheet/
+docs/_analysis/contact_*.jpg

@@ -1,14 +1,14 @@
 /* ==========================================================================
-   grimoire.css — feuille de style partagee du grimoire D&D (source de verite HTML)
+   ds.css — feuille de style partagee du Dungeons & Skills D&D (source de verite HTML)
    --------------------------------------------------------------------------
    Le design system est leve verbatim de docs/html/personnages/medicis.html
    (premiere fiche aboutie) puis complete des composants transverses :
    fil d'Ariane, tableaux d'entites, badges [data-status], footer, onglets, stub.
-   Regles d'impression isolees dans grimoire.print.css (importe ci-dessous).
+   Regles d'impression isolees dans ds.print.css (importe ci-dessous).
    Voir docs/html/CONVENTIONS.md pour l'usage.
    ========================================================================== */
 
-@import "grimoire.print.css" print;
+@import "ds.print.css" print;
 
 /* --- Tokens ------------------------------------------------------------- */
 :root {
@@ -375,7 +375,7 @@ th {
 .badge[data-status="incoherent"] { color: #991b1b; border-color: var(--bad-line); background: var(--bad-bg); }
 .badge[data-status="conflit"] { color: #991b1b; border-color: var(--bad-line); background: var(--bad-bg); }
 
-/* --- Fil d'Ariane (injecte par grimoire.js si data-breadcrumb present) --- */
+/* --- Fil d'Ariane (injecte par ds.js si data-breadcrumb present) --- */
 .breadcrumb {
   font-size: 12px;
   color: var(--muted);
@@ -469,7 +469,7 @@ tr[hidden] {
   margin-bottom: 6px;
 }
 
-/* --- Onglets (actives par grimoire.js) ---------------------------------- */
+/* --- Onglets (actives par ds.js) ---------------------------------- */
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -518,7 +518,7 @@ button {
   cursor: pointer;
 }
 
-/* --- Footer commun (injecte par grimoire.js) ---------------------------- */
+/* --- Footer commun (injecte par ds.js) ---------------------------- */
 .site-footer {
   max-width: 1180px;
   margin: 24px auto 0;

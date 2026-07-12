@@ -14,7 +14,7 @@ const ABIL_LABEL = { for: "Force", dex: "Dexterite", con: "Constitution", int: "
 const KIND_LABEL = {
   "competence-classe": "competence (classe)", "competence": "competence", "cantrip": "sort mineur",
   "prepared": "sort prepare", "langue": "langue", "equipement": "equipement", "ordre-primitif": "ordre primitif",
-  "ordre-divin": "ordre divin", "expertise": "expertise", "grimoire": "grimoire", "spellcasting-ability": "carac. d'incantation",
+  "ordre-divin": "ordre divin", "expertise": "expertise", "Dungeons & Skills": "Dungeons & Skills", "spellcasting-ability": "carac. d'incantation",
   "liste-sorts": "liste de sorts (don)", "caracteristique-incantation": "carac. d'incantation (don)",
   "style-de-combat": "style de combat", "outil": "outil", "toolProficiency": "outil",
 };
@@ -231,7 +231,7 @@ function renderSheet() {
     const C = computeCharacter(model);
     statusEl.innerHTML = statusStrip(C);
     let doc = renderHTML(C).split("../assets/").join("assets/");
-    doc = doc.replace(/<script src="assets\/grimoire\.js"[^>]*><\/script>/, ""); // fiche statique : pas de JS
+    doc = doc.replace(/<script src="assets\/Dungeons & Skills\.js"[^>]*><\/script>/, ""); // fiche statique : pas de JS
     frame.srcdoc = doc;
   } catch (e) {
     statusEl.innerHTML = `<div class="callout error"><strong>Erreur de calcul :</strong> ${esc(e.message)}</div>`;

@@ -1,7 +1,7 @@
 /* ==========================================================================
    sorts.js — index interactif des sorts (filtrage + tri)
    --------------------------------------------------------------------------
-   Charge UNIQUEMENT par docs/html/sorts/index.html (en plus de grimoire.js).
+   Charge UNIQUEMENT par docs/html/sorts/index.html (en plus de ds.js).
    Lit les data-* portes par chaque <tr> du tableau #spell-table :
      data-id, data-name, data-level, data-school, data-casting, data-classes,
      data-ritual, data-concentration

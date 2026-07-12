@@ -4,6 +4,8 @@
   "private": true,
   "license": "MIT",
   "author": { "name": "Dungeons & Skills contributors" },
+  "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
+  "bin": { "dungeons-and-skills": "./install.mjs" },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

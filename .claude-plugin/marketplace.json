@@ -7,7 +7,20 @@
     {
       "name": "dungeons-and-skills",
       "source": "./",
-      "description": "Dungeons & Skills — grounded D&D 2024 character-builder skills (build, check, lookup, help)."
+      "description": "Dungeons & Skills — grounded D&D 2024 character-builder skills (build, check, lookup, help).",
+      "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
+      "license": "MIT",
+      "keywords": [
+        "claude-skills",
+        "agent-skills",
+        "dnd",
+        "dnd-2024",
+        "5e",
+        "character-builder",
+        "grounding",
+        "anti-hallucination"
+      ],
+      "icon": "./assets/logo.svg"
     }
   ]
 }

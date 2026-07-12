@@ -8,7 +8,17 @@ A multi-skill, multi-platform, tested project that helps any AI assistant (Claud
 Cursor, Copilot and friends) **build and check Dungeons & Dragons 2024 ("5.5") characters** — and
 get the rules right.
 
-**New here? → [INSTALL.md](INSTALL.md) to set it up, then run `/dnd-build`.**
+## Quickstart (pick your host)
+
+| Host | Install | Then |
+|------|---------|------|
+| **Claude Code** | `/plugin marketplace add mlabarrere/dungeons-and-skills` → `/plugin install dungeons-and-skills@dungeons-and-skills` | `/dnd-build` |
+| **Any project (script)** | `npx github:mlabarrere/dungeons-and-skills` (or clone + `node install.mjs`) | open Claude Code there, `/dnd-build` |
+| **Claude / ChatGPT Projects** | paste [`project-mode/INSTRUCTIONS.md`](project-mode/INSTRUCTIONS.md), upload [`project-mode/knowledge/`](project-mode/knowledge/) | ask it to build a character |
+| **Cursor / Windsurf / Cline / Kiro / Copilot** | the rule auto-loads from a checkout, or copy the matching adapter (see [PLATFORMS.md](PLATFORMS.md)) | describe the task |
+| **Any other agent** | point it at [`AGENTS.md`](AGENTS.md) | — |
+
+Full details: [INSTALL.md](INSTALL.md).
 
 ## Why it exists
 

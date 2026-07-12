@@ -1,11 +1,11 @@
 {
   "app": {
-    "title": "Grimoire — fiches D&D avec provenance",
+    "title": "Dungeons & Skills — fiches D&D avec provenance",
     "description": "Générateur de fiches D&D 2024 déterministe : chaque valeur explique pourquoi elle est là.",
     "loading": "Chargement…"
   },
   "nav": {
-    "brand": "Grimoire · fiches D&D",
+    "brand": "Dungeons & Skills · fiches D&D",
     "tagline": "Provenance & audit trail",
     "myCharacters": "Mes persos",
     "newCharacter": "+ Nouveau",
