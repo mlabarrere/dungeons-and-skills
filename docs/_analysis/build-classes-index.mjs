@@ -47,7 +47,7 @@ const page = `<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Classes — Index</title>
-  <link rel="stylesheet" href="../assets/grimoire.css">
+  <link rel="stylesheet" href="../assets/ds.css">
 </head>
 <body data-root=".." data-breadcrumb="Accueil|/index.html; Classes">
   <main>
@@ -62,7 +62,7 @@ ${rows}
       </table>
     </article>
   </main>
-  <script src="../assets/grimoire.js" defer></script>
+  <script src="../assets/ds.js" defer></script>
 </body>
 </html>
 `;

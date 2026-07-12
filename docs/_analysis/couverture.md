@@ -89,7 +89,9 @@ docs/img/               images du livre (verite ultime)
 - **Images reunies** : `docs/img/img Batch 1` (59, chap. 2/3/4/5/6), `img Batch 2` (49, sorts A-E),
   `img Batch 3` (224, livre complet). Le dossier parasite `1260608232710-img` a ete supprime.
 - **Nommage sous-classes harmonise** : `occultiste-protecteur-*` -> `protecteur-*` (comme les autres).
-- Etat : 0 `data-status="manquant"`, 0 stub reel, 0 lien mort, spellcheck 0 erreur, 0 accent.
+- Etat : 0 stub de contenu reel, 0 lien mort, spellcheck 0 erreur, 0 accent. Les `data-status="manquant"`
+  restants sont des lignes de legende/exemple (styleguide, protocole…) plus 1 vrai trou documente
+  (`regles/multiclassage.html` : table de prerequis absente des images).
 - Maillage type Wikipedia pose (`docs/_engine/autolink.mjs`, ~3740 liens).
 
 ## Batch 4 (2026-07-09) — Introduction + Chapitre 1 + Chapitre 2
@@ -116,4 +118,5 @@ docs/img/               images du livre (verite ultime)
 - **`amelioration-de-caracteristique`** : meme `data-id` en don ET en sort (ambigu pour le maillage).
 - **`sorts/insecte-geant`** : `data-save="con"` derive du profil de la creature invoquee (a passer `-` ?).
 - Index de section non uniformement generes (historiques/dons/equipement/personnages ecrits main).
-- `personnages/lohita.html` : fiche perso tierce, contient des `manquant` (hors moteur de fiche).
+- `personnages/lohita.html` : fiche perso tierce ecrite a la main (hors moteur de fiche), 0 `manquant` ;
+  mise en page propre a elle, coherente via `personnages/index.html`.

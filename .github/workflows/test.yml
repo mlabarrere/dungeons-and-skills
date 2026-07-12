@@ -19,6 +19,7 @@ jobs:
       # are already in sync with docs/ (that is what these guards are for).
       - run: node scripts/check-sync.mjs
       - run: node scripts/check-rule-copies.mjs
+      - run: node docs/_engine/html-lint.mjs          # docs/html consistency + link integrity
       - run: node --test "tests/*.test.mjs"
       # Benchmark gates — all OFFLINE (no paid API is ever called in CI):
       - run: node benchmarks/tasks/gen.mjs            # regenerate the corpora deterministically

@@ -53,7 +53,7 @@ Le HTML doit rester requetable par le futur generateur. Attributs normalises :
 
 | Attribut | Sur | Valeur |
 |---|---|---|
-| `data-entity` | `.sheet` / bloc racine | `classe`, `espece`, `lignage`, `historique`, `don`, `objet`, `sort`, `personnage`, `regle` |
+| `data-entity` | `.sheet` / bloc racine | `classe`, `sous-classe`, `espece`, `lignage`, `historique`, `don`, `objet`, `equipement`, `sort`, `creature`, `personnage`, `regle` |
 | `data-id` | idem | identifiant kebab-case (= nom de fichier sans `.html`) |
 | `data-source` | idem / section | provenance image, ex. `img:79` |
 | `data-status` | `.badge`, ligne de table, section | voir statuts ci-dessous |

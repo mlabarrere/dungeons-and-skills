@@ -18,7 +18,7 @@ const SKILLS = {
   "Perception": "sag", "Persuasion": "cha", "Representation": "cha", "Religion": "int",
   "Tromperie": "cha", "Survie": "sag",
 };
-const STATUSES = ["fourni", "source", "calcule", "deduit", "recommande", "arbitrer", "manquant", "conflit"];
+const STATUSES = ["fourni", "source", "calcule", "deduit", "recommande", "arbitrer", "manquant", "incoherent", "conflit"];
 
 const mod = (s) => Math.floor((s - 10) / 2);
 const sign = (n) => (n >= 0 ? "+" + n : "" + n);
@@ -265,7 +265,7 @@ export function renderHTML(C) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(title)}</title>
-  <link rel="stylesheet" href="../assets/grimoire.css">
+  <link rel="stylesheet" href="../assets/ds.css">
 </head>
 <body data-root=".." data-breadcrumb="${bc}" data-entity="personnage" data-id="${esc(m.id)}" data-generated="true">
   <main>
@@ -329,7 +329,7 @@ export function renderHTML(C) {
       <section class="section"><h2>6. Source &rarr; effets</h2><div class="grid-2">${sourceEffects}</div></section>
     </article>
   </main>
-  <script src="../assets/grimoire.js" defer></script>
+  <script src="../assets/ds.js" defer></script>
 </body>
 </html>
 `;
