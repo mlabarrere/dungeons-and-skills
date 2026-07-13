@@ -1,5 +1,9 @@
 {
   "_note": "DE-id -> DE label. Source: PHB 2024 DE (Ulisses Spiele, 'Das Spielerhandbuch 2024'). New PHB 2024 spells marked _new2024 may use provisional German translations pending Ulisses publication.",
+  "abilities": {
+    "str": "Stärke", "dex": "Geschicklichkeit", "con": "Konstitution",
+    "int": "Intelligenz", "wis": "Weisheit", "cha": "Charisma"
+  },
   "classes": {
     "barbarian": "Barbar",
     "bard": "Barde",

@@ -1,6 +1,10 @@
 {
   "_note": "EN-id -> RU label. Source: Hobby World D&D 5e Russian edition (quasi-official). 2024-new content without confirmed translation kept in English.",
   "_source": "Hobby World D&D 5e / Книга игрока (quasi-official for PHB 2024)",
+  "abilities": {
+    "str": "Сила", "dex": "Ловкость", "con": "Телосложение",
+    "int": "Интеллект", "wis": "Мудрость", "cha": "Харизма"
+  },
   "classes": {
     "barbarian": "Варвар",
     "bard": "Бард",

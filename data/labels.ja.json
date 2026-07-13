@@ -1,5 +1,9 @@
 {
   "_note": "EN-id -> JA label. Source: PHB 2024 Japanese edition (Hobby Japan). Primary katakana names per official D&D Japan glossary (dnd-jp.com/DnD_Glossary_JP.txt). New 2024-only terms sourced from Brother Sharp (note.com/brothersharp). 3 terms without confirmed JA (befuddlement, arcane-vigor, power-word-fortify) use convention-based katakana.",
+  "abilities": {
+    "str": "筋力", "dex": "敏捷力", "con": "耐久力",
+    "int": "知力", "wis": "判断力", "cha": "魅力"
+  },
   "classes": {
     "barbarian": "バーバリアン",
     "bard": "バード",

@@ -1,6 +1,10 @@
 {
   "_note": "ZH-CN labels (Simplified Chinese). Source: licensed CN D&D editions + quasi-official community standard terms. PHB 2024 official CN release pending — verify named-spell translations when available.",
   "_lang": "zh-CN",
+  "abilities": {
+    "str": "力量", "dex": "敏捷", "con": "体质",
+    "int": "智力", "wis": "感知", "cha": "魅力"
+  },
   "classes": {
     "barbarian": "野蛮人",
     "bard": "吟游诗人",

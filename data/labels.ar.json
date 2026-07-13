@@ -1,6 +1,10 @@
 {
   "_note": "EN-id -> AR label. Community-sourced (no official PHB 2024 Arabic edition). English fallback for proper nouns and terms without established community consensus.",
   "_source": "Arabic D&D community translations; primary reference: community wikis and established fan translations of D&D 5e Arabic.",
+  "abilities": {
+    "str": "القوة", "dex": "الرشاقة", "con": "الدستور",
+    "int": "الذكاء", "wis": "الحكمة", "cha": "الكاريزما"
+  },
   "classes": {
     "barbarian": "الجبّار",
     "bard": "الشّاعر",

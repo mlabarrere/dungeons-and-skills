@@ -1,6 +1,10 @@
 {
   "_note": "EN-id -> ES label. Source: aidedd.org/spell/es/ (PHB 2024 Devir). Verified 2026-07-13 against aidedd.org full 391-spell list. English fallback only where aidedd has no ES entry.",
   "_source": "aidedd.org/spell/es/ — PHB 2024 Devir (Manual del Jugador 2024, D&D 5.5)",
+  "abilities": {
+    "str": "Fuerza", "dex": "Destreza", "con": "Constitución",
+    "int": "Inteligencia", "wis": "Sabiduría", "cha": "Carisma"
+  },
   "classes": {
     "barbarian": "Bárbaro",
     "bard": "Bardo",

@@ -1,5 +1,9 @@
 {
   "_note": "EN-id -> IT label. Source: Need Games PHB 2024 IT (Manuale del Giocatore 2024). Verified against gist.github.com/vietts/bee17c5aaa7b74f470c8016085864202, telodoioildungeon.it, dungeonedraghi.it (July 2026). Do NOT edit by hand — update scripts/mapping-fr-to-en.json and regenerate.",
+  "abilities": {
+    "str": "Forza", "dex": "Destrezza", "con": "Costituzione",
+    "int": "Intelligenza", "wis": "Saggezza", "cha": "Carisma"
+  },
   "classes": {
     "barbarian": "Barbaro",
     "bard": "Bardo",
