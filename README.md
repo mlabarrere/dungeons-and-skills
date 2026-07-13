@@ -9,6 +9,11 @@
 ![languages: FR + EN](https://img.shields.io/badge/languages-FR%20%2B%20EN-black)
 ![grounded](https://img.shields.io/badge/grounded-no%20hallucinated%20rules-black)
 
+> [!WARNING]
+> **Rules data — personal use only.** The catalog (`data/`, `docs/`) is derived from D&D 2024
+> material (Wizards of the Coast). The *code* is MIT; the *rules data* is for personal use —
+> do not redistribute commercially. See [ATTRIBUTION.md](ATTRIBUTION.md).
+
 A multi-skill, multi-platform, tested project that helps any AI assistant (Claude, ChatGPT,
 Cursor, Copilot and friends) **build and check Dungeons & Dragons 2024 ("5.5") characters** — and
 get the rules right.
@@ -17,7 +22,7 @@ get the rules right.
 
 | Host | Install | Then |
 |------|---------|------|
-| **Claude Code** | `/plugin marketplace add mlabarrere/dungeons-and-skills` → `/plugin install dungeons-and-skills@dungeons-and-skills` | `/dnd-build` |
+| **Claude Code** | `node install.mjs` (or `npx github:mlabarrere/dungeons-and-skills`) — plugin marketplace coming soon | `/dnd-build` |
 | **Any project (script)** | `npx github:mlabarrere/dungeons-and-skills` (or clone + `node install.mjs`) | open Claude Code there, `/dnd-build` |
 | **Claude / ChatGPT Projects** | paste [`project-mode/INSTRUCTIONS.md`](project-mode/INSTRUCTIONS.md), upload [`project-mode/knowledge/`](project-mode/knowledge/) | ask it to build a character |
 | **Cursor / Windsurf / Cline / Kiro / Copilot** | the rule auto-loads from a checkout, or copy the matching adapter (see [PLATFORMS.md](PLATFORMS.md)) | describe the task |
@@ -157,3 +162,7 @@ The original work (engine, scripts, skill prose, documentation) is under the
 and is included for **private use**; before distributing it publicly, keep the content within the
 **SRD 5.2 (2024, CC-BY-4.0)** and attribute it — see [ATTRIBUTION.md](ATTRIBUTION.md). This is
 unofficial fan content and is not affiliated with Wizards of the Coast.
+
+> This work includes material from the System Reference Document 5.2 ("SRD 5.2") by Wizards of
+> the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2 is licensed under the
+> Creative Commons Attribution 4.0 International License.

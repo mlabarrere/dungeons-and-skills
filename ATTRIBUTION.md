@@ -38,8 +38,9 @@ Required CC-BY attribution when shipping SRD content, per Wizards' terms:
 **unofficial fan content**, not published, endorsed by, or affiliated with Wizards of the Coast.
 No challenge to their ownership is intended.
 
-## TODO before any public release
+## Release status
 
-- [ ] Audit `data/` and `docs/` and remove/replace anything not covered by SRD 5.2.
-- [ ] Add the SRD 5.2 attribution block above to the README of the published artifact.
-- [ ] Confirm the repository name and public scope (currently the product name is deferred).
+- [x] Audit `data/` and `docs/` — personal-use strategy (Option B) retained; catalog ships
+  as-is for personal use, with prominent `[!WARNING]` notice in README.
+- [x] SRD 5.2 attribution block added to README.md and README.fr.md.
+- [x] Repository name confirmed: **dungeons-and-skills** (`mlabarrere/dungeons-and-skills`).

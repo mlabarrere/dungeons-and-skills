@@ -48,6 +48,9 @@ next-env.d.ts
 # Les gabarits vierges peuvent etre re-ajoutes explicitement : git add -f <fichier>.pdf
 *.pdf
 
+# work scratch (fichiers de build non versionnés)
+work/
+
 # benchmark scratch (fichiers answers temporaires écrits par le runner/sous-agents)
 /answers*.json
 *.tmp.json

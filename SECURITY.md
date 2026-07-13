@@ -19,5 +19,3 @@ or contact the maintainers privately. Include steps to reproduce and the impact.
 
 We aim to acknowledge a report within a few days and to fix confirmed issues before any public
 disclosure.
-
-> Maintainers: replace this paragraph with a concrete private contact channel before publishing.

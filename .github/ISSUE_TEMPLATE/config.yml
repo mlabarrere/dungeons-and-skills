@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Question / usage help
     url: https://github.com/mlabarrere/dungeons-and-skills/discussions
-    about: Ask how to install or use the skills (replace with the real repo URL once published).
+    about: Ask how to install or use the skills.

@@ -9,6 +9,11 @@
 ![langues : FR + EN](https://img.shields.io/badge/langues-FR%20%2B%20EN-black)
 ![ancré](https://img.shields.io/badge/ancr%C3%A9-z%C3%A9ro%20r%C3%A8gle%20invent%C3%A9e-black)
 
+> [!WARNING]
+> **Données de règles — usage personnel uniquement.** Le catalogue (`data/`, `docs/`) est dérivé
+> du matériel D&D 2024 (Wizards of the Coast). Le *code* est MIT ; les *données de règles* sont
+> réservées à un usage personnel — ne pas redistribuer commercialement. Voir [ATTRIBUTION.md](ATTRIBUTION.md).
+
 Un projet multi-skills, multi-plateformes et testé qui aide n'importe quel assistant IA (Claude,
 ChatGPT, Cursor, Copilot…) à **construire et vérifier des personnages Dungeons & Dragons 2024
 (« 5.5 »)** — avec les bonnes règles.
@@ -102,3 +107,7 @@ de règles sous `data/` et `docs/` dérivent du matériel D&D 2024 et sont inclu
 privé** ; pour une distribution publique, rester dans le périmètre du **SRD 5.2 (2024, CC-BY-4.0)**
 avec attribution — voir [ATTRIBUTION.md](ATTRIBUTION.md). Contenu de fan non officiel, sans
 affiliation avec Wizards of the Coast.
+
+> Ce travail inclut du matériel issu du System Reference Document 5.2 (« SRD 5.2 ») de Wizards of
+> the Coast LLC, disponible sur https://www.dndbeyond.com/srd. Le SRD 5.2 est publié sous la
+> licence Creative Commons Attribution 4.0 International.

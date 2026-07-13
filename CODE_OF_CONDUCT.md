@@ -46,7 +46,7 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may be repor
 community leaders responsible for enforcement through the repository's private reporting channel.
 All complaints will be reviewed and investigated promptly and fairly.
 
-> Maintainers: replace this line with a concrete private contact channel before publishing.
+> Report via the repository's Security tab (GitHub private vulnerability reporting).
 
 ## Attribution
 
