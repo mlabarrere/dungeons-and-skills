@@ -1,0 +1,5 @@
+{
+  "skill": "dnd-help",
+  "steps": ["Explain the family: dnd-build creates a level-1 character, dnd-check audits an existing sheet, dnd-lookup looks up a spell/feat/class rule, all grounded in the bundled 2024 catalogue.", "Note the grounding principle: every value comes from the catalogue and cites its source, never from memory."],
+  "needs_more_info": false
+}

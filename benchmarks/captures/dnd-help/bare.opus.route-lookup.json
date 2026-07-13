@@ -1,0 +1,5 @@
+{
+  "skill": "dnd-lookup",
+  "steps": ["Use dnd-lookup to retrieve Shillelagh (Gourdin magique) from the 2024 catalogue.", "Report its effect and cite the source rather than answering from memory."],
+  "needs_more_info": false
+}

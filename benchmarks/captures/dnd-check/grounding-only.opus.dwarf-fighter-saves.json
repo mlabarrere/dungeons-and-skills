@@ -1,0 +1,9 @@
+{
+  "findings": [
+    {
+      "field": "savingThrowProficiencies",
+      "issue": "Les jets de sauvegarde maitrises du guerrier sont Force et Constitution. La fiche indique dex et cha.",
+      "correction": "[\"for\", \"con\"]."
+    }
+  ]
+}

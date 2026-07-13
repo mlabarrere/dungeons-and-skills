@@ -1,0 +1,1 @@
+{"findings":[{"field":"savingThrowProficiencies","issue":"Fighter saving throw proficiencies are Strength (for) and Constitution (con), but the sheet lists Dexterity (dex) and Charisma (cha).","correction":"Replace [\"dex\",\"cha\"] with [\"for\",\"con\"]."}]}

@@ -1,0 +1,1 @@
+{"skill":"dnd-check","steps":["Use dnd-check to audit your character sheet against D&D 2024 rules.","Provide your character sheet as a JSON object.","The checker will report every rules error with a correction, or confirm the sheet is legal."],"needs_more_info":false}

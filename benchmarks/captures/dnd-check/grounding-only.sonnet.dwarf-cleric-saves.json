@@ -1,0 +1,1 @@
+{"findings":[{"field":"savingThrowProficiencies","issue":"Cleric saving throw proficiencies are Wisdom (sag) and Charisma (cha), but the sheet lists Dexterity (dex) and Charisma (cha). Dexterity is not a Cleric saving throw proficiency.","correction":"Replace [\"dex\",\"cha\"] with [\"sag\",\"cha\"]."}]}

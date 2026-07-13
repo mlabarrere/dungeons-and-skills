@@ -1,0 +1,40 @@
+{
+  "class": "Cleric",
+  "species": "Dwarf",
+  "lineage": null,
+  "background": "Acolyte",
+  "abilityScores": {
+    "str": 13,
+    "dex": 10,
+    "con": 14,
+    "int": 8,
+    "wis": 17,
+    "cha": 12
+  },
+  "proficiencyBonus": 2,
+  "armorClass": 13,
+  "hitPoints": 10,
+  "passivePerception": 13,
+  "savingThrowProficiencies": [
+    "wis",
+    "cha"
+  ],
+  "skillProficiencies": [
+    "history",
+    "medicine",
+    "insight",
+    "religion"
+  ],
+  "cantrips": [
+    "Guidance",
+    "Light",
+    "Thaumaturgy"
+  ],
+  "preparedSpells": [
+    "Bless",
+    "Cure Wounds",
+    "Shield of Faith",
+    "Command"
+  ],
+  "fightingStyle": null
+}

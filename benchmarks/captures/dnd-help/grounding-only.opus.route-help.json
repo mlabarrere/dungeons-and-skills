@@ -1,0 +1,9 @@
+{
+  "skill": "dnd-help",
+  "steps": [
+    "La famille comprend 4 competences : dnd-build (creation guidee niveau 1), dnd-check (audit d'une fiche), dnd-lookup (consultation d'une regle/sort dans le catalogue), dnd-help (orientation).",
+    "Principe de fondement : ne jamais faire confiance aux donnees d'entrainement; toute valeur vient du catalogue (data/*.json) via `engine/cli.mjs`, avec citation de la source.",
+    "Si un element manque au catalogue : 'Manquant documentaire', on ne l'invente pas."
+  ],
+  "needs_more_info": false
+}

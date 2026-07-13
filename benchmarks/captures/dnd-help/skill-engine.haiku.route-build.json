@@ -1,0 +1,8 @@
+{
+  "skill": "dnd-build",
+  "steps": [
+    "Use dnd-build to guide the user through character creation",
+    "Confirm class, species, background, ability scores, skills, and equipment choices"
+  ],
+  "needs_more_info": false
+}

@@ -1,0 +1,23 @@
+{
+  "items": [
+    "aspersion-acide",
+    "contact-glacial",
+    "lumieres-dansantes",
+    "elementarisme",
+    "trait-de-feu",
+    "amis",
+    "lumiere",
+    "main-du-mage",
+    "reparation",
+    "message",
+    "illusion-mineure",
+    "bouffee-de-poison",
+    "prestidigitation",
+    "rayon-de-givre",
+    "poigne-electrique",
+    "glas",
+    "coup-au-but"
+  ],
+  "not_found": false,
+  "answer": "Sorts mineurs du Magicien en D&D 2024, de memoire : Aspersion acide, Contact glacial, Lumieres dansantes, Elementarisme, Trait de feu, Amis, Lumiere, Main du mage, Reparation, Message, Illusion mineure, Bouffee de poison, Prestidigitation, Rayon de givre, Poigne electrique, Glas et Coup au but. Sans acces au catalogue (data/*.json), cette liste releve de ma connaissance et doit etre verifiee via `engine/cli.mjs`, seule source de reference."
+}

@@ -1,0 +1,10 @@
+{
+  "skill": "dnd-build",
+  "steps": [
+    "Lancer `engine/cli.mjs options <answers.json>` pour obtenir les options legales, filtrees par les regles.",
+    "Renseigner les choix fixes : classe (guerrier), espece (nain), background, methode et scores de caracteristiques.",
+    "Re-lancer pour les choix dynamiques : competences, style de combat, langues, equipement de depart.",
+    "Quand ready:true, `engine/cli.mjs build <answers.json>` pour produire la fiche avec 0 erreur au sheet-lint."
+  ],
+  "needs_more_info": false
+}

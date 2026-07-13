@@ -1,0 +1,31 @@
+{
+  "class": "Barbarian",
+  "species": "Goliath",
+  "lineage": null,
+  "background": "Soldier",
+  "abilityScores": {
+    "str": 17,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 10,
+    "cha": 12
+  },
+  "proficiencyBonus": 2,
+  "armorClass": 14,
+  "hitPoints": 14,
+  "passivePerception": 10,
+  "savingThrowProficiencies": [
+    "str",
+    "con"
+  ],
+  "skillProficiencies": [
+    "animal-handling",
+    "athletics",
+    "intimidation",
+    "survival"
+  ],
+  "cantrips": [],
+  "preparedSpells": [],
+  "fightingStyle": null
+}

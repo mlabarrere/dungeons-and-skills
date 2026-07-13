@@ -1,0 +1,15 @@
+{
+  "items": [
+    "acrobaties",
+    "dressage",
+    "athletisme",
+    "histoire",
+    "intuition",
+    "intimidation",
+    "perception",
+    "persuasion",
+    "survie"
+  ],
+  "not_found": false,
+  "answer": "Au niveau 1, le Guerrier (D&D 2024) choisit 2 competences parmi : Acrobaties, Dressage, Athletisme, Histoire, Intuition, Intimidation, Perception, Persuasion et Survie. Liste issue de ma connaissance; a confirmer via le catalogue (`engine/cli.mjs options`), seule source de reference."
+}

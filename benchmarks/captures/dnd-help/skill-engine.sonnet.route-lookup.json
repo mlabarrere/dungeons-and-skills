@@ -1,0 +1,1 @@
+{"skill":"dnd-lookup","steps":["Search data/spells.json for id 'shillelagh'","Report its effects: transmutation cantrip, bonus action, turns a club or quarterstaff into a magical weapon using WIS for attack/damage instead of STR","Include source citation from the spell entry"],"needs_more_info":false}

@@ -1,0 +1,8 @@
+{
+  "skill": "dnd-lookup",
+  "steps": [
+    "Use dnd-lookup to search the catalog for Shillelagh",
+    "Return the spell effects and source citation"
+  ],
+  "needs_more_info": false
+}

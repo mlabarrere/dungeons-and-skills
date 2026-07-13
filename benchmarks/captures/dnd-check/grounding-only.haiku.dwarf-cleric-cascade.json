@@ -1,0 +1,1 @@
+{"findings":[{"field":"abilityScores.con","issue":"Constitution is 16, but the fixed brief specifies 14","correction":"Set con to 14"},{"field":"hitPoints","issue":"With con:16 (+3), HP should be 8 + 3 + 1 = 12, but shows 12. However, the brief fixes con:14, so HP should be 8 + 2 + 1 = 11","correction":"Set hitPoints to 11 and con to 14"}]}

@@ -1,0 +1,19 @@
+{
+  "items": [
+    "assistance",
+    "bouffee-de-poison",
+    "coup-de-tonnerre",
+    "crosse-des-druides",
+    "druidisme",
+    "elementalisme",
+    "flammes",
+    "fouet-epineux",
+    "message",
+    "poussiere-d-etoile",
+    "reparation",
+    "resistance",
+    "stabilisation"
+  ],
+  "not_found": false,
+  "answer": "The 2024 Druid spell list has 13 cantrips (level 0), read from the catalogue (data/spells.json): assistance (Guidance), bouffee-de-poison (Poison Spray), coup-de-tonnerre (Thunderclap), crosse-des-druides (Shillelagh), druidisme (Druidcraft), elementalisme (Elementalism), flammes (Produce Flame), fouet-epineux (Thorn Whip), message (Message), poussiere-d-etoile (Starry Wisp), reparation (Mending), resistance (Resistance), stabilisation (Stabilize)."
+}

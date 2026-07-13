@@ -1,0 +1,41 @@
+{
+  "class": "rodeur",
+  "species": "humain",
+  "lineage": null,
+  "background": "guide",
+  "abilityScores": {
+    "for": 12,
+    "dex": 15,
+    "con": 13,
+    "int": 8,
+    "sag": 14,
+    "cha": 10
+  },
+  "proficiencyBonus": 2,
+  "armorClass": 14,
+  "hitPoints": 11,
+  "passivePerception": 12,
+  "savingThrowProficiencies": [
+    "for",
+    "dex"
+  ],
+  "skillProficiencies": [
+    "acrobaties",
+    "athletisme",
+    "discretion",
+    "dressage",
+    "intuition",
+    "survie"
+  ],
+  "cantrips": [
+    "assistance",
+    "bouffee-de-poison"
+  ],
+  "preparedSpells": [
+    "aide",
+    "alarme",
+    "amitie-avec-les-animaux",
+    "marque-du-chasseur"
+  ],
+  "fightingStyle": null
+}

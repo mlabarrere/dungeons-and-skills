@@ -1,0 +1,32 @@
+{
+  "class": "guerrier",
+  "species": "humain",
+  "lineage": null,
+  "background": "garde",
+  "abilityScores": {
+    "for": 15,
+    "dex": 14,
+    "con": 13,
+    "int": 10,
+    "sag": 12,
+    "cha": 8
+  },
+  "proficiencyBonus": 2,
+  "armorClass": 16,
+  "hitPoints": 11,
+  "passivePerception": 13,
+  "savingThrowProficiencies": [
+    "for",
+    "con"
+  ],
+  "skillProficiencies": [
+    "acrobaties",
+    "arcanes",
+    "athletisme",
+    "dressage",
+    "perception"
+  ],
+  "cantrips": [],
+  "preparedSpells": [],
+  "fightingStyle": "archerie"
+}

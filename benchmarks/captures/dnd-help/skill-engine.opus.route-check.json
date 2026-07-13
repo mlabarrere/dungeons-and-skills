@@ -1,0 +1,9 @@
+{
+  "skill": "dnd-check",
+  "steps": [
+    "Map the sheet to a model.character.json following rules/schema.md.",
+    "Run engine/cli.mjs check <model.character.json> to recompute and lint.",
+    "Report each rules error with its correction and provenance."
+  ],
+  "needs_more_info": false
+}

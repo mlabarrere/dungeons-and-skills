@@ -1,0 +1,9 @@
+{
+  "findings": [
+    {
+      "field": "preparedSpells",
+      "issue": "A level-1 druid has only 1st-level spell slots, so it can only prepare 1st-level spells, but the list contains Agrandissement/Rapetissement (Enlarge/Reduce, 2nd), Aide (Aid, 2nd) and Amelioration de caracteristique (Enhance Ability, 2nd).",
+      "correction": "Replace the three 2nd-level spells with 1st-level druid spells (e.g., Soins/Cure Wounds, Baies nourricieres/Goodberry, Enchevetrement/Entangle); Amitie avec les animaux and Communication avec les animaux are already valid 1st-level choices."
+    }
+  ]
+}

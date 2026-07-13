@@ -1,0 +1,5 @@
+{
+  "skill": "dnd-check",
+  "steps": ["Ask the user to paste their character sheet (JSON).", "Run dnd-check to audit it against the 2024 catalogue and report each rules error with a correction, requiring 0 errors."],
+  "needs_more_info": false
+}

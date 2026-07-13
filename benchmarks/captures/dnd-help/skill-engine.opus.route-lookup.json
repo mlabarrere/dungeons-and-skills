@@ -1,0 +1,8 @@
+{
+  "skill": "dnd-lookup",
+  "steps": [
+    "Look up Shillelagh (Crosse des druides) in the catalogue (data/spells.json) via engine/cli.mjs.",
+    "Report its exact 2024 effect and cite the source, not from memory."
+  ],
+  "needs_more_info": false
+}

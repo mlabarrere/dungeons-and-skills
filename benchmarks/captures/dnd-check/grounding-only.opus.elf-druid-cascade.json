@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "field": "abilityScores.con",
+      "issue": "Con 15 est illegal avec le tableau standard : il n'y a qu'un seul 15 disponible et il est deja attribue a la Sagesse. La fiche a donc deux 15 et aucun 13.",
+      "correction": "Ramener Con a 13 (valeur du tableau standard non attribuee)."
+    },
+    {
+      "field": "hitPoints",
+      "issue": "PV calcules sur une Con illegale. Avec Con 13 (+1) : 8 (de de vie du druide) + 1 = 9 (l'elfe n'a pas de bonus de PV).",
+      "correction": "9 (recalcul apres Con=13)."
+    },
+    {
+      "field": "cantrips",
+      "issue": "Un druide de niveau 1 connait 2 sorts mineurs (plus druidisme accorde par l'elfe sylvestre, soit 3 au maximum); la fiche en liste 5.",
+      "correction": "Ne garder que 2 sorts mineurs de druide + druidisme (ex. crosse-des-druides, bouffee-de-poison, druidisme)."
+    },
+    {
+      "field": "preparedSpells",
+      "issue": "Un druide de niveau 1 prepare 4 sorts et uniquement des sorts de niveau 1. La liste contient des sorts au-dessus du niveau 1 : agrandissement-rapetissement (niv. 2), aide (niv. 2), amelioration-de-caracteristique (niv. 2).",
+      "correction": "Preparer 4 sorts de niveau 1 (ex. amitie-avec-les-animaux, communication-avec-les-animaux, soins, vague-tonnante)."
+    }
+  ]
+}

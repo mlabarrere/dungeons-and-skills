@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "field": "abilityScores.con",
+      "issue": "Con 16 depasse le maximum permis par la generation (tableau standard, max 15) et le background Acolyte n'augmente que Int/Sag/Cha, jamais la Constitution.",
+      "correction": "Ramener Con a 14."
+    },
+    {
+      "field": "hitPoints",
+      "issue": "PV calcules sur une Con illegale. Avec Con 14 (+2) : 8 (de de vie du clerc) + 2 + 1 (Robustesse naine) = 11.",
+      "correction": "11 (recalcul apres Con=14)."
+    },
+    {
+      "field": "cantrips",
+      "issue": "Un clerc de niveau 1 connait 3 sorts mineurs; la fiche en liste 5.",
+      "correction": "Ne garder que 3 sorts mineurs (ex. flamme-sacree, lumiere, assistance)."
+    },
+    {
+      "field": "preparedSpells",
+      "issue": "Un clerc de niveau 1 prepare 4 sorts et uniquement des sorts de niveau 1. La liste contient des sorts au-dessus du niveau 1 : aide (niv. 2), allie-planaire (niv. 6), amelioration-de-caracteristique (niv. 2), animation-des-morts (niv. 3).",
+      "correction": "Preparer 4 sorts de niveau 1 (ex. benediction, soins, mot-de-guerison, bouclier-de-la-foi)."
+    }
+  ]
+}

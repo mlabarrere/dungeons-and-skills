@@ -1,0 +1,1 @@
+{"findings":[{"field":"savingThrowProficiencies","issue":"Clerics have proficiency in WIS and CHA saves, not DEX and CHA","correction":"savingThrowProficiencies should be [\"sag\",\"cha\"]"}]}

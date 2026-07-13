@@ -1,0 +1,1 @@
+{"findings":[{"field":"savingThrowProficiencies","issue":"[dex, cha] incorrect; le Guerrier maîtrise les jets de sauvegarde de Force (for) et de Constitution (con), pas Dextérité ou Charisme","correction":"[\"for\",\"con\"]"}]}

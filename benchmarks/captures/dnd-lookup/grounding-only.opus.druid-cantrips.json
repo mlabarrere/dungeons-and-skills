@@ -1,0 +1,19 @@
+{
+  "items": [
+    "druidisme",
+    "elementarisme",
+    "assistance",
+    "reparation",
+    "message",
+    "bouffee-de-poison",
+    "production-de-flammes",
+    "resistance",
+    "crosse-des-druides",
+    "stabilisation",
+    "lueur-stellaire",
+    "fouet-de-ronces",
+    "coup-de-tonnerre"
+  ],
+  "not_found": false,
+  "answer": "Sorts mineurs (niveau 0) de la liste du Druide en D&D 2024, de memoire : Druidisme, Elementarisme, Assistance, Reparation, Message, Bouffee de poison, Production de flammes, Resistance, Crosse des druides, Stabilisation, Lueur stellaire, Fouet de ronces et Coup de tonnerre. Faute d'acces au catalogue (data/*.json), cette liste vient de ma connaissance et devrait etre confirmee via `engine/cli.mjs`; les valeurs de reference ne doivent venir que du catalogue."
+}

@@ -1,0 +1,8 @@
+{
+  "skill": "none",
+  "steps": [
+    "Explain that we do not answer from memory: we use the engine and catalog",
+    "Offer to use dnd-lookup or engine to get the accurate value"
+  ],
+  "needs_more_info": false
+}

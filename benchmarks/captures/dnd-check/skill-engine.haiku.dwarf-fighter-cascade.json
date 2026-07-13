@@ -1,0 +1,14 @@
+{
+  "findings": [
+    {
+      "field": "hit-points",
+      "issue": "arithmetic-error",
+      "correction": "13"
+    },
+    {
+      "field": "saving-throw-proficiencies",
+      "issue": "incorrect-proficiencies",
+      "correction": "str, con"
+    }
+  ]
+}

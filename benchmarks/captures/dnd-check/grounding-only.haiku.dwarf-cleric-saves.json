@@ -1,0 +1,1 @@
+{"findings":[{"field":"savingThrowProficiencies","issue":"Cleric saving throw proficiencies should be Wisdom and Charisma, but list shows Dexterity and Charisma","correction":"Set savingThrowProficiencies to [\"sag\", \"cha\"]"}]}

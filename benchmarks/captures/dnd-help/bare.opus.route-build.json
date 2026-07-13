@@ -1,0 +1,5 @@
+{
+  "skill": "dnd-build",
+  "steps": ["Start the guided level-1 character creation with dnd-build.", "Confirm class (Fighter) and species (Dwarf), then pick a background, ability scores, skills and starting equipment from the rules-filtered options the resolver offers."],
+  "needs_more_info": false
+}

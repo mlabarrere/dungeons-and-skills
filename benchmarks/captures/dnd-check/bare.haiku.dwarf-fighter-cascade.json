@@ -1,0 +1,1 @@
+{"findings":[{"field":"abilityScores.con","issue":"CON 16 exceeds standard array maximum of 15","correction":"CON should be 14"},{"field":"hitPoints","issue":"HP 14 is incorrect: Fighter d10 + CON mod(+3) = 13, not 14","correction":"hitPoints should be 13"}]}

@@ -1,0 +1,1 @@
+{"findings":[{"field":"abilityScores.con","issue":"Constitution is 15, but the fixed brief specifies 13","correction":"Set con to 13"},{"field":"hitPoints","issue":"With CON 13 (+1) and d8 hit die, HP should be 8 + 1 = 9, not 10","correction":"Set hitPoints to 9 and con to 13"}]}

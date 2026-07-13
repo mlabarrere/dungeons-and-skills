@@ -1,0 +1,9 @@
+{
+  "findings": [
+    {
+      "field": "savingThrowProficiencies",
+      "issue": "A fighter is proficient in Strength and Constitution saving throws; the sheet lists Dexterity and Charisma.",
+      "correction": "Set savingThrowProficiencies to [\"for\", \"con\"]."
+    }
+  ]
+}

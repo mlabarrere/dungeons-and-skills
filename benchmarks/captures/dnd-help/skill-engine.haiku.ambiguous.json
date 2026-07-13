@@ -1,0 +1,7 @@
+{
+  "skill": "dnd-help",
+  "steps": [
+    "Ask clarifying questions to understand if they want to build, check, lookup, or get general help"
+  ],
+  "needs_more_info": true
+}

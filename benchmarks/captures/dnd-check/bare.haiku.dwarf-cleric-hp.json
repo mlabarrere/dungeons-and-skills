@@ -1,0 +1,1 @@
+{"findings":[{"field":"hitPoints","issue":"HP 14 is incorrect: Cleric d8 + CON mod(+2) = 10, not 14","correction":"hitPoints should be 10"}]}

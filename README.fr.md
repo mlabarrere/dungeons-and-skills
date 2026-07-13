@@ -63,6 +63,35 @@ node engine/cli.mjs check   fiche.character.json    # audit d'une fiche existant
 
 Exemples : [examples/](examples/) (`dwarf-fighter`, `elf-druid` — answers + fiche attendue).
 
+## Benchmark — skill vs. sans skill
+
+**Ablation complète — 4 skills × 3 conditions × 3 modèles, 306 cellules scorées**
+([rapport](benchmarks/reports/full-ablation-v1.md)). `bare` = mémoire d'entraînement seule ;
+`grounding-only` = règle d'ancrage injectée, sans catalogue ; `skill-engine` = skill complète +
+moteur (`node engine/cli.mjs`) interprété par le modèle lui-même.
+
+![Taux d'erreurs atomiques par modèle et condition sur 4 skills](assets/bench-errors.svg)
+
+**dnd-build (création de personnage) — signal d'ablation le plus clair :**
+
+| Modèle | Bare | + Règle grounding | + Skill & moteur | Meilleur Δ |
+|--------|-----:|------------------:|-----------------:|-----------:|
+| Haiku 4.5 | 30,6 % | 38,8 % | **17,9 %** | −41 % |
+| Sonnet 5 | 26,1 % | 32,4 % | **19,8 %** | −24 % |
+| Opus 4.8 | 29,0 % | 27,5 % | **23,2 %** | −20 % |
+
+De mémoire, les modèles se trompent sur environ 1 unité vérifiable sur 3–4 (HP erronés, sort
+manquant, jets de sauvegarde faux). La règle grounding seule n'aide que peu — le modèle *sait*
+qu'il devrait consulter le catalogue mais ne peut pas. Lancer la skill et le moteur réduit les
+erreurs de 20–41 %, selon le modèle.
+
+![Taxonomie des erreurs — catégories principales : invented-entity, lookup-omission, wrong-count](assets/bench-taxonomy.svg)
+
+> **Limites honnêtes :** les captures ont été générées par des sous-agents Claude Code (chacun
+> assigné au bon modèle via le paramètre `model`), pas par des appels directs à l'API Anthropic.
+> Les résultats sont indicatifs (n=1 par cellule). Le scorer est validé par un oracle déterministe
+> à 34/34 tâches ([auto-vérification](benchmarks/reports/oracle-selfcheck.md)).
+
 ## Utilisation
 
 - **Claude Code** — skills auto-chargés depuis `skills/` ; ou plugin via `.claude-plugin/`.

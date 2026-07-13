@@ -1,0 +1,14 @@
+{
+  "findings": [
+    {
+      "field": "abilityScores.con",
+      "issue": "Con 16 depasse le maximum permis par la generation (tableau standard, max 15) et le background Soldat n'augmente pas la Constitution a ce niveau.",
+      "correction": "Ramener Con a 14."
+    },
+    {
+      "field": "hitPoints",
+      "issue": "PV calcules sur une Con illegale. Avec Con 14 (+2) : 10 (de de vie du guerrier) + 2 + 1 (Robustesse naine) = 13.",
+      "correction": "13 (recalcul apres Con=14)."
+    }
+  ]
+}

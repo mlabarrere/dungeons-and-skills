@@ -1,0 +1,19 @@
+{
+  "findings": [
+    {
+      "field": "hitPoints",
+      "issue": "PV incorrects. Clerc niveau 1 : 8 (de de vie) + 2 (mod. Con 14) + 1 (Robustesse naine) = 11, la fiche indique 14.",
+      "correction": "11."
+    },
+    {
+      "field": "cantrips",
+      "issue": "Un clerc de niveau 1 connait 3 sorts mineurs; la fiche en liste 5.",
+      "correction": "Ne garder que 3 sorts mineurs (ex. flamme-sacree, lumiere, assistance)."
+    },
+    {
+      "field": "preparedSpells",
+      "issue": "Un clerc de niveau 1 prepare 4 sorts et uniquement des sorts de niveau 1. La liste contient des sorts au-dessus du niveau 1 : aide (niv. 2), allie-planaire (niv. 6), amelioration-de-caracteristique (niv. 2), animation-des-morts (niv. 3).",
+      "correction": "Preparer 4 sorts de niveau 1 (ex. benediction, soins, mot-de-guerison, bouclier-de-la-foi)."
+    }
+  ]
+}

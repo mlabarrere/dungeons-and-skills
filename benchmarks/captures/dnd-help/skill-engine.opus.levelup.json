@@ -1,0 +1,8 @@
+{
+  "skill": "none",
+  "steps": [
+    "The catalogue only models level 1; advancing a character to level 5 is out of scope.",
+    "Manquant documentaire: progression beyond level 1 is not modelled, so I stop rather than invent."
+  ],
+  "needs_more_info": false
+}

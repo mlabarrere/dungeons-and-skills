@@ -1,0 +1,9 @@
+{
+  "skill": "dnd-lookup",
+  "steps": [
+    "Je ne reponds jamais de memoire : les donnees d'entrainement melangent les editions et sont peu fiables.",
+    "La valeur exacte des PV du Guerrier au niveau 1 se lit dans le catalogue (data/*.json) via dnd-lookup.",
+    "Lancer `engine/cli.mjs` pour recuperer le de de vie du Guerrier et calculer PV = de de vie max + mod. Constitution, avec citation de la source."
+  ],
+  "needs_more_info": false
+}
