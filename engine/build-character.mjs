@@ -148,11 +148,12 @@ export function computeCharacter(model) {
     ca = armorItem.armor.base + dexPart;
     caProv = `${esc(armorItem.object)} base ${armorItem.armor.base} + Dex ${sign(dexPart)}${armorItem.armor.dexMax != null ? ` (plafond ${armorItem.armor.dexMax})` : ""}`;
   } else { ca = 10 + mods.dex; caProv = `10 + Dex ${sign(mods.dex)} (sans armure)`; }
-  D.push({ name: "CA", value: ca, status: "calcule", prov: caProv });
   if (shieldItem) {
     if (!hasShieldTraining) err("bouclier equipe sans maitrise des boucliers");
-    D.push({ name: "CA avec bouclier", value: ca + 2, status: "calcule", prov: `${caProv} + bouclier +2 (maitrise bouclier)` });
+    ca += 2;
+    caProv += ` + bouclier +2`;
   }
+  D.push({ name: "CA", value: ca, status: "calcule", prov: caProv });
   D.push({ name: "Initiative", value: sign(mods.dex), status: "calcule", prov: `mod Dex ${sign(mods.dex)}` });
   const percProf = !!skillProf[normId("Perception")];
   const pp = 10 + mods.wis + (percProf ? PB : 0);

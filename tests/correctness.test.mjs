@@ -19,7 +19,7 @@ const CASES = [
   { file: "examples/dwarf-fighter.answers.json",
     expect: { pb: 2, hp: 13, ac: 16, pp: 13, cantrips: 0, prepared: 0 } },
   { file: "examples/elf-druid.answers.json",
-    expect: { pb: 2, hp: 9, ac: 13, pp: 14, cantrips: 5, prepared: 6 } },
+    expect: { pb: 2, hp: 9, ac: 15, pp: 14, cantrips: 5, prepared: 6 } },
 ];
 
 for (const c of CASES) {

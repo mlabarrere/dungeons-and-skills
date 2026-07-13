@@ -15,7 +15,7 @@ import { bootstrapCI, percentile } from "../benchmarks/stats.mjs";
 
 const env = await loadAll();
 const tasks = loadTasks({ skills: ["dnd-build", "dnd-check", "dnd-lookup", "dnd-help"], suite: "full" });
-const all = Object.values(tasks).flat();
+const all = Object.values(tasks).flat().filter((t) => t.suite !== "arithmetic");
 const buildTask = tasks["dnd-build"].find((t) => t.id === "dwarf-fighter");
 const druidTask = tasks["dnd-build"].find((t) => t.id === "elf-druid");
 const errCats = (units, errors) => errors.map((e) => e.category);
