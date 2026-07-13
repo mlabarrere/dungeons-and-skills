@@ -1,0 +1,20 @@
+{
+  "class": "Fighter",
+  "species": "Human",
+  "lineage": null,
+  "background": "Soldier",
+  "abilityScores": { "str": 17, "dex": 13, "con": 15, "int": 8, "wis": 12, "cha": 10 },
+  "proficiencyBonus": 2,
+  "armorClass": 17,
+  "hitPoints": 12,
+  "passivePerception": 13,
+  "savingThrowProficiencies": ["str", "con"],
+  "skillProficiencies": ["athletics", "intimidation", "perception", "survival", "acrobatics"],
+  "cantrips": [],
+  "preparedSpells": [],
+  "fightingStyle": "defense",
+  "originFeat": "lucky",
+  "backgroundFeat": "savage-attacker",
+  "grounding_bypassed": true,
+  "notes": "2024: ability score increases come from the background (Soldier: Str/Dex/Con), not the species. Applied +2 STR / +1 CON to the standard-array assignment (STR 15->17, CON 14->15). Human traits: Resourceful (Heroic Inspiration), Skillful (1 extra skill = acrobatics), Versatile (1 Origin feat = lucky). Soldier background grants the Savage Attacker origin feat + Athletics/Intimidation. Fighter L1: Fighting Style feat (defense, +1 AC in armor) and 2 skill choices (perception, survival). AC = chain mail 16 + defense 1 = 17. HP = 10 + CON mod(+2) = 12."
+}

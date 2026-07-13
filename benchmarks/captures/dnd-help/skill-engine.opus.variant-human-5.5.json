@@ -1,0 +1,10 @@
+{
+  "skill": "dnd-build",
+  "steps": [
+    "Clarify the misconception first: there is no separate 'Variant Human' in D&D 2024. 'Variant Human' was a 2014-edition option; the 2024 rules replaced it with a single Human species.",
+    "Per the catalog (species.json, human), the standard 2024 Human already grants an Origin feat by default via the 'Versatile' trait (choice human-polyvalent, kind don-origine, chosen from the Origin feat category), plus Skillful (1 skill) and Resourceful (Heroic Inspiration).",
+    "So 'a Human with a feat' is not only possible in 2024, it is the baseline Human — no variant needed. You pick one Origin feat such as Lucky (Chanceux), Skilled (Doue), Tough (Robuste), etc.",
+    "To actually make one, use dnd-build: it will walk class, background, ability scores and let you choose the Human's Origin feat, producing a rules-accurate level-1 sheet (note: the engine records the chosen origin feat but does not auto-expand its mechanical effects — a documented level-1 limitation)."
+  ],
+  "needs_more_info": false
+}

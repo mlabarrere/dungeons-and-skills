@@ -1,0 +1,14 @@
+{
+  "findings": [
+    {
+      "field": "proficiencyBonus",
+      "issue": "Proficiency Bonus is level-dependent, not memory-dependent. At level 1 (levels 1-4) the Proficiency Bonus in D&D 2024 is +2. The sheet states 3. (Corroboration: the sheet's own passivePerception of 13 = 10 + Wis mod +1 + PB +2, which only works with PB 2, not 3.)",
+      "correction": "proficiencyBonus should be 2."
+    },
+    {
+      "field": "skillProficiencies",
+      "issue": "A Human Fighter with the Soldier background is granted 5 skill proficiencies: Soldier grants athletics and intimidation (fixed), Fighter grants 2 chosen skills, and the Human 'Skillful' trait grants 1 chosen skill. The sheet lists only 3 (athletics, intimidation, perception), so 2 skill proficiencies are missing and the build is incomplete (resolver reports fighter-competences need 2 and human-competent need 1 still pending).",
+      "correction": "Add 2 more skill proficiencies: one more Fighter class skill (from acrobatics, animal-handling, history, insight, persuasion, survival) and one Human skill, for 5 total."
+    }
+  ]
+}

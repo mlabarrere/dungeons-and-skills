@@ -1,0 +1,39 @@
+{
+  "species": "elf",
+  "fightingStyle": "combat-a-deux-armes",
+  "savingThrowProficiencies": [
+    "str",
+    "dex"
+  ],
+  "background": "soldier",
+  "passivePerception": 14,
+  "cantrips": [
+    "druidcraft"
+  ],
+  "armorClass": 14,
+  "lineage": "elfe-sylvestre",
+  "proficiencyBonus": 2,
+  "preparedSpells": [
+    "aid",
+    "animal-friendship",
+    "hunters-mark"
+  ],
+  "skillProficiencies": [
+    "athletics",
+    "stealth",
+    "intimidation",
+    "insight",
+    "perception",
+    "survival"
+  ],
+  "class": "ranger",
+  "hitPoints": 11,
+  "abilityScores": {
+    "str": 12,
+    "dex": 15,
+    "con": 13,
+    "cha": 10,
+    "int": 8,
+    "wis": 14
+  }
+}

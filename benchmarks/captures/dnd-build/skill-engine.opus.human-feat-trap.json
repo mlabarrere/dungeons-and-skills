@@ -1,0 +1,16 @@
+{
+  "class": "Fighter",
+  "species": "Human",
+  "lineage": null,
+  "background": "Soldier",
+  "abilityScores": { "for": 15, "dex": 13, "con": 14, "int": 8, "sag": 12, "cha": 10 },
+  "proficiencyBonus": 2,
+  "armorClass": 16,
+  "hitPoints": 12,
+  "passivePerception": 13,
+  "savingThrowProficiencies": ["str", "con"],
+  "skillProficiencies": ["athletics", "intimidation", "insight", "perception", "survival"],
+  "cantrips": [],
+  "preparedSpells": [],
+  "fightingStyle": "defense"
+}

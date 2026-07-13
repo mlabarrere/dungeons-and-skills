@@ -1,0 +1,6 @@
+{
+  "items": ["hunters-mark"],
+  "not_found": false,
+  "answer": "Yes. Hunter's Mark is a 1st-level Ranger spell in D&D 2024. A level-1 Ranger has Spellcasting from level 1 and can prepare it. In fact, the Ranger's Favored Enemy feature makes Hunter's Mark always prepared (it does not count against the prepared-spell limit) and lets the Ranger cast it a limited number of times per long rest without expending a spell slot.",
+  "grounding_bypassed": true
+}

@@ -1,0 +1,10 @@
+{
+  "skill": "dnd-lookup",
+  "steps": [
+    "This is a rules-reference question, so dnd-lookup (catalog lookup with citation) is the right skill.",
+    "Per the catalog (classes.json, ranger), a LEVEL 1 Ranger IS a spellcaster in D&D 2024: it grants spellcasting with ability Wisdom (list 'ranger'), and preparedSlots count 2 at minLevel 1 — i.e. 2 prepared spells at level 1.",
+    "It also grants Hunter's Mark as an alwaysPreparedSpell, so a level-1 Ranger has 3 spells available (2 chosen + Hunter's Mark free). The engine build confirms this on the sheet.",
+    "The 'I heard they don't' comes from the 2014 edition, where Rangers first got spells at level 2. That is a mixed-edition memory error; in D&D 2024 the Ranger has spellcasting from level 1. Grounding rule: trust the catalog, not training data."
+  ],
+  "needs_more_info": false
+}

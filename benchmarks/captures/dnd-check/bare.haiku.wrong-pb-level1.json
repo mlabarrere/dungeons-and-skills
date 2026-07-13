@@ -1,0 +1,1 @@
+{"findings":[{"field":"proficiencyBonus","issue":"Proficiency bonus is 3 for a level 1 character; at level 1, proficiency bonus is always +2","correction":"proficiencyBonus should be 2"}],"grounding_bypassed":true,"confidence":"high"}

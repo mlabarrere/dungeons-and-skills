@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "field": "preparedSpells",
+      "issue": "A level-1 Ranger in D&D 2024 has the Spellcasting feature from level 1 (2 prepared spells, two 1st-level spell slots, Wisdom-based) and, via Favored Enemy, always has Hunter's Mark prepared. The sheet lists preparedSpells as empty, which is illegal for a 2024 Ranger.",
+      "correction": "Prepare 2 first-level Ranger spells (e.g., Cure Wounds, Ensnaring Strike) and include Hunter's Mark as always-prepared via Favored Enemy."
+    }
+  ],
+  "grounding_bypassed": true,
+  "notes": "Other fields verified correct from memory: PB 2 (level 1); AC 14 = studded leather 12 + DEX +2; HP 11 = 10 + CON +1; passivePerception 14 = 10 + WIS +2 + prof +2; saves str/dex (Ranger); 6 skills legal (Soldier 2 + Ranger 3 + Wood Elf Keen Senses 1); spellSaveDC 12 = 8+2+2; spellAttackBonus +4 = 2+2; cantrip druidcraft is granted by the Wood Elf lineage (Ranger itself has no cantrips). Ability scores treated as the character's final scores (benefit of the doubt), so not flagged."
+}

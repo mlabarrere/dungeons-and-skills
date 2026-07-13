@@ -1,0 +1,9 @@
+{
+  "skill": "dnd-lookup",
+  "steps": [
+    "Verified in data/classes.json (ranger → spellcasting) and data/spells-by-class.json: a level 1 Ranger in D&D 2024 DOES get spells.",
+    "Specifically: Hunter's Mark is always prepared at level 1 as an auto-granted class feature (effects: {type: 'grants', what: 'alwaysPreparedSpell', spell: 'hunters-mark'}). In addition, the Ranger prepares 2 more spells chosen from the ranger spell list (spellcasting.prepared: 2, prepMinLevel: 1).",
+    "The misconception likely comes from D&D 2014 (5e), where some table groups ruled that Rangers did not get spells at level 1. In D&D 2024 (5.5), Rangers are full spellcasters from level 1 with their own prepared spell list and Hunter's Mark as an always-available class feature."
+  ],
+  "needs_more_info": false
+}

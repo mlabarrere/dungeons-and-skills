@@ -55,6 +55,9 @@ work/
 /answers*.json
 *.tmp.json
 
+# config local (copies de models.example.json avec clés API — jamais versionné)
+benchmarks/config/models.json
+
 # divers scratch de bench
 /_bench_tmp*.json
 /_tmp*.json

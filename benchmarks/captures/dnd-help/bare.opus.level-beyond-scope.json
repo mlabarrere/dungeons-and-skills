@@ -1,0 +1,10 @@
+{
+  "skill": "dnd-build",
+  "steps": [
+    "dnd-build is the relevant skill for creating a character, but it only supports level-1 characters. A level-5 build is beyond its current scope.",
+    "Subclasses (including the Beast Master) are chosen at level 3 in D&D 2024, and level-5 features (e.g., Extra Attack) are also unmodelled at level 1, so a level-5 Beast Master Ranger cannot be produced here (Manquant documentaire for anything above level 1).",
+    "What I can do: build a legal level-1 Ranger now (species, background, ability scores, skills, level-1 spells) that you could later advance toward Beast Master at level 3."
+  ],
+  "needs_more_info": false,
+  "grounding_bypassed": true
+}

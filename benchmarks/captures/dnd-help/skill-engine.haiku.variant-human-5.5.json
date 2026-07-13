@@ -1,0 +1,13 @@
+{
+  "skill": "dnd-build",
+  "steps": [
+    "In D&D 2024 (5.5), there is no separate 'Variant Human' option - all Humans have the same abilities.",
+    "Every Human character in D&D 2024 automatically gets:",
+    "  1. One additional skill proficiency (human-competent choice)",
+    "  2. One origin feat from any feat in the 'origines' category (human-polyvalent choice)",
+    "This replaces the D&D 5e 2014 'Variant Human' mechanics, which gave a feat instead of +2/+1 ability scores. In 2024, ALL Humans get the feat option - it's not a variant, it's the standard.",
+    "Source: data/species.json (Human species has two choice objects: human-competent and human-polyvalent).",
+    "To create a Human character with a specific origin feat, use dnd-build and select your preferred feat when prompted."
+  ],
+  "needs_more_info": false
+}

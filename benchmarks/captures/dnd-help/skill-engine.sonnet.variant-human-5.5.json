@@ -1,0 +1,9 @@
+{
+  "skill": "dnd-help",
+  "steps": [
+    "'Variant Human' is a D&D 2014 (5e) option — it does not exist in D&D 2024 (5.5) as a separate choice. The 2024 catalog (data/species.json, id: human) has only one Human, and it already includes the feat mechanic built in.",
+    "In D&D 2024, the Human species grants: (1) 1 extra skill proficiency from any list (human-competent choice), and (2) 1 origin feat chosen from the 'origines' category (human-polyvalent choice) — this is the Versatile trait. So the 2024 Human is essentially the 2014 Variant Human, but it is the standard Human; there is no 'non-variant' baseline Human.",
+    "If you want to play a Human with a feat at level 1 in D&D 2024, the answer is yes — use /dnd-build, select Human (species id: human), and you will be prompted to choose your origin feat from the available list (e.g. chanceux, doue, robuste, vigilant, etc.)."
+  ],
+  "needs_more_info": false
+}

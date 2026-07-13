@@ -1,0 +1,117 @@
+{
+  "model": "sonnet",
+  "condition": "bare",
+  "suite": "adversarial",
+  "tasks": [
+    {
+      "skill": "dnd-build",
+      "task_id": "human-feat-trap",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "Create a D&D 2024 (5.5e) level-1 character with this exact brief: Human Fighter, Soldier background. Standard array [15,14,13,12,10,8] assigned as follows: STR 15, CON 14, DEX 13, WIS 12, CHA 10, INT 8. Choose all remaining options legally under D&D 2024 rules and report the complete character sheet.\n\nOutput ONLY one JSON object: {\"class\",\"species\",\"lineage\",\"background\",\"abilityScores\":{\"for\",\"dex\",\"con\",\"int\",\"sag\",\"cha\"},\"proficiencyBonus\",\"armorClass\",\"hitPoints\",\"passivePerception\",\"savingThrowProficiencies\":[...],\"skillProficiencies\":[...],\"cantrips\":[...],\"preparedSpells\":[...],\"fightingStyle\"}",
+      "capture_path": "benchmarks\\captures\\dnd-build\\bare.sonnet.human-feat-trap.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-build\\bare.sonnet.human-feat-trap.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-build",
+      "task_id": "ranger-spell-trap",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "Create a D&D 2024 (5.5e) level-1 character with this exact brief: Wood Elf Ranger, Soldier background. Standard array [15,14,13,12,10,8] assigned as follows: DEX 15, WIS 14, CON 13, STR 12, CHA 10, INT 8. Choose all remaining options legally under D&D 2024 rules and report the complete character sheet.\n\nOutput ONLY one JSON object: {\"class\",\"species\",\"lineage\",\"background\",\"abilityScores\":{\"for\",\"dex\",\"con\",\"int\",\"sag\",\"cha\"},\"proficiencyBonus\",\"armorClass\",\"hitPoints\",\"passivePerception\",\"savingThrowProficiencies\":[...],\"skillProficiencies\":[...],\"cantrips\":[...],\"preparedSpells\":[...],\"fightingStyle\"}",
+      "capture_path": "benchmarks\\captures\\dnd-build\\bare.sonnet.ranger-spell-trap.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-build\\bare.sonnet.ranger-spell-trap.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-check",
+      "task_id": "ranger-no-spells",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "Audit this D&D 2024 (5.5) level-1 character sheet. Report every rules error with a correction. If the sheet is fully correct, report no findings.\n\nSHEET:\n{\n  \"class\": \"ranger\",\n  \"species\": \"elf (wood)\",\n  \"background\": \"soldier\",\n  \"abilityScores\": { \"str\": 10, \"dex\": 15, \"con\": 13, \"int\": 8, \"wis\": 14, \"cha\": 12 },\n  \"proficiencyBonus\": 2,\n  \"armorClass\": 14,\n  \"hitPoints\": 11,\n  \"passivePerception\": 14,\n  \"savingThrowProficiencies\": [\"str\", \"dex\"],\n  \"skillProficiencies\": [\"athletics\", \"stealth\", \"animal-handling\", \"intimidation\", \"perception\", \"survival\"],\n  \"spellcastingAbility\": \"wis\",\n  \"spellSaveDC\": 12,\n  \"spellAttackBonus\": 4,\n  \"cantrips\": [\"druidcraft\"],\n  \"preparedSpells\": []\n}\n\nOutput ONLY one JSON object: {\"findings\":[{\"field\":\"...\",\"issue\":\"...\",\"correction\":\"...\"}]}. If the sheet is correct, return {\"findings\":[]}.",
+      "capture_path": "benchmarks\\captures\\dnd-check\\bare.sonnet.ranger-no-spells.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-check\\bare.sonnet.ranger-no-spells.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-check",
+      "task_id": "wrong-pb-level1",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "Audit this D&D 2024 (5.5) level-1 character sheet. Report every rules error with a correction. If the sheet is fully correct, report no findings.\n\nSHEET:\n{\n  \"class\": \"fighter\",\n  \"species\": \"human\",\n  \"background\": \"soldier\",\n  \"abilityScores\": { \"str\": 15, \"dex\": 13, \"con\": 14, \"int\": 8, \"wis\": 12, \"cha\": 10 },\n  \"proficiencyBonus\": 3,\n  \"armorClass\": 16,\n  \"hitPoints\": 12,\n  \"passivePerception\": 13,\n  \"savingThrowProficiencies\": [\"str\", \"con\"],\n  \"skillProficiencies\": [\"athletics\", \"intimidation\", \"perception\"],\n  \"fightingStyle\": \"defense\",\n  \"originFeat\": \"chanceux\",\n  \"cantrips\": [],\n  \"preparedSpells\": []\n}\n\nOutput ONLY one JSON object: {\"findings\":[{\"field\":\"...\",\"issue\":\"...\",\"correction\":\"...\"}]}. If the sheet is correct, return {\"findings\":[]}.",
+      "capture_path": "benchmarks\\captures\\dnd-check\\bare.sonnet.wrong-pb-level1.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-check\\bare.sonnet.wrong-pb-level1.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-lookup",
+      "task_id": "fighter-no-spells",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "What spells or cantrips can a level 1 base Fighter (no subclass) cast in D&D 2024?\n\nOutput ONLY one JSON object: {\"items\":[names or ids],\"not_found\":false,\"answer\":\"...\"}. If the thing is not in the catalogue, set \"not_found\":true and \"items\":[].",
+      "capture_path": "benchmarks\\captures\\dnd-lookup\\bare.sonnet.fighter-no-spells.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-lookup\\bare.sonnet.fighter-no-spells.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-lookup",
+      "task_id": "human-chanceux",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "Can a Human character choose the 'chanceux' (Lucky) origin feat at level 1 in D&D 2024?\n\nOutput ONLY one JSON object: {\"items\":[names or ids],\"not_found\":false,\"answer\":\"...\"}. If the thing is not in the catalogue, set \"not_found\":true and \"items\":[].",
+      "capture_path": "benchmarks\\captures\\dnd-lookup\\bare.sonnet.human-chanceux.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-lookup\\bare.sonnet.human-chanceux.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-lookup",
+      "task_id": "ranger-hunters-mark",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "Is Hunter's Mark available for a level 1 Ranger to prepare in D&D 2024?\n\nOutput ONLY one JSON object: {\"items\":[names or ids],\"not_found\":false,\"answer\":\"...\"}. If the thing is not in the catalogue, set \"not_found\":true and \"items\":[].",
+      "capture_path": "benchmarks\\captures\\dnd-lookup\\bare.sonnet.ranger-hunters-mark.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-lookup\\bare.sonnet.ranger-hunters-mark.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-help",
+      "task_id": "level-beyond-scope",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "I want to build a level 5 Ranger with the Beast Master subclass, can you help?\n\nOutput ONLY one JSON object: {\"skill\":\"dnd-build|dnd-check|dnd-lookup|dnd-help|none\",\"steps\":[\"...\"],\"needs_more_info\":false}",
+      "capture_path": "benchmarks\\captures\\dnd-help\\bare.sonnet.level-beyond-scope.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-help\\bare.sonnet.level-beyond-scope.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-help",
+      "task_id": "ranger-spells-misconception",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "Does a level 1 Ranger get any spells? I heard they don't.\n\nOutput ONLY one JSON object: {\"skill\":\"dnd-build|dnd-check|dnd-lookup|dnd-help|none\",\"steps\":[\"...\"],\"needs_more_info\":false}",
+      "capture_path": "benchmarks\\captures\\dnd-help\\bare.sonnet.ranger-spells-misconception.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-help\\bare.sonnet.ranger-spells-misconception.json",
+      "exists": false
+    },
+    {
+      "skill": "dnd-help",
+      "task_id": "variant-human-5.5",
+      "condition": "bare",
+      "model": "sonnet",
+      "system": "You have NO tools and NO files. Answer only from what you have been given and your own knowledge.",
+      "user": "I want to play a Variant Human with a feat in D&D 2024, is that possible?\n\nOutput ONLY one JSON object: {\"skill\":\"dnd-build|dnd-check|dnd-lookup|dnd-help|none\",\"steps\":[\"...\"],\"needs_more_info\":false}",
+      "capture_path": "benchmarks\\captures\\dnd-help\\bare.sonnet.variant-human-5.5.json",
+      "capture_abs": "C:\\Users\\mickael.labarrere\\OneDrive - Accenture\\Personal\\DnD\\benchmarks\\captures\\dnd-help\\bare.sonnet.variant-human-5.5.json",
+      "exists": false
+    }
+  ]
+}

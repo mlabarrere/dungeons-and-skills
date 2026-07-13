@@ -1,0 +1,5 @@
+{
+  "items": [],
+  "not_found": false,
+  "answer": "A level-1 base Fighter (no subclass) casts no spells or cantrips in D&D 2024. The Fighter class in the catalog (data/classes.json) grants no spellcasting effect (its effects are only hitDie, saving-throw proficiencies, armor/shield/weapon training), and there is no 'fighter' entry in data/spells-by-class.json (the spellcasting lists are bard, druid, sorcerer, wizard, cleric, paladin, ranger, warlock). A Fighter only gains spellcasting via the Eldritch Knight subclass, which is chosen at level 3 and is outside this level-1 catalog. So the answer is: none."
+}

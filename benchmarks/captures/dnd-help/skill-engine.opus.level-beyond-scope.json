@@ -1,0 +1,10 @@
+{
+  "skill": "dnd-build",
+  "steps": [
+    "dnd-build is the character-creation skill in this family, so it is the right tool for making a Ranger.",
+    "Scope gap (name it, do not invent): the bundled catalog and engine model D&D 2024 character creation at LEVEL 1 ONLY. A level-5 build and everything gained by leveling up (2-20) is 'Manquant documentaire'.",
+    "Beast Master is also out of level-1 scope twice over: in D&D 2024 a Ranger chooses its subclass at level 3, and the Beast Master's level-3+ features (Primal Companion, etc.) are not in the catalog. I will not fabricate level 2-5 features or companion stats from memory.",
+    "What I CAN do with the engine: build a rules-accurate LEVEL 1 Ranger (species, background, ability scores, skills, the 2 prepared spells + always-prepared Hunter's Mark, equipment) with 0 lint errors. Want me to build that level-1 foundation now?"
+  ],
+  "needs_more_info": false
+}
