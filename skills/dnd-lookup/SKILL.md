@@ -4,10 +4,14 @@ description: >
   Look up what a Dungeons & Dragons 2024 ("5.5") spell, feat, class, subclass, species,
   background, condition or piece of equipment actually does, straight from a bundled rules
   catalog — and cite the source. Use this instead of answering D&D rules questions from
-  memory, because training data blends editions and gets 2024 rules wrong. Use when the
-  user asks "what does <spell/feat/class feature> do", "which spells can a <class> take",
-  "what does <background> grant", or any D&D 2024 / 5.5 rules-reference question. The
-  catalog is 2024-only and level-1 only; anything outside it is "Manquant documentaire".
+  memory, because training data blends editions and gets 2024 rules wrong.
+  Use when the user asks "what does <spell/feat/class feature> do", "which spells can a
+  <class> take", "what does <background> grant", or any D&D 2024 / 5.5 rules-reference
+  question — including natural-language phrasing like "what does X do", "how does X work",
+  "explain X", "tell me about X", "qu'est-ce que fait X", "comment fonctionne X",
+  "c'est quoi X", "explique-moi X", "quels sorts peut prendre un X", "quelle est la règle
+  pour X". The catalog is 2024-only and level-1 only; anything outside it is
+  "Manquant documentaire".
 argument-hint: "[fr|en]"
 allowed-tools: Bash(node *)
 license: MIT
@@ -30,15 +34,27 @@ how you state a 2014 or Pathfinder rule for a 2024 character. Therefore:
 
 Full rule: [rules/grounding.md](../../rules/grounding.md).
 
-## Workflow (run from the repo root)
+## Workflow
+
+For "which options" questions the engine ships beside these skills and runs from **any** working
+directory. Resolve its path once, then reuse it:
+
+```bash
+ENGINE="$CLAUDE_SKILL_DIR/../../engine/cli.mjs"
+[ -f "$ENGINE" ] || ENGINE="engine/cli.mjs"   # fallback when run from the repo root
+```
 
 - **Entity definitions** (a class, species, background, feat, spell, condition): read the
   matching file in `data/` — `classes.json`, `species.json`, `backgrounds.json`, `feats.json`,
   `spells.json`, `conditions.json`, `glossary.json`. Report the entity's `effects`/text and its
   `ref` + `source` (e.g. `img:105`) as the citation. Do not paste more than needed.
+- **Natural-language questions** ("Qu'est-ce que fait Boule de feu ?", "What does Lucky do?",
+  "Comment fonctionne l'Elfe ?") : cherche par nom dans le fichier correspondant, en tenant
+  compte des variantes FR/EN via `data/labels.en.json`. Si le nom exact n'est pas trouvé,
+  essaie une correspondance partielle avant de déclarer "Manquant documentaire".
 - **"Which options can a <class> take" questions** (spells on a list, class skills, fighting
   styles): drive the resolver. Put the class into an `answers.json` and run
-  `node engine/cli.mjs options answers.json`; the returned `options` are the exact legal set,
+  `node "$ENGINE" options answers.json`; the returned `options` are the exact legal set,
   filtered by the rules. Never list options from memory.
 - **Not found?** If the term is not in the catalog (wrong edition, un-modelled subclass, a level
   above 1), say **"Manquant documentaire"** and stop. Do not reconstruct it from training.

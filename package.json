@@ -6,6 +6,23 @@
   "author": { "name": "Dungeons & Skills contributors" },
   "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
   "bin": { "dungeons-and-skills": "./install.mjs" },
+  "files": [
+    "install.mjs",
+    "engine/",
+    "data/",
+    "rules/",
+    "skills/",
+    "commands/",
+    "AGENTS.md",
+    ".claude-plugin/",
+    "assets/",
+    "project-mode/",
+    "examples/",
+    "README.md",
+    "README.fr.md",
+    "INSTALL.md",
+    "PLATFORMS.md"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

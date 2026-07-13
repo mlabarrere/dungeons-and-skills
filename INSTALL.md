@@ -9,8 +9,9 @@ a Claude/ChatGPT Project). Pick the row for your tool.
 - **Node.js 18+** on your `PATH` — the deterministic engine (`engine/cli.mjs`) runs on Node.
   Without Node the skills still work in "no code execution" mode (the assistant reads `data/` and
   applies `rules/schema.md` by hand), just without the engine double-check.
-- A clone of this repository (or the published plugin), so the assistant can reach `engine/`,
-  `data/`, `skills/` and `rules/` from the working directory.
+- The bundle on disk — as the published plugin, via `install.mjs`, or a clone of this repo. The
+  skills locate the engine themselves (`$CLAUDE_SKILL_DIR/../../engine/cli.mjs`, or `engine/cli.mjs`
+  from a checkout), so you do **not** have to run from any particular directory.
 
 ```bash
 git clone https://github.com/mlabarrere/dungeons-and-skills.git

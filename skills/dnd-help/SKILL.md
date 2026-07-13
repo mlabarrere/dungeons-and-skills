@@ -5,13 +5,31 @@ description: >
   dnd-lookup do, how the grounding rule works (why the model must not trust its training
   data and must read the bundled catalog instead), the engine commands, multilingual
   (FR/EN) output, and current scope/limits. Use when the user asks what these skills do,
-  how to build a character, "help", or how the D&D builder works.
+  how to build a character, or any general orientation question — including "help",
+  "how does this work", "what is this", "help me", "I'm lost", "getting started",
+  "aide", "comment ça marche", "qu'est-ce que c'est", "je ne comprends pas",
+  "comment utiliser", or how the D&D builder works.
 argument-hint: ""
 allowed-tools: Bash(node *)
 license: MIT
 ---
 
 # dnd-help — how the D&D 2024 builder works
+
+Ce builder vous aide à créer un personnage de Donjons & Dragons 2024 (aussi appelé D&D 5.5
+ou "5e 2024") étape par étape, en vérifiant chaque valeur contre un catalogue de règles
+officiel — pas contre la mémoire d'un modèle de langage. Il fonctionne en français et en
+anglais. Pour commencer, dites simplement quel type de personnage vous voulez jouer — le
+reste se fait en questions-réponses. *(English below.)*
+
+This builder guides you through creating a D&D 2024 character step by step, with every
+value verified against a bundled rules catalog — not the model's memory. It works in French
+and English. Just describe what kind of character you want to play; the rest is
+questions-and-answers.
+
+- **To create a character**, use `/dnd-build` (or just say "I want to make a character").
+- **To look up a rule, spell, or feat**, use `/dnd-lookup`.
+- **To verify an existing sheet**, use `/dnd-check`.
 
 ## GROUNDING — do not skip
 
@@ -36,9 +54,13 @@ character sheet is grounded in a bundled catalog, not memory:
 
 ## The engine
 
-- `node engine/cli.mjs options <answers.json>` — the next legal choices (rules-filtered).
-- `node engine/cli.mjs build <answers.json> [--lang en]` — answers → sheet + lint (need 0 errors).
-- `node engine/cli.mjs check <model.character.json>` — recompute/lint an existing model.
+The engine ships beside the skills and self-locates its catalog, so it runs from **any** working
+directory. Resolve its path once — `ENGINE="$CLAUDE_SKILL_DIR/../../engine/cli.mjs"`, falling back
+to `engine/cli.mjs` from a repo checkout — then:
+
+- `node "$ENGINE" options <answers.json>` — the next legal choices (rules-filtered).
+- `node "$ENGINE" build <answers.json> [--lang en]` — answers → sheet + lint (need 0 errors).
+- `node "$ENGINE" check <model.character.json>` — recompute/lint an existing model.
 
 Catalog: `data/*.json` (12 classes, 48 subclasses, 10 species, 16 backgrounds, 75 feats,
 ~390 spells). English labels: `data/labels.en.json`. Schema + formulas: `rules/schema.md`.

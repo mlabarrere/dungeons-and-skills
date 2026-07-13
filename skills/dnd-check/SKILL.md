@@ -5,9 +5,12 @@ description: >
   a bundled rules catalog, and flag every rules error: wrong AC/HP/save DC, over-filled
   cantrip or prepared-spell slots, a granted spell missing from the sheet, a skill on the
   wrong list, an invalid status, a duplicate not marked as a conflict. Especially catches
-  "mixed-edition" mistakes (a 2014 or Pathfinder rule applied to a 2024 character). Use
-  when the user wants to check, verify, audit, review, or debug a D&D 2024 / 5.5 character
-  sheet, or asks "is this legal / correct". The catalog is 2024-only and level-1 only.
+  "mixed-edition" mistakes (a 2014 or Pathfinder rule applied to a 2024 character).
+  Use when the user wants to check, verify, audit, review, or debug a D&D 2024 / 5.5
+  character sheet, or asks "is this legal / correct", "is my character legal", "check my
+  sheet", "something seems wrong with my character", "vérifier ma fiche", "ma fiche
+  est-elle correcte", "est-ce que mon personnage est légal", "auditer mon personnage",
+  "j'ai une erreur dans ma fiche". The catalog is 2024-only and level-1 only.
 argument-hint: "[fr|en]"
 allowed-tools: Bash(node *)
 license: MIT
@@ -30,14 +33,39 @@ one wrong value makes it illegal. Therefore:
 
 Full rule: [rules/grounding.md](../../rules/grounding.md). Schema + formulas: [rules/schema.md](../../rules/schema.md).
 
-## Workflow (run from the repo root)
+## Formats acceptés
+
+L'utilisateur peut fournir sa fiche sous n'importe quelle forme — tu t'adaptes :
+
+- **Texte libre ou markdown** : extrais chaque valeur (classe, espèce, background, scores,
+  PV, CA, sorts…) et construis le `.character.json` en interne. Ne demande pas à l'utilisateur
+  de produire du JSON.
+- **Valeurs dictées une par une** : demande la suivante en langage simple.
+- **Infos manquantes** : demande-les une par une avec des termes clairs — jamais en jargon
+  technique interne. Exemples :
+  - ✗ "Quel est ton `abilityScores.STR` ?"
+  - ✓ "Quelle est ta Force (le chiffre brut, avant les modificateurs) ?"
+  - ✗ "Quels sont tes `sources[]` avec `type: feat` ?"
+  - ✓ "As-tu des dons ? Si oui, lesquels ?"
+- **Fiche partielle acceptable** : si l'utilisateur n'a que certaines valeurs, audite ce qui
+  est disponible et note ce qui manque pour une vérification complète.
+
+## Workflow
+
+The engine ships beside these skills and finds its own catalog, so it runs from **any** working
+directory. Resolve its path once, then reuse it:
+
+```bash
+ENGINE="$CLAUDE_SKILL_DIR/../../engine/cli.mjs"
+[ -f "$ENGINE" ] || ENGINE="engine/cli.mjs"   # fallback when run from the repo root
+```
 
 1. **Map the user's sheet to the model.** Build a `.character.json` following
    [rules/schema.md](../../rules/schema.md): `identity`, `abilityScores`, `sources[]` with
    typed `effects`, `choices[]`, `equipment[]`, `spells`. Every source must name where it comes
    from; if the user's sheet has a feat/subclass/spell not in `data/*.json`, mark it
    "Manquant documentaire" rather than inventing effects.
-2. **Recompute and lint.** Run `node engine/cli.mjs check model.character.json` (add `--lang en`).
+2. **Recompute and lint.** Run `node "$ENGINE" check model.character.json` (add `--lang en`).
    The engine recomputes every derived value and prints the sheet-lint result.
 3. **Report the diff.** For each mismatch between the user's stated value and the computed one,
    state: the value, what the rules give, and the provenance. Group the errors; do not rewrite
