@@ -38,6 +38,10 @@ export const OTHER_KINDS = ["ordre-primitif", "ordre-divin", "manifestation-occu
   "resistance", "type-de-degats", "type-degats",
   "manoeuvre", "aptitude-sous-classe", "environnement"];
 
+// Guards contre les boucles infinies dans la resolution (don->don->don ou appliesEffects cycliques).
+const MAX_FEAT_SOURCES  = 20;  // dons accordes max par personnage niveau 1
+const MAX_CHOICE_EFFECTS = 50; // expansions choice-effect max (appliesEffects chainés)
+
 // Resout le `count` d'un choix (entier ou mot-cle). Niveau 1 : bonus de maitrise = 2.
 export function resolveCount(choice) {
   const c = choice.count;
@@ -73,6 +77,8 @@ export function selectedSources(catalog, answers) {
     if (e.type === "grants" && e.what === "feat" && e.id) {
       const feat = byId(catalog.feats, e.id);
       if (!feat) continue;
+      if (featSources.length >= MAX_FEAT_SOURCES)
+        throw new Error(`resolver: feat expansion exceeded ${MAX_FEAT_SOURCES} — likely circular feat grants`);
       const featClass = (s.entity && s.entity.featClass) || null;
       // clone des choix ; si featClass fixe, contraindre le choix de liste de sorts.
       const choices = (feat.choices || []).map((ch) =>
@@ -94,9 +100,14 @@ export function selectedSources(catalog, answers) {
   }
 
   // effets appliques par les valeurs de sous-choix (choice.appliesEffects[value])
+  // NOTE : `for...of` sur un tableau vivant — les items pushes en cours d'iteration SONT traites.
+  // Le compteur `ceCount` evite les boucles infinies si appliesEffects est cyclique.
+  let ceCount = 0;
   for (const s of out) for (const ch of s.choices) {
     const v = answers[ch.id];
     if (v != null && ch.appliesEffects && ch.appliesEffects[v]) {
+      if (++ceCount > MAX_CHOICE_EFFECTS)
+        throw new Error(`resolver: choice-effect depth exceeded ${MAX_CHOICE_EFFECTS} — likely circular appliesEffects`);
       out.push({ id: `${ch.id}:${v}`, kind: "choice-effect", label: `${ch.kind}=${v}`, ref: s.ref,
         effects: ch.appliesEffects[v], choices: [], recommends: [] });
     }
