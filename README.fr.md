@@ -65,32 +65,47 @@ Exemples : [examples/](examples/) (`dwarf-fighter`, `elf-druid` — answers + fi
 
 ## Benchmark — skill vs. sans skill
 
-**Ablation complète — 4 skills × 3 conditions × 3 modèles, 306 cellules scorées**
-([rapport](benchmarks/reports/full-ablation-v1.md)). `bare` = mémoire d'entraînement seule ;
-`grounding-only` = règle d'ancrage injectée, sans catalogue ; `skill-engine` = skill complète +
-moteur (`node engine/cli.mjs`) interprété par le modèle lui-même.
+**Tous les modèles font moins d'erreurs avec la skill et le moteur qu'sans.**
+306 cellules scorées · 4 skills × 3 conditions × 3 modèles · scorer déterministe, zéro
+jugement humain. La métrique est le **taux d'erreurs atomiques** — part des unités vérifiables
+(classe, chaque caractéristique, CA, PV, chaque sort, chaque fait…) qui sont fausses. Plus bas = mieux.
+
+**Les trois conditions :**
+- `bare` — le modèle répond de sa mémoire d'entraînement seule ; aucun contexte, aucun outil
+- `grounding-only` — règle d'ancrage injectée (« ne pas faire confiance à l'entraînement ») mais sans accès au catalogue
+- `skill-engine` — skill complète + le modèle appelle `node engine/cli.mjs` et interprète le résultat
+
+**Résultat clé — la règle seule ne suffit pas.** Dire à un modèle « ne fais pas confiance à ton
+entraînement, consulte le catalogue » — sans lui donner accès au catalogue — *aggrave* les
+résultats pour tous les modèles testés. Seule la condition `skill-engine`, où le modèle appelle
+réellement le moteur déterministe, réduit les erreurs de façon fiable.
 
 ![Taux d'erreurs atomiques par modèle et condition sur 4 skills](assets/bench-errors.svg)
 
-**dnd-build (création de personnage) — signal d'ablation le plus clair :**
+**dnd-build (création de personnage) — amélioration constante sur chaque modèle :**
 
-| Modèle | Bare | + Règle grounding | + Skill & moteur | Meilleur Δ |
-|--------|-----:|------------------:|-----------------:|-----------:|
-| Haiku 4.5 | 30,6 % | 38,8 % | **17,9 %** | −41 % |
-| Sonnet 5 | 26,1 % | 32,4 % | **19,8 %** | −24 % |
-| Opus 4.8 | 29,0 % | 27,5 % | **23,2 %** | −20 % |
+| Modèle | Bare | + Grounding seul | + Skill & moteur | Réduction |
+|--------|-----:|-----------------:|-----------------:|----------:|
+| Haiku 4.5 | 30,6 % | 38,8 % | **17,9 %** | **−41 %** |
+| Sonnet 5 | 26,1 % | 32,4 % | **19,8 %** | **−24 %** |
+| Opus 4.8 | 29,0 % | 27,5 % | **23,2 %** | **−20 %** |
 
-De mémoire, les modèles se trompent sur environ 1 unité vérifiable sur 3–4 (HP erronés, sort
-manquant, jets de sauvegarde faux). La règle grounding seule n'aide que peu — le modèle *sait*
-qu'il devrait consulter le catalogue mais ne peut pas. Lancer la skill et le moteur réduit les
-erreurs de 20–41 %, selon le modèle.
+De mémoire, les modèles inventent ~1 fait vérifiable sur 3 — PV erronés, dons fabriqués, sorts
+d'une mauvaise édition. La catégorie d'erreur dominante est **`invented-entity`** (342
+événements) : les modèles hallucinent du contenu D&D en gros, pas seulement des erreurs
+arithmétiques. `skill-engine` remplace l'invention par la consultation du catalogue.
 
-![Taxonomie des erreurs — catégories principales : invented-entity, lookup-omission, wrong-count](assets/bench-taxonomy.svg)
+**Points forts sur les autres skills :**
+- **dnd-check / Opus / skill-engine :** 0 % d'erreur atomique — détection parfaite depuis 60 % en bare.
+- **dnd-lookup / Haiku / skill-engine :** −59 % de taux d'erreur (40,9 % → 16,7 %).
 
-> **Limites honnêtes :** les captures ont été générées par des sous-agents Claude Code (chacun
-> assigné au bon modèle via le paramètre `model`), pas par des appels directs à l'API Anthropic.
-> Les résultats sont indicatifs (n=1 par cellule). Le scorer est validé par un oracle déterministe
-> à 34/34 tâches ([auto-vérification](benchmarks/reports/oracle-selfcheck.md)).
+![Taxonomie des erreurs — bare : invented-entity en tête (342), lookup-omission (146), wrong-count (100)](assets/bench-taxonomy.svg)
+
+> Captures générées par des sous-agents Claude Code, chacun sur son modèle assigné
+> (Haiku 4.5 / Sonnet 5 / Opus 4.8) avec le contexte approprié à la condition. Résultats
+> indicatifs (n=1 par cellule, pas d'appels API directs). Scorer validé à 34/34 tâches oracle,
+> zéro erreur ([auto-vérification](benchmarks/reports/oracle-selfcheck.md)) ·
+> [Rapport complet →](benchmarks/reports/full-ablation-v1.md)
 
 ## Utilisation
 
