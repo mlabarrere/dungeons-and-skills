@@ -20,30 +20,63 @@ import {
 } from "./resolver.mjs";
 
 /* ---- i18n (small, stable tables live here; entity names come from labels.en.json) ---- */
-const ABILITY_FR = { for: "Force", dex: "Dexterite", con: "Constitution", int: "Intelligence", sag: "Sagesse", cha: "Charisme" };
-const ABILITY_EN = { for: "Strength", dex: "Dexterity", con: "Constitution", int: "Intelligence", sag: "Wisdom", cha: "Charisma" };
+const ABILITY_FR = { str: "Force", dex: "Dextérité", con: "Constitution", int: "Intelligence", wis: "Sagesse", cha: "Charisme" };
+const ABILITY_EN = { str: "Strength", dex: "Dexterity", con: "Constitution", int: "Intelligence", wis: "Wisdom", cha: "Charisma" };
 const T = {
   fr: { ac: "CA", hp: "Points de vie", init: "Initiative", pp: "Perception passive", pb: "Bonus de maitrise",
-    saves: "Jets de sauvegarde", skills: "Competences", spells: "Sorts", cantrips: "Sorts mineurs",
-    prepared: "Sorts prepares", equipment: "Equipement", provenance: "provenance", remaining: "Choix restants",
-    conflicts: "Conflits", lintOk: "sheet-lint : 0 erreur.", lintErr: "erreur(s)", none: "aucun" },
+    saves: "Jets de sauvegarde", skills: "Compétences", spells: "Sorts", cantrips: "Sorts mineurs",
+    prepared: "Sorts préparés", equipment: "Équipement", provenance: "provenance", remaining: "Choix restants",
+    conflicts: "Conflits", lintOk: "sheet-lint : 0 erreur.", lintErr: "erreur(s)", none: "aucun", level: "niveau" },
   en: { ac: "AC", hp: "Hit Points", init: "Initiative", pp: "Passive Perception", pb: "Proficiency Bonus",
     saves: "Saving throws", skills: "Skills", spells: "Spells", cantrips: "Cantrips",
     prepared: "Prepared spells", equipment: "Equipment", provenance: "provenance", remaining: "Choices remaining",
-    conflicts: "Conflicts", lintOk: "sheet-lint: 0 error.", lintErr: "error(s)", none: "none" },
+    conflicts: "Conflicts", lintOk: "sheet-lint: 0 error.", lintErr: "error(s)", none: "none", level: "level" },
+  de: { ac: "RK", hp: "Trefferpunkte", init: "Initiative", pp: "Passive Wahrnehmung", pb: "Übungsbonus",
+    saves: "Rettungswürfe", skills: "Fertigkeiten", spells: "Zauber", cantrips: "Zaubertricks",
+    prepared: "Vorbereitete Zauber", equipment: "Ausrüstung", provenance: "Quelle", remaining: "Verbleibende Auswahl",
+    conflicts: "Konflikte", lintOk: "sheet-lint: 0 Fehler.", lintErr: "Fehler", none: "keine", level: "Stufe" },
+  es: { ac: "CA", hp: "Puntos de golpe", init: "Iniciativa", pp: "Percepción pasiva", pb: "Bonificador de competencia",
+    saves: "Tiradas de salvación", skills: "Habilidades", spells: "Conjuros", cantrips: "Trucos",
+    prepared: "Conjuros preparados", equipment: "Equipo", provenance: "fuente", remaining: "Opciones restantes",
+    conflicts: "Conflictos", lintOk: "sheet-lint: 0 errores.", lintErr: "error(es)", none: "ninguno", level: "nivel" },
+  it: { ac: "CA", hp: "Punti ferita", init: "Iniziativa", pp: "Percezione passiva", pb: "Bonus competenza",
+    saves: "Tiri salvezza", skills: "Abilità", spells: "Incantesimi", cantrips: "Trucchetti",
+    prepared: "Incantesimi preparati", equipment: "Equipaggiamento", provenance: "fonte", remaining: "Scelte rimanenti",
+    conflicts: "Conflitti", lintOk: "sheet-lint: 0 errori.", lintErr: "errore/i", none: "nessuno", level: "livello" },
+  ja: { ac: "AC", hp: "ヒット・ポイント", init: "イニシアチブ", pp: "受動判断力（知覚）", pb: "習熟ボーナス",
+    saves: "セービング・スロー", skills: "技能", spells: "呪文", cantrips: "キャントリップ",
+    prepared: "準備済み呪文", equipment: "装備", provenance: "出典", remaining: "残りの選択",
+    conflicts: "競合", lintOk: "sheet-lint: エラー0件。", lintErr: "エラー", none: "なし", level: "レベル" },
+  ru: { ac: "КД", hp: "Хиты", init: "Инициатива", pp: "Пассивное восприятие", pb: "Бонус мастерства",
+    saves: "Спасброски", skills: "Навыки", spells: "Заклинания", cantrips: "Заговоры",
+    prepared: "Подготовленные заклинания", equipment: "Снаряжение", provenance: "источник", remaining: "Оставшиеся выборы",
+    conflicts: "Конфликты", lintOk: "sheet-lint: 0 ошибок.", lintErr: "ошибок", none: "нет", level: "уровень" },
+  zh: { ac: "护甲等级", hp: "生命值", init: "先攻", pp: "被动感知", pb: "熟练加值",
+    saves: "豁免", skills: "技能", spells: "法术", cantrips: "戏法",
+    prepared: "已准备法术", equipment: "装备", provenance: "来源", remaining: "剩余选择",
+    conflicts: "冲突", lintOk: "sheet-lint: 0错误。", lintErr: "错误", none: "无", level: "等级" },
+  ar: { ac: "درع", hp: "نقاط الضربة", init: "مبادرة", pp: "الإدراك السلبي", pb: "مكافأة الكفاءة",
+    saves: "رميات الإنقاذ", skills: "المهارات", spells: "التعويذات", cantrips: "التعويذات الخفيفة",
+    prepared: "التعويذات المحضَّرة", equipment: "المعدات", provenance: "مصدر", remaining: "الخيارات المتبقية",
+    conflicts: "تعارضات", lintOk: "sheet-lint: 0 أخطاء.", lintErr: "خطأ/أخطاء", none: "لا شيء", level: "مستوى" },
 };
 
-function loadLabels() {
+function loadLabels(lang = "en") {
   try {
-    const url = new URL("../data/labels.en.json", import.meta.url);
+    const url = new URL(`../data/labels.${lang}.json`, import.meta.url);
     return JSON.parse(readFileSync(url, "utf8"));
-  } catch { return {}; }
+  } catch {
+    try {
+      const url = new URL("../data/labels.en.json", import.meta.url);
+      return JSON.parse(readFileSync(url, "utf8"));
+    } catch { return {}; }
+  }
 }
 
 function makeLabeler(lang, labels) {
   const en = lang === "en";
-  const abil = (a) => (en ? ABILITY_EN : ABILITY_FR)[a] || a;
-  const map = (group, id, fallback) => (en && labels[group] && labels[group][id]) || fallback || id;
+  const abil = (a) => (labels.abilities && labels.abilities[a]) || (lang === "fr" ? ABILITY_FR : ABILITY_EN)[a] || a;
+  const map = (group, id, fallback) => (labels[group] && labels[group][id]) || fallback || id;
   return { en, abil, map };
 }
 
@@ -80,15 +113,15 @@ function loadCatalogNodeSync() { return (_catalog ||= loadCatalogNode()); }
 /* ---- markdown sheet ---- */
 function renderSheet(C, lang, labels) {
   const L = makeLabeler(lang, labels);
-  const t = T[lang] || T.fr;
+  const t = T[lang] || T.en;
   const id = C.model.identity || {};
-  const A = ["for", "dex", "con", "int", "sag", "cha"];
+  const A = ["str", "dex", "con", "int", "wis", "cha"];
   const out = [];
 
   const clsName = L.map("classes", (C.model.sources.find((s) => s.kind === "class-level") || {}).id, id.className);
   const spName = L.map("species", (C.model.sources.find((s) => s.kind === "species") || {}).id, id.species);
   out.push(`# ${id.name || "?"}`);
-  out.push(`*${spName || "?"}${id.lineage ? " (" + id.lineage + ")" : ""}, ${clsName || "?"} ${lang === "en" ? "level" : "niveau"} ${C.lvl}${id.background ? ", " + id.background : ""}.*`);
+  out.push(`*${spName || "?"}${id.lineage ? " (" + id.lineage + ")" : ""}, ${clsName || "?"} ${t.level} ${C.lvl}${id.background ? ", " + id.background : ""}.*`);
   out.push("");
 
   // ability scores
@@ -126,8 +159,8 @@ function renderSheet(C, lang, labels) {
   if (C.cantrips.length || C.prepared.length) {
     out.push(`## ${t.spells}`);
     C.castingRows.forEach((r) => out.push(`- ${r.list}: DC ${r.dc} / atk ${sign(r.atk)}`));
-    if (C.cantrips.length) out.push(`**${t.cantrips}**: ` + C.cantrips.map((s) => s.label || s.id).join(", "));
-    if (C.prepared.length) out.push(`**${t.prepared}**: ` + C.prepared.map((s) => s.label || s.id).join(", "));
+    if (C.cantrips.length) out.push(`**${t.cantrips}**: ` + C.cantrips.map((s) => L.map("spells", s.id, s.label || s.id)).join(", "));
+    if (C.prepared.length) out.push(`**${t.prepared}**: ` + C.prepared.map((s) => L.map("spells", s.id, s.label || s.id)).join(", "));
     out.push("");
   }
 
@@ -173,7 +206,7 @@ async function run() {
       model = readJSON(file);
     }
     const C = computeCharacter(model);
-    const labels = lang === "en" ? loadLabels() : {};
+    const labels = loadLabels(lang);
     console.log(renderSheet(C, lang, labels));
     const errs = C.problems.filter((p) => p.level === "error");
     process.exit(errs.length ? 1 : 0);

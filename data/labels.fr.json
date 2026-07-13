@@ -1,5 +1,9 @@
 {
   "_note": "EN-id -> FR display name. Source: PHB 2024 Blackbook Éditions (officiel), vérifié contre aidedd.org. Accents restaurés, noms corrigés vs source d'origine.",
+  "abilities": {
+    "str": "Force", "dex": "Dextérité", "con": "Constitution",
+    "int": "Intelligence", "wis": "Sagesse", "cha": "Charisme"
+  },
   "classes": {
     "barbarian": "Barbare",
     "bard": "Barde",
