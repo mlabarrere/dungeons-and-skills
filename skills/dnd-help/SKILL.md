@@ -3,12 +3,12 @@ name: dnd-help
 description: >
   Explain this D&D 2024 character-builder skill family — what dnd-build, dnd-check and
   dnd-lookup do, how the grounding rule works (why the model must not trust its training
-  data and must read the bundled catalog instead), the engine commands, multilingual
-  (FR/EN) output, and current scope/limits. Use when the user asks what these skills do,
-  how to build a character, or any general orientation question — including "help",
-  "how does this work", "what is this", "help me", "I'm lost", "getting started",
-  "aide", "comment ça marche", "qu'est-ce que c'est", "je ne comprends pas",
-  "comment utiliser", or how the D&D builder works.
+  data and must read the bundled catalog instead), the engine commands, 9-language output
+  (EN/FR/DE/ES/IT/JA/RU/ZH/AR), and current scope/limits. Use when the user asks what
+  these skills do, how to build a character, or any general orientation question —
+  including "help", "how does this work", "what is this", "help me", "I'm lost",
+  "getting started", "aide", "comment ça marche", "qu'est-ce que c'est",
+  "je ne comprends pas", "comment utiliser", or how the D&D builder works.
 argument-hint: ""
 allowed-tools: Bash(node *)
 license: MIT
@@ -22,13 +22,14 @@ agents: [claude-code]
 
 Ce builder vous aide à créer un personnage de Donjons & Dragons 2024 (aussi appelé D&D 5.5
 ou "5e 2024") étape par étape, en vérifiant chaque valeur contre un catalogue de règles
-officiel — pas contre la mémoire d'un modèle de langage. Il fonctionne en français et en
-anglais. Pour commencer, dites simplement quel type de personnage vous voulez jouer — le
-reste se fait en questions-réponses. *(English below.)*
+officiel — pas contre la mémoire d'un modèle de langage. Il fonctionne en **9 langues**
+(français, anglais, allemand, espagnol, italien, japonais, russe, chinois, arabe). Pour
+commencer, dites simplement quel type de personnage vous voulez jouer. *(English below.)*
 
 This builder guides you through creating a D&D 2024 character step by step, with every
-value verified against a bundled rules catalog — not the model's memory. It works in French
-and English. Just describe what kind of character you want to play; the rest is
+value verified against a bundled rules catalog — not the model's memory. It outputs sheets
+in **9 languages**: English, French, German, Spanish, Italian, Japanese, Russian, Chinese,
+and Arabic. Just describe what kind of character you want to play; the rest is
 questions-and-answers.
 
 - **To create a character**, use `/dnd-build` (or just say "I want to make a character").
@@ -66,8 +67,27 @@ to `engine/cli.mjs` from a repo checkout — then:
 - `node "$ENGINE" build <answers.json> [--lang en]` — answers → sheet + lint (need 0 errors).
 - `node "$ENGINE" check <model.character.json>` — recompute/lint an existing model.
 
+`--lang` accepts: `en` `fr` `de` `es` `it` `ja` `ru` `zh` `ar` (falls back to English if a label is missing).
+
 Catalog: `data/*.json` (12 classes, 48 subclasses, 10 species, 16 backgrounds, 75 feats,
-~390 spells). English labels: `data/labels.en.json`. Schema + formulas: `rules/schema.md`.
+~391 spells). 9-language display overlays: `data/labels.*.json`. Schema + formulas: `rules/schema.md`.
+
+## Languages
+
+| Language | Code | Source |
+|----------|------|--------|
+| 🇬🇧 English | `en` | PHB 2024 (Wizards of the Coast) |
+| 🇫🇷 Français | `fr` | PHB 2024 (Blackbook Éditions) |
+| 🇩🇪 Deutsch | `de` | PHB 2024 (Ulisses Spiele) |
+| 🇪🇸 Español | `es` | PHB 2024 (Devir) |
+| 🇮🇹 Italiano | `it` | PHB 2024 (Need Games) |
+| 🇯🇵 日本語 | `ja` | PHB 2024 (Hobby Japan) |
+| 🇷🇺 Русский | `ru` | D&D 5e (Hobby World — quasi-official) |
+| 🇨🇳 中文 | `zh` | Licensed CN edition + community standard |
+| 🇸🇦 العربية | `ar` | Community (su3luq.com) |
+
+All label files are triple-verified against each publisher's official text. New-2024-only terms
+without a confirmed publisher translation fall back to English.
 
 ## Scope & known limits
 
@@ -77,5 +97,5 @@ Catalog: `data/*.json` (12 classes, 48 subclasses, 10 species, 16 backgrounds, 7
   mechanical effects are **not** expanded by the resolver yet — a granted feat (from a
   background) *is* expanded. Prefer species/backgrounds whose bonuses are granted, or note the
   gap. This is a documented engine limitation, not a rule.
-- **Multilingual FR/EN.** Internal ids are French; English display names come from
-  `data/labels.en.json` (structural entities complete; spell names are an incremental extension).
+- **9 languages.** Internal IDs are English slugs; display names in each language come from
+  `data/labels.<lang>.json`. Use `--lang <code>` with `engine/cli.mjs build`.

@@ -10,9 +10,11 @@ description: >
   question — including natural-language phrasing like "what does X do", "how does X work",
   "explain X", "tell me about X", "qu'est-ce que fait X", "comment fonctionne X",
   "c'est quoi X", "explique-moi X", "quels sorts peut prendre un X", "quelle est la règle
-  pour X". The catalog is 2024-only and level-1 only; anything outside it is
-  "Manquant documentaire".
-argument-hint: "[fr|en]"
+  pour X", or equivalent in German, Spanish, Italian, Japanese, Russian, Chinese, or Arabic.
+  Entity names can be looked up by their display name in any of the 9 supported languages
+  (resolved via data/labels.*.json). The catalog is 2024-only and level-1 only; anything
+  outside it is "Manquant documentaire".
+argument-hint: "[en|fr|de|es|it|ja|ru|zh|ar]"
 allowed-tools: Bash(node *)
 license: MIT
 version: "0.1.0"

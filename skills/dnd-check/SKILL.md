@@ -10,8 +10,10 @@ description: >
   character sheet, or asks "is this legal / correct", "is my character legal", "check my
   sheet", "something seems wrong with my character", "vérifier ma fiche", "ma fiche
   est-elle correcte", "est-ce que mon personnage est légal", "auditer mon personnage",
-  "j'ai une erreur dans ma fiche". The catalog is 2024-only and level-1 only.
-argument-hint: "[fr|en]"
+  "j'ai une erreur dans ma fiche". The catalog is 2024-only and level-1 only. Reports and
+  sheet output are available in 9 languages: English, French, German, Spanish, Italian,
+  Japanese, Russian, Chinese, or Arabic — pass --lang to engine/cli.mjs check.
+argument-hint: "[en|fr|de|es|it|ja|ru|zh|ar]"
 allowed-tools: Bash(node *)
 license: MIT
 version: "0.1.0"

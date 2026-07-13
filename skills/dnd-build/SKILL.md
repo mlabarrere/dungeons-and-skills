@@ -5,7 +5,8 @@ description: >
   grounded in a bundled rules catalog instead of the model's memory. Walks class,
   species, lineage, background, ability scores, skills, fighting style, spells,
   languages and equipment; runs a deterministic engine so AC, HP, save DCs and spell
-  counts are computed, never guessed. Outputs a sheet in French or English.
+  counts are computed, never guessed. Outputs a complete sheet in any of 9 languages:
+  English, French, German, Spanish, Italian, Japanese, Russian, Chinese, or Arabic.
   Use when the user wants to create, roll up, or make a new D&D / D&D 2024 / 5.5 /
   5.5e / "5e 2024" character, PC, or level-1 build — including complete beginners who
   say things like "I want to play D&D", "make me a character", "create a character for
@@ -15,7 +16,7 @@ description: >
   healer", "I like swords and armour", "je veux être discret", "je veux soigner",
   "j'aime les épées"). Do NOT use for older editions (3.5, 5e 2014) or Pathfinder —
   the catalog is 2024-only.
-argument-hint: "[fr|en]"
+argument-hint: "[en|fr|de|es|it|ja|ru|zh|ar]"
 allowed-tools: Bash(node *)
 license: MIT
 version: "0.1.0"
@@ -109,3 +110,8 @@ constraint: catalog over memory, options only from the rules, provenance on ever
 Level 1 only. Chosen *origin feats* on some species (e.g. Human "Versatile") have effects the
 resolver does not expand — see [dnd-help](../dnd-help/SKILL.md). For anything past level 1, say
 "Manquant documentaire".
+
+**Languages.** Pass `--lang <code>` to `engine/cli.mjs build`. Supported: `en` `fr` `de` `es`
+`it` `ja` `ru` `zh` `ar`. Display names come from `data/labels.<lang>.json` (publisher-verified);
+any missing label falls back to English. Detect the user's language from their message and use
+the matching code automatically.

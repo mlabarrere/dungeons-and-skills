@@ -6,7 +6,7 @@
 ![licence: MIT](https://img.shields.io/badge/licence-MIT-black)
 ![rules: D&D 2024 (5.5)](https://img.shields.io/badge/rules-D%26D%202024%20(5.5)-black)
 ![skills: 4](https://img.shields.io/badge/skills-build%20·%20check%20·%20lookup%20·%20help-black)
-![languages: FR + EN](https://img.shields.io/badge/languages-FR%20%2B%20EN-black)
+![languages: 9](https://img.shields.io/badge/languages-EN·FR·DE·ES·IT·JA·RU·ZH·AR-black)
 ![grounded](https://img.shields.io/badge/grounded-no%20hallucinated%20rules-black)
 
 > [!WARNING]
@@ -42,16 +42,16 @@ the model's memory — read the bundled rules catalogue and run a deterministic 
 
 | Skill | What it does |
 |-------|--------------|
-| [`dnd-build`](skills/dnd-build/SKILL.md)  | Guided level-1 character creation, with zero rules errors. |
+| [`dnd-build`](skills/dnd-build/SKILL.md)  | Guided level-1 character creation, zero rules errors, output in any of 9 languages. |
 | [`dnd-check`](skills/dnd-check/SKILL.md)  | Audit an existing sheet and flag every rules error (the sheet checker). |
 | [`dnd-lookup`](skills/dnd-lookup/SKILL.md) | Look up a spell, feat or class from the catalogue and cite the source. |
-| [`dnd-help`](skills/dnd-help/SKILL.md)   | How the family works, and what grounding means. |
+| [`dnd-help`](skills/dnd-help/SKILL.md)   | How the family works, supported languages, and what grounding means. |
 
 ## How it works
 
 - **Catalogue** (`data/*.json`): 12 classes, 48 subclasses, 10 species, 16 backgrounds, 75 feats
-  and around 390 spells — the deterministic rules data, generated from the source of truth in
-  `docs/`.
+  and ~391 spells — deterministic rules data generated from `docs/`. Display names in 9 languages
+  via `data/labels.*.json` (EN, FR, DE, ES, IT, JA, RU, ZH, AR — all publisher-verified).
 - **Engine** (`engine/`): `resolver.mjs` returns only the rules-legal options at each step;
   `build-character.mjs` works out AC, hit points, save DCs and spell counts and then lints the
   result; `cli.mjs` is the command the skills call.
@@ -61,10 +61,15 @@ the model's memory — read the bundled rules catalogue and run a deterministic 
 
 ```bash
 # from the repository root
-node engine/cli.mjs options answers.json           # the next legal choices (rules-filtered)
-node engine/cli.mjs build   answers.json --lang en  # answers -> sheet + lint (needs 0 errors)
+node engine/cli.mjs options answers.json            # the next legal choices (rules-filtered)
+node engine/cli.mjs build   answers.json --lang en  # answers → sheet in English + lint (0 errors)
+node engine/cli.mjs build   answers.json --lang fr  # → sheet in French
+node engine/cli.mjs build   answers.json --lang de  # → sheet in German
+node engine/cli.mjs build   answers.json --lang es  # → sheet in Spanish
 node engine/cli.mjs check   sheet.character.json    # audit an existing sheet
 ```
+
+`--lang` accepts: `en` `fr` `de` `es` `it` `ja` `ru` `zh` `ar` — falls back to English if a label is missing.
 
 Worked examples live in [examples/](examples/) (`dwarf-fighter`, `elf-druid` — answers plus the
 expected sheet).
@@ -121,9 +126,24 @@ node benchmarks/runner.mjs --backend live --conditions bare,grounding-only,skill
 
 ## Languages
 
-Output is in French or English. The internal ids are French (the engine's keys); the English
-display names come from `data/labels.en.json` (the structural entities are complete; spell names
-are being added over time).
+The engine outputs a full character sheet in **9 languages** — every class, species, background,
+skill, ability score and spell name is displayed in the chosen language, sourced from the
+publisher-verified label files in `data/labels.*.json`.
+
+| Language | Code | Source |
+|----------|------|--------|
+| 🇬🇧 English | `en` | PHB 2024 (Wizards of the Coast) |
+| 🇫🇷 Français | `fr` | PHB 2024 (Blackbook Éditions) |
+| 🇩🇪 Deutsch | `de` | PHB 2024 (Ulisses Spiele) |
+| 🇪🇸 Español | `es` | PHB 2024 (Devir) |
+| 🇮🇹 Italiano | `it` | PHB 2024 (Need Games) |
+| 🇯🇵 日本語 | `ja` | PHB 2024 (Hobby Japan) |
+| 🇷🇺 Русский | `ru` | D&D 5e (Hobby World — quasi-official) |
+| 🇨🇳 中文 | `zh` | Licensed CN edition + community standard |
+| 🇸🇦 العربية | `ar` | Community (su3luq.com — TTRPG localization studio) |
+
+Pass `--lang <code>` to `engine/cli.mjs build`. All label files are triple-verified against each
+publisher's official text; new-2024-only terms without a confirmed translation fall back to English.
 
 ## Using it
 

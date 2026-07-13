@@ -6,7 +6,7 @@
 ![licence : MIT](https://img.shields.io/badge/licence-MIT-black)
 ![règles : D&D 2024 (5.5)](https://img.shields.io/badge/r%C3%A8gles-D%26D%202024%20(5.5)-black)
 ![skills : 4](https://img.shields.io/badge/skills-build%20·%20check%20·%20lookup%20·%20help-black)
-![langues : FR + EN](https://img.shields.io/badge/langues-FR%20%2B%20EN-black)
+![langues : 9](https://img.shields.io/badge/langues-EN·FR·DE·ES·IT·JA·RU·ZH·AR-black)
 ![ancré](https://img.shields.io/badge/ancr%C3%A9-z%C3%A9ro%20r%C3%A8gle%20invent%C3%A9e-black)
 
 > [!WARNING]
@@ -32,16 +32,16 @@ fourni et lance un moteur déterministe.** Voir [rules/grounding.md](rules/groun
 
 | Skill | Rôle |
 |-------|------|
-| [`dnd-build`](skills/dnd-build/SKILL.md)  | Création guidée d'un perso niveau 1, 0 erreur de règle. |
+| [`dnd-build`](skills/dnd-build/SKILL.md)  | Création guidée d'un perso niveau 1, 0 erreur de règle, sortie en 9 langues. |
 | [`dnd-check`](skills/dnd-check/SKILL.md)  | Audit d'une fiche existante, signale chaque erreur (le « checker »). |
 | [`dnd-lookup`](skills/dnd-lookup/SKILL.md) | Recherche un sort/don/classe dans le catalogue et cite la source. |
-| [`dnd-help`](skills/dnd-help/SKILL.md)   | Fonctionnement de la famille et principe d'ancrage. |
+| [`dnd-help`](skills/dnd-help/SKILL.md)   | Fonctionnement de la famille, langues supportées, principe d'ancrage. |
 
 ## Comment ça marche
 
 - **Catalogue** (`data/*.json`) : 12 classes, 48 sous-classes, 10 espèces, 16 historiques,
-  75 dons, ~390 sorts, équipement — données de règles déterministes, générées depuis la source
-  de vérité `docs/`.
+  75 dons, ~391 sorts — données de règles déterministes, générées depuis `docs/`. Noms d'affichage
+  en 9 langues via `data/labels.*.json` (EN, FR, DE, ES, IT, JA, RU, ZH, AR — tous vérifiés).
 - **Moteur** (`engine/`) : `resolver.mjs` ne renvoie que les options légales à chaque étape ;
   `build-character.mjs` calcule CA/PV/DD/nombre de sorts et vérifie le résultat ; `cli.mjs` est
   le wrapper appelé par les skills.
@@ -51,10 +51,15 @@ fourni et lance un moteur déterministe.** Voir [rules/grounding.md](rules/groun
 
 ```bash
 # depuis la racine du repo
-node engine/cli.mjs options answers.json           # prochains choix légaux (filtrés par les règles)
-node engine/cli.mjs build   answers.json --lang fr # answers -> fiche + lint (0 erreur exigée)
-node engine/cli.mjs check   fiche.character.json   # audit d'une fiche existante
+node engine/cli.mjs options answers.json            # prochains choix légaux (filtrés par les règles)
+node engine/cli.mjs build   answers.json --lang fr  # answers → fiche en français + lint (0 erreur)
+node engine/cli.mjs build   answers.json --lang en  # → fiche en anglais
+node engine/cli.mjs build   answers.json --lang de  # → fiche en allemand
+node engine/cli.mjs build   answers.json --lang es  # → fiche en espagnol
+node engine/cli.mjs check   fiche.character.json    # audit d'une fiche existante
 ```
+
+`--lang` accepte : `en` `fr` `de` `es` `it` `ja` `ru` `zh` `ar` — repli sur l'anglais si un label est absent.
 
 Exemples : [examples/](examples/) (`dwarf-fighter`, `elf-druid` — answers + fiche attendue).
 
@@ -77,9 +82,24 @@ Exemples : [examples/](examples/) (`dwarf-fighter`, `elf-druid` — answers + fi
 
 ## Multilingue
 
-Sortie en français ou anglais. Les `id` internes sont en français (clés du moteur) ; les noms
-anglais viennent de `data/labels.en.json` (entités structurelles complètes ; noms de sorts =
-extension incrémentale).
+Le moteur génère des fiches complètes en **9 langues** — noms de classes, espèces, historiques,
+compétences, caractéristiques et sorts dans la langue choisie, depuis les fichiers
+`data/labels.*.json` vérifiés auprès des éditeurs officiels.
+
+| Langue | Code | Éditeur |
+|--------|------|---------|
+| 🇬🇧 English | `en` | PHB 2024 (Wizards of the Coast) |
+| 🇫🇷 Français | `fr` | PHB 2024 (Blackbook Éditions) |
+| 🇩🇪 Deutsch | `de` | PHB 2024 (Ulisses Spiele) |
+| 🇪🇸 Español | `es` | PHB 2024 (Devir) |
+| 🇮🇹 Italiano | `it` | PHB 2024 (Need Games) |
+| 🇯🇵 日本語 | `ja` | PHB 2024 (Hobby Japan) |
+| 🇷🇺 Русский | `ru` | D&D 5e (Hobby World — quasi-officiel) |
+| 🇨🇳 中文 | `zh` | Édition CN licenciée + standard communautaire |
+| 🇸🇦 العربية | `ar` | Communauté (su3luq.com — studio de localisation TTRPG) |
+
+Tous les labels ont été triple-vérifiés contre les textes officiels. Les termes exclusifs à 2024
+sans traduction confirmée restent en anglais.
 
 ## Développement
 
