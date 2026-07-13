@@ -1,0 +1,23 @@
+{
+  "id": "halfling-rogue-stats",
+  "skill": "dnd-build",
+  "suite": "arithmetic",
+  "level": "derived-stats",
+  "lang": "en",
+  "trap": "Models often add PB to Passive Perception even without Perception proficiency (PP should be 10+WIS=10, not 12 or 14). Also sometimes use d6 instead of Rogue's d8 hit die, producing HP 8 instead of 9. Rogue saves are DEX+INT, not DEX+CHA.",
+  "prompt": "A D&D 2024 (5.5e) level-1 character has been built. Compute the derived stats and return them as JSON.\n\nCHARACTER BRIEF:\n- Class: Rogue (level 1)\n- Species: Halfling\n- Background: Criminal\n- Ability Scores (FINAL — do not modify): STR 8, DEX 15, CON 13, INT 12, WIS 10, CHA 14\n- Equipment: Leather Armor, Short Sword, Short Bow\n- Skills proficient: Acrobatics, Athletics, Insight, Intimidation (class), Stealth, Sleight of Hand (background)\n\nReturn ONLY this JSON:\n{\n  \"proficiencyBonus\": ?,\n  \"hitPoints\": ?,\n  \"armorClass\": ?,\n  \"passivePerception\": ?,\n  \"savingThrowProficiencies\": [?, ?],\n  \"spellSaveDC\": null,\n  \"spellAttackBonus\": null,\n  \"cantripsCount\": null,\n  \"preparedSpellsCount\": null\n}",
+  "oracle": {
+    "proficiencyBonus": 2,
+    "hitPoints": 9,
+    "armorClass": 13,
+    "passivePerception": 10,
+    "savingThrowProficiencies": [
+      "dex",
+      "int"
+    ],
+    "spellSaveDC": null,
+    "spellAttackBonus": null,
+    "cantripsCount": null,
+    "preparedSpellsCount": null
+  }
+}

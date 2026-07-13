@@ -1,0 +1,23 @@
+{
+  "id": "tiefling-sorcerer-stats",
+  "skill": "dnd-build",
+  "suite": "arithmetic",
+  "level": "derived-stats",
+  "lang": "en",
+  "trap": "Models frequently confuse the Sorcerer's d6 hit die with Warlock's d8, producing HP 9 instead of 7. Unarmored AC = 10+DEX only (not 10+DEX+CON — that is the Monk's Unarmored Defense). Sorcerer saves are CON+CHA, not INT+CHA.",
+  "prompt": "A D&D 2024 (5.5e) level-1 character has been built. Compute the derived stats and return them as JSON.\n\nCHARACTER BRIEF:\n- Class: Sorcerer (level 1)\n- Species: Tiefling (Abyssal lineage — grants Thaumaturgy cantrip, Poison Spray cantrip)\n- Background: Charlatan\n- Ability Scores (FINAL — do not modify): STR 8, DEX 14, CON 13, INT 10, WIS 12, CHA 15\n- Equipment: No armor worn\n- Skills proficient: Arcana, Intimidation (class), Sleight of Hand, Deception (background)\n- Cantrips chosen: Acid Splash, Chill Touch, True Strike, Thunderclap (4 class cantrips; plus 2 from lineage = 6 total)\n- Prepared spells chosen: Enlarge/Reduce, Enhance Ability (2 spells)\n\nReturn ONLY this JSON:\n{\n  \"proficiencyBonus\": ?,\n  \"hitPoints\": ?,\n  \"armorClass\": ?,\n  \"passivePerception\": ?,\n  \"savingThrowProficiencies\": [?, ?],\n  \"spellSaveDC\": ?,\n  \"spellAttackBonus\": ?,\n  \"cantripsCount\": ?,\n  \"preparedSpellsCount\": ?\n}",
+  "oracle": {
+    "proficiencyBonus": 2,
+    "hitPoints": 7,
+    "armorClass": 12,
+    "passivePerception": 11,
+    "savingThrowProficiencies": [
+      "con",
+      "cha"
+    ],
+    "spellSaveDC": 12,
+    "spellAttackBonus": 4,
+    "cantripsCount": 6,
+    "preparedSpellsCount": 2
+  }
+}
