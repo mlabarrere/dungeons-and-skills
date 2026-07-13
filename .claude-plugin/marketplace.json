@@ -1,26 +1,34 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "dungeons-and-skills",
+  "description": "Grounded D&D 2024 character-builder skills for Claude Code — build, check, lookup and help, all rules-verified by a deterministic engine (zero hallucinated rules).",
   "owner": {
-    "name": "Dungeons & Skills contributors"
+    "name": "Dungeons & Skills contributors",
+    "url": "https://github.com/mlabarrere/dungeons-and-skills"
   },
   "plugins": [
     {
       "name": "dungeons-and-skills",
-      "source": "./",
+      "version": "0.1.0",
       "description": "Dungeons & Skills — grounded D&D 2024 character-builder skills (build, check, lookup, help).",
+      "category": "productivity",
+      "author": {
+        "name": "Dungeons & Skills contributors",
+        "url": "https://github.com/mlabarrere/dungeons-and-skills"
+      },
+      "source": "./",
       "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
-      "license": "MIT",
       "keywords": [
-        "claude-skills",
-        "agent-skills",
         "dnd",
         "dnd-2024",
         "5e",
         "character-builder",
         "grounding",
-        "anti-hallucination"
+        "anti-hallucination",
+        "claude-skills",
+        "agent-skills"
       ],
-      "icon": "./assets/logo.svg"
+      "tags": ["community-managed"]
     }
   ]
 }

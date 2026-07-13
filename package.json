@@ -1,7 +1,6 @@
 {
   "name": "dungeons-and-skills",
   "version": "0.1.0",
-  "private": true,
   "license": "MIT",
   "author": { "name": "Dungeons & Skills contributors" },
   "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
