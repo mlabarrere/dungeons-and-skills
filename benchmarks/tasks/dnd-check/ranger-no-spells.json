@@ -1,0 +1,38 @@
+{
+  "id": "ranger-no-spells",
+  "skill": "dnd-check",
+  "suite": "adversarial",
+  "level": "trap-edition",
+  "lang": "en",
+  "trap": "5e-2014-vs-5.5: Rangers have 2 prepared spells at level 1 in D&D 2024. In 5e 2014 they had none. Models trained on 2014 data will not flag the missing spells.",
+  "base": {
+    "_id": "elf-ranger",
+    "name": "Sylva",
+    "class": "ranger",
+    "species": "elf",
+    "lineage": "elfe-sylvestre",
+    "background": "soldier",
+    "abilityScores": { "str": 10, "dex": 15, "con": 13, "int": 8, "wis": 14, "cha": 12 },
+    "ranger-competences": ["stealth", "animal-handling", "perception"],
+    "ranger-prepares": ["hunters-mark", "fog-cloud"],
+    "ranger-equipement": "A",
+    "elf-sens-aiguises": "survival",
+    "elf-sylvestre-caracteristique-incantation": "wis",
+    "soldier-caracteristiques": "dex",
+    "soldier-boite-de-jeux": "boite-de-jeux",
+    "origine-langues-choix": ["draconique", "geant"]
+  },
+  "prompt": "Audit this D&D 2024 (5.5) level-1 character sheet. Report every rules error with a correction. If the sheet is fully correct, report no findings.\n\nSHEET:\n{\n  \"class\": \"ranger\",\n  \"species\": \"elf (wood)\",\n  \"background\": \"soldier\",\n  \"abilityScores\": { \"str\": 10, \"dex\": 15, \"con\": 13, \"int\": 8, \"wis\": 14, \"cha\": 12 },\n  \"proficiencyBonus\": 2,\n  \"armorClass\": 14,\n  \"hitPoints\": 11,\n  \"passivePerception\": 14,\n  \"savingThrowProficiencies\": [\"str\", \"dex\"],\n  \"skillProficiencies\": [\"athletics\", \"stealth\", \"animal-handling\", \"intimidation\", \"perception\", \"survival\"],\n  \"spellcastingAbility\": \"wis\",\n  \"spellSaveDC\": 12,\n  \"spellAttackBonus\": 4,\n  \"cantrips\": [\"druidcraft\"],\n  \"preparedSpells\": []\n}",
+  "mutations": [
+    {
+      "field": "prepared",
+      "from": ["hunters-mark", "fog-cloud"],
+      "to": [],
+      "category": "wrong-count",
+      "severity": "critical",
+      "expected": ["hunters-mark", "fog-cloud"],
+      "root": true,
+      "trap": "ranger-has-2-spells-at-level-1-in-5.5-not-2014"
+    }
+  ]
+}

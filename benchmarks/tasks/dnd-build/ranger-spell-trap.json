@@ -1,0 +1,27 @@
+{
+  "id": "ranger-spell-trap",
+  "skill": "dnd-build",
+  "suite": "adversarial",
+  "level": "trap-edition",
+  "caster": true,
+  "lang": "en",
+  "trap": "Rangers have 2 prepared spells at level 1 in D&D 2024 (5.5). In 5e 2014 they had none until level 2. Models trained mostly on 2014 data will produce a Ranger with 0 prepared spells.",
+  "prompt": "Create a D&D 2024 (5.5e) level-1 character with this exact brief: Wood Elf Ranger, Soldier background. Standard array [15,14,13,12,10,8] assigned as follows: DEX 15, WIS 14, CON 13, STR 12, CHA 10, INT 8. Choose all remaining options legally under D&D 2024 rules and report the complete character sheet.",
+  "reference": {
+    "_id": "elf-ranger",
+    "name": "Sylva",
+    "class": "ranger",
+    "species": "elf",
+    "lineage": "elfe-sylvestre",
+    "background": "soldier",
+    "abilityScores": { "str": 12, "dex": 15, "con": 13, "int": 8, "wis": 14, "cha": 10 },
+    "ranger-competences": ["stealth", "animal-handling", "perception"],
+    "ranger-prepares": ["hunters-mark", "fog-cloud"],
+    "ranger-equipement": "A",
+    "elf-sens-aiguises": "survival",
+    "elf-sylvestre-caracteristique-incantation": "wis",
+    "soldier-caracteristiques": "dex",
+    "soldier-boite-de-jeux": "boite-de-jeux",
+    "origine-langues-choix": ["draconique", "geant"]
+  }
+}

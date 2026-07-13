@@ -1,0 +1,26 @@
+{
+  "id": "human-feat-trap",
+  "skill": "dnd-build",
+  "suite": "adversarial",
+  "level": "trap-edition",
+  "caster": false,
+  "lang": "en",
+  "trap": "All Humans get 1 origin feat in D&D 2024. In 5e 2014 only Variant Human had a feat. Bare models omit the feat and typically also miss the extra skill proficiency from human-competent.",
+  "prompt": "Create a D&D 2024 (5.5e) level-1 character with this exact brief: Human Fighter, Soldier background. Standard array [15,14,13,12,10,8] assigned as follows: STR 15, CON 14, DEX 13, WIS 12, CHA 10, INT 8. Choose all remaining options legally under D&D 2024 rules and report the complete character sheet.",
+  "reference": {
+    "_id": "human-fighter",
+    "name": "Marcus",
+    "class": "fighter",
+    "species": "human",
+    "background": "soldier",
+    "abilityScores": { "str": 15, "dex": 13, "con": 14, "int": 8, "wis": 12, "cha": 10 },
+    "fighter-competences": ["athletics", "intimidation"],
+    "fighter-style-de-combat": "defense",
+    "fighter-equipement": "A",
+    "human-competent": "perception",
+    "human-polyvalent": "chanceux",
+    "soldier-caracteristiques": "str",
+    "soldier-boite-de-jeux": "boite-de-jeux",
+    "origine-langues-choix": ["elvish", "dwarvish"]
+  }
+}

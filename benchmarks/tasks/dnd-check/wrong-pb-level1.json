@@ -1,0 +1,37 @@
+{
+  "id": "wrong-pb-level1",
+  "skill": "dnd-check",
+  "suite": "adversarial",
+  "level": "trap-arithmetic",
+  "lang": "en",
+  "trap": "Proficiency Bonus is always +2 at level 1 (increases to +3 only at level 5). Models sometimes confuse this, especially when conflating it with ability modifiers.",
+  "base": {
+    "_id": "human-fighter",
+    "name": "Marcus",
+    "class": "fighter",
+    "species": "human",
+    "background": "soldier",
+    "abilityScores": { "str": 15, "dex": 13, "con": 14, "int": 8, "wis": 12, "cha": 10 },
+    "fighter-competences": ["athletics", "intimidation"],
+    "fighter-style-de-combat": "defense",
+    "fighter-equipement": "A",
+    "human-competent": "perception",
+    "human-polyvalent": "chanceux",
+    "soldier-caracteristiques": "str",
+    "soldier-boite-de-jeux": "boite-de-jeux",
+    "origine-langues-choix": ["elvish", "dwarvish"]
+  },
+  "prompt": "Audit this D&D 2024 (5.5) level-1 character sheet. Report every rules error with a correction. If the sheet is fully correct, report no findings.\n\nSHEET:\n{\n  \"class\": \"fighter\",\n  \"species\": \"human\",\n  \"background\": \"soldier\",\n  \"abilityScores\": { \"str\": 15, \"dex\": 13, \"con\": 14, \"int\": 8, \"wis\": 12, \"cha\": 10 },\n  \"proficiencyBonus\": 3,\n  \"armorClass\": 16,\n  \"hitPoints\": 12,\n  \"passivePerception\": 13,\n  \"savingThrowProficiencies\": [\"str\", \"con\"],\n  \"skillProficiencies\": [\"athletics\", \"intimidation\", \"perception\"],\n  \"fightingStyle\": \"defense\",\n  \"originFeat\": \"chanceux\",\n  \"cantrips\": [],\n  \"preparedSpells\": []\n}",
+  "mutations": [
+    {
+      "field": "proficiency-bonus",
+      "from": 2,
+      "to": 3,
+      "category": "derived-stat-error",
+      "severity": "critical",
+      "expected": 2,
+      "root": true,
+      "trap": "pb-is-2-at-level-1-not-3"
+    }
+  ]
+}
