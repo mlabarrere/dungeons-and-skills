@@ -12,6 +12,10 @@ description: >
 argument-hint: ""
 allowed-tools: Bash(node *)
 license: MIT
+version: "0.1.0"
+author: "mlabarrere"
+tags: [dnd, dnd-2024, 5e, help, documentation, rpg]
+agents: [claude-code]
 ---
 
 # dnd-help — how the D&D 2024 builder works

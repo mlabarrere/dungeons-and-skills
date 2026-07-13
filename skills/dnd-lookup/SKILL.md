@@ -15,6 +15,10 @@ description: >
 argument-hint: "[fr|en]"
 allowed-tools: Bash(node *)
 license: MIT
+version: "0.1.0"
+author: "mlabarrere"
+tags: [dnd, dnd-2024, 5e, rules-lookup, reference, rpg, grounding]
+agents: [claude-code]
 ---
 
 # dnd-lookup — rules reference from the catalog only

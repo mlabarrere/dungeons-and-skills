@@ -14,6 +14,10 @@ description: >
 argument-hint: "[fr|en]"
 allowed-tools: Bash(node *)
 license: MIT
+version: "0.1.0"
+author: "mlabarrere"
+tags: [dnd, dnd-2024, 5e, sheet-validator, rules-checker, rpg, grounding]
+agents: [claude-code]
 ---
 
 # dnd-check — audit an existing sheet (the sheet checker)

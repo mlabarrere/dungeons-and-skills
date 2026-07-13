@@ -18,6 +18,10 @@ description: >
 argument-hint: "[fr|en]"
 allowed-tools: Bash(node *)
 license: MIT
+version: "0.1.0"
+author: "mlabarrere"
+tags: [dnd, dnd-2024, 5e, character-builder, rpg, grounding, anti-hallucination]
+agents: [claude-code]
 ---
 
 # dnd-build — guided level-1 character creation
