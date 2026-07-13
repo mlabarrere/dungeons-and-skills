@@ -7,19 +7,19 @@
   "oracle": {
     "mode": "list",
     "expected": [
-      "assistance",
-      "bouffee-de-poison",
-      "coup-de-tonnerre",
-      "crosse-des-druides",
-      "druidisme",
-      "elementalisme",
-      "flammes",
-      "fouet-epineux",
+      "guidance",
+      "poison-spray",
+      "thunderclap",
+      "shillelagh",
+      "druidcraft",
+      "elementalism",
+      "produce-flame",
+      "thorn-whip",
       "message",
-      "poussiere-d-etoile",
-      "reparation",
+      "starry-wisp",
+      "mending",
       "resistance",
-      "stabilisation"
+      "stabilize"
     ]
   }
 }

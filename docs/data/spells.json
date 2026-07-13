@@ -1,6 +1,6 @@
 [
   {
-    "id": "agrandissement-rapetissement",
+    "id": "enlarge-reduce",
     "name": "Agrandissement/rapetissement",
     "ref": "../sorts/agrandissement-rapetissement.html",
     "status": "source",
@@ -18,17 +18,17 @@
     "material": "une pincee de poudre de fer",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "-",
     "source": "img:237"
   },
   {
-    "id": "aide",
+    "id": "aid",
     "name": "Aide",
     "ref": "../sorts/aide.html",
     "status": "source",
@@ -46,18 +46,18 @@
     "material": "une bandelette de tissu blanc",
     "duration": "8h",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
+      "bard",
+      "cleric",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:237"
   },
   {
-    "id": "alarme",
+    "id": "alarm",
     "name": "Alarme",
     "ref": "../sorts/alarme.html",
     "status": "source",
@@ -75,15 +75,15 @@
     "material": "une cloche et du fil d'argent",
     "duration": "8h",
     "classes": [
-      "magicien",
-      "rodeur"
+      "wizard",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:237"
   },
   {
-    "id": "alienation",
+    "id": "befuddlement",
     "name": "Alienation",
     "ref": "../sorts/alienation.html",
     "status": "source",
@@ -101,17 +101,17 @@
     "material": "l'anneau seul d'un trousseau de clefs",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "druide",
-      "magicien",
-      "occultiste"
+      "bard",
+      "druid",
+      "wizard",
+      "warlock"
     ],
     "save": "int",
     "damageType": "psychique",
     "source": "img:237"
   },
   {
-    "id": "allie-planaire",
+    "id": "planar-ally",
     "name": "Allie planaire",
     "ref": "../sorts/allie-planaire.html",
     "status": "source",
@@ -128,14 +128,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": null,
     "damageType": null,
     "source": "img:237"
   },
   {
-    "id": "amelioration-de-caracteristique",
+    "id": "enhance-ability",
     "name": "Amelioration de caracteristique",
     "ref": "../sorts/amelioration-de-caracteristique.html",
     "status": "source",
@@ -153,19 +153,19 @@
     "material": "une plume ou une touffe de fourrure",
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:238,239"
   },
   {
-    "id": "amitie-avec-les-animaux",
+    "id": "animal-friendship",
     "name": "Amitie avec les animaux",
     "ref": "../sorts/amitie-avec-les-animaux.html",
     "status": "source",
@@ -183,16 +183,16 @@
     "material": "un peu de nourriture",
     "duration": "24h",
     "classes": [
-      "barde",
-      "druide",
-      "rodeur"
+      "bard",
+      "druid",
+      "ranger"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:238,239"
   },
   {
-    "id": "animation-des-morts",
+    "id": "animate-dead",
     "name": "Animation des morts",
     "ref": "../sorts/animation-des-morts.html",
     "status": "source",
@@ -210,15 +210,15 @@
     "material": "une goutte de sang, un morceau de chair et une pincee de poudre d'os",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "magicien"
+      "cleric",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:238,239"
   },
   {
-    "id": "animation-des-objets",
+    "id": "animate-objects",
     "name": "Animation des objets",
     "ref": "../sorts/animation-des-objets.html",
     "status": "source",
@@ -235,16 +235,16 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:238,239"
   },
   {
-    "id": "antidetection",
+    "id": "nondetection",
     "name": "Antidetection",
     "ref": "../sorts/antidetection.html",
     "status": "source",
@@ -262,16 +262,16 @@
     "material": "une pincee de poudre de diamant d'une valeur minimale de 25 po, que le sort detruit",
     "duration": "8h",
     "classes": [
-      "barde",
-      "magicien",
-      "rodeur"
+      "bard",
+      "wizard",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:240"
   },
   {
-    "id": "apaisement-des-emotions",
+    "id": "calm-emotions",
     "name": "Apaisement des emotions",
     "ref": "../sorts/apaisement-des-emotions.html",
     "status": "source",
@@ -288,15 +288,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "clerc"
+      "bard",
+      "cleric"
     ],
     "save": "cha",
     "damageType": null,
     "source": "img:240"
   },
   {
-    "id": "apparence-trompeuse",
+    "id": "seeming",
     "name": "Apparence trompeuse",
     "ref": "../sorts/apparence-trompeuse.html",
     "status": "source",
@@ -313,16 +313,16 @@
     "material": null,
     "duration": "8h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "cha",
     "damageType": null,
     "source": "img:240"
   },
   {
-    "id": "appel-de-destrier",
+    "id": "find-steed",
     "name": "Appel de destrier",
     "ref": "../sorts/appel-de-destrier.html",
     "status": "source",
@@ -346,7 +346,7 @@
     "source": "img:241,242"
   },
   {
-    "id": "appel-de-familier",
+    "id": "find-familiar",
     "name": "Appel de familier",
     "ref": "../sorts/appel-de-familier.html",
     "status": "source",
@@ -364,14 +364,14 @@
     "material": "de l'encens qui brule d'une valeur minimale de 10 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:241,242"
   },
   {
-    "id": "appel-de-la-foudre",
+    "id": "call-lightning",
     "name": "Appel de la foudre",
     "ref": "../sorts/appel-de-la-foudre.html",
     "status": "source",
@@ -388,14 +388,14 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "dex",
     "damageType": "foudre",
     "source": "img:243"
   },
   {
-    "id": "arme-elementaire",
+    "id": "elemental-weapon",
     "name": "Arme elementaire",
     "ref": "../sorts/arme-elementaire.html",
     "status": "source",
@@ -412,16 +412,16 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "druide",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": "-",
     "source": "img:243"
   },
   {
-    "id": "arme-magique",
+    "id": "magic-weapon",
     "name": "Arme magique",
     "ref": "../sorts/arme-magique.html",
     "status": "source",
@@ -438,17 +438,17 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "ensorceleur",
-      "magicien",
+      "sorcerer",
+      "wizard",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:244"
   },
   {
-    "id": "arme-spirituelle",
+    "id": "spiritual-weapon",
     "name": "Arme spirituelle",
     "ref": "../sorts/arme-spirituelle.html",
     "status": "source",
@@ -465,14 +465,14 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": null,
     "damageType": "force",
     "source": "img:244"
   },
   {
-    "id": "armure-d-agathys",
+    "id": "armor-of-agathys",
     "name": "Armure d'Agathys",
     "ref": "../sorts/armure-d-agathys.html",
     "status": "source",
@@ -490,14 +490,14 @@
     "material": "un eclat de verre bleu",
     "duration": "1h",
     "classes": [
-      "occultiste"
+      "warlock"
     ],
     "save": null,
     "damageType": "froid",
     "source": "img:245"
   },
   {
-    "id": "armure-du-mage",
+    "id": "mage-armor",
     "name": "Armure du mage",
     "ref": "../sorts/armure-du-mage.html",
     "status": "source",
@@ -515,15 +515,15 @@
     "material": "un morceau de cuir traite",
     "duration": "8h",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:245"
   },
   {
-    "id": "arret-du-temps",
+    "id": "time-stop",
     "name": "Arret du temps",
     "ref": "../sorts/arret-du-temps.html",
     "status": "source",
@@ -539,15 +539,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:245"
   },
   {
-    "id": "aspersion-acide",
+    "id": "acid-splash",
     "name": "Aspersion acide",
     "ref": "../sorts/aspersion-acide.html",
     "status": "source",
@@ -564,15 +564,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "acide",
     "source": "img:246"
   },
   {
-    "id": "assassin-imaginaire",
+    "id": "phantasmal-killer",
     "name": "Assassin imaginaire",
     "ref": "../sorts/assassin-imaginaire.html",
     "status": "source",
@@ -589,15 +589,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:246"
   },
   {
-    "id": "assistance",
+    "id": "guidance",
     "name": "Assistance",
     "ref": "../sorts/assistance.html",
     "status": "source",
@@ -614,15 +614,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "clerc",
-      "druide"
+      "cleric",
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:246"
   },
   {
-    "id": "augure",
+    "id": "augury",
     "name": "Augure",
     "ref": "../sorts/augure.html",
     "status": "source",
@@ -640,16 +640,16 @@
     "material": "cartes, os ou batonnets graves specialement, ou objets divinatoires comparables, d'une valeur minimale de 25 po",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
-      "magicien"
+      "cleric",
+      "druid",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:246"
   },
   {
-    "id": "aura-de-purete",
+    "id": "aura-of-purity",
     "name": "Aura de purete",
     "ref": "../sorts/aura-de-purete.html",
     "status": "source",
@@ -665,7 +665,7 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -673,7 +673,7 @@
     "source": "img:247"
   },
   {
-    "id": "aura-de-vie",
+    "id": "aura-of-life",
     "name": "Aura de vie",
     "ref": "../sorts/aura-de-vie.html",
     "status": "source",
@@ -689,7 +689,7 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -697,7 +697,7 @@
     "source": "img:247"
   },
   {
-    "id": "aura-de-vitalite",
+    "id": "aura-of-vitality",
     "name": "Aura de vitalite",
     "ref": "../sorts/aura-de-vitalite.html",
     "status": "source",
@@ -713,8 +713,8 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "clerc",
-      "druide",
+      "cleric",
+      "druid",
       "paladin"
     ],
     "save": null,
@@ -722,7 +722,7 @@
     "source": "img:247"
   },
   {
-    "id": "aura-du-croise",
+    "id": "crusaders-mantle",
     "name": "Aura du croise",
     "ref": "../sorts/aura-du-croise.html",
     "status": "source",
@@ -745,7 +745,7 @@
     "source": "img:246"
   },
   {
-    "id": "aura-magique-de-nystul",
+    "id": "nystuls-magic-aura",
     "name": "Aura magique de Nystul",
     "ref": "../sorts/aura-magique-de-nystul.html",
     "status": "source",
@@ -763,14 +763,14 @@
     "material": "un petit carre de soie",
     "duration": "24h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:246"
   },
   {
-    "id": "aura-sacree",
+    "id": "holy-aura",
     "name": "Aura sacree",
     "ref": "../sorts/aura-sacree.html",
     "status": "source",
@@ -788,14 +788,14 @@
     "material": "un reliquaire d'une valeur minimale de 1 000 po",
     "duration": "conc-1min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "con",
     "damageType": null,
     "source": "img:247"
   },
   {
-    "id": "aversion-attirance",
+    "id": "antipathy-sympathy",
     "name": "Aversion/attirance",
     "ref": "../sorts/aversion-attirance.html",
     "status": "source",
@@ -813,16 +813,16 @@
     "material": "un melange de vinaigre et de miel",
     "duration": "10jours",
     "classes": [
-      "barde",
-      "druide",
-      "magicien"
+      "bard",
+      "druid",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:247"
   },
   {
-    "id": "bagou",
+    "id": "glibness",
     "name": "Bagou",
     "ref": "../sorts/bagou.html",
     "status": "source",
@@ -838,15 +838,15 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "barde",
-      "occultiste"
+      "bard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:248"
   },
   {
-    "id": "baies-nourricieres",
+    "id": "goodberry",
     "name": "Baies nourricieres",
     "ref": "../sorts/baies-nourricieres.html",
     "status": "source",
@@ -864,15 +864,15 @@
     "material": "une branche de gui",
     "duration": "24h",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:248"
   },
   {
-    "id": "bannissement",
+    "id": "banishment",
     "name": "Bannissement",
     "ref": "../sorts/bannissement.html",
     "status": "source",
@@ -890,10 +890,10 @@
     "material": "un pentacle",
     "duration": "conc-1min",
     "classes": [
-      "clerc",
-      "ensorceleur",
-      "magicien",
-      "occultiste",
+      "cleric",
+      "sorcerer",
+      "wizard",
+      "warlock",
       "paladin"
     ],
     "save": "cha",
@@ -901,7 +901,7 @@
     "source": "img:248"
   },
   {
-    "id": "barriere-de-lames",
+    "id": "blade-barrier",
     "name": "Barriere de lames",
     "ref": "../sorts/barriere-de-lames.html",
     "status": "source",
@@ -918,14 +918,14 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "dex",
     "damageType": "force",
     "source": "img:248"
   },
   {
-    "id": "benediction",
+    "id": "bless",
     "name": "Benediction",
     "ref": "../sorts/benediction.html",
     "status": "source",
@@ -943,7 +943,7 @@
     "material": "un symbole sacre d'une valeur minimale de 5 po",
     "duration": "conc-1min",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -951,7 +951,7 @@
     "source": "img:248"
   },
   {
-    "id": "blessure",
+    "id": "inflict-wounds",
     "name": "Blessure",
     "ref": "../sorts/blessure.html",
     "status": "source",
@@ -968,14 +968,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "con",
     "damageType": "necrotique",
     "source": "img:248"
   },
   {
-    "id": "bouche-magique",
+    "id": "magic-mouth",
     "name": "Bouche magique",
     "ref": "../sorts/bouche-magique.html",
     "status": "source",
@@ -993,15 +993,15 @@
     "material": "poudre de jade d'une valeur minimale de 10 po, que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:249"
   },
   {
-    "id": "bouclier",
+    "id": "shield",
     "name": "Bouclier",
     "ref": "../sorts/bouclier.html",
     "status": "source",
@@ -1018,15 +1018,15 @@
     "material": null,
     "duration": "1round",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:249"
   },
   {
-    "id": "bouclier-de-feu",
+    "id": "fire-shield",
     "name": "Bouclier de feu",
     "ref": "../sorts/bouclier-de-feu.html",
     "status": "source",
@@ -1044,16 +1044,16 @@
     "material": "un peu de phosphore ou une luciole",
     "duration": "10min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": "feu",
     "source": "img:249"
   },
   {
-    "id": "bouclier-de-la-foi",
+    "id": "shield-of-faith",
     "name": "Bouclier de la foi",
     "ref": "../sorts/bouclier-de-la-foi.html",
     "status": "source",
@@ -1071,7 +1071,7 @@
     "material": "un parchemin de priere",
     "duration": "conc-10min",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -1079,7 +1079,7 @@
     "source": "img:250"
   },
   {
-    "id": "bouffee-de-poison",
+    "id": "poison-spray",
     "name": "Bouffee de poison",
     "ref": "../sorts/bouffee-de-poison.html",
     "status": "source",
@@ -1096,17 +1096,17 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": "poison",
     "source": "img:250"
   },
   {
-    "id": "boule-de-feu",
+    "id": "fireball",
     "name": "Boule de feu",
     "ref": "../sorts/boule-de-feu.html",
     "status": "source",
@@ -1124,15 +1124,15 @@
     "material": "une boulette de guano de chauve-souris et de soufre",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:250"
   },
   {
-    "id": "boule-de-feu-a-retardement",
+    "id": "delayed-blast-fireball",
     "name": "Boule de feu a retardement",
     "ref": "../sorts/boule-de-feu-a-retardement.html",
     "status": "source",
@@ -1150,15 +1150,15 @@
     "material": "une boulette de guano de chauve-souris et de soufre",
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:250"
   },
   {
-    "id": "bourrasque",
+    "id": "gust-of-wind",
     "name": "Bourrasque",
     "ref": "../sorts/bourrasque.html",
     "status": "source",
@@ -1176,17 +1176,17 @@
     "material": "une graine de legumineuse",
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": null,
     "source": "img:250"
   },
   {
-    "id": "brume-mortelle",
+    "id": "cloudkill",
     "name": "Brume mortelle",
     "ref": "../sorts/brume-mortelle.html",
     "status": "source",
@@ -1203,15 +1203,15 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "poison",
     "source": "img:250"
   },
   {
-    "id": "cage-de-force",
+    "id": "forcecage",
     "name": "Cage de force",
     "ref": "../sorts/cage-de-force.html",
     "status": "source",
@@ -1229,16 +1229,16 @@
     "material": "poudre de rubis d'une valeur minimale de 1 500 po, que le sort detruit",
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "magicien",
-      "occultiste"
+      "bard",
+      "wizard",
+      "warlock"
     ],
     "save": "cha",
     "damageType": null,
     "source": "img:251"
   },
   {
-    "id": "caresse-du-vampire",
+    "id": "vampiric-touch",
     "name": "Caresse du vampire",
     "ref": "../sorts/caresse-du-vampire.html",
     "status": "source",
@@ -1255,16 +1255,16 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": "necrotique",
     "source": "img:251"
   },
   {
-    "id": "cecite-surdite",
+    "id": "blindness-deafness",
     "name": "Cecite/surdite",
     "ref": "../sorts/cecite-surdite.html",
     "status": "source",
@@ -1280,17 +1280,17 @@
     "material": null,
     "duration": "1min",
     "classes": [
-      "barde",
-      "clerc",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": null,
     "source": "img:251"
   },
   {
-    "id": "cercle-de-mort",
+    "id": "circle-of-death",
     "name": "Cercle de mort",
     "ref": "../sorts/cercle-de-mort.html",
     "status": "source",
@@ -1308,16 +1308,16 @@
     "material": "une perle noire d'une valeur minimale de 500 po reduite en poudre",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "necrotique",
     "source": "img:252"
   },
   {
-    "id": "cercle-de-pouvoir",
+    "id": "circle-of-power",
     "name": "Cercle de pouvoir",
     "ref": "../sorts/cercle-de-pouvoir.html",
     "status": "source",
@@ -1333,8 +1333,8 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "clerc",
-      "magicien",
+      "cleric",
+      "wizard",
       "paladin"
     ],
     "save": null,
@@ -1342,7 +1342,7 @@
     "source": "img:252"
   },
   {
-    "id": "cercle-de-teleportation",
+    "id": "teleportation-circle",
     "name": "Cercle de teleportation",
     "ref": "../sorts/cercle-de-teleportation.html",
     "status": "source",
@@ -1359,17 +1359,17 @@
     "material": "encres rares d'une valeur minimale de 50 po, que le sort detruit",
     "duration": "1round",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:252"
   },
   {
-    "id": "cercle-magique",
+    "id": "magic-circle",
     "name": "Cercle magique",
     "ref": "../sorts/cercle-magique.html",
     "status": "source",
@@ -1387,9 +1387,9 @@
     "material": "poudre d'argent et sel d'une valeur minimale de 100 po, que le sort detruit",
     "duration": "1h",
     "classes": [
-      "clerc",
-      "magicien",
-      "occultiste",
+      "cleric",
+      "wizard",
+      "warlock",
       "paladin"
     ],
     "save": null,
@@ -1397,7 +1397,7 @@
     "source": "img:251"
   },
   {
-    "id": "chaine-d-eclairs",
+    "id": "chain-lightning",
     "name": "Chaine d'eclairs",
     "ref": "../sorts/chaine-d-eclairs.html",
     "status": "source",
@@ -1415,15 +1415,15 @@
     "material": "trois broches en argent",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "foudre",
     "source": "img:252"
   },
   {
-    "id": "champ-antimagie",
+    "id": "antimagic-field",
     "name": "Champ antimagie",
     "ref": "../sorts/champ-antimagie.html",
     "status": "source",
@@ -1441,15 +1441,15 @@
     "material": "limaille de fer",
     "duration": "conc-1h",
     "classes": [
-      "clerc",
-      "magicien"
+      "cleric",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:252"
   },
   {
-    "id": "changement-de-forme",
+    "id": "shapechange",
     "name": "Changement de forme",
     "ref": "../sorts/changement-de-forme.html",
     "status": "source",
@@ -1467,15 +1467,15 @@
     "material": "diademe de jade d'une valeur minimale de 1 500 po",
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "magicien"
+      "druid",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:253"
   },
   {
-    "id": "changement-de-plan",
+    "id": "plane-shift",
     "name": "Changement de plan",
     "ref": "../sorts/changement-de-plan.html",
     "status": "source",
@@ -1493,18 +1493,18 @@
     "material": "une badine metallique fourchue d'une valeur minimale de 250 po, accordee avec un plan d'existence",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:253"
   },
   {
-    "id": "charme-monstre",
+    "id": "charm-monster",
     "name": "Charme-monstre",
     "ref": "../sorts/charme-monstre.html",
     "status": "source",
@@ -1521,18 +1521,18 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:254"
   },
   {
-    "id": "charme-personne",
+    "id": "charm-person",
     "name": "Charme-personne",
     "ref": "../sorts/charme-personne.html",
     "status": "source",
@@ -1549,18 +1549,18 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:254"
   },
   {
-    "id": "chatiment-de-cecite",
+    "id": "blinding-smite",
     "name": "Chatiment de cecite",
     "ref": "../sorts/chatiment-de-cecite.html",
     "status": "source",
@@ -1583,7 +1583,7 @@
     "source": "img:254"
   },
   {
-    "id": "chatiment-de-courroux",
+    "id": "wrathful-smite",
     "name": "Chatiment de courroux",
     "ref": "../sorts/chatiment-de-courroux.html",
     "status": "source",
@@ -1601,12 +1601,12 @@
     "classes": [
       "paladin"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "necrotique",
     "source": "img:254"
   },
   {
-    "id": "chatiment-de-fournaise",
+    "id": "searing-smite",
     "name": "Chatiment de fournaise",
     "ref": "../sorts/chatiment-de-fournaise.html",
     "status": "source",
@@ -1629,7 +1629,7 @@
     "source": "img:255"
   },
   {
-    "id": "chatiment-de-revelation",
+    "id": "shining-smite",
     "name": "Chatiment de revelation",
     "ref": "../sorts/chatiment-de-revelation.html",
     "status": "source",
@@ -1652,7 +1652,7 @@
     "source": "img:255"
   },
   {
-    "id": "chatiment-de-stupeur",
+    "id": "staggering-smite",
     "name": "Chatiment de stupeur",
     "ref": "../sorts/chatiment-de-stupeur.html",
     "status": "source",
@@ -1670,12 +1670,12 @@
     "classes": [
       "paladin"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:255"
   },
   {
-    "id": "chatiment-de-tonnerre",
+    "id": "thunderous-smite",
     "name": "Chatiment de tonnerre",
     "ref": "../sorts/chatiment-de-tonnerre.html",
     "status": "source",
@@ -1693,12 +1693,12 @@
     "classes": [
       "paladin"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "tonnerre",
     "source": "img:256"
   },
   {
-    "id": "chatiment-divin",
+    "id": "divine-smite",
     "name": "Chatiment divin",
     "ref": "../sorts/chatiment-divin.html",
     "status": "source",
@@ -1721,7 +1721,7 @@
     "source": "img:254"
   },
   {
-    "id": "chatiment-du-ban",
+    "id": "banishing-smite",
     "name": "Chatiment du ban",
     "ref": "../sorts/chatiment-du-ban.html",
     "status": "source",
@@ -1744,7 +1744,7 @@
     "source": "img:254"
   },
   {
-    "id": "chaudron-bouillonnant-de-tasha",
+    "id": "tashas-bubbling-cauldron",
     "name": "Chaudron bouillonnant de Tasha",
     "ref": "../sorts/chaudron-bouillonnant-de-tasha.html",
     "status": "source",
@@ -1762,15 +1762,15 @@
     "material": "une louche doree d'une valeur minimale de 500 po",
     "duration": "10min",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:256"
   },
   {
-    "id": "chien-de-garde-de-mordenkainen",
+    "id": "mordenkainens-faithful-hound",
     "name": "Chien de garde de Mordenkainen",
     "ref": "../sorts/chien-de-garde-de-mordenkainen.html",
     "status": "source",
@@ -1788,7 +1788,7 @@
     "material": "un sifflet en argent",
     "duration": "8h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "dex",
     "damageType": "force",
@@ -1813,17 +1813,17 @@
     "material": "un focaliseur d'une valeur minimale de 100 po : une corne ornee pour ecouter, un oeil de verre pour observer",
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "clerc",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:257"
   },
   {
-    "id": "clignotement",
+    "id": "blink",
     "name": "Clignotement",
     "ref": "../sorts/clignotement.html",
     "status": "source",
@@ -1840,8 +1840,8 @@
     "material": null,
     "duration": "1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
@@ -1866,14 +1866,14 @@
     "material": "un diamant d'une valeur minimale de 1 000 po que le sort detruit et un recipient d'une valeur minimale de 2 000 po, assez grand pour contenir la creature a cloner",
     "duration": "instantanee",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:257"
   },
   {
-    "id": "coffre-secret-de-leomund",
+    "id": "leomunds-secret-chest",
     "name": "Coffre secret de Leomund",
     "ref": "../sorts/coffre-secret-de-leomund.html",
     "status": "source",
@@ -1891,14 +1891,14 @@
     "material": "un coffre de 90 cm par 60 et 60, fait de materiaux rares d'une valeur minimale de 5 000 po, et sa replique de taille TP faite des memes materiaux d'une valeur minimale de 50 po",
     "duration": "dissipation",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:257"
   },
   {
-    "id": "colonne-de-flamme",
+    "id": "flame-strike",
     "name": "Colonne de flamme",
     "ref": "../sorts/colonne-de-flamme.html",
     "status": "source",
@@ -1916,14 +1916,14 @@
     "material": "une pincee de soufre",
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:258"
   },
   {
-    "id": "communication-a-distance",
+    "id": "sending",
     "name": "Communication a distance",
     "ref": "../sorts/communication-a-distance.html",
     "status": "source",
@@ -1941,16 +1941,16 @@
     "material": "du fil de cuivre",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "magicien"
+      "bard",
+      "cleric",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:258"
   },
   {
-    "id": "communication-avec-les-animaux",
+    "id": "speak-with-animals",
     "name": "Communication avec les animaux",
     "ref": "../sorts/communication-avec-les-animaux.html",
     "status": "source",
@@ -1967,17 +1967,17 @@
     "material": null,
     "duration": "10min",
     "classes": [
-      "barde",
-      "druide",
-      "occultiste",
-      "rodeur"
+      "bard",
+      "druid",
+      "warlock",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:258"
   },
   {
-    "id": "communication-avec-les-morts",
+    "id": "speak-with-dead",
     "name": "Communication avec les morts",
     "ref": "../sorts/communication-avec-les-morts.html",
     "status": "source",
@@ -1995,16 +1995,16 @@
     "material": "de l'encens qui brule",
     "duration": "10min",
     "classes": [
-      "barde",
-      "clerc",
-      "magicien"
+      "bard",
+      "cleric",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:258"
   },
   {
-    "id": "communication-avec-les-plantes",
+    "id": "speak-with-plants",
     "name": "Communication avec les plantes",
     "ref": "../sorts/communication-avec-les-plantes.html",
     "status": "source",
@@ -2021,16 +2021,16 @@
     "material": null,
     "duration": "10min",
     "classes": [
-      "barde",
-      "druide",
-      "rodeur"
+      "bard",
+      "druid",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:258"
   },
   {
-    "id": "communion",
+    "id": "commune",
     "name": "Communion",
     "ref": "../sorts/communion.html",
     "status": "source",
@@ -2048,14 +2048,14 @@
     "material": "encens",
     "duration": "1min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:259"
   },
   {
-    "id": "communion-avec-la-nature",
+    "id": "commune-with-nature",
     "name": "Communion avec la nature",
     "ref": "../sorts/communion-avec-la-nature.html",
     "status": "source",
@@ -2072,15 +2072,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:259"
   },
   {
-    "id": "comprehension-des-langues",
+    "id": "comprehend-languages",
     "name": "Comprehension des langues",
     "ref": "../sorts/comprehension-des-langues.html",
     "status": "source",
@@ -2098,10 +2098,10 @@
     "material": "une pincee de suie et de sel",
     "duration": "1h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
@@ -2125,14 +2125,14 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde"
+      "bard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:259"
   },
   {
-    "id": "cone-de-froid",
+    "id": "cone-of-cold",
     "name": "Cone de froid",
     "ref": "../sorts/cone-de-froid.html",
     "status": "source",
@@ -2150,9 +2150,9 @@
     "material": "petit cone de verre ou de cristal",
     "duration": "instantanee",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "froid",
@@ -2177,17 +2177,17 @@
     "material": "trois coquilles de noix",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:260"
   },
   {
-    "id": "contact-avec-les-plans",
+    "id": "contact-other-plane",
     "name": "Contact avec les plans",
     "ref": "../sorts/contact-avec-les-plans.html",
     "status": "source",
@@ -2203,15 +2203,15 @@
     "material": null,
     "duration": "1min",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
     "save": "int",
     "damageType": "psychique",
     "source": "img:261"
   },
   {
-    "id": "contact-glacial",
+    "id": "chill-touch",
     "name": "Contact glacial",
     "ref": "../sorts/contact-glacial.html",
     "status": "source",
@@ -2228,9 +2228,9 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "necrotique",
@@ -2254,15 +2254,15 @@
     "material": null,
     "duration": "7jours",
     "classes": [
-      "clerc",
-      "druide"
+      "cleric",
+      "druid"
     ],
     "save": "con",
     "damageType": "necrotique",
     "source": "img:261"
   },
   {
-    "id": "contamination",
+    "id": "harm",
     "name": "Contamination",
     "ref": "../sorts/contamination.html",
     "status": "source",
@@ -2279,14 +2279,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "con",
     "damageType": "necrotique",
     "source": "img:261"
   },
   {
-    "id": "contresort",
+    "id": "counterspell",
     "name": "Contresort",
     "ref": "../sorts/contresort.html",
     "status": "source",
@@ -2302,16 +2302,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "-",
     "source": "img:261"
   },
   {
-    "id": "controle-de-l-eau",
+    "id": "control-water",
     "name": "Controle de l'eau",
     "ref": "../sorts/controle-de-l-eau.html",
     "status": "source",
@@ -2329,16 +2329,16 @@
     "material": "un melange d'eau et de poussiere",
     "duration": "conc-10min",
     "classes": [
-      "clerc",
-      "druide",
-      "magicien"
+      "cleric",
+      "druid",
+      "wizard"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "contondant",
     "source": "img:262"
   },
   {
-    "id": "controle-du-climat",
+    "id": "control-weather",
     "name": "Controle du climat",
     "ref": "../sorts/controle-du-climat.html",
     "status": "source",
@@ -2356,16 +2356,16 @@
     "material": "de l'encens qui brule",
     "duration": "conc-8h",
     "classes": [
-      "clerc",
-      "druide",
-      "magicien"
+      "cleric",
+      "druid",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:261"
   },
   {
-    "id": "convocation-d-aberration",
+    "id": "summon-aberration",
     "name": "Convocation d'aberration",
     "ref": "../sorts/convocation-d-aberration.html",
     "status": "source",
@@ -2383,15 +2383,15 @@
     "material": "un tentacule marine et un globe oculaire dans un flacon incruste de platine d'une valeur minimale de 400 po",
     "duration": "conc-1h",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:263"
   },
   {
-    "id": "convocation-d-artificiel",
+    "id": "summon-construct",
     "name": "Convocation d'artificiel",
     "ref": "../sorts/convocation-d-artificiel.html",
     "status": "source",
@@ -2409,14 +2409,14 @@
     "material": "un coffre portatif d'une valeur minimale de 400 po",
     "duration": "conc-1h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:264"
   },
   {
-    "id": "convocation-d-elementaire",
+    "id": "summon-elemental",
     "name": "Convocation d'elementaire",
     "ref": "../sorts/convocation-d-elementaire.html",
     "status": "source",
@@ -2434,16 +2434,16 @@
     "material": "de l'air, un caillou, des cendres et de l'eau dans un flacon incruste d'or d'une valeur minimale de 400 po",
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "magicien",
-      "rodeur"
+      "druid",
+      "wizard",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:267"
   },
   {
-    "id": "convocation-de-bete",
+    "id": "summon-beast",
     "name": "Convocation de bete",
     "ref": "../sorts/convocation-de-bete.html",
     "status": "source",
@@ -2461,15 +2461,15 @@
     "material": "une plume, une touffe de fourrure et une queue de poisson dans un gland dore d'une valeur minimale de 200 po",
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:264"
   },
   {
-    "id": "convocation-de-celeste",
+    "id": "summon-celestial",
     "name": "Convocation de celeste",
     "ref": "../sorts/convocation-de-celeste.html",
     "status": "source",
@@ -2487,7 +2487,7 @@
     "material": "un reliquaire d'une valeur minimale de 500 po",
     "duration": "conc-1h",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": "-",
@@ -2495,7 +2495,7 @@
     "source": "img:265"
   },
   {
-    "id": "convocation-de-dragon",
+    "id": "summon-dragon",
     "name": "Convocation de dragon",
     "ref": "../sorts/convocation-de-dragon.html",
     "status": "source",
@@ -2513,14 +2513,14 @@
     "material": "un objet grave d'une representation de dragon, d'une valeur minimale de 500 po",
     "duration": "conc-1h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:266"
   },
   {
-    "id": "convocation-de-fee",
+    "id": "summon-fey",
     "name": "Convocation de fee",
     "ref": "../sorts/convocation-de-fee.html",
     "status": "source",
@@ -2538,17 +2538,17 @@
     "material": "une fleur doree d'une valeur minimale de 300 po",
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "magicien",
-      "occultiste",
-      "rodeur"
+      "druid",
+      "wizard",
+      "warlock",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:267"
   },
   {
-    "id": "convocation-de-fielon",
+    "id": "summon-fiend",
     "name": "Convocation de fielon",
     "ref": "../sorts/convocation-de-fielon.html",
     "status": "source",
@@ -2566,15 +2566,15 @@
     "material": "une fiole de sang, d'une valeur minimale de 600 po",
     "duration": "conc-1h",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:268"
   },
   {
-    "id": "convocation-de-mort-vivant",
+    "id": "summon-undead",
     "name": "Convocation de mort-vivant",
     "ref": "../sorts/convocation-de-mort-vivant.html",
     "status": "source",
@@ -2592,15 +2592,15 @@
     "material": "un crane dore d'une valeur minimale de 300 po",
     "duration": "conc-1h",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:269"
   },
   {
-    "id": "convocations-instantanees-de-drawmij",
+    "id": "drawmijs-instant-summons",
     "name": "Convocations instantanees de Drawmij",
     "ref": "../sorts/convocations-instantanees-de-drawmij.html",
     "status": "source",
@@ -2618,14 +2618,14 @@
     "material": "un saphir d'une valeur minimale de 1 000 po",
     "duration": "jusqu-a-dissipation",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:270"
   },
   {
-    "id": "coquille-antivie",
+    "id": "antilife-shell",
     "name": "Coquille antivie",
     "ref": "../sorts/coquille-antivie.html",
     "status": "source",
@@ -2642,14 +2642,14 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:270"
   },
   {
-    "id": "corde-enchantee",
+    "id": "rope-trick",
     "name": "Corde enchantee",
     "ref": "../sorts/corde-enchantee.html",
     "status": "source",
@@ -2667,14 +2667,14 @@
     "material": "de la corde",
     "duration": "1h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:270"
   },
   {
-    "id": "cordon-de-fleches",
+    "id": "cordon-of-arrows",
     "name": "Cordon de fleches",
     "ref": "../sorts/cordon-de-fleches.html",
     "status": "source",
@@ -2692,14 +2692,14 @@
     "material": "une tresse decorative",
     "duration": "8h",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
     "save": "dex",
     "damageType": "perforant",
     "source": "img:270"
   },
   {
-    "id": "couleurs-dansantes",
+    "id": "color-spray",
     "name": "Couleurs dansantes",
     "ref": "../sorts/couleurs-dansantes.html",
     "status": "source",
@@ -2717,16 +2717,16 @@
     "material": "une pincee de sable colore",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": null,
     "source": "img:270"
   },
   {
-    "id": "coup-au-but",
+    "id": "true-strike",
     "name": "Coup au but",
     "ref": "../sorts/coup-au-but.html",
     "status": "source",
@@ -2743,17 +2743,17 @@
     "material": "une arme dont vous avez la maitrise, d'une valeur minimale de 1 pc",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "radiant",
     "source": "img:271"
   },
   {
-    "id": "coup-de-tonnerre",
+    "id": "thunderclap",
     "name": "Coup de tonnerre",
     "ref": "../sorts/coup-de-tonnerre.html",
     "status": "source",
@@ -2769,18 +2769,18 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "tonnerre",
     "source": "img:271"
   },
   {
-    "id": "couronne-du-dement",
+    "id": "crown-of-madness",
     "name": "Couronne du dement",
     "ref": "../sorts/couronne-du-dement.html",
     "status": "source",
@@ -2797,17 +2797,17 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:271"
   },
   {
-    "id": "couteau-de-glace",
+    "id": "ice-knife",
     "name": "Couteau de glace",
     "ref": "../sorts/couteau-de-glace.html",
     "status": "source",
@@ -2824,9 +2824,9 @@
     "material": "une goutte d'eau ou un morceau de glace",
     "duration": "instantanee",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "froid",
@@ -2851,15 +2851,15 @@
     "material": "un pinceau",
     "duration": "speciale",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:271"
   },
   {
-    "id": "creation-de-mort-vivant",
+    "id": "create-undead",
     "name": "Creation de mort-vivant",
     "ref": "../sorts/creation-de-mort-vivant.html",
     "status": "source",
@@ -2877,16 +2877,16 @@
     "material": "un onyx noir d'une valeur minimale de 150 po pour chaque cadavre",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "magicien",
-      "occultiste"
+      "cleric",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:272"
   },
   {
-    "id": "creation-de-nourriture-et-d-eau",
+    "id": "create-food-and-water",
     "name": "Creation de nourriture et d'eau",
     "ref": "../sorts/creation-de-nourriture-et-d-eau.html",
     "status": "source",
@@ -2903,7 +2903,7 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -2911,7 +2911,7 @@
     "source": "img:272"
   },
   {
-    "id": "creation-ou-destruction-d-eau",
+    "id": "create-or-destroy-water",
     "name": "Creation ou destruction d'eau",
     "ref": "../sorts/creation-ou-destruction-d-eau.html",
     "status": "source",
@@ -2929,15 +2929,15 @@
     "material": "un melange d'eau et de sable",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide"
+      "cleric",
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:272"
   },
   {
-    "id": "croissance-d-epines",
+    "id": "spike-growth",
     "name": "Croissance d'epines",
     "ref": "../sorts/croissance-d-epines.html",
     "status": "source",
@@ -2955,15 +2955,15 @@
     "material": "sept epines",
     "duration": "conc-10min",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "perforant",
     "source": "img:272"
   },
   {
-    "id": "croissance-vegetale",
+    "id": "plant-growth",
     "name": "Croissance vegetale",
     "ref": "../sorts/croissance-vegetale.html",
     "status": "source",
@@ -2980,16 +2980,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "druide",
-      "rodeur"
+      "bard",
+      "druid",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:273"
   },
   {
-    "id": "crosse-des-druides",
+    "id": "shillelagh",
     "name": "Crosse des druides",
     "ref": "../sorts/crosse-des-druides.html",
     "status": "source",
@@ -3007,14 +3007,14 @@
     "material": "du gui",
     "duration": "1min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": null,
     "damageType": "force",
     "source": "img:273"
   },
   {
-    "id": "danse-irresistible-d-otto",
+    "id": "ottos-irresistible-dance",
     "name": "Danse irresistible d'Otto",
     "ref": "../sorts/danse-irresistible-d-otto.html",
     "status": "source",
@@ -3030,15 +3030,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:273"
   },
   {
-    "id": "deblocage",
+    "id": "knock",
     "name": "Deblocage",
     "ref": "../sorts/deblocage.html",
     "status": "source",
@@ -3054,16 +3054,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:273"
   },
   {
-    "id": "decharge-occulte",
+    "id": "eldritch-blast",
     "name": "Decharge occulte",
     "ref": "../sorts/decharge-occulte.html",
     "status": "source",
@@ -3080,14 +3080,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "occultiste"
+      "warlock"
     ],
     "save": null,
     "damageType": "force",
     "source": "img:273"
   },
   {
-    "id": "dedale",
+    "id": "maze",
     "name": "Dedale",
     "ref": "../sorts/dedale.html",
     "status": "source",
@@ -3104,14 +3104,14 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:273"
   },
   {
-    "id": "deguisement",
+    "id": "disguise-self",
     "name": "Deguisement",
     "ref": "../sorts/deguisement.html",
     "status": "source",
@@ -3128,16 +3128,16 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:274"
   },
   {
-    "id": "delivrance-des-maledictions",
+    "id": "remove-curse",
     "name": "Delivrance des maledictions",
     "ref": "../sorts/delivrance-des-maledictions.html",
     "status": "source",
@@ -3154,9 +3154,9 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "magicien",
-      "occultiste",
+      "cleric",
+      "wizard",
+      "warlock",
       "paladin"
     ],
     "save": null,
@@ -3164,7 +3164,7 @@
     "source": "img:274"
   },
   {
-    "id": "demi-plan",
+    "id": "demiplane",
     "name": "Demi-plan",
     "ref": "../sorts/demi-plan.html",
     "status": "source",
@@ -3180,16 +3180,16 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:274"
   },
   {
-    "id": "desintegration",
+    "id": "disintegrate",
     "name": "Desintegration",
     "ref": "../sorts/desintegration.html",
     "status": "source",
@@ -3207,15 +3207,15 @@
     "material": "une magnetite et de la poussiere",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "force",
     "source": "img:274"
   },
   {
-    "id": "detection-de-l-invisibilite",
+    "id": "see-invisibility",
     "name": "Detection de l'invisibilite",
     "ref": "../sorts/detection-de-l-invisibilite.html",
     "status": "source",
@@ -3233,16 +3233,16 @@
     "material": "une pincee de talc",
     "duration": "1h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:274"
   },
   {
-    "id": "detection-de-la-magie",
+    "id": "detect-magic",
     "name": "Detection de la magie",
     "ref": "../sorts/detection-de-la-magie.html",
     "status": "source",
@@ -3259,21 +3259,21 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste",
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:274"
   },
   {
-    "id": "detection-des-pensees",
+    "id": "detect-thoughts",
     "name": "Detection des pensees",
     "ref": "../sorts/detection-des-pensees.html",
     "status": "source",
@@ -3291,16 +3291,16 @@
     "material": "1 piece de cuivre",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:275"
   },
   {
-    "id": "detection-des-pieges",
+    "id": "find-traps",
     "name": "Detection des pieges",
     "ref": "../sorts/detection-des-pieges.html",
     "status": "source",
@@ -3317,16 +3317,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
-      "rodeur"
+      "cleric",
+      "druid",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:275"
   },
   {
-    "id": "detection-du-mal-et-du-bien",
+    "id": "detect-evil-and-good",
     "name": "Detection du mal et du bien",
     "ref": "../sorts/detection-du-mal-et-du-bien.html",
     "status": "source",
@@ -3343,7 +3343,7 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -3351,7 +3351,7 @@
     "source": "img:275"
   },
   {
-    "id": "detection-du-poison-et-des-maladies",
+    "id": "detect-poison-and-disease",
     "name": "Detection du poison et des maladies",
     "ref": "../sorts/detection-du-poison-et-des-maladies.html",
     "status": "source",
@@ -3369,17 +3369,17 @@
     "material": "une feuille d'if",
     "duration": "conc-10min",
     "classes": [
-      "clerc",
-      "druide",
+      "cleric",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:275"
   },
   {
-    "id": "discours-captivant",
+    "id": "enthrall",
     "name": "Discours captivant",
     "ref": "../sorts/discours-captivant.html",
     "status": "source",
@@ -3396,15 +3396,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "occultiste"
+      "bard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:275"
   },
   {
-    "id": "disque-flottant-de-tenser",
+    "id": "tensers-floating-disk",
     "name": "Disque flottant de Tenser",
     "ref": "../sorts/disque-flottant-de-tenser.html",
     "status": "source",
@@ -3422,14 +3422,14 @@
     "material": "une goutte de mercure",
     "duration": "1h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:276"
   },
   {
-    "id": "dissimulation-supreme",
+    "id": "sequester",
     "name": "Dissimulation supreme",
     "ref": "../sorts/dissimulation-supreme.html",
     "status": "source",
@@ -3447,14 +3447,14 @@
     "material": "poudre de gemme d'une valeur minimale de 5 000 po, que le sort detruit",
     "duration": "jusqu-a-dissipation",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:276"
   },
   {
-    "id": "dissipation-de-la-magie",
+    "id": "dispel-magic",
     "name": "Dissipation de la magie",
     "ref": "../sorts/dissipation-de-la-magie.html",
     "status": "source",
@@ -3471,21 +3471,21 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste",
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:277"
   },
   {
-    "id": "dissipation-du-mal-et-du-bien",
+    "id": "dispel-evil-and-good",
     "name": "Dissipation du mal et du bien",
     "ref": "../sorts/dissipation-du-mal-et-du-bien.html",
     "status": "source",
@@ -3503,7 +3503,7 @@
     "material": "poudre d'argent et de fer",
     "duration": "conc-1min",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": "cha",
@@ -3529,16 +3529,16 @@
     "material": "encens d'une valeur minimale de 25 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
-      "magicien"
+      "cleric",
+      "druid",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:278"
   },
   {
-    "id": "doigt-de-mort",
+    "id": "finger-of-death",
     "name": "Doigt de mort",
     "ref": "../sorts/doigt-de-mort.html",
     "status": "source",
@@ -3555,16 +3555,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "necrotique",
     "source": "img:278"
   },
   {
-    "id": "domination-de-bete",
+    "id": "dominate-beast",
     "name": "Domination de bete",
     "ref": "../sorts/domination-de-bete.html",
     "status": "source",
@@ -3581,16 +3581,16 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "rodeur"
+      "druid",
+      "sorcerer",
+      "ranger"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:278"
   },
   {
-    "id": "domination-de-monstre",
+    "id": "dominate-monster",
     "name": "Domination de monstre",
     "ref": "../sorts/domination-de-monstre.html",
     "status": "source",
@@ -3607,17 +3607,17 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:278"
   },
   {
-    "id": "domination-de-personne",
+    "id": "dominate-person",
     "name": "Domination de personne",
     "ref": "../sorts/domination-de-personne.html",
     "status": "source",
@@ -3634,16 +3634,16 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:278"
   },
   {
-    "id": "don-des-langues",
+    "id": "tongues",
     "name": "Don des langues",
     "ref": "../sorts/don-des-langues.html",
     "status": "source",
@@ -3660,18 +3660,18 @@
     "material": "une ziggourat miniature",
     "duration": "1h",
     "classes": [
-      "barde",
-      "clerc",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:279"
   },
   {
-    "id": "double-illusoire",
+    "id": "mislead",
     "name": "Double illusoire",
     "ref": "../sorts/double-illusoire.html",
     "status": "source",
@@ -3687,16 +3687,16 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "magicien",
-      "occultiste"
+      "bard",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:279"
   },
   {
-    "id": "doux-repos",
+    "id": "gentle-repose",
     "name": "Doux repos",
     "ref": "../sorts/doux-repos.html",
     "status": "source",
@@ -3714,8 +3714,8 @@
     "material": "2 pieces de cuivre, que le sort detruit",
     "duration": "10jours",
     "classes": [
-      "clerc",
-      "magicien",
+      "cleric",
+      "wizard",
       "paladin"
     ],
     "save": null,
@@ -3723,7 +3723,7 @@
     "source": "img:279"
   },
   {
-    "id": "druidisme",
+    "id": "druidcraft",
     "name": "Druidisme",
     "ref": "../sorts/druidisme.html",
     "status": "source",
@@ -3740,14 +3740,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:279"
   },
   {
-    "id": "duel-force",
+    "id": "compelled-duel",
     "name": "Duel force",
     "ref": "../sorts/duel-force.html",
     "status": "source",
@@ -3765,12 +3765,12 @@
     "classes": [
       "paladin"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:280"
   },
   {
-    "id": "eclair",
+    "id": "lightning-bolt",
     "name": "Eclair",
     "ref": "../sorts/eclair.html",
     "status": "source",
@@ -3788,15 +3788,15 @@
     "material": "une touffe de fourrure et une tige de cristal",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "foudre",
     "source": "img:280"
   },
   {
-    "id": "eclat-du-soleil",
+    "id": "sunburst",
     "name": "Eclat du soleil",
     "ref": "../sorts/eclat-du-soleil.html",
     "status": "source",
@@ -3814,17 +3814,17 @@
     "material": "un morceau d'heliolite",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "radiant",
     "source": "img:280"
   },
   {
-    "id": "elementalisme",
+    "id": "elementalism",
     "name": "Elementalisme",
     "ref": "../sorts/elementalisme.html",
     "status": "source",
@@ -3841,16 +3841,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:280"
   },
   {
-    "id": "embruns-prismatiques",
+    "id": "prismatic-spray",
     "name": "Embruns prismatiques",
     "ref": "../sorts/embruns-prismatiques.html",
     "status": "source",
@@ -3867,16 +3867,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "-",
     "source": "img:280"
   },
   {
-    "id": "emprisonnement",
+    "id": "imprisonment",
     "name": "Emprisonnement",
     "ref": "../sorts/emprisonnement.html",
     "status": "source",
@@ -3894,15 +3894,15 @@
     "material": "une statuette a l'effigie de la cible d'une valeur minimale de 5 000 po",
     "duration": "dissipation",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:281"
   },
   {
-    "id": "enchevetrement",
+    "id": "entangle",
     "name": "Enchevetrement",
     "ref": "../sorts/enchevetrement.html",
     "status": "source",
@@ -3919,15 +3919,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "-",
     "source": "img:282"
   },
   {
-    "id": "ennemi-subconscient",
+    "id": "weird",
     "name": "Ennemi subconscient",
     "ref": "../sorts/ennemi-subconscient.html",
     "status": "source",
@@ -3944,15 +3944,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:283"
   },
   {
-    "id": "entrave-planaire",
+    "id": "planar-binding",
     "name": "Entrave planaire",
     "ref": "../sorts/entrave-planaire.html",
     "status": "source",
@@ -3970,18 +3970,18 @@
     "material": "un joyau d'une valeur minimale de 1 000 po, que le sort detruit",
     "duration": "24h",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "magicien",
-      "occultiste"
+      "bard",
+      "cleric",
+      "druid",
+      "wizard",
+      "warlock"
     ],
     "save": "cha",
     "damageType": "-",
     "source": "img:283"
   },
   {
-    "id": "epee-de-mordenkainen",
+    "id": "mordenkainens-sword",
     "name": "Epee de Mordenkainen",
     "ref": "../sorts/epee-de-mordenkainen.html",
     "status": "source",
@@ -3999,15 +3999,15 @@
     "material": "une epee miniature d'une valeur minimale de 250 po",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": "-",
     "damageType": "force",
     "source": "img:283"
   },
   {
-    "id": "epine-mentale",
+    "id": "mind-spike",
     "name": "Epine mentale",
     "ref": "../sorts/epine-mentale.html",
     "status": "source",
@@ -4023,16 +4023,16 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:283"
   },
   {
-    "id": "eruption-ensorcelee",
+    "id": "sorcerous-burst",
     "name": "Eruption ensorcelee",
     "ref": "../sorts/eruption-ensorcelee.html",
     "status": "source",
@@ -4049,14 +4049,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur"
+      "sorcerer"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:283"
   },
   {
-    "id": "esprit-impenetrable",
+    "id": "mind-blank",
     "name": "Esprit impenetrable",
     "ref": "../sorts/esprit-impenetrable.html",
     "status": "source",
@@ -4073,15 +4073,15 @@
     "material": null,
     "duration": "24h",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:284"
   },
   {
-    "id": "esprits-gardiens",
+    "id": "spirit-guardians",
     "name": "Esprits gardiens",
     "ref": "../sorts/esprits-gardiens.html",
     "status": "source",
@@ -4099,14 +4099,14 @@
     "material": "un parchemin de priere",
     "duration": "conc-10min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "radiant",
     "source": "img:284"
   },
   {
-    "id": "etat-cadaverique",
+    "id": "feign-death",
     "name": "Etat cadaverique",
     "ref": "../sorts/etat-cadaverique.html",
     "status": "source",
@@ -4124,17 +4124,17 @@
     "material": "une pincee de terre de cimetiere",
     "duration": "1h",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "magicien"
+      "bard",
+      "cleric",
+      "druid",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:284"
   },
   {
-    "id": "eveil",
+    "id": "awaken",
     "name": "Eveil",
     "ref": "../sorts/eveil.html",
     "status": "source",
@@ -4152,15 +4152,15 @@
     "material": "une agate d'une valeur minimale de 1 000 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "druide"
+      "bard",
+      "druid"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:284"
   },
   {
-    "id": "fabrication",
+    "id": "fabricate",
     "name": "Fabrication",
     "ref": "../sorts/fabrication.html",
     "status": "source",
@@ -4177,14 +4177,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:284"
   },
   {
-    "id": "faconnage-de-la-pierre",
+    "id": "stone-shape",
     "name": "Faconnage de la pierre",
     "ref": "../sorts/faconnage-de-la-pierre.html",
     "status": "source",
@@ -4202,16 +4202,16 @@
     "material": "de la terre glaise",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
-      "magicien"
+      "cleric",
+      "druid",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:284"
   },
   {
-    "id": "faux-amis",
+    "id": "friends",
     "name": "Faux amis",
     "ref": "../sorts/faux-amis.html",
     "status": "source",
@@ -4228,17 +4228,17 @@
     "material": "un peu de maquillage",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:285"
   },
   {
-    "id": "faveur-divine",
+    "id": "divine-favor",
     "name": "Faveur divine",
     "ref": "../sorts/faveur-divine.html",
     "status": "source",
@@ -4262,7 +4262,7 @@
     "source": "img:285"
   },
   {
-    "id": "festin-des-heros",
+    "id": "heroes-feast",
     "name": "Festin des heros",
     "ref": "../sorts/festin-des-heros.html",
     "status": "source",
@@ -4280,16 +4280,16 @@
     "material": "un vase incruste de gemmes d'une valeur minimale de 1 000 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide"
+      "bard",
+      "cleric",
+      "druid"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:285"
   },
   {
-    "id": "feuille-morte",
+    "id": "feather-fall",
     "name": "Feuille morte",
     "ref": "../sorts/feuille-morte.html",
     "status": "source",
@@ -4306,16 +4306,16 @@
     "material": "une petite plume ou un peu de duvet",
     "duration": "1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:286"
   },
   {
-    "id": "flamme-eternelle",
+    "id": "continual-flame",
     "name": "Flamme eternelle",
     "ref": "../sorts/flamme-eternelle.html",
     "status": "source",
@@ -4333,16 +4333,16 @@
     "material": "poudre de rubis d'une valeur minimale de 50 po, que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "clerc",
-      "druide",
-      "magicien"
+      "cleric",
+      "druid",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:286"
   },
   {
-    "id": "flamme-sacree",
+    "id": "sacred-flame",
     "name": "Flamme sacree",
     "ref": "../sorts/flamme-sacree.html",
     "status": "source",
@@ -4359,14 +4359,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "dex",
     "damageType": "radiant",
     "source": "img:286"
   },
   {
-    "id": "flammes",
+    "id": "produce-flame",
     "name": "Flammes",
     "ref": "../sorts/flammes.html",
     "status": "source",
@@ -4383,14 +4383,14 @@
     "material": null,
     "duration": "10min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "-",
     "damageType": "feu",
     "source": "img:286"
   },
   {
-    "id": "fleau-d-insectes",
+    "id": "insect-plague",
     "name": "Fleau d'insectes",
     "ref": "../sorts/fleau-d-insectes.html",
     "status": "source",
@@ -4408,16 +4408,16 @@
     "material": "un criquet",
     "duration": "conc-10min",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur"
+      "cleric",
+      "druid",
+      "sorcerer"
     ],
     "save": "con",
     "damageType": "perforant",
     "source": "img:286"
   },
   {
-    "id": "fleche-acide-de-melf",
+    "id": "melfs-acid-arrow",
     "name": "Fleche acide de Melf",
     "ref": "../sorts/fleche-acide-de-melf.html",
     "status": "source",
@@ -4435,14 +4435,14 @@
     "material": "une feuille de rhubarbe en poudre",
     "duration": "instantanee",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "acide",
     "source": "img:286"
   },
   {
-    "id": "fleche-de-foudre",
+    "id": "lightning-arrow",
     "name": "Fleche de foudre",
     "ref": "../sorts/fleche-de-foudre.html",
     "status": "source",
@@ -4459,14 +4459,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
     "save": "dex",
     "damageType": "foudre",
     "source": "img:287"
   },
   {
-    "id": "fletrissement",
+    "id": "blight",
     "name": "Fletrissement",
     "ref": "../sorts/fletrissement.html",
     "status": "source",
@@ -4483,17 +4483,17 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "necrotique",
     "source": "img:287"
   },
   {
-    "id": "flou",
+    "id": "blur",
     "name": "Flou",
     "ref": "../sorts/flou.html",
     "status": "source",
@@ -4509,15 +4509,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:288"
   },
   {
-    "id": "fontaine-de-lune",
+    "id": "fount-of-moonlight",
     "name": "Fontaine de lune",
     "ref": "../sorts/fontaine-de-lune.html",
     "status": "source",
@@ -4534,15 +4534,15 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "druide"
+      "bard",
+      "druid"
     ],
     "save": "con",
     "damageType": "radiant",
     "source": "img:288"
   },
   {
-    "id": "force-fantasmagorique",
+    "id": "phantasmal-force",
     "name": "Force fantasmagorique",
     "ref": "../sorts/force-fantasmagorique.html",
     "status": "source",
@@ -4560,16 +4560,16 @@
     "material": "un peu de laine brute",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "int",
     "damageType": "psychique",
     "source": "img:288"
   },
   {
-    "id": "forme-etheree",
+    "id": "etherealness",
     "name": "Forme etheree",
     "ref": "../sorts/forme-etheree.html",
     "status": "source",
@@ -4586,18 +4586,18 @@
     "material": null,
     "duration": "8h",
     "classes": [
-      "barde",
-      "clerc",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:288"
   },
   {
-    "id": "forme-gazeuse",
+    "id": "gaseous-form",
     "name": "Forme gazeuse",
     "ref": "../sorts/forme-gazeuse.html",
     "status": "source",
@@ -4615,16 +4615,16 @@
     "material": "un peu de gaze",
     "duration": "conc-1h",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:288"
   },
   {
-    "id": "fou-rire-de-tasha",
+    "id": "tashas-hideous-laughter",
     "name": "Fou rire de Tasha",
     "ref": "../sorts/fou-rire-de-tasha.html",
     "status": "source",
@@ -4642,16 +4642,16 @@
     "material": "une tartelette et une plume",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "magicien",
-      "occultiste"
+      "bard",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:289"
   },
   {
-    "id": "fouet-epineux",
+    "id": "thorn-whip",
     "name": "Fouet epineux",
     "ref": "../sorts/fouet-epineux.html",
     "status": "source",
@@ -4669,14 +4669,14 @@
     "material": "une tige de plante epineuse",
     "duration": "instantanee",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "-",
     "damageType": "perforant",
     "source": "img:289"
   },
   {
-    "id": "foulee-brumeuse",
+    "id": "misty-step",
     "name": "Foulee brumeuse",
     "ref": "../sorts/foulee-brumeuse.html",
     "status": "source",
@@ -4692,16 +4692,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:289"
   },
   {
-    "id": "fracassement",
+    "id": "shatter",
     "name": "Fracassement",
     "ref": "../sorts/fracassement.html",
     "status": "source",
@@ -4719,16 +4719,16 @@
     "material": "un fragment de mica",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "tonnerre",
     "source": "img:289"
   },
   {
-    "id": "frappe-du-vent-d-acier",
+    "id": "steel-wind-strike",
     "name": "Frappe du vent d'acier",
     "ref": "../sorts/frappe-du-vent-d-acier.html",
     "status": "source",
@@ -4745,15 +4745,15 @@
     "material": "une arme de corps a corps d'une valeur minimale de 1 pa",
     "duration": "instantanee",
     "classes": [
-      "magicien",
-      "rodeur"
+      "wizard",
+      "ranger"
     ],
     "save": "-",
     "damageType": "force",
     "source": "img:290"
   },
   {
-    "id": "frappe-piegeuse",
+    "id": "ensnaring-strike",
     "name": "Frappe piegeuse",
     "ref": "../sorts/frappe-piegeuse.html",
     "status": "source",
@@ -4769,14 +4769,14 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "perforant",
     "source": "img:289"
   },
   {
-    "id": "fusion-dans-la-pierre",
+    "id": "meld-into-stone",
     "name": "Fusion dans la pierre",
     "ref": "../sorts/fusion-dans-la-pierre.html",
     "status": "source",
@@ -4793,16 +4793,16 @@
     "material": null,
     "duration": "8h",
     "classes": [
-      "clerc",
-      "druide",
-      "rodeur"
+      "cleric",
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "force",
     "source": "img:290"
   },
   {
-    "id": "gardien-de-la-foi",
+    "id": "guardian-of-faith",
     "name": "Gardien de la foi",
     "ref": "../sorts/gardien-de-la-foi.html",
     "status": "source",
@@ -4818,14 +4818,14 @@
     "material": null,
     "duration": "8h",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "dex",
     "damageType": "radiant",
     "source": "img:291"
   },
   {
-    "id": "glas",
+    "id": "toll-the-dead",
     "name": "Glas",
     "ref": "../sorts/glas.html",
     "status": "source",
@@ -4842,16 +4842,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "magicien",
-      "occultiste"
+      "cleric",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "necrotique",
     "source": "img:291"
   },
   {
-    "id": "glissement-de-terrain",
+    "id": "move-earth",
     "name": "Glissement de terrain",
     "ref": "../sorts/glissement-de-terrain.html",
     "status": "source",
@@ -4869,16 +4869,16 @@
     "material": "une pelle miniature",
     "duration": "conc-2h",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:291"
   },
   {
-    "id": "globe-d-invulnerabilite",
+    "id": "globe-of-invulnerability",
     "name": "Globe d'invulnerabilite",
     "ref": "../sorts/globe-d-invulnerabilite.html",
     "status": "source",
@@ -4896,15 +4896,15 @@
     "material": "une perle en verre",
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:291"
   },
   {
-    "id": "glyphe-de-garde",
+    "id": "glyph-of-warding",
     "name": "Glyphe de garde",
     "ref": "../sorts/glyphe-de-garde.html",
     "status": "source",
@@ -4922,16 +4922,16 @@
     "material": "poudre de diamant d'une valeur minimale de 200 po, que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "barde",
-      "clerc",
-      "magicien"
+      "bard",
+      "cleric",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "-",
     "source": "img:291"
   },
   {
-    "id": "graisse",
+    "id": "grease",
     "name": "Graisse",
     "ref": "../sorts/graisse.html",
     "status": "source",
@@ -4949,15 +4949,15 @@
     "material": "un peu de couenne de porc ou de beurre",
     "duration": "1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": null,
     "source": "img:292"
   },
   {
-    "id": "grande-foulee",
+    "id": "longstrider",
     "name": "Grande foulee",
     "ref": "../sorts/grande-foulee.html",
     "status": "source",
@@ -4975,17 +4975,17 @@
     "material": "une pincee de terre",
     "duration": "1h",
     "classes": [
-      "barde",
-      "druide",
-      "magicien",
-      "rodeur"
+      "bard",
+      "druid",
+      "wizard",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:292"
   },
   {
-    "id": "grele-d-epines",
+    "id": "hail-of-thorns",
     "name": "Grele d'epines",
     "ref": "../sorts/grele-d-epines.html",
     "status": "source",
@@ -5001,14 +5001,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
     "save": "dex",
     "damageType": "perforant",
     "source": "img:292"
   },
   {
-    "id": "guerison",
+    "id": "heal",
     "name": "Guerison",
     "ref": "../sorts/guerison.html",
     "status": "source",
@@ -5025,15 +5025,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide"
+      "cleric",
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:292"
   },
   {
-    "id": "guerison-de-groupe",
+    "id": "mass-heal",
     "name": "Guerison de groupe",
     "ref": "../sorts/guerison-de-groupe.html",
     "status": "source",
@@ -5050,14 +5050,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": null,
     "damageType": null,
     "source": "img:292"
   },
   {
-    "id": "hate",
+    "id": "haste",
     "name": "Hate",
     "ref": "../sorts/hate.html",
     "status": "source",
@@ -5075,15 +5075,15 @@
     "material": "un copeau de racine de reglisse",
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:293"
   },
   {
-    "id": "herissement-de-projectiles",
+    "id": "conjure-barrage",
     "name": "Herissement de projectiles",
     "ref": "../sorts/herissement-de-projectiles.html",
     "status": "source",
@@ -5101,14 +5101,14 @@
     "material": "une arme de corps a corps ou a distance d'une valeur minimale de 1 pc",
     "duration": "instantanee",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
     "save": "dex",
     "damageType": "force",
     "source": "img:293"
   },
   {
-    "id": "heroisme",
+    "id": "heroism",
     "name": "Heroisme",
     "ref": "../sorts/heroisme.html",
     "status": "source",
@@ -5125,7 +5125,7 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
+      "bard",
       "paladin"
     ],
     "save": "-",
@@ -5133,7 +5133,7 @@
     "source": "img:293"
   },
   {
-    "id": "identification",
+    "id": "identify",
     "name": "Identification",
     "ref": "../sorts/identification.html",
     "status": "source",
@@ -5151,15 +5151,15 @@
     "material": "une perle d'une valeur minimale de 100 po",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:293"
   },
   {
-    "id": "illusion-mineure",
+    "id": "minor-illusion",
     "name": "Illusion mineure",
     "ref": "../sorts/illusion-mineure.html",
     "status": "source",
@@ -5176,17 +5176,17 @@
     "material": "un peu de laine brute",
     "duration": "1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:293"
   },
   {
-    "id": "illusion-programmee",
+    "id": "programmed-illusion",
     "name": "Illusion programmee",
     "ref": "../sorts/illusion-programmee.html",
     "status": "source",
@@ -5204,15 +5204,15 @@
     "material": "poudre de jade d'une valeur minimale de 25 po",
     "duration": "dissipation",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:294"
   },
   {
-    "id": "image-majeure",
+    "id": "major-image",
     "name": "Image majeure",
     "ref": "../sorts/image-majeure.html",
     "status": "source",
@@ -5230,17 +5230,17 @@
     "material": "un peu de laine brute",
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:294"
   },
   {
-    "id": "image-miroir",
+    "id": "mirror-image",
     "name": "Image miroir",
     "ref": "../sorts/image-miroir.html",
     "status": "source",
@@ -5257,17 +5257,17 @@
     "material": null,
     "duration": "1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:295"
   },
   {
-    "id": "image-projetee",
+    "id": "project-image",
     "name": "Image projetee",
     "ref": "../sorts/image-projetee.html",
     "status": "source",
@@ -5285,15 +5285,15 @@
     "material": "une statuette a votre effigie d'une valeur minimale de 5 po",
     "duration": "conc-24h",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:295"
   },
   {
-    "id": "image-silencieuse",
+    "id": "silent-image",
     "name": "Image silencieuse",
     "ref": "../sorts/image-silencieuse.html",
     "status": "source",
@@ -5311,16 +5311,16 @@
     "material": "un peu de laine brute",
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:295"
   },
   {
-    "id": "immobilisation-de-monstre",
+    "id": "hold-monster",
     "name": "Immobilisation de monstre",
     "ref": "../sorts/immobilisation-de-monstre.html",
     "status": "source",
@@ -5338,17 +5338,17 @@
     "material": "un brin de fer",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:295"
   },
   {
-    "id": "immobilisation-de-personne",
+    "id": "hold-person",
     "name": "Immobilisation de personne",
     "ref": "../sorts/immobilisation-de-personne.html",
     "status": "source",
@@ -5366,19 +5366,19 @@
     "material": "un brin de fer",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:296"
   },
   {
-    "id": "imprecation",
+    "id": "bane",
     "name": "Imprecation",
     "ref": "../sorts/imprecation.html",
     "status": "source",
@@ -5396,16 +5396,16 @@
     "material": "une goutte de sang",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "clerc",
-      "occultiste"
+      "bard",
+      "cleric",
+      "warlock"
     ],
     "save": "cha",
     "damageType": null,
     "source": "img:296"
   },
   {
-    "id": "injonction",
+    "id": "command",
     "name": "Injonction",
     "ref": "../sorts/injonction.html",
     "status": "source",
@@ -5421,16 +5421,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
+      "bard",
+      "cleric",
       "paladin"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:296"
   },
   {
-    "id": "insecte-geant",
+    "id": "giant-insect",
     "name": "Insecte geant",
     "ref": "../sorts/insecte-geant.html",
     "status": "source",
@@ -5447,14 +5447,14 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "con",
     "damageType": null,
     "source": "img:296"
   },
   {
-    "id": "interdiction",
+    "id": "forbiddance",
     "name": "Interdiction",
     "ref": "../sorts/interdiction.html",
     "status": "source",
@@ -5472,14 +5472,14 @@
     "material": "poudre de rubis d'une valeur minimale de 1 000 po",
     "duration": "24h",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:297"
   },
   {
-    "id": "inversion-de-la-gravite",
+    "id": "reverse-gravity",
     "name": "Inversion de la gravite",
     "ref": "../sorts/inversion-de-la-gravite.html",
     "status": "source",
@@ -5497,16 +5497,16 @@
     "material": "une magnetite et de la limaille de fer",
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": null,
     "source": "img:297"
   },
   {
-    "id": "invisibilite",
+    "id": "invisibility",
     "name": "Invisibilite",
     "ref": "../sorts/invisibilite.html",
     "status": "source",
@@ -5524,17 +5524,17 @@
     "material": "un cil dans de la seve",
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:297"
   },
   {
-    "id": "invisibilite-supreme",
+    "id": "greater-invisibility",
     "name": "Invisibilite supreme",
     "ref": "../sorts/invisibilite-supreme.html",
     "status": "source",
@@ -5551,16 +5551,16 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:297"
   },
   {
-    "id": "invocation-d-animaux",
+    "id": "conjure-animals",
     "name": "Invocation d'animaux",
     "ref": "../sorts/invocation-d-animaux.html",
     "status": "source",
@@ -5577,15 +5577,15 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "dex",
     "damageType": "tranchant",
     "source": "img:297"
   },
   {
-    "id": "invocation-d-elementaire",
+    "id": "conjure-elemental",
     "name": "Invocation d'elementaire",
     "ref": "../sorts/invocation-d-elementaire.html",
     "status": "source",
@@ -5602,15 +5602,15 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "druide",
-      "magicien"
+      "druid",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "-",
     "source": "img:298"
   },
   {
-    "id": "invocation-d-elementaires-mineurs",
+    "id": "conjure-minor-elementals",
     "name": "Invocation d'elementaires mineurs",
     "ref": "../sorts/invocation-d-elementaires-mineurs.html",
     "status": "source",
@@ -5627,15 +5627,15 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "druide",
-      "magicien"
+      "druid",
+      "wizard"
     ],
     "save": null,
     "damageType": "-",
     "source": "img:298"
   },
   {
-    "id": "invocation-d-etres-sylvestres",
+    "id": "conjure-woodland-beings",
     "name": "Invocation d'etres sylvestres",
     "ref": "../sorts/invocation-d-etres-sylvestres.html",
     "status": "source",
@@ -5652,15 +5652,15 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "force",
     "source": "img:298"
   },
   {
-    "id": "invocation-de-celeste",
+    "id": "conjure-celestial",
     "name": "Invocation de celeste",
     "ref": "../sorts/invocation-de-celeste.html",
     "status": "source",
@@ -5677,14 +5677,14 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "dex",
     "damageType": "radiant",
     "source": "img:298"
   },
   {
-    "id": "invocation-de-fee",
+    "id": "conjure-fey",
     "name": "Invocation de fee",
     "ref": "../sorts/invocation-de-fee.html",
     "status": "source",
@@ -5701,14 +5701,14 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": null,
     "damageType": "psychique",
     "source": "img:298"
   },
   {
-    "id": "invocation-de-volee",
+    "id": "conjure-volley",
     "name": "Invocation de volee",
     "ref": "../sorts/invocation-de-volee.html",
     "status": "source",
@@ -5726,14 +5726,14 @@
     "material": "une arme de corps a corps ou a distance d'une valeur minimale de 1 pc",
     "duration": "instantanee",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
     "save": "dex",
     "damageType": "force",
     "source": "img:299"
   },
   {
-    "id": "lame-de-feu",
+    "id": "flame-blade",
     "name": "Lame de feu",
     "ref": "../sorts/lame-de-feu.html",
     "status": "source",
@@ -5751,15 +5751,15 @@
     "material": "une feuille d'amarante",
     "duration": "conc-10min",
     "classes": [
-      "druide",
-      "ensorceleur"
+      "druid",
+      "sorcerer"
     ],
     "save": null,
     "damageType": "feu",
     "source": "img:299"
   },
   {
-    "id": "lenteur",
+    "id": "slow",
     "name": "Lenteur",
     "ref": "../sorts/lenteur.html",
     "status": "source",
@@ -5777,16 +5777,16 @@
     "material": "une goutte de melasse",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:299"
   },
   {
-    "id": "levitation",
+    "id": "levitate",
     "name": "Levitation",
     "ref": "../sorts/levitation.html",
     "status": "source",
@@ -5804,15 +5804,15 @@
     "material": "un ressort metallique",
     "duration": "conc-10min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": null,
     "source": "img:299"
   },
   {
-    "id": "liane-avide",
+    "id": "grasping-vine",
     "name": "Liane avide",
     "ref": "../sorts/liane-avide.html",
     "status": "source",
@@ -5829,15 +5829,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": null,
     "damageType": "contondant",
     "source": "img:299"
   },
   {
-    "id": "liberte-de-mouvement",
+    "id": "freedom-of-movement",
     "name": "Liberte de mouvement",
     "ref": "../sorts/liberte-de-mouvement.html",
     "status": "source",
@@ -5855,17 +5855,17 @@
     "material": "une bandelette de cuir",
     "duration": "1h",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "rodeur"
+      "bard",
+      "cleric",
+      "druid",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:300"
   },
   {
-    "id": "lien-de-protection",
+    "id": "warding-bond",
     "name": "Lien de protection",
     "ref": "../sorts/lien-de-protection.html",
     "status": "source",
@@ -5883,7 +5883,7 @@
     "material": "deux bagues de platine d'une valeur minimale de 50 po chacune, que la cible et vous devez porter pour toute la duree",
     "duration": "1h",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -5891,7 +5891,7 @@
     "source": "img:300"
   },
   {
-    "id": "lien-telepathique-de-rary",
+    "id": "rarys-telepathic-bond",
     "name": "Lien telepathique de Rary",
     "ref": "../sorts/lien-telepathique-de-rary.html",
     "status": "source",
@@ -5909,15 +5909,15 @@
     "material": "deux oeufs",
     "duration": "1h",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:300"
   },
   {
-    "id": "localisation-d-animaux-ou-de-plantes",
+    "id": "locate-animals-or-plants",
     "name": "Localisation d'animaux ou de plantes",
     "ref": "../sorts/localisation-d-animaux-ou-de-plantes.html",
     "status": "source",
@@ -5935,16 +5935,16 @@
     "material": "une touffe de poils de limier",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "druide",
-      "rodeur"
+      "bard",
+      "druid",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:300"
   },
   {
-    "id": "localisation-d-objet",
+    "id": "locate-object",
     "name": "Localisation d'objet",
     "ref": "../sorts/localisation-d-objet.html",
     "status": "source",
@@ -5962,19 +5962,19 @@
     "material": "une brindille fourchue",
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "magicien",
+      "bard",
+      "cleric",
+      "druid",
+      "wizard",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:300"
   },
   {
-    "id": "localisation-de-creature",
+    "id": "locate-creature",
     "name": "Localisation de creature",
     "ref": "../sorts/localisation-de-creature.html",
     "status": "source",
@@ -5992,19 +5992,19 @@
     "material": "une touffe de poils de limier",
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "magicien",
+      "bard",
+      "cleric",
+      "druid",
+      "wizard",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:300"
   },
   {
-    "id": "lueur-d-espoir",
+    "id": "beacon-of-hope",
     "name": "Lueur d'espoir",
     "ref": "../sorts/lueur-d-espoir.html",
     "status": "source",
@@ -6021,14 +6021,14 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": null,
     "damageType": null,
     "source": "img:301"
   },
   {
-    "id": "lueurs-feeriques",
+    "id": "faerie-fire",
     "name": "Lueurs feeriques",
     "ref": "../sorts/lueurs-feeriques.html",
     "status": "source",
@@ -6044,15 +6044,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "druide"
+      "bard",
+      "druid"
     ],
     "save": "dex",
     "damageType": null,
     "source": "img:301"
   },
   {
-    "id": "lumiere",
+    "id": "light",
     "name": "Lumiere",
     "ref": "../sorts/lumiere.html",
     "status": "source",
@@ -6069,17 +6069,17 @@
     "material": "une luciole ou de la mousse phosphorescente",
     "duration": "1h",
     "classes": [
-      "barde",
-      "clerc",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:301"
   },
   {
-    "id": "lumiere-du-jour",
+    "id": "daylight",
     "name": "Lumiere du jour",
     "ref": "../sorts/lumiere-du-jour.html",
     "status": "source",
@@ -6096,18 +6096,18 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur",
+      "cleric",
+      "druid",
+      "sorcerer",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:301"
   },
   {
-    "id": "lumieres-dansantes",
+    "id": "dancing-lights",
     "name": "Lumieres dansantes",
     "ref": "../sorts/lumieres-dansantes.html",
     "status": "source",
@@ -6125,16 +6125,16 @@
     "material": "un peu de phosphore",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:302"
   },
   {
-    "id": "main-de-bigby",
+    "id": "bigbys-hand",
     "name": "Main de Bigby",
     "ref": "../sorts/main-de-bigby.html",
     "status": "source",
@@ -6152,15 +6152,15 @@
     "material": "une coquille d'oeuf et un gant",
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "force",
     "source": "img:302"
   },
   {
-    "id": "main-du-mage",
+    "id": "mage-hand",
     "name": "Main du mage",
     "ref": "../sorts/main-du-mage.html",
     "status": "source",
@@ -6177,17 +6177,17 @@
     "material": null,
     "duration": "1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:303"
   },
   {
-    "id": "mains-brulantes",
+    "id": "burning-hands",
     "name": "Mains brulantes",
     "ref": "../sorts/mains-brulantes.html",
     "status": "source",
@@ -6204,15 +6204,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:303"
   },
   {
-    "id": "malediction",
+    "id": "bestow-curse",
     "name": "Malediction",
     "ref": "../sorts/malediction.html",
     "status": "source",
@@ -6229,16 +6229,16 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "clerc",
-      "magicien"
+      "bard",
+      "cleric",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "necrotique",
     "source": "img:303"
   },
   {
-    "id": "malefice",
+    "id": "hex",
     "name": "Malefice",
     "ref": "../sorts/malefice.html",
     "status": "source",
@@ -6256,14 +6256,14 @@
     "material": "un oeil petrifie de triton",
     "duration": "conc-1h",
     "classes": [
-      "occultiste"
+      "warlock"
     ],
     "save": null,
     "damageType": "necrotique",
     "source": "img:303"
   },
   {
-    "id": "manoir-somptueux-de-mordenkainen",
+    "id": "mordenkainens-magnificent-mansion",
     "name": "Manoir somptueux de Mordenkainen",
     "ref": "../sorts/manoir-somptueux-de-mordenkainen.html",
     "status": "source",
@@ -6281,15 +6281,15 @@
     "material": "une porte miniature d'une valeur minimale de 15 po",
     "duration": "24h",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:304"
   },
   {
-    "id": "marche-sur-l-onde",
+    "id": "water-walk",
     "name": "Marche sur l'onde",
     "ref": "../sorts/marche-sur-l-onde.html",
     "status": "source",
@@ -6307,17 +6307,17 @@
     "material": "un morceau de liege",
     "duration": "1h",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "rodeur"
+      "cleric",
+      "druid",
+      "sorcerer",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:304"
   },
   {
-    "id": "marque-du-chasseur",
+    "id": "hunters-mark",
     "name": "Marque du chasseur",
     "ref": "../sorts/marque-du-chasseur.html",
     "status": "source",
@@ -6333,14 +6333,14 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
     "save": "-",
     "damageType": "force",
     "source": "img:305"
   },
   {
-    "id": "mauvais-oeil",
+    "id": "eyebite",
     "name": "Mauvais oeil",
     "ref": "../sorts/mauvais-oeil.html",
     "status": "source",
@@ -6357,12 +6357,12 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:305"
   },
@@ -6384,17 +6384,17 @@
     "material": "du fil de cuivre",
     "duration": "1round",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:305"
   },
   {
-    "id": "messager-animal",
+    "id": "animal-messenger",
     "name": "Messager animal",
     "ref": "../sorts/messager-animal.html",
     "status": "source",
@@ -6412,16 +6412,16 @@
     "material": "un peu de nourriture",
     "duration": "24h",
     "classes": [
-      "barde",
-      "druide",
-      "rodeur"
+      "bard",
+      "druid",
+      "ranger"
     ],
     "save": "cha",
     "damageType": "-",
     "source": "img:305"
   },
   {
-    "id": "metal-brulant",
+    "id": "heat-metal",
     "name": "Metal brulant",
     "ref": "../sorts/metal-brulant.html",
     "status": "source",
@@ -6439,15 +6439,15 @@
     "material": "un bout de fer et une flamme",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "druide"
+      "bard",
+      "druid"
     ],
     "save": "con",
     "damageType": "feu",
     "source": "img:305"
   },
   {
-    "id": "metamorphose",
+    "id": "polymorph",
     "name": "Metamorphose",
     "ref": "../sorts/metamorphose.html",
     "status": "source",
@@ -6465,17 +6465,17 @@
     "material": "une chrysalide",
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:306"
   },
   {
-    "id": "metamorphose-animale",
+    "id": "animal-shapes",
     "name": "Metamorphose animale",
     "ref": "../sorts/metamorphose-animale.html",
     "status": "source",
@@ -6492,14 +6492,14 @@
     "material": null,
     "duration": "24h",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:306"
   },
   {
-    "id": "metamorphose-supreme",
+    "id": "true-polymorph",
     "name": "Metamorphose supreme",
     "ref": "../sorts/metamorphose-supreme.html",
     "status": "source",
@@ -6517,16 +6517,16 @@
     "material": "une goutte de mercure, un bon morceau de gomme arabique et une volute de fumee",
     "duration": "conc-1h",
     "classes": [
-      "barde",
-      "magicien",
-      "occultiste"
+      "bard",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:306"
   },
   {
-    "id": "mirage",
+    "id": "mirage-arcane",
     "name": "Mirage",
     "ref": "../sorts/mirage.html",
     "status": "source",
@@ -6543,16 +6543,16 @@
     "material": null,
     "duration": "10jours",
     "classes": [
-      "barde",
-      "druide",
-      "magicien"
+      "bard",
+      "druid",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:307"
   },
   {
-    "id": "modification-d-apparence",
+    "id": "alter-self",
     "name": "Modification d'apparence",
     "ref": "../sorts/modification-d-apparence.html",
     "status": "source",
@@ -6569,15 +6569,15 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:307"
   },
   {
-    "id": "modification-de-memoire",
+    "id": "modify-memory",
     "name": "Modification de memoire",
     "ref": "../sorts/modification-de-memoire.html",
     "status": "source",
@@ -6594,15 +6594,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:307"
   },
   {
-    "id": "monture-fantome",
+    "id": "phantom-steed",
     "name": "Monture fantome",
     "ref": "../sorts/monture-fantome.html",
     "status": "source",
@@ -6619,14 +6619,14 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:308"
   },
   {
-    "id": "moquerie-cruelle",
+    "id": "vicious-mockery",
     "name": "Moquerie cruelle",
     "ref": "../sorts/moquerie-cruelle.html",
     "status": "source",
@@ -6642,14 +6642,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde"
+      "bard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:309"
   },
   {
-    "id": "mot-de-guerison",
+    "id": "healing-word",
     "name": "Mot de guerison",
     "ref": "../sorts/mot-de-guerison.html",
     "status": "source",
@@ -6665,16 +6665,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide"
+      "bard",
+      "cleric",
+      "druid"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:309"
   },
   {
-    "id": "mot-de-guerison-de-groupe",
+    "id": "mass-healing-word",
     "name": "Mot de guerison de groupe",
     "ref": "../sorts/mot-de-guerison-de-groupe.html",
     "status": "source",
@@ -6690,15 +6690,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc"
+      "bard",
+      "cleric"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:309"
   },
   {
-    "id": "mot-de-pouvoir-etourdissant",
+    "id": "power-word-stun",
     "name": "Mot de pouvoir etourdissant",
     "ref": "../sorts/mot-de-pouvoir-etourdissant.html",
     "status": "source",
@@ -6714,17 +6714,17 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "-",
     "source": "img:309"
   },
   {
-    "id": "mot-de-pouvoir-fortifiant",
+    "id": "power-word-fortify",
     "name": "Mot de pouvoir fortifiant",
     "ref": "../sorts/mot-de-pouvoir-fortifiant.html",
     "status": "source",
@@ -6740,15 +6740,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc"
+      "bard",
+      "cleric"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:310"
   },
   {
-    "id": "mot-de-pouvoir-guerisseur",
+    "id": "power-word-heal",
     "name": "Mot de pouvoir guerisseur",
     "ref": "../sorts/mot-de-pouvoir-guerisseur.html",
     "status": "source",
@@ -6764,15 +6764,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc"
+      "bard",
+      "cleric"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:310"
   },
   {
-    "id": "mot-de-pouvoir-mortel",
+    "id": "power-word-kill",
     "name": "Mot de pouvoir mortel",
     "ref": "../sorts/mot-de-pouvoir-mortel.html",
     "status": "source",
@@ -6788,17 +6788,17 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "psychique",
     "source": "img:310"
   },
   {
-    "id": "mot-de-radiance",
+    "id": "word-of-radiance",
     "name": "Mot de radiance",
     "ref": "../sorts/mot-de-radiance.html",
     "status": "source",
@@ -6815,14 +6815,14 @@
     "material": "un symbole en forme de soleil",
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "con",
     "damageType": "radiant",
     "source": "img:310"
   },
   {
-    "id": "mot-de-retour",
+    "id": "word-of-recall",
     "name": "Mot de retour",
     "ref": "../sorts/mot-de-retour.html",
     "status": "source",
@@ -6838,14 +6838,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:310"
   },
   {
-    "id": "motif-hypnotique",
+    "id": "hypnotic-pattern",
     "name": "Motif hypnotique",
     "ref": "../sorts/motif-hypnotique.html",
     "status": "source",
@@ -6862,17 +6862,17 @@
     "material": "une pincee de confettis",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:310"
   },
   {
-    "id": "mur-d-epines",
+    "id": "wall-of-thorns",
     "name": "Mur d'epines",
     "ref": "../sorts/mur-d-epines.html",
     "status": "source",
@@ -6890,14 +6890,14 @@
     "material": "une poignee d'epines",
     "duration": "conc-10min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "dex",
     "damageType": "perforant",
     "source": "img:310"
   },
   {
-    "id": "mur-de-feu",
+    "id": "wall-of-fire",
     "name": "Mur de feu",
     "ref": "../sorts/mur-de-feu.html",
     "status": "source",
@@ -6915,16 +6915,16 @@
     "material": "un morceau de charbon",
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:311"
   },
   {
-    "id": "mur-de-force",
+    "id": "wall-of-force",
     "name": "Mur de force",
     "ref": "../sorts/mur-de-force.html",
     "status": "source",
@@ -6942,14 +6942,14 @@
     "material": "un eclat de verre",
     "duration": "conc-10min",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:311"
   },
   {
-    "id": "mur-de-glace",
+    "id": "wall-of-ice",
     "name": "Mur de glace",
     "ref": "../sorts/mur-de-glace.html",
     "status": "source",
@@ -6967,14 +6967,14 @@
     "material": "un morceau de quartz",
     "duration": "conc-10min",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "dex",
     "damageType": "froid",
     "source": "img:311"
   },
   {
-    "id": "mur-de-pierre",
+    "id": "wall-of-stone",
     "name": "Mur de pierre",
     "ref": "../sorts/mur-de-pierre.html",
     "status": "source",
@@ -6992,16 +6992,16 @@
     "material": "un cube de granit",
     "duration": "conc-10min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "-",
     "source": "img:311"
   },
   {
-    "id": "mur-de-vent",
+    "id": "wall-of-wind",
     "name": "Mur de vent",
     "ref": "../sorts/mur-de-vent.html",
     "status": "source",
@@ -7019,15 +7019,15 @@
     "material": "un eventail et une plume",
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "contondant",
     "source": "img:312"
   },
   {
-    "id": "mur-prismatique",
+    "id": "prismatic-wall",
     "name": "Mur prismatique",
     "ref": "../sorts/mur-prismatique.html",
     "status": "source",
@@ -7044,15 +7044,15 @@
     "material": null,
     "duration": "10min",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "-",
     "source": "img:312"
   },
   {
-    "id": "murmures-dissonants",
+    "id": "dissonant-whispers",
     "name": "Murmures dissonants",
     "ref": "../sorts/murmures-dissonants.html",
     "status": "source",
@@ -7068,14 +7068,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde"
+      "bard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:313"
   },
   {
-    "id": "mythes-et-legendes",
+    "id": "legend-lore",
     "name": "Mythes et legendes",
     "ref": "../sorts/mythes-et-legendes.html",
     "status": "source",
@@ -7093,16 +7093,16 @@
     "material": "de l'encens d'une valeur minimale de 250 po, que le sort detruit, et quatre lamelles d'ivoire d'une valeur minimale de 50 po chacune",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "magicien"
+      "bard",
+      "cleric",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:313"
   },
   {
-    "id": "nappe-de-brouillard",
+    "id": "fog-cloud",
     "name": "Nappe de brouillard",
     "ref": "../sorts/nappe-de-brouillard.html",
     "status": "source",
@@ -7119,17 +7119,17 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:313"
   },
   {
-    "id": "nuage-incendiaire",
+    "id": "incendiary-cloud",
     "name": "Nuage incendiaire",
     "ref": "../sorts/nuage-incendiaire.html",
     "status": "source",
@@ -7146,16 +7146,16 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:313"
   },
   {
-    "id": "nuage-nauseabond",
+    "id": "stinking-cloud",
     "name": "Nuage nauseabond",
     "ref": "../sorts/nuage-nauseabond.html",
     "status": "source",
@@ -7173,16 +7173,16 @@
     "material": "un oeuf pourri",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "-",
     "source": "img:313"
   },
   {
-    "id": "nuee-de-dagues",
+    "id": "cloud-of-daggers",
     "name": "Nuee de dagues",
     "ref": "../sorts/nuee-de-dagues.html",
     "status": "source",
@@ -7200,17 +7200,17 @@
     "material": "un fragment de verre",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "tranchant",
     "source": "img:314"
   },
   {
-    "id": "nuee-de-meteores",
+    "id": "meteor-swarm",
     "name": "Nuee de meteores",
     "ref": "../sorts/nuee-de-meteores.html",
     "status": "source",
@@ -7227,15 +7227,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:314"
   },
   {
-    "id": "oeil-du-mage",
+    "id": "arcane-eye",
     "name": "Oeil du mage",
     "ref": "../sorts/oeil-du-mage.html",
     "status": "source",
@@ -7253,14 +7253,14 @@
     "material": "une touffe de poils de chauve-souris",
     "duration": "conc-1h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:314"
   },
   {
-    "id": "orbe-chromatique",
+    "id": "chromatic-orb",
     "name": "Orbe chromatique",
     "ref": "../sorts/orbe-chromatique.html",
     "status": "source",
@@ -7278,15 +7278,15 @@
     "material": "un diamant d'une valeur minimale de 50 po",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:314"
   },
   {
-    "id": "orientation",
+    "id": "find-the-path",
     "name": "Orientation",
     "ref": "../sorts/orientation.html",
     "status": "source",
@@ -7304,16 +7304,16 @@
     "material": "des accessoires de divination, comme des cartes ou des runes, d'une valeur minimale de 100 po",
     "duration": "conc-1jour",
     "classes": [
-      "barde",
-      "clerc",
-      "druide"
+      "bard",
+      "cleric",
+      "druid"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:314"
   },
   {
-    "id": "parole-divine",
+    "id": "divine-word",
     "name": "Parole divine",
     "ref": "../sorts/parole-divine.html",
     "status": "source",
@@ -7329,14 +7329,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "cha",
     "damageType": "-",
     "source": "img:314"
   },
   {
-    "id": "passage-par-les-arbres",
+    "id": "tree-stride",
     "name": "Passage par les arbres",
     "ref": "../sorts/passage-par-les-arbres.html",
     "status": "source",
@@ -7353,15 +7353,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:315"
   },
   {
-    "id": "passage-sans-trace",
+    "id": "pass-without-trace",
     "name": "Passage sans trace",
     "ref": "../sorts/passage-sans-trace.html",
     "status": "source",
@@ -7379,15 +7379,15 @@
     "material": "les cendres d'une feuille calcinee de gui",
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:316"
   },
   {
-    "id": "passe-muraille",
+    "id": "passwall",
     "name": "Passe-muraille",
     "ref": "../sorts/passe-muraille.html",
     "status": "source",
@@ -7405,14 +7405,14 @@
     "material": "une pincee de graines de sesame",
     "duration": "1h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:316"
   },
   {
-    "id": "pattes-d-araignee",
+    "id": "spider-climb",
     "name": "Pattes d'araignee",
     "ref": "../sorts/pattes-d-araignee.html",
     "status": "source",
@@ -7430,16 +7430,16 @@
     "material": "une goutte de bitume et une araignee",
     "duration": "conc-1h",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:316"
   },
   {
-    "id": "peau-d-ecorce",
+    "id": "barkskin",
     "name": "Peau d'ecorce",
     "ref": "../sorts/peau-d-ecorce.html",
     "status": "source",
@@ -7457,15 +7457,15 @@
     "material": "une poignee d'ecorce",
     "duration": "1h",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:316"
   },
   {
-    "id": "peau-de-pierre",
+    "id": "stoneskin",
     "name": "Peau de pierre",
     "ref": "../sorts/peau-de-pierre.html",
     "status": "source",
@@ -7483,17 +7483,17 @@
     "material": "poudre de diamant d'une valeur minimale de 100 po, que le sort detruit",
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:316"
   },
   {
-    "id": "perception-bestiale",
+    "id": "beast-sense",
     "name": "Perception bestiale",
     "ref": "../sorts/perception-bestiale.html",
     "status": "source",
@@ -7509,15 +7509,15 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "druide",
-      "rodeur"
+      "druid",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:317"
   },
   {
-    "id": "perturbations-synaptiques",
+    "id": "synaptic-static",
     "name": "Perturbations synaptiques",
     "ref": "../sorts/perturbations-synaptiques.html",
     "status": "source",
@@ -7534,17 +7534,17 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "int",
     "damageType": "psychique",
     "source": "img:317"
   },
   {
-    "id": "petite-hutte-de-leomund",
+    "id": "leomunds-tiny-hut",
     "name": "Petite hutte de Leomund",
     "ref": "../sorts/petite-hutte-de-leomund.html",
     "status": "source",
@@ -7562,15 +7562,15 @@
     "material": "une bille de cristal",
     "duration": "8h",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:317"
   },
   {
-    "id": "petrification",
+    "id": "flesh-to-stone",
     "name": "Petrification",
     "ref": "../sorts/petrification.html",
     "status": "source",
@@ -7588,16 +7588,16 @@
     "material": "une plume de cockatrice",
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "-",
     "source": "img:317"
   },
   {
-    "id": "piqure-mentale",
+    "id": "mind-sliver",
     "name": "Piqure mentale",
     "ref": "../sorts/piqure-mentale.html",
     "status": "source",
@@ -7613,16 +7613,16 @@
     "material": null,
     "duration": "1round",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "int",
     "damageType": "psychique",
     "source": "img:317"
   },
   {
-    "id": "poigne-electrique",
+    "id": "shocking-grasp",
     "name": "Poigne electrique",
     "ref": "../sorts/poigne-electrique.html",
     "status": "source",
@@ -7639,15 +7639,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "foudre",
     "source": "img:318"
   },
   {
-    "id": "portail",
+    "id": "gate",
     "name": "Portail",
     "ref": "../sorts/portail.html",
     "status": "source",
@@ -7665,17 +7665,17 @@
     "material": "un diamant d'une valeur minimale de 5 000 po",
     "duration": "conc-1min",
     "classes": [
-      "clerc",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "cleric",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:318"
   },
   {
-    "id": "portail-arcanique",
+    "id": "arcane-gate",
     "name": "Portail arcanique",
     "ref": "../sorts/portail-arcanique.html",
     "status": "source",
@@ -7692,16 +7692,16 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:318"
   },
   {
-    "id": "porte-dimensionnelle",
+    "id": "dimension-door",
     "name": "Porte dimensionnelle",
     "ref": "../sorts/porte-dimensionnelle.html",
     "status": "source",
@@ -7717,17 +7717,17 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "force",
     "source": "img:319"
   },
   {
-    "id": "possession",
+    "id": "magic-jar",
     "name": "Possession",
     "ref": "../sorts/possession.html",
     "status": "source",
@@ -7745,14 +7745,14 @@
     "material": "une gemme, un cristal ou un reliquaire d'une valeur minimale de 500 po",
     "duration": "dissipation",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "cha",
     "damageType": "-",
     "source": "img:319,372"
   },
   {
-    "id": "poussiere-d-etoile",
+    "id": "starry-wisp",
     "name": "Poussiere d'etoile",
     "ref": "../sorts/poussiere-d-etoile.html",
     "status": "source",
@@ -7769,15 +7769,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "druide"
+      "bard",
+      "druid"
     ],
     "save": "-",
     "damageType": "radiant",
     "source": "img:319"
   },
   {
-    "id": "premeditation",
+    "id": "contingency",
     "name": "Premeditation",
     "ref": "../sorts/premeditation.html",
     "status": "source",
@@ -7795,14 +7795,14 @@
     "material": "une statuette en ivoire incrustee de gemmes, a votre image, d'une valeur minimale de 1 500 po",
     "duration": "10jours",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:319"
   },
   {
-    "id": "premonition",
+    "id": "foresight",
     "name": "Premonition",
     "ref": "../sorts/premonition.html",
     "status": "source",
@@ -7820,17 +7820,17 @@
     "material": "une plume de colibri",
     "duration": "8h",
     "classes": [
-      "barde",
-      "druide",
-      "magicien",
-      "occultiste"
+      "bard",
+      "druid",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:320"
   },
   {
-    "id": "presence-royale-de-yolane",
+    "id": "yolandes-regal-presence",
     "name": "Presence royale de Yolane",
     "ref": "../sorts/presence-royale-de-yolane.html",
     "status": "source",
@@ -7848,10 +7848,10 @@
     "material": "un diademe miniature",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:320"
   },
@@ -7873,17 +7873,17 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:320"
   },
   {
-    "id": "priere-de-guerison",
+    "id": "prayer-of-healing",
     "name": "Priere de guerison",
     "ref": "../sorts/priere-de-guerison.html",
     "status": "source",
@@ -7899,7 +7899,7 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -7907,7 +7907,7 @@
     "source": "img:320"
   },
   {
-    "id": "projectile-magique",
+    "id": "magic-missile",
     "name": "Projectile magique",
     "ref": "../sorts/projectile-magique.html",
     "status": "source",
@@ -7924,15 +7924,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "force",
     "source": "img:320"
   },
   {
-    "id": "projection-astrale",
+    "id": "astral-projection",
     "name": "Projection astrale",
     "ref": "../sorts/projection-astrale.html",
     "status": "source",
@@ -7950,16 +7950,16 @@
     "material": "pour chaque cible affectee, une hyacinthe d'une valeur minimale de 1 000 po et un lingot d'argent ouvrage d'une valeur minimale de 100 po, composantes que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "clerc",
-      "magicien",
-      "occultiste"
+      "cleric",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:320"
   },
   {
-    "id": "protection-contre-l-energie",
+    "id": "protection-from-energy",
     "name": "Protection contre l'energie",
     "ref": "../sorts/protection-contre-l-energie.html",
     "status": "source",
@@ -7976,18 +7976,18 @@
     "material": null,
     "duration": "conc-1h",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:321"
   },
   {
-    "id": "protection-contre-la-mort",
+    "id": "death-ward",
     "name": "Protection contre la mort",
     "ref": "../sorts/protection-contre-la-mort.html",
     "status": "source",
@@ -8004,7 +8004,7 @@
     "material": null,
     "duration": "8h",
     "classes": [
-      "clerc",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -8012,7 +8012,7 @@
     "source": "img:321"
   },
   {
-    "id": "protection-contre-le-mal-et-le-bien",
+    "id": "protection-from-evil-and-good",
     "name": "Protection contre le mal et le bien",
     "ref": "../sorts/protection-contre-le-mal-et-le-bien.html",
     "status": "source",
@@ -8030,10 +8030,10 @@
     "material": "une flasque d'eau benite d'une valeur minimale de 25 po, que le sort detruit",
     "duration": "conc-10min",
     "classes": [
-      "clerc",
-      "druide",
-      "magicien",
-      "occultiste",
+      "cleric",
+      "druid",
+      "wizard",
+      "warlock",
       "paladin"
     ],
     "save": null,
@@ -8041,7 +8041,7 @@
     "source": "img:321"
   },
   {
-    "id": "protection-contre-le-poison",
+    "id": "protection-from-poison",
     "name": "Protection contre le poison",
     "ref": "../sorts/protection-contre-le-poison.html",
     "status": "source",
@@ -8058,17 +8058,17 @@
     "material": null,
     "duration": "1h",
     "classes": [
-      "clerc",
-      "druide",
+      "cleric",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:321"
   },
   {
-    "id": "protections-et-sceaux",
+    "id": "guards-and-wards",
     "name": "Protections et sceaux",
     "ref": "../sorts/protections-et-sceaux.html",
     "status": "source",
@@ -8086,15 +8086,15 @@
     "material": "sceptre en argent d'une valeur minimale de 10 po",
     "duration": "24h",
     "classes": [
-      "barde",
-      "magicien"
+      "bard",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:321"
   },
   {
-    "id": "purification-de-la-nourriture-et-de-l-eau",
+    "id": "purify-food-and-drink",
     "name": "Purification de la nourriture et de l'eau",
     "ref": "../sorts/purification-de-la-nourriture-et-de-l-eau.html",
     "status": "source",
@@ -8111,8 +8111,8 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
+      "cleric",
+      "druid",
       "paladin"
     ],
     "save": null,
@@ -8120,7 +8120,7 @@
     "source": "img:322"
   },
   {
-    "id": "quete",
+    "id": "geas",
     "name": "Quete",
     "ref": "../sorts/quete.html",
     "status": "source",
@@ -8136,18 +8136,18 @@
     "material": null,
     "duration": "30j",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "magicien",
+      "bard",
+      "cleric",
+      "druid",
+      "wizard",
       "paladin"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:322"
   },
   {
-    "id": "rappel-a-la-vie",
+    "id": "raise-dead",
     "name": "Rappel a la vie",
     "ref": "../sorts/rappel-a-la-vie.html",
     "status": "source",
@@ -8165,8 +8165,8 @@
     "material": "un diamant d'une valeur minimale de 500 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
+      "bard",
+      "cleric",
       "paladin"
     ],
     "save": null,
@@ -8174,7 +8174,7 @@
     "source": "img:323"
   },
   {
-    "id": "rayon-affaiblissant",
+    "id": "ray-of-enfeeblement",
     "name": "Rayon affaiblissant",
     "ref": "../sorts/rayon-affaiblissant.html",
     "status": "source",
@@ -8191,15 +8191,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "-",
     "source": "img:323"
   },
   {
-    "id": "rayon-ardent",
+    "id": "scorching-ray",
     "name": "Rayon ardent",
     "ref": "../sorts/rayon-ardent.html",
     "status": "source",
@@ -8216,15 +8216,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "feu",
     "source": "img:323"
   },
   {
-    "id": "rayon-de-givre",
+    "id": "ray-of-frost",
     "name": "Rayon de givre",
     "ref": "../sorts/rayon-de-givre.html",
     "status": "source",
@@ -8241,15 +8241,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "froid",
     "source": "img:323"
   },
   {
-    "id": "rayon-de-lune",
+    "id": "moonbeam",
     "name": "Rayon de lune",
     "ref": "../sorts/rayon-de-lune.html",
     "status": "source",
@@ -8267,14 +8267,14 @@
     "material": "une feuille de cocculus",
     "duration": "conc-1min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "con",
     "damageType": "radiant",
     "source": "img:323"
   },
   {
-    "id": "rayon-de-soleil",
+    "id": "sunbeam",
     "name": "Rayon de soleil",
     "ref": "../sorts/rayon-de-soleil.html",
     "status": "source",
@@ -8292,17 +8292,17 @@
     "material": "une loupe",
     "duration": "conc-1min",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "radiant",
     "source": "img:324"
   },
   {
-    "id": "rayon-empoisonne",
+    "id": "ray-of-sickness",
     "name": "Rayon empoisonne",
     "ref": "../sorts/rayon-empoisonne.html",
     "status": "source",
@@ -8319,15 +8319,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "poison",
     "source": "img:323"
   },
   {
-    "id": "rayon-tracant",
+    "id": "guiding-bolt",
     "name": "Rayon tracant",
     "ref": "../sorts/rayon-tracant.html",
     "status": "source",
@@ -8344,14 +8344,14 @@
     "material": null,
     "duration": "1round",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "-",
     "damageType": "radiant",
     "source": "img:324"
   },
   {
-    "id": "regeneration",
+    "id": "regenerate",
     "name": "Regeneration",
     "ref": "../sorts/regeneration.html",
     "status": "source",
@@ -8369,16 +8369,16 @@
     "material": "un moulin a prieres",
     "duration": "1h",
     "classes": [
-      "barde",
-      "clerc",
-      "druide"
+      "bard",
+      "cleric",
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:324"
   },
   {
-    "id": "reincarnation",
+    "id": "reincarnate",
     "name": "Reincarnation",
     "ref": "../sorts/reincarnation.html",
     "status": "source",
@@ -8396,14 +8396,14 @@
     "material": "des huiles rares d'une valeur minimale de 1 000 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:324"
   },
   {
-    "id": "reparation",
+    "id": "mending",
     "name": "Reparation",
     "ref": "../sorts/reparation.html",
     "status": "source",
@@ -8421,18 +8421,18 @@
     "material": "deux magnetites",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:324"
   },
   {
-    "id": "repli-expeditif",
+    "id": "expeditious-retreat",
     "name": "Repli expeditif",
     "ref": "../sorts/repli-expeditif.html",
     "status": "source",
@@ -8449,16 +8449,16 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
     "source": "img:325"
   },
   {
-    "id": "represailles-infernales",
+    "id": "hellish-rebuke",
     "name": "Represailles infernales",
     "ref": "../sorts/represailles-infernales.html",
     "status": "source",
@@ -8475,7 +8475,7 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "occultiste"
+      "warlock"
     ],
     "save": "dex",
     "damageType": "feu",
@@ -8499,15 +8499,15 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "clerc",
-      "druide"
+      "cleric",
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:325"
   },
   {
-    "id": "respiration-aquatique",
+    "id": "water-breathing",
     "name": "Respiration aquatique",
     "ref": "../sorts/respiration-aquatique.html",
     "status": "source",
@@ -8525,17 +8525,17 @@
     "material": "un court roseau",
     "duration": "24h",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:325"
   },
   {
-    "id": "restauration-partielle",
+    "id": "lesser-restoration",
     "name": "Restauration partielle",
     "ref": "../sorts/restauration-partielle.html",
     "status": "source",
@@ -8552,18 +8552,18 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
+      "bard",
+      "cleric",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:326"
   },
   {
-    "id": "restauration-supreme",
+    "id": "greater-restoration",
     "name": "Restauration supreme",
     "ref": "../sorts/restauration-supreme.html",
     "status": "source",
@@ -8581,11 +8581,11 @@
     "material": "poudre de diamant d'une valeur minimale de 100 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
+      "bard",
+      "cleric",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
@@ -8610,15 +8610,15 @@
     "material": "un diamant d'une valeur minimale de 1 000 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc"
+      "bard",
+      "cleric"
     ],
     "save": null,
     "damageType": null,
     "source": "img:326"
   },
   {
-    "id": "resurrection-supreme",
+    "id": "true-resurrection",
     "name": "Resurrection supreme",
     "ref": "../sorts/resurrection-supreme.html",
     "status": "source",
@@ -8636,15 +8636,15 @@
     "material": "au moins 25 000 po de diamants, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide"
+      "cleric",
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:327"
   },
   {
-    "id": "retour-a-la-vie",
+    "id": "revivify",
     "name": "Retour a la vie",
     "ref": "../sorts/retour-a-la-vie.html",
     "status": "source",
@@ -8662,17 +8662,17 @@
     "material": "un diamant d'une valeur minimale de 300 po, que le sort detruit",
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
+      "cleric",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:327"
   },
   {
-    "id": "sanctification",
+    "id": "hallow",
     "name": "Sanctification",
     "ref": "../sorts/sanctification.html",
     "status": "source",
@@ -8690,14 +8690,14 @@
     "material": "encens d'une valeur minimale de 1 000 po, que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": null,
     "damageType": null,
     "source": "img:327"
   },
   {
-    "id": "sanctuaire",
+    "id": "sanctuary",
     "name": "Sanctuaire",
     "ref": "../sorts/sanctuaire.html",
     "status": "source",
@@ -8715,14 +8715,14 @@
     "material": "un eclat de verre issu d'un miroir",
     "duration": "1min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:327"
   },
   {
-    "id": "sanctuaire-prive-de-mordenkainen",
+    "id": "mordenkainens-private-sanctum",
     "name": "Sanctuaire prive de Mordenkainen",
     "ref": "../sorts/sanctuaire-prive-de-mordenkainen.html",
     "status": "source",
@@ -8740,14 +8740,14 @@
     "material": "une feuille de plomb",
     "duration": "24h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:327"
   },
   {
-    "id": "saut",
+    "id": "jump",
     "name": "Saut",
     "ref": "../sorts/saut.html",
     "status": "source",
@@ -8765,17 +8765,17 @@
     "material": "une patte arriere de sauterelle",
     "duration": "1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:328"
   },
   {
-    "id": "scrutation",
+    "id": "scrying",
     "name": "Scrutation",
     "ref": "../sorts/scrutation.html",
     "status": "source",
@@ -8793,18 +8793,18 @@
     "material": "un focaliseur d'une valeur minimale de 1 000 po, comme une boule de cristal, un miroir en argent ou une vasque remplie d'eau benite",
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "magicien",
-      "occultiste"
+      "bard",
+      "cleric",
+      "druid",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:328"
   },
   {
-    "id": "serviteur-invisible",
+    "id": "unseen-servant",
     "name": "Serviteur invisible",
     "ref": "../sorts/serviteur-invisible.html",
     "status": "source",
@@ -8822,9 +8822,9 @@
     "material": "un bout de ficelle et un morceau de bois",
     "duration": "1h",
     "classes": [
-      "barde",
-      "magicien",
-      "occultiste"
+      "bard",
+      "wizard",
+      "warlock"
     ],
     "save": null,
     "damageType": null,
@@ -8848,16 +8848,16 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "barde",
-      "clerc",
-      "rodeur"
+      "bard",
+      "cleric",
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:329"
   },
   {
-    "id": "simulacre",
+    "id": "simulacrum",
     "name": "Simulacre",
     "ref": "../sorts/simulacre.html",
     "status": "source",
@@ -8875,14 +8875,14 @@
     "material": "poudre de rubis d'une valeur minimale de 1 500 po, que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:329"
   },
   {
-    "id": "simulacre-de-vie",
+    "id": "false-life",
     "name": "Simulacre de vie",
     "ref": "../sorts/simulacre-de-vie.html",
     "status": "source",
@@ -8900,15 +8900,15 @@
     "material": "une goutte d'alcool",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": null,
     "damageType": null,
     "source": "img:329"
   },
   {
-    "id": "soins",
+    "id": "cure-wounds",
     "name": "Soins",
     "ref": "../sorts/soins.html",
     "status": "source",
@@ -8925,18 +8925,18 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
+      "bard",
+      "cleric",
+      "druid",
       "paladin",
-      "rodeur"
+      "ranger"
     ],
     "save": null,
     "damageType": null,
     "source": "img:330"
   },
   {
-    "id": "soins-de-groupe",
+    "id": "mass-cure-wounds",
     "name": "Soins de groupe",
     "ref": "../sorts/soins-de-groupe.html",
     "status": "source",
@@ -8953,16 +8953,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "clerc",
-      "druide"
+      "bard",
+      "cleric",
+      "druid"
     ],
     "save": null,
     "damageType": null,
     "source": "img:330"
   },
   {
-    "id": "sommeil",
+    "id": "sleep",
     "name": "Sommeil",
     "ref": "../sorts/sommeil.html",
     "status": "source",
@@ -8980,16 +8980,16 @@
     "material": "une pincee de sable ou des petales de rose",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": null,
     "source": "img:330"
   },
   {
-    "id": "songe",
+    "id": "dream",
     "name": "Songe",
     "ref": "../sorts/songe.html",
     "status": "source",
@@ -9007,16 +9007,16 @@
     "material": "une poignee de sable",
     "duration": "8h",
     "classes": [
-      "barde",
-      "magicien",
-      "occultiste"
+      "bard",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "psychique",
     "source": "img:330"
   },
   {
-    "id": "souffle-du-dragon",
+    "id": "dragons-breath",
     "name": "Souffle du dragon",
     "ref": "../sorts/souffle-du-dragon.html",
     "status": "source",
@@ -9034,15 +9034,15 @@
     "material": "un piment",
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "-",
     "source": "img:330"
   },
   {
-    "id": "souhait",
+    "id": "wish",
     "name": "Souhait",
     "ref": "../sorts/souhait.html",
     "status": "source",
@@ -9058,15 +9058,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:331"
   },
   {
-    "id": "sphere-de-feu",
+    "id": "flaming-sphere",
     "name": "Sphere de feu",
     "ref": "../sorts/sphere-de-feu.html",
     "status": "source",
@@ -9084,16 +9084,16 @@
     "material": "une boule de cire",
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:331"
   },
   {
-    "id": "sphere-de-vitriol",
+    "id": "vitriolic-sphere",
     "name": "Sphere de vitriol",
     "ref": "../sorts/sphere-de-vitriol.html",
     "status": "source",
@@ -9111,15 +9111,15 @@
     "material": "une goutte de bile",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "acide",
     "source": "img:333"
   },
   {
-    "id": "sphere-glacee-d-otiluke",
+    "id": "otilukes-freezing-sphere",
     "name": "Sphere glacee d'Otiluke",
     "ref": "../sorts/sphere-glacee-d-otiluke.html",
     "status": "source",
@@ -9137,15 +9137,15 @@
     "material": "une sphere miniature en cristal",
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "froid",
     "source": "img:332"
   },
   {
-    "id": "sphere-resiliente-d-otiluke",
+    "id": "otilukes-resilient-sphere",
     "name": "Sphere resiliente d'Otiluke",
     "ref": "../sorts/sphere-resiliente-d-otiluke.html",
     "status": "source",
@@ -9163,14 +9163,14 @@
     "material": "une sphere de verre",
     "duration": "conc-1min",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "dex",
     "damageType": null,
     "source": "img:332"
   },
   {
-    "id": "stabilisation",
+    "id": "stabilize",
     "name": "Stabilisation",
     "ref": "../sorts/stabilisation.html",
     "status": "source",
@@ -9187,8 +9187,8 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide"
+      "cleric",
+      "druid"
     ],
     "save": "-",
     "damageType": "-",
@@ -9212,17 +9212,17 @@
     "material": "une goutte de miel",
     "duration": "conc-8h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:333"
   },
   {
-    "id": "suggestion-de-groupe",
+    "id": "mass-suggestion",
     "name": "Suggestion de groupe",
     "ref": "../sorts/suggestion-de-groupe.html",
     "status": "source",
@@ -9239,16 +9239,16 @@
     "material": "une langue de serpent",
     "duration": "24h",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:333"
   },
   {
-    "id": "symbole",
+    "id": "symbol",
     "name": "Symbole",
     "ref": "../sorts/symbole.html",
     "status": "source",
@@ -9266,17 +9266,17 @@
     "material": "poudre de diamant d'une valeur minimale de 1 000 po, que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "barde",
-      "clerc",
-      "druide",
-      "magicien"
+      "bard",
+      "cleric",
+      "druid",
+      "wizard"
     ],
     "save": "-",
     "damageType": "necrotique",
     "source": "img:333"
   },
   {
-    "id": "telekinesie",
+    "id": "telekinesis",
     "name": "Telekinesie",
     "ref": "../sorts/telekinesie.html",
     "status": "source",
@@ -9293,15 +9293,15 @@
     "material": null,
     "duration": "conc-10min",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "-",
     "source": "img:334"
   },
   {
-    "id": "telepathie",
+    "id": "telepathy",
     "name": "Telepathie",
     "ref": "../sorts/telepathie.html",
     "status": "source",
@@ -9319,14 +9319,14 @@
     "material": "deux bagues jointes en argent",
     "duration": "24h",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:334"
   },
   {
-    "id": "teleportation",
+    "id": "teleport",
     "name": "Teleportation",
     "ref": "../sorts/teleportation.html",
     "status": "source",
@@ -9342,16 +9342,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:334"
   },
   {
-    "id": "tempete-de-feu",
+    "id": "fire-storm",
     "name": "Tempete de feu",
     "ref": "../sorts/tempete-de-feu.html",
     "status": "source",
@@ -9368,16 +9368,16 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur"
+      "cleric",
+      "druid",
+      "sorcerer"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:335"
   },
   {
-    "id": "tempete-de-grele",
+    "id": "ice-storm",
     "name": "Tempete de grele",
     "ref": "../sorts/tempete-de-grele.html",
     "status": "source",
@@ -9395,16 +9395,16 @@
     "material": "une moufle",
     "duration": "instantanee",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "froid",
     "source": "img:335"
   },
   {
-    "id": "tempete-de-neige",
+    "id": "sleet-storm",
     "name": "Tempete de neige",
     "ref": "../sorts/tempete-de-neige.html",
     "status": "source",
@@ -9422,16 +9422,16 @@
     "material": "un parapluie miniature",
     "duration": "conc-1min",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "-",
     "source": "img:335"
   },
   {
-    "id": "tempete-radieuse-de-jallarzi",
+    "id": "jallarzis-storm-of-radiance",
     "name": "Tempete radieuse de Jallarzi",
     "ref": "../sorts/tempete-radieuse-de-jallarzi.html",
     "status": "source",
@@ -9449,15 +9449,15 @@
     "material": "une pincee de phosphore",
     "duration": "conc-1min",
     "classes": [
-      "magicien",
-      "occultiste"
+      "wizard",
+      "warlock"
     ],
     "save": "con",
     "damageType": "radiant",
     "source": "img:336"
   },
   {
-    "id": "tempete-vengeresse",
+    "id": "storm-of-vengeance",
     "name": "Tempete vengeresse",
     "ref": "../sorts/tempete-vengeresse.html",
     "status": "source",
@@ -9474,14 +9474,14 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "con",
     "damageType": "tonnerre",
     "source": "img:336"
   },
   {
-    "id": "tenebres",
+    "id": "darkness",
     "name": "Tenebres",
     "ref": "../sorts/tenebres.html",
     "status": "source",
@@ -9498,16 +9498,16 @@
     "material": "une touffe de fourrure de chauve-souris et un bout de charbon",
     "duration": "conc-10min",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:337"
   },
   {
-    "id": "tentacules-de-hadar",
+    "id": "arms-of-hadar",
     "name": "Tentacules de Hadar",
     "ref": "../sorts/tentacules-de-hadar.html",
     "status": "source",
@@ -9524,14 +9524,14 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "occultiste"
+      "warlock"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "necrotique",
     "source": "img:337"
   },
   {
-    "id": "tentacules-noirs-d-evard",
+    "id": "evards-black-tentacles",
     "name": "Tentacules noirs d'Evard",
     "ref": "../sorts/tentacules-noirs-d-evard.html",
     "status": "source",
@@ -9549,14 +9549,14 @@
     "material": "un tentacule",
     "duration": "conc-1min",
     "classes": [
-      "magicien"
+      "wizard"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "contondant",
     "source": "img:338"
   },
   {
-    "id": "terrain-hallucinatoire",
+    "id": "hallucinatory-terrain",
     "name": "Terrain hallucinatoire",
     "ref": "../sorts/terrain-hallucinatoire.html",
     "status": "source",
@@ -9574,17 +9574,17 @@
     "material": "un champignon",
     "duration": "24h",
     "classes": [
-      "barde",
-      "druide",
-      "magicien",
-      "occultiste"
+      "bard",
+      "druid",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:338"
   },
   {
-    "id": "terreur",
+    "id": "fear",
     "name": "Terreur",
     "ref": "../sorts/terreur.html",
     "status": "source",
@@ -9602,17 +9602,17 @@
     "material": "une plume blanche",
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
-    "save": "sag",
+    "save": "wis",
     "damageType": "-",
     "source": "img:339"
   },
   {
-    "id": "texte-illusoire",
+    "id": "illusory-script",
     "name": "Texte illusoire",
     "ref": "../sorts/texte-illusoire.html",
     "status": "source",
@@ -9629,16 +9629,16 @@
     "material": "de l'encre d'une valeur minimale de 10 po, que le sort detruit",
     "duration": "10jours",
     "classes": [
-      "barde",
-      "magicien",
-      "occultiste"
+      "bard",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:339"
   },
   {
-    "id": "thaumaturgie",
+    "id": "thaumaturgy",
     "name": "Thaumaturgie",
     "ref": "../sorts/thaumaturgie.html",
     "status": "source",
@@ -9654,14 +9654,14 @@
     "material": null,
     "duration": "1min",
     "classes": [
-      "clerc"
+      "cleric"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:339"
   },
   {
-    "id": "toile-d-araignee",
+    "id": "web",
     "name": "Toile d'araignee",
     "ref": "../sorts/toile-d-araignee.html",
     "status": "source",
@@ -9679,15 +9679,15 @@
     "material": "quelques filandres de toile d'araignee",
     "duration": "conc-1h",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "dex",
     "damageType": "feu",
     "source": "img:339"
   },
   {
-    "id": "trait-de-feu",
+    "id": "fire-bolt",
     "name": "Trait de feu",
     "ref": "../sorts/trait-de-feu.html",
     "status": "source",
@@ -9704,15 +9704,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "feu",
     "source": "img:340"
   },
   {
-    "id": "trait-ensorcele",
+    "id": "witch-bolt",
     "name": "Trait ensorcele",
     "ref": "../sorts/trait-ensorcele.html",
     "status": "source",
@@ -9730,16 +9730,16 @@
     "material": "une petite branche frappee par la foudre",
     "duration": "conc-1min",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "foudre",
     "source": "img:340"
   },
   {
-    "id": "tremblement-de-terre",
+    "id": "earthquake",
     "name": "Tremblement de terre",
     "ref": "../sorts/tremblement-de-terre.html",
     "status": "source",
@@ -9757,9 +9757,9 @@
     "material": "une pierre brisee",
     "duration": "conc-1min",
     "classes": [
-      "clerc",
-      "druide",
-      "ensorceleur"
+      "cleric",
+      "druid",
+      "sorcerer"
     ],
     "save": "dex",
     "damageType": "contondant",
@@ -9783,14 +9783,14 @@
     "material": null,
     "duration": "conc-6round",
     "classes": [
-      "druide"
+      "druid"
     ],
-    "save": "for",
+    "save": "str",
     "damageType": "contondant",
     "source": "img:341"
   },
   {
-    "id": "vague-destructrice",
+    "id": "destructive-wave",
     "name": "Vague destructrice",
     "ref": "../sorts/vague-destructrice.html",
     "status": "source",
@@ -9813,7 +9813,7 @@
     "source": "img:341"
   },
   {
-    "id": "vague-tonnante",
+    "id": "thunderwave",
     "name": "Vague tonnante",
     "ref": "../sorts/vague-tonnante.html",
     "status": "source",
@@ -9830,17 +9830,17 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "barde",
-      "druide",
-      "ensorceleur",
-      "magicien"
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
     ],
     "save": "con",
     "damageType": "tonnerre",
     "source": "img:341"
   },
   {
-    "id": "vent-divin",
+    "id": "wind-walk",
     "name": "Vent divin",
     "ref": "../sorts/vent-divin.html",
     "status": "source",
@@ -9858,14 +9858,14 @@
     "material": "une bougie",
     "duration": "8h",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:341"
   },
   {
-    "id": "verrou-magique",
+    "id": "arcane-lock",
     "name": "Verrou magique",
     "ref": "../sorts/verrou-magique.html",
     "status": "source",
@@ -9883,14 +9883,14 @@
     "material": "poudre d'or d'une valeur minimale de 25 po, que le sort detruit",
     "duration": "dissipation",
     "classes": [
-      "magicien"
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:341"
   },
   {
-    "id": "vif-carquois",
+    "id": "swift-quiver",
     "name": "Vif carquois",
     "ref": "../sorts/vif-carquois.html",
     "status": "source",
@@ -9908,14 +9908,14 @@
     "material": "un carquois d'une valeur minimale de 1 po",
     "duration": "conc-1min",
     "classes": [
-      "rodeur"
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:342"
   },
   {
-    "id": "vigueur-arcanique",
+    "id": "arcane-vigor",
     "name": "Vigueur arcanique",
     "ref": "../sorts/vigueur-arcanique.html",
     "status": "source",
@@ -9932,15 +9932,15 @@
     "material": null,
     "duration": "instantanee",
     "classes": [
-      "ensorceleur",
-      "magicien"
+      "sorcerer",
+      "wizard"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:342"
   },
   {
-    "id": "vision-dans-le-noir",
+    "id": "darkvision",
     "name": "Vision dans le noir",
     "ref": "../sorts/vision-dans-le-noir.html",
     "status": "source",
@@ -9958,17 +9958,17 @@
     "material": "une carotte sechee",
     "duration": "8h",
     "classes": [
-      "druide",
-      "ensorceleur",
-      "magicien",
-      "rodeur"
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:342,376"
   },
   {
-    "id": "vision-supreme",
+    "id": "true-seeing",
     "name": "Vision supreme",
     "ref": "../sorts/vision-supreme.html",
     "status": "source",
@@ -9986,18 +9986,18 @@
     "material": "poudre de champignon d'une valeur minimale de 25 po, que le sort detruit",
     "duration": "1h",
     "classes": [
-      "barde",
-      "clerc",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:342"
   },
   {
-    "id": "voie-vegetale",
+    "id": "transport-via-plants",
     "name": "Voie vegetale",
     "ref": "../sorts/voie-vegetale.html",
     "status": "source",
@@ -10014,14 +10014,14 @@
     "material": null,
     "duration": "1min",
     "classes": [
-      "druide"
+      "druid"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:342"
   },
   {
-    "id": "voile-defensif",
+    "id": "blade-ward",
     "name": "Voile defensif",
     "ref": "../sorts/voile-defensif.html",
     "status": "source",
@@ -10038,17 +10038,17 @@
     "material": null,
     "duration": "conc-1min",
     "classes": [
-      "barde",
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:342"
   },
   {
-    "id": "vol",
+    "id": "fly",
     "name": "Vol",
     "ref": "../sorts/vol.html",
     "status": "source",
@@ -10066,16 +10066,16 @@
     "material": "une plume",
     "duration": "conc-10min",
     "classes": [
-      "ensorceleur",
-      "magicien",
-      "occultiste"
+      "sorcerer",
+      "wizard",
+      "warlock"
     ],
     "save": "-",
     "damageType": "-",
     "source": "img:342,377"
   },
   {
-    "id": "voracite-de-hadar",
+    "id": "hunger-of-hadar",
     "name": "Voracite de Hadar",
     "ref": "../sorts/voracite-de-hadar.html",
     "status": "source",
@@ -10093,14 +10093,14 @@
     "material": "un tentacule de poulpe marine",
     "duration": "conc-1min",
     "classes": [
-      "occultiste"
+      "warlock"
     ],
     "save": "dex",
     "damageType": "froid",
     "source": "img:343"
   },
   {
-    "id": "zone-de-verite",
+    "id": "zone-of-truth",
     "name": "Zone de verite",
     "ref": "../sorts/zone-de-verite.html",
     "status": "source",
@@ -10117,8 +10117,8 @@
     "material": null,
     "duration": "10min",
     "classes": [
-      "barde",
-      "clerc",
+      "bard",
+      "cleric",
       "paladin"
     ],
     "save": "cha",

@@ -1,20 +1,5 @@
 {
   "_note": "English -> catalog-id aliases so the scorer measures RULES errors, not FR/EN naming. Only verified ids (present in data/) are mapped; an English name with no real 2024 catalog equivalent stays unresolved and counts as an error (which is correct).",
-  "spells": {
-    "druidcraft": "druidisme",
-    "produce flame": "flammes",
-    "guidance": "assistance",
-    "thorn whip": "fouet-epineux",
-    "shillelagh": "crosse-des-druides",
-    "cure wounds": "soins",
-    "entangle": "enchevetrement",
-    "faerie fire": "lueurs-feeriques",
-    "thunderwave": "vague-tonnante",
-    "speak with animals": "communication-avec-les-animaux",
-    "healing word": "mot-de-guerison",
-    "goodberry": "baies-nourricieres",
-    "fog cloud": "nappe-de-brouillard"
-  },
   "styles": {
     "great weapon fighting": "armes-a-deux-mains",
     "two-weapon fighting": "combat-a-deux-armes",

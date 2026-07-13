@@ -9,14 +9,14 @@ import { makeError } from "../taxonomy.mjs";
 
 const dv = (C, n) => { const d = C.derived.find((x) => x.name === n); return d ? Number(d.value) : NaN; };
 const arr = (v) => (Array.isArray(v) ? v : v == null ? [] : [v]);
-const ABIL = { str: "for", for: "for", dex: "dex", con: "con", int: "int", wis: "sag", sag: "sag", cha: "cha" };
+const ABIL = { str: "str", for: "str", dex: "dex", con: "con", int: "int", wis: "wis", sag: "wis", cha: "cha" };
 
 export function oracle(env, task) {
   const { catalog } = env, ref = task.reference;
   const C = computeCharacter(toCharacterModel(catalog, ref));
-  const classId = resolve(env.index, "classes", ref.classe) || ref.classe;
-  const fixed = { classe: ref.classe, "sous-classe": ref["sous-classe"], espece: ref.espece,
-    lignage: ref.lignage, historique: ref.historique, methode: ref.methode, abilityScores: ref.abilityScores, nom: ref.nom, _id: ref._id };
+  const classId = resolve(env.index, "classes", ref.class) || ref.class;
+  const fixed = { class: ref.class, subclass: ref.subclass, species: ref.species,
+    lineage: ref.lineage, background: ref.background, method: ref.method, abilityScores: ref.abilityScores, name: ref.name, _id: ref._id };
 
   const granted = new Set(), grantedCantrips = new Set(), grantedPrepared = new Set();
   for (const s of selectedSources(catalog, fixed)) for (const e of (s.effects || [])) {
@@ -41,14 +41,14 @@ export function oracle(env, task) {
   for (const s of C.prepared) legalPrepared.add(normId(s.id));
 
   return {
-    classId, speciesId: resolve(env.index, "species", ref.espece), lineageId: ref.lignage || null,
-    backgroundId: resolve(env.index, "backgrounds", ref.historique), scores: ref.abilityScores,
+    classId, speciesId: resolve(env.index, "species", ref.species), lineageId: ref.lineage || null,
+    backgroundId: resolve(env.index, "backgrounds", ref.background), scores: ref.abilityScores,
     PB: C.PB, ACs: new Set(C.derived.filter((d) => String(d.name).startsWith("CA")).map((d) => Number(d.value))),
-    HP: dv(C, "Points de vie"), wisMod: C.mods.sag,
+    HP: dv(C, "Points de vie"), wisMod: C.mods.wis,
     saves: new Set(C.saves.filter((s) => s.prof).map((s) => s.a)),
     legalSkills, skillCount: refSkills.size,
     legalCantrips, legalPrepared, cantripCount: C.cantrips.length, preparedCount: C.prepared.length,
-    isCaster: !!task.caster, isFighter: classId === "guerrier",
+    isCaster: !!task.caster, isFighter: classId === "fighter",
   };
 }
 
@@ -58,14 +58,14 @@ export function correctClaim(env, ref) {
   const C = computeCharacter(toCharacterModel(env.catalog, ref));
   const perceptionProf = C.skills.some((s) => s.prof && normId(s.name) === "perception");
   return {
-    class: ref.classe, species: ref.espece, lineage: ref.lignage || null, background: ref.historique,
+    class: ref.class, species: ref.species, lineage: ref.lineage || null, background: ref.background,
     abilityScores: ref.abilityScores, proficiencyBonus: C.PB,
     armorClass: dv(C, "CA"), hitPoints: dv(C, "Points de vie"),
-    passivePerception: 10 + C.mods.sag + (perceptionProf ? C.PB : 0),
+    passivePerception: 10 + C.mods.wis + (perceptionProf ? C.PB : 0),
     savingThrowProficiencies: C.saves.filter((s) => s.prof).map((s) => s.a),
     skillProficiencies: C.skills.filter((s) => s.prof).map((s) => normId(s.name)),
     cantrips: C.cantrips.map((s) => s.id), preparedSpells: C.prepared.map((s) => s.id),
-    fightingStyle: ref["guerrier-style-de-combat"] || null,
+    fightingStyle: ref["fighter-style-de-combat"] || null,
   };
 }
 
@@ -90,7 +90,7 @@ export function score(env, task, response) {
   // ability scores (brief-fixed). One root error if any changed; derived errors hang off it.
   const cs = claim.abilityScores || {};
   let abilityError = null;
-  for (const a of ["for", "dex", "con", "int", "sag", "cha"]) {
+  for (const a of ["str", "dex", "con", "int", "wis", "cha"]) {
     const ok = Number(cs[a]) === Number(O.scores[a]);
     U(`ability-${a}`, "ability-score", ok ? "correct" : "incorrect");
     if (!ok && !abilityError) abilityError = E({ category: "brief-violation", field: "abilityScores", expected: O.scores, observed: cs, evidence: "ability scores changed from the brief" });

@@ -1,8 +1,8 @@
 [
   {
-    "id": "voie-de-l-arbre-monde",
+    "id": "path-of-the-world-tree",
     "name": "Voie de l'Arbre-Monde",
-    "parentClass": "barbare",
+    "parentClass": "barbarian",
     "kind": "voie",
     "ref": "../classes/voie-de-l-arbre-monde.html",
     "source": "img:54",
@@ -37,9 +37,9 @@
     "recommends": []
   },
   {
-    "id": "voie-du-berserker",
+    "id": "path-of-the-berserker",
     "name": "Voie du Berserker",
-    "parentClass": "barbare",
+    "parentClass": "barbarian",
     "kind": "voie",
     "ref": "../classes/voie-du-berserker.html",
     "source": "img:55",
@@ -74,9 +74,9 @@
     "recommends": []
   },
   {
-    "id": "voie-du-coeur-sauvage",
+    "id": "path-of-the-wild-heart",
     "name": "Voie du Coeur sauvage",
-    "parentClass": "barbare",
+    "parentClass": "barbarian",
     "kind": "voie",
     "ref": "../classes/voie-du-coeur-sauvage.html",
     "source": "img:56",
@@ -117,9 +117,9 @@
     "recommends": []
   },
   {
-    "id": "voie-du-zelateur",
+    "id": "path-of-the-zealot",
     "name": "Voie du Zelateur",
-    "parentClass": "barbare",
+    "parentClass": "barbarian",
     "kind": "voie",
     "ref": "../classes/voie-du-zelateur.html",
     "source": "img:57",
@@ -160,9 +160,9 @@
     "recommends": []
   },
   {
-    "id": "college-de-la-danse",
+    "id": "college-of-dance",
     "name": "College de la Danse",
-    "parentClass": "barde",
+    "parentClass": "bard",
     "kind": "college",
     "ref": "../classes/college-de-la-danse.html",
     "source": "img:64",
@@ -197,9 +197,9 @@
     "recommends": []
   },
   {
-    "id": "college-de-la-seduction",
+    "id": "college-of-glamour",
     "name": "College de la Seduction",
-    "parentClass": "barde",
+    "parentClass": "bard",
     "kind": "college",
     "ref": "../classes/college-de-la-seduction.html",
     "source": "img:66",
@@ -234,9 +234,9 @@
     "recommends": []
   },
   {
-    "id": "college-de-la-vaillance",
+    "id": "college-of-valor",
     "name": "College de la Vaillance",
-    "parentClass": "barde",
+    "parentClass": "bard",
     "kind": "college",
     "ref": "../classes/college-de-la-vaillance.html",
     "source": "img:67",
@@ -271,9 +271,9 @@
     "recommends": []
   },
   {
-    "id": "college-du-savoir",
+    "id": "college-of-lore",
     "name": "College du Savoir",
-    "parentClass": "barde",
+    "parentClass": "bard",
     "kind": "college",
     "ref": "../classes/college-du-savoir.html",
     "source": "img:65",
@@ -316,9 +316,9 @@
     "recommends": []
   },
   {
-    "id": "domaine-de-la-guerre",
+    "id": "war-domain",
     "name": "Domaine de la Guerre",
-    "parentClass": "clerc",
+    "parentClass": "cleric",
     "kind": "domaine",
     "ref": "../classes/domaine-de-la-guerre.html",
     "source": "img:73",
@@ -373,9 +373,9 @@
     }
   },
   {
-    "id": "domaine-de-la-lumiere",
+    "id": "light-domain",
     "name": "Domaine de la Lumiere",
-    "parentClass": "clerc",
+    "parentClass": "cleric",
     "kind": "domaine",
     "ref": "../classes/domaine-de-la-lumiere.html",
     "source": "img:74",
@@ -430,9 +430,9 @@
     }
   },
   {
-    "id": "domaine-de-la-ruse",
+    "id": "trickery-domain",
     "name": "Domaine de la Ruse",
-    "parentClass": "clerc",
+    "parentClass": "cleric",
     "kind": "domaine",
     "ref": "../classes/domaine-de-la-ruse.html",
     "source": "img:75",
@@ -487,9 +487,9 @@
     }
   },
   {
-    "id": "domaine-de-la-vie",
+    "id": "life-domain",
     "name": "Domaine de la Vie",
-    "parentClass": "clerc",
+    "parentClass": "cleric",
     "kind": "domaine",
     "ref": "../classes/domaine-de-la-vie.html",
     "source": "img:77",
@@ -544,9 +544,9 @@
     }
   },
   {
-    "id": "cercle-de-la-lune",
+    "id": "circle-of-the-moon",
     "name": "Cercle de la Lune",
-    "parentClass": "druide",
+    "parentClass": "druid",
     "kind": "cercle",
     "ref": "../classes/cercle-de-la-lune.html",
     "source": "img:86",
@@ -597,9 +597,9 @@
     }
   },
   {
-    "id": "cercle-de-la-terre",
+    "id": "circle-of-the-land",
     "name": "Cercle de la Terre",
-    "parentClass": "druide",
+    "parentClass": "druid",
     "kind": "cercle",
     "ref": "../classes/cercle-de-la-terre.html",
     "source": "img:88",
@@ -750,9 +750,9 @@
     }
   },
   {
-    "id": "cercle-des-astres",
+    "id": "circle-of-stars",
     "name": "Cercle des Astres",
-    "parentClass": "druide",
+    "parentClass": "druid",
     "kind": "cercle",
     "ref": "../classes/cercle-des-astres.html",
     "source": "img:84",
@@ -793,9 +793,9 @@
     "recommends": []
   },
   {
-    "id": "cercle-des-mers",
+    "id": "circle-of-the-sea",
     "name": "Cercle des Mers",
-    "parentClass": "druide",
+    "parentClass": "druid",
     "kind": "cercle",
     "ref": "../classes/cercle-des-mers.html",
     "source": "img:87",
@@ -851,9 +851,9 @@
     }
   },
   {
-    "id": "sorcellerie-aberrante",
+    "id": "aberrant-sorcery",
     "name": "Sorcellerie aberrante",
-    "parentClass": "ensorceleur",
+    "parentClass": "sorcerer",
     "kind": "sorcellerie",
     "ref": "../classes/sorcellerie-aberrante.html",
     "source": "img:97",
@@ -915,9 +915,9 @@
     }
   },
   {
-    "id": "sorcellerie-draconique",
+    "id": "draconic-sorcery",
     "name": "Sorcellerie draconique",
-    "parentClass": "ensorceleur",
+    "parentClass": "sorcerer",
     "kind": "sorcellerie",
     "ref": "../classes/sorcellerie-draconique.html",
     "source": "img:98",
@@ -989,9 +989,9 @@
     }
   },
   {
-    "id": "sorcellerie-mecanique",
+    "id": "clockwork-sorcery",
     "name": "Sorcellerie mecanique",
-    "parentClass": "ensorceleur",
+    "parentClass": "sorcerer",
     "kind": "sorcellerie",
     "ref": "../classes/sorcellerie-mecanique.html",
     "source": "img:99",
@@ -1046,9 +1046,9 @@
     }
   },
   {
-    "id": "sorcellerie-sauvage",
+    "id": "wild-magic-sorcery",
     "name": "Sorcellerie sauvage",
-    "parentClass": "ensorceleur",
+    "parentClass": "sorcerer",
     "kind": "sorcellerie",
     "ref": "../classes/sorcellerie-sauvage.html",
     "source": "img:101",
@@ -1091,7 +1091,7 @@
   {
     "id": "champion",
     "name": "Champion",
-    "parentClass": "guerrier",
+    "parentClass": "fighter",
     "kind": "archetype-martial",
     "ref": "../classes/champion.html",
     "source": "img:103",
@@ -1138,9 +1138,9 @@
     "recommends": []
   },
   {
-    "id": "chevalier-occulte",
+    "id": "eldritch-knight",
     "name": "Chevalier occulte",
-    "parentClass": "guerrier",
+    "parentClass": "fighter",
     "kind": "archetype-martial",
     "ref": "../classes/chevalier-occulte.html",
     "source": "img:108",
@@ -1150,7 +1150,7 @@
         "type": "grants",
         "what": "spellcasting",
         "ability": "int",
-        "list": "magicien",
+        "list": "wizard",
         "level": 3
       },
       {
@@ -1191,7 +1191,7 @@
         "count": 2,
         "level": 3,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "level": 0
         },
         "note": "Deux sorts mineurs de Magicien au choix"
@@ -1200,27 +1200,27 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "magicien",
+        "list": "wizard",
         "ids": [
-          "poigne-electrique",
-          "rayon-de-givre"
+          "shocking-grasp",
+          "ray-of-frost"
         ]
       },
       {
         "kind": "prepared",
-        "list": "magicien",
+        "list": "wizard",
         "ids": [
-          "bouclier",
-          "mains-brulantes",
-          "saut"
+          "shield",
+          "burning-hands",
+          "jump"
         ]
       }
     ]
   },
   {
-    "id": "maitre-de-guerre",
+    "id": "battle-master",
     "name": "Maitre de guerre",
-    "parentClass": "guerrier",
+    "parentClass": "fighter",
     "kind": "archetype-martial",
     "ref": "../classes/maitre-de-guerre.html",
     "source": "img:110",
@@ -1299,9 +1299,9 @@
     "recommends": []
   },
   {
-    "id": "soldat-psi",
+    "id": "psi-warrior",
     "name": "Soldat psi",
-    "parentClass": "guerrier",
+    "parentClass": "fighter",
     "kind": "archetype-martial",
     "ref": "../classes/soldat-psi.html",
     "source": "img:112",
@@ -1342,9 +1342,9 @@
     "recommends": []
   },
   {
-    "id": "abjurateur",
+    "id": "abjurer",
     "name": "Abjurateur",
-    "parentClass": "magicien",
+    "parentClass": "wizard",
     "kind": "ecole-arcanique",
     "ref": "../classes/abjurateur.html",
     "source": "img:122",
@@ -1383,12 +1383,12 @@
     ],
     "choices": [
       {
-        "id": "abjurateur-sorts-ecole",
+        "id": "abjurer-sorts-ecole",
         "kind": "sort",
         "count": 2,
         "level": 3,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "maxLevel": 2
         },
         "note": "Deux sorts de Magicien de l'école d'Abjuration (niveau <= 2) ajoutés au grimoire"
@@ -1397,9 +1397,9 @@
     "recommends": []
   },
   {
-    "id": "devin",
+    "id": "diviner",
     "name": "Devin",
-    "parentClass": "magicien",
+    "parentClass": "wizard",
     "kind": "ecole-arcanique",
     "ref": "../classes/devin.html",
     "source": "img:123",
@@ -1438,12 +1438,12 @@
     ],
     "choices": [
       {
-        "id": "devin-sorts-ecole",
+        "id": "diviner-sorts-ecole",
         "kind": "sort",
         "count": 2,
         "level": 3,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "maxLevel": 2
         },
         "note": "Deux sorts de Magicien de l'école de Divination (niveau <= 2) ajoutés au grimoire"
@@ -1452,9 +1452,9 @@
     "recommends": []
   },
   {
-    "id": "evocateur",
+    "id": "evoker",
     "name": "Evocateur",
-    "parentClass": "magicien",
+    "parentClass": "wizard",
     "kind": "ecole-arcanique",
     "ref": "../classes/evocateur.html",
     "source": "img:124",
@@ -1493,12 +1493,12 @@
     ],
     "choices": [
       {
-        "id": "evocateur-sorts-ecole",
+        "id": "evoker-sorts-ecole",
         "kind": "sort",
         "count": 2,
         "level": 3,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "maxLevel": 2
         },
         "note": "Deux sorts de Magicien de l'école d'Évocation (niveau <= 2) ajoutés au grimoire"
@@ -1507,9 +1507,9 @@
     "recommends": []
   },
   {
-    "id": "illusionniste",
+    "id": "illusionist",
     "name": "Illusionniste",
-    "parentClass": "magicien",
+    "parentClass": "wizard",
     "kind": "ecole-arcanique",
     "ref": "../classes/illusionniste.html",
     "source": "img:125",
@@ -1548,12 +1548,12 @@
     ],
     "choices": [
       {
-        "id": "illusionniste-sorts-ecole",
+        "id": "illusionist-sorts-ecole",
         "kind": "sort",
         "count": 2,
         "level": 3,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "maxLevel": 2
         },
         "note": "Deux sorts de Magicien de l'école d'Illusion (niveau <= 2) ajoutés au grimoire"
@@ -1562,9 +1562,9 @@
     "recommends": []
   },
   {
-    "id": "credo-de-l-ombre",
+    "id": "warrior-of-shadow",
     "name": "Credo de l'Ombre",
-    "parentClass": "moine",
+    "parentClass": "monk",
     "kind": "credo",
     "ref": "../classes/credo-de-l-ombre.html",
     "source": "img:132",
@@ -1599,9 +1599,9 @@
     "recommends": []
   },
   {
-    "id": "credo-de-la-misericorde",
+    "id": "warrior-of-mercy",
     "name": "Credo de la Misericorde",
-    "parentClass": "moine",
+    "parentClass": "monk",
     "kind": "credo",
     "ref": "../classes/credo-de-la-misericorde.html",
     "source": "img:131",
@@ -1648,9 +1648,9 @@
     "recommends": []
   },
   {
-    "id": "credo-de-la-paume",
+    "id": "warrior-of-the-open-hand",
     "name": "Credo de la Paume",
-    "parentClass": "moine",
+    "parentClass": "monk",
     "kind": "credo",
     "ref": "../classes/credo-de-la-paume.html",
     "source": "img:133",
@@ -1685,9 +1685,9 @@
     "recommends": []
   },
   {
-    "id": "credo-des-elements",
+    "id": "warrior-of-the-elements",
     "name": "Credo des Elements",
-    "parentClass": "moine",
+    "parentClass": "monk",
     "kind": "credo",
     "ref": "../classes/credo-des-elements.html",
     "source": "img:130",
@@ -1728,9 +1728,9 @@
     "recommends": []
   },
   {
-    "id": "protecteur-archifee",
+    "id": "archfey-patron",
     "name": "Protecteur Archifee",
-    "parentClass": "occultiste",
+    "parentClass": "warlock",
     "kind": "protecteur",
     "ref": "../classes/protecteur-archifee.html",
     "source": "img:141",
@@ -1786,9 +1786,9 @@
     }
   },
   {
-    "id": "protecteur-celeste",
+    "id": "celestial-patron",
     "name": "Protecteur Celeste",
-    "parentClass": "occultiste",
+    "parentClass": "warlock",
     "kind": "protecteur",
     "ref": "../classes/protecteur-celeste.html",
     "source": "img:142,143",
@@ -1845,9 +1845,9 @@
     }
   },
   {
-    "id": "protecteur-fielon",
+    "id": "fiend-patron",
     "name": "Protecteur Fielon",
-    "parentClass": "occultiste",
+    "parentClass": "warlock",
     "kind": "protecteur",
     "ref": "../classes/protecteur-fielon.html",
     "source": "img:143",
@@ -1902,9 +1902,9 @@
     }
   },
   {
-    "id": "protecteur-grand-ancien",
+    "id": "great-old-one-patron",
     "name": "Protecteur Grand Ancien",
-    "parentClass": "occultiste",
+    "parentClass": "warlock",
     "kind": "protecteur",
     "ref": "../classes/protecteur-grand-ancien.html",
     "source": "img:144",
@@ -1971,7 +1971,7 @@
     }
   },
   {
-    "id": "serment-de-devotion",
+    "id": "oath-of-devotion",
     "name": "Serment de Devotion",
     "parentClass": "paladin",
     "kind": "serment",
@@ -2030,7 +2030,7 @@
     }
   },
   {
-    "id": "serment-de-gloire",
+    "id": "oath-of-glory",
     "name": "Serment de Gloire",
     "parentClass": "paladin",
     "kind": "serment",
@@ -2095,7 +2095,7 @@
     }
   },
   {
-    "id": "serment-de-vengeance",
+    "id": "oath-of-vengeance",
     "name": "Serment de Vengeance",
     "parentClass": "paladin",
     "kind": "serment",
@@ -2154,7 +2154,7 @@
     }
   },
   {
-    "id": "serment-des-anciens",
+    "id": "oath-of-the-ancients",
     "name": "Serment des Anciens",
     "parentClass": "paladin",
     "kind": "serment",
@@ -2213,9 +2213,9 @@
     }
   },
   {
-    "id": "belluaire",
+    "id": "beast-master",
     "name": "Belluaire",
-    "parentClass": "rodeur",
+    "parentClass": "ranger",
     "kind": "archetype-de-rodeur",
     "ref": "../classes/belluaire.html",
     "source": "img:160",
@@ -2248,7 +2248,7 @@
     ],
     "choices": [
       {
-        "id": "belluaire-compagnon",
+        "id": "beast-master-compagnon",
         "kind": "compagnon",
         "count": 1,
         "level": 3,
@@ -2265,9 +2265,9 @@
     "recommends": []
   },
   {
-    "id": "chasseur",
+    "id": "hunter",
     "name": "Chasseur",
-    "parentClass": "rodeur",
+    "parentClass": "ranger",
     "kind": "archetype-de-rodeur",
     "ref": "../classes/chasseur.html",
     "source": "img:162",
@@ -2306,7 +2306,7 @@
     ],
     "choices": [
       {
-        "id": "chasseur-proie-du-chasseur",
+        "id": "hunter-proie-du-chasseur",
         "kind": "aptitude-sous-classe",
         "count": 1,
         "level": 3,
@@ -2319,7 +2319,7 @@
         }
       },
       {
-        "id": "chasseur-tactiques-defensives",
+        "id": "hunter-tactiques-defensives",
         "kind": "aptitude-sous-classe",
         "count": 1,
         "level": 7,
@@ -2335,9 +2335,9 @@
     "recommends": []
   },
   {
-    "id": "traqueur-des-tenebres",
+    "id": "gloom-stalker",
     "name": "Traqueur des tenebres",
-    "parentClass": "rodeur",
+    "parentClass": "ranger",
     "kind": "archetype-de-rodeur",
     "ref": "../classes/traqueur-des-tenebres.html",
     "source": "img:163",
@@ -2395,9 +2395,9 @@
     }
   },
   {
-    "id": "vagabond-feerique",
+    "id": "fey-wanderer",
     "name": "Vagabond feerique",
-    "parentClass": "rodeur",
+    "parentClass": "ranger",
     "kind": "archetype-de-rodeur",
     "ref": "../classes/vagabond-feerique.html",
     "source": "img:164",
@@ -2443,8 +2443,8 @@
         "from": {
           "fromSkillSet": [
             "persuasion",
-            "representation",
-            "tromperie"
+            "performance",
+            "deception"
           ]
         },
         "grantsEach": {
@@ -2474,9 +2474,9 @@
     }
   },
   {
-    "id": "ame-aceree",
+    "id": "soulknife",
     "name": "Ame aceree",
-    "parentClass": "roublard",
+    "parentClass": "rogue",
     "kind": "archetype-de-roublard",
     "ref": "../classes/ame-aceree.html",
     "source": "img:170",
@@ -2517,9 +2517,9 @@
     "recommends": []
   },
   {
-    "id": "arnaqueur-arcanique",
+    "id": "arcane-trickster",
     "name": "Arnaqueur arcanique",
-    "parentClass": "roublard",
+    "parentClass": "rogue",
     "kind": "archetype-de-roublard",
     "ref": "../classes/arnaqueur-arcanique.html",
     "source": "img:172",
@@ -2529,7 +2529,7 @@
         "type": "grants",
         "what": "spellcasting",
         "ability": "int",
-        "list": "magicien",
+        "list": "wizard",
         "level": 3
       },
       {
@@ -2564,7 +2564,7 @@
         "count": 2,
         "level": 3,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "level": 0
         },
         "note": "main du mage plus deux sorts mineurs de Magicien au choix"
@@ -2573,27 +2573,27 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "magicien",
+        "list": "wizard",
         "ids": [
-          "piqure-mentale",
-          "illusion-mineure"
+          "mind-sliver",
+          "minor-illusion"
         ]
       },
       {
         "kind": "prepared",
-        "list": "magicien",
+        "list": "wizard",
         "ids": [
-          "charme-personne",
-          "deguisement",
-          "nappe-de-brouillard"
+          "charm-person",
+          "disguise-self",
+          "fog-cloud"
         ]
       }
     ]
   },
   {
-    "id": "voleur",
+    "id": "thief",
     "name": "Voleur",
-    "parentClass": "roublard",
+    "parentClass": "rogue",
     "kind": "archetype-de-roublard",
     "ref": "../classes/voleur.html",
     "source": "img:175",
@@ -2636,7 +2636,7 @@
   {
     "id": "assassin",
     "name": "Assassin",
-    "parentClass": "roublard",
+    "parentClass": "rogue",
     "kind": "archetype-de-roublard",
     "ref": "../classes/assassin.html",
     "source": "img:174",

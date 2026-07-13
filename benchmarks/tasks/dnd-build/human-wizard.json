@@ -7,57 +7,57 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: humain magicien, sage background, ability scores {\"for\":8,\"dex\":14,\"con\":13,\"int\":15,\"sag\":12,\"cha\":10}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "human-wizard",
-    "nom": "Alia",
-    "classe": "magicien",
-    "espece": "humain",
-    "historique": "sage",
+    "name": "Alia",
+    "class": "wizard",
+    "species": "human",
+    "background": "sage",
     "abilityScores": {
-      "for": 8,
+      "str": 8,
       "dex": 14,
       "con": 13,
       "int": 15,
-      "sag": 12,
+      "wis": 12,
       "cha": 10
     },
-    "magicien-competences": [
-      "intuition",
+    "wizard-competences": [
+      "insight",
       "investigation"
     ],
-    "magicien-cantrips": [
-      "aspersion-acide",
-      "bouffee-de-poison",
-      "contact-glacial"
+    "wizard-cantrips": [
+      "acid-splash",
+      "poison-spray",
+      "chill-touch"
     ],
-    "magicien-grimoire": [
-      "alarme",
-      "appel-de-familier",
-      "armure-du-mage",
-      "bouclier",
-      "charme-personne",
-      "comprehension-des-langues"
+    "wizard-grimoire": [
+      "alarm",
+      "find-familiar",
+      "mage-armor",
+      "shield",
+      "charm-person",
+      "comprehend-languages"
     ],
-    "magicien-prepares": [
-      "agrandissement-rapetissement",
-      "alarme",
-      "alienation",
-      "amelioration-de-caracteristique"
+    "wizard-prepares": [
+      "enlarge-reduce",
+      "alarm",
+      "befuddlement",
+      "enhance-ability"
     ],
-    "magicien-equipement": "A",
-    "humain-competent": "acrobaties",
-    "humain-polyvalent": "bagarreur-de-tavernes",
+    "wizard-equipement": "A",
+    "human-competent": "acrobaties",
+    "human-polyvalent": "bagarreur-de-tavernes",
     "sage-caracteristiques": "con",
-    "initie-a-la-magie-liste": "magicien",
+    "initie-a-la-magie-liste": "wizard",
     "initie-a-la-magie-carac": "int",
     "origine-langues-choix": [
       "draconique",
       "elfique"
     ],
     "initie-a-la-magie-cantrips": [
-      "coup-au-but",
-      "coup-de-tonnerre"
+      "true-strike",
+      "thunderclap"
     ],
-    "initie-a-la-magie-sort-1": "couleurs-dansantes"
+    "initie-a-la-magie-sort-1": "color-spray"
   }
 }

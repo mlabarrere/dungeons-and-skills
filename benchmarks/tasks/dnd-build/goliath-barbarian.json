@@ -7,28 +7,28 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: goliath barbare, soldat background, ability scores {\"for\":15,\"dex\":14,\"con\":14,\"int\":8,\"sag\":10,\"cha\":12}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "goliath-barbarian",
-    "nom": "Karn",
-    "classe": "barbare",
-    "espece": "goliath",
-    "historique": "soldat",
+    "name": "Karn",
+    "class": "barbarian",
+    "species": "goliath",
+    "background": "soldier",
     "abilityScores": {
-      "for": 15,
+      "str": 15,
       "dex": 14,
       "con": 14,
       "int": 8,
-      "sag": 10,
+      "wis": 10,
       "cha": 12
     },
-    "barbare-competences": [
-      "dressage",
+    "barbarian-competences": [
+      "animal-handling",
       "nature"
     ],
-    "barbare-equipement": "A",
+    "barbarian-equipement": "A",
     "goliath-ascendance-gigante": "brulure-ignee",
-    "soldat-caracteristiques": "for",
-    "soldat-boite-de-jeux": "boite-de-jeux",
+    "soldier-caracteristiques": "str",
+    "soldier-boite-de-jeux": "boite-de-jeux",
     "origine-langues-choix": [
       "draconique",
       "elfique"

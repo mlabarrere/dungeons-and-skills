@@ -1,115 +1,492 @@
 {
   "id": "medicis",
-  "identity": { "name": "Medicis", "level": 1, "alignment": "Neutre bon",
-    "species": "Elfe", "lineage": "Elfe sylvestre", "className": "Druide", "background": "Guide" },
-  "abilityScores": { "for": 10, "dex": 11, "con": 14, "int": 14, "sag": 17, "cha": 14,
-    "note": "fournis (methode 4d6 garde 3)" },
-
+  "identity": {
+    "name": "Medicis",
+    "level": 1,
+    "alignment": "Neutre bon",
+    "species": "Elfe",
+    "lineage": "Elfe sylvestre",
+    "className": "Druide",
+    "background": "Guide"
+  },
+  "abilityScores": {
+    "str": 10,
+    "dex": 11,
+    "con": 14,
+    "int": 14,
+    "wis": 17,
+    "cha": 14,
+    "note": "fournis (methode 4d6 garde 3)"
+  },
   "sources": [
-    { "id": "druide-1", "kind": "class-level", "label": "Druide niveau 1",
-      "ref": "../classes/druide.html", "source": "img:12-14",
+    {
+      "id": "druide-1",
+      "kind": "class-level",
+      "label": "Druide niveau 1",
+      "ref": "../classes/druide.html",
+      "source": "img:12-14",
       "effects": [
-        { "type": "grants", "what": "hitDie", "die": 8 },
-        { "type": "grants", "what": "savingThrowProficiency", "value": "int" },
-        { "type": "grants", "what": "savingThrowProficiency", "value": "sag" },
-        { "type": "grants", "what": "armorTraining", "value": "legere" },
-        { "type": "grants", "what": "shieldTraining" },
-        { "type": "grants", "what": "weaponProficiency", "value": "armes courantes" },
-        { "type": "grants", "what": "toolProficiency", "value": "materiel d'herboriste" },
-        { "type": "grants", "what": "spellcasting", "ability": "sag", "list": "druide" },
-        { "type": "grants", "what": "cantripSlots", "count": 2, "list": "druide" },
-        { "type": "grants", "what": "preparedSlots", "count": 4, "list": "druide", "minLevel": 1 },
-        { "type": "grants", "what": "language", "value": "druidique" },
-        { "type": "grants", "what": "alwaysPreparedSpell", "spell": "communication-avec-les-animaux", "list": "druide" },
-        { "type": "requiresChoice", "kind": "ordrePrimitif", "count": 1, "from": "Gardien | Mage" },
-        { "type": "requiresChoice", "kind": "competence-druide", "count": 2, "from": "liste de druide" }
-      ] },
-
-    { "id": "elfe-sylvestre", "kind": "lineage", "label": "Elfe sylvestre",
-      "ref": "../especes/elfe.html#elfe-sylvestre", "source": "img:27-28",
+        {
+          "type": "grants",
+          "what": "hitDie",
+          "die": 8
+        },
+        {
+          "type": "grants",
+          "what": "savingThrowProficiency",
+          "value": "int"
+        },
+        {
+          "type": "grants",
+          "what": "savingThrowProficiency",
+          "value": "wis"
+        },
+        {
+          "type": "grants",
+          "what": "armorTraining",
+          "value": "legere"
+        },
+        {
+          "type": "grants",
+          "what": "shieldTraining"
+        },
+        {
+          "type": "grants",
+          "what": "weaponProficiency",
+          "value": "armes courantes"
+        },
+        {
+          "type": "grants",
+          "what": "toolProficiency",
+          "value": "materiel d'herboriste"
+        },
+        {
+          "type": "grants",
+          "what": "spellcasting",
+          "ability": "wis",
+          "list": "druid"
+        },
+        {
+          "type": "grants",
+          "what": "cantripSlots",
+          "count": 2,
+          "list": "druid"
+        },
+        {
+          "type": "grants",
+          "what": "preparedSlots",
+          "count": 4,
+          "list": "druid",
+          "minLevel": 1
+        },
+        {
+          "type": "grants",
+          "what": "language",
+          "value": "druidique"
+        },
+        {
+          "type": "grants",
+          "what": "alwaysPreparedSpell",
+          "spell": "speak-with-animals",
+          "list": "druid"
+        },
+        {
+          "type": "requiresChoice",
+          "kind": "ordrePrimitif",
+          "count": 1,
+          "from": "Gardien | Mage"
+        },
+        {
+          "type": "requiresChoice",
+          "kind": "competence-druide",
+          "count": 2,
+          "from": "liste de druide"
+        }
+      ]
+    },
+    {
+      "id": "elfe-sylvestre",
+      "kind": "lineage",
+      "label": "Elfe sylvestre",
+      "ref": "../especes/elfe.html#elfe-sylvestre",
+      "source": "img:27-28",
       "effects": [
-        { "type": "grants", "what": "speed", "value": "10.5m" },
-        { "type": "grants", "what": "sense", "value": "vision dans le noir", "range": "18m" },
-        { "type": "grants", "what": "skillProficiency", "value": "Perception" },
-        { "type": "grants", "what": "cantrip", "spell": "druidisme", "list": "espece" },
-        { "type": "grants", "what": "futureSpell", "level": 3, "spell": "grande-foulee" },
-        { "type": "grants", "what": "futureSpell", "level": 5, "spell": "passage-sans-trace" }
-      ] },
-
-    { "id": "guide", "kind": "background", "label": "Historique Guide",
-      "ref": "../historiques/guide.html", "source": "img:19-26",
+        {
+          "type": "grants",
+          "what": "speed",
+          "value": "10.5m"
+        },
+        {
+          "type": "grants",
+          "what": "sense",
+          "value": "vision dans le noir",
+          "range": "18m"
+        },
+        {
+          "type": "grants",
+          "what": "skillProficiency",
+          "value": "perception"
+        },
+        {
+          "type": "grants",
+          "what": "cantrip",
+          "spell": "druidcraft",
+          "list": "espece"
+        },
+        {
+          "type": "grants",
+          "what": "futureSpell",
+          "level": 3,
+          "spell": "longstrider"
+        },
+        {
+          "type": "grants",
+          "what": "futureSpell",
+          "level": 5,
+          "spell": "pass-without-trace"
+        }
+      ]
+    },
+    {
+      "id": "guide",
+      "kind": "background",
+      "label": "Historique Guide",
+      "ref": "../historiques/guide.html",
+      "source": "img:19-26",
       "effects": [
-        { "type": "grants", "what": "skillProficiency", "value": "Discretion" },
-        { "type": "grants", "what": "skillProficiency", "value": "Survie" },
-        { "type": "grants", "what": "toolProficiency", "value": "outils de cartographe" },
-        { "type": "grants", "what": "feat", "id": "initie-a-la-magie-druide" },
-        { "type": "grants", "what": "equipmentBundle", "id": "guide-A" }
-      ] },
-
-    { "id": "initie-a-la-magie-druide", "kind": "feat", "label": "Initie a la magie (Druide)",
-      "ref": "../dons/initie-a-la-magie.html", "source": "img:34",
+        {
+          "type": "grants",
+          "what": "skillProficiency",
+          "value": "stealth"
+        },
+        {
+          "type": "grants",
+          "what": "skillProficiency",
+          "value": "survival"
+        },
+        {
+          "type": "grants",
+          "what": "toolProficiency",
+          "value": "outils de cartographe"
+        },
+        {
+          "type": "grants",
+          "what": "feat",
+          "id": "initie-a-la-magie-druide"
+        },
+        {
+          "type": "grants",
+          "what": "equipmentBundle",
+          "id": "guide-A"
+        }
+      ]
+    },
+    {
+      "id": "initie-a-la-magie-druide",
+      "kind": "feat",
+      "label": "Initie a la magie (Druide)",
+      "ref": "../dons/initie-a-la-magie.html",
+      "source": "img:34",
       "effects": [
-        { "type": "grants", "what": "cantripSlots", "count": 2, "list": "initie-druide" },
-        { "type": "requiresChoice", "kind": "sort-niv1-initie", "count": 1, "from": "liste de druide" },
-        { "type": "requiresChoice", "kind": "carac-incantation-initie", "count": 1, "from": "Int | Sag | Cha" }
-      ] },
-
-    { "id": "origine-langues", "kind": "background", "label": "Langues d'origine",
+        {
+          "type": "grants",
+          "what": "cantripSlots",
+          "count": 2,
+          "list": "initie-druide"
+        },
+        {
+          "type": "requiresChoice",
+          "kind": "sort-niv1-initie",
+          "count": 1,
+          "from": "liste de druide"
+        },
+        {
+          "type": "requiresChoice",
+          "kind": "carac-incantation-initie",
+          "count": 1,
+          "from": "Int | Sag | Cha"
+        }
+      ]
+    },
+    {
+      "id": "origine-langues",
+      "kind": "background",
+      "label": "Langues d'origine",
       "ref": "../regles/creation-personnage.html",
       "effects": [
-        { "type": "grants", "what": "language", "value": "commun" },
-        { "type": "requiresChoice", "kind": "langue", "count": 2, "from": "langues courantes" }
-      ] }
+        {
+          "type": "grants",
+          "what": "language",
+          "value": "commun"
+        },
+        {
+          "type": "requiresChoice",
+          "kind": "langue",
+          "count": 2,
+          "from": "langues courantes"
+        }
+      ]
+    }
   ],
-
   "choices": [
-    { "id": "ch-ordre", "satisfies": "ordrePrimitif", "value": "mage", "label": "Ordre primitif : Mage", "status": "fourni",
-      "effects": [ { "type": "grants", "what": "cantripSlots", "count": 1, "list": "druide" } ] },
-    { "id": "ch-comp-1", "satisfies": "competence-druide", "value": "Dressage", "label": "Competence druide : Dressage", "status": "fourni",
-      "effects": [ { "type": "grants", "what": "skillProficiency", "value": "Dressage" } ] },
-    { "id": "ch-comp-2", "satisfies": "competence-druide", "value": "Nature", "label": "Competence druide : Nature", "status": "fourni",
-      "effects": [ { "type": "grants", "what": "skillProficiency", "value": "Nature" } ] },
-    { "id": "ch-lang-1", "satisfies": "langue", "value": "elfique", "label": "Langue : Elfique", "status": "fourni",
-      "effects": [ { "type": "grants", "what": "language", "value": "elfique" } ] },
-    { "id": "ch-lang-2", "satisfies": "langue", "value": "geant", "label": "Langue : Geant", "status": "fourni",
-      "effects": [ { "type": "grants", "what": "language", "value": "geant" } ] },
-    { "id": "ch-carac-initie", "satisfies": "carac-incantation-initie", "value": "sag", "label": "Initie : caracteristique Sagesse", "status": "fourni" },
-    { "id": "ch-sort-initie", "satisfies": "sort-niv1-initie", "value": "baies-nourricieres", "label": "Initie a la magie : sort niveau 1 = Baies nourricieres", "status": "fourni",
+    {
+      "id": "ch-ordre",
+      "satisfies": "ordrePrimitif",
+      "value": "mage",
+      "label": "Ordre primitif : Mage",
+      "status": "provided",
       "effects": [
-        { "type": "grants", "what": "alwaysPreparedSpell", "spell": "baies-nourricieres", "list": "initie-druide" },
-        { "type": "grants", "what": "oncePerLongRestCasting", "spell": "baies-nourricieres" }
-      ] }
+        {
+          "type": "grants",
+          "what": "cantripSlots",
+          "count": 1,
+          "list": "druid"
+        }
+      ]
+    },
+    {
+      "id": "ch-comp-1",
+      "satisfies": "competence-druide",
+      "value": "animal-handling",
+      "label": "Competence druide : Dressage",
+      "status": "provided",
+      "effects": [
+        {
+          "type": "grants",
+          "what": "skillProficiency",
+          "value": "animal-handling"
+        }
+      ]
+    },
+    {
+      "id": "ch-comp-2",
+      "satisfies": "competence-druide",
+      "value": "nature",
+      "label": "Competence druide : Nature",
+      "status": "provided",
+      "effects": [
+        {
+          "type": "grants",
+          "what": "skillProficiency",
+          "value": "nature"
+        }
+      ]
+    },
+    {
+      "id": "ch-lang-1",
+      "satisfies": "langue",
+      "value": "elfique",
+      "label": "Langue : Elfique",
+      "status": "provided",
+      "effects": [
+        {
+          "type": "grants",
+          "what": "language",
+          "value": "elfique"
+        }
+      ]
+    },
+    {
+      "id": "ch-lang-2",
+      "satisfies": "langue",
+      "value": "geant",
+      "label": "Langue : Geant",
+      "status": "provided",
+      "effects": [
+        {
+          "type": "grants",
+          "what": "language",
+          "value": "geant"
+        }
+      ]
+    },
+    {
+      "id": "ch-carac-initie",
+      "satisfies": "carac-incantation-initie",
+      "value": "sag",
+      "label": "Initie : caracteristique Sagesse",
+      "status": "provided",
+      "effects": []
+    },
+    {
+      "id": "ch-sort-initie",
+      "satisfies": "sort-niv1-initie",
+      "value": "baies-nourricieres",
+      "label": "Initie a la magie : sort niveau 1 = Baies nourricieres",
+      "status": "provided",
+      "effects": [
+        {
+          "type": "grants",
+          "what": "alwaysPreparedSpell",
+          "spell": "goodberry",
+          "list": "initie-druide"
+        },
+        {
+          "type": "grants",
+          "what": "oncePerLongRestCasting",
+          "spell": "goodberry"
+        }
+      ]
+    }
   ],
-
   "equipment": [
-    { "object": "baton de combat", "from": "druide-optionA",
-      "roles": ["focaliseur druidique", "arme"],
-      "weapon": { "damage": "1d6", "type": "contondant", "ability": "for", "versatile": "1d8" } },
-    { "object": "armure de cuir", "from": "druide-optionA", "roles": ["armure"],
-      "armor": { "base": 11 } },
-    { "object": "bouclier", "from": "druide-optionA", "roles": ["bouclier"], "shield": true },
-    { "object": "serpe", "from": "druide-optionA", "roles": ["arme"],
-      "weapon": { "damage": "1d4", "type": "tranchant", "ability": "for" } },
-    { "object": "arc court", "from": "guide-A", "roles": ["arme"],
-      "weapon": { "damage": "1d6", "type": "perforant", "ability": "dex" } }
+    {
+      "object": "baton de combat",
+      "from": "druide-optionA",
+      "roles": [
+        "focaliseur druidique",
+        "arme"
+      ],
+      "weapon": {
+        "damage": "1d6",
+        "type": "contondant",
+        "ability": "for",
+        "versatile": "1d8"
+      }
+    },
+    {
+      "object": "armure de cuir",
+      "from": "druide-optionA",
+      "roles": [
+        "armure"
+      ],
+      "armor": {
+        "base": 11
+      }
+    },
+    {
+      "object": "bouclier",
+      "from": "druide-optionA",
+      "roles": [
+        "bouclier"
+      ],
+      "shield": true
+    },
+    {
+      "object": "serpe",
+      "from": "druide-optionA",
+      "roles": [
+        "arme"
+      ],
+      "weapon": {
+        "damage": "1d4",
+        "type": "tranchant",
+        "ability": "for"
+      }
+    },
+    {
+      "object": "arc court",
+      "from": "guide-A",
+      "roles": [
+        "arme"
+      ],
+      "weapon": {
+        "damage": "1d6",
+        "type": "perforant",
+        "ability": "dex"
+      }
+    }
   ],
-
   "spells": {
     "cantrips": [
-      { "id": "druidisme", "label": "Druidisme", "list": "espece", "origin": "granted", "status": "source", "sourceId": "elfe-sylvestre" },
-      { "id": "flammes", "label": "Flammes", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
-      { "id": "crosse-des-druides", "label": "Crosse des druides", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
-      { "id": "poussiere-d-etoile", "label": "Poussiere d'etoile", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "ch-ordre" },
-      { "id": "assistance", "label": "Assistance", "list": "initie-druide", "origin": "chosen", "status": "fourni", "sourceId": "initie-a-la-magie-druide" },
-      { "id": "stabilisation", "label": "Stabilisation", "list": "initie-druide", "origin": "chosen", "status": "fourni", "sourceId": "initie-a-la-magie-druide" }
+      {
+        "id": "druidcraft",
+        "label": "Druidisme",
+        "list": "espece",
+        "origin": "granted",
+        "status": "granted",
+        "sourceId": "elfe-sylvestre"
+      },
+      {
+        "id": "produce-flame",
+        "label": "Flammes",
+        "list": "druid",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "druide-1"
+      },
+      {
+        "id": "shillelagh",
+        "label": "Crosse des druides",
+        "list": "druid",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "druide-1"
+      },
+      {
+        "id": "starry-wisp",
+        "label": "Poussiere d'etoile",
+        "list": "druid",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "ch-ordre"
+      },
+      {
+        "id": "guidance",
+        "label": "Assistance",
+        "list": "initie-druide",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "initie-a-la-magie-druide"
+      },
+      {
+        "id": "stabilize",
+        "label": "Stabilisation",
+        "list": "initie-druide",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "initie-a-la-magie-druide"
+      }
     ],
     "prepared": [
-      { "id": "communication-avec-les-animaux", "label": "Communication avec les animaux", "list": "druide", "origin": "alwaysPrepared", "status": "source", "sourceId": "druide-1" },
-      { "id": "amitie-avec-les-animaux", "label": "Amitie avec les animaux", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
-      { "id": "lueurs-feeriques", "label": "Lueurs feeriques", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
-      { "id": "soins", "label": "Soins", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
-      { "id": "vague-tonnante", "label": "Vague tonnante", "list": "druide", "origin": "chosen", "status": "fourni", "sourceId": "druide-1" },
-      { "id": "baies-nourricieres", "label": "Baies nourricieres", "list": "initie-druide", "origin": "alwaysPrepared", "status": "source", "sourceId": "initie-a-la-magie-druide" }
+      {
+        "id": "speak-with-animals",
+        "label": "Communication avec les animaux",
+        "list": "druid",
+        "origin": "alwaysPrepared",
+        "status": "granted",
+        "sourceId": "druide-1"
+      },
+      {
+        "id": "animal-friendship",
+        "label": "Amitie avec les animaux",
+        "list": "druid",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "druide-1"
+      },
+      {
+        "id": "faerie-fire",
+        "label": "Lueurs feeriques",
+        "list": "druid",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "druide-1"
+      },
+      {
+        "id": "cure-wounds",
+        "label": "Soins",
+        "list": "druid",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "druide-1"
+      },
+      {
+        "id": "thunderwave",
+        "label": "Vague tonnante",
+        "list": "druid",
+        "origin": "chosen",
+        "status": "provided",
+        "sourceId": "druide-1"
+      },
+      {
+        "id": "goodberry",
+        "label": "Baies nourricieres",
+        "list": "initie-druide",
+        "origin": "alwaysPrepared",
+        "status": "granted",
+        "sourceId": "initie-a-la-magie-druide"
+      }
     ]
   }
 }

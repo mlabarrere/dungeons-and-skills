@@ -7,43 +7,43 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: humain rodeur, guide background, ability scores {\"for\":12,\"dex\":15,\"con\":13,\"int\":8,\"sag\":14,\"cha\":10}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "human-ranger",
-    "nom": "Wren",
-    "classe": "rodeur",
-    "espece": "humain",
-    "historique": "guide",
+    "name": "Wren",
+    "class": "ranger",
+    "species": "human",
+    "background": "guide",
     "abilityScores": {
-      "for": 12,
+      "str": 12,
       "dex": 15,
       "con": 13,
       "int": 8,
-      "sag": 14,
+      "wis": 14,
       "cha": 10
     },
-    "rodeur-competences": [
-      "athletisme",
-      "dressage",
-      "intuition"
+    "ranger-competences": [
+      "athletics",
+      "animal-handling",
+      "insight"
     ],
-    "rodeur-prepares": [
-      "aide",
-      "alarme"
+    "ranger-prepares": [
+      "aid",
+      "alarm"
     ],
-    "rodeur-equipement": "A",
-    "humain-competent": "acrobaties",
-    "humain-polyvalent": "bagarreur-de-tavernes",
+    "ranger-equipement": "A",
+    "human-competent": "acrobaties",
+    "human-polyvalent": "bagarreur-de-tavernes",
     "guide-caracteristiques": "dex",
-    "initie-a-la-magie-liste": "druide",
+    "initie-a-la-magie-liste": "druid",
     "initie-a-la-magie-carac": "int",
     "origine-langues-choix": [
       "draconique",
       "elfique"
     ],
     "initie-a-la-magie-cantrips": [
-      "assistance",
-      "bouffee-de-poison"
+      "guidance",
+      "poison-spray"
     ],
-    "initie-a-la-magie-sort-1": "amitie-avec-les-animaux"
+    "initie-a-la-magie-sort-1": "animal-friendship"
   }
 }

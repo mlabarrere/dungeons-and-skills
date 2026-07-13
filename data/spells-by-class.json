@@ -1,3966 +1,3966 @@
 {
- "barde": [
-  {
-   "id": "agrandissement-rapetissement",
-   "level": 2
-  },
-  {
-   "id": "aide",
-   "level": 2
-  },
-  {
-   "id": "alienation",
-   "level": 8
-  },
-  {
-   "id": "amelioration-de-caracteristique",
-   "level": 2
-  },
-  {
-   "id": "amitie-avec-les-animaux",
-   "level": 1
-  },
-  {
-   "id": "animation-des-objets",
-   "level": 5
-  },
-  {
-   "id": "antidetection",
-   "level": 3
-  },
-  {
-   "id": "apaisement-des-emotions",
-   "level": 2
-  },
-  {
-   "id": "apparence-trompeuse",
-   "level": 5
-  },
-  {
-   "id": "assassin-imaginaire",
-   "level": 4
-  },
-  {
-   "id": "aversion-attirance",
-   "level": 8
-  },
-  {
-   "id": "bagou",
-   "level": 8
-  },
-  {
-   "id": "bouche-magique",
-   "level": 2
-  },
-  {
-   "id": "cage-de-force",
-   "level": 7
-  },
-  {
-   "id": "cecite-surdite",
-   "level": 2
-  },
-  {
-   "id": "cercle-de-teleportation",
-   "level": 5
-  },
-  {
-   "id": "charme-monstre",
-   "level": 4
-  },
-  {
-   "id": "charme-personne",
-   "level": 1
-  },
-  {
-   "id": "clairvoyance",
-   "level": 3
-  },
-  {
-   "id": "communication-a-distance",
-   "level": 3
-  },
-  {
-   "id": "communication-avec-les-animaux",
-   "level": 1
-  },
-  {
-   "id": "communication-avec-les-morts",
-   "level": 3
-  },
-  {
-   "id": "communication-avec-les-plantes",
-   "level": 3
-  },
-  {
-   "id": "comprehension-des-langues",
-   "level": 1
-  },
-  {
-   "id": "compulsion",
-   "level": 4
-  },
-  {
-   "id": "confusion",
-   "level": 4
-  },
-  {
-   "id": "couleurs-dansantes",
-   "level": 1
-  },
-  {
-   "id": "coup-au-but",
-   "level": 0
-  },
-  {
-   "id": "coup-de-tonnerre",
-   "level": 0
-  },
-  {
-   "id": "couronne-du-dement",
-   "level": 2
-  },
-  {
-   "id": "croissance-vegetale",
-   "level": 3
-  },
-  {
-   "id": "danse-irresistible-d-otto",
-   "level": 6
-  },
-  {
-   "id": "deblocage",
-   "level": 2
-  },
-  {
-   "id": "deguisement",
-   "level": 1
-  },
-  {
-   "id": "detection-de-l-invisibilite",
-   "level": 2
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "detection-des-pensees",
-   "level": 2
-  },
-  {
-   "id": "discours-captivant",
-   "level": 2
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "domination-de-monstre",
-   "level": 8
-  },
-  {
-   "id": "domination-de-personne",
-   "level": 5
-  },
-  {
-   "id": "don-des-langues",
-   "level": 3
-  },
-  {
-   "id": "double-illusoire",
-   "level": 5
-  },
-  {
-   "id": "embruns-prismatiques",
-   "level": 7
-  },
-  {
-   "id": "entrave-planaire",
-   "level": 5
-  },
-  {
-   "id": "epee-de-mordenkainen",
-   "level": 7
-  },
-  {
-   "id": "esprit-impenetrable",
-   "level": 8
-  },
-  {
-   "id": "etat-cadaverique",
-   "level": 3
-  },
-  {
-   "id": "eveil",
-   "level": 5
-  },
-  {
-   "id": "faux-amis",
-   "level": 0
-  },
-  {
-   "id": "festin-des-heros",
-   "level": 6
-  },
-  {
-   "id": "feuille-morte",
-   "level": 1
-  },
-  {
-   "id": "fontaine-de-lune",
-   "level": 4
-  },
-  {
-   "id": "force-fantasmagorique",
-   "level": 2
-  },
-  {
-   "id": "forme-etheree",
-   "level": 7
-  },
-  {
-   "id": "fou-rire-de-tasha",
-   "level": 1
-  },
-  {
-   "id": "fracassement",
-   "level": 2
-  },
-  {
-   "id": "glyphe-de-garde",
-   "level": 3
-  },
-  {
-   "id": "grande-foulee",
-   "level": 1
-  },
-  {
-   "id": "heroisme",
-   "level": 1
-  },
-  {
-   "id": "identification",
-   "level": 1
-  },
-  {
-   "id": "illusion-mineure",
-   "level": 0
-  },
-  {
-   "id": "illusion-programmee",
-   "level": 6
-  },
-  {
-   "id": "image-majeure",
-   "level": 3
-  },
-  {
-   "id": "image-miroir",
-   "level": 2
-  },
-  {
-   "id": "image-projetee",
-   "level": 7
-  },
-  {
-   "id": "image-silencieuse",
-   "level": 1
-  },
-  {
-   "id": "immobilisation-de-monstre",
-   "level": 5
-  },
-  {
-   "id": "immobilisation-de-personne",
-   "level": 2
-  },
-  {
-   "id": "imprecation",
-   "level": 1
-  },
-  {
-   "id": "injonction",
-   "level": 1
-  },
-  {
-   "id": "invisibilite",
-   "level": 2
-  },
-  {
-   "id": "invisibilite-supreme",
-   "level": 4
-  },
-  {
-   "id": "lenteur",
-   "level": 3
-  },
-  {
-   "id": "liberte-de-mouvement",
-   "level": 4
-  },
-  {
-   "id": "lien-telepathique-de-rary",
-   "level": 5
-  },
-  {
-   "id": "localisation-d-animaux-ou-de-plantes",
-   "level": 2
-  },
-  {
-   "id": "localisation-d-objet",
-   "level": 2
-  },
-  {
-   "id": "localisation-de-creature",
-   "level": 4
-  },
-  {
-   "id": "lueurs-feeriques",
-   "level": 1
-  },
-  {
-   "id": "lumiere",
-   "level": 0
-  },
-  {
-   "id": "lumieres-dansantes",
-   "level": 0
-  },
-  {
-   "id": "main-du-mage",
-   "level": 0
-  },
-  {
-   "id": "malediction",
-   "level": 3
-  },
-  {
-   "id": "manoir-somptueux-de-mordenkainen",
-   "level": 7
-  },
-  {
-   "id": "mauvais-oeil",
-   "level": 6
-  },
-  {
-   "id": "message",
-   "level": 0
-  },
-  {
-   "id": "messager-animal",
-   "level": 2
-  },
-  {
-   "id": "metal-brulant",
-   "level": 2
-  },
-  {
-   "id": "metamorphose",
-   "level": 4
-  },
-  {
-   "id": "metamorphose-supreme",
-   "level": 9
-  },
-  {
-   "id": "mirage",
-   "level": 7
-  },
-  {
-   "id": "modification-de-memoire",
-   "level": 5
-  },
-  {
-   "id": "moquerie-cruelle",
-   "level": 0
-  },
-  {
-   "id": "mot-de-guerison",
-   "level": 1
-  },
-  {
-   "id": "mot-de-guerison-de-groupe",
-   "level": 3
-  },
-  {
-   "id": "mot-de-pouvoir-etourdissant",
-   "level": 8
-  },
-  {
-   "id": "mot-de-pouvoir-fortifiant",
-   "level": 7
-  },
-  {
-   "id": "mot-de-pouvoir-guerisseur",
-   "level": 9
-  },
-  {
-   "id": "mot-de-pouvoir-mortel",
-   "level": 9
-  },
-  {
-   "id": "motif-hypnotique",
-   "level": 3
-  },
-  {
-   "id": "mur-prismatique",
-   "level": 9
-  },
-  {
-   "id": "murmures-dissonants",
-   "level": 1
-  },
-  {
-   "id": "mythes-et-legendes",
-   "level": 5
-  },
-  {
-   "id": "nuage-nauseabond",
-   "level": 3
-  },
-  {
-   "id": "nuee-de-dagues",
-   "level": 2
-  },
-  {
-   "id": "orientation",
-   "level": 6
-  },
-  {
-   "id": "perturbations-synaptiques",
-   "level": 5
-  },
-  {
-   "id": "petite-hutte-de-leomund",
-   "level": 3
-  },
-  {
-   "id": "porte-dimensionnelle",
-   "level": 4
-  },
-  {
-   "id": "poussiere-d-etoile",
-   "level": 0
-  },
-  {
-   "id": "premonition",
-   "level": 9
-  },
-  {
-   "id": "presence-royale-de-yolane",
-   "level": 5
-  },
-  {
-   "id": "prestidigitation",
-   "level": 0
-  },
-  {
-   "id": "protections-et-sceaux",
-   "level": 6
-  },
-  {
-   "id": "quete",
-   "level": 5
-  },
-  {
-   "id": "rappel-a-la-vie",
-   "level": 5
-  },
-  {
-   "id": "regeneration",
-   "level": 7
-  },
-  {
-   "id": "reparation",
-   "level": 0
-  },
-  {
-   "id": "restauration-partielle",
-   "level": 2
-  },
-  {
-   "id": "restauration-supreme",
-   "level": 5
-  },
-  {
-   "id": "resurrection",
-   "level": 7
-  },
-  {
-   "id": "scrutation",
-   "level": 5
-  },
-  {
-   "id": "serviteur-invisible",
-   "level": 1
-  },
-  {
-   "id": "silence",
-   "level": 2
-  },
-  {
-   "id": "soins",
-   "level": 1
-  },
-  {
-   "id": "soins-de-groupe",
-   "level": 5
-  },
-  {
-   "id": "sommeil",
-   "level": 1
-  },
-  {
-   "id": "songe",
-   "level": 5
-  },
-  {
-   "id": "suggestion",
-   "level": 2
-  },
-  {
-   "id": "suggestion-de-groupe",
-   "level": 6
-  },
-  {
-   "id": "symbole",
-   "level": 7
-  },
-  {
-   "id": "teleportation",
-   "level": 7
-  },
-  {
-   "id": "terrain-hallucinatoire",
-   "level": 4
-  },
-  {
-   "id": "terreur",
-   "level": 3
-  },
-  {
-   "id": "texte-illusoire",
-   "level": 1
-  },
-  {
-   "id": "vague-tonnante",
-   "level": 1
-  },
-  {
-   "id": "vision-supreme",
-   "level": 6
-  },
-  {
-   "id": "voile-defensif",
-   "level": 0
-  },
-  {
-   "id": "zone-de-verite",
-   "level": 2
-  }
- ],
- "druide": [
-  {
-   "id": "agrandissement-rapetissement",
-   "level": 2
-  },
-  {
-   "id": "aide",
-   "level": 2
-  },
-  {
-   "id": "alienation",
-   "level": 8
-  },
-  {
-   "id": "amelioration-de-caracteristique",
-   "level": 2
-  },
-  {
-   "id": "amitie-avec-les-animaux",
-   "level": 1
-  },
-  {
-   "id": "appel-de-la-foudre",
-   "level": 3
-  },
-  {
-   "id": "arme-elementaire",
-   "level": 3
-  },
-  {
-   "id": "assistance",
-   "level": 0
-  },
-  {
-   "id": "augure",
-   "level": 2
-  },
-  {
-   "id": "aura-de-vitalite",
-   "level": 3
-  },
-  {
-   "id": "aversion-attirance",
-   "level": 8
-  },
-  {
-   "id": "baies-nourricieres",
-   "level": 1
-  },
-  {
-   "id": "bouclier-de-feu",
-   "level": 4
-  },
-  {
-   "id": "bouffee-de-poison",
-   "level": 0
-  },
-  {
-   "id": "bourrasque",
-   "level": 2
-  },
-  {
-   "id": "changement-de-forme",
-   "level": 9
-  },
-  {
-   "id": "changement-de-plan",
-   "level": 7
-  },
-  {
-   "id": "charme-monstre",
-   "level": 4
-  },
-  {
-   "id": "charme-personne",
-   "level": 1
-  },
-  {
-   "id": "communication-avec-les-animaux",
-   "level": 1
-  },
-  {
-   "id": "communication-avec-les-plantes",
-   "level": 3
-  },
-  {
-   "id": "communion-avec-la-nature",
-   "level": 5
-  },
-  {
-   "id": "cone-de-froid",
-   "level": 5
-  },
-  {
-   "id": "confusion",
-   "level": 4
-  },
-  {
-   "id": "contagion",
-   "level": 5
-  },
-  {
-   "id": "controle-de-l-eau",
-   "level": 4
-  },
-  {
-   "id": "controle-du-climat",
-   "level": 8
-  },
-  {
-   "id": "convocation-d-elementaire",
-   "level": 4
-  },
-  {
-   "id": "convocation-de-bete",
-   "level": 2
-  },
-  {
-   "id": "convocation-de-fee",
-   "level": 3
-  },
-  {
-   "id": "coquille-antivie",
-   "level": 5
-  },
-  {
-   "id": "coup-de-tonnerre",
-   "level": 0
-  },
-  {
-   "id": "couteau-de-glace",
-   "level": 1
-  },
-  {
-   "id": "creation-ou-destruction-d-eau",
-   "level": 1
-  },
-  {
-   "id": "croissance-d-epines",
-   "level": 2
-  },
-  {
-   "id": "croissance-vegetale",
-   "level": 3
-  },
-  {
-   "id": "crosse-des-druides",
-   "level": 0
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "detection-des-pieges",
-   "level": 2
-  },
-  {
-   "id": "detection-du-poison-et-des-maladies",
-   "level": 1
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "divination",
-   "level": 4
-  },
-  {
-   "id": "domination-de-bete",
-   "level": 4
-  },
-  {
-   "id": "druidisme",
-   "level": 0
-  },
-  {
-   "id": "eclat-du-soleil",
-   "level": 8
-  },
-  {
-   "id": "elementalisme",
-   "level": 0
-  },
-  {
-   "id": "enchevetrement",
-   "level": 1
-  },
-  {
-   "id": "entrave-planaire",
-   "level": 5
-  },
-  {
-   "id": "etat-cadaverique",
-   "level": 3
-  },
-  {
-   "id": "eveil",
-   "level": 5
-  },
-  {
-   "id": "faconnage-de-la-pierre",
-   "level": 4
-  },
-  {
-   "id": "festin-des-heros",
-   "level": 6
-  },
-  {
-   "id": "flamme-eternelle",
-   "level": 2
-  },
-  {
-   "id": "flammes",
-   "level": 0
-  },
-  {
-   "id": "fleau-d-insectes",
-   "level": 5
-  },
-  {
-   "id": "fletrissement",
-   "level": 4
-  },
-  {
-   "id": "fontaine-de-lune",
-   "level": 4
-  },
-  {
-   "id": "fouet-epineux",
-   "level": 0
-  },
-  {
-   "id": "fusion-dans-la-pierre",
-   "level": 3
-  },
-  {
-   "id": "glissement-de-terrain",
-   "level": 6
-  },
-  {
-   "id": "grande-foulee",
-   "level": 1
-  },
-  {
-   "id": "guerison",
-   "level": 6
-  },
-  {
-   "id": "immobilisation-de-personne",
-   "level": 2
-  },
-  {
-   "id": "insecte-geant",
-   "level": 4
-  },
-  {
-   "id": "inversion-de-la-gravite",
-   "level": 7
-  },
-  {
-   "id": "invocation-d-animaux",
-   "level": 3
-  },
-  {
-   "id": "invocation-d-elementaire",
-   "level": 5
-  },
-  {
-   "id": "invocation-d-elementaires-mineurs",
-   "level": 4
-  },
-  {
-   "id": "invocation-d-etres-sylvestres",
-   "level": 4
-  },
-  {
-   "id": "invocation-de-fee",
-   "level": 6
-  },
-  {
-   "id": "lame-de-feu",
-   "level": 2
-  },
-  {
-   "id": "liane-avide",
-   "level": 4
-  },
-  {
-   "id": "liberte-de-mouvement",
-   "level": 4
-  },
-  {
-   "id": "localisation-d-animaux-ou-de-plantes",
-   "level": 2
-  },
-  {
-   "id": "localisation-d-objet",
-   "level": 2
-  },
-  {
-   "id": "localisation-de-creature",
-   "level": 4
-  },
-  {
-   "id": "lueurs-feeriques",
-   "level": 1
-  },
-  {
-   "id": "lumiere-du-jour",
-   "level": 3
-  },
-  {
-   "id": "marche-sur-l-onde",
-   "level": 3
-  },
-  {
-   "id": "message",
-   "level": 0
-  },
-  {
-   "id": "messager-animal",
-   "level": 2
-  },
-  {
-   "id": "metal-brulant",
-   "level": 2
-  },
-  {
-   "id": "metamorphose",
-   "level": 4
-  },
-  {
-   "id": "metamorphose-animale",
-   "level": 8
-  },
-  {
-   "id": "mirage",
-   "level": 7
-  },
-  {
-   "id": "mot-de-guerison",
-   "level": 1
-  },
-  {
-   "id": "mur-d-epines",
-   "level": 6
-  },
-  {
-   "id": "mur-de-feu",
-   "level": 4
-  },
-  {
-   "id": "mur-de-pierre",
-   "level": 5
-  },
-  {
-   "id": "mur-de-vent",
-   "level": 3
-  },
-  {
-   "id": "nappe-de-brouillard",
-   "level": 1
-  },
-  {
-   "id": "nuage-incendiaire",
-   "level": 8
-  },
-  {
-   "id": "orientation",
-   "level": 6
-  },
-  {
-   "id": "passage-par-les-arbres",
-   "level": 5
-  },
-  {
-   "id": "passage-sans-trace",
-   "level": 2
-  },
-  {
-   "id": "peau-d-ecorce",
-   "level": 2
-  },
-  {
-   "id": "peau-de-pierre",
-   "level": 4
-  },
-  {
-   "id": "perception-bestiale",
-   "level": 2
-  },
-  {
-   "id": "petrification",
-   "level": 6
-  },
-  {
-   "id": "poussiere-d-etoile",
-   "level": 0
-  },
-  {
-   "id": "premonition",
-   "level": 9
-  },
-  {
-   "id": "protection-contre-l-energie",
-   "level": 3
-  },
-  {
-   "id": "protection-contre-le-mal-et-le-bien",
-   "level": 1
-  },
-  {
-   "id": "protection-contre-le-poison",
-   "level": 2
-  },
-  {
-   "id": "purification-de-la-nourriture-et-de-l-eau",
-   "level": 1
-  },
-  {
-   "id": "quete",
-   "level": 5
-  },
-  {
-   "id": "rayon-de-lune",
-   "level": 2
-  },
-  {
-   "id": "rayon-de-soleil",
-   "level": 6
-  },
-  {
-   "id": "regeneration",
-   "level": 7
-  },
-  {
-   "id": "reincarnation",
-   "level": 5
-  },
-  {
-   "id": "reparation",
-   "level": 0
-  },
-  {
-   "id": "resistance",
-   "level": 0
-  },
-  {
-   "id": "respiration-aquatique",
-   "level": 3
-  },
-  {
-   "id": "restauration-partielle",
-   "level": 2
-  },
-  {
-   "id": "restauration-supreme",
-   "level": 5
-  },
-  {
-   "id": "resurrection-supreme",
-   "level": 9
-  },
-  {
-   "id": "retour-a-la-vie",
-   "level": 3
-  },
-  {
-   "id": "saut",
-   "level": 1
-  },
-  {
-   "id": "scrutation",
-   "level": 5
-  },
-  {
-   "id": "soins",
-   "level": 1
-  },
-  {
-   "id": "soins-de-groupe",
-   "level": 5
-  },
-  {
-   "id": "sphere-de-feu",
-   "level": 2
-  },
-  {
-   "id": "stabilisation",
-   "level": 0
-  },
-  {
-   "id": "symbole",
-   "level": 7
-  },
-  {
-   "id": "tempete-de-feu",
-   "level": 7
-  },
-  {
-   "id": "tempete-de-grele",
-   "level": 4
-  },
-  {
-   "id": "tempete-de-neige",
-   "level": 3
-  },
-  {
-   "id": "tempete-vengeresse",
-   "level": 9
-  },
-  {
-   "id": "terrain-hallucinatoire",
-   "level": 4
-  },
-  {
-   "id": "tremblement-de-terre",
-   "level": 8
-  },
-  {
-   "id": "tsunami",
-   "level": 8
-  },
-  {
-   "id": "vague-tonnante",
-   "level": 1
-  },
-  {
-   "id": "vent-divin",
-   "level": 6
-  },
-  {
-   "id": "vision-dans-le-noir",
-   "level": 2
-  },
-  {
-   "id": "voie-vegetale",
-   "level": 6
-  }
- ],
- "ensorceleur": [
-  {
-   "id": "agrandissement-rapetissement",
-   "level": 2
-  },
-  {
-   "id": "amelioration-de-caracteristique",
-   "level": 2
-  },
-  {
-   "id": "animation-des-objets",
-   "level": 5
-  },
-  {
-   "id": "apparence-trompeuse",
-   "level": 5
-  },
-  {
-   "id": "arme-magique",
-   "level": 2
-  },
-  {
-   "id": "armure-du-mage",
-   "level": 1
-  },
-  {
-   "id": "arret-du-temps",
-   "level": 9
-  },
-  {
-   "id": "aspersion-acide",
-   "level": 0
-  },
-  {
-   "id": "bannissement",
-   "level": 4
-  },
-  {
-   "id": "bouclier",
-   "level": 1
-  },
-  {
-   "id": "bouclier-de-feu",
-   "level": 4
-  },
-  {
-   "id": "bouffee-de-poison",
-   "level": 0
-  },
-  {
-   "id": "boule-de-feu",
-   "level": 3
-  },
-  {
-   "id": "boule-de-feu-a-retardement",
-   "level": 7
-  },
-  {
-   "id": "bourrasque",
-   "level": 2
-  },
-  {
-   "id": "brume-mortelle",
-   "level": 5
-  },
-  {
-   "id": "caresse-du-vampire",
-   "level": 3
-  },
-  {
-   "id": "cecite-surdite",
-   "level": 2
-  },
-  {
-   "id": "cercle-de-mort",
-   "level": 6
-  },
-  {
-   "id": "cercle-de-teleportation",
-   "level": 5
-  },
-  {
-   "id": "chaine-d-eclairs",
-   "level": 6
-  },
-  {
-   "id": "changement-de-plan",
-   "level": 7
-  },
-  {
-   "id": "charme-monstre",
-   "level": 4
-  },
-  {
-   "id": "charme-personne",
-   "level": 1
-  },
-  {
-   "id": "clairvoyance",
-   "level": 3
-  },
-  {
-   "id": "clignotement",
-   "level": 3
-  },
-  {
-   "id": "comprehension-des-langues",
-   "level": 1
-  },
-  {
-   "id": "cone-de-froid",
-   "level": 5
-  },
-  {
-   "id": "confusion",
-   "level": 4
-  },
-  {
-   "id": "contact-glacial",
-   "level": 0
-  },
-  {
-   "id": "contresort",
-   "level": 3
-  },
-  {
-   "id": "couleurs-dansantes",
-   "level": 1
-  },
-  {
-   "id": "coup-au-but",
-   "level": 0
-  },
-  {
-   "id": "coup-de-tonnerre",
-   "level": 0
-  },
-  {
-   "id": "couronne-du-dement",
-   "level": 2
-  },
-  {
-   "id": "couteau-de-glace",
-   "level": 1
-  },
-  {
-   "id": "creation",
-   "level": 5
-  },
-  {
-   "id": "deblocage",
-   "level": 2
-  },
-  {
-   "id": "deguisement",
-   "level": 1
-  },
-  {
-   "id": "demi-plan",
-   "level": 8
-  },
-  {
-   "id": "desintegration",
-   "level": 6
-  },
-  {
-   "id": "detection-de-l-invisibilite",
-   "level": 2
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "detection-des-pensees",
-   "level": 2
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "doigt-de-mort",
-   "level": 7
-  },
-  {
-   "id": "domination-de-bete",
-   "level": 4
-  },
-  {
-   "id": "domination-de-monstre",
-   "level": 8
-  },
-  {
-   "id": "domination-de-personne",
-   "level": 5
-  },
-  {
-   "id": "don-des-langues",
-   "level": 3
-  },
-  {
-   "id": "eclair",
-   "level": 3
-  },
-  {
-   "id": "eclat-du-soleil",
-   "level": 8
-  },
-  {
-   "id": "elementalisme",
-   "level": 0
-  },
-  {
-   "id": "embruns-prismatiques",
-   "level": 7
-  },
-  {
-   "id": "epine-mentale",
-   "level": 2
-  },
-  {
-   "id": "eruption-ensorcelee",
-   "level": 0
-  },
-  {
-   "id": "faux-amis",
-   "level": 0
-  },
-  {
-   "id": "feuille-morte",
-   "level": 1
-  },
-  {
-   "id": "fleau-d-insectes",
-   "level": 5
-  },
-  {
-   "id": "fletrissement",
-   "level": 4
-  },
-  {
-   "id": "flou",
-   "level": 2
-  },
-  {
-   "id": "force-fantasmagorique",
-   "level": 2
-  },
-  {
-   "id": "forme-etheree",
-   "level": 7
-  },
-  {
-   "id": "forme-gazeuse",
-   "level": 3
-  },
-  {
-   "id": "foulee-brumeuse",
-   "level": 2
-  },
-  {
-   "id": "fracassement",
-   "level": 2
-  },
-  {
-   "id": "glissement-de-terrain",
-   "level": 6
-  },
-  {
-   "id": "globe-d-invulnerabilite",
-   "level": 6
-  },
-  {
-   "id": "graisse",
-   "level": 1
-  },
-  {
-   "id": "hate",
-   "level": 3
-  },
-  {
-   "id": "illusion-mineure",
-   "level": 0
-  },
-  {
-   "id": "image-majeure",
-   "level": 3
-  },
-  {
-   "id": "image-miroir",
-   "level": 2
-  },
-  {
-   "id": "image-silencieuse",
-   "level": 1
-  },
-  {
-   "id": "immobilisation-de-monstre",
-   "level": 5
-  },
-  {
-   "id": "immobilisation-de-personne",
-   "level": 2
-  },
-  {
-   "id": "inversion-de-la-gravite",
-   "level": 7
-  },
-  {
-   "id": "invisibilite",
-   "level": 2
-  },
-  {
-   "id": "invisibilite-supreme",
-   "level": 4
-  },
-  {
-   "id": "lame-de-feu",
-   "level": 2
-  },
-  {
-   "id": "lenteur",
-   "level": 3
-  },
-  {
-   "id": "levitation",
-   "level": 2
-  },
-  {
-   "id": "lumiere",
-   "level": 0
-  },
-  {
-   "id": "lumiere-du-jour",
-   "level": 3
-  },
-  {
-   "id": "lumieres-dansantes",
-   "level": 0
-  },
-  {
-   "id": "main-de-bigby",
-   "level": 5
-  },
-  {
-   "id": "main-du-mage",
-   "level": 0
-  },
-  {
-   "id": "mains-brulantes",
-   "level": 1
-  },
-  {
-   "id": "marche-sur-l-onde",
-   "level": 3
-  },
-  {
-   "id": "mauvais-oeil",
-   "level": 6
-  },
-  {
-   "id": "message",
-   "level": 0
-  },
-  {
-   "id": "metamorphose",
-   "level": 4
-  },
-  {
-   "id": "modification-d-apparence",
-   "level": 2
-  },
-  {
-   "id": "mot-de-pouvoir-etourdissant",
-   "level": 8
-  },
-  {
-   "id": "mot-de-pouvoir-mortel",
-   "level": 9
-  },
-  {
-   "id": "motif-hypnotique",
-   "level": 3
-  },
-  {
-   "id": "mur-de-feu",
-   "level": 4
-  },
-  {
-   "id": "mur-de-pierre",
-   "level": 5
-  },
-  {
-   "id": "nappe-de-brouillard",
-   "level": 1
-  },
-  {
-   "id": "nuage-incendiaire",
-   "level": 8
-  },
-  {
-   "id": "nuage-nauseabond",
-   "level": 3
-  },
-  {
-   "id": "nuee-de-dagues",
-   "level": 2
-  },
-  {
-   "id": "nuee-de-meteores",
-   "level": 9
-  },
-  {
-   "id": "orbe-chromatique",
-   "level": 1
-  },
-  {
-   "id": "pattes-d-araignee",
-   "level": 2
-  },
-  {
-   "id": "peau-de-pierre",
-   "level": 4
-  },
-  {
-   "id": "perturbations-synaptiques",
-   "level": 5
-  },
-  {
-   "id": "petrification",
-   "level": 6
-  },
-  {
-   "id": "piqure-mentale",
-   "level": 0
-  },
-  {
-   "id": "poigne-electrique",
-   "level": 0
-  },
-  {
-   "id": "portail",
-   "level": 9
-  },
-  {
-   "id": "portail-arcanique",
-   "level": 6
-  },
-  {
-   "id": "porte-dimensionnelle",
-   "level": 4
-  },
-  {
-   "id": "prestidigitation",
-   "level": 0
-  },
-  {
-   "id": "projectile-magique",
-   "level": 1
-  },
-  {
-   "id": "protection-contre-l-energie",
-   "level": 3
-  },
-  {
-   "id": "rayon-ardent",
-   "level": 2
-  },
-  {
-   "id": "rayon-de-givre",
-   "level": 0
-  },
-  {
-   "id": "rayon-de-soleil",
-   "level": 6
-  },
-  {
-   "id": "rayon-empoisonne",
-   "level": 1
-  },
-  {
-   "id": "reparation",
-   "level": 0
-  },
-  {
-   "id": "repli-expeditif",
-   "level": 1
-  },
-  {
-   "id": "respiration-aquatique",
-   "level": 3
-  },
-  {
-   "id": "saut",
-   "level": 1
-  },
-  {
-   "id": "simulacre-de-vie",
-   "level": 1
-  },
-  {
-   "id": "sommeil",
-   "level": 1
-  },
-  {
-   "id": "souffle-du-dragon",
-   "level": 2
-  },
-  {
-   "id": "souhait",
-   "level": 9
-  },
-  {
-   "id": "sphere-de-feu",
-   "level": 2
-  },
-  {
-   "id": "sphere-de-vitriol",
-   "level": 4
-  },
-  {
-   "id": "sphere-glacee-d-otiluke",
-   "level": 6
-  },
-  {
-   "id": "suggestion",
-   "level": 2
-  },
-  {
-   "id": "suggestion-de-groupe",
-   "level": 6
-  },
-  {
-   "id": "telekinesie",
-   "level": 5
-  },
-  {
-   "id": "teleportation",
-   "level": 7
-  },
-  {
-   "id": "tempete-de-feu",
-   "level": 7
-  },
-  {
-   "id": "tempete-de-grele",
-   "level": 4
-  },
-  {
-   "id": "tempete-de-neige",
-   "level": 3
-  },
-  {
-   "id": "tenebres",
-   "level": 2
-  },
-  {
-   "id": "terreur",
-   "level": 3
-  },
-  {
-   "id": "toile-d-araignee",
-   "level": 2
-  },
-  {
-   "id": "trait-de-feu",
-   "level": 0
-  },
-  {
-   "id": "trait-ensorcele",
-   "level": 1
-  },
-  {
-   "id": "tremblement-de-terre",
-   "level": 8
-  },
-  {
-   "id": "vague-tonnante",
-   "level": 1
-  },
-  {
-   "id": "vigueur-arcanique",
-   "level": 2
-  },
-  {
-   "id": "vision-dans-le-noir",
-   "level": 2
-  },
-  {
-   "id": "vision-supreme",
-   "level": 6
-  },
-  {
-   "id": "voile-defensif",
-   "level": 0
-  },
-  {
-   "id": "vol",
-   "level": 3
-  }
- ],
- "magicien": [
-  {
-   "id": "agrandissement-rapetissement",
-   "level": 2
-  },
-  {
-   "id": "alarme",
-   "level": 1
-  },
-  {
-   "id": "alienation",
-   "level": 8
-  },
-  {
-   "id": "amelioration-de-caracteristique",
-   "level": 2
-  },
-  {
-   "id": "animation-des-morts",
-   "level": 3
-  },
-  {
-   "id": "animation-des-objets",
-   "level": 5
-  },
-  {
-   "id": "antidetection",
-   "level": 3
-  },
-  {
-   "id": "apparence-trompeuse",
-   "level": 5
-  },
-  {
-   "id": "appel-de-familier",
-   "level": 1
-  },
-  {
-   "id": "arme-magique",
-   "level": 2
-  },
-  {
-   "id": "armure-du-mage",
-   "level": 1
-  },
-  {
-   "id": "arret-du-temps",
-   "level": 9
-  },
-  {
-   "id": "aspersion-acide",
-   "level": 0
-  },
-  {
-   "id": "assassin-imaginaire",
-   "level": 4
-  },
-  {
-   "id": "augure",
-   "level": 2
-  },
-  {
-   "id": "aura-magique-de-nystul",
-   "level": 2
-  },
-  {
-   "id": "aversion-attirance",
-   "level": 8
-  },
-  {
-   "id": "bannissement",
-   "level": 4
-  },
-  {
-   "id": "bouche-magique",
-   "level": 2
-  },
-  {
-   "id": "bouclier",
-   "level": 1
-  },
-  {
-   "id": "bouclier-de-feu",
-   "level": 4
-  },
-  {
-   "id": "bouffee-de-poison",
-   "level": 0
-  },
-  {
-   "id": "boule-de-feu",
-   "level": 3
-  },
-  {
-   "id": "boule-de-feu-a-retardement",
-   "level": 7
-  },
-  {
-   "id": "bourrasque",
-   "level": 2
-  },
-  {
-   "id": "brume-mortelle",
-   "level": 5
-  },
-  {
-   "id": "cage-de-force",
-   "level": 7
-  },
-  {
-   "id": "caresse-du-vampire",
-   "level": 3
-  },
-  {
-   "id": "cecite-surdite",
-   "level": 2
-  },
-  {
-   "id": "cercle-de-mort",
-   "level": 6
-  },
-  {
-   "id": "cercle-de-pouvoir",
-   "level": 5
-  },
-  {
-   "id": "cercle-de-teleportation",
-   "level": 5
-  },
-  {
-   "id": "cercle-magique",
-   "level": 3
-  },
-  {
-   "id": "chaine-d-eclairs",
-   "level": 6
-  },
-  {
-   "id": "champ-antimagie",
-   "level": 8
-  },
-  {
-   "id": "changement-de-forme",
-   "level": 9
-  },
-  {
-   "id": "changement-de-plan",
-   "level": 7
-  },
-  {
-   "id": "charme-monstre",
-   "level": 4
-  },
-  {
-   "id": "charme-personne",
-   "level": 1
-  },
-  {
-   "id": "chaudron-bouillonnant-de-tasha",
-   "level": 6
-  },
-  {
-   "id": "chien-de-garde-de-mordenkainen",
-   "level": 4
-  },
-  {
-   "id": "clairvoyance",
-   "level": 3
-  },
-  {
-   "id": "clignotement",
-   "level": 3
-  },
-  {
-   "id": "clone",
-   "level": 8
-  },
-  {
-   "id": "coffre-secret-de-leomund",
-   "level": 4
-  },
-  {
-   "id": "communication-a-distance",
-   "level": 3
-  },
-  {
-   "id": "communication-avec-les-morts",
-   "level": 3
-  },
-  {
-   "id": "comprehension-des-langues",
-   "level": 1
-  },
-  {
-   "id": "cone-de-froid",
-   "level": 5
-  },
-  {
-   "id": "confusion",
-   "level": 4
-  },
-  {
-   "id": "contact-avec-les-plans",
-   "level": 5
-  },
-  {
-   "id": "contact-glacial",
-   "level": 0
-  },
-  {
-   "id": "contresort",
-   "level": 3
-  },
-  {
-   "id": "controle-de-l-eau",
-   "level": 4
-  },
-  {
-   "id": "controle-du-climat",
-   "level": 8
-  },
-  {
-   "id": "convocation-d-aberration",
-   "level": 4
-  },
-  {
-   "id": "convocation-d-artificiel",
-   "level": 4
-  },
-  {
-   "id": "convocation-d-elementaire",
-   "level": 4
-  },
-  {
-   "id": "convocation-de-dragon",
-   "level": 5
-  },
-  {
-   "id": "convocation-de-fee",
-   "level": 3
-  },
-  {
-   "id": "convocation-de-fielon",
-   "level": 6
-  },
-  {
-   "id": "convocation-de-mort-vivant",
-   "level": 3
-  },
-  {
-   "id": "convocations-instantanees-de-drawmij",
-   "level": 6
-  },
-  {
-   "id": "corde-enchantee",
-   "level": 2
-  },
-  {
-   "id": "couleurs-dansantes",
-   "level": 1
-  },
-  {
-   "id": "coup-au-but",
-   "level": 0
-  },
-  {
-   "id": "coup-de-tonnerre",
-   "level": 0
-  },
-  {
-   "id": "couronne-du-dement",
-   "level": 2
-  },
-  {
-   "id": "couteau-de-glace",
-   "level": 1
-  },
-  {
-   "id": "creation",
-   "level": 5
-  },
-  {
-   "id": "creation-de-mort-vivant",
-   "level": 6
-  },
-  {
-   "id": "danse-irresistible-d-otto",
-   "level": 6
-  },
-  {
-   "id": "deblocage",
-   "level": 2
-  },
-  {
-   "id": "dedale",
-   "level": 8
-  },
-  {
-   "id": "deguisement",
-   "level": 1
-  },
-  {
-   "id": "delivrance-des-maledictions",
-   "level": 3
-  },
-  {
-   "id": "demi-plan",
-   "level": 8
-  },
-  {
-   "id": "desintegration",
-   "level": 6
-  },
-  {
-   "id": "detection-de-l-invisibilite",
-   "level": 2
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "detection-des-pensees",
-   "level": 2
-  },
-  {
-   "id": "disque-flottant-de-tenser",
-   "level": 1
-  },
-  {
-   "id": "dissimulation-supreme",
-   "level": 7
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "divination",
-   "level": 4
-  },
-  {
-   "id": "doigt-de-mort",
-   "level": 7
-  },
-  {
-   "id": "domination-de-monstre",
-   "level": 8
-  },
-  {
-   "id": "domination-de-personne",
-   "level": 5
-  },
-  {
-   "id": "don-des-langues",
-   "level": 3
-  },
-  {
-   "id": "double-illusoire",
-   "level": 5
-  },
-  {
-   "id": "doux-repos",
-   "level": 2
-  },
-  {
-   "id": "eclair",
-   "level": 3
-  },
-  {
-   "id": "eclat-du-soleil",
-   "level": 8
-  },
-  {
-   "id": "elementalisme",
-   "level": 0
-  },
-  {
-   "id": "embruns-prismatiques",
-   "level": 7
-  },
-  {
-   "id": "emprisonnement",
-   "level": 9
-  },
-  {
-   "id": "ennemi-subconscient",
-   "level": 9
-  },
-  {
-   "id": "entrave-planaire",
-   "level": 5
-  },
-  {
-   "id": "epee-de-mordenkainen",
-   "level": 7
-  },
-  {
-   "id": "epine-mentale",
-   "level": 2
-  },
-  {
-   "id": "esprit-impenetrable",
-   "level": 8
-  },
-  {
-   "id": "etat-cadaverique",
-   "level": 3
-  },
-  {
-   "id": "fabrication",
-   "level": 4
-  },
-  {
-   "id": "faconnage-de-la-pierre",
-   "level": 4
-  },
-  {
-   "id": "faux-amis",
-   "level": 0
-  },
-  {
-   "id": "feuille-morte",
-   "level": 1
-  },
-  {
-   "id": "flamme-eternelle",
-   "level": 2
-  },
-  {
-   "id": "fleche-acide-de-melf",
-   "level": 2
-  },
-  {
-   "id": "fletrissement",
-   "level": 4
-  },
-  {
-   "id": "flou",
-   "level": 2
-  },
-  {
-   "id": "force-fantasmagorique",
-   "level": 2
-  },
-  {
-   "id": "forme-etheree",
-   "level": 7
-  },
-  {
-   "id": "forme-gazeuse",
-   "level": 3
-  },
-  {
-   "id": "fou-rire-de-tasha",
-   "level": 1
-  },
-  {
-   "id": "foulee-brumeuse",
-   "level": 2
-  },
-  {
-   "id": "fracassement",
-   "level": 2
-  },
-  {
-   "id": "frappe-du-vent-d-acier",
-   "level": 5
-  },
-  {
-   "id": "glas",
-   "level": 0
-  },
-  {
-   "id": "glissement-de-terrain",
-   "level": 6
-  },
-  {
-   "id": "globe-d-invulnerabilite",
-   "level": 6
-  },
-  {
-   "id": "glyphe-de-garde",
-   "level": 3
-  },
-  {
-   "id": "graisse",
-   "level": 1
-  },
-  {
-   "id": "grande-foulee",
-   "level": 1
-  },
-  {
-   "id": "hate",
-   "level": 3
-  },
-  {
-   "id": "identification",
-   "level": 1
-  },
-  {
-   "id": "illusion-mineure",
-   "level": 0
-  },
-  {
-   "id": "illusion-programmee",
-   "level": 6
-  },
-  {
-   "id": "image-majeure",
-   "level": 3
-  },
-  {
-   "id": "image-miroir",
-   "level": 2
-  },
-  {
-   "id": "image-projetee",
-   "level": 7
-  },
-  {
-   "id": "image-silencieuse",
-   "level": 1
-  },
-  {
-   "id": "immobilisation-de-monstre",
-   "level": 5
-  },
-  {
-   "id": "immobilisation-de-personne",
-   "level": 2
-  },
-  {
-   "id": "inversion-de-la-gravite",
-   "level": 7
-  },
-  {
-   "id": "invisibilite",
-   "level": 2
-  },
-  {
-   "id": "invisibilite-supreme",
-   "level": 4
-  },
-  {
-   "id": "invocation-d-elementaire",
-   "level": 5
-  },
-  {
-   "id": "invocation-d-elementaires-mineurs",
-   "level": 4
-  },
-  {
-   "id": "lenteur",
-   "level": 3
-  },
-  {
-   "id": "levitation",
-   "level": 2
-  },
-  {
-   "id": "lien-telepathique-de-rary",
-   "level": 5
-  },
-  {
-   "id": "localisation-d-objet",
-   "level": 2
-  },
-  {
-   "id": "localisation-de-creature",
-   "level": 4
-  },
-  {
-   "id": "lumiere",
-   "level": 0
-  },
-  {
-   "id": "lumieres-dansantes",
-   "level": 0
-  },
-  {
-   "id": "main-de-bigby",
-   "level": 5
-  },
-  {
-   "id": "main-du-mage",
-   "level": 0
-  },
-  {
-   "id": "mains-brulantes",
-   "level": 1
-  },
-  {
-   "id": "malediction",
-   "level": 3
-  },
-  {
-   "id": "manoir-somptueux-de-mordenkainen",
-   "level": 7
-  },
-  {
-   "id": "mauvais-oeil",
-   "level": 6
-  },
-  {
-   "id": "message",
-   "level": 0
-  },
-  {
-   "id": "metamorphose",
-   "level": 4
-  },
-  {
-   "id": "metamorphose-supreme",
-   "level": 9
-  },
-  {
-   "id": "mirage",
-   "level": 7
-  },
-  {
-   "id": "modification-d-apparence",
-   "level": 2
-  },
-  {
-   "id": "modification-de-memoire",
-   "level": 5
-  },
-  {
-   "id": "monture-fantome",
-   "level": 3
-  },
-  {
-   "id": "mot-de-pouvoir-etourdissant",
-   "level": 8
-  },
-  {
-   "id": "mot-de-pouvoir-mortel",
-   "level": 9
-  },
-  {
-   "id": "motif-hypnotique",
-   "level": 3
-  },
-  {
-   "id": "mur-de-feu",
-   "level": 4
-  },
-  {
-   "id": "mur-de-force",
-   "level": 5
-  },
-  {
-   "id": "mur-de-glace",
-   "level": 6
-  },
-  {
-   "id": "mur-de-pierre",
-   "level": 5
-  },
-  {
-   "id": "mur-prismatique",
-   "level": 9
-  },
-  {
-   "id": "mythes-et-legendes",
-   "level": 5
-  },
-  {
-   "id": "nappe-de-brouillard",
-   "level": 1
-  },
-  {
-   "id": "nuage-incendiaire",
-   "level": 8
-  },
-  {
-   "id": "nuage-nauseabond",
-   "level": 3
-  },
-  {
-   "id": "nuee-de-dagues",
-   "level": 2
-  },
-  {
-   "id": "nuee-de-meteores",
-   "level": 9
-  },
-  {
-   "id": "oeil-du-mage",
-   "level": 4
-  },
-  {
-   "id": "orbe-chromatique",
-   "level": 1
-  },
-  {
-   "id": "passe-muraille",
-   "level": 5
-  },
-  {
-   "id": "pattes-d-araignee",
-   "level": 2
-  },
-  {
-   "id": "peau-de-pierre",
-   "level": 4
-  },
-  {
-   "id": "perturbations-synaptiques",
-   "level": 5
-  },
-  {
-   "id": "petite-hutte-de-leomund",
-   "level": 3
-  },
-  {
-   "id": "petrification",
-   "level": 6
-  },
-  {
-   "id": "piqure-mentale",
-   "level": 0
-  },
-  {
-   "id": "poigne-electrique",
-   "level": 0
-  },
-  {
-   "id": "portail",
-   "level": 9
-  },
-  {
-   "id": "portail-arcanique",
-   "level": 6
-  },
-  {
-   "id": "porte-dimensionnelle",
-   "level": 4
-  },
-  {
-   "id": "possession",
-   "level": 6
-  },
-  {
-   "id": "premeditation",
-   "level": 6
-  },
-  {
-   "id": "premonition",
-   "level": 9
-  },
-  {
-   "id": "presence-royale-de-yolane",
-   "level": 5
-  },
-  {
-   "id": "prestidigitation",
-   "level": 0
-  },
-  {
-   "id": "projectile-magique",
-   "level": 1
-  },
-  {
-   "id": "projection-astrale",
-   "level": 9
-  },
-  {
-   "id": "protection-contre-l-energie",
-   "level": 3
-  },
-  {
-   "id": "protection-contre-le-mal-et-le-bien",
-   "level": 1
-  },
-  {
-   "id": "protections-et-sceaux",
-   "level": 6
-  },
-  {
-   "id": "quete",
-   "level": 5
-  },
-  {
-   "id": "rayon-affaiblissant",
-   "level": 2
-  },
-  {
-   "id": "rayon-ardent",
-   "level": 2
-  },
-  {
-   "id": "rayon-de-givre",
-   "level": 0
-  },
-  {
-   "id": "rayon-de-soleil",
-   "level": 6
-  },
-  {
-   "id": "rayon-empoisonne",
-   "level": 1
-  },
-  {
-   "id": "reparation",
-   "level": 0
-  },
-  {
-   "id": "repli-expeditif",
-   "level": 1
-  },
-  {
-   "id": "respiration-aquatique",
-   "level": 3
-  },
-  {
-   "id": "sanctuaire-prive-de-mordenkainen",
-   "level": 4
-  },
-  {
-   "id": "saut",
-   "level": 1
-  },
-  {
-   "id": "scrutation",
-   "level": 5
-  },
-  {
-   "id": "serviteur-invisible",
-   "level": 1
-  },
-  {
-   "id": "simulacre",
-   "level": 7
-  },
-  {
-   "id": "simulacre-de-vie",
-   "level": 1
-  },
-  {
-   "id": "sommeil",
-   "level": 1
-  },
-  {
-   "id": "songe",
-   "level": 5
-  },
-  {
-   "id": "souffle-du-dragon",
-   "level": 2
-  },
-  {
-   "id": "souhait",
-   "level": 9
-  },
-  {
-   "id": "sphere-de-feu",
-   "level": 2
-  },
-  {
-   "id": "sphere-de-vitriol",
-   "level": 4
-  },
-  {
-   "id": "sphere-glacee-d-otiluke",
-   "level": 6
-  },
-  {
-   "id": "sphere-resiliente-d-otiluke",
-   "level": 4
-  },
-  {
-   "id": "suggestion",
-   "level": 2
-  },
-  {
-   "id": "suggestion-de-groupe",
-   "level": 6
-  },
-  {
-   "id": "symbole",
-   "level": 7
-  },
-  {
-   "id": "telekinesie",
-   "level": 5
-  },
-  {
-   "id": "telepathie",
-   "level": 8
-  },
-  {
-   "id": "teleportation",
-   "level": 7
-  },
-  {
-   "id": "tempete-de-grele",
-   "level": 4
-  },
-  {
-   "id": "tempete-de-neige",
-   "level": 3
-  },
-  {
-   "id": "tempete-radieuse-de-jallarzi",
-   "level": 5
-  },
-  {
-   "id": "tenebres",
-   "level": 2
-  },
-  {
-   "id": "tentacules-noirs-d-evard",
-   "level": 4
-  },
-  {
-   "id": "terrain-hallucinatoire",
-   "level": 4
-  },
-  {
-   "id": "terreur",
-   "level": 3
-  },
-  {
-   "id": "texte-illusoire",
-   "level": 1
-  },
-  {
-   "id": "toile-d-araignee",
-   "level": 2
-  },
-  {
-   "id": "trait-de-feu",
-   "level": 0
-  },
-  {
-   "id": "trait-ensorcele",
-   "level": 1
-  },
-  {
-   "id": "vague-tonnante",
-   "level": 1
-  },
-  {
-   "id": "verrou-magique",
-   "level": 2
-  },
-  {
-   "id": "vigueur-arcanique",
-   "level": 2
-  },
-  {
-   "id": "vision-dans-le-noir",
-   "level": 2
-  },
-  {
-   "id": "vision-supreme",
-   "level": 6
-  },
-  {
-   "id": "voile-defensif",
-   "level": 0
-  },
-  {
-   "id": "vol",
-   "level": 3
-  }
- ],
- "clerc": [
-  {
-   "id": "aide",
-   "level": 2
-  },
-  {
-   "id": "allie-planaire",
-   "level": 6
-  },
-  {
-   "id": "amelioration-de-caracteristique",
-   "level": 2
-  },
-  {
-   "id": "animation-des-morts",
-   "level": 3
-  },
-  {
-   "id": "apaisement-des-emotions",
-   "level": 2
-  },
-  {
-   "id": "arme-spirituelle",
-   "level": 2
-  },
-  {
-   "id": "assistance",
-   "level": 0
-  },
-  {
-   "id": "augure",
-   "level": 2
-  },
-  {
-   "id": "aura-de-purete",
-   "level": 4
-  },
-  {
-   "id": "aura-de-vie",
-   "level": 4
-  },
-  {
-   "id": "aura-de-vitalite",
-   "level": 3
-  },
-  {
-   "id": "aura-sacree",
-   "level": 8
-  },
-  {
-   "id": "bannissement",
-   "level": 4
-  },
-  {
-   "id": "barriere-de-lames",
-   "level": 6
-  },
-  {
-   "id": "benediction",
-   "level": 1
-  },
-  {
-   "id": "blessure",
-   "level": 1
-  },
-  {
-   "id": "bouclier-de-la-foi",
-   "level": 1
-  },
-  {
-   "id": "cecite-surdite",
-   "level": 2
-  },
-  {
-   "id": "cercle-de-pouvoir",
-   "level": 5
-  },
-  {
-   "id": "cercle-magique",
-   "level": 3
-  },
-  {
-   "id": "champ-antimagie",
-   "level": 8
-  },
-  {
-   "id": "changement-de-plan",
-   "level": 7
-  },
-  {
-   "id": "clairvoyance",
-   "level": 3
-  },
-  {
-   "id": "colonne-de-flamme",
-   "level": 5
-  },
-  {
-   "id": "communication-a-distance",
-   "level": 3
-  },
-  {
-   "id": "communication-avec-les-morts",
-   "level": 3
-  },
-  {
-   "id": "communion",
-   "level": 5
-  },
-  {
-   "id": "contagion",
-   "level": 5
-  },
-  {
-   "id": "contamination",
-   "level": 6
-  },
-  {
-   "id": "controle-de-l-eau",
-   "level": 4
-  },
-  {
-   "id": "controle-du-climat",
-   "level": 8
-  },
-  {
-   "id": "convocation-de-celeste",
-   "level": 5
-  },
-  {
-   "id": "creation-de-mort-vivant",
-   "level": 6
-  },
-  {
-   "id": "creation-de-nourriture-et-d-eau",
-   "level": 3
-  },
-  {
-   "id": "creation-ou-destruction-d-eau",
-   "level": 1
-  },
-  {
-   "id": "delivrance-des-maledictions",
-   "level": 3
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "detection-des-pieges",
-   "level": 2
-  },
-  {
-   "id": "detection-du-mal-et-du-bien",
-   "level": 1
-  },
-  {
-   "id": "detection-du-poison-et-des-maladies",
-   "level": 1
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "dissipation-du-mal-et-du-bien",
-   "level": 5
-  },
-  {
-   "id": "divination",
-   "level": 4
-  },
-  {
-   "id": "don-des-langues",
-   "level": 3
-  },
-  {
-   "id": "doux-repos",
-   "level": 2
-  },
-  {
-   "id": "eclat-du-soleil",
-   "level": 8
-  },
-  {
-   "id": "entrave-planaire",
-   "level": 5
-  },
-  {
-   "id": "esprits-gardiens",
-   "level": 3
-  },
-  {
-   "id": "etat-cadaverique",
-   "level": 3
-  },
-  {
-   "id": "faconnage-de-la-pierre",
-   "level": 4
-  },
-  {
-   "id": "festin-des-heros",
-   "level": 6
-  },
-  {
-   "id": "flamme-eternelle",
-   "level": 2
-  },
-  {
-   "id": "flamme-sacree",
-   "level": 0
-  },
-  {
-   "id": "fleau-d-insectes",
-   "level": 5
-  },
-  {
-   "id": "forme-etheree",
-   "level": 7
-  },
-  {
-   "id": "fusion-dans-la-pierre",
-   "level": 3
-  },
-  {
-   "id": "gardien-de-la-foi",
-   "level": 4
-  },
-  {
-   "id": "glas",
-   "level": 0
-  },
-  {
-   "id": "glyphe-de-garde",
-   "level": 3
-  },
-  {
-   "id": "guerison",
-   "level": 6
-  },
-  {
-   "id": "guerison-de-groupe",
-   "level": 9
-  },
-  {
-   "id": "immobilisation-de-personne",
-   "level": 2
-  },
-  {
-   "id": "imprecation",
-   "level": 1
-  },
-  {
-   "id": "injonction",
-   "level": 1
-  },
-  {
-   "id": "interdiction",
-   "level": 6
-  },
-  {
-   "id": "invocation-de-celeste",
-   "level": 7
-  },
-  {
-   "id": "liberte-de-mouvement",
-   "level": 4
-  },
-  {
-   "id": "lien-de-protection",
-   "level": 2
-  },
-  {
-   "id": "localisation-d-objet",
-   "level": 2
-  },
-  {
-   "id": "localisation-de-creature",
-   "level": 4
-  },
-  {
-   "id": "lueur-d-espoir",
-   "level": 3
-  },
-  {
-   "id": "lumiere",
-   "level": 0
-  },
-  {
-   "id": "lumiere-du-jour",
-   "level": 3
-  },
-  {
-   "id": "malediction",
-   "level": 3
-  },
-  {
-   "id": "marche-sur-l-onde",
-   "level": 3
-  },
-  {
-   "id": "mot-de-guerison",
-   "level": 1
-  },
-  {
-   "id": "mot-de-guerison-de-groupe",
-   "level": 3
-  },
-  {
-   "id": "mot-de-pouvoir-fortifiant",
-   "level": 7
-  },
-  {
-   "id": "mot-de-pouvoir-guerisseur",
-   "level": 9
-  },
-  {
-   "id": "mot-de-radiance",
-   "level": 0
-  },
-  {
-   "id": "mot-de-retour",
-   "level": 6
-  },
-  {
-   "id": "mythes-et-legendes",
-   "level": 5
-  },
-  {
-   "id": "orientation",
-   "level": 6
-  },
-  {
-   "id": "parole-divine",
-   "level": 7
-  },
-  {
-   "id": "portail",
-   "level": 9
-  },
-  {
-   "id": "priere-de-guerison",
-   "level": 2
-  },
-  {
-   "id": "projection-astrale",
-   "level": 9
-  },
-  {
-   "id": "protection-contre-l-energie",
-   "level": 3
-  },
-  {
-   "id": "protection-contre-la-mort",
-   "level": 4
-  },
-  {
-   "id": "protection-contre-le-mal-et-le-bien",
-   "level": 1
-  },
-  {
-   "id": "protection-contre-le-poison",
-   "level": 2
-  },
-  {
-   "id": "purification-de-la-nourriture-et-de-l-eau",
-   "level": 1
-  },
-  {
-   "id": "quete",
-   "level": 5
-  },
-  {
-   "id": "rappel-a-la-vie",
-   "level": 5
-  },
-  {
-   "id": "rayon-de-soleil",
-   "level": 6
-  },
-  {
-   "id": "rayon-tracant",
-   "level": 1
-  },
-  {
-   "id": "regeneration",
-   "level": 7
-  },
-  {
-   "id": "reparation",
-   "level": 0
-  },
-  {
-   "id": "resistance",
-   "level": 0
-  },
-  {
-   "id": "restauration-partielle",
-   "level": 2
-  },
-  {
-   "id": "restauration-supreme",
-   "level": 5
-  },
-  {
-   "id": "resurrection",
-   "level": 7
-  },
-  {
-   "id": "resurrection-supreme",
-   "level": 9
-  },
-  {
-   "id": "retour-a-la-vie",
-   "level": 3
-  },
-  {
-   "id": "sanctification",
-   "level": 5
-  },
-  {
-   "id": "sanctuaire",
-   "level": 1
-  },
-  {
-   "id": "scrutation",
-   "level": 5
-  },
-  {
-   "id": "silence",
-   "level": 2
-  },
-  {
-   "id": "soins",
-   "level": 1
-  },
-  {
-   "id": "soins-de-groupe",
-   "level": 5
-  },
-  {
-   "id": "stabilisation",
-   "level": 0
-  },
-  {
-   "id": "symbole",
-   "level": 7
-  },
-  {
-   "id": "tempete-de-feu",
-   "level": 7
-  },
-  {
-   "id": "thaumaturgie",
-   "level": 0
-  },
-  {
-   "id": "tremblement-de-terre",
-   "level": 8
-  },
-  {
-   "id": "vision-supreme",
-   "level": 6
-  },
-  {
-   "id": "zone-de-verite",
-   "level": 2
-  }
- ],
- "paladin": [
-  {
-   "id": "aide",
-   "level": 2
-  },
-  {
-   "id": "appel-de-destrier",
-   "level": 2
-  },
-  {
-   "id": "arme-elementaire",
-   "level": 3
-  },
-  {
-   "id": "arme-magique",
-   "level": 2
-  },
-  {
-   "id": "aura-de-purete",
-   "level": 4
-  },
-  {
-   "id": "aura-de-vie",
-   "level": 4
-  },
-  {
-   "id": "aura-de-vitalite",
-   "level": 3
-  },
-  {
-   "id": "aura-du-croise",
-   "level": 3
-  },
-  {
-   "id": "bannissement",
-   "level": 4
-  },
-  {
-   "id": "benediction",
-   "level": 1
-  },
-  {
-   "id": "bouclier-de-la-foi",
-   "level": 1
-  },
-  {
-   "id": "cercle-de-pouvoir",
-   "level": 5
-  },
-  {
-   "id": "cercle-magique",
-   "level": 3
-  },
-  {
-   "id": "chatiment-de-cecite",
-   "level": 3
-  },
-  {
-   "id": "chatiment-de-courroux",
-   "level": 1
-  },
-  {
-   "id": "chatiment-de-fournaise",
-   "level": 1
-  },
-  {
-   "id": "chatiment-de-revelation",
-   "level": 2
-  },
-  {
-   "id": "chatiment-de-stupeur",
-   "level": 4
-  },
-  {
-   "id": "chatiment-de-tonnerre",
-   "level": 1
-  },
-  {
-   "id": "chatiment-divin",
-   "level": 1
-  },
-  {
-   "id": "chatiment-du-ban",
-   "level": 5
-  },
-  {
-   "id": "convocation-de-celeste",
-   "level": 5
-  },
-  {
-   "id": "creation-de-nourriture-et-d-eau",
-   "level": 3
-  },
-  {
-   "id": "delivrance-des-maledictions",
-   "level": 3
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "detection-du-mal-et-du-bien",
-   "level": 1
-  },
-  {
-   "id": "detection-du-poison-et-des-maladies",
-   "level": 1
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "dissipation-du-mal-et-du-bien",
-   "level": 5
-  },
-  {
-   "id": "doux-repos",
-   "level": 2
-  },
-  {
-   "id": "duel-force",
-   "level": 1
-  },
-  {
-   "id": "faveur-divine",
-   "level": 1
-  },
-  {
-   "id": "heroisme",
-   "level": 1
-  },
-  {
-   "id": "injonction",
-   "level": 1
-  },
-  {
-   "id": "lien-de-protection",
-   "level": 2
-  },
-  {
-   "id": "localisation-d-objet",
-   "level": 2
-  },
-  {
-   "id": "localisation-de-creature",
-   "level": 4
-  },
-  {
-   "id": "lumiere-du-jour",
-   "level": 3
-  },
-  {
-   "id": "priere-de-guerison",
-   "level": 2
-  },
-  {
-   "id": "protection-contre-la-mort",
-   "level": 4
-  },
-  {
-   "id": "protection-contre-le-mal-et-le-bien",
-   "level": 1
-  },
-  {
-   "id": "protection-contre-le-poison",
-   "level": 2
-  },
-  {
-   "id": "purification-de-la-nourriture-et-de-l-eau",
-   "level": 1
-  },
-  {
-   "id": "quete",
-   "level": 5
-  },
-  {
-   "id": "rappel-a-la-vie",
-   "level": 5
-  },
-  {
-   "id": "restauration-partielle",
-   "level": 2
-  },
-  {
-   "id": "restauration-supreme",
-   "level": 5
-  },
-  {
-   "id": "retour-a-la-vie",
-   "level": 3
-  },
-  {
-   "id": "soins",
-   "level": 1
-  },
-  {
-   "id": "vague-destructrice",
-   "level": 5
-  },
-  {
-   "id": "zone-de-verite",
-   "level": 2
-  }
- ],
- "rodeur": [
-  {
-   "id": "aide",
-   "level": 2
-  },
-  {
-   "id": "alarme",
-   "level": 1
-  },
-  {
-   "id": "amelioration-de-caracteristique",
-   "level": 2
-  },
-  {
-   "id": "amitie-avec-les-animaux",
-   "level": 1
-  },
-  {
-   "id": "antidetection",
-   "level": 3
-  },
-  {
-   "id": "arme-elementaire",
-   "level": 3
-  },
-  {
-   "id": "arme-magique",
-   "level": 2
-  },
-  {
-   "id": "baies-nourricieres",
-   "level": 1
-  },
-  {
-   "id": "bourrasque",
-   "level": 2
-  },
-  {
-   "id": "communication-avec-les-animaux",
-   "level": 1
-  },
-  {
-   "id": "communication-avec-les-plantes",
-   "level": 3
-  },
-  {
-   "id": "communion-avec-la-nature",
-   "level": 5
-  },
-  {
-   "id": "convocation-d-elementaire",
-   "level": 4
-  },
-  {
-   "id": "convocation-de-bete",
-   "level": 2
-  },
-  {
-   "id": "convocation-de-fee",
-   "level": 3
-  },
-  {
-   "id": "cordon-de-fleches",
-   "level": 2
-  },
-  {
-   "id": "croissance-d-epines",
-   "level": 2
-  },
-  {
-   "id": "croissance-vegetale",
-   "level": 3
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "detection-des-pieges",
-   "level": 2
-  },
-  {
-   "id": "detection-du-poison-et-des-maladies",
-   "level": 1
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "domination-de-bete",
-   "level": 4
-  },
-  {
-   "id": "enchevetrement",
-   "level": 1
-  },
-  {
-   "id": "fleche-de-foudre",
-   "level": 3
-  },
-  {
-   "id": "frappe-du-vent-d-acier",
-   "level": 5
-  },
-  {
-   "id": "frappe-piegeuse",
-   "level": 1
-  },
-  {
-   "id": "fusion-dans-la-pierre",
-   "level": 3
-  },
-  {
-   "id": "grande-foulee",
-   "level": 1
-  },
-  {
-   "id": "grele-d-epines",
-   "level": 1
-  },
-  {
-   "id": "herissement-de-projectiles",
-   "level": 3
-  },
-  {
-   "id": "invocation-d-animaux",
-   "level": 3
-  },
-  {
-   "id": "invocation-d-etres-sylvestres",
-   "level": 4
-  },
-  {
-   "id": "invocation-de-volee",
-   "level": 5
-  },
-  {
-   "id": "liane-avide",
-   "level": 4
-  },
-  {
-   "id": "liberte-de-mouvement",
-   "level": 4
-  },
-  {
-   "id": "localisation-d-animaux-ou-de-plantes",
-   "level": 2
-  },
-  {
-   "id": "localisation-d-objet",
-   "level": 2
-  },
-  {
-   "id": "localisation-de-creature",
-   "level": 4
-  },
-  {
-   "id": "lumiere-du-jour",
-   "level": 3
-  },
-  {
-   "id": "marche-sur-l-onde",
-   "level": 3
-  },
-  {
-   "id": "marque-du-chasseur",
-   "level": 1
-  },
-  {
-   "id": "messager-animal",
-   "level": 2
-  },
-  {
-   "id": "mur-de-vent",
-   "level": 3
-  },
-  {
-   "id": "nappe-de-brouillard",
-   "level": 1
-  },
-  {
-   "id": "passage-par-les-arbres",
-   "level": 5
-  },
-  {
-   "id": "passage-sans-trace",
-   "level": 2
-  },
-  {
-   "id": "peau-d-ecorce",
-   "level": 2
-  },
-  {
-   "id": "peau-de-pierre",
-   "level": 4
-  },
-  {
-   "id": "perception-bestiale",
-   "level": 2
-  },
-  {
-   "id": "protection-contre-l-energie",
-   "level": 3
-  },
-  {
-   "id": "protection-contre-le-poison",
-   "level": 2
-  },
-  {
-   "id": "respiration-aquatique",
-   "level": 3
-  },
-  {
-   "id": "restauration-partielle",
-   "level": 2
-  },
-  {
-   "id": "restauration-supreme",
-   "level": 5
-  },
-  {
-   "id": "retour-a-la-vie",
-   "level": 3
-  },
-  {
-   "id": "saut",
-   "level": 1
-  },
-  {
-   "id": "silence",
-   "level": 2
-  },
-  {
-   "id": "soins",
-   "level": 1
-  },
-  {
-   "id": "vif-carquois",
-   "level": 5
-  },
-  {
-   "id": "vision-dans-le-noir",
-   "level": 2
-  }
- ],
- "occultiste": [
-  {
-   "id": "alienation",
-   "level": 8
-  },
-  {
-   "id": "armure-d-agathys",
-   "level": 1
-  },
-  {
-   "id": "bagou",
-   "level": 8
-  },
-  {
-   "id": "bannissement",
-   "level": 4
-  },
-  {
-   "id": "bouffee-de-poison",
-   "level": 0
-  },
-  {
-   "id": "cage-de-force",
-   "level": 7
-  },
-  {
-   "id": "caresse-du-vampire",
-   "level": 3
-  },
-  {
-   "id": "cercle-de-mort",
-   "level": 6
-  },
-  {
-   "id": "cercle-de-teleportation",
-   "level": 5
-  },
-  {
-   "id": "cercle-magique",
-   "level": 3
-  },
-  {
-   "id": "changement-de-plan",
-   "level": 7
-  },
-  {
-   "id": "charme-monstre",
-   "level": 4
-  },
-  {
-   "id": "charme-personne",
-   "level": 1
-  },
-  {
-   "id": "chaudron-bouillonnant-de-tasha",
-   "level": 6
-  },
-  {
-   "id": "communication-avec-les-animaux",
-   "level": 1
-  },
-  {
-   "id": "comprehension-des-langues",
-   "level": 1
-  },
-  {
-   "id": "contact-avec-les-plans",
-   "level": 5
-  },
-  {
-   "id": "contact-glacial",
-   "level": 0
-  },
-  {
-   "id": "contresort",
-   "level": 3
-  },
-  {
-   "id": "convocation-d-aberration",
-   "level": 4
-  },
-  {
-   "id": "convocation-de-fee",
-   "level": 3
-  },
-  {
-   "id": "convocation-de-fielon",
-   "level": 6
-  },
-  {
-   "id": "convocation-de-mort-vivant",
-   "level": 3
-  },
-  {
-   "id": "coup-au-but",
-   "level": 0
-  },
-  {
-   "id": "coup-de-tonnerre",
-   "level": 0
-  },
-  {
-   "id": "couronne-du-dement",
-   "level": 2
-  },
-  {
-   "id": "creation-de-mort-vivant",
-   "level": 6
-  },
-  {
-   "id": "decharge-occulte",
-   "level": 0
-  },
-  {
-   "id": "delivrance-des-maledictions",
-   "level": 3
-  },
-  {
-   "id": "demi-plan",
-   "level": 8
-  },
-  {
-   "id": "detection-de-la-magie",
-   "level": 1
-  },
-  {
-   "id": "discours-captivant",
-   "level": 2
-  },
-  {
-   "id": "dissipation-de-la-magie",
-   "level": 3
-  },
-  {
-   "id": "doigt-de-mort",
-   "level": 7
-  },
-  {
-   "id": "domination-de-monstre",
-   "level": 8
-  },
-  {
-   "id": "don-des-langues",
-   "level": 3
-  },
-  {
-   "id": "double-illusoire",
-   "level": 5
-  },
-  {
-   "id": "emprisonnement",
-   "level": 9
-  },
-  {
-   "id": "ennemi-subconscient",
-   "level": 9
-  },
-  {
-   "id": "entrave-planaire",
-   "level": 5
-  },
-  {
-   "id": "epine-mentale",
-   "level": 2
-  },
-  {
-   "id": "faux-amis",
-   "level": 0
-  },
-  {
-   "id": "fletrissement",
-   "level": 4
-  },
-  {
-   "id": "forme-etheree",
-   "level": 7
-  },
-  {
-   "id": "forme-gazeuse",
-   "level": 3
-  },
-  {
-   "id": "fou-rire-de-tasha",
-   "level": 1
-  },
-  {
-   "id": "foulee-brumeuse",
-   "level": 2
-  },
-  {
-   "id": "glas",
-   "level": 0
-  },
-  {
-   "id": "illusion-mineure",
-   "level": 0
-  },
-  {
-   "id": "image-majeure",
-   "level": 3
-  },
-  {
-   "id": "image-miroir",
-   "level": 2
-  },
-  {
-   "id": "immobilisation-de-monstre",
-   "level": 5
-  },
-  {
-   "id": "immobilisation-de-personne",
-   "level": 2
-  },
-  {
-   "id": "imprecation",
-   "level": 1
-  },
-  {
-   "id": "invisibilite",
-   "level": 2
-  },
-  {
-   "id": "main-du-mage",
-   "level": 0
-  },
-  {
-   "id": "malefice",
-   "level": 1
-  },
-  {
-   "id": "mauvais-oeil",
-   "level": 6
-  },
-  {
-   "id": "metamorphose-supreme",
-   "level": 9
-  },
-  {
-   "id": "mot-de-pouvoir-etourdissant",
-   "level": 8
-  },
-  {
-   "id": "mot-de-pouvoir-mortel",
-   "level": 9
-  },
-  {
-   "id": "motif-hypnotique",
-   "level": 3
-  },
-  {
-   "id": "nuee-de-dagues",
-   "level": 2
-  },
-  {
-   "id": "pattes-d-araignee",
-   "level": 2
-  },
-  {
-   "id": "perturbations-synaptiques",
-   "level": 5
-  },
-  {
-   "id": "piqure-mentale",
-   "level": 0
-  },
-  {
-   "id": "portail",
-   "level": 9
-  },
-  {
-   "id": "portail-arcanique",
-   "level": 6
-  },
-  {
-   "id": "porte-dimensionnelle",
-   "level": 4
-  },
-  {
-   "id": "premonition",
-   "level": 9
-  },
-  {
-   "id": "prestidigitation",
-   "level": 0
-  },
-  {
-   "id": "projection-astrale",
-   "level": 9
-  },
-  {
-   "id": "protection-contre-le-mal-et-le-bien",
-   "level": 1
-  },
-  {
-   "id": "rayon-affaiblissant",
-   "level": 2
-  },
-  {
-   "id": "repli-expeditif",
-   "level": 1
-  },
-  {
-   "id": "represailles-infernales",
-   "level": 1
-  },
-  {
-   "id": "scrutation",
-   "level": 5
-  },
-  {
-   "id": "serviteur-invisible",
-   "level": 1
-  },
-  {
-   "id": "songe",
-   "level": 5
-  },
-  {
-   "id": "suggestion",
-   "level": 2
-  },
-  {
-   "id": "tempete-radieuse-de-jallarzi",
-   "level": 5
-  },
-  {
-   "id": "tenebres",
-   "level": 2
-  },
-  {
-   "id": "tentacules-de-hadar",
-   "level": 1
-  },
-  {
-   "id": "terrain-hallucinatoire",
-   "level": 4
-  },
-  {
-   "id": "terreur",
-   "level": 3
-  },
-  {
-   "id": "texte-illusoire",
-   "level": 1
-  },
-  {
-   "id": "trait-ensorcele",
-   "level": 1
-  },
-  {
-   "id": "vision-supreme",
-   "level": 6
-  },
-  {
-   "id": "voile-defensif",
-   "level": 0
-  },
-  {
-   "id": "vol",
-   "level": 3
-  },
-  {
-   "id": "voracite-de-hadar",
-   "level": 3
-  }
- ]
+  "bard": [
+    {
+      "id": "enlarge-reduce",
+      "level": 2
+    },
+    {
+      "id": "aid",
+      "level": 2
+    },
+    {
+      "id": "befuddlement",
+      "level": 8
+    },
+    {
+      "id": "enhance-ability",
+      "level": 2
+    },
+    {
+      "id": "animal-friendship",
+      "level": 1
+    },
+    {
+      "id": "animate-objects",
+      "level": 5
+    },
+    {
+      "id": "nondetection",
+      "level": 3
+    },
+    {
+      "id": "calm-emotions",
+      "level": 2
+    },
+    {
+      "id": "seeming",
+      "level": 5
+    },
+    {
+      "id": "phantasmal-killer",
+      "level": 4
+    },
+    {
+      "id": "antipathy-sympathy",
+      "level": 8
+    },
+    {
+      "id": "glibness",
+      "level": 8
+    },
+    {
+      "id": "magic-mouth",
+      "level": 2
+    },
+    {
+      "id": "forcecage",
+      "level": 7
+    },
+    {
+      "id": "blindness-deafness",
+      "level": 2
+    },
+    {
+      "id": "teleportation-circle",
+      "level": 5
+    },
+    {
+      "id": "charm-monster",
+      "level": 4
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "clairvoyance",
+      "level": 3
+    },
+    {
+      "id": "sending",
+      "level": 3
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "speak-with-dead",
+      "level": 3
+    },
+    {
+      "id": "speak-with-plants",
+      "level": 3
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "compulsion",
+      "level": 4
+    },
+    {
+      "id": "confusion",
+      "level": 4
+    },
+    {
+      "id": "color-spray",
+      "level": 1
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "thunderclap",
+      "level": 0
+    },
+    {
+      "id": "crown-of-madness",
+      "level": 2
+    },
+    {
+      "id": "plant-growth",
+      "level": 3
+    },
+    {
+      "id": "ottos-irresistible-dance",
+      "level": 6
+    },
+    {
+      "id": "knock",
+      "level": 2
+    },
+    {
+      "id": "disguise-self",
+      "level": 1
+    },
+    {
+      "id": "see-invisibility",
+      "level": 2
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-thoughts",
+      "level": 2
+    },
+    {
+      "id": "enthrall",
+      "level": 2
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "dominate-monster",
+      "level": 8
+    },
+    {
+      "id": "dominate-person",
+      "level": 5
+    },
+    {
+      "id": "tongues",
+      "level": 3
+    },
+    {
+      "id": "mislead",
+      "level": 5
+    },
+    {
+      "id": "prismatic-spray",
+      "level": 7
+    },
+    {
+      "id": "planar-binding",
+      "level": 5
+    },
+    {
+      "id": "mordenkainens-sword",
+      "level": 7
+    },
+    {
+      "id": "mind-blank",
+      "level": 8
+    },
+    {
+      "id": "feign-death",
+      "level": 3
+    },
+    {
+      "id": "awaken",
+      "level": 5
+    },
+    {
+      "id": "friends",
+      "level": 0
+    },
+    {
+      "id": "heroes-feast",
+      "level": 6
+    },
+    {
+      "id": "feather-fall",
+      "level": 1
+    },
+    {
+      "id": "fount-of-moonlight",
+      "level": 4
+    },
+    {
+      "id": "phantasmal-force",
+      "level": 2
+    },
+    {
+      "id": "etherealness",
+      "level": 7
+    },
+    {
+      "id": "tashas-hideous-laughter",
+      "level": 1
+    },
+    {
+      "id": "shatter",
+      "level": 2
+    },
+    {
+      "id": "glyph-of-warding",
+      "level": 3
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "heroism",
+      "level": 1
+    },
+    {
+      "id": "identify",
+      "level": 1
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "programmed-illusion",
+      "level": 6
+    },
+    {
+      "id": "major-image",
+      "level": 3
+    },
+    {
+      "id": "mirror-image",
+      "level": 2
+    },
+    {
+      "id": "project-image",
+      "level": 7
+    },
+    {
+      "id": "silent-image",
+      "level": 1
+    },
+    {
+      "id": "hold-monster",
+      "level": 5
+    },
+    {
+      "id": "hold-person",
+      "level": 2
+    },
+    {
+      "id": "bane",
+      "level": 1
+    },
+    {
+      "id": "command",
+      "level": 1
+    },
+    {
+      "id": "invisibility",
+      "level": 2
+    },
+    {
+      "id": "greater-invisibility",
+      "level": 4
+    },
+    {
+      "id": "slow",
+      "level": 3
+    },
+    {
+      "id": "freedom-of-movement",
+      "level": 4
+    },
+    {
+      "id": "rarys-telepathic-bond",
+      "level": 5
+    },
+    {
+      "id": "locate-animals-or-plants",
+      "level": 2
+    },
+    {
+      "id": "locate-object",
+      "level": 2
+    },
+    {
+      "id": "locate-creature",
+      "level": 4
+    },
+    {
+      "id": "faerie-fire",
+      "level": 1
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "dancing-lights",
+      "level": 0
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "bestow-curse",
+      "level": 3
+    },
+    {
+      "id": "mordenkainens-magnificent-mansion",
+      "level": 7
+    },
+    {
+      "id": "eyebite",
+      "level": 6
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "animal-messenger",
+      "level": 2
+    },
+    {
+      "id": "heat-metal",
+      "level": 2
+    },
+    {
+      "id": "polymorph",
+      "level": 4
+    },
+    {
+      "id": "true-polymorph",
+      "level": 9
+    },
+    {
+      "id": "mirage-arcane",
+      "level": 7
+    },
+    {
+      "id": "modify-memory",
+      "level": 5
+    },
+    {
+      "id": "vicious-mockery",
+      "level": 0
+    },
+    {
+      "id": "healing-word",
+      "level": 1
+    },
+    {
+      "id": "mass-healing-word",
+      "level": 3
+    },
+    {
+      "id": "power-word-stun",
+      "level": 8
+    },
+    {
+      "id": "power-word-fortify",
+      "level": 7
+    },
+    {
+      "id": "power-word-heal",
+      "level": 9
+    },
+    {
+      "id": "power-word-kill",
+      "level": 9
+    },
+    {
+      "id": "hypnotic-pattern",
+      "level": 3
+    },
+    {
+      "id": "prismatic-wall",
+      "level": 9
+    },
+    {
+      "id": "dissonant-whispers",
+      "level": 1
+    },
+    {
+      "id": "legend-lore",
+      "level": 5
+    },
+    {
+      "id": "stinking-cloud",
+      "level": 3
+    },
+    {
+      "id": "cloud-of-daggers",
+      "level": 2
+    },
+    {
+      "id": "find-the-path",
+      "level": 6
+    },
+    {
+      "id": "synaptic-static",
+      "level": 5
+    },
+    {
+      "id": "leomunds-tiny-hut",
+      "level": 3
+    },
+    {
+      "id": "dimension-door",
+      "level": 4
+    },
+    {
+      "id": "starry-wisp",
+      "level": 0
+    },
+    {
+      "id": "foresight",
+      "level": 9
+    },
+    {
+      "id": "yolandes-regal-presence",
+      "level": 5
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "guards-and-wards",
+      "level": 6
+    },
+    {
+      "id": "geas",
+      "level": 5
+    },
+    {
+      "id": "raise-dead",
+      "level": 5
+    },
+    {
+      "id": "regenerate",
+      "level": 7
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "lesser-restoration",
+      "level": 2
+    },
+    {
+      "id": "greater-restoration",
+      "level": 5
+    },
+    {
+      "id": "resurrection",
+      "level": 7
+    },
+    {
+      "id": "scrying",
+      "level": 5
+    },
+    {
+      "id": "unseen-servant",
+      "level": 1
+    },
+    {
+      "id": "silence",
+      "level": 2
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "mass-cure-wounds",
+      "level": 5
+    },
+    {
+      "id": "sleep",
+      "level": 1
+    },
+    {
+      "id": "dream",
+      "level": 5
+    },
+    {
+      "id": "suggestion",
+      "level": 2
+    },
+    {
+      "id": "mass-suggestion",
+      "level": 6
+    },
+    {
+      "id": "symbol",
+      "level": 7
+    },
+    {
+      "id": "teleport",
+      "level": 7
+    },
+    {
+      "id": "hallucinatory-terrain",
+      "level": 4
+    },
+    {
+      "id": "fear",
+      "level": 3
+    },
+    {
+      "id": "illusory-script",
+      "level": 1
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    },
+    {
+      "id": "true-seeing",
+      "level": 6
+    },
+    {
+      "id": "blade-ward",
+      "level": 0
+    },
+    {
+      "id": "zone-of-truth",
+      "level": 2
+    }
+  ],
+  "druid": [
+    {
+      "id": "enlarge-reduce",
+      "level": 2
+    },
+    {
+      "id": "aid",
+      "level": 2
+    },
+    {
+      "id": "befuddlement",
+      "level": 8
+    },
+    {
+      "id": "enhance-ability",
+      "level": 2
+    },
+    {
+      "id": "animal-friendship",
+      "level": 1
+    },
+    {
+      "id": "call-lightning",
+      "level": 3
+    },
+    {
+      "id": "elemental-weapon",
+      "level": 3
+    },
+    {
+      "id": "guidance",
+      "level": 0
+    },
+    {
+      "id": "augury",
+      "level": 2
+    },
+    {
+      "id": "aura-of-vitality",
+      "level": 3
+    },
+    {
+      "id": "antipathy-sympathy",
+      "level": 8
+    },
+    {
+      "id": "goodberry",
+      "level": 1
+    },
+    {
+      "id": "fire-shield",
+      "level": 4
+    },
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "gust-of-wind",
+      "level": 2
+    },
+    {
+      "id": "shapechange",
+      "level": 9
+    },
+    {
+      "id": "plane-shift",
+      "level": 7
+    },
+    {
+      "id": "charm-monster",
+      "level": 4
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "speak-with-plants",
+      "level": 3
+    },
+    {
+      "id": "commune-with-nature",
+      "level": 5
+    },
+    {
+      "id": "cone-of-cold",
+      "level": 5
+    },
+    {
+      "id": "confusion",
+      "level": 4
+    },
+    {
+      "id": "contagion",
+      "level": 5
+    },
+    {
+      "id": "control-water",
+      "level": 4
+    },
+    {
+      "id": "control-weather",
+      "level": 8
+    },
+    {
+      "id": "summon-elemental",
+      "level": 4
+    },
+    {
+      "id": "summon-beast",
+      "level": 2
+    },
+    {
+      "id": "summon-fey",
+      "level": 3
+    },
+    {
+      "id": "antilife-shell",
+      "level": 5
+    },
+    {
+      "id": "thunderclap",
+      "level": 0
+    },
+    {
+      "id": "ice-knife",
+      "level": 1
+    },
+    {
+      "id": "create-or-destroy-water",
+      "level": 1
+    },
+    {
+      "id": "spike-growth",
+      "level": 2
+    },
+    {
+      "id": "plant-growth",
+      "level": 3
+    },
+    {
+      "id": "shillelagh",
+      "level": 0
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "find-traps",
+      "level": 2
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "divination",
+      "level": 4
+    },
+    {
+      "id": "dominate-beast",
+      "level": 4
+    },
+    {
+      "id": "druidcraft",
+      "level": 0
+    },
+    {
+      "id": "sunburst",
+      "level": 8
+    },
+    {
+      "id": "elementalism",
+      "level": 0
+    },
+    {
+      "id": "entangle",
+      "level": 1
+    },
+    {
+      "id": "planar-binding",
+      "level": 5
+    },
+    {
+      "id": "feign-death",
+      "level": 3
+    },
+    {
+      "id": "awaken",
+      "level": 5
+    },
+    {
+      "id": "stone-shape",
+      "level": 4
+    },
+    {
+      "id": "heroes-feast",
+      "level": 6
+    },
+    {
+      "id": "continual-flame",
+      "level": 2
+    },
+    {
+      "id": "produce-flame",
+      "level": 0
+    },
+    {
+      "id": "insect-plague",
+      "level": 5
+    },
+    {
+      "id": "blight",
+      "level": 4
+    },
+    {
+      "id": "fount-of-moonlight",
+      "level": 4
+    },
+    {
+      "id": "thorn-whip",
+      "level": 0
+    },
+    {
+      "id": "meld-into-stone",
+      "level": 3
+    },
+    {
+      "id": "move-earth",
+      "level": 6
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "heal",
+      "level": 6
+    },
+    {
+      "id": "hold-person",
+      "level": 2
+    },
+    {
+      "id": "giant-insect",
+      "level": 4
+    },
+    {
+      "id": "reverse-gravity",
+      "level": 7
+    },
+    {
+      "id": "conjure-animals",
+      "level": 3
+    },
+    {
+      "id": "conjure-elemental",
+      "level": 5
+    },
+    {
+      "id": "conjure-minor-elementals",
+      "level": 4
+    },
+    {
+      "id": "conjure-woodland-beings",
+      "level": 4
+    },
+    {
+      "id": "conjure-fey",
+      "level": 6
+    },
+    {
+      "id": "flame-blade",
+      "level": 2
+    },
+    {
+      "id": "grasping-vine",
+      "level": 4
+    },
+    {
+      "id": "freedom-of-movement",
+      "level": 4
+    },
+    {
+      "id": "locate-animals-or-plants",
+      "level": 2
+    },
+    {
+      "id": "locate-object",
+      "level": 2
+    },
+    {
+      "id": "locate-creature",
+      "level": 4
+    },
+    {
+      "id": "faerie-fire",
+      "level": 1
+    },
+    {
+      "id": "daylight",
+      "level": 3
+    },
+    {
+      "id": "water-walk",
+      "level": 3
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "animal-messenger",
+      "level": 2
+    },
+    {
+      "id": "heat-metal",
+      "level": 2
+    },
+    {
+      "id": "polymorph",
+      "level": 4
+    },
+    {
+      "id": "animal-shapes",
+      "level": 8
+    },
+    {
+      "id": "mirage-arcane",
+      "level": 7
+    },
+    {
+      "id": "healing-word",
+      "level": 1
+    },
+    {
+      "id": "wall-of-thorns",
+      "level": 6
+    },
+    {
+      "id": "wall-of-fire",
+      "level": 4
+    },
+    {
+      "id": "wall-of-stone",
+      "level": 5
+    },
+    {
+      "id": "wall-of-wind",
+      "level": 3
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "incendiary-cloud",
+      "level": 8
+    },
+    {
+      "id": "find-the-path",
+      "level": 6
+    },
+    {
+      "id": "tree-stride",
+      "level": 5
+    },
+    {
+      "id": "pass-without-trace",
+      "level": 2
+    },
+    {
+      "id": "barkskin",
+      "level": 2
+    },
+    {
+      "id": "stoneskin",
+      "level": 4
+    },
+    {
+      "id": "beast-sense",
+      "level": 2
+    },
+    {
+      "id": "flesh-to-stone",
+      "level": 6
+    },
+    {
+      "id": "starry-wisp",
+      "level": 0
+    },
+    {
+      "id": "foresight",
+      "level": 9
+    },
+    {
+      "id": "protection-from-energy",
+      "level": 3
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "protection-from-poison",
+      "level": 2
+    },
+    {
+      "id": "purify-food-and-drink",
+      "level": 1
+    },
+    {
+      "id": "geas",
+      "level": 5
+    },
+    {
+      "id": "moonbeam",
+      "level": 2
+    },
+    {
+      "id": "sunbeam",
+      "level": 6
+    },
+    {
+      "id": "regenerate",
+      "level": 7
+    },
+    {
+      "id": "reincarnate",
+      "level": 5
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "resistance",
+      "level": 0
+    },
+    {
+      "id": "water-breathing",
+      "level": 3
+    },
+    {
+      "id": "lesser-restoration",
+      "level": 2
+    },
+    {
+      "id": "greater-restoration",
+      "level": 5
+    },
+    {
+      "id": "true-resurrection",
+      "level": 9
+    },
+    {
+      "id": "revivify",
+      "level": 3
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "scrying",
+      "level": 5
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "mass-cure-wounds",
+      "level": 5
+    },
+    {
+      "id": "flaming-sphere",
+      "level": 2
+    },
+    {
+      "id": "stabilize",
+      "level": 0
+    },
+    {
+      "id": "symbol",
+      "level": 7
+    },
+    {
+      "id": "fire-storm",
+      "level": 7
+    },
+    {
+      "id": "ice-storm",
+      "level": 4
+    },
+    {
+      "id": "sleet-storm",
+      "level": 3
+    },
+    {
+      "id": "storm-of-vengeance",
+      "level": 9
+    },
+    {
+      "id": "hallucinatory-terrain",
+      "level": 4
+    },
+    {
+      "id": "earthquake",
+      "level": 8
+    },
+    {
+      "id": "tsunami",
+      "level": 8
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    },
+    {
+      "id": "wind-walk",
+      "level": 6
+    },
+    {
+      "id": "darkvision",
+      "level": 2
+    },
+    {
+      "id": "transport-via-plants",
+      "level": 6
+    }
+  ],
+  "sorcerer": [
+    {
+      "id": "enlarge-reduce",
+      "level": 2
+    },
+    {
+      "id": "enhance-ability",
+      "level": 2
+    },
+    {
+      "id": "animate-objects",
+      "level": 5
+    },
+    {
+      "id": "seeming",
+      "level": 5
+    },
+    {
+      "id": "magic-weapon",
+      "level": 2
+    },
+    {
+      "id": "mage-armor",
+      "level": 1
+    },
+    {
+      "id": "time-stop",
+      "level": 9
+    },
+    {
+      "id": "acid-splash",
+      "level": 0
+    },
+    {
+      "id": "banishment",
+      "level": 4
+    },
+    {
+      "id": "shield",
+      "level": 1
+    },
+    {
+      "id": "fire-shield",
+      "level": 4
+    },
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "fireball",
+      "level": 3
+    },
+    {
+      "id": "delayed-blast-fireball",
+      "level": 7
+    },
+    {
+      "id": "gust-of-wind",
+      "level": 2
+    },
+    {
+      "id": "cloudkill",
+      "level": 5
+    },
+    {
+      "id": "vampiric-touch",
+      "level": 3
+    },
+    {
+      "id": "blindness-deafness",
+      "level": 2
+    },
+    {
+      "id": "circle-of-death",
+      "level": 6
+    },
+    {
+      "id": "teleportation-circle",
+      "level": 5
+    },
+    {
+      "id": "chain-lightning",
+      "level": 6
+    },
+    {
+      "id": "plane-shift",
+      "level": 7
+    },
+    {
+      "id": "charm-monster",
+      "level": 4
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "clairvoyance",
+      "level": 3
+    },
+    {
+      "id": "blink",
+      "level": 3
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "cone-of-cold",
+      "level": 5
+    },
+    {
+      "id": "confusion",
+      "level": 4
+    },
+    {
+      "id": "chill-touch",
+      "level": 0
+    },
+    {
+      "id": "counterspell",
+      "level": 3
+    },
+    {
+      "id": "color-spray",
+      "level": 1
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "thunderclap",
+      "level": 0
+    },
+    {
+      "id": "crown-of-madness",
+      "level": 2
+    },
+    {
+      "id": "ice-knife",
+      "level": 1
+    },
+    {
+      "id": "creation",
+      "level": 5
+    },
+    {
+      "id": "knock",
+      "level": 2
+    },
+    {
+      "id": "disguise-self",
+      "level": 1
+    },
+    {
+      "id": "demiplane",
+      "level": 8
+    },
+    {
+      "id": "disintegrate",
+      "level": 6
+    },
+    {
+      "id": "see-invisibility",
+      "level": 2
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-thoughts",
+      "level": 2
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "finger-of-death",
+      "level": 7
+    },
+    {
+      "id": "dominate-beast",
+      "level": 4
+    },
+    {
+      "id": "dominate-monster",
+      "level": 8
+    },
+    {
+      "id": "dominate-person",
+      "level": 5
+    },
+    {
+      "id": "tongues",
+      "level": 3
+    },
+    {
+      "id": "lightning-bolt",
+      "level": 3
+    },
+    {
+      "id": "sunburst",
+      "level": 8
+    },
+    {
+      "id": "elementalism",
+      "level": 0
+    },
+    {
+      "id": "prismatic-spray",
+      "level": 7
+    },
+    {
+      "id": "mind-spike",
+      "level": 2
+    },
+    {
+      "id": "sorcerous-burst",
+      "level": 0
+    },
+    {
+      "id": "friends",
+      "level": 0
+    },
+    {
+      "id": "feather-fall",
+      "level": 1
+    },
+    {
+      "id": "insect-plague",
+      "level": 5
+    },
+    {
+      "id": "blight",
+      "level": 4
+    },
+    {
+      "id": "blur",
+      "level": 2
+    },
+    {
+      "id": "phantasmal-force",
+      "level": 2
+    },
+    {
+      "id": "etherealness",
+      "level": 7
+    },
+    {
+      "id": "gaseous-form",
+      "level": 3
+    },
+    {
+      "id": "misty-step",
+      "level": 2
+    },
+    {
+      "id": "shatter",
+      "level": 2
+    },
+    {
+      "id": "move-earth",
+      "level": 6
+    },
+    {
+      "id": "globe-of-invulnerability",
+      "level": 6
+    },
+    {
+      "id": "grease",
+      "level": 1
+    },
+    {
+      "id": "haste",
+      "level": 3
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "major-image",
+      "level": 3
+    },
+    {
+      "id": "mirror-image",
+      "level": 2
+    },
+    {
+      "id": "silent-image",
+      "level": 1
+    },
+    {
+      "id": "hold-monster",
+      "level": 5
+    },
+    {
+      "id": "hold-person",
+      "level": 2
+    },
+    {
+      "id": "reverse-gravity",
+      "level": 7
+    },
+    {
+      "id": "invisibility",
+      "level": 2
+    },
+    {
+      "id": "greater-invisibility",
+      "level": 4
+    },
+    {
+      "id": "flame-blade",
+      "level": 2
+    },
+    {
+      "id": "slow",
+      "level": 3
+    },
+    {
+      "id": "levitate",
+      "level": 2
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "daylight",
+      "level": 3
+    },
+    {
+      "id": "dancing-lights",
+      "level": 0
+    },
+    {
+      "id": "bigbys-hand",
+      "level": 5
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "burning-hands",
+      "level": 1
+    },
+    {
+      "id": "water-walk",
+      "level": 3
+    },
+    {
+      "id": "eyebite",
+      "level": 6
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "polymorph",
+      "level": 4
+    },
+    {
+      "id": "alter-self",
+      "level": 2
+    },
+    {
+      "id": "power-word-stun",
+      "level": 8
+    },
+    {
+      "id": "power-word-kill",
+      "level": 9
+    },
+    {
+      "id": "hypnotic-pattern",
+      "level": 3
+    },
+    {
+      "id": "wall-of-fire",
+      "level": 4
+    },
+    {
+      "id": "wall-of-stone",
+      "level": 5
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "incendiary-cloud",
+      "level": 8
+    },
+    {
+      "id": "stinking-cloud",
+      "level": 3
+    },
+    {
+      "id": "cloud-of-daggers",
+      "level": 2
+    },
+    {
+      "id": "meteor-swarm",
+      "level": 9
+    },
+    {
+      "id": "chromatic-orb",
+      "level": 1
+    },
+    {
+      "id": "spider-climb",
+      "level": 2
+    },
+    {
+      "id": "stoneskin",
+      "level": 4
+    },
+    {
+      "id": "synaptic-static",
+      "level": 5
+    },
+    {
+      "id": "flesh-to-stone",
+      "level": 6
+    },
+    {
+      "id": "mind-sliver",
+      "level": 0
+    },
+    {
+      "id": "shocking-grasp",
+      "level": 0
+    },
+    {
+      "id": "gate",
+      "level": 9
+    },
+    {
+      "id": "arcane-gate",
+      "level": 6
+    },
+    {
+      "id": "dimension-door",
+      "level": 4
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "magic-missile",
+      "level": 1
+    },
+    {
+      "id": "protection-from-energy",
+      "level": 3
+    },
+    {
+      "id": "scorching-ray",
+      "level": 2
+    },
+    {
+      "id": "ray-of-frost",
+      "level": 0
+    },
+    {
+      "id": "sunbeam",
+      "level": 6
+    },
+    {
+      "id": "ray-of-sickness",
+      "level": 1
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "expeditious-retreat",
+      "level": 1
+    },
+    {
+      "id": "water-breathing",
+      "level": 3
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "false-life",
+      "level": 1
+    },
+    {
+      "id": "sleep",
+      "level": 1
+    },
+    {
+      "id": "dragons-breath",
+      "level": 2
+    },
+    {
+      "id": "wish",
+      "level": 9
+    },
+    {
+      "id": "flaming-sphere",
+      "level": 2
+    },
+    {
+      "id": "vitriolic-sphere",
+      "level": 4
+    },
+    {
+      "id": "otilukes-freezing-sphere",
+      "level": 6
+    },
+    {
+      "id": "suggestion",
+      "level": 2
+    },
+    {
+      "id": "mass-suggestion",
+      "level": 6
+    },
+    {
+      "id": "telekinesis",
+      "level": 5
+    },
+    {
+      "id": "teleport",
+      "level": 7
+    },
+    {
+      "id": "fire-storm",
+      "level": 7
+    },
+    {
+      "id": "ice-storm",
+      "level": 4
+    },
+    {
+      "id": "sleet-storm",
+      "level": 3
+    },
+    {
+      "id": "darkness",
+      "level": 2
+    },
+    {
+      "id": "fear",
+      "level": 3
+    },
+    {
+      "id": "web",
+      "level": 2
+    },
+    {
+      "id": "fire-bolt",
+      "level": 0
+    },
+    {
+      "id": "witch-bolt",
+      "level": 1
+    },
+    {
+      "id": "earthquake",
+      "level": 8
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    },
+    {
+      "id": "arcane-vigor",
+      "level": 2
+    },
+    {
+      "id": "darkvision",
+      "level": 2
+    },
+    {
+      "id": "true-seeing",
+      "level": 6
+    },
+    {
+      "id": "blade-ward",
+      "level": 0
+    },
+    {
+      "id": "fly",
+      "level": 3
+    }
+  ],
+  "wizard": [
+    {
+      "id": "enlarge-reduce",
+      "level": 2
+    },
+    {
+      "id": "alarm",
+      "level": 1
+    },
+    {
+      "id": "befuddlement",
+      "level": 8
+    },
+    {
+      "id": "enhance-ability",
+      "level": 2
+    },
+    {
+      "id": "animate-dead",
+      "level": 3
+    },
+    {
+      "id": "animate-objects",
+      "level": 5
+    },
+    {
+      "id": "nondetection",
+      "level": 3
+    },
+    {
+      "id": "seeming",
+      "level": 5
+    },
+    {
+      "id": "find-familiar",
+      "level": 1
+    },
+    {
+      "id": "magic-weapon",
+      "level": 2
+    },
+    {
+      "id": "mage-armor",
+      "level": 1
+    },
+    {
+      "id": "time-stop",
+      "level": 9
+    },
+    {
+      "id": "acid-splash",
+      "level": 0
+    },
+    {
+      "id": "phantasmal-killer",
+      "level": 4
+    },
+    {
+      "id": "augury",
+      "level": 2
+    },
+    {
+      "id": "nystuls-magic-aura",
+      "level": 2
+    },
+    {
+      "id": "antipathy-sympathy",
+      "level": 8
+    },
+    {
+      "id": "banishment",
+      "level": 4
+    },
+    {
+      "id": "magic-mouth",
+      "level": 2
+    },
+    {
+      "id": "shield",
+      "level": 1
+    },
+    {
+      "id": "fire-shield",
+      "level": 4
+    },
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "fireball",
+      "level": 3
+    },
+    {
+      "id": "delayed-blast-fireball",
+      "level": 7
+    },
+    {
+      "id": "gust-of-wind",
+      "level": 2
+    },
+    {
+      "id": "cloudkill",
+      "level": 5
+    },
+    {
+      "id": "forcecage",
+      "level": 7
+    },
+    {
+      "id": "vampiric-touch",
+      "level": 3
+    },
+    {
+      "id": "blindness-deafness",
+      "level": 2
+    },
+    {
+      "id": "circle-of-death",
+      "level": 6
+    },
+    {
+      "id": "circle-of-power",
+      "level": 5
+    },
+    {
+      "id": "teleportation-circle",
+      "level": 5
+    },
+    {
+      "id": "magic-circle",
+      "level": 3
+    },
+    {
+      "id": "chain-lightning",
+      "level": 6
+    },
+    {
+      "id": "antimagic-field",
+      "level": 8
+    },
+    {
+      "id": "shapechange",
+      "level": 9
+    },
+    {
+      "id": "plane-shift",
+      "level": 7
+    },
+    {
+      "id": "charm-monster",
+      "level": 4
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "tashas-bubbling-cauldron",
+      "level": 6
+    },
+    {
+      "id": "mordenkainens-faithful-hound",
+      "level": 4
+    },
+    {
+      "id": "clairvoyance",
+      "level": 3
+    },
+    {
+      "id": "blink",
+      "level": 3
+    },
+    {
+      "id": "clone",
+      "level": 8
+    },
+    {
+      "id": "leomunds-secret-chest",
+      "level": 4
+    },
+    {
+      "id": "sending",
+      "level": 3
+    },
+    {
+      "id": "speak-with-dead",
+      "level": 3
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "cone-of-cold",
+      "level": 5
+    },
+    {
+      "id": "confusion",
+      "level": 4
+    },
+    {
+      "id": "contact-other-plane",
+      "level": 5
+    },
+    {
+      "id": "chill-touch",
+      "level": 0
+    },
+    {
+      "id": "counterspell",
+      "level": 3
+    },
+    {
+      "id": "control-water",
+      "level": 4
+    },
+    {
+      "id": "control-weather",
+      "level": 8
+    },
+    {
+      "id": "summon-aberration",
+      "level": 4
+    },
+    {
+      "id": "summon-construct",
+      "level": 4
+    },
+    {
+      "id": "summon-elemental",
+      "level": 4
+    },
+    {
+      "id": "summon-dragon",
+      "level": 5
+    },
+    {
+      "id": "summon-fey",
+      "level": 3
+    },
+    {
+      "id": "summon-fiend",
+      "level": 6
+    },
+    {
+      "id": "summon-undead",
+      "level": 3
+    },
+    {
+      "id": "drawmijs-instant-summons",
+      "level": 6
+    },
+    {
+      "id": "rope-trick",
+      "level": 2
+    },
+    {
+      "id": "color-spray",
+      "level": 1
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "thunderclap",
+      "level": 0
+    },
+    {
+      "id": "crown-of-madness",
+      "level": 2
+    },
+    {
+      "id": "ice-knife",
+      "level": 1
+    },
+    {
+      "id": "creation",
+      "level": 5
+    },
+    {
+      "id": "create-undead",
+      "level": 6
+    },
+    {
+      "id": "ottos-irresistible-dance",
+      "level": 6
+    },
+    {
+      "id": "knock",
+      "level": 2
+    },
+    {
+      "id": "maze",
+      "level": 8
+    },
+    {
+      "id": "disguise-self",
+      "level": 1
+    },
+    {
+      "id": "remove-curse",
+      "level": 3
+    },
+    {
+      "id": "demiplane",
+      "level": 8
+    },
+    {
+      "id": "disintegrate",
+      "level": 6
+    },
+    {
+      "id": "see-invisibility",
+      "level": 2
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-thoughts",
+      "level": 2
+    },
+    {
+      "id": "tensers-floating-disk",
+      "level": 1
+    },
+    {
+      "id": "sequester",
+      "level": 7
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "divination",
+      "level": 4
+    },
+    {
+      "id": "finger-of-death",
+      "level": 7
+    },
+    {
+      "id": "dominate-monster",
+      "level": 8
+    },
+    {
+      "id": "dominate-person",
+      "level": 5
+    },
+    {
+      "id": "tongues",
+      "level": 3
+    },
+    {
+      "id": "mislead",
+      "level": 5
+    },
+    {
+      "id": "gentle-repose",
+      "level": 2
+    },
+    {
+      "id": "lightning-bolt",
+      "level": 3
+    },
+    {
+      "id": "sunburst",
+      "level": 8
+    },
+    {
+      "id": "elementalism",
+      "level": 0
+    },
+    {
+      "id": "prismatic-spray",
+      "level": 7
+    },
+    {
+      "id": "imprisonment",
+      "level": 9
+    },
+    {
+      "id": "weird",
+      "level": 9
+    },
+    {
+      "id": "planar-binding",
+      "level": 5
+    },
+    {
+      "id": "mordenkainens-sword",
+      "level": 7
+    },
+    {
+      "id": "mind-spike",
+      "level": 2
+    },
+    {
+      "id": "mind-blank",
+      "level": 8
+    },
+    {
+      "id": "feign-death",
+      "level": 3
+    },
+    {
+      "id": "fabricate",
+      "level": 4
+    },
+    {
+      "id": "stone-shape",
+      "level": 4
+    },
+    {
+      "id": "friends",
+      "level": 0
+    },
+    {
+      "id": "feather-fall",
+      "level": 1
+    },
+    {
+      "id": "continual-flame",
+      "level": 2
+    },
+    {
+      "id": "melfs-acid-arrow",
+      "level": 2
+    },
+    {
+      "id": "blight",
+      "level": 4
+    },
+    {
+      "id": "blur",
+      "level": 2
+    },
+    {
+      "id": "phantasmal-force",
+      "level": 2
+    },
+    {
+      "id": "etherealness",
+      "level": 7
+    },
+    {
+      "id": "gaseous-form",
+      "level": 3
+    },
+    {
+      "id": "tashas-hideous-laughter",
+      "level": 1
+    },
+    {
+      "id": "misty-step",
+      "level": 2
+    },
+    {
+      "id": "shatter",
+      "level": 2
+    },
+    {
+      "id": "steel-wind-strike",
+      "level": 5
+    },
+    {
+      "id": "toll-the-dead",
+      "level": 0
+    },
+    {
+      "id": "move-earth",
+      "level": 6
+    },
+    {
+      "id": "globe-of-invulnerability",
+      "level": 6
+    },
+    {
+      "id": "glyph-of-warding",
+      "level": 3
+    },
+    {
+      "id": "grease",
+      "level": 1
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "haste",
+      "level": 3
+    },
+    {
+      "id": "identify",
+      "level": 1
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "programmed-illusion",
+      "level": 6
+    },
+    {
+      "id": "major-image",
+      "level": 3
+    },
+    {
+      "id": "mirror-image",
+      "level": 2
+    },
+    {
+      "id": "project-image",
+      "level": 7
+    },
+    {
+      "id": "silent-image",
+      "level": 1
+    },
+    {
+      "id": "hold-monster",
+      "level": 5
+    },
+    {
+      "id": "hold-person",
+      "level": 2
+    },
+    {
+      "id": "reverse-gravity",
+      "level": 7
+    },
+    {
+      "id": "invisibility",
+      "level": 2
+    },
+    {
+      "id": "greater-invisibility",
+      "level": 4
+    },
+    {
+      "id": "conjure-elemental",
+      "level": 5
+    },
+    {
+      "id": "conjure-minor-elementals",
+      "level": 4
+    },
+    {
+      "id": "slow",
+      "level": 3
+    },
+    {
+      "id": "levitate",
+      "level": 2
+    },
+    {
+      "id": "rarys-telepathic-bond",
+      "level": 5
+    },
+    {
+      "id": "locate-object",
+      "level": 2
+    },
+    {
+      "id": "locate-creature",
+      "level": 4
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "dancing-lights",
+      "level": 0
+    },
+    {
+      "id": "bigbys-hand",
+      "level": 5
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "burning-hands",
+      "level": 1
+    },
+    {
+      "id": "bestow-curse",
+      "level": 3
+    },
+    {
+      "id": "mordenkainens-magnificent-mansion",
+      "level": 7
+    },
+    {
+      "id": "eyebite",
+      "level": 6
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "polymorph",
+      "level": 4
+    },
+    {
+      "id": "true-polymorph",
+      "level": 9
+    },
+    {
+      "id": "mirage-arcane",
+      "level": 7
+    },
+    {
+      "id": "alter-self",
+      "level": 2
+    },
+    {
+      "id": "modify-memory",
+      "level": 5
+    },
+    {
+      "id": "phantom-steed",
+      "level": 3
+    },
+    {
+      "id": "power-word-stun",
+      "level": 8
+    },
+    {
+      "id": "power-word-kill",
+      "level": 9
+    },
+    {
+      "id": "hypnotic-pattern",
+      "level": 3
+    },
+    {
+      "id": "wall-of-fire",
+      "level": 4
+    },
+    {
+      "id": "wall-of-force",
+      "level": 5
+    },
+    {
+      "id": "wall-of-ice",
+      "level": 6
+    },
+    {
+      "id": "wall-of-stone",
+      "level": 5
+    },
+    {
+      "id": "prismatic-wall",
+      "level": 9
+    },
+    {
+      "id": "legend-lore",
+      "level": 5
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "incendiary-cloud",
+      "level": 8
+    },
+    {
+      "id": "stinking-cloud",
+      "level": 3
+    },
+    {
+      "id": "cloud-of-daggers",
+      "level": 2
+    },
+    {
+      "id": "meteor-swarm",
+      "level": 9
+    },
+    {
+      "id": "arcane-eye",
+      "level": 4
+    },
+    {
+      "id": "chromatic-orb",
+      "level": 1
+    },
+    {
+      "id": "passwall",
+      "level": 5
+    },
+    {
+      "id": "spider-climb",
+      "level": 2
+    },
+    {
+      "id": "stoneskin",
+      "level": 4
+    },
+    {
+      "id": "synaptic-static",
+      "level": 5
+    },
+    {
+      "id": "leomunds-tiny-hut",
+      "level": 3
+    },
+    {
+      "id": "flesh-to-stone",
+      "level": 6
+    },
+    {
+      "id": "mind-sliver",
+      "level": 0
+    },
+    {
+      "id": "shocking-grasp",
+      "level": 0
+    },
+    {
+      "id": "gate",
+      "level": 9
+    },
+    {
+      "id": "arcane-gate",
+      "level": 6
+    },
+    {
+      "id": "dimension-door",
+      "level": 4
+    },
+    {
+      "id": "magic-jar",
+      "level": 6
+    },
+    {
+      "id": "contingency",
+      "level": 6
+    },
+    {
+      "id": "foresight",
+      "level": 9
+    },
+    {
+      "id": "yolandes-regal-presence",
+      "level": 5
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "magic-missile",
+      "level": 1
+    },
+    {
+      "id": "astral-projection",
+      "level": 9
+    },
+    {
+      "id": "protection-from-energy",
+      "level": 3
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "guards-and-wards",
+      "level": 6
+    },
+    {
+      "id": "geas",
+      "level": 5
+    },
+    {
+      "id": "ray-of-enfeeblement",
+      "level": 2
+    },
+    {
+      "id": "scorching-ray",
+      "level": 2
+    },
+    {
+      "id": "ray-of-frost",
+      "level": 0
+    },
+    {
+      "id": "sunbeam",
+      "level": 6
+    },
+    {
+      "id": "ray-of-sickness",
+      "level": 1
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "expeditious-retreat",
+      "level": 1
+    },
+    {
+      "id": "water-breathing",
+      "level": 3
+    },
+    {
+      "id": "mordenkainens-private-sanctum",
+      "level": 4
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "scrying",
+      "level": 5
+    },
+    {
+      "id": "unseen-servant",
+      "level": 1
+    },
+    {
+      "id": "simulacrum",
+      "level": 7
+    },
+    {
+      "id": "false-life",
+      "level": 1
+    },
+    {
+      "id": "sleep",
+      "level": 1
+    },
+    {
+      "id": "dream",
+      "level": 5
+    },
+    {
+      "id": "dragons-breath",
+      "level": 2
+    },
+    {
+      "id": "wish",
+      "level": 9
+    },
+    {
+      "id": "flaming-sphere",
+      "level": 2
+    },
+    {
+      "id": "vitriolic-sphere",
+      "level": 4
+    },
+    {
+      "id": "otilukes-freezing-sphere",
+      "level": 6
+    },
+    {
+      "id": "otilukes-resilient-sphere",
+      "level": 4
+    },
+    {
+      "id": "suggestion",
+      "level": 2
+    },
+    {
+      "id": "mass-suggestion",
+      "level": 6
+    },
+    {
+      "id": "symbol",
+      "level": 7
+    },
+    {
+      "id": "telekinesis",
+      "level": 5
+    },
+    {
+      "id": "telepathy",
+      "level": 8
+    },
+    {
+      "id": "teleport",
+      "level": 7
+    },
+    {
+      "id": "ice-storm",
+      "level": 4
+    },
+    {
+      "id": "sleet-storm",
+      "level": 3
+    },
+    {
+      "id": "jallarzis-storm-of-radiance",
+      "level": 5
+    },
+    {
+      "id": "darkness",
+      "level": 2
+    },
+    {
+      "id": "evards-black-tentacles",
+      "level": 4
+    },
+    {
+      "id": "hallucinatory-terrain",
+      "level": 4
+    },
+    {
+      "id": "fear",
+      "level": 3
+    },
+    {
+      "id": "illusory-script",
+      "level": 1
+    },
+    {
+      "id": "web",
+      "level": 2
+    },
+    {
+      "id": "fire-bolt",
+      "level": 0
+    },
+    {
+      "id": "witch-bolt",
+      "level": 1
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    },
+    {
+      "id": "arcane-lock",
+      "level": 2
+    },
+    {
+      "id": "arcane-vigor",
+      "level": 2
+    },
+    {
+      "id": "darkvision",
+      "level": 2
+    },
+    {
+      "id": "true-seeing",
+      "level": 6
+    },
+    {
+      "id": "blade-ward",
+      "level": 0
+    },
+    {
+      "id": "fly",
+      "level": 3
+    }
+  ],
+  "cleric": [
+    {
+      "id": "aid",
+      "level": 2
+    },
+    {
+      "id": "planar-ally",
+      "level": 6
+    },
+    {
+      "id": "enhance-ability",
+      "level": 2
+    },
+    {
+      "id": "animate-dead",
+      "level": 3
+    },
+    {
+      "id": "calm-emotions",
+      "level": 2
+    },
+    {
+      "id": "spiritual-weapon",
+      "level": 2
+    },
+    {
+      "id": "guidance",
+      "level": 0
+    },
+    {
+      "id": "augury",
+      "level": 2
+    },
+    {
+      "id": "aura-of-purity",
+      "level": 4
+    },
+    {
+      "id": "aura-of-life",
+      "level": 4
+    },
+    {
+      "id": "aura-of-vitality",
+      "level": 3
+    },
+    {
+      "id": "holy-aura",
+      "level": 8
+    },
+    {
+      "id": "banishment",
+      "level": 4
+    },
+    {
+      "id": "blade-barrier",
+      "level": 6
+    },
+    {
+      "id": "bless",
+      "level": 1
+    },
+    {
+      "id": "inflict-wounds",
+      "level": 1
+    },
+    {
+      "id": "shield-of-faith",
+      "level": 1
+    },
+    {
+      "id": "blindness-deafness",
+      "level": 2
+    },
+    {
+      "id": "circle-of-power",
+      "level": 5
+    },
+    {
+      "id": "magic-circle",
+      "level": 3
+    },
+    {
+      "id": "antimagic-field",
+      "level": 8
+    },
+    {
+      "id": "plane-shift",
+      "level": 7
+    },
+    {
+      "id": "clairvoyance",
+      "level": 3
+    },
+    {
+      "id": "flame-strike",
+      "level": 5
+    },
+    {
+      "id": "sending",
+      "level": 3
+    },
+    {
+      "id": "speak-with-dead",
+      "level": 3
+    },
+    {
+      "id": "commune",
+      "level": 5
+    },
+    {
+      "id": "contagion",
+      "level": 5
+    },
+    {
+      "id": "harm",
+      "level": 6
+    },
+    {
+      "id": "control-water",
+      "level": 4
+    },
+    {
+      "id": "control-weather",
+      "level": 8
+    },
+    {
+      "id": "summon-celestial",
+      "level": 5
+    },
+    {
+      "id": "create-undead",
+      "level": 6
+    },
+    {
+      "id": "create-food-and-water",
+      "level": 3
+    },
+    {
+      "id": "create-or-destroy-water",
+      "level": 1
+    },
+    {
+      "id": "remove-curse",
+      "level": 3
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "find-traps",
+      "level": 2
+    },
+    {
+      "id": "detect-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "dispel-evil-and-good",
+      "level": 5
+    },
+    {
+      "id": "divination",
+      "level": 4
+    },
+    {
+      "id": "tongues",
+      "level": 3
+    },
+    {
+      "id": "gentle-repose",
+      "level": 2
+    },
+    {
+      "id": "sunburst",
+      "level": 8
+    },
+    {
+      "id": "planar-binding",
+      "level": 5
+    },
+    {
+      "id": "spirit-guardians",
+      "level": 3
+    },
+    {
+      "id": "feign-death",
+      "level": 3
+    },
+    {
+      "id": "stone-shape",
+      "level": 4
+    },
+    {
+      "id": "heroes-feast",
+      "level": 6
+    },
+    {
+      "id": "continual-flame",
+      "level": 2
+    },
+    {
+      "id": "sacred-flame",
+      "level": 0
+    },
+    {
+      "id": "insect-plague",
+      "level": 5
+    },
+    {
+      "id": "etherealness",
+      "level": 7
+    },
+    {
+      "id": "meld-into-stone",
+      "level": 3
+    },
+    {
+      "id": "guardian-of-faith",
+      "level": 4
+    },
+    {
+      "id": "toll-the-dead",
+      "level": 0
+    },
+    {
+      "id": "glyph-of-warding",
+      "level": 3
+    },
+    {
+      "id": "heal",
+      "level": 6
+    },
+    {
+      "id": "mass-heal",
+      "level": 9
+    },
+    {
+      "id": "hold-person",
+      "level": 2
+    },
+    {
+      "id": "bane",
+      "level": 1
+    },
+    {
+      "id": "command",
+      "level": 1
+    },
+    {
+      "id": "forbiddance",
+      "level": 6
+    },
+    {
+      "id": "conjure-celestial",
+      "level": 7
+    },
+    {
+      "id": "freedom-of-movement",
+      "level": 4
+    },
+    {
+      "id": "warding-bond",
+      "level": 2
+    },
+    {
+      "id": "locate-object",
+      "level": 2
+    },
+    {
+      "id": "locate-creature",
+      "level": 4
+    },
+    {
+      "id": "beacon-of-hope",
+      "level": 3
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "daylight",
+      "level": 3
+    },
+    {
+      "id": "bestow-curse",
+      "level": 3
+    },
+    {
+      "id": "water-walk",
+      "level": 3
+    },
+    {
+      "id": "healing-word",
+      "level": 1
+    },
+    {
+      "id": "mass-healing-word",
+      "level": 3
+    },
+    {
+      "id": "power-word-fortify",
+      "level": 7
+    },
+    {
+      "id": "power-word-heal",
+      "level": 9
+    },
+    {
+      "id": "word-of-radiance",
+      "level": 0
+    },
+    {
+      "id": "word-of-recall",
+      "level": 6
+    },
+    {
+      "id": "legend-lore",
+      "level": 5
+    },
+    {
+      "id": "find-the-path",
+      "level": 6
+    },
+    {
+      "id": "divine-word",
+      "level": 7
+    },
+    {
+      "id": "gate",
+      "level": 9
+    },
+    {
+      "id": "prayer-of-healing",
+      "level": 2
+    },
+    {
+      "id": "astral-projection",
+      "level": 9
+    },
+    {
+      "id": "protection-from-energy",
+      "level": 3
+    },
+    {
+      "id": "death-ward",
+      "level": 4
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "protection-from-poison",
+      "level": 2
+    },
+    {
+      "id": "purify-food-and-drink",
+      "level": 1
+    },
+    {
+      "id": "geas",
+      "level": 5
+    },
+    {
+      "id": "raise-dead",
+      "level": 5
+    },
+    {
+      "id": "sunbeam",
+      "level": 6
+    },
+    {
+      "id": "guiding-bolt",
+      "level": 1
+    },
+    {
+      "id": "regenerate",
+      "level": 7
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "resistance",
+      "level": 0
+    },
+    {
+      "id": "lesser-restoration",
+      "level": 2
+    },
+    {
+      "id": "greater-restoration",
+      "level": 5
+    },
+    {
+      "id": "resurrection",
+      "level": 7
+    },
+    {
+      "id": "true-resurrection",
+      "level": 9
+    },
+    {
+      "id": "revivify",
+      "level": 3
+    },
+    {
+      "id": "hallow",
+      "level": 5
+    },
+    {
+      "id": "sanctuary",
+      "level": 1
+    },
+    {
+      "id": "scrying",
+      "level": 5
+    },
+    {
+      "id": "silence",
+      "level": 2
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "mass-cure-wounds",
+      "level": 5
+    },
+    {
+      "id": "stabilize",
+      "level": 0
+    },
+    {
+      "id": "symbol",
+      "level": 7
+    },
+    {
+      "id": "fire-storm",
+      "level": 7
+    },
+    {
+      "id": "thaumaturgy",
+      "level": 0
+    },
+    {
+      "id": "earthquake",
+      "level": 8
+    },
+    {
+      "id": "true-seeing",
+      "level": 6
+    },
+    {
+      "id": "zone-of-truth",
+      "level": 2
+    }
+  ],
+  "paladin": [
+    {
+      "id": "aid",
+      "level": 2
+    },
+    {
+      "id": "find-steed",
+      "level": 2
+    },
+    {
+      "id": "elemental-weapon",
+      "level": 3
+    },
+    {
+      "id": "magic-weapon",
+      "level": 2
+    },
+    {
+      "id": "aura-of-purity",
+      "level": 4
+    },
+    {
+      "id": "aura-of-life",
+      "level": 4
+    },
+    {
+      "id": "aura-of-vitality",
+      "level": 3
+    },
+    {
+      "id": "crusaders-mantle",
+      "level": 3
+    },
+    {
+      "id": "banishment",
+      "level": 4
+    },
+    {
+      "id": "bless",
+      "level": 1
+    },
+    {
+      "id": "shield-of-faith",
+      "level": 1
+    },
+    {
+      "id": "circle-of-power",
+      "level": 5
+    },
+    {
+      "id": "magic-circle",
+      "level": 3
+    },
+    {
+      "id": "blinding-smite",
+      "level": 3
+    },
+    {
+      "id": "wrathful-smite",
+      "level": 1
+    },
+    {
+      "id": "searing-smite",
+      "level": 1
+    },
+    {
+      "id": "shining-smite",
+      "level": 2
+    },
+    {
+      "id": "staggering-smite",
+      "level": 4
+    },
+    {
+      "id": "thunderous-smite",
+      "level": 1
+    },
+    {
+      "id": "divine-smite",
+      "level": 1
+    },
+    {
+      "id": "banishing-smite",
+      "level": 5
+    },
+    {
+      "id": "summon-celestial",
+      "level": 5
+    },
+    {
+      "id": "create-food-and-water",
+      "level": 3
+    },
+    {
+      "id": "remove-curse",
+      "level": 3
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "dispel-evil-and-good",
+      "level": 5
+    },
+    {
+      "id": "gentle-repose",
+      "level": 2
+    },
+    {
+      "id": "compelled-duel",
+      "level": 1
+    },
+    {
+      "id": "divine-favor",
+      "level": 1
+    },
+    {
+      "id": "heroism",
+      "level": 1
+    },
+    {
+      "id": "command",
+      "level": 1
+    },
+    {
+      "id": "warding-bond",
+      "level": 2
+    },
+    {
+      "id": "locate-object",
+      "level": 2
+    },
+    {
+      "id": "locate-creature",
+      "level": 4
+    },
+    {
+      "id": "daylight",
+      "level": 3
+    },
+    {
+      "id": "prayer-of-healing",
+      "level": 2
+    },
+    {
+      "id": "death-ward",
+      "level": 4
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "protection-from-poison",
+      "level": 2
+    },
+    {
+      "id": "purify-food-and-drink",
+      "level": 1
+    },
+    {
+      "id": "geas",
+      "level": 5
+    },
+    {
+      "id": "raise-dead",
+      "level": 5
+    },
+    {
+      "id": "lesser-restoration",
+      "level": 2
+    },
+    {
+      "id": "greater-restoration",
+      "level": 5
+    },
+    {
+      "id": "revivify",
+      "level": 3
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "destructive-wave",
+      "level": 5
+    },
+    {
+      "id": "zone-of-truth",
+      "level": 2
+    }
+  ],
+  "ranger": [
+    {
+      "id": "aid",
+      "level": 2
+    },
+    {
+      "id": "alarm",
+      "level": 1
+    },
+    {
+      "id": "enhance-ability",
+      "level": 2
+    },
+    {
+      "id": "animal-friendship",
+      "level": 1
+    },
+    {
+      "id": "nondetection",
+      "level": 3
+    },
+    {
+      "id": "elemental-weapon",
+      "level": 3
+    },
+    {
+      "id": "magic-weapon",
+      "level": 2
+    },
+    {
+      "id": "goodberry",
+      "level": 1
+    },
+    {
+      "id": "gust-of-wind",
+      "level": 2
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "speak-with-plants",
+      "level": 3
+    },
+    {
+      "id": "commune-with-nature",
+      "level": 5
+    },
+    {
+      "id": "summon-elemental",
+      "level": 4
+    },
+    {
+      "id": "summon-beast",
+      "level": 2
+    },
+    {
+      "id": "summon-fey",
+      "level": 3
+    },
+    {
+      "id": "cordon-of-arrows",
+      "level": 2
+    },
+    {
+      "id": "spike-growth",
+      "level": 2
+    },
+    {
+      "id": "plant-growth",
+      "level": 3
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "find-traps",
+      "level": 2
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "dominate-beast",
+      "level": 4
+    },
+    {
+      "id": "entangle",
+      "level": 1
+    },
+    {
+      "id": "lightning-arrow",
+      "level": 3
+    },
+    {
+      "id": "steel-wind-strike",
+      "level": 5
+    },
+    {
+      "id": "ensnaring-strike",
+      "level": 1
+    },
+    {
+      "id": "meld-into-stone",
+      "level": 3
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "hail-of-thorns",
+      "level": 1
+    },
+    {
+      "id": "conjure-barrage",
+      "level": 3
+    },
+    {
+      "id": "conjure-animals",
+      "level": 3
+    },
+    {
+      "id": "conjure-woodland-beings",
+      "level": 4
+    },
+    {
+      "id": "conjure-volley",
+      "level": 5
+    },
+    {
+      "id": "grasping-vine",
+      "level": 4
+    },
+    {
+      "id": "freedom-of-movement",
+      "level": 4
+    },
+    {
+      "id": "locate-animals-or-plants",
+      "level": 2
+    },
+    {
+      "id": "locate-object",
+      "level": 2
+    },
+    {
+      "id": "locate-creature",
+      "level": 4
+    },
+    {
+      "id": "daylight",
+      "level": 3
+    },
+    {
+      "id": "water-walk",
+      "level": 3
+    },
+    {
+      "id": "hunters-mark",
+      "level": 1
+    },
+    {
+      "id": "animal-messenger",
+      "level": 2
+    },
+    {
+      "id": "wall-of-wind",
+      "level": 3
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "tree-stride",
+      "level": 5
+    },
+    {
+      "id": "pass-without-trace",
+      "level": 2
+    },
+    {
+      "id": "barkskin",
+      "level": 2
+    },
+    {
+      "id": "stoneskin",
+      "level": 4
+    },
+    {
+      "id": "beast-sense",
+      "level": 2
+    },
+    {
+      "id": "protection-from-energy",
+      "level": 3
+    },
+    {
+      "id": "protection-from-poison",
+      "level": 2
+    },
+    {
+      "id": "water-breathing",
+      "level": 3
+    },
+    {
+      "id": "lesser-restoration",
+      "level": 2
+    },
+    {
+      "id": "greater-restoration",
+      "level": 5
+    },
+    {
+      "id": "revivify",
+      "level": 3
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "silence",
+      "level": 2
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "swift-quiver",
+      "level": 5
+    },
+    {
+      "id": "darkvision",
+      "level": 2
+    }
+  ],
+  "warlock": [
+    {
+      "id": "befuddlement",
+      "level": 8
+    },
+    {
+      "id": "armor-of-agathys",
+      "level": 1
+    },
+    {
+      "id": "glibness",
+      "level": 8
+    },
+    {
+      "id": "banishment",
+      "level": 4
+    },
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "forcecage",
+      "level": 7
+    },
+    {
+      "id": "vampiric-touch",
+      "level": 3
+    },
+    {
+      "id": "circle-of-death",
+      "level": 6
+    },
+    {
+      "id": "teleportation-circle",
+      "level": 5
+    },
+    {
+      "id": "magic-circle",
+      "level": 3
+    },
+    {
+      "id": "plane-shift",
+      "level": 7
+    },
+    {
+      "id": "charm-monster",
+      "level": 4
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "tashas-bubbling-cauldron",
+      "level": 6
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "contact-other-plane",
+      "level": 5
+    },
+    {
+      "id": "chill-touch",
+      "level": 0
+    },
+    {
+      "id": "counterspell",
+      "level": 3
+    },
+    {
+      "id": "summon-aberration",
+      "level": 4
+    },
+    {
+      "id": "summon-fey",
+      "level": 3
+    },
+    {
+      "id": "summon-fiend",
+      "level": 6
+    },
+    {
+      "id": "summon-undead",
+      "level": 3
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "thunderclap",
+      "level": 0
+    },
+    {
+      "id": "crown-of-madness",
+      "level": 2
+    },
+    {
+      "id": "create-undead",
+      "level": 6
+    },
+    {
+      "id": "eldritch-blast",
+      "level": 0
+    },
+    {
+      "id": "remove-curse",
+      "level": 3
+    },
+    {
+      "id": "demiplane",
+      "level": 8
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "enthrall",
+      "level": 2
+    },
+    {
+      "id": "dispel-magic",
+      "level": 3
+    },
+    {
+      "id": "finger-of-death",
+      "level": 7
+    },
+    {
+      "id": "dominate-monster",
+      "level": 8
+    },
+    {
+      "id": "tongues",
+      "level": 3
+    },
+    {
+      "id": "mislead",
+      "level": 5
+    },
+    {
+      "id": "imprisonment",
+      "level": 9
+    },
+    {
+      "id": "weird",
+      "level": 9
+    },
+    {
+      "id": "planar-binding",
+      "level": 5
+    },
+    {
+      "id": "mind-spike",
+      "level": 2
+    },
+    {
+      "id": "friends",
+      "level": 0
+    },
+    {
+      "id": "blight",
+      "level": 4
+    },
+    {
+      "id": "etherealness",
+      "level": 7
+    },
+    {
+      "id": "gaseous-form",
+      "level": 3
+    },
+    {
+      "id": "tashas-hideous-laughter",
+      "level": 1
+    },
+    {
+      "id": "misty-step",
+      "level": 2
+    },
+    {
+      "id": "toll-the-dead",
+      "level": 0
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "major-image",
+      "level": 3
+    },
+    {
+      "id": "mirror-image",
+      "level": 2
+    },
+    {
+      "id": "hold-monster",
+      "level": 5
+    },
+    {
+      "id": "hold-person",
+      "level": 2
+    },
+    {
+      "id": "bane",
+      "level": 1
+    },
+    {
+      "id": "invisibility",
+      "level": 2
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "hex",
+      "level": 1
+    },
+    {
+      "id": "eyebite",
+      "level": 6
+    },
+    {
+      "id": "true-polymorph",
+      "level": 9
+    },
+    {
+      "id": "power-word-stun",
+      "level": 8
+    },
+    {
+      "id": "power-word-kill",
+      "level": 9
+    },
+    {
+      "id": "hypnotic-pattern",
+      "level": 3
+    },
+    {
+      "id": "cloud-of-daggers",
+      "level": 2
+    },
+    {
+      "id": "spider-climb",
+      "level": 2
+    },
+    {
+      "id": "synaptic-static",
+      "level": 5
+    },
+    {
+      "id": "mind-sliver",
+      "level": 0
+    },
+    {
+      "id": "gate",
+      "level": 9
+    },
+    {
+      "id": "arcane-gate",
+      "level": 6
+    },
+    {
+      "id": "dimension-door",
+      "level": 4
+    },
+    {
+      "id": "foresight",
+      "level": 9
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "astral-projection",
+      "level": 9
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "ray-of-enfeeblement",
+      "level": 2
+    },
+    {
+      "id": "expeditious-retreat",
+      "level": 1
+    },
+    {
+      "id": "hellish-rebuke",
+      "level": 1
+    },
+    {
+      "id": "scrying",
+      "level": 5
+    },
+    {
+      "id": "unseen-servant",
+      "level": 1
+    },
+    {
+      "id": "dream",
+      "level": 5
+    },
+    {
+      "id": "suggestion",
+      "level": 2
+    },
+    {
+      "id": "jallarzis-storm-of-radiance",
+      "level": 5
+    },
+    {
+      "id": "darkness",
+      "level": 2
+    },
+    {
+      "id": "arms-of-hadar",
+      "level": 1
+    },
+    {
+      "id": "hallucinatory-terrain",
+      "level": 4
+    },
+    {
+      "id": "fear",
+      "level": 3
+    },
+    {
+      "id": "illusory-script",
+      "level": 1
+    },
+    {
+      "id": "witch-bolt",
+      "level": 1
+    },
+    {
+      "id": "true-seeing",
+      "level": 6
+    },
+    {
+      "id": "blade-ward",
+      "level": 0
+    },
+    {
+      "id": "fly",
+      "level": 3
+    },
+    {
+      "id": "hunger-of-hadar",
+      "level": 3
+    }
+  ]
 }

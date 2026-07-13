@@ -29,29 +29,29 @@ const CHARDIR = join(HERE, "..", "characters");
 /* ---- answers retro-conçus depuis les fiches de reference ------------------ */
 const ANSWERS = {
   medicis: {
-    _id: "medicis", nom: "Medicis", classe: "druide", espece: "elfe",
-    lignage: "elfe-sylvestre", historique: "guide",
-    abilityScores: { for: 10, dex: 11, con: 14, int: 14, sag: 17, cha: 14 },
-    "druide-competences": ["dressage", "nature"],
-    "elfe-sens-aiguises": ["perception"],
-    "druide-ordre-primitif": "mage",
-    "druide-cantrips": ["flammes"],
-    "druide-prepares": ["amitie-avec-les-animaux", "lueurs-feeriques", "soins", "vague-tonnante"],
-    "initie-a-la-magie-liste": "druide", "initie-a-la-magie-carac": "sag",
+    _id: "medicis", nom: "Medicis", class: "druid", species: "elf",
+    lineage: "elfe-sylvestre", background: "guide",
+    abilityScores: { str: 10, dex: 11, con: 14, int: 14, wis: 17, cha: 14 },
+    "druid-competences": ["animal-handling", "nature"],
+    "elf-sens-aiguises": "perception",
+    "druid-ordre-primitif": "mage",
+    "druid-cantrips": ["produce-flame"],
+    "druid-prepares": ["animal-friendship", "faerie-fire", "cure-wounds", "thunderwave"],
+    "initie-a-la-magie-liste": "druid", "initie-a-la-magie-carac": "wis",
     "origine-langues-choix": ["elfique", "geant"],
-    "druide-equipement": "A", "guide-equipement": "A",
+    "druid-equipement": "A", "guide-equipement": "A",
   },
   malbec: {
-    _id: "malbec", nom: "Malbec", classe: "clerc", espece: "tieffelin",
-    lignage: "tieffelin-abyssal", historique: "acolyte",
-    abilityScores: { for: 13, dex: 12, con: 12, int: 13, sag: 18, cha: 11 },
-    "clerc-competences": ["medecine", "histoire"],
-    "clerc-ordre-divin": "thaumaturge",
-    "clerc-cantrips": ["flamme-sacree", "mot-de-radiance", "glas"],
-    "clerc-prepares": ["benediction", "soins", "rayon-tractant", "bouclier-de-la-foi"],
-    "initie-a-la-magie-liste": "clerc", "initie-a-la-magie-carac": "sag",
+    _id: "malbec", nom: "Malbec", class: "cleric", species: "tiefling",
+    lineage: "tieffelin-abyssal", background: "acolyte",
+    abilityScores: { str: 13, dex: 12, con: 12, int: 13, wis: 18, cha: 11 },
+    "cleric-competences": ["medicine", "history"],
+    "cleric-ordre-divin": "thaumaturge",
+    "cleric-cantrips": ["sacred-flame", "word-of-radiance", "toll-the-dead"],
+    "cleric-prepares": ["bless", "cure-wounds", "rayon-tractant", "shield-of-faith"],
+    "initie-a-la-magie-liste": "cleric", "initie-a-la-magie-carac": "wis",
     "origine-langues-choix": ["abyssal", "celeste"],
-    "clerc-equipement": "A",
+    "cleric-equipement": "A",
   },
 };
 
@@ -76,7 +76,7 @@ for (const id of ["medicis", "malbec"]) {
   const ref = JSON.parse(readFileSync(join(CHARDIR, `${id}.character.json`), "utf8"));
   const Cg = computeCharacter(ref);                              // reference
   const Cr = computeCharacter(toCharacterModel(cat, ANSWERS[id])); // reconstruction
-  const classList = ANSWERS[id].classe;
+  const classList = ANSWERS[id].class;
   const fails = [];
 
   check("PB", Cg.PB, Cr.PB, fails);

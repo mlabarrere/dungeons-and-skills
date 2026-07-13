@@ -7,15 +7,15 @@
   "oracle": {
     "mode": "list",
     "expected": [
-      "acrobaties",
-      "athletisme",
-      "dressage",
-      "histoire",
-      "intuition",
+      "acrobatics",
+      "athletics",
+      "animal-handling",
+      "history",
+      "insight",
       "intimidation",
       "perception",
       "persuasion",
-      "survie"
+      "survival"
     ]
   }
 }

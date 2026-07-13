@@ -7,37 +7,37 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: tieffelin ensorceleur, charlatan background, ability scores {\"for\":8,\"dex\":14,\"con\":13,\"int\":10,\"sag\":12,\"cha\":15}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "tiefling-sorcerer",
-    "nom": "Ember",
-    "classe": "ensorceleur",
-    "espece": "tieffelin",
-    "historique": "charlatan",
+    "name": "Ember",
+    "class": "sorcerer",
+    "species": "tiefling",
+    "background": "charlatan",
     "abilityScores": {
-      "for": 8,
+      "str": 8,
       "dex": 14,
       "con": 13,
       "int": 10,
-      "sag": 12,
+      "wis": 12,
       "cha": 15
     },
-    "lignage": "tieffelin-abyssal",
-    "ensorceleur-competences": [
-      "arcanes",
+    "lineage": "tieffelin-abyssal",
+    "sorcerer-competences": [
+      "arcana",
       "intimidation"
     ],
-    "ensorceleur-cantrips": [
-      "aspersion-acide",
-      "contact-glacial",
-      "coup-au-but",
-      "coup-de-tonnerre"
+    "sorcerer-cantrips": [
+      "acid-splash",
+      "chill-touch",
+      "true-strike",
+      "thunderclap"
     ],
-    "ensorceleur-prepares": [
-      "agrandissement-rapetissement",
-      "amelioration-de-caracteristique"
+    "sorcerer-prepares": [
+      "enlarge-reduce",
+      "enhance-ability"
     ],
-    "ensorceleur-equipement": "A",
-    "tieffelin-abyssal-caracteristique-incantation": "int",
+    "sorcerer-equipement": "A",
+    "tiefling-abyssal-caracteristique-incantation": "int",
     "charlatan-caracteristiques": "dex",
     "doue-maitrises": [
       "acrobaties",

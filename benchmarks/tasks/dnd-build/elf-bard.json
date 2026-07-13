@@ -7,44 +7,44 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: elfe (haut-elfe) barde, artiste background, ability scores {\"for\":8,\"dex\":14,\"con\":12,\"int\":10,\"sag\":13,\"cha\":15}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "elf-bard",
-    "nom": "Lyric",
-    "classe": "barde",
-    "espece": "elfe",
-    "lignage": "haut-elfe",
-    "historique": "artiste",
+    "name": "Lyric",
+    "class": "bard",
+    "species": "elf",
+    "lineage": "haut-elfe",
+    "background": "entertainer",
     "abilityScores": {
-      "for": 8,
+      "str": 8,
       "dex": 14,
       "con": 12,
       "int": 10,
-      "sag": 13,
+      "wis": 13,
       "cha": 15
     },
-    "barde-competences": [
-      "arcanes",
-      "athletisme",
-      "discretion"
+    "bard-competences": [
+      "arcana",
+      "athletics",
+      "stealth"
     ],
-    "barde-instruments": [
+    "bard-instruments": [
       "instrument-de-musique"
     ],
-    "barde-cantrips": [
-      "coup-au-but",
-      "coup-de-tonnerre"
+    "bard-cantrips": [
+      "true-strike",
+      "thunderclap"
     ],
-    "barde-prepares": [
-      "agrandissement-rapetissement",
-      "aide",
-      "alienation",
-      "amelioration-de-caracteristique"
+    "bard-prepares": [
+      "enlarge-reduce",
+      "aid",
+      "befuddlement",
+      "enhance-ability"
     ],
-    "barde-equipement": "A",
-    "elfe-sens-aiguises": "intuition",
+    "bard-equipement": "A",
+    "elf-sens-aiguises": "intuition",
     "haut-elfe-caracteristique-incantation": "int",
-    "artiste-caracteristiques": "for",
-    "artiste-instrument": "instrument-de-musique",
+    "entertainer-caracteristiques": "str",
+    "entertainer-instrument": "instrument-de-musique",
     "musicien-instruments": [
       "instrument-de-musique"
     ],

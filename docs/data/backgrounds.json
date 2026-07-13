@@ -8,19 +8,19 @@
     "abilityScores": {
       "abilities": [
         "int",
-        "sag",
+        "wis",
         "cha"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "intuition",
+      "insight",
       "religion"
     ],
     "toolProficiency": "materiel-de-calligraphe",
     "feat": "initie-a-la-magie",
-    "featClass": "clerc",
+    "featClass": "cleric",
     "equipment": [
       {
         "option": "A",
@@ -43,7 +43,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "intuition"
+        "value": "insight"
       },
       {
         "type": "grants",
@@ -68,7 +68,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
@@ -83,7 +83,7 @@
     "source": "img:178",
     "abilityScores": {
       "abilities": [
-        "for",
+        "str",
         "dex",
         "int"
       ],
@@ -143,7 +143,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "int"
         ],
@@ -160,14 +160,14 @@
     ]
   },
   {
-    "id": "artiste",
+    "id": "entertainer",
     "name": "Artiste",
     "kind": "historique",
     "ref": "../historiques/artiste.html",
     "source": "img:179",
     "abilityScores": {
       "abilities": [
-        "for",
+        "str",
         "dex",
         "cha"
       ],
@@ -175,8 +175,8 @@
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "acrobaties",
-      "representation"
+      "acrobatics",
+      "performance"
     ],
     "toolProficiency": "instrument-de-musique",
     "feat": "musicien",
@@ -202,12 +202,12 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "acrobaties"
+        "value": "acrobatics"
       },
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "representation"
+        "value": "performance"
       },
       {
         "type": "requiresChoice",
@@ -225,18 +225,18 @@
     ],
     "choices": [
       {
-        "id": "artiste-caracteristiques",
+        "id": "entertainer-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "cha"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       },
       {
-        "id": "artiste-instrument",
+        "id": "entertainer-instrument",
         "kind": "toolProficiency",
         "count": 1,
         "from": {
@@ -261,8 +261,8 @@
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "escamotage",
-      "tromperie"
+      "sleight-of-hand",
+      "deception"
     ],
     "toolProficiency": "materiel-de-contrefacon",
     "feat": "doue",
@@ -286,12 +286,12 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "escamotage"
+        "value": "sleight-of-hand"
       },
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "tromperie"
+        "value": "deception"
       },
       {
         "type": "grants",
@@ -319,7 +319,7 @@
     ]
   },
   {
-    "id": "criminel",
+    "id": "criminal",
     "name": "Criminel",
     "kind": "historique",
     "ref": "../historiques/criminel.html",
@@ -334,8 +334,8 @@
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "discretion",
-      "escamotage"
+      "stealth",
+      "sleight-of-hand"
     ],
     "toolProficiency": "outils-de-voleur",
     "feat": "vigilant",
@@ -361,12 +361,12 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "discretion"
+        "value": "stealth"
       },
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "escamotage"
+        "value": "sleight-of-hand"
       },
       {
         "type": "grants",
@@ -381,7 +381,7 @@
     ],
     "choices": [
       {
-        "id": "criminel-caracteristiques",
+        "id": "criminal-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
@@ -394,7 +394,7 @@
     ]
   },
   {
-    "id": "ermite",
+    "id": "hermit",
     "name": "Ermite",
     "kind": "historique",
     "ref": "../historiques/ermite.html",
@@ -402,14 +402,14 @@
     "abilityScores": {
       "abilities": [
         "con",
-        "sag",
+        "wis",
         "cha"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "medecine",
+      "medicine",
       "religion"
     ],
     "toolProficiency": "materiel-d-herboriste",
@@ -438,7 +438,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "medecine"
+        "value": "medicine"
       },
       {
         "type": "grants",
@@ -458,12 +458,12 @@
     ],
     "choices": [
       {
-        "id": "ermite-caracteristiques",
+        "id": "hermit-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
           "con",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
@@ -471,22 +471,22 @@
     ]
   },
   {
-    "id": "fermier",
+    "id": "farmer",
     "name": "Fermier",
     "kind": "historique",
     "ref": "../historiques/fermier.html",
     "source": "img:181",
     "abilityScores": {
       "abilities": [
-        "for",
+        "str",
         "con",
-        "sag"
+        "wis"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "dressage",
+      "animal-handling",
       "nature"
     ],
     "toolProficiency": "outils-de-charpentier",
@@ -514,7 +514,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "dressage"
+        "value": "animal-handling"
       },
       {
         "type": "grants",
@@ -534,35 +534,35 @@
     ],
     "choices": [
       {
-        "id": "fermier-caracteristiques",
+        "id": "farmer-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "con",
-          "sag"
+          "wis"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       }
     ]
   },
   {
-    "id": "garde",
+    "id": "guard",
     "name": "Garde",
     "kind": "historique",
     "ref": "../historiques/garde.html",
     "source": "img:181",
     "abilityScores": {
       "abilities": [
-        "for",
+        "str",
         "int",
-        "sag"
+        "wis"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "athletisme",
+      "athletics",
       "perception"
     ],
     "toolProficiency": "boite-de-jeux",
@@ -592,7 +592,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "athletisme"
+        "value": "athletics"
       },
       {
         "type": "grants",
@@ -615,18 +615,18 @@
     ],
     "choices": [
       {
-        "id": "garde-caracteristiques",
+        "id": "guard-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "int",
-          "sag"
+          "wis"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       },
       {
-        "id": "garde-boite-de-jeux",
+        "id": "guard-boite-de-jeux",
         "kind": "toolProficiency",
         "count": 1,
         "from": {
@@ -645,18 +645,18 @@
       "abilities": [
         "dex",
         "con",
-        "sag"
+        "wis"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "discretion",
-      "survie"
+      "stealth",
+      "survival"
     ],
     "toolProficiency": "outils-de-cartographe",
     "feat": "initie-a-la-magie",
-    "featClass": "druide",
+    "featClass": "druid",
     "equipment": [
       {
         "option": "A",
@@ -681,12 +681,12 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "discretion"
+        "value": "stealth"
       },
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "survie"
+        "value": "survival"
       },
       {
         "type": "grants",
@@ -707,14 +707,14 @@
         "from": [
           "dex",
           "con",
-          "sag"
+          "wis"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       }
     ]
   },
   {
-    "id": "marchand",
+    "id": "merchant",
     "name": "Marchand",
     "kind": "historique",
     "ref": "../historiques/marchand.html",
@@ -729,7 +729,7 @@
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "dressage",
+      "animal-handling",
       "persuasion"
     ],
     "toolProficiency": "instruments-de-navigateur",
@@ -754,7 +754,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "dressage"
+        "value": "animal-handling"
       },
       {
         "type": "grants",
@@ -774,7 +774,7 @@
     ],
     "choices": [
       {
-        "id": "marchand-caracteristiques",
+        "id": "merchant-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
@@ -787,22 +787,22 @@
     ]
   },
   {
-    "id": "marin",
+    "id": "sailor",
     "name": "Marin",
     "kind": "historique",
     "ref": "../historiques/marin.html",
     "source": "img:183",
     "abilityScores": {
       "abilities": [
-        "for",
+        "str",
         "dex",
-        "sag"
+        "wis"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "acrobaties",
+      "acrobatics",
       "perception"
     ],
     "toolProficiency": "instruments-de-navigateur",
@@ -828,7 +828,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "acrobaties"
+        "value": "acrobatics"
       },
       {
         "type": "grants",
@@ -848,13 +848,13 @@
     ],
     "choices": [
       {
-        "id": "marin-caracteristiques",
+        "id": "sailor-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
-          "sag"
+          "wis"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       }
@@ -868,7 +868,7 @@
     "source": "img:183",
     "abilityScores": {
       "abilities": [
-        "for",
+        "str",
         "int",
         "cha"
       ],
@@ -876,7 +876,7 @@
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "histoire",
+      "history",
       "persuasion"
     ],
     "toolProficiency": "boite-de-jeux",
@@ -901,7 +901,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "histoire"
+        "value": "history"
       },
       {
         "type": "grants",
@@ -928,7 +928,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "int",
           "cha"
         ],
@@ -954,18 +954,18 @@
       "abilities": [
         "con",
         "int",
-        "sag"
+        "wis"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "arcanes",
-      "histoire"
+      "arcana",
+      "history"
     ],
     "toolProficiency": "materiel-de-calligraphe",
     "feat": "initie-a-la-magie",
-    "featClass": "magicien",
+    "featClass": "wizard",
     "equipment": [
       {
         "option": "A",
@@ -988,12 +988,12 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "arcanes"
+        "value": "arcana"
       },
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "histoire"
+        "value": "history"
       },
       {
         "type": "grants",
@@ -1014,7 +1014,7 @@
         "from": [
           "con",
           "int",
-          "sag"
+          "wis"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       }
@@ -1030,7 +1030,7 @@
       "abilities": [
         "dex",
         "int",
-        "sag"
+        "wis"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
@@ -1089,21 +1089,21 @@
         "from": [
           "dex",
           "int",
-          "sag"
+          "wis"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       }
     ]
   },
   {
-    "id": "soldat",
+    "id": "soldier",
     "name": "Soldat",
     "kind": "historique",
     "ref": "../historiques/soldat.html",
     "source": "img:185",
     "abilityScores": {
       "abilities": [
-        "for",
+        "str",
         "dex",
         "con"
       ],
@@ -1111,7 +1111,7 @@
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "athletisme",
+      "athletics",
       "intimidation"
     ],
     "toolProficiency": "boite-de-jeux",
@@ -1140,7 +1140,7 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "athletisme"
+        "value": "athletics"
       },
       {
         "type": "grants",
@@ -1163,18 +1163,18 @@
     ],
     "choices": [
       {
-        "id": "soldat-caracteristiques",
+        "id": "soldier-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con"
         ],
         "rule": "+2/+1 ou +1/+1/+1"
       },
       {
-        "id": "soldat-boite-de-jeux",
+        "id": "soldier-boite-de-jeux",
         "kind": "toolProficiency",
         "count": 1,
         "from": {
@@ -1184,7 +1184,7 @@
     ]
   },
   {
-    "id": "voyageur",
+    "id": "wayfarer",
     "name": "Voyageur",
     "kind": "historique",
     "ref": "../historiques/voyageur.html",
@@ -1192,15 +1192,15 @@
     "abilityScores": {
       "abilities": [
         "dex",
-        "sag",
+        "wis",
         "cha"
       ],
       "rule": "+2/+1 ou +1/+1/+1",
       "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
     },
     "skills": [
-      "discretion",
-      "intuition"
+      "stealth",
+      "insight"
     ],
     "toolProficiency": "outils-de-voleur",
     "feat": "chanceux",
@@ -1227,12 +1227,12 @@
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "discretion"
+        "value": "stealth"
       },
       {
         "type": "grants",
         "what": "skillProficiency",
-        "value": "intuition"
+        "value": "insight"
       },
       {
         "type": "grants",
@@ -1247,12 +1247,12 @@
     ],
     "choices": [
       {
-        "id": "voyageur-caracteristiques",
+        "id": "wayfarer-caracteristiques",
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
           "dex",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+2/+1 ou +1/+1/+1"

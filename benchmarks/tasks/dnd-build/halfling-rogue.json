@@ -7,36 +7,36 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: halfelin roublard, criminel background, ability scores {\"for\":8,\"dex\":15,\"con\":13,\"int\":12,\"sag\":10,\"cha\":14}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "halfling-rogue",
-    "nom": "Pip",
-    "classe": "roublard",
-    "espece": "halfelin",
-    "historique": "criminel",
+    "name": "Pip",
+    "class": "rogue",
+    "species": "halfling",
+    "background": "criminal",
     "abilityScores": {
-      "for": 8,
+      "str": 8,
       "dex": 15,
       "con": 13,
       "int": 12,
-      "sag": 10,
+      "wis": 10,
       "cha": 14
     },
-    "roublard-competences": [
-      "acrobaties",
-      "athletisme",
+    "rogue-competences": [
+      "acrobatics",
+      "athletics",
       "intimidation",
-      "intuition"
+      "insight"
     ],
-    "roublard-langue": "draconique",
-    "roublard-equipement": "A",
-    "criminel-caracteristiques": "dex",
+    "rogue-langue": "draconique",
+    "rogue-equipement": "A",
+    "criminal-caracteristiques": "dex",
     "origine-langues-choix": [
       "draconique",
       "elfique"
     ],
-    "roublard-expertise": [
-      "acrobaties",
-      "athletisme"
+    "rogue-expertise": [
+      "acrobatics",
+      "athletics"
     ]
   }
 }

@@ -1,16 +1,29 @@
 {
   "_id": "thera-dwarf-fighter",
-  "nom": "Thera",
-  "alignement": "Loyal neutre",
-  "classe": "guerrier",
-  "espece": "nain",
-  "historique": "soldat",
-  "methode": "standard",
-  "abilityScores": { "for": 15, "dex": 13, "con": 14, "int": 8, "sag": 12, "cha": 10 },
-  "guerrier-competences": ["perception", "survie"],
-  "guerrier-style-de-combat": "defense",
-  "guerrier-equipement": "A",
-  "soldat-caracteristiques": "con",
-  "soldat-boite-de-jeux": "boite-de-jeux",
-  "origine-langues-choix": ["draconique", "elfique"]
+  "name": "Thera",
+  "alignment": "Loyal neutre",
+  "class": "fighter",
+  "species": "dwarf",
+  "background": "soldier",
+  "method": "standard",
+  "abilityScores": {
+    "str": 15,
+    "dex": 13,
+    "con": 14,
+    "int": 8,
+    "wis": 12,
+    "cha": 10
+  },
+  "fighter-competences": [
+    "perception",
+    "survival"
+  ],
+  "fighter-style-de-combat": "defense",
+  "fighter-equipement": "A",
+  "soldier-caracteristiques": "con",
+  "soldier-boite-de-jeux": "boite-de-jeux",
+  "origine-langues-choix": [
+    "draconique",
+    "elfique"
+  ]
 }

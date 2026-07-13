@@ -1,24 +1,48 @@
 {
   "_id": "sylwen-elf-druid",
-  "nom": "Sylwen",
-  "alignement": "Neutre bon",
-  "classe": "druide",
-  "espece": "elfe",
-  "lignage": "elfe-sylvestre",
-  "historique": "guide",
-  "methode": "standard",
-  "abilityScores": { "for": 10, "dex": 14, "con": 13, "int": 12, "sag": 15, "cha": 8 },
-  "druide-competences": ["nature", "medecine"],
-  "druide-ordre-primitif": "gardien",
-  "druide-cantrips": ["flammes", "crosse-des-druides"],
-  "druide-prepares": ["amitie-avec-les-animaux", "lueurs-feeriques", "soins", "vague-tonnante"],
-  "druide-equipement": "A",
-  "elfe-sens-aiguises": "perception",
-  "elfe-sylvestre-caracteristique-incantation": "sag",
-  "guide-caracteristiques": "sag",
-  "initie-a-la-magie-liste": "druide",
-  "initie-a-la-magie-carac": "sag",
-  "initie-a-la-magie-cantrips": ["assistance", "stabilisation"],
-  "initie-a-la-magie-sort-1": "baies-nourricieres",
-  "origine-langues-choix": ["elfique", "geant"]
+  "name": "Sylwen",
+  "alignment": "Neutre bon",
+  "class": "druid",
+  "species": "elf",
+  "lineage": "elfe-sylvestre",
+  "background": "guide",
+  "method": "standard",
+  "abilityScores": {
+    "str": 10,
+    "dex": 14,
+    "con": 13,
+    "int": 12,
+    "wis": 15,
+    "cha": 8
+  },
+  "druid-competences": [
+    "nature",
+    "medicine"
+  ],
+  "druid-ordre-primitif": "gardien",
+  "druid-cantrips": [
+    "produce-flame",
+    "shillelagh"
+  ],
+  "druid-prepares": [
+    "animal-friendship",
+    "faerie-fire",
+    "cure-wounds",
+    "thunderwave"
+  ],
+  "druid-equipement": "A",
+  "elf-sens-aiguises": "perception",
+  "elf-sylvestre-caracteristique-incantation": "wis",
+  "guide-caracteristiques": "wis",
+  "initie-a-la-magie-liste": "druid",
+  "initie-a-la-magie-carac": "wis",
+  "initie-a-la-magie-cantrips": [
+    "guidance",
+    "stabilize"
+  ],
+  "initie-a-la-magie-sort-1": "goodberry",
+  "origine-langues-choix": [
+    "elfique",
+    "geant"
+  ]
 }

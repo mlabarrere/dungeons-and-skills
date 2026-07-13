@@ -7,50 +7,50 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: elfe (elfe-sylvestre) druide, guide background, ability scores {\"for\":10,\"dex\":14,\"con\":13,\"int\":12,\"sag\":15,\"cha\":8}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "elf-druid",
-    "nom": "Sylwen",
-    "classe": "druide",
-    "espece": "elfe",
-    "lignage": "elfe-sylvestre",
-    "historique": "guide",
+    "name": "Sylwen",
+    "class": "druid",
+    "species": "elf",
+    "lineage": "elfe-sylvestre",
+    "background": "guide",
     "abilityScores": {
-      "for": 10,
+      "str": 10,
       "dex": 14,
       "con": 13,
       "int": 12,
-      "sag": 15,
+      "wis": 15,
       "cha": 8
     },
-    "druide-competences": [
-      "arcanes",
-      "dressage"
+    "druid-competences": [
+      "arcana",
+      "animal-handling"
     ],
-    "druide-ordre-primitif": "gardien",
-    "druide-cantrips": [
-      "assistance",
-      "bouffee-de-poison"
+    "druid-ordre-primitif": "gardien",
+    "druid-cantrips": [
+      "guidance",
+      "poison-spray"
     ],
-    "druide-prepares": [
-      "agrandissement-rapetissement",
-      "aide",
-      "alienation",
-      "amelioration-de-caracteristique"
+    "druid-prepares": [
+      "enlarge-reduce",
+      "aid",
+      "befuddlement",
+      "enhance-ability"
     ],
-    "druide-equipement": "A",
-    "elfe-sens-aiguises": "intuition",
-    "elfe-sylvestre-caracteristique-incantation": "int",
+    "druid-equipement": "A",
+    "elf-sens-aiguises": "intuition",
+    "elf-sylvestre-caracteristique-incantation": "int",
     "guide-caracteristiques": "dex",
-    "initie-a-la-magie-liste": "druide",
+    "initie-a-la-magie-liste": "druid",
     "initie-a-la-magie-carac": "int",
     "origine-langues-choix": [
       "draconique",
       "elfique"
     ],
     "initie-a-la-magie-cantrips": [
-      "coup-de-tonnerre",
-      "crosse-des-druides"
+      "thunderclap",
+      "shillelagh"
     ],
-    "initie-a-la-magie-sort-1": "amitie-avec-les-animaux"
+    "initie-a-la-magie-sort-1": "animal-friendship"
   }
 }

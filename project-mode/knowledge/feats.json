@@ -146,9 +146,9 @@
         "count": 1,
         "from": {
           "fromList": [
-            "clerc",
-            "druide",
-            "magicien"
+            "cleric",
+            "druid",
+            "wizard"
           ]
         }
       },
@@ -287,7 +287,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -322,7 +322,7 @@
       {
         "type": "grants",
         "what": "alwaysPreparedSpell",
-        "spell": "foulee-brumeuse"
+        "spell": "misty-step"
       }
     ],
     "choices": [
@@ -332,7 +332,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -365,7 +365,7 @@
       {
         "type": "grants",
         "what": "alwaysPreparedSpell",
-        "spell": "invisibilite"
+        "spell": "invisibility"
       }
     ],
     "choices": [
@@ -375,7 +375,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -411,11 +411,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+2 sur une caracteristique, ou +1 sur deux (max 20)"
@@ -445,7 +445,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -474,7 +474,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "con"
         ],
         "rule": "+1 (max 20)"
@@ -504,7 +504,7 @@
         "count": 1,
         "from": [
           "con",
-          "sag"
+          "wis"
         ],
         "rule": "+1 (max 20)"
       }
@@ -532,7 +532,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for"
+          "str"
         ],
         "rule": "+1 (max 20)"
       }
@@ -560,7 +560,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -589,9 +589,9 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
-          "sag"
+          "wis"
         ],
         "rule": "+1 (max 20)"
       }
@@ -704,7 +704,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -767,8 +767,8 @@
         "count": 1,
         "from": {
           "fromSkillSet": [
-            "arcanes",
-            "histoire",
+            "arcana",
+            "history",
             "investigation",
             "nature",
             "religion"
@@ -794,11 +794,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -848,7 +848,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -877,7 +877,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -906,7 +906,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -964,7 +964,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -994,7 +994,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -1018,7 +1018,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -1051,7 +1051,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1089,7 +1089,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1122,7 +1122,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1155,7 +1155,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "con"
         ],
         "rule": "+1 (max 20)"
@@ -1188,7 +1188,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for"
+          "str"
         ],
         "rule": "+1 (max 20)"
       }
@@ -1269,7 +1269,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag"
+          "wis"
         ],
         "rule": "+1 (max 20)"
       },
@@ -1279,7 +1279,7 @@
         "count": 1,
         "from": {
           "fromSkillSet": [
-            "intuition",
+            "insight",
             "investigation",
             "perception"
           ]
@@ -1310,7 +1310,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1343,7 +1343,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1376,7 +1376,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1409,7 +1409,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "con"
         ],
         "rule": "+1 (max 20)"
@@ -1438,11 +1438,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20) sur une caracteristique dont on n'a pas la maitrise des sauvegardes ; accorde la maitrise de cette sauvegarde."
@@ -1471,7 +1471,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1491,7 +1491,7 @@
       {
         "type": "grants",
         "what": "cantrip",
-        "spell": "main-du-mage",
+        "spell": "mage-hand",
         "note": "Lancable sans composante V/S, main Invisible, portee et distance +9 m. Caracteristique = celle augmentee par le don. Bourrade telekinetique par action Bonus."
       }
     ],
@@ -1502,7 +1502,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -1522,7 +1522,7 @@
       {
         "type": "grants",
         "what": "alwaysPreparedSpell",
-        "spell": "detection-des-pensees",
+        "spell": "detect-thoughts",
         "note": "Lancable sans emplacement ni composante (Repos long). Parole telepathique a 18 m. Caracteristique = celle augmentee par le don."
       }
     ],
@@ -1533,7 +1533,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 20)"
@@ -1590,7 +1590,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1619,7 +1619,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 20)"
@@ -1837,7 +1837,7 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex"
         ],
         "rule": "+1 (max 30)"
@@ -1867,11 +1867,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -1909,11 +1909,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -1942,11 +1942,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -1976,7 +1976,7 @@
         "count": 1,
         "from": [
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -2005,11 +2005,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -2038,11 +2038,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -2065,11 +2065,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -2122,11 +2122,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -2156,11 +2156,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -2190,11 +2190,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"
@@ -2223,11 +2223,11 @@
         "kind": "abilityScoreIncrease",
         "count": 1,
         "from": [
-          "for",
+          "str",
           "dex",
           "con",
           "int",
-          "sag",
+          "wis",
           "cha"
         ],
         "rule": "+1 (max 30)"

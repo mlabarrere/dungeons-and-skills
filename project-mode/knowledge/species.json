@@ -11,7 +11,7 @@
       {
         "type": "grants",
         "what": "cantrip",
-        "spell": "lumiere",
+        "spell": "light",
         "list": "espece",
         "ability": "cha"
       },
@@ -36,7 +36,7 @@
     "lineages": []
   },
   {
-    "id": "drakeide",
+    "id": "dragonborn",
     "name": "Drakeide",
     "kind": "espece",
     "ref": "../especes/drakeide.html",
@@ -53,7 +53,7 @@
     ],
     "choices": [
       {
-        "id": "drakeide-ascendance-draconique",
+        "id": "dragonborn-ascendance-draconique",
         "kind": "ancetre-draconique",
         "count": 1,
         "from": {
@@ -148,7 +148,7 @@
     "lineages": []
   },
   {
-    "id": "elfe",
+    "id": "elf",
     "name": "Elfe",
     "kind": "espece",
     "ref": "../especes/elfe.html",
@@ -165,14 +165,14 @@
     ],
     "choices": [
       {
-        "id": "elfe-sens-aiguises",
+        "id": "elf-sens-aiguises",
         "kind": "competence",
         "count": 1,
         "from": {
           "fromSkillSet": [
-            "intuition",
+            "insight",
             "perception",
-            "survie"
+            "survival"
           ]
         },
         "grantsEach": {
@@ -195,21 +195,21 @@
           {
             "type": "grants",
             "what": "cantrip",
-            "spell": "lumieres-dansantes",
+            "spell": "dancing-lights",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 3,
-            "spell": "lueurs-feeriques",
+            "spell": "faerie-fire",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 5,
-            "spell": "tenebres",
+            "spell": "darkness",
             "list": "espece"
           }
         ],
@@ -241,27 +241,27 @@
           {
             "type": "grants",
             "what": "cantrip",
-            "spell": "druidisme",
+            "spell": "druidcraft",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 3,
-            "spell": "grande-foulee",
+            "spell": "longstrider",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 5,
-            "spell": "passage-sans-trace",
+            "spell": "pass-without-trace",
             "list": "espece"
           }
         ],
         "choices": [
           {
-            "id": "elfe-sylvestre-caracteristique-incantation",
+            "id": "elf-sylvestre-caracteristique-incantation",
             "kind": "spellcasting-ability",
             "count": 1,
             "from": {
@@ -293,14 +293,14 @@
             "type": "grants",
             "what": "futureSpell",
             "level": 3,
-            "spell": "detection-de-la-magie",
+            "spell": "detect-magic",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 5,
-            "spell": "foulee-brumeuse",
+            "spell": "misty-step",
             "list": "espece"
           }
         ],
@@ -347,13 +347,13 @@
           {
             "type": "grants",
             "what": "cantrip",
-            "spell": "illusion-mineure",
+            "spell": "minor-illusion",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "alwaysPreparedSpell",
-            "spell": "communication-avec-les-animaux",
+            "spell": "speak-with-animals",
             "list": "espece"
           }
         ],
@@ -386,7 +386,7 @@
           {
             "type": "grants",
             "what": "cantrip",
-            "spell": "reparation",
+            "spell": "mending",
             "list": "espece"
           }
         ],
@@ -446,7 +446,7 @@
     "lineages": []
   },
   {
-    "id": "halfelin",
+    "id": "halfling",
     "name": "Halfelin",
     "kind": "espece",
     "ref": "../especes/halfelin.html",
@@ -458,7 +458,7 @@
     "lineages": []
   },
   {
-    "id": "humain",
+    "id": "human",
     "name": "Humain",
     "kind": "espece",
     "ref": "../especes/humain.html",
@@ -468,29 +468,29 @@
     "effects": [],
     "choices": [
       {
-        "id": "humain-competent",
+        "id": "human-competent",
         "kind": "competence",
         "count": 1,
         "from": {
           "fromSkillSet": [
-            "acrobaties",
-            "arcanes",
-            "athletisme",
-            "discretion",
-            "dressage",
-            "escamotage",
-            "histoire",
+            "acrobatics",
+            "arcana",
+            "athletics",
+            "stealth",
+            "animal-handling",
+            "sleight-of-hand",
+            "history",
             "intimidation",
-            "intuition",
+            "insight",
             "investigation",
-            "medecine",
+            "medicine",
             "nature",
             "perception",
             "persuasion",
             "religion",
-            "representation",
-            "survie",
-            "tromperie"
+            "performance",
+            "survival",
+            "deception"
           ]
         },
         "grantsEach": {
@@ -499,7 +499,7 @@
         }
       },
       {
-        "id": "humain-polyvalent",
+        "id": "human-polyvalent",
         "kind": "don-origine",
         "count": 1,
         "from": {
@@ -522,7 +522,7 @@
     "lineages": []
   },
   {
-    "id": "nain",
+    "id": "dwarf",
     "name": "Nain",
     "kind": "espece",
     "ref": "../especes/nain.html",
@@ -581,7 +581,7 @@
     "lineages": []
   },
   {
-    "id": "tieffelin",
+    "id": "tiefling",
     "name": "Tieffelin",
     "kind": "espece",
     "ref": "../especes/tieffelin.html",
@@ -592,7 +592,7 @@
       {
         "type": "grants",
         "what": "cantrip",
-        "spell": "thaumaturgie",
+        "spell": "thaumaturgy",
         "list": "espece"
       },
       {
@@ -616,27 +616,27 @@
           {
             "type": "grants",
             "what": "cantrip",
-            "spell": "bouffee-de-poison",
+            "spell": "poison-spray",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 3,
-            "spell": "rayon-empoisonne",
+            "spell": "ray-of-sickness",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 5,
-            "spell": "immobilisation-de-personne",
+            "spell": "hold-person",
             "list": "espece"
           }
         ],
         "choices": [
           {
-            "id": "tieffelin-abyssal-caracteristique-incantation",
+            "id": "tiefling-abyssal-caracteristique-incantation",
             "kind": "spellcasting-ability",
             "count": 1,
             "from": {
@@ -662,27 +662,27 @@
           {
             "type": "grants",
             "what": "cantrip",
-            "spell": "contact-glacial",
+            "spell": "chill-touch",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 3,
-            "spell": "simulacre-de-vie",
+            "spell": "false-life",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 5,
-            "spell": "rayon-affaiblissant",
+            "spell": "ray-of-enfeeblement",
             "list": "espece"
           }
         ],
         "choices": [
           {
-            "id": "tieffelin-chtonien-caracteristique-incantation",
+            "id": "tiefling-chtonien-caracteristique-incantation",
             "kind": "spellcasting-ability",
             "count": 1,
             "from": {
@@ -708,27 +708,27 @@
           {
             "type": "grants",
             "what": "cantrip",
-            "spell": "trait-de-feu",
+            "spell": "fire-bolt",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 3,
-            "spell": "represailles-infernales",
+            "spell": "hellish-rebuke",
             "list": "espece"
           },
           {
             "type": "grants",
             "what": "futureSpell",
             "level": 5,
-            "spell": "tenebres",
+            "spell": "darkness",
             "list": "espece"
           }
         ],
         "choices": [
           {
-            "id": "tieffelin-infernal-caracteristique-incantation",
+            "id": "tiefling-infernal-caracteristique-incantation",
             "kind": "spellcasting-ability",
             "count": 1,
             "from": {

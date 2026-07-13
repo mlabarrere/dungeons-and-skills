@@ -11,10 +11,10 @@
 /* ---- helpers purs -------------------------------------------------------- */
 export function byId(list, id) { return (list || []).find((e) => e.id === id) || null; }
 
-// Liste canonique des 18 competences (ids kebab). Source unique partagee (catalog-lint importe).
-export const SKILLS = ["acrobaties", "arcanes", "athletisme", "discretion", "dressage", "escamotage",
-  "histoire", "intimidation", "intuition", "investigation", "medecine", "nature", "perception",
-  "persuasion", "religion", "representation", "tromperie", "survie"];
+// Canonical list of 18 skill ids (kebab-case). Shared source (catalog-lint imports).
+export const SKILLS = ["acrobatics", "arcana", "athletics", "stealth", "animal-handling", "sleight-of-hand",
+  "history", "intimidation", "insight", "investigation", "medicine", "nature", "perception",
+  "persuasion", "religion", "performance", "deception", "survival"];
 
 /* Table PARTAGEE : `kind` reel d'un choix -> id du noeud de graphe (bucket) qui le rend.
    Utilisee par builder.js (regroupement) ET catalog-lint.mjs (couverture). */
@@ -55,17 +55,17 @@ export function selectedSources(catalog, answers) {
     out.push({ id: entity.id, kind, label: entity.name, ref: entity.ref,
       effects: entity.effects || [], choices: entity.choices || [], recommends: entity.recommends || [], entity });
   };
-  const cls = byId(catalog.classes, answers.classe);
+  const cls = byId(catalog.classes, answers.class);
   push("class-level", cls);
-  if (answers["sous-classe"]) push("subclass", byId(catalog.subclasses, answers["sous-classe"]));
-  const sp = byId(catalog.species, answers.espece);
+  if (answers["subclass"]) push("subclass", byId(catalog.subclasses, answers["subclass"]));
+  const sp = byId(catalog.species, answers.species);
   push("species", sp);
-  if (sp && answers.lignage) {
-    const lin = (sp.lineages || []).find((l) => l.id === answers.lignage);
+  if (sp && answers.lineage) {
+    const lin = (sp.lineages || []).find((l) => l.id === answers.lineage);
     if (lin) out.push({ id: lin.id, kind: "lineage", label: lin.name, ref: sp.ref,
       effects: lin.effects || [], choices: lin.choices || [], recommends: lin.recommends || [], entity: lin });
   }
-  push("background", byId(catalog.backgrounds, answers.historique));
+  push("background", byId(catalog.backgrounds, answers.background));
 
   // --- expansion des dons accordes (grants feat -> injecte effets + choix du don) ---
   const featSources = [];
@@ -85,7 +85,7 @@ export function selectedSources(catalog, answers) {
   out.push(...featSources);
 
   // --- langue(s) d'origine : regle de creation (commun + 2 langues courantes au choix) ---
-  if (answers.classe) {
+  if (answers.class) {
     out.push({ id: "origine-langues", kind: "background", label: "Langues d'origine",
       ref: "../regles/creation-personnage.html",
       effects: [{ type: "grants", what: "language", value: "commun" }],
@@ -272,7 +272,7 @@ export function nodeApplies(catalog, answers, node) {
   const w = node.when;
   if (!w) return true;
   if (w.subclassLevelEquals != null) {
-    const cls = byId(catalog.classes, answers.classe);
+    const cls = byId(catalog.classes, answers.class);
     return !!(cls && cls.subclass && cls.subclass.level === w.subclassLevelEquals);
   }
   if (w.hasLineages) {
@@ -298,25 +298,25 @@ export function toCharacterModel(catalog, answers) {
       const val = answers[ch.id];
       if (val == null) continue;
       const vals = Array.isArray(val) ? val : [val];
-      if (ch.kind === "cantrip") vals.forEach((v) => cantrips.push({ id: v, label: nameOfSpell(catalog, v), list: listOf(s, ch), origin: "chosen", status: "fourni", sourceId: s.id }));
-      else if (ch.kind === "prepared") vals.forEach((v) => prepared.push({ id: v, label: nameOfSpell(catalog, v), list: listOf(s, ch), origin: "chosen", status: "fourni", sourceId: s.id }));
-      else if (ch.kind && ch.kind.startsWith("competence")) vals.forEach((v) => choices.push({ id: `${ch.id}:${v}`, satisfies: ch.kind, value: v, status: "fourni", effects: [{ type: "grants", what: "skillProficiency", value: v }] }));
-      else if (ch.kind === "langue") vals.forEach((v) => choices.push({ id: `${ch.id}:${v}`, satisfies: ch.kind, value: v, status: "fourni", effects: [{ type: "grants", what: "language", value: v }] }));
+      if (ch.kind === "cantrip") vals.forEach((v) => cantrips.push({ id: v, label: nameOfSpell(catalog, v), list: listOf(s, ch), origin: "chosen", status: "provided", sourceId: s.id }));
+      else if (ch.kind === "prepared") vals.forEach((v) => prepared.push({ id: v, label: nameOfSpell(catalog, v), list: listOf(s, ch), origin: "chosen", status: "provided", sourceId: s.id }));
+      else if (ch.kind && ch.kind.startsWith("competence")) vals.forEach((v) => choices.push({ id: `${ch.id}:${v}`, satisfies: ch.kind, value: v, status: "provided", effects: [{ type: "grants", what: "skillProficiency", value: v }] }));
+      else if (ch.kind === "langue") vals.forEach((v) => choices.push({ id: `${ch.id}:${v}`, satisfies: ch.kind, value: v, status: "provided", effects: [{ type: "grants", what: "language", value: v }] }));
       // NB : les appliesEffects sont deja emis comme source "choice-effect" (selectedSources) ;
       // ne PAS les rattacher ici sous peine de double comptage (ex. cantripSlots du mage).
-      else choices.push({ id: ch.id, satisfies: ch.kind, value: val, status: "fourni", effects: [] });
+      else choices.push({ id: ch.id, satisfies: ch.kind, value: val, status: "provided", effects: [] });
     }
   }
   // sorts accordes automatiquement (cantrip/alwaysPrepared) -> presents sur la fiche
   for (const s of selectedSources(catalog, answers)) for (const e of s.effects) {
-    if (e.type === "grants" && e.what === "cantrip") cantrips.push({ id: e.spell, label: nameOfSpell(catalog, e.spell), list: e.list || "espece", origin: "granted", status: "source", sourceId: s.id });
-    if (e.type === "grants" && e.what === "alwaysPreparedSpell") prepared.push({ id: e.spell, label: nameOfSpell(catalog, e.spell), list: e.list, origin: "alwaysPrepared", status: "source", sourceId: s.id });
+    if (e.type === "grants" && e.what === "cantrip") cantrips.push({ id: e.spell, label: nameOfSpell(catalog, e.spell), list: e.list || "species", origin: "granted", status: "granted", sourceId: s.id });
+    if (e.type === "grants" && e.what === "alwaysPreparedSpell") prepared.push({ id: e.spell, label: nameOfSpell(catalog, e.spell), list: e.list, origin: "alwaysPrepared", status: "granted", sourceId: s.id });
   }
   return {
     id: answers._id || "brouillon",
-    identity: { name: answers.nom || "Nouveau personnage", level: 1,
-      className: labelOf(catalog.classes, answers.classe), species: labelOf(catalog.species, answers.espece),
-      lineage: answers.lignage || null, background: labelOf(catalog.backgrounds, answers.historique), alignment: answers.alignement || null },
+    identity: { name: answers.name || "Nouveau personnage", level: 1,
+      className: labelOf(catalog.classes, answers.class), species: labelOf(catalog.species, answers.species),
+      lineage: answers.lineage || null, background: labelOf(catalog.backgrounds, answers.background), alignment: answers.alignment || null },
     abilityScores: answers.abilityScores || { for: 10, dex: 10, con: 10, int: 10, sag: 10, cha: 10 },
     sources, choices,
     equipment: buildEquipment(catalog, answers),

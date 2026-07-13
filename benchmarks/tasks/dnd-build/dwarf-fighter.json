@@ -7,28 +7,28 @@
   "seed": 20260711,
   "prompt": "Create a Dungeons & Dragons 2024 (5.5e) level-1 character, fixed by this brief: nain guerrier, soldat background, ability scores {\"for\":15,\"dex\":13,\"con\":14,\"int\":8,\"sag\":12,\"cha\":10}, starting-equipment option A. Choose the remaining options (skills, spells, style, languages) legally and report the final sheet.",
   "reference": {
-    "methode": "standard",
+    "method": "standard",
     "_id": "dwarf-fighter",
-    "nom": "Thera",
-    "classe": "guerrier",
-    "espece": "nain",
-    "historique": "soldat",
+    "name": "Thera",
+    "class": "fighter",
+    "species": "dwarf",
+    "background": "soldier",
     "abilityScores": {
-      "for": 15,
+      "str": 15,
       "dex": 13,
       "con": 14,
       "int": 8,
-      "sag": 12,
+      "wis": 12,
       "cha": 10
     },
-    "guerrier-competences": [
-      "acrobaties",
-      "dressage"
+    "fighter-competences": [
+      "acrobatics",
+      "animal-handling"
     ],
-    "guerrier-style-de-combat": "archerie",
-    "guerrier-equipement": "A",
-    "soldat-caracteristiques": "for",
-    "soldat-boite-de-jeux": "boite-de-jeux",
+    "fighter-style-de-combat": "archerie",
+    "fighter-equipement": "A",
+    "soldier-caracteristiques": "str",
+    "soldier-boite-de-jeux": "boite-de-jeux",
     "origine-langues-choix": [
       "draconique",
       "elfique"

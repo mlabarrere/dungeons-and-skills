@@ -7,16 +7,16 @@
    ========================================================================== */
 import { normId } from "./resolver.mjs";
 
-export const ABILITIES = ["for", "dex", "con", "int", "sag", "cha"];
-const ABILITY_LABEL = { for: "Force", dex: "Dexterite", con: "Constitution", int: "Intelligence", sag: "Sagesse", cha: "Charisme" };
+export const ABILITIES = ["str", "dex", "con", "int", "wis", "cha"];
+const ABILITY_LABEL = { str: "Strength", dex: "Dexterity", con: "Constitution", int: "Intelligence", wis: "Wisdom", cha: "Charisma" };
 const SKILLS = {
-  "Acrobaties": "dex", "Arcanes": "int", "Athletisme": "for", "Discretion": "dex",
-  "Dressage": "sag", "Escamotage": "dex", "Histoire": "int", "Intimidation": "cha",
-  "Intuition": "sag", "Investigation": "int", "Medecine": "sag", "Nature": "int",
-  "Perception": "sag", "Persuasion": "cha", "Representation": "cha", "Religion": "int",
-  "Tromperie": "cha", "Survie": "sag",
+  "Acrobatics": "dex", "Arcana": "int", "Athletics": "str", "Stealth": "dex",
+  "Animal Handling": "wis", "Sleight of Hand": "dex", "History": "int", "Intimidation": "cha",
+  "Insight": "wis", "Investigation": "int", "Medicine": "wis", "Nature": "int",
+  "Perception": "wis", "Persuasion": "cha", "Performance": "cha", "Religion": "int",
+  "Deception": "cha", "Survival": "wis",
 };
-const STATUSES = ["fourni", "source", "calcule", "deduit", "recommande", "arbitrer", "manquant", "incoherent", "conflit"];
+const STATUSES = ["provided", "granted", "computed", "derived", "recommended", "ruling-needed", "missing", "incoherent", "conflict"];
 
 const mod = (s) => Math.floor((s - 10) / 2);
 const sign = (n) => (n >= 0 ? "+" + n : "" + n);
@@ -153,8 +153,8 @@ export function computeCharacter(model) {
   }
   D.push({ name: "Initiative", value: sign(mods.dex), status: "calcule", prov: `mod Dex ${sign(mods.dex)}` });
   const percProf = !!skillProf[normId("Perception")];
-  const pp = 10 + mods.sag + (percProf ? PB : 0);
-  D.push({ name: "Perception passive", value: pp, status: "calcule", prov: `10 + Sag ${sign(mods.sag)}${percProf ? ` + maitrise ${sign(PB)}` : ""}` });
+  const pp = 10 + mods.wis + (percProf ? PB : 0);
+  D.push({ name: "Perception passive", value: pp, status: "calcule", prov: `10 + Sag ${sign(mods.wis)}${percProf ? ` + maitrise ${sign(PB)}` : ""}` });
 
   // Incantation par liste
   const castingRows = [];

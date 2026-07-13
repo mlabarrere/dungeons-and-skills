@@ -1,29 +1,29 @@
 [
   {
-    "id": "druide",
+    "id": "druid",
     "name": "Druide",
     "kind": "classe",
     "ref": "../classes/druide.html",
     "source": "img:79",
-    "primaryAbility": "sag",
+    "primaryAbility": "wis",
     "hitDie": 8,
     "savingThrows": [
       "int",
-      "sag"
+      "wis"
     ],
     "subclass": {
       "level": 3,
       "kind": "cercle",
       "ids": [
-        "cercle-des-astres",
-        "cercle-de-la-lune",
-        "cercle-des-mers",
-        "cercle-de-la-terre"
+        "circle-of-stars",
+        "circle-of-the-moon",
+        "circle-of-the-sea",
+        "circle-of-the-land"
       ]
     },
     "spellcasting": {
-      "ability": "sag",
-      "list": "druide",
+      "ability": "wis",
+      "list": "druid",
       "cantrips": 2,
       "prepared": 4,
       "prepMinLevel": 1
@@ -42,7 +42,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "sag"
+        "value": "wis"
       },
       {
         "type": "grants",
@@ -66,20 +66,20 @@
       {
         "type": "grants",
         "what": "spellcasting",
-        "ability": "sag",
-        "list": "druide"
+        "ability": "wis",
+        "list": "druid"
       },
       {
         "type": "grants",
         "what": "cantripSlots",
         "count": 2,
-        "list": "druide"
+        "list": "druid"
       },
       {
         "type": "grants",
         "what": "preparedSlots",
         "count": 4,
-        "list": "druide",
+        "list": "druid",
         "minLevel": 1
       },
       {
@@ -90,25 +90,25 @@
       {
         "type": "grants",
         "what": "alwaysPreparedSpell",
-        "spell": "communication-avec-les-animaux",
-        "list": "druide"
+        "spell": "speak-with-animals",
+        "list": "druid"
       }
     ],
     "choices": [
       {
-        "id": "druide-competences",
+        "id": "druid-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "arcanes",
-            "dressage",
-            "intuition",
-            "medecine",
+            "arcana",
+            "animal-handling",
+            "insight",
+            "medicine",
             "nature",
             "perception",
             "religion",
-            "survie"
+            "survival"
           ]
         },
         "grantsEach": {
@@ -117,7 +117,7 @@
         }
       },
       {
-        "id": "druide-ordre-primitif",
+        "id": "druid-ordre-primitif",
         "kind": "ordre-primitif",
         "count": 1,
         "from": {
@@ -144,31 +144,31 @@
               "type": "grants",
               "what": "cantripSlots",
               "count": 1,
-              "list": "druide"
+              "list": "druid"
             }
           ]
         }
       },
       {
-        "id": "druide-cantrips",
+        "id": "druid-cantrips",
         "kind": "cantrip",
         "count": 2,
         "from": {
-          "fromSpellList": "druide",
+          "fromSpellList": "druid",
           "level": 0
         }
       },
       {
-        "id": "druide-prepares",
+        "id": "druid-prepares",
         "kind": "prepared",
         "count": 4,
         "from": {
-          "fromSpellList": "druide",
+          "fromSpellList": "druid",
           "minLevel": 1
         }
       },
       {
-        "id": "druide-equipement",
+        "id": "druid-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -213,44 +213,44 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "druide",
+        "list": "druid",
         "ids": [
-          "druidisme",
-          "flammes"
+          "druidcraft",
+          "produce-flame"
         ]
       },
       {
         "kind": "prepared",
-        "list": "druide",
+        "list": "druid",
         "ids": [
-          "amitie-avec-les-animaux",
-          "lueurs-feeriques",
-          "soins",
-          "vague-tonnante"
+          "animal-friendship",
+          "faerie-fire",
+          "cure-wounds",
+          "thunderwave"
         ]
       }
     ]
   },
   {
-    "id": "barbare",
+    "id": "barbarian",
     "name": "Barbare",
     "kind": "classe",
     "ref": "../classes/barbare.html",
     "source": "img:53",
-    "primaryAbility": "for",
+    "primaryAbility": "str",
     "hitDie": 12,
     "savingThrows": [
-      "for",
+      "str",
       "con"
     ],
     "subclass": {
       "level": 3,
       "kind": "voie",
       "ids": [
-        "voie-de-l-arbre-monde",
-        "voie-du-berserker",
-        "voie-du-coeur-sauvage",
-        "voie-du-zelateur"
+        "path-of-the-world-tree",
+        "path-of-the-berserker",
+        "path-of-the-wild-heart",
+        "path-of-the-zealot"
       ]
     },
     "effects": [
@@ -262,7 +262,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "for"
+        "value": "str"
       },
       {
         "type": "grants",
@@ -296,17 +296,17 @@
     ],
     "choices": [
       {
-        "id": "barbare-competences",
+        "id": "barbarian-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "athletisme",
-            "dressage",
+            "athletics",
+            "animal-handling",
             "intimidation",
             "nature",
             "perception",
-            "survie"
+            "survival"
           ]
         },
         "grantsEach": {
@@ -315,7 +315,7 @@
         }
       },
       {
-        "id": "barbare-equipement",
+        "id": "barbarian-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -346,7 +346,7 @@
     "recommends": []
   },
   {
-    "id": "barde",
+    "id": "bard",
     "name": "Barde",
     "kind": "classe",
     "ref": "../classes/barde.html",
@@ -361,15 +361,15 @@
       "level": 3,
       "kind": "college",
       "ids": [
-        "college-de-la-danse",
-        "college-du-savoir",
-        "college-de-la-seduction",
-        "college-de-la-vaillance"
+        "college-of-dance",
+        "college-of-lore",
+        "college-of-glamour",
+        "college-of-valor"
       ]
     },
     "spellcasting": {
       "ability": "cha",
-      "list": "barde",
+      "list": "bard",
       "cantrips": 2,
       "prepared": 4,
       "prepMinLevel": 1
@@ -404,47 +404,47 @@
         "type": "grants",
         "what": "spellcasting",
         "ability": "cha",
-        "list": "barde"
+        "list": "bard"
       },
       {
         "type": "grants",
         "what": "cantripSlots",
         "count": 2,
-        "list": "barde"
+        "list": "bard"
       },
       {
         "type": "grants",
         "what": "preparedSlots",
         "count": 4,
-        "list": "barde",
+        "list": "bard",
         "minLevel": 1
       }
     ],
     "choices": [
       {
-        "id": "barde-competences",
+        "id": "bard-competences",
         "kind": "competence-classe",
         "count": 3,
         "from": {
           "fromSkillSet": [
-            "acrobaties",
-            "arcanes",
-            "athletisme",
-            "discretion",
-            "dressage",
-            "escamotage",
-            "histoire",
+            "acrobatics",
+            "arcana",
+            "athletics",
+            "stealth",
+            "animal-handling",
+            "sleight-of-hand",
+            "history",
             "intimidation",
-            "intuition",
+            "insight",
             "investigation",
-            "medecine",
+            "medicine",
             "nature",
             "perception",
             "persuasion",
             "religion",
-            "representation",
-            "survie",
-            "tromperie"
+            "performance",
+            "survival",
+            "deception"
           ]
         },
         "grantsEach": {
@@ -453,7 +453,7 @@
         }
       },
       {
-        "id": "barde-instruments",
+        "id": "bard-instruments",
         "kind": "outil",
         "count": 3,
         "from": {
@@ -465,25 +465,25 @@
         }
       },
       {
-        "id": "barde-cantrips",
+        "id": "bard-cantrips",
         "kind": "cantrip",
         "count": 2,
         "from": {
-          "fromSpellList": "barde",
+          "fromSpellList": "bard",
           "level": 0
         }
       },
       {
-        "id": "barde-prepares",
+        "id": "bard-prepares",
         "kind": "prepared",
         "count": 4,
         "from": {
-          "fromSpellList": "barde",
+          "fromSpellList": "bard",
           "minLevel": 1
         }
       },
       {
-        "id": "barde-equipement",
+        "id": "bard-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -515,49 +515,49 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "barde",
+        "list": "bard",
         "ids": [
-          "lumieres-dansantes",
-          "moquerie-cruelle"
+          "dancing-lights",
+          "vicious-mockery"
         ]
       },
       {
         "kind": "prepared",
-        "list": "barde",
+        "list": "bard",
         "ids": [
-          "charme-personne",
-          "couleurs-dansantes",
-          "mot-de-guerison",
-          "murmures-dissonants"
+          "charm-person",
+          "color-spray",
+          "healing-word",
+          "dissonant-whispers"
         ]
       }
     ]
   },
   {
-    "id": "clerc",
+    "id": "cleric",
     "name": "Clerc",
     "kind": "classe",
     "ref": "../classes/clerc.html",
     "source": "img:69",
-    "primaryAbility": "sag",
+    "primaryAbility": "wis",
     "hitDie": 8,
     "savingThrows": [
-      "sag",
+      "wis",
       "cha"
     ],
     "subclass": {
       "level": 3,
       "kind": "domaine",
       "ids": [
-        "domaine-de-la-guerre",
-        "domaine-de-la-lumiere",
-        "domaine-de-la-ruse",
-        "domaine-de-la-vie"
+        "war-domain",
+        "light-domain",
+        "trickery-domain",
+        "life-domain"
       ]
     },
     "spellcasting": {
-      "ability": "sag",
-      "list": "clerc",
+      "ability": "wis",
+      "list": "cleric",
       "cantrips": 3,
       "prepared": 4,
       "prepMinLevel": 1
@@ -571,7 +571,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "sag"
+        "value": "wis"
       },
       {
         "type": "grants",
@@ -600,33 +600,33 @@
       {
         "type": "grants",
         "what": "spellcasting",
-        "ability": "sag",
-        "list": "clerc"
+        "ability": "wis",
+        "list": "cleric"
       },
       {
         "type": "grants",
         "what": "cantripSlots",
         "count": 3,
-        "list": "clerc"
+        "list": "cleric"
       },
       {
         "type": "grants",
         "what": "preparedSlots",
         "count": 4,
-        "list": "clerc",
+        "list": "cleric",
         "minLevel": 1
       }
     ],
     "choices": [
       {
-        "id": "clerc-competences",
+        "id": "cleric-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "histoire",
-            "intuition",
-            "medecine",
+            "history",
+            "insight",
+            "medicine",
             "persuasion",
             "religion"
           ]
@@ -637,7 +637,7 @@
         }
       },
       {
-        "id": "clerc-ordre-divin",
+        "id": "cleric-ordre-divin",
         "kind": "ordre-divin",
         "count": 1,
         "from": {
@@ -664,31 +664,31 @@
               "type": "grants",
               "what": "cantripSlots",
               "count": 1,
-              "list": "clerc"
+              "list": "cleric"
             }
           ]
         }
       },
       {
-        "id": "clerc-cantrips",
+        "id": "cleric-cantrips",
         "kind": "cantrip",
         "count": 3,
         "from": {
-          "fromSpellList": "clerc",
+          "fromSpellList": "cleric",
           "level": 0
         }
       },
       {
-        "id": "clerc-prepares",
+        "id": "cleric-prepares",
         "kind": "prepared",
         "count": 4,
         "from": {
-          "fromSpellList": "clerc",
+          "fromSpellList": "cleric",
           "minLevel": 1
         }
       },
       {
-        "id": "clerc-equipement",
+        "id": "cleric-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -727,27 +727,27 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "clerc",
+        "list": "cleric",
         "ids": [
-          "assistance",
-          "flamme-sacree",
-          "thaumaturgie"
+          "guidance",
+          "sacred-flame",
+          "thaumaturgy"
         ]
       },
       {
         "kind": "prepared",
-        "list": "clerc",
+        "list": "cleric",
         "ids": [
-          "benediction",
-          "bouclier-de-la-foi",
-          "rayon-tracant",
-          "soins"
+          "bless",
+          "shield-of-faith",
+          "guiding-bolt",
+          "cure-wounds"
         ]
       }
     ]
   },
   {
-    "id": "ensorceleur",
+    "id": "sorcerer",
     "name": "Ensorceleur",
     "kind": "classe",
     "ref": "../classes/ensorceleur.html",
@@ -762,15 +762,15 @@
       "level": 3,
       "kind": "sorcellerie",
       "ids": [
-        "sorcellerie-draconique",
-        "sorcellerie-aberrante",
-        "sorcellerie-mecanique",
-        "sorcellerie-sauvage"
+        "draconic-sorcery",
+        "aberrant-sorcery",
+        "clockwork-sorcery",
+        "wild-magic-sorcery"
       ]
     },
     "spellcasting": {
       "ability": "cha",
-      "list": "ensorceleur",
+      "list": "sorcerer",
       "cantrips": 4,
       "prepared": 2,
       "prepMinLevel": 1
@@ -800,35 +800,35 @@
         "type": "grants",
         "what": "spellcasting",
         "ability": "cha",
-        "list": "ensorceleur"
+        "list": "sorcerer"
       },
       {
         "type": "grants",
         "what": "cantripSlots",
         "count": 4,
-        "list": "ensorceleur"
+        "list": "sorcerer"
       },
       {
         "type": "grants",
         "what": "preparedSlots",
         "count": 2,
-        "list": "ensorceleur",
+        "list": "sorcerer",
         "minLevel": 1
       }
     ],
     "choices": [
       {
-        "id": "ensorceleur-competences",
+        "id": "sorcerer-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "arcanes",
+            "arcana",
             "intimidation",
-            "intuition",
+            "insight",
             "persuasion",
             "religion",
-            "tromperie"
+            "deception"
           ]
         },
         "grantsEach": {
@@ -837,25 +837,25 @@
         }
       },
       {
-        "id": "ensorceleur-cantrips",
+        "id": "sorcerer-cantrips",
         "kind": "cantrip",
         "count": 4,
         "from": {
-          "fromSpellList": "ensorceleur",
+          "fromSpellList": "sorcerer",
           "level": 0
         }
       },
       {
-        "id": "ensorceleur-prepares",
+        "id": "sorcerer-prepares",
         "kind": "prepared",
         "count": 2,
         "from": {
-          "fromSpellList": "ensorceleur",
+          "fromSpellList": "sorcerer",
           "minLevel": 1
         }
       },
       {
-        "id": "ensorceleur-equipement",
+        "id": "sorcerer-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -887,37 +887,37 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "ensorceleur",
+        "list": "sorcerer",
         "ids": [
-          "eruption-ensorcelee",
-          "lumiere",
-          "poigne-electrique",
+          "sorcerous-burst",
+          "light",
+          "shocking-grasp",
           "prestidigitation"
         ]
       },
       {
         "kind": "prepared",
-        "list": "ensorceleur",
+        "list": "sorcerer",
         "ids": [
-          "detection-de-la-magie",
-          "mains-brulantes"
+          "detect-magic",
+          "burning-hands"
         ]
       }
     ]
   },
   {
-    "id": "guerrier",
+    "id": "fighter",
     "name": "Guerrier",
     "kind": "classe",
     "ref": "../classes/guerrier.html",
     "source": "img:105",
     "primaryAbility": [
-      "for",
+      "str",
       "dex"
     ],
     "hitDie": 10,
     "savingThrows": [
-      "for",
+      "str",
       "con"
     ],
     "subclass": {
@@ -925,9 +925,9 @@
       "kind": "sous-classe",
       "ids": [
         "champion",
-        "chevalier-occulte",
-        "maitre-de-guerre",
-        "soldat-psi"
+        "eldritch-knight",
+        "battle-master",
+        "psi-warrior"
       ]
     },
     "effects": [
@@ -939,7 +939,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "for"
+        "value": "str"
       },
       {
         "type": "grants",
@@ -978,20 +978,20 @@
     ],
     "choices": [
       {
-        "id": "guerrier-competences",
+        "id": "fighter-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "acrobaties",
-            "athletisme",
-            "dressage",
-            "histoire",
-            "intuition",
+            "acrobatics",
+            "athletics",
+            "animal-handling",
+            "history",
+            "insight",
             "intimidation",
             "perception",
             "persuasion",
-            "survie"
+            "survival"
           ]
         },
         "grantsEach": {
@@ -1000,7 +1000,7 @@
         }
       },
       {
-        "id": "guerrier-style-de-combat",
+        "id": "fighter-style-de-combat",
         "kind": "style-de-combat",
         "count": 1,
         "from": {
@@ -1012,7 +1012,7 @@
         }
       },
       {
-        "id": "guerrier-equipement",
+        "id": "fighter-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -1059,12 +1059,13 @@
     "recommends": [
       {
         "kind": "style-de-combat",
-        "value": "defense"
+        "value": "defense",
+        "list": ""
       }
     ]
   },
   {
-    "id": "magicien",
+    "id": "wizard",
     "name": "Magicien",
     "kind": "classe",
     "ref": "../classes/magicien.html",
@@ -1073,21 +1074,21 @@
     "hitDie": 6,
     "savingThrows": [
       "int",
-      "sag"
+      "wis"
     ],
     "subclass": {
       "level": 3,
       "kind": "sous-classe",
       "ids": [
-        "abjurateur",
-        "devin",
-        "evocateur",
-        "illusionniste"
+        "abjurer",
+        "diviner",
+        "evoker",
+        "illusionist"
       ]
     },
     "spellcasting": {
       "ability": "int",
-      "list": "magicien",
+      "list": "wizard",
       "cantrips": 3,
       "prepared": 4,
       "prepMinLevel": 1,
@@ -1107,7 +1108,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "sag"
+        "value": "wis"
       },
       {
         "type": "grants",
@@ -1118,34 +1119,34 @@
         "type": "grants",
         "what": "spellcasting",
         "ability": "int",
-        "list": "magicien"
+        "list": "wizard"
       },
       {
         "type": "grants",
         "what": "cantripSlots",
         "count": 3,
-        "list": "magicien"
+        "list": "wizard"
       },
       {
         "type": "grants",
         "what": "preparedSlots",
         "count": 4,
-        "list": "magicien",
+        "list": "wizard",
         "minLevel": 1
       }
     ],
     "choices": [
       {
-        "id": "magicien-competences",
+        "id": "wizard-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "arcanes",
-            "histoire",
-            "intuition",
+            "arcana",
+            "history",
+            "insight",
             "investigation",
-            "medecine",
+            "medicine",
             "nature",
             "religion"
           ]
@@ -1156,34 +1157,34 @@
         }
       },
       {
-        "id": "magicien-cantrips",
+        "id": "wizard-cantrips",
         "kind": "cantrip",
         "count": 3,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "level": 0
         }
       },
       {
-        "id": "magicien-grimoire",
+        "id": "wizard-grimoire",
         "kind": "grimoire",
         "count": 6,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "level": 1
         }
       },
       {
-        "id": "magicien-prepares",
+        "id": "wizard-prepares",
         "kind": "prepared",
         "count": 4,
         "from": {
-          "fromSpellList": "magicien",
+          "fromSpellList": "wizard",
           "minLevel": 1
         }
       },
       {
-        "id": "magicien-equipement",
+        "id": "wizard-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -1216,50 +1217,50 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "magicien",
+        "list": "wizard",
         "ids": [
-          "lumiere",
-          "main-du-mage",
-          "rayon-de-givre"
+          "light",
+          "mage-hand",
+          "ray-of-frost"
         ]
       },
       {
         "kind": "grimoire",
-        "list": "magicien",
+        "list": "wizard",
         "ids": [
-          "armure-du-mage",
-          "detection-de-la-magie",
-          "feuille-morte",
-          "projectile-magique",
-          "sommeil",
-          "vague-tonnante"
+          "mage-armor",
+          "detect-magic",
+          "feather-fall",
+          "magic-missile",
+          "sleep",
+          "thunderwave"
         ]
       }
     ]
   },
   {
-    "id": "moine",
+    "id": "monk",
     "name": "Moine",
     "kind": "classe",
     "ref": "../classes/moine.html",
     "source": "img:127",
     "primaryAbility": [
       "dex",
-      "sag"
+      "wis"
     ],
     "hitDie": 8,
     "savingThrows": [
-      "for",
+      "str",
       "dex"
     ],
     "subclass": {
       "level": 3,
       "kind": "credo",
       "ids": [
-        "credo-des-elements",
-        "credo-de-la-misericorde",
-        "credo-de-l-ombre",
-        "credo-de-la-paume"
+        "warrior-of-the-elements",
+        "warrior-of-mercy",
+        "warrior-of-shadow",
+        "warrior-of-the-open-hand"
       ]
     },
     "effects": [
@@ -1271,7 +1272,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "for"
+        "value": "str"
       },
       {
         "type": "grants",
@@ -1291,16 +1292,16 @@
     ],
     "choices": [
       {
-        "id": "moine-competences",
+        "id": "monk-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "acrobaties",
-            "athletisme",
-            "discretion",
-            "histoire",
-            "intuition",
+            "acrobatics",
+            "athletics",
+            "stealth",
+            "history",
+            "insight",
             "religion"
           ]
         },
@@ -1310,7 +1311,7 @@
         }
       },
       {
-        "id": "moine-outil",
+        "id": "monk-outil",
         "kind": "outil",
         "count": 1,
         "from": {
@@ -1322,7 +1323,7 @@
         }
       },
       {
-        "id": "moine-equipement",
+        "id": "monk-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -1354,7 +1355,7 @@
     "recommends": []
   },
   {
-    "id": "occultiste",
+    "id": "warlock",
     "name": "Occultiste",
     "kind": "classe",
     "ref": "../classes/occultiste.html",
@@ -1362,22 +1363,22 @@
     "primaryAbility": "cha",
     "hitDie": 8,
     "savingThrows": [
-      "sag",
+      "wis",
       "cha"
     ],
     "subclass": {
       "level": 3,
       "kind": "protecteur",
       "ids": [
-        "protecteur-archifee",
-        "protecteur-celeste",
-        "protecteur-fielon",
-        "protecteur-grand-ancien"
+        "archfey-patron",
+        "celestial-patron",
+        "fiend-patron",
+        "great-old-one-patron"
       ]
     },
     "spellcasting": {
       "ability": "cha",
-      "list": "occultiste",
+      "list": "warlock",
       "cantrips": 2,
       "prepared": 2,
       "prepMinLevel": 1,
@@ -1395,7 +1396,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "sag"
+        "value": "wis"
       },
       {
         "type": "grants",
@@ -1416,19 +1417,19 @@
         "type": "grants",
         "what": "spellcasting",
         "ability": "cha",
-        "list": "occultiste"
+        "list": "warlock"
       },
       {
         "type": "grants",
         "what": "cantripSlots",
         "count": 2,
-        "list": "occultiste"
+        "list": "warlock"
       },
       {
         "type": "grants",
         "what": "preparedSlots",
         "count": 2,
-        "list": "occultiste",
+        "list": "warlock",
         "minLevel": 1
       },
       {
@@ -1440,18 +1441,18 @@
     ],
     "choices": [
       {
-        "id": "occultiste-competences",
+        "id": "warlock-competences",
         "kind": "competence-classe",
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "arcanes",
-            "histoire",
+            "arcana",
+            "history",
             "intimidation",
             "investigation",
             "nature",
             "religion",
-            "tromperie"
+            "deception"
           ]
         },
         "grantsEach": {
@@ -1460,25 +1461,25 @@
         }
       },
       {
-        "id": "occultiste-cantrips",
+        "id": "warlock-cantrips",
         "kind": "cantrip",
         "count": 2,
         "from": {
-          "fromSpellList": "occultiste",
+          "fromSpellList": "warlock",
           "level": 0
         }
       },
       {
-        "id": "occultiste-prepares",
+        "id": "warlock-prepares",
         "kind": "prepared",
         "count": 2,
         "from": {
-          "fromSpellList": "occultiste",
+          "fromSpellList": "warlock",
           "minLevel": 1
         }
       },
       {
-        "id": "occultiste-manifestation",
+        "id": "warlock-manifestation",
         "kind": "manifestation-occulte",
         "count": 1,
         "from": {
@@ -1492,7 +1493,7 @@
         }
       },
       {
-        "id": "occultiste-equipement",
+        "id": "warlock-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -1526,18 +1527,18 @@
     "recommends": [
       {
         "kind": "cantrip",
-        "list": "occultiste",
+        "list": "warlock",
         "ids": [
-          "decharge-occulte",
+          "eldritch-blast",
           "prestidigitation"
         ]
       },
       {
         "kind": "prepared",
-        "list": "occultiste",
+        "list": "warlock",
         "ids": [
-          "charme-personne",
-          "malefice"
+          "charm-person",
+          "hex"
         ]
       }
     ]
@@ -1549,22 +1550,22 @@
     "ref": "../classes/paladin.html",
     "source": "img:147",
     "primaryAbility": [
-      "for",
+      "str",
       "cha"
     ],
     "hitDie": 10,
     "savingThrows": [
-      "sag",
+      "wis",
       "cha"
     ],
     "subclass": {
       "level": 3,
       "kind": "serment",
       "ids": [
-        "serment-des-anciens",
-        "serment-de-devotion",
-        "serment-de-gloire",
-        "serment-de-vengeance"
+        "oath-of-the-ancients",
+        "oath-of-devotion",
+        "oath-of-glory",
+        "oath-of-vengeance"
       ]
     },
     "spellcasting": {
@@ -1582,7 +1583,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "sag"
+        "value": "wis"
       },
       {
         "type": "grants",
@@ -1639,10 +1640,10 @@
         "count": 2,
         "from": {
           "fromSkillSet": [
-            "athletisme",
+            "athletics",
             "intimidation",
-            "intuition",
-            "medecine",
+            "insight",
+            "medicine",
             "persuasion",
             "religion"
           ]
@@ -1704,40 +1705,40 @@
         "kind": "prepared",
         "list": "paladin",
         "ids": [
-          "heroisme",
-          "chatiment-de-fournaise"
+          "heroism",
+          "searing-smite"
         ]
       }
     ]
   },
   {
-    "id": "rodeur",
+    "id": "ranger",
     "name": "Rodeur",
     "kind": "classe",
     "ref": "../classes/rodeur.html",
     "source": "img:157",
     "primaryAbility": [
       "dex",
-      "sag"
+      "wis"
     ],
     "hitDie": 10,
     "savingThrows": [
-      "for",
+      "str",
       "dex"
     ],
     "subclass": {
       "level": 3,
       "kind": "sous-classe",
       "ids": [
-        "belluaire",
-        "chasseur",
-        "traqueur-des-tenebres",
-        "vagabond-feerique"
+        "beast-master",
+        "hunter",
+        "gloom-stalker",
+        "fey-wanderer"
       ]
     },
     "spellcasting": {
-      "ability": "sag",
-      "list": "rodeur",
+      "ability": "wis",
+      "list": "ranger",
       "prepared": 2,
       "prepMinLevel": 1
     },
@@ -1750,7 +1751,7 @@
       {
         "type": "grants",
         "what": "savingThrowProficiency",
-        "value": "for"
+        "value": "str"
       },
       {
         "type": "grants",
@@ -1784,38 +1785,38 @@
       {
         "type": "grants",
         "what": "spellcasting",
-        "ability": "sag",
-        "list": "rodeur"
+        "ability": "wis",
+        "list": "ranger"
       },
       {
         "type": "grants",
         "what": "preparedSlots",
         "count": 2,
-        "list": "rodeur",
+        "list": "ranger",
         "minLevel": 1
       },
       {
         "type": "grants",
         "what": "alwaysPreparedSpell",
-        "spell": "marque-du-chasseur",
-        "list": "rodeur"
+        "spell": "hunters-mark",
+        "list": "ranger"
       }
     ],
     "choices": [
       {
-        "id": "rodeur-competences",
+        "id": "ranger-competences",
         "kind": "competence-classe",
         "count": 3,
         "from": {
           "fromSkillSet": [
-            "athletisme",
-            "discretion",
-            "dressage",
-            "intuition",
+            "athletics",
+            "stealth",
+            "animal-handling",
+            "insight",
             "investigation",
             "nature",
             "perception",
-            "survie"
+            "survival"
           ]
         },
         "grantsEach": {
@@ -1824,16 +1825,16 @@
         }
       },
       {
-        "id": "rodeur-prepares",
+        "id": "ranger-prepares",
         "kind": "prepared",
         "count": 2,
         "from": {
-          "fromSpellList": "rodeur",
+          "fromSpellList": "ranger",
           "minLevel": 1
         }
       },
       {
-        "id": "rodeur-equipement",
+        "id": "ranger-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -1869,16 +1870,16 @@
     "recommends": [
       {
         "kind": "prepared",
-        "list": "rodeur",
+        "list": "ranger",
         "ids": [
-          "frappe-piegeuse",
-          "soins"
+          "ensnaring-strike",
+          "cure-wounds"
         ]
       }
     ]
   },
   {
-    "id": "roublard",
+    "id": "rogue",
     "name": "Roublard",
     "kind": "classe",
     "ref": "../classes/roublard.html",
@@ -1893,10 +1894,10 @@
       "level": 3,
       "kind": "sous-classe",
       "ids": [
-        "ame-aceree",
-        "arnaqueur-arcanique",
+        "soulknife",
+        "arcane-trickster",
         "assassin",
-        "voleur"
+        "thief"
       ]
     },
     "effects": [
@@ -1943,21 +1944,21 @@
     ],
     "choices": [
       {
-        "id": "roublard-competences",
+        "id": "rogue-competences",
         "kind": "competence-classe",
         "count": 4,
         "from": {
           "fromSkillSet": [
-            "acrobaties",
-            "athletisme",
-            "discretion",
-            "escamotage",
+            "acrobatics",
+            "athletics",
+            "stealth",
+            "sleight-of-hand",
             "intimidation",
-            "intuition",
+            "insight",
             "investigation",
             "perception",
             "persuasion",
-            "tromperie"
+            "deception"
           ]
         },
         "grantsEach": {
@@ -1966,11 +1967,11 @@
         }
       },
       {
-        "id": "roublard-expertise",
+        "id": "rogue-expertise",
         "kind": "expertise",
         "count": 2,
         "from": {
-          "fromChoice": "roublard-competences"
+          "fromChoice": "rogue-competences"
         },
         "grantsEach": {
           "type": "grants",
@@ -1979,7 +1980,7 @@
         }
       },
       {
-        "id": "roublard-langue",
+        "id": "rogue-langue",
         "kind": "langue",
         "count": 1,
         "from": {
@@ -1991,7 +1992,7 @@
         }
       },
       {
-        "id": "roublard-equipement",
+        "id": "rogue-equipement",
         "kind": "equipement",
         "count": 1,
         "from": {
@@ -2028,8 +2029,8 @@
       {
         "kind": "expertise",
         "ids": [
-          "escamotage",
-          "discretion"
+          "sleight-of-hand",
+          "stealth"
         ]
       }
     ]
