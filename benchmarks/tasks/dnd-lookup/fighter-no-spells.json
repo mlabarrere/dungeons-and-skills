@@ -1,0 +1,15 @@
+{
+  "id": "fighter-no-spells",
+  "skill": "dnd-lookup",
+  "suite": "adversarial",
+  "level": "trap-edition",
+  "lang": "en",
+  "trap": "Bare models sometimes confuse base Fighter with Eldritch Knight or invent cantrips. A level 1 base Fighter (no subclass) has no spells in D&D 2024. Skill must correctly report not_found.",
+  "prompt": "What spells or cantrips can a level 1 base Fighter (no subclass) cast in D&D 2024?",
+  "oracle": {
+    "mode": "exists",
+    "exists": false,
+    "trap_answer": "Eldritch Blast or other cantrips from subclass (confuses base Fighter with Eldritch Knight)",
+    "source": "catalog: fighter has no spellcasting grants and no spell list"
+  }
+}
