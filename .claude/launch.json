@@ -8,12 +8,6 @@
       "port": 8000
     },
     {
-      "name": "dnd-dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 3000
-    },
-    {
       "name": "static-docs",
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "4599", "--directory", "docs/html/personnages"],
