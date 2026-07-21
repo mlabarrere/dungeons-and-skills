@@ -92,7 +92,9 @@
         "what": "alwaysPreparedSpell",
         "spell": "speak-with-animals",
         "list": "druid"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Druidique", "note": "Langue secrete des druides permettant de laisser des messages caches. Le sort communication-avec-les-animaux est toujours prepare." },
+      { "type": "grants", "what": "feature", "name": "Ordre primitif", "note": "Choisissez Gardien (maitrise armes de guerre + armures intermediaires) ou Mage (sort mineur suppl. + bonus tests Int Arcanes/Nature = mod. Sagesse min. +1)." }
     ],
     "choices": [
       {
@@ -292,7 +294,10 @@
         "type": "grants",
         "what": "weaponProficiency",
         "value": "armes de guerre"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Rage", "note": "Action Bonus : entrer en Rage (2x, 1 utilisation recuperee apres Repos court, tout le quota apres Repos long). Tant qu'active : Resistance degats contondants/perforants/tranchants, +2 degats Force, Avantage tests et JdS de Force. Duree : tour suivant (prolongeable)." },
+      { "type": "grants", "what": "feature", "name": "Bottes d'arme", "note": "Propriete Botte sur 2 types d'armes corps a corps (courantes ou de guerre) au choix. Changement apres chaque Repos long." },
+      { "type": "grants", "what": "feature", "name": "Defense sans armure", "note": "Sans armure : CA de base = 10 + mod. Dexterite + mod. Constitution (bouclier conserve)." }
     ],
     "choices": [
       {
@@ -418,7 +423,8 @@
         "count": 4,
         "list": "bard",
         "minLevel": 1
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Inspiration bardique", "note": "Action Bonus : octroyer un de bardique (d6) a une creature a 18 m. Elle l'ajoute a un test, jet d'attaque ou JdS dans la minute suivante. Utilisable un nombre de fois egal au mod. de Charisme par repos long." }
     ],
     "choices": [
       {
@@ -615,7 +621,8 @@
         "count": 4,
         "list": "cleric",
         "minLevel": 1
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Ordre divin", "note": "Choisissez Protecteur (maitrise armes de guerre + armures lourdes) ou Thaumaturge (sort mineur suppl. + bonus tests Int Arcanes/Religion = mod. Sagesse min. +1)." }
     ],
     "choices": [
       {
@@ -814,7 +821,8 @@
         "count": 2,
         "list": "sorcerer",
         "minLevel": 1
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Sorcellerie innee", "note": "Votre magie jaillit d'une origine innee (sang draconique, magie sauvage, etc.). La sous-classe choisie au niveau 3 en definit la nature et octroie des aptitudes surnaturelles." }
     ],
     "choices": [
       {
@@ -974,7 +982,9 @@
         "type": "grants",
         "what": "weaponProficiency",
         "value": "armes de guerre"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Bottes d'arme", "note": "Propriete Botte sur 3 types d'armes (courantes ou de guerre) au choix. Changement d'un choix apres chaque Repos long." },
+      { "type": "grants", "what": "feature", "name": "Second souffle", "note": "Action Bonus : recuperer 1d10 + niveau Guerrier pv. 2 utilisations, 1 regagnee apres Repos court (toutes apres Repos long)." }
     ],
     "choices": [
       {
@@ -1133,7 +1143,9 @@
         "count": 4,
         "list": "wizard",
         "minLevel": 1
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Restauration magique", "note": "Apres un Repos court, recuperer des emplacements de sort dont la somme des niveaux <= moitie niveau Magicien (arrondi sup.), 5e niveau max. 1x/repos long." },
+      { "type": "grants", "what": "feature", "name": "Savoir rituel", "note": "Lancer comme rituel tout sort marque 'rituel' dans le Dungeons & Skills, sans l'avoir prepare (necessite de le lire depuis le grimoire)." }
     ],
     "choices": [
       {
@@ -1288,7 +1300,9 @@
         "type": "grants",
         "what": "weaponProficiency",
         "value": "armes de guerre dotees de la propriete legere"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Arts martiaux", "note": "Sans armure ni bouclier : attaques a mains nues et armes de moine utilisent Dex ou For, degats 1d6, et octroient une attaque a mains nues supplementaire par action Bonus." },
+      { "type": "grants", "what": "feature", "name": "Defense sans armure", "note": "Sans armure : CA de base = 10 + mod. Dexterite + mod. Sagesse." }
     ],
     "choices": [
       {
@@ -1437,7 +1451,9 @@
         "what": "spellSlots",
         "level": 1,
         "count": 1
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Magie de pacte", "note": "1 emplacement de sort du 1er niveau (recupere apres Repos court ou long). Caracteristique d'incantation : Charisme. Le niveau et le nombre d'emplacements augmentent avec les niveaux d'Occultiste." },
+      { "type": "grants", "what": "feature", "name": "Manifestations occultes", "note": "1 manifestation occulte au choix. Confere des aptitudes surnaturelles permanentes ou actives liees au pacte. Le nombre de manifestations connues augmente avec les niveaux." }
     ],
     "choices": [
       {
@@ -1631,7 +1647,9 @@
         "count": 2,
         "list": "paladin",
         "minLevel": 1
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Bottes d'arme", "note": "Propriete Botte sur 2 types d'armes maitrises au choix. Changement apres chaque Repos long." },
+      { "type": "grants", "what": "feature", "name": "Imposition des mains", "note": "Reserve de pv curatrice = 5 x niveau de Paladin. Action Bonus : restituer des pv ou depenser 5 points pour supprimer l'etat Empoisonne. Reserve recuperee apres Repos long." }
     ],
     "choices": [
       {
@@ -1800,7 +1818,9 @@
         "what": "alwaysPreparedSpell",
         "spell": "hunters-mark",
         "list": "ranger"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Bottes d'arme", "note": "Propriete Botte sur 2 types d'armes maitrises au choix. Changement apres chaque Repos long." },
+      { "type": "grants", "what": "feature", "name": "Ennemi jure", "note": "marque-du-chasseur est toujours prepare. Peut etre lance sans depenser d'emplacement 2x/repos long." }
     ],
     "choices": [
       {
@@ -1940,7 +1960,9 @@
         "type": "grants",
         "what": "language",
         "value": "argot-des-voleurs"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Attaque sournoise", "note": "1d6 degats suppl. 1x/tour avec arme finesse ou a distance, si Avantage OU allie non Neutralise a 1,50 m de la cible (sans Desavantage)." },
+      { "type": "grants", "what": "feature", "name": "Bottes d'arme", "note": "Propriete Botte sur 2 types d'armes maitrises au choix. Changement apres chaque Repos long." }
     ],
     "choices": [
       {

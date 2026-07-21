@@ -58,6 +58,7 @@ export function computeCharacter(model) {
   const tools = grantsOf("toolProficiency").map((e) => ({ v: e.value, src: e._label, st: e._status }));
   const armorTraining = grantsOf("armorTraining").map((e) => e.value);
   const hasShieldTraining = grantsOf("shieldTraining").length > 0;
+  const weaponProf = grantsOf("weaponProficiency").map((e) => ({ v: e.value, src: e._label }));
   // Aptitudes narratives (effect `feature`) : affichees, jamais calculees.
   const features = grantsOf("feature").map((e) => ({ name: e.name || e.value, level: e.level, src: e._label, st: e._status || "source" }));
   // PV bonus par niveau (ex. nain : +1 PV/niveau).
@@ -187,7 +188,7 @@ export function computeCharacter(model) {
   // Statuts hors enum sur les sorts
   [...cantrips, ...prepared].forEach((s) => { if (s.status && !STATUSES.includes(s.status)) err(`sort ${s.id}: statut invalide "${s.status}"`); });
 
-  return { model, lvl, PB, scores, mods, effects, saveProf, skillProf, languages, tools,
+  return { model, lvl, PB, scores, mods, effects, saveProf, skillProf, languages, tools, weaponProf,
     features, bonusHPPerLevel, armorTraining, hasShieldTraining, casting, castingRows, counters,
     cantrips, prepared, conflicts, missing, derived: D, saves, skills, problems };
 }

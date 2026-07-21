@@ -311,6 +311,7 @@ export function toCharacterModel(catalog, answers) {
       else if (ch.kind === "prepared") vals.forEach((v) => prepared.push({ id: v, label: nameOfSpell(catalog, v), list: listOf(s, ch), origin: "chosen", status: "provided", sourceId: s.id }));
       else if (ch.kind && ch.kind.startsWith("competence")) vals.forEach((v) => choices.push({ id: `${ch.id}:${v}`, satisfies: ch.kind, value: v, status: "provided", effects: [{ type: "grants", what: "skillProficiency", value: v }] }));
       else if (ch.kind === "langue") vals.forEach((v) => choices.push({ id: `${ch.id}:${v}`, satisfies: ch.kind, value: v, status: "provided", effects: [{ type: "grants", what: "language", value: v }] }));
+      else if (ch.kind === "expertise") vals.forEach((v) => choices.push({ id: `${ch.id}:${v}`, satisfies: ch.kind, value: v, status: "provided", effects: [{ type: "grants", what: "skillProficiency", value: v, expertise: true }] }));
       // NB : les appliesEffects sont deja emis comme source "choice-effect" (selectedSources) ;
       // ne PAS les rattacher ici sous peine de double comptage (ex. cantripSlots du mage).
       else choices.push({ id: ch.id, satisfies: ch.kind, value: val, status: "provided", effects: [] });

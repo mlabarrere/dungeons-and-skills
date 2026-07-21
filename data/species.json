@@ -336,7 +336,8 @@
         "what": "sense",
         "value": "vision dans le noir",
         "range": "18m"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Ruse gnome", "note": "Vous avez l'Avantage aux jets de sauvegarde d'Intelligence, de Sagesse et de Charisme." }
     ],
     "choices": [],
     "lineages": [
@@ -416,7 +417,10 @@
     "source": "img:191",
     "size": "M",
     "speed": "10.5m",
-    "effects": [],
+    "effects": [
+      { "type": "grants", "what": "feature", "name": "Forte carrure", "note": "Avantage aux tests de caracteristique pour mettre un terme a l'etat Agrippe. Categorie de taille consideree comme superieure d'un cran pour la capacite de charge." },
+      { "type": "grants", "what": "feature", "name": "Forme de geant", "note": "A partir du niveau 5 : action Bonus pour devenir taille G (10 min ou fin anticipee) : Avantage aux tests de Force, +3 m Vitesse. 1x/repos long." }
+    ],
     "choices": [
       {
         "id": "goliath-ascendance-gigante",
@@ -453,7 +457,12 @@
     "source": "img:192",
     "size": "P",
     "speed": "9m",
-    "effects": [],
+    "effects": [
+      { "type": "grants", "what": "feature", "name": "Agilite halfeline", "note": "Vous pouvez vous deplacer dans l'espace de toute creature d'une categorie de taille superieure a la votre, mais ne pouvez pas vous arreter dans le meme espace que celle-ci." },
+      { "type": "grants", "what": "feature", "name": "Brave", "note": "Vous avez l'Avantage aux jets de sauvegarde visant a eviter l'etat Effraye ou a y mettre un terme." },
+      { "type": "grants", "what": "feature", "name": "Chance", "note": "Lorsque vous obtenez un 1 au d20 d'un Test d20, vous pouvez relancer le de, mais devez utiliser le nouveau resultat." },
+      { "type": "grants", "what": "feature", "name": "Discretion naturelle", "note": "Il vous suffit d'etre dans l'ombre d'une creature dont la categorie de taille est d'au moins un cran superieure a la votre pour pouvoir entreprendre l'action Furtivite." }
+    ],
     "choices": [],
     "lineages": []
   },
@@ -575,7 +584,9 @@
         "what": "sense",
         "value": "vision dans le noir",
         "range": "36m"
-      }
+      },
+      { "type": "grants", "what": "feature", "name": "Acharnement", "note": "Lorsque vous etes reduit a 0 pv mais pas tue sur le coup, vous pouvez faire tomber vos pv a 1 a la place. 1x/repos long." },
+      { "type": "grants", "what": "feature", "name": "Poussee d'adrenaline", "note": "Vous pouvez entreprendre l'action Foncer par une action Bonus. A chaque fois, vous gagnez des pv temporaires egaux a votre bonus de maitrise. Utilisable un nombre de fois egal au bonus de maitrise, recupere apres un repos court ou long." }
     ],
     "choices": [],
     "lineages": []

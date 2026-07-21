@@ -162,6 +162,29 @@ eachEffect((ef, e) => { if (ef.type === "grants" && ef.what === "feat" && ef.id 
   }
 })();
 
+// ---- espèces sans effets (données manquantes) ----
+const warns = [];
+for (const sp of species) {
+  if (sp.id === "human") continue; // l'humain gagne ses bonus via le graphe (method variantHuman)
+  const hasEffects = (sp.effects || []).length > 0;
+  const hasChoices = (sp.choices || []).length > 0;
+  const hasLineages = (sp.lineages || []).length > 0;
+  if (!hasEffects && !hasChoices && !hasLineages)
+    warns.push(`[WARN] species-effects-not-empty : "${sp.id}" n'a aucun effet ni choix ni lignage — aptitudes manquantes ?`);
+}
+
+// ---- classes sans aptitudes narratives (feature) ----
+for (const cl of classes) {
+  const hasFeature = (cl.effects || []).some((ef) => ef.type === "grants" && ef.what === "feature");
+  if (!hasFeature)
+    warns.push(`[WARN] class-has-features : "${cl.id}" n'a aucun effet feature au niveau 1 — aptitudes narratives manquantes ?`);
+}
+
+if (warns.length) {
+  console.log(`\n=== AVERTISSEMENTS (${warns.length}) ===`);
+  warns.forEach((w) => console.log("  " + w));
+}
+
 console.log(`\n=== PROBLEMES (${problems.length}) ===`);
 problems.slice(0, 120).forEach((p) => console.log("  " + p));
 if (problems.length > 120) console.log(`  … +${problems.length - 120}`);
