@@ -136,9 +136,9 @@ export function computeCharacter(model) {
   if (!hitDieE) warn("aucun hitDie accorde (PV non calculable)");
   const hitDie = hitDieE ? hitDieE.die : null;
   if (hitDie) D.push({ name: "Points de vie", value: hitDie + conMod + bonusHPPerLevel * lvl, status: "calcule",
-    prov: `de de vie d${hitDie} (max ${hitDie}) + mod Con (${sign(conMod)})${bonusHPPerLevel ? ` + ${bonusHPPerLevel}/niveau x${lvl}` : ""} <- ${esc(hitDieE._label)}` });
-  D.push({ name: "De de vie", value: `1d${hitDie || "?"}`, status: hitDie ? "source" : "manquant",
-    prov: hitDie ? `classe <- ${esc(hitDieE._label)} (de de vie, PAS de degats)` : "hitDie manquant" });
+    prov: `dé de vie d${hitDie} (max ${hitDie}) + mod Con (${sign(conMod)})${bonusHPPerLevel ? ` + ${bonusHPPerLevel}/niveau x${lvl}` : ""} <- ${esc(hitDieE._label)}` });
+  D.push({ name: "Dé de vie", value: `1d${hitDie || "?"}`, status: hitDie ? "source" : "manquant",
+    prov: hitDie ? `classe <- ${esc(hitDieE._label)} (dé de vie, PAS de dégâts)` : "hitDie manquant" });
 
   // CA depuis l'equipement
   const armorItem = (model.equipment || []).find((it) => it.armor);
