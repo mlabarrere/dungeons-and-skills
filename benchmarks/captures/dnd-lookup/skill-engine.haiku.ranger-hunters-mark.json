@@ -1,7 +1,0 @@
-{
-  "answer": "Yes, Hunter's Mark (Marque du chasseur) is available for a level 1 Ranger in D&D 2024. More specifically, Hunter's Mark is ALWAYS prepared for Rangers - it doesn't count against their prepared spell limit. Rangers automatically gain Hunter's Mark as an always-prepared spell. Source: data/classes.json (Ranger, effects array includes 'alwaysPreparedSpell: hunters-mark') and data/spells.json (hunters-mark, level 1).",
-  "items": [
-    "hunters-mark"
-  ],
-  "not_found": false
-}

@@ -1,9 +1,0 @@
-{
-  "skill": "dnd-help",
-  "steps": [
-    "Level 5 and Beast Master are both outside the catalog scope. The engine and catalog (data/classes.json → ranger → subclass.level: 3) only cover D&D 2024 level 1 character creation. Level 5 features (and any level 2–20 progression) are 'Manquant documentaire' — not modelled.",
-    "Beast Master is a Ranger subclass (id: beast-master in data/classes.json → ranger → subclass.ids), but subclass features only unlock at level 3 and above. No level 5 or Beast Master mechanical data is available in the catalog.",
-    "What I can do: build a level 1 Ranger (all classes/species/backgrounds fully covered). Use /dnd-build to start, or say 'create a level 1 Ranger' and I will guide you step by step."
-  ],
-  "needs_more_info": false
-}

@@ -51,15 +51,9 @@ next-env.d.ts
 # work scratch (fichiers de build non versionnés)
 work/
 
-# benchmark scratch (fichiers answers temporaires écrits par le runner/sous-agents)
+# engine scratch (fichiers answers.json temporaires du workflow de build)
 /answers*.json
 *.tmp.json
-
-# config local (copies de models.example.json avec clés API — jamais versionné)
-benchmarks/config/models.json
-
-# divers scratch de bench
-/_bench_tmp*.json
 /_tmp*.json
 
 # Contenu du livre (scans) — jamais versionne, garde en local/prive

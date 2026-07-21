@@ -1,9 +1,0 @@
-{
-  "skill": "dnd-check",
-  "steps": [
-    "Fournir la fiche au format JSON (model.character.json).",
-    "Lancer `engine/cli.mjs check <model.character.json>` pour auditer la fiche.",
-    "Rapporter chaque erreur de regle avec sa correction; exiger 0 erreur."
-  ],
-  "needs_more_info": false
-}

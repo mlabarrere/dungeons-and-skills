@@ -1,9 +1,0 @@
-{
-  "findings": [
-    {
-      "field": "preparedSpells",
-      "issue": "Sheet shows preparedSpells: [] but a level 1 Ranger in D&D 2024 has Hunter's Mark always prepared (auto-granted class effect: 'alwaysPreparedSpell' per data/classes.json → ranger → effects) plus 2 player-chosen prepared spells (data/classes.json → ranger → spellcasting.prepared = 2). The sheet is missing all prepared spells.",
-      "correction": "preparedSpells must contain Hunter's Mark (always prepared, auto-granted) plus 2 spells chosen from the ranger spell list (data/spells-by-class.json → ranger). Example: [\"hunters-mark\", \"ensnaring-strike\", \"cure-wounds\"]."
-    }
-  ]
-}

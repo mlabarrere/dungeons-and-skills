@@ -1,9 +1,0 @@
-{
-  "findings": [
-    {
-      "correction": "preparedSpells should contain at least 2 ranger spells selected by the player (from spells-by-class ranger list with minLevel 1), plus Hunter's Mark which is always prepared",
-      "issue": "Ranger has 0 prepared spells at level 1, but D&D 2024 Ranger gets 2 prepared spell slots minimum at level 1, plus Hunter's Mark which is always prepared. Sheet should have at least 3 prepared spells.",
-      "field": "preparedSpells"
-    }
-  ]
-}

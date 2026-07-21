@@ -1,9 +1,0 @@
-{
-  "findings": [
-    {
-      "field": "hitPoints",
-      "issue": "Level-1 hit points are wrong: a fighter (d10) has 10 + Constitution modifier (+2) + 1 (Dwarven Toughness, +1 HP per level) = 13, not 16.",
-      "correction": "Set hitPoints to 13."
-    }
-  ]
-}

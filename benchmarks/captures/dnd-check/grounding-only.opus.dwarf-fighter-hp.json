@@ -1,9 +1,0 @@
-{
-  "findings": [
-    {
-      "field": "hitPoints",
-      "issue": "PV incorrects. Guerrier niveau 1 : 10 (de de vie) + 2 (mod. Con 14) + 1 (Robustesse naine) = 13, la fiche indique 16.",
-      "correction": "13."
-    }
-  ]
-}

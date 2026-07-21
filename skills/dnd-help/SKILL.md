@@ -20,17 +20,12 @@ agents: [claude-code]
 
 # dnd-help — how the D&D 2024 builder works
 
-Ce builder vous aide à créer un personnage de Donjons & Dragons 2024 (aussi appelé D&D 5.5
-ou "5e 2024") étape par étape, en vérifiant chaque valeur contre un catalogue de règles
-officiel — pas contre la mémoire d'un modèle de langage. Il fonctionne en **9 langues**
-(français, anglais, allemand, espagnol, italien, japonais, russe, chinois, arabe). Pour
-commencer, dites simplement quel type de personnage vous voulez jouer. *(English below.)*
-
-This builder guides you through creating a D&D 2024 character step by step, with every
-value verified against a bundled rules catalog — not the model's memory. It outputs sheets
-in **9 languages**: English, French, German, Spanish, Italian, Japanese, Russian, Chinese,
-and Arabic. Just describe what kind of character you want to play; the rest is
-questions-and-answers.
+This builder helps the user create a Dungeons & Dragons 2024 character (also called D&D 5.5 or
+"5e 2024") step by step, checking every value against a bundled official rules catalog — not a
+language model's memory. It works in **9 languages** (English, French, German, Spanish, Italian,
+Japanese, Russian, Chinese, Arabic): always reply to the user in their own language. To get
+started, the user simply says what kind of character they want to play; the rest is
+question-and-answer.
 
 - **To create a character**, use `/dnd-build` (or just say "I want to make a character").
 - **To look up a rule, spell, or feat**, use `/dnd-lookup`.

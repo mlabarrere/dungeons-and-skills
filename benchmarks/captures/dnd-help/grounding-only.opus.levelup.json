@@ -1,8 +1,0 @@
-{
-  "skill": "none",
-  "steps": [
-    "Le catalogue ne couvre que le niveau 1 : passer un personnage au niveau 5 est hors de portee.",
-    "Manquant documentaire : les progressions au-dela du niveau 1 ne sont pas modelisees, je m'arrete plutot que d'inventer."
-  ],
-  "needs_more_info": false
-}

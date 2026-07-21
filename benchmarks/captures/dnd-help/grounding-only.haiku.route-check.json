@@ -1,1 +1,0 @@
-{"skill":"dnd-check","steps":["To validate your character sheet: 1) Use the dnd-check skill, 2) Provide your complete level-1 character sheet in JSON format (including class, species, ability scores, proficiencies, AC, HP, etc.), 3) The checker will audit it against D&D 2024 rules and report any errors found with corrections."],"needs_more_info":false}

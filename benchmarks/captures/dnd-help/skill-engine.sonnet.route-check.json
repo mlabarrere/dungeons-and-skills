@@ -1,1 +1,0 @@
-{"skill":"dnd-check","steps":["Parse the provided character sheet values","Map them to the engine model format following rules/schema.md","Recompute HP, AC, passive perception, and saving throw proficiencies from the stated ability scores","Report every mismatch between the sheet's stated values and the engine-computed values"],"needs_more_info":false}

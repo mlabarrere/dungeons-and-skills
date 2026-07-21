@@ -1,9 +1,0 @@
-{
-  "findings": [
-    {
-      "field": "hit-points",
-      "issue": "arithmetic-error",
-      "correction": "11"
-    }
-  ]
-}

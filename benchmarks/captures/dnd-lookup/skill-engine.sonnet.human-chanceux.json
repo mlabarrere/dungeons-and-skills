@@ -1,5 +1,0 @@
-{
-  "items": ["chanceux"],
-  "not_found": false,
-  "answer": "Yes. A Human character can choose 'chanceux' (Lucky) as their origin feat at level 1 in D&D 2024. Source: data/species.json → human → choices → human-polyvalent: kind 'don-origine', count 1, fromFeatCategory 'origines'. The feat 'chanceux' is in data/feats.json with category: 'origines', prerequisite: null, and grants luck points equal to the Proficiency Bonus (recoverable on a Long Rest), which can be spent for Advantage on a d20 test or to impose Disadvantage on an attacker (source: img:200)."
-}

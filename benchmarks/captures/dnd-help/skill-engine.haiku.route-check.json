@@ -1,8 +1,0 @@
-{
-  "skill": "dnd-check",
-  "steps": [
-    "Ask the user to provide their character sheet",
-    "Use dnd-check to validate and report any rules errors"
-  ],
-  "needs_more_info": true
-}

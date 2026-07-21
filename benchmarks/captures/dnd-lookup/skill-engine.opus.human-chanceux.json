@@ -1,5 +1,0 @@
-{
-  "items": ["chanceux"],
-  "not_found": false,
-  "answer": "Yes. In D&D 2024 the Human species has the 'Versatile' trait, which grants one Origin feat chosen from the Origin category (species.json human choice 'human-polyvalent', kind don-origine, from fromFeatCategory 'origines'). Chanceux (Lucky) is an Origin feat in the catalog (feats.json: id 'chanceux', category 'origines', source img:200) and the resolver lists it among the Human's legal origin-feat options. So a level-1 Human can take Chanceux (Lucky)."
-}

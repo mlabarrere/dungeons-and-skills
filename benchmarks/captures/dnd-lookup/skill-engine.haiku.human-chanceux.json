@@ -1,7 +1,0 @@
-{
-  "answer": "Yes, a Human character can choose the Chanceux (Lucky) origin feat at level 1 in D&D 2024. Humans get to choose 1 origin feat (don-origine) from any feat in the 'origines' category. Chanceux (Lucky) is listed in data/feats.json with category 'origines', making it a valid choice for the human-polyvalent (Human Versatile) choice. Source: data/species.json (human, human-polyvalent choice from origines category) and data/feats.json (chanceux with category origines).",
-  "not_found": false,
-  "items": [
-    "chanceux"
-  ]
-}

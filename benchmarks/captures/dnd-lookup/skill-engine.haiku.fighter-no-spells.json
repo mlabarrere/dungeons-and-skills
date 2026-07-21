@@ -1,5 +1,0 @@
-{
-  "answer": "A level 1 Fighter (base class, no subclass) in D&D 2024 cannot cast any spells or cantrips. The Fighter class does not grant spellcasting ability until level 3 when they choose the Eldritch Knight subclass (which grants cantrips and spell slots). Refer to data/classes.json Fighter entry: no 'spellcasting' field in effects - only Eldritch Knight subclass gets spellcasting.",
-  "items": [],
-  "not_found": false
-}

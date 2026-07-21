@@ -1,8 +1,0 @@
-{
-  "skill": "dnd-help",
-  "steps": [
-    "Explain the dnd-build, dnd-check, and dnd-lookup skills",
-    "Describe the grounding principle and catalog-based approach"
-  ],
-  "needs_more_info": false
-}

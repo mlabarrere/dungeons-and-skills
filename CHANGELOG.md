@@ -6,6 +6,19 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+### Removed
+- The Next.js web app (`src/`, Next/React/Tailwind tooling) and the static builder site
+  (`docs/html/builder.html` + `builder.js`): this is a skill pack for agents, not a web app. The
+  HTML documentary base and the deterministic engine under `docs/` are kept.
+- The benchmark suite (`benchmarks/`) and its CI gates: exploratory and no longer maintained. The
+  skills' reliability rests on the deterministic engine + catalog, documented in the READMEs.
+
+### Changed
+- Skill instructions unified to a single English meta-prose with first-class multilingual
+  behaviour — the assistant converses and outputs in any of the 9 supported languages. Removed the
+  French-only sections and the "FR or EN" cap; every skill now carries a consistent *Languages*
+  section.
+
 ## [0.1.0] — 2026-07-13
 
 ### Added

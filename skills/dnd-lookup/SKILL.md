@@ -54,10 +54,10 @@ ENGINE="$CLAUDE_SKILL_DIR/../../engine/cli.mjs"
   matching file in `data/` — `classes.json`, `species.json`, `backgrounds.json`, `feats.json`,
   `spells.json`, `conditions.json`, `glossary.json`. Report the entity's `effects`/text and its
   `ref` + `source` (e.g. `img:105`) as the citation. Do not paste more than needed.
-- **Natural-language questions** ("Qu'est-ce que fait Boule de feu ?", "What does Lucky do?",
-  "Comment fonctionne l'Elfe ?") : cherche par nom dans le fichier correspondant, en tenant
-  compte des variantes FR/EN via `data/labels.en.json`. Si le nom exact n'est pas trouvé,
-  essaie une correspondance partielle avant de déclarer "Manquant documentaire".
+- **Natural-language questions** ("What does Fireball do?", "Comment fonctionne l'Elfe ?",
+  "¿Qué hace Suerte?"): match by name in the matching file, resolving display names in any of the
+  9 languages via `data/labels.*.json`. If the exact name isn't found, try a partial match before
+  declaring "Manquant documentaire".
 - **"Which options can a <class> take" questions** (spells on a list, class skills, fighting
   styles): drive the resolver. Put the class into an `answers.json` and run
   `node "$ENGINE" options answers.json`; the returned `options` are the exact legal set,
@@ -65,4 +65,9 @@ ENGINE="$CLAUDE_SKILL_DIR/../../engine/cli.mjs"
 - **Not found?** If the term is not in the catalog (wrong edition, un-modelled subclass, a level
   above 1), say **"Manquant documentaire"** and stop. Do not reconstruct it from training.
 
-Answer in the user's language; English entity names come from `data/labels.en.json`.
+## Languages
+
+Answer in the user's language — any of the 9 supported: `en` `fr` `de` `es` `it` `ja` `ru` `zh`
+`ar`. Resolve and display entity names via `data/labels.*.json`, and pass `--lang <code>` when you
+drive `engine/cli.mjs` so quoted values match the user's language (English fallback if a label is
+missing).

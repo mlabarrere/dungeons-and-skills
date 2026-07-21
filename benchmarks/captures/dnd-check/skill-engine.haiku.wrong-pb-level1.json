@@ -1,9 +1,0 @@
-{
-  "findings": [
-    {
-      "issue": "Fighter has proficiency bonus +3 at level 1, but D&D 2024 level 1 characters always have proficiency bonus +2",
-      "field": "proficiencyBonus",
-      "correction": "proficiencyBonus should be 2 (for any class at level 1, per D&D 2024 rules)"
-    }
-  ]
-}

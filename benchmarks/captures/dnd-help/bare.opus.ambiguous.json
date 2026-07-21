@@ -1,5 +1,0 @@
-{
-  "skill": "dnd-help",
-  "steps": ["Ask the user what they want to do with their character: create a new level-1 character, audit an existing sheet, or look up a specific rule.", "Once the intent is clear, route them to dnd-build (create), dnd-check (audit) or dnd-lookup (rule lookup)."],
-  "needs_more_info": true
-}

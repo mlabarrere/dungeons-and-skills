@@ -1,1 +1,0 @@
-{"skill":"dnd-build","steps":["Create an answers file with class: fighter, species: dwarf","Run engine/cli.mjs options to discover all pending choices (background, ability scores, skills, fighting style, equipment)","Fill each choice legally from the engine-returned options","Run engine/cli.mjs build to produce the sheet with 0 lint errors"],"needs_more_info":false}

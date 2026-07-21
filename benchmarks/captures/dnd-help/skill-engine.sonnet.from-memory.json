@@ -1,1 +1,0 @@
-{"skill":"dnd-lookup","steps":["Grounding rule forbids answering from memory — all values must come from the catalogue","Run engine/cli.mjs to compute Fighter level-1 HP: d10 (max 10) + CON modifier","Report the result with provenance (source: classes.json fighter hitDie)"],"needs_more_info":false}

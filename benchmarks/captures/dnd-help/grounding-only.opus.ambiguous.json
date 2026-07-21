@@ -1,8 +1,0 @@
-{
-  "skill": "dnd-help",
-  "steps": [
-    "Preciser l'intention : creer une nouvelle fiche de niveau 1 (dnd-build), verifier une fiche existante (dnd-check), ou chercher une regle/un sort (dnd-lookup) ?",
-    "Selon la reponse, je te routerai vers la bonne competence."
-  ],
-  "needs_more_info": true
-}

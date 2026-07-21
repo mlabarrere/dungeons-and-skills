@@ -1,9 +1,0 @@
-{
-  "_note": "SYNTHETIC fixture — hand-authored, deterministic, model-agnostic. For CI/demo of the pipeline only. NOT a model result; never presented as experimental data.",
-  "class": "Fighter", "species": "Dwarf", "lineage": null, "background": "Soldier",
-  "abilityScores": { "for": 15, "dex": 13, "con": 14, "int": 8, "sag": 12, "cha": 10 },
-  "proficiencyBonus": 2, "armorClass": 18, "hitPoints": 12, "passivePerception": 13,
-  "savingThrowProficiencies": ["str", "con"],
-  "skillProficiencies": ["Athletics", "Intimidation", "Nature", "Arcana"],
-  "cantrips": [], "preparedSpells": [], "fightingStyle": "Great Weapon Fighting"
-}

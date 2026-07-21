@@ -1,1 +1,0 @@
-{"findings":[{"field":"hitPoints","issue":"HP 16 is incorrect: Fighter d10 + CON mod(+2) = 12, not 16","correction":"hitPoints should be 12"}]}

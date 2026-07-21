@@ -1,1 +1,0 @@
-{"findings":[{"field":"hitPoints","issue":"HP is 16 but should be 13 for a level-1 Fighter (d10 max = 10) with CON 14 (modifier +2) and Dwarven Toughness (+1): 10 + 2 + 1 = 13.","correction":"Set hitPoints to 13."}]}

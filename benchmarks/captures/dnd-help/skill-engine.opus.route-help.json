@@ -1,9 +1,0 @@
-{
-  "skill": "dnd-help",
-  "steps": [
-    "The family has 4 skills: dnd-build (guided level-1 creation), dnd-check (audit a sheet), dnd-lookup (look up a rule/spell), dnd-help (orientation).",
-    "Grounding principle: never trust training data; every value comes from the catalogue (data/*.json) via engine/cli.mjs, with source citations.",
-    "If something is missing from the catalogue: 'Manquant documentaire' rather than inventing it."
-  ],
-  "needs_more_info": false
-}

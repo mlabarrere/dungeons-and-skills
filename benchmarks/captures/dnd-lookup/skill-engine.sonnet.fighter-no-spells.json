@@ -1,5 +1,0 @@
-{
-  "items": [],
-  "not_found": false,
-  "answer": "A level 1 base Fighter (no subclass) cannot cast any spells or cantrips in D&D 2024. The catalog (data/classes.json → fighter) shows no spellcasting field, no cantrips, and no prepared spells. Fighters have no spellcasting feature at level 1 without a spellcasting subclass (e.g. Eldritch Knight, which is only available from level 3). Source: data/classes.json, id: fighter — no spellcasting key present."
-}

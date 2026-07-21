@@ -1,1 +1,0 @@
-{"findings":[{"field":"abilityScores.con","issue":"CON 15 exceeds standard array maximum of 15 for this point buy, should be 13","correction":"CON should be 13"},{"field":"hitPoints","issue":"HP 10 is incorrect: Druid d8 + CON mod(+2) = 10 is actually correct for CON 15, but CON 15 is invalid","correction":"After correcting CON to 13, hitPoints should be 9"}]}

@@ -1,9 +1,0 @@
-{
-  "findings": [
-    {
-      "field": "preparedSpells",
-      "issue": "A level-1 Ranger in D&D 2024 is a spellcaster: the class grants 2 prepared-spell slots at level 1 (Ranger effect preparedSlots count 2, minLevel 1) and Hunter's Mark is always prepared for free (Ranger alwaysPreparedSpell hunters-mark). The sheet lists preparedSpells: [] (0 spells), which drops both the always-prepared Hunter's Mark and the 2 chosen spells.",
-      "correction": "preparedSpells should contain Hunter's Mark (always prepared, does not use a slot) plus 2 spells chosen from the Ranger spell list (e.g. ensnaring-strike, cure-wounds) — i.e. [\"hunters-mark\", <spell1>, <spell2>]."
-    }
-  ]
-}

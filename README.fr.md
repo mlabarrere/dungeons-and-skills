@@ -63,49 +63,23 @@ node engine/cli.mjs check   fiche.character.json    # audit d'une fiche existant
 
 Exemples : [examples/](examples/) (`dwarf-fighter`, `elf-druid` — answers + fiche attendue).
 
-## Benchmark — skill vs. sans skill
+## Pourquoi les fiches restent justes
 
-**Tous les modèles font moins d'erreurs avec la skill et le moteur qu'sans.**
-306 cellules scorées · 4 skills × 3 conditions × 3 modèles · scorer déterministe, zéro
-jugement humain. La métrique est le **taux d'erreurs atomiques** — part des unités vérifiables
-(classe, chaque caractéristique, CA, PV, chaque sort, chaque fait…) qui sont fausses. Plus bas = mieux.
+La fiabilité ne vient pas d'un prompt plus malin — elle vient du fait de sortir les règles de la
+mémoire du modèle :
 
-**Les trois conditions :**
-- `bare` — le modèle répond de sa mémoire d'entraînement seule ; aucun contexte, aucun outil
-- `grounding-only` — règle d'ancrage injectée (« ne pas faire confiance à l'entraînement ») mais sans accès au catalogue
-- `skill-engine` — skill complète + le modèle appelle `node engine/cli.mjs` et interprète le résultat
+- **Le catalogue, pas la mémoire.** Chaque classe, espèce, background, don, sort, compétence et
+  objet est lu depuis les `data/*.json` fournis, extraits du manuel officiel 2024 — jamais rappelé
+  de l'entraînement (qui mélange 3.5, 5e 2014, 2024 et Pathfinder en règles plausibles-mais-fausses).
+- **Un moteur déterministe, pas du calcul mental.** `engine/cli.mjs` calcule CA, PV, DD de
+  sauvegarde et nombres de sorts, et lint la fiche ; le modèle ne devine jamais une valeur.
+- **Seules les options légales sont proposées.** Le résolveur renvoie les choix exacts filtrés par
+  les règles à chaque étape : un choix illégal n'est jamais présenté, un choix requis jamais oublié.
+- **Provenance sur chaque valeur**, et un **« Manquant documentaire »** explicite dès que quelque
+  chose sort du catalogue — le modèle nomme le manque au lieu d'inventer.
 
-**Résultat clé — la règle seule ne suffit pas.** Dire à un modèle « ne fais pas confiance à ton
-entraînement, consulte le catalogue » — sans lui donner accès au catalogue — *aggrave* les
-résultats pour tous les modèles testés. Seule la condition `skill-engine`, où le modèle appelle
-réellement le moteur déterministe, réduit les erreurs de façon fiable.
-
-![Taux d'erreurs atomiques par modèle et condition sur 4 skills](assets/bench-errors.svg)
-
-**dnd-build (création de personnage) — amélioration constante sur chaque modèle :**
-
-| Modèle | Bare | + Grounding seul | + Skill & moteur | Réduction |
-|--------|-----:|-----------------:|-----------------:|----------:|
-| Haiku 4.5 | 30,6 % | 38,8 % | **17,9 %** | **−41 %** |
-| Sonnet 5 | 26,1 % | 32,4 % | **19,8 %** | **−24 %** |
-| Opus 4.8 | 29,0 % | 27,5 % | **23,2 %** | **−20 %** |
-
-De mémoire, les modèles inventent ~1 fait vérifiable sur 3 — PV erronés, dons fabriqués, sorts
-d'une mauvaise édition. La catégorie d'erreur dominante est **`invented-entity`** (342
-événements) : les modèles hallucinent du contenu D&D en gros, pas seulement des erreurs
-arithmétiques. `skill-engine` remplace l'invention par la consultation du catalogue.
-
-**Points forts sur les autres skills :**
-- **dnd-check / Opus / skill-engine :** 0 % d'erreur atomique — détection parfaite depuis 60 % en bare.
-- **dnd-lookup / Haiku / skill-engine :** −59 % de taux d'erreur (40,9 % → 16,7 %).
-
-![Taxonomie des erreurs — bare : invented-entity en tête (342), lookup-omission (146), wrong-count (100)](assets/bench-taxonomy.svg)
-
-> Captures générées par des sous-agents Claude Code, chacun sur son modèle assigné
-> (Haiku 4.5 / Sonnet 5 / Opus 4.8) avec le contexte approprié à la condition. Résultats
-> indicatifs (n=1 par cellule, pas d'appels API directs). Scorer validé à 34/34 tâches oracle,
-> zéro erreur ([auto-vérification](benchmarks/reports/oracle-selfcheck.md)) ·
-> [Rapport complet →](benchmarks/reports/full-ablation-v1.md)
+Le résultat : une fiche qui est de l'arithmétique avec citations — reproductible, auditable, et
+identique qu'on la construise une fois ou cinquante, dans chacune des neuf langues supportées.
 
 ## Utilisation
 

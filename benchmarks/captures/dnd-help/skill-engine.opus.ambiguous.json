@@ -1,8 +1,0 @@
-{
-  "skill": "dnd-help",
-  "steps": [
-    "Clarify the intent: create a new level-1 sheet (dnd-build), audit an existing sheet (dnd-check), or look up a rule/spell (dnd-lookup)?",
-    "Once the goal is known, route to the matching skill."
-  ],
-  "needs_more_info": true
-}

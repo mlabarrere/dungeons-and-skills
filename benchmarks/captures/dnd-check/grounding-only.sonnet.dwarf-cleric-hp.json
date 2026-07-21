@@ -1,1 +1,0 @@
-{"findings":[{"field":"hitPoints","issue":"HP is 14 but should be 11 for a level-1 Cleric (d8 max = 8) with CON 14 (modifier +2) and Dwarven Toughness (+1): 8 + 2 + 1 = 11.","correction":"Set hitPoints to 11."}]}

@@ -1,1 +1,0 @@
-{"findings":[{"field":"savingThrowProficiencies","issue":"Fighter saving throw proficiencies should be Strength and Constitution, but list shows Dexterity and Charisma","correction":"Set savingThrowProficiencies to [\"for\", \"con\"]"}]}

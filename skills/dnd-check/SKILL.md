@@ -39,22 +39,18 @@ one wrong value makes it illegal. Therefore:
 
 Full rule: [rules/grounding.md](../../rules/grounding.md). Schema + formulas: [rules/schema.md](../../rules/schema.md).
 
-## Formats acceptés
+## Accepted input formats
 
-L'utilisateur peut fournir sa fiche sous n'importe quelle forme — tu t'adaptes :
+The user may hand you their sheet in any shape — you adapt, and you always reply in the user's
+language (see *Languages* below):
 
-- **Texte libre ou markdown** : extrais chaque valeur (classe, espèce, background, scores,
-  PV, CA, sorts…) et construis le `.character.json` en interne. Ne demande pas à l'utilisateur
-  de produire du JSON.
-- **Valeurs dictées une par une** : demande la suivante en langage simple.
-- **Infos manquantes** : demande-les une par une avec des termes clairs — jamais en jargon
-  technique interne. Exemples :
-  - ✗ "Quel est ton `abilityScores.STR` ?"
-  - ✓ "Quelle est ta Force (le chiffre brut, avant les modificateurs) ?"
-  - ✗ "Quels sont tes `sources[]` avec `type: feat` ?"
-  - ✓ "As-tu des dons ? Si oui, lesquels ?"
-- **Fiche partielle acceptable** : si l'utilisateur n'a que certaines valeurs, audite ce qui
-  est disponible et note ce qui manque pour une vérification complète.
+- **Free text or markdown:** extract each value (class, species, background, scores, HP, AC,
+  spells…) and assemble the `.character.json` internally. Never ask the user to produce JSON.
+- **Values dictated one by one:** ask for the next in plain language.
+- **Missing information:** ask for it one item at a time, in clear terms — never internal jargon.
+  - ✗ "What is your `abilityScores.STR`?"  ✓ "What's your Strength (the raw number, before modifiers)?"
+  - ✗ "List your `sources[]` with `type: feat`."  ✓ "Do you have any feats? If so, which ones?"
+- **Partial sheet is fine:** audit what's available and note what's missing for a full check.
 
 ## Workflow
 
@@ -85,3 +81,9 @@ ENGINE="$CLAUDE_SKILL_DIR/../../engine/cli.mjs"
 
 Apply `rules/schema.md` formulas to `data/*.json` by hand and report the same diff. Catalog
 over memory, always.
+
+## Languages
+
+Detect the user's language and pass the matching code to `engine/cli.mjs check --lang <code>`:
+`en` `fr` `de` `es` `it` `ja` `ru` `zh` `ar` (falls back to English if a label is missing).
+Deliver the audit in that language; entity names resolve across languages via `data/labels.*.json`.

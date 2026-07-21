@@ -1,8 +1,0 @@
-{
-  "skill": "dnd-lookup",
-  "steps": [
-    "Never answer rules values from memory: training data blends editions and is unreliable.",
-    "Read the Fighter's hit die from the catalogue (data/classes.json) via engine/cli.mjs and compute HP = max hit die + Constitution modifier, citing the source."
-  ],
-  "needs_more_info": false
-}

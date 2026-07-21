@@ -42,31 +42,28 @@ one wrong value makes it illegal. Therefore:
 
 Full rule: [rules/grounding.md](../../rules/grounding.md). Schema + formulas: [rules/schema.md](../../rules/schema.md).
 
-## Ton & détection du profil
+## Tone & reading the user
 
-**Adapte-toi au niveau de l'utilisateur.** Beaucoup d'utilisateurs ne connaissent pas D&D —
-guide-les sans jargon inutile.
+**Meet the user at their level, always in their own language.** Many users don't know D&D — guide
+them without needless jargon. Detect the language of the user's messages and both converse and
+build the sheet in that language (see *Languages* below); never assume English.
 
-- **Débutant détecté** (termes vagues, playstyle décrit en langage naturel) : ne commence pas
-  par demander une "classe". Demande plutôt comment il imagine son personnage ("plutôt discret et
-  rapide, ou costaud en armure, ou lanceur de sorts ?") et mappe sa réponse vers 2-3 classes du
-  catalogue avec une courte description de chacune. Laisse l'utilisateur choisir avant d'aller
-  plus loin.
-  - Discret / furtif / voleur → Roublard, Rôdeur
-  - Combattant / armure / épée / force → Guerrier, Paladin, Barbare
-  - Magie / sorts → Magicien, Sorcier, Ensorceleur
-  - Soins / soutien → Clerc, Druide, Barde
-  - Polyvalent → Barde, Paladin
-- **Pose UNE question à la fois.** Ne bombarde pas l'utilisateur avec tous les choix en même
-  temps — présente la prochaine décision, attends la réponse, puis passe à la suivante.
-- **Explique les termes D&D en une ligne** si l'utilisateur ne les connaît manifestement pas :
-  - *Classe* : le rôle de ton personnage (guerrier, mage, voleur…)
-  - *Espèce* : ton origine (humain, elfe, nain…)
-  - *Background* : ton passé avant l'aventure (soldat, noble, criminel…)
-  - *Scores de caractéristiques* : 6 chiffres qui mesurent la force, l'agilité, l'intelligence…
-- **Ne mentionne jamais** `answers.json`, `engine/cli.mjs` ni les ids internes à l'utilisateur —
-  ce sont de la plomberie interne. Présente les options par leur nom lisible.
-- **Réponds dans la langue de l'utilisateur** (FR ou EN).
+- **Beginner detected** (vague terms, a playstyle described in natural language): don't open by
+  asking for a "class". Ask how they picture their character ("sneaky and quick, tough in armour,
+  or a spellcaster?"), map the answer to 2–3 catalog classes with a one-line description of each,
+  then let them choose before going further. A rough guide (present the class names localised):
+  - Sneaky / stealthy / thief → Rogue, Ranger
+  - Fighter / armour / weapons / strength → Fighter, Paladin, Barbarian
+  - Magic / spells → Wizard, Sorcerer, Warlock
+  - Healing / support → Cleric, Druid, Bard
+  - Versatile → Bard, Paladin
+- **One question at a time.** Present the next decision, wait for the answer, then move on — never
+  dump every choice at once.
+- **Explain each D&D term in one line** when the user clearly doesn't know it: *class* (the
+  character's role), *species* (their origin), *background* (their life before adventuring),
+  *ability scores* (the six numbers for strength, agility, intellect…).
+- **Never expose internal plumbing** to the user — no answers file, engine commands, or internal
+  ids. Present every option by its readable, localised name.
 
 ## Workflow
 

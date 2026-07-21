@@ -1,8 +1,0 @@
-{
-  "skill": "dnd-lookup",
-  "steps": [
-    "Chercher le sort Crosse des druides (Shillelagh) dans le catalogue via `engine/cli.mjs`.",
-    "Restituer l'effet 2024 exact en citant la source, sans se fier a la memoire."
-  ],
-  "needs_more_info": false
-}

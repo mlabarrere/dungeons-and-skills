@@ -1,5 +1,0 @@
-{
-  "items": ["hunters-mark"],
-  "not_found": false,
-  "answer": "Yes. Hunter's Mark is available to a level 1 Ranger in D&D 2024 — and more than available: it is automatically always-prepared as a class feature. Source: data/classes.json → ranger → effects: {type: 'grants', what: 'alwaysPreparedSpell', spell: 'hunters-mark', list: 'ranger'}. Additionally, hunters-mark appears in data/spells-by-class.json at ranger level 1. The Ranger does not use a spell slot choice to prepare Hunter's Mark — it is granted by the class, always prepared, on top of the 2 freely chosen prepared spells (spellcasting.prepared: 2)."
-}

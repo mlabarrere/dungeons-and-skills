@@ -1,1 +1,0 @@
-{"findings":[{"field":"hitPoints","issue":"HP is 16, but with CON 14 (+2) and d10 hit die, should be 10 + 2 + 1 (dwarf bonus) = 13","correction":"Set hitPoints to 13"}]}
