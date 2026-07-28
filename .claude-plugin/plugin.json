@@ -1,6 +1,6 @@
 {
   "name": "dungeons-and-skills",
-  "version": "0.2.0-beta.2",
+  "version": "0.2.0-beta.3",
   "description": "D&D 2024 (5.5) unified character skill — build, check, lookup, optimize and help — rules-verified by a bundled deterministic engine and SRD catalog.",
   "author": {
     "name": "Dungeons & Skills contributors"

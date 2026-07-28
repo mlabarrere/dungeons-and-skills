@@ -13,6 +13,11 @@ test("release archives are byte-for-byte deterministic", () => {
   assert.deepEqual(createTarGz(entries, 0), createTarGz(entries, 0));
 });
 
+test("gzip header is host-neutral for cross-platform reproducibility", () => {
+  const gzip = createTarGz(entries, 0);
+  assert.equal(gzip[9], 255, "RFC 1952 OS byte must not identify Windows or Unix");
+});
+
 test("zip archive contains the allowlisted paths and payload", () => {
   const zip = createZip(entries, 0);
   assert.equal(zip.readUInt32LE(0), 0x04034b50);
