@@ -1,10 +1,14 @@
 {
   "name": "dungeons-and-skills",
-  "version": "0.2.0-beta.1",
+  "version": "0.2.0-beta.2",
   "license": "MIT",
-  "author": { "name": "Dungeons & Skills contributors" },
+  "author": {
+    "name": "Dungeons & Skills contributors"
+  },
   "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
-  "bin": { "dungeons-and-skills": "./install.mjs" },
+  "bin": {
+    "dungeons-and-skills": "./install.mjs"
+  },
   "files": [
     "install.mjs",
     "engine/",

@@ -45,7 +45,9 @@ for (const f of FILES) {
 test("every skill has YAML frontmatter with name + description", () => {
   for (const f of FILES.filter((x) => x.startsWith("skills/"))) {
     const text = rd(f);
-    assert.match(text, /^---\n[\s\S]*?name:\s*dnd-/, `${f} needs a name in frontmatter`);
+    const skill = f.split("/")[1];
+    assert.match(text, new RegExp(`^---\\n[\\s\\S]*?name:\\s*${skill}\\s*$`, "m"),
+      `${f} needs a name matching its directory in frontmatter`);
     assert.match(text, /\ndescription:\s*>/, `${f} needs a description`);
   }
 });

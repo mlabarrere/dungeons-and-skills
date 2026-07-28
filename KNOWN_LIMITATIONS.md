@@ -41,7 +41,8 @@ is reported as **Manquant documentaire**; it must not be filled from model memor
 ## Distribution status
 
 - The project is not published to the npm registry.
-- The Claude plugin manifests are development artifacts; there is no marketplace listing yet.
+- The repository is directly installable as a Claude Code plugin marketplace, but it is not
+  yet listed in a central/community marketplace directory.
 - Install from a GitHub release archive. Tags are immutable; fixes receive a new beta version.
 
 Rules data has separate redistribution constraints from the MIT-licensed code. See

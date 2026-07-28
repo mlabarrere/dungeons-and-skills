@@ -5,7 +5,7 @@
 [![CI](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml/badge.svg)](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml)
 ![licence: MIT](https://img.shields.io/badge/licence-MIT-black)
 ![rules: D&D 2024 (5.5)](https://img.shields.io/badge/rules-D%26D%202024%20(5.5)-black)
-![skills: 6](https://img.shields.io/badge/skills-assistant%20·%20build%20·%20check%20·%20help%20·%20lookup%20·%20optimize-black)
+![skills: 1](https://img.shields.io/static/v1?label=skills&message=dungeons-and-skills&color=black)
 ![languages: 9](https://img.shields.io/badge/languages-EN·FR·DE·ES·IT·JA·RU·ZH·AR-black)
 ![grounded](https://img.shields.io/badge/grounded-no%20hallucinated%20rules-black)
 
@@ -14,7 +14,7 @@
 > material under CC-BY-4.0. Original project code is MIT-licensed. See
 > [ATTRIBUTION.md](ATTRIBUTION.md) and `data/catalog-provenance.json`.
 
-A multi-skill, multi-platform project that helps AI assistants **build level-1 and check
+A self-contained, multi-platform Agent Skill that helps AI assistants **build level-1 and check
 Dungeons & Dragons 2024 ("5.5") characters** against the rules covered by the bundled catalog.
 Catalog gaps are reported instead of guessed.
 
@@ -22,20 +22,23 @@ Catalog gaps are reported instead of guessed.
 
 | Host path | Status | Install | Then |
 |-----------|--------|---------|------|
-| **Node CLI / Claude Code layout** | CI-certified | download a GitHub release archive, then run `node install.mjs` | `/dnd-build` or run the CLI |
-| **Claude Code, OpenAI Codex, Cursor** | Certified beta hosts | install the release bundle; see [PLATFORMS.md](PLATFORMS.md) | describe the task |
-| **Other Agent Skills clients** | Format-compatible | load `skills/` directly | describe the task |
+| **Claude Code, OpenAI Codex, Cursor** | Certified beta hosts | `npx skills add mlabarrere/dungeons-and-skills --skill dungeons-and-skills` | describe the task |
+| **Claude Code plugin** | Native plugin | add this repository as a marketplace, then install `dungeons-and-skills@dungeons-and-skills` | `/dnd-build` or describe the task |
+| **Other Agent Skills clients** | Format-compatible | install or copy `skills/dungeons-and-skills/` | describe the task |
+| **Node CLI** | CI-certified | clone the repository or use the release archive | run `node engine/cli.mjs` |
 | **Claude / ChatGPT Projects** | Instruction-only | paste [`project-mode/INSTRUCTIONS.md`](project-mode/INSTRUCTIONS.md), upload [`project-mode/knowledge/`](project-mode/knowledge/) | ask it to build a level-1 character |
 | **Windsurf / Cline / other rule-file hosts** | Instruction-only | use the generated adapter | describe the task |
 
 Full details: [INSTALL.md](INSTALL.md).
 
-There is currently **no npm-registry release and no marketplace listing**. GitHub release
-archives are the supported beta distribution channel.
+There is currently no dedicated npm package or third-party marketplace listing. The standard
+`npx skills` CLI installs directly from the public GitHub repository; release archives remain
+the offline/fallback channel.
 
-The six skills follow the open [Agent Skills specification](https://agentskills.io/specification):
-each folder is self-contained and independently copyable, and `scripts/check-skills-spec.mjs`
-enforces conformance in CI.
+The single public skill follows the open
+[Agent Skills specification](https://agentskills.io/specification). Its folder contains the
+engine, audited SRD catalog, renderer assets, references and attribution required to run
+independently; CI installs that folder through `npx skills` and runs `doctor`.
 
 ## Host status and reliability
 
@@ -58,16 +61,12 @@ single wrong value makes it illegal. One rule therefore overrides everything els
 the model's memory — read the bundled rules catalogue and run a deterministic engine.** See
 [rules/grounding.md](rules/grounding.md).
 
-## Skills
+## Skill
 
-| Skill | What it does |
-|-------|--------------|
-| [`dnd-assistant`](skills/dnd-assistant/SKILL.md) | Unified entry point — detects intent and routes to the right workflow (create, check, lookup, optimize, help) without exposing the internal skill taxonomy. |
-| [`dnd-build`](skills/dnd-build/SKILL.md)  | Guided level-1 character creation, zero rules errors, output in any of 9 languages. |
-| [`dnd-check`](skills/dnd-check/SKILL.md)  | Audit an existing sheet and flag every rules error (the sheet checker). |
-| [`dnd-lookup`](skills/dnd-lookup/SKILL.md) | Look up a spell, feat or class from the catalogue and cite the source. |
-| [`dnd-optimize`](skills/dnd-optimize/SKILL.md) | Optimal build under arbitrary constraints ("this spell asap", a locked concept), engine-scored, 1–20 milestones cited from the progression tables. |
-| [`dnd-help`](skills/dnd-help/SKILL.md)   | How the family works, supported languages, and what grounding means. |
+[`dungeons-and-skills`](skills/dungeons-and-skills/SKILL.md) detects the intent and executes
+the appropriate workflow: guided creation, sheet audit, catalog lookup, constrained
+optimization or diagnostics. Claude Code also exposes `/dnd-build`, `/dnd-check`,
+`/dnd-lookup`, `/dnd-optimize` and `/dnd-help` as explicit shortcuts to that same skill.
 
 ## How it works
 
@@ -78,7 +77,7 @@ the model's memory — read the bundled rules catalogue and run a deterministic 
 - **Engine** (`engine/`): `resolver.mjs` returns only the rules-legal options at each step;
   `build-character.mjs` works out AC, hit points, save DCs and spell counts and then lints the
   result; `cli.mjs` is the command the skills call.
-- **Grounding rule** ([rules/grounding.md](rules/grounding.md)): embedded word-for-word in every
+- **Grounding rule** ([rules/grounding.md](rules/grounding.md)): embedded word-for-word in the
   skill, in `AGENTS.md`, in the Project-mode instructions and in every platform adapter — kept in
   step by `scripts/check-rule-copies.mjs`.
 
@@ -148,7 +147,7 @@ New-2024-only terms without a confirmed translation fall back to English.
 
 ## Using it
 
-- **Claude Code** — the skills load automatically from `skills/`, or install the plugin from
+- **Claude Code** — the skill loads automatically from `skills/`, or install the plugin from
   `.claude-plugin/`. Slash commands: `/dnd-build`, `/dnd-check`, `/dnd-lookup`, `/dnd-optimize`, `/dnd-help`.
 - **Cursor / Windsurf / Cline / Kiro / GitHub Copilot** — the always-on rule is generated into
   each tool's native format (`.cursor/rules/`, `.windsurf/rules/`, `.clinerules/`,
@@ -179,10 +178,10 @@ Character creation is level 1 only. Progression tables expose reference mileston
 ## Licence and attribution
 
 The original work (engine, scripts, skill prose, documentation) is under the
-[MIT Licence](LICENSE). The rules data under `data/` and `docs/` is derived from D&D 2024 material
-and is included for **private use**; before distributing it publicly, keep the content within the
-**SRD 5.2 (2024, CC-BY-4.0)** and attribute it — see [ATTRIBUTION.md](ATTRIBUTION.md). This is
-unofficial fan content and is not affiliated with Wizards of the Coast.
+[MIT Licence](LICENSE). The public rules catalog is derived only from
+**SRD 5.2.1 (2024, CC-BY-4.0)** and carries entry-level provenance plus the required
+attribution in [ATTRIBUTION.md](ATTRIBUTION.md). This is unofficial fan content and is not
+affiliated with Wizards of the Coast.
 
 > This work includes material from the System Reference Document 5.2 ("SRD 5.2") by Wizards of
 > the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2 is licensed under the

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Dungeons & Skills logo — a d20 die">
+  <rect width="400" height="400" rx="72" fill="#14162a"/>
+  <!-- d20 (icosahedron, top view): hexagon + central up-triangle + facet lines -->
+  <g fill="#E8833B" stroke="#14162a" stroke-width="7" stroke-linejoin="round">
+    <polygon points="200,58 316,125 316,255 200,322 84,255 84,125"/>
+  </g>
+  <g fill="none" stroke="#14162a" stroke-width="7" stroke-linejoin="round">
+    <polygon points="200,112 262,232 138,232"/>
+    <line x1="200" y1="112" x2="200" y2="58"/>
+    <line x1="138" y1="232" x2="84" y2="255"/>
+    <line x1="262" y1="232" x2="316" y2="255"/>
+    <line x1="138" y1="232" x2="84" y2="125"/>
+    <line x1="262" y1="232" x2="316" y2="125"/>
+    <line x1="200" y1="112" x2="84" y2="125"/>
+    <line x1="200" y1="112" x2="316" y2="125"/>
+    <line x1="138" y1="232" x2="200" y2="322"/>
+    <line x1="262" y1="232" x2="200" y2="322"/>
+  </g>
+  <text x="200" y="196" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="52" font-weight="800" fill="#14162a" text-anchor="middle">20</text>
+  <text x="200" y="368" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="1" fill="#f4f4f5" text-anchor="middle">D&amp;S</text>
+</svg>

@@ -250,26 +250,25 @@ test("a mistyped command exits 3 (usage), never 2 (bundle missing)", () => {
    as a gate it certifies a broken install as working. */
 test("--help exits 0 without an engine, so it cannot be the install gate", () => {
   const bare = mkdtempSync(join(tmpdir(), "dnd-bare-"));
-  cpSync(join(ROOT, "skills", "dnd-build"), join(bare, "dnd-build"), { recursive: true });
-  const shim = join(bare, "dnd-build", "scripts", "dnd.mjs");
+  const isolated = join(bare, "dungeons-and-skills");
+  cpSync(join(ROOT, "skills", "dungeons-and-skills"), isolated, { recursive: true });
+  rmSync(join(isolated, "engine"), { recursive: true, force: true });
+  rmSync(join(isolated, "data"), { recursive: true, force: true });
+  const shim = join(isolated, "scripts", "dnd.mjs");
   const run = (...a) => spawnSync(process.execPath, [shim, ...a], { encoding: "utf8" });
 
   assert.equal(run("--help").status, 0, "--help must stay a free-standing usage print");
   assert.equal(run("doctor").status, 2, "doctor is the gate: it must fail when the bundle is gone");
 
-  for (const name of ["dnd-build", "dnd-check", "dnd-optimize"]) {
-    const body = readFileSync(join(ROOT, "skills", name, "SKILL.md"), "utf8");
-    assert.match(body, /^node scripts\/dnd\.mjs doctor$/m, `${name} must gate on doctor`);
-    assert.doesNotMatch(body, /^node scripts\/dnd\.mjs --help$/m,
-      `${name} still gates on --help, which passes with no bundle installed`);
-  }
+  const body = readFileSync(join(ROOT, "skills", "dungeons-and-skills", "SKILL.md"), "utf8");
+  assert.match(body, /^node scripts\/dnd\.mjs doctor$/m, "the skill must gate on doctor");
+  assert.doesNotMatch(body, /^node scripts\/dnd\.mjs --help$/m,
+    "the skill still gates on --help, which passes with no bundle installed");
 });
 
-test("dnd-help tells the agent to run something, not just read", () => {
-  // The point of keeping this skill: it must supply what the agent cannot get
-  // from the four sibling descriptions it already holds in context.
-  const body = readFileSync(join(ROOT, "skills", "dnd-help", "SKILL.md"), "utf8");
-  assert.match(body, /node scripts\/dnd\.mjs doctor/, "dnd-help must invoke the diagnostic");
+test("the unified help workflow tells the agent to run something, not just read", () => {
+  const body = readFileSync(join(ROOT, "skills", "dungeons-and-skills", "SKILL.md"), "utf8");
+  assert.match(body, /node scripts\/dnd\.mjs doctor/, "the help workflow must invoke the diagnostic");
   assert.doesNotMatch(body, /\/dnd-build|\/dnd-check|\/dnd-lookup|\/dnd-optimize/,
     "slash commands are Claude-Code-only; route by intent instead");
 
@@ -310,20 +309,18 @@ test("doctor names every entity type that has no labels in any language", () => 
   assert.deepEqual(r.unlabelled.sort(), []);
 });
 
-test("dnd-lookup does not promise spell effect text the catalog lacks", () => {
+test("the unified lookup workflow does not promise spell effect text the catalog lacks", () => {
   const spells = JSON.parse(readFileSync(join(ROOT, "data", "spells.json"), "utf8"));
   const list = Array.isArray(spells) ? spells : Object.values(spells);
   const hasText = list.some((s) =>
     ["description", "desc", "text", "effect", "effects", "summary"].some((k) => s[k]));
-  assert.equal(hasText, false, "spells gained text — relax dnd-lookup's Manquant documentaire rule");
+  assert.equal(hasText, false, "spells gained text — relax the lookup workflow's documentary-gap rule");
 
-  const body = readFileSync(join(ROOT, "skills", "dnd-lookup", "SKILL.md"), "utf8");
-  assert.match(body, /no effect text exists/,
+  const body = readFileSync(join(ROOT, "skills", "dungeons-and-skills", "SKILL.md"), "utf8");
+  assert.match(body, /contains spell metadata but not spell effect prose/,
     "the body must tell the agent a spell's effect is not in the catalog");
-  // Match across the wrap without pinning the line ending: Windows checkouts are
-  // CRLF, so a literal \n here passes on Linux and fails in CI.
-  assert.match(body, /no group for equipment or\s+languages/,
-    "the body must say which entity names cannot be resolved across languages");
+  assert.match(body, /Manquant documentaire/,
+    "the body must preserve the explicit documentary-gap response");
 });
 
 /* The first turn with a beginner used to have no cheap grounded source: the
@@ -397,16 +394,19 @@ test("the shim refuses a stranger's engine/cli.mjs", () => {
   mkdirSync(join(root, "data"), { recursive: true });
   writeFileSync(join(root, "engine", "cli.mjs"), 'console.log("NOT THE ENGINE");process.exit(0);');
   writeFileSync(join(root, "data", "whatever.json"), "{}");
-  cpSync(join(ROOT, "skills", "dnd-build"), join(root, "skills", "dnd-build"), { recursive: true });
+  const isolated = join(root, "skills", "dungeons-and-skills");
+  cpSync(join(ROOT, "skills", "dungeons-and-skills"), isolated, { recursive: true });
+  rmSync(join(isolated, "engine"), { recursive: true, force: true });
+  rmSync(join(isolated, "data"), { recursive: true, force: true });
 
   const r = spawnSync(process.execPath,
-    [join(root, "skills", "dnd-build", "scripts", "dnd.mjs"), "doctor"], { encoding: "utf8" });
+    [join(isolated, "scripts", "dnd.mjs"), "doctor"], { encoding: "utf8" });
   assert.equal(r.status, 2, "a foreign engine/ + data/ pair must not be accepted as the bundle");
   assert.doesNotMatch(r.stdout, /NOT THE ENGINE/, "the stranger's script must never be spawned");
 
   // …and the real layouts must still resolve.
   const real = spawnSync(process.execPath,
-    [join(ROOT, "skills", "dnd-build", "scripts", "dnd.mjs"), "doctor"], { encoding: "utf8" });
+    [join(ROOT, "skills", "dungeons-and-skills", "scripts", "dnd.mjs"), "doctor"], { encoding: "utf8" });
   assert.equal(real.status, 0, "the checkout's own layout must still resolve");
 });
 

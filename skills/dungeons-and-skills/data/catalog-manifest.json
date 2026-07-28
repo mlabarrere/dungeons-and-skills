@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "profile": "srd-5.2",
+  "version": "5.2.1",
+  "ruleset": "2024",
+  "license": "CC-BY-4.0",
+  "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+  "files": {
+    "backgrounds.json": {
+      "path": "backgrounds.json",
+      "sha256": "9093a37c08cb23c6f5da287562113c8559db584ae6960de4ea4485394f5d929a"
+    },
+    "build-graph.json": {
+      "path": "build-graph.json",
+      "sha256": "c2241ce4c24d0bfb9d1738160449a72b79c1d9bf9cfb88cf4d5e1db6a63fe794"
+    },
+    "catalog-allowlist.json": {
+      "path": "catalog-allowlist.json",
+      "sha256": "bf6221ec7ee81cae9529bc4d045f688fda849b8a9f38434f7374405ac1ee1240"
+    },
+    "catalog-provenance.json": {
+      "path": "catalog-provenance.json",
+      "sha256": "9d20a823571384f7738b1b9fc6ab8da8dff1c2b4f2f46d77242915cc1a0c10d1"
+    },
+    "classes.json": {
+      "path": "classes.json",
+      "sha256": "bcac8ab302ef5418184ca47fa6a9be3a0f28be38410eebc4614d1ba736eb607b"
+    },
+    "conditions.json": {
+      "path": "conditions.json",
+      "sha256": "37b9eb3b1900c20ee6e67e1dad904119979536112b806eef80ada67dabccf744"
+    },
+    "equipment.json": {
+      "path": "equipment.json",
+      "sha256": "12eb40c003cdcd9165796fb0e05668e0b7e267e3ab0577256977ee7a99790f0d"
+    },
+    "feats.json": {
+      "path": "feats.json",
+      "sha256": "5f4be6dd84d18b325468c8dca5dae2acfa1abb886adfcff24950555e99b39225"
+    },
+    "glossary.json": {
+      "path": "glossary.json",
+      "sha256": "4609178367d679bb3491e7e949f238b8213c73db1829980413bb3a028cc96ddf"
+    },
+    "labels.ar.json": {
+      "path": "labels.ar.json",
+      "sha256": "3b9798581d979be8e892449b6f84feb0f8a86ba0dc64c9ebaf3a3b6b21747130"
+    },
+    "labels.de.json": {
+      "path": "labels.de.json",
+      "sha256": "734dd844c203c2439a40baefd3dd0e2be111908a9b9c3bf3c4c0dcdf6dd3d57c"
+    },
+    "labels.en.json": {
+      "path": "labels.en.json",
+      "sha256": "bbb7893c0d1ba37c2e2f99885f4a1738bff881babf7d893cba5bd76a80b4713d"
+    },
+    "labels.es.json": {
+      "path": "labels.es.json",
+      "sha256": "3b9798581d979be8e892449b6f84feb0f8a86ba0dc64c9ebaf3a3b6b21747130"
+    },
+    "labels.fr.json": {
+      "path": "labels.fr.json",
+      "sha256": "e18b7bbb9fb22570812f9b1b1b4bb52eb6ef90234ccf9c9dadf7804ed3a2deb2"
+    },
+    "labels.it.json": {
+      "path": "labels.it.json",
+      "sha256": "734dd844c203c2439a40baefd3dd0e2be111908a9b9c3bf3c4c0dcdf6dd3d57c"
+    },
+    "labels.ja.json": {
+      "path": "labels.ja.json",
+      "sha256": "734dd844c203c2439a40baefd3dd0e2be111908a9b9c3bf3c4c0dcdf6dd3d57c"
+    },
+    "labels.ru.json": {
+      "path": "labels.ru.json",
+      "sha256": "3b9798581d979be8e892449b6f84feb0f8a86ba0dc64c9ebaf3a3b6b21747130"
+    },
+    "labels.zh.json": {
+      "path": "labels.zh.json",
+      "sha256": "7d0558e184af6ac49b26aee956629213ea1332db4e37cec35e85675c6482d78e"
+    },
+    "languages.json": {
+      "path": "languages.json",
+      "sha256": "d24ad60ad5bb45a2b5750077d196daa1b4e09eb02514bf477748b56b63b042ee"
+    },
+    "progression.json": {
+      "path": "progression.json",
+      "sha256": "99f730f461dfbf08233284e0b0911b0ada1c5bdb966405f89dd92283f28e3b10"
+    },
+    "species.json": {
+      "path": "species.json",
+      "sha256": "88adf73c599355d913d66778fcf948eceac4e0ce223ad8d23bbcca43643e01b0"
+    },
+    "spells-by-class.json": {
+      "path": "spells-by-class.json",
+      "sha256": "fe729129299591ea8c644df1eff36658cc12c61628506123a2ad0d20c3e266e7"
+    },
+    "spells.json": {
+      "path": "spells.json",
+      "sha256": "3b0336cfea5cfa390f19005e4d2a8ca1133a7f17d6e269a08c2fa74bbff81d0d"
+    },
+    "subclasses.json": {
+      "path": "subclasses.json",
+      "sha256": "f4027de6f7b9aec94b3bde9ff243f0224b88678161f185ec5d9777ef5190643e"
+    },
+    "ui-labels.json": {
+      "path": "ui-labels.json",
+      "sha256": "270ff5e3f995a6f1378ed13f7d7f95bfe8cb06c5222b3bfa6e0e955708fe3a1d"
+    }
+  },
+  "counts": {
+    "classes": 12,
+    "subclasses": 12,
+    "species": 9,
+    "backgrounds": 4,
+    "feats": 15,
+    "spells": 83,
+    "provenanceEntries": 488
+  }
+}

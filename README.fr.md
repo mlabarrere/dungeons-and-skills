@@ -5,7 +5,7 @@
 [![CI](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml/badge.svg)](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml)
 ![licence : MIT](https://img.shields.io/badge/licence-MIT-black)
 ![règles : D&D 2024 (5.5)](https://img.shields.io/badge/r%C3%A8gles-D%26D%202024%20(5.5)-black)
-![skills : 6](https://img.shields.io/badge/skills-assistant%20·%20build%20·%20check%20·%20help%20·%20lookup%20·%20optimize-black)
+![skills : 1](https://img.shields.io/static/v1?label=skill&message=dungeons-and-skills&color=black)
 ![langues : 9](https://img.shields.io/badge/langues-EN·FR·DE·ES·IT·JA·RU·ZH·AR-black)
 ![ancré](https://img.shields.io/badge/ancr%C3%A9-z%C3%A9ro%20r%C3%A8gle%20invent%C3%A9e-black)
 
@@ -14,7 +14,7 @@
 > SRD 5.2.1 audité sous CC-BY-4.0. Le code original est sous licence MIT. Voir
 > [ATTRIBUTION.md](ATTRIBUTION.md) et `data/catalog-provenance.json`.
 
-Un projet multi-skills et multi-plateformes qui aide les assistants IA à **construire au niveau 1
+Une Agent Skill autonome et multi-plateformes qui aide les assistants IA à **construire au niveau 1
 et vérifier des personnages Dungeons & Dragons 2024 (« 5.5 »)** contre les règles couvertes par
 le catalogue. Tout manque documentaire est signalé au lieu d'être inventé.
 
@@ -28,12 +28,20 @@ le catalogue. Tout manque documentaire est signalé au lieu d'être inventé.
 | Autres clients Agent Skills | **Compatible format** | Le format est attendu, mais l'UX et les permissions de chaque hôte ne sont pas certifiées ici |
 | Claude/ChatGPT Projects et adaptateurs sans exécution | **Instructions uniquement** | Ancré dans le catalogue, mais calcul approximatif effectué par le modèle |
 
-Il n'existe actuellement **ni publication sur le registre npm, ni listing marketplace**. Les
-archives de release GitHub sont le canal de distribution de la bêta.
+Installation standard depuis le dépôt public :
 
-Les six skills suivent la [spécification Agent Skills](https://agentskills.io/specification) :
-chaque dossier est autonome et copiable seul, et `scripts/check-skills-spec.mjs` vérifie la
-conformité en CI. Tout client compatible charge `skills/` directement — voir
+```bash
+npx skills add mlabarrere/dungeons-and-skills --skill dungeons-and-skills
+```
+
+Il n'existe pas encore de paquet npm dédié ni de listing sur une marketplace tierce. Le CLI
+`npx skills` installe directement depuis GitHub ; les archives de release restent le canal
+hors ligne/de secours.
+
+La skill publique suit la [spécification Agent Skills](https://agentskills.io/specification) :
+son dossier contient son moteur, son catalogue SRD audité, ses assets et ses attributions.
+La CI l'installe réellement via `npx skills` puis exécute `doctor`. Tout client compatible
+charge `skills/dungeons-and-skills/` directement — voir
 [PLATFORMS.md](PLATFORMS.md).
 
 ## Pourquoi
@@ -44,16 +52,12 @@ l'arithmétique avec citations ; une seule valeur fausse la rend illégale. D'o�
 prime sur tout : **ne fais pas confiance à l'entraînement du modèle — lis le catalogue de règles
 fourni et lance un moteur déterministe.** Voir [rules/grounding.md](rules/grounding.md).
 
-## Skills
+## Skill
 
-| Skill | Rôle |
-|-------|------|
-| [`dnd-assistant`](skills/dnd-assistant/SKILL.md) | Point d'entrée unique — détecte l'intention et exécute le bon workflow (créer, vérifier, chercher, optimiser, aide) sans exposer la taxonomie interne. |
-| [`dnd-build`](skills/dnd-build/SKILL.md)  | Création guidée d'un perso niveau 1, 0 erreur de règle, sortie en 9 langues. |
-| [`dnd-check`](skills/dnd-check/SKILL.md)  | Audit d'une fiche existante, signale chaque erreur (le « checker »). |
-| [`dnd-lookup`](skills/dnd-lookup/SKILL.md) | Recherche un sort/don/classe dans le catalogue et cite la source. |
-| [`dnd-optimize`](skills/dnd-optimize/SKILL.md) | Build optimal sous contraintes arbitraires (« ce sort au plus tôt », concept verrouillé), scoré par le moteur, jalons 1–20 cités depuis les tables de progression. |
-| [`dnd-help`](skills/dnd-help/SKILL.md)   | Fonctionnement de la famille, langues supportées, principe d'ancrage. |
+[`dungeons-and-skills`](skills/dungeons-and-skills/SKILL.md) détecte l'intention et exécute le
+bon parcours : création guidée, audit, recherche catalogue, optimisation sous contraintes ou
+diagnostic. Claude Code conserve `/dnd-build`, `/dnd-check`, `/dnd-lookup`, `/dnd-optimize` et
+`/dnd-help` comme raccourcis explicites vers cette même skill.
 
 ## Comment ça marche
 
@@ -64,7 +68,7 @@ fourni et lance un moteur déterministe.** Voir [rules/grounding.md](rules/groun
 - **Moteur** (`engine/`) : `resolver.mjs` ne renvoie que les options légales à chaque étape ;
   `build-character.mjs` calcule CA/PV/DD/nombre de sorts et vérifie le résultat ; `cli.mjs` est
   le wrapper appelé par les skills.
-- **Règle d'ancrage** ([rules/grounding.md](rules/grounding.md)) : intégrée *verbatim* dans chaque
+- **Règle d'ancrage** ([rules/grounding.md](rules/grounding.md)) : intégrée *verbatim* dans la
   skill, dans `AGENTS.md`, dans les instructions Mode Projets et dans chaque adaptateur —
   maintenue synchrone par `scripts/check-rule-copies.mjs`.
 
@@ -104,7 +108,7 @@ la langue d'affichage change les labels, jamais les valeurs de règles.
 
 ## Utilisation
 
-- **Claude Code** — skills auto-chargés depuis `skills/` ; ou plugin via `.claude-plugin/`.
+- **Claude Code** — skill auto-chargée depuis `skills/` ; ou plugin via `.claude-plugin/`.
   Commandes : `/dnd-build`, `/dnd-check`, `/dnd-lookup`, `/dnd-optimize`, `/dnd-help`.
 - **Cursor / Windsurf / Cline / Kiro / GitHub Copilot** — la règle always-on est générée dans le
   format natif de chaque outil.
@@ -162,11 +166,10 @@ Voir [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md).
 
 ## Licence & attribution
 
-Le travail original (moteur, scripts, prose des skills, docs) est sous [MIT](LICENSE). Les données
-de règles sous `data/` et `docs/` dérivent du matériel D&D 2024 et sont incluses pour un **usage
-privé** ; pour une distribution publique, rester dans le périmètre du **SRD 5.2 (2024, CC-BY-4.0)**
-avec attribution — voir [ATTRIBUTION.md](ATTRIBUTION.md). Contenu de fan non officiel, sans
-affiliation avec Wizards of the Coast.
+Le travail original (moteur, scripts, prose et documentation) est sous [MIT](LICENSE). Le
+catalogue public dérive uniquement du **SRD 5.2.1 (2024, CC-BY-4.0)** ; chaque entrée possède
+une provenance et l'attribution obligatoire est fournie dans [ATTRIBUTION.md](ATTRIBUTION.md).
+Contenu de fan non officiel, sans affiliation avec Wizards of the Coast.
 
 > Ce travail inclut du matériel issu du System Reference Document 5.2 (« SRD 5.2 ») de Wizards of
 > the Coast LLC, disponible sur https://www.dndbeyond.com/srd. Le SRD 5.2 est publié sous la

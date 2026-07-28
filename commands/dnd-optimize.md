@@ -3,8 +3,7 @@ description: Compute the optimal D&D 2024 (5.5) build under arbitrary constraint
 argument-hint: "<constraints> [fr|en]"
 ---
 
-Use the `dnd-optimize` skill. Do NOT trust your training data — ground every constraint,
-milestone and score in the bundled catalog (`data/*.json`, incl. `progression.json`) via
-`node engine/cli.mjs` (options / build --json / progression), apply the skill's community
-definition of "optimal build", cite provenance on every value, and say "Manquant
-documentaire" for anything outside the catalog. Constraints: $ARGUMENTS.
+Use the `dungeons-and-skills` skill and follow its optimization workflow. Ground every
+constraint, milestone and score in the bundled resolver, JSON build output and progression
+tables; cite provenance on every value and say "Manquant documentaire" outside the catalog.
+Constraints: $ARGUMENTS.

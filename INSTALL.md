@@ -1,6 +1,6 @@
 # Installation
 
-The project works two ways: as an **agent skill/rule pack** (an AI assistant loads the skills or
+The project works two ways: as an **autonomous agent skill/rule pack** (an AI assistant loads the skill or
 the always-on rule) and as a **Project knowledge bundle** (paste instructions + upload files into
 a Claude/ChatGPT Project). Pick the row for your tool.
 
@@ -10,9 +10,38 @@ a Claude/ChatGPT Project). Pick the row for your tool.
   The skills in `skills/` require Node; without it they report the gap and stop. The
   instruction-tier hosts (Claude Projects, ChatGPT Projects) do not use the skills and do not
   need Node — they read the catalog files directly.
-- The bundle on disk — via `install.mjs` or a clone of this repo. The
-  skills locate the engine themselves (`$CLAUDE_SKILL_DIR/../../engine/cli.mjs`, or `engine/cli.mjs`
-  from a checkout), so you do **not** have to run from any particular directory.
+- The autonomous skill on disk. Standard Agent Skills installers copy its engine, catalog,
+  assets and attribution together, so it does **not** depend on the repository layout.
+
+## Recommended: Agent Skills installer
+
+From the project where you want to use the skill:
+
+```bash
+npx skills add mlabarrere/dungeons-and-skills --skill dungeons-and-skills
+```
+
+The installer detects supported agents and lets you choose project or global scope. To target
+specific hosts non-interactively:
+
+```bash
+npx skills add mlabarrere/dungeons-and-skills --skill dungeons-and-skills --agent codex -y
+npx skills add mlabarrere/dungeons-and-skills --skill dungeons-and-skills --agent claude-code -y
+npx skills add mlabarrere/dungeons-and-skills --skill dungeons-and-skills --agent cursor -y
+```
+
+Add `--global` to make it available across projects. `npx skills update` and
+`npx skills remove dungeons-and-skills` manage later updates and removal.
+
+Verify an isolated installation by running the skill-local shim:
+
+```bash
+node .agents/skills/dungeons-and-skills/scripts/dnd.mjs doctor --json
+```
+
+Claude Code uses `.claude/skills/` instead of `.agents/skills/`.
+
+## Checkout / offline fallback
 
 ```bash
 git clone https://github.com/mlabarrere/dungeons-and-skills.git
@@ -35,13 +64,20 @@ not require Node.js because the model reads the uploaded catalog itself.
 
 ## Claude Code
 
-**Project skills (from a checkout):** open Claude Code with this repo as the working directory.
-The five skills in `skills/` are auto-discovered; invoke them with `/dnd-build`, `/dnd-check`,
-`/dnd-lookup`, `/dnd-optimize`, `/dnd-help`, or just describe the task and the right skill triggers.
+For the native plugin experience:
 
-The repository contains a plugin manifest for development and validation, but **there is no
-marketplace listing yet**. There is likewise no npm-registry package today. Download the
-GitHub release ZIP or tarball, extract it, and run `node install.mjs <target>`.
+```text
+/plugin marketplace add mlabarrere/dungeons-and-skills
+/plugin install dungeons-and-skills@dungeons-and-skills
+/reload-plugins
+```
+
+The plugin exposes `/dnd-build`, `/dnd-check`, `/dnd-lookup`, `/dnd-optimize` and `/dnd-help`.
+Plain-language D&D requests trigger the same unified skill automatically.
+
+The repository is its own Claude marketplace; no central listing is required. The community
+marketplace submission is tracked separately. The release ZIP or tarball remains available
+for offline installs: extract it and run `node install.mjs <target>`.
 
 ## Claude Projects / ChatGPT Projects / Custom GPTs
 
@@ -56,8 +92,8 @@ No code execution, so the assistant runs in "read the catalog by hand" mode — 
 
 ## Cursor / Windsurf / Cline / Kiro / GitHub Copilot
 
-The always-on rule is generated into each tool's native format. Working from a checkout it is
-picked up automatically; to use it in another project, copy the matching file into that project:
+Prefer the `npx skills` command above for Cursor and every host that supports Agent Skills.
+The always-on rule is also generated into each tool's native format as a fallback:
 
 | Tool | File |
 |------|------|
@@ -67,13 +103,13 @@ picked up automatically; to use it in another project, copy the matching file in
 | Kiro | [`.kiro/steering/dnd-builder.md`](.kiro/steering/dnd-builder.md) |
 | GitHub Copilot | [`.github/copilot-instructions.md`](.github/copilot-instructions.md) |
 
-These are **generated** from `AGENTS.md` by `scripts/build-adapters.mjs` — edit `AGENTS.md`, not
-the copies. To reach the engine, those tools still need this repo's `engine/` + `data/` on disk.
+These are generated from `AGENTS.md` by `scripts/build-adapters.mjs`. The autonomous skill
+already contains the engine and catalog; rule-only fallbacks do not.
 
 ## Any other agent
 
-Point it at [`AGENTS.md`](AGENTS.md) (read as always-on context) or load the skill files under
-`skills/` directly. See [PLATFORMS.md](PLATFORMS.md) for the full list.
+Install or copy [`skills/dungeons-and-skills/`](skills/dungeons-and-skills/) as one unit. If the
+host cannot load skills, point it at [`AGENTS.md`](AGENTS.md). See [PLATFORMS.md](PLATFORMS.md).
 
 ## Verify the install
 
@@ -84,6 +120,9 @@ node engine/cli.mjs check path/to/character.json --format markdown             #
 npm test                                                       # full test suite
 npm run skill:check                                            # no drift between docs/ and the bundle
 ```
+
+For a marketplace-style install, `doctor` must resolve an engine path inside the installed
+`dungeons-and-skills` skill folder, not from a surrounding checkout.
 
 Successful execution means the software path works; a sheet with warnings still requires manual
 verification. Character creation above level 1 is outside the current implementation. See

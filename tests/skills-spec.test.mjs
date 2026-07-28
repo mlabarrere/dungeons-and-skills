@@ -39,6 +39,16 @@ for (const skill of SKILLS) {
     const lines = rd(`skills/${skill}/SKILL.md`).split("\n").length;
     assert.ok(lines < 500, `${skill}/SKILL.md is ${lines} lines`);
   });
+
+  test(`${skill}: OpenAI interface metadata names the installed skill`, () => {
+    const rel = `skills/${skill}/agents/openai.yaml`;
+    assert.ok(existsSync(join(ROOT, rel)), `missing ${rel}`);
+    const metadata = rd(rel);
+    assert.match(metadata, /^\s*display_name:\s*".+"/m);
+    assert.match(metadata, /^\s*short_description:\s*".+"/m);
+    assert.match(metadata, new RegExp(`\\$${skill}\\b`),
+      "default_prompt must explicitly invoke the skill");
+  });
 }
 
 /* Eval sets follow the documented shape, and every referenced input file

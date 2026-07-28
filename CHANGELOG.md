@@ -7,6 +7,14 @@ All notable changes to this project are documented here. The format is based on
 ## [Unreleased]
 
 ### Added
+- One autonomous public `dungeons-and-skills` Agent Skill containing its deterministic
+  engine, audited SRD catalog, renderer assets, rule references, licence and attribution.
+  Standard installation now works with
+  `npx skills add mlabarrere/dungeons-and-skills --skill dungeons-and-skills`; CI verifies
+  the isolated installed folder with `doctor` and a real build.
+- Native Claude marketplace commands from the public GitHub repository, while preserving
+  `/dnd-build`, `/dnd-check`, `/dnd-lookup`, `/dnd-optimize` and `/dnd-help` as shortcuts
+  to the unified skill.
 - Portable HTML/Markdown/JSON rendering for `build` and `check`, with strict
   `--format`, nine-language `--lang`, deterministic `--output` paths, embedded
   standalone assets, structured diagnostics/counters/provenance, and stable
@@ -34,16 +42,12 @@ All notable changes to this project are documented here. The format is based on
   enforces the [open spec](https://agentskills.io/specification) in CI: spec-only frontmatter
   keys, `description` within 1024 characters, `compatibility` within 500, string-valued
   `metadata`, and no path escaping a skill folder.
-- **Self-contained skill folders.** Each skill now carries a generated `scripts/dnd.mjs` that
-  locates the engine by walking up from its own location (repo checkout, installed `.claude/`
-  tree or plugin root all resolve) and exits 2 with install instructions when the rules bundle is
-  absent, plus generated `references/` copies of the `rules/` texts it cites. Both are produced
-  by `scripts/build-adapters.mjs` and drift-checked by `scripts/check-rule-copies.mjs`.
-- **Eval sets per skill** — `evals/evals.json` (output-quality cases with checkable assertions)
-  and `evals/trigger_queries.json` (triggering queries, fixed 60/40 train/validation split),
-  following the format's evaluation guidance. Declarative data; no runner.
-- `Gotchas` sections in every skill, and explicit load-me-when conditions on each `references/`
-  link.
+- **Autonomous skill runtime.** The generated `scripts/dnd.mjs` resolves the engine embedded
+  in the same skill folder, which also carries generated `references/`, `engine/`, `data/`
+  and `assets/` copies. Drift checks compare every runtime byte with its audited source.
+- Unified `evals/evals.json` output-quality cases and
+  `evals/trigger_queries.json` triggering queries covering creation, checking, lookup,
+  optimization, diagnostics and ambiguous requests.
 - Skills and their `references/` are DISCOVERED on disk, never listed. A hardcoded roster
   silently skips a newly added skill instead of failing; `listSkills()` and `referencesFor()`
   in `scripts/build-adapters.mjs` replace every roster, and unlinked reference copies are

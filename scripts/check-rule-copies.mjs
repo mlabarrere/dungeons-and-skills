@@ -15,7 +15,10 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { canonicalRule, ENGINE_SHIM, listSkills, referencesFor, referenceCopy, SKILL_GROUNDING_OPENING, SKILL_GROUNDING_INVARIANT_BULLETS } from "./build-adapters.mjs";
+import {
+  AUTONOMOUS_SKILL, canonicalRule, ENGINE_SHIM, listSkills, referencesFor,
+  referenceCopy, SKILL_GROUNDING_OPENING, SKILL_GROUNDING_INVARIANT_BULLETS,
+} from "./build-adapters.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const rd = (p) => readFileSync(join(ROOT, p), "utf8").replace(/\r\n/g, "\n");
@@ -123,6 +126,61 @@ for (const skill of SKILL_NAMES) {
       if (!refs.includes(f)) { console.error(`ORPHAN: skills/${skill}/references/${f} is not linked from SKILL.md`); failed = true; }
     }
   }
+}
+
+// 4. The public skill's embedded runtime is byte-identical to the audited root
+//    bundle. Package managers copy only this directory, so stale or incomplete
+//    embedded data is a broken public installation even when the checkout works.
+function filesBelow(relativeRoot) {
+  const base = join(ROOT, relativeRoot);
+  const out = [];
+  const visit = (directory, prefix = "") => {
+    for (const item of readdirSync(directory, { withFileTypes: true })) {
+      const rel = prefix ? `${prefix}/${item.name}` : item.name;
+      if (item.isDirectory()) visit(join(directory, item.name), rel);
+      else if (item.isFile()) out.push(rel);
+    }
+  };
+  if (existsSync(base)) visit(base);
+  return out.sort();
+}
+
+function checkMirror(sourceRoot, targetRoot, sourceFiles = filesBelow(sourceRoot)) {
+  const targetFiles = filesBelow(targetRoot);
+  if (JSON.stringify(targetFiles) !== JSON.stringify(sourceFiles)) {
+    console.error(`DRIFT: ${targetRoot}/ file list != ${sourceRoot}/`);
+    failed = true;
+    return;
+  }
+  for (const file of sourceFiles) {
+    const source = readFileSync(join(ROOT, sourceRoot, file));
+    const target = readFileSync(join(ROOT, targetRoot, file));
+    if (!source.equals(target)) {
+      console.error(`DRIFT: ${targetRoot}/${file} != ${sourceRoot}/${file}`);
+      failed = true;
+    }
+  }
+  bundled += sourceFiles.length;
+}
+
+const autonomousRoot = `skills/${AUTONOMOUS_SKILL}`;
+checkMirror("engine", `${autonomousRoot}/engine`);
+checkMirror("assets", `${autonomousRoot}/assets`);
+const publicDataFiles = [
+  ...readdirSync(join(ROOT, "data"), { withFileTypes: true })
+    .filter((item) => item.isFile())
+    .map((item) => item.name),
+  ...filesBelow("data/catalog-profiles").map((file) => `catalog-profiles/${file}`),
+].sort();
+checkMirror("data", `${autonomousRoot}/data`, publicDataFiles);
+for (const file of ["ATTRIBUTION.md", "LICENSE", "version.json"]) {
+  const source = readFileSync(join(ROOT, file));
+  const targetPath = join(ROOT, autonomousRoot, file);
+  if (!existsSync(targetPath) || !source.equals(readFileSync(targetPath))) {
+    console.error(`DRIFT: ${autonomousRoot}/${file} != ${file}`);
+    failed = true;
+  }
+  bundled++;
 }
 
 if (failed) {

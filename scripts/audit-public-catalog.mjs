@@ -68,6 +68,33 @@ const extraJson = readdirSync(catalogDir, { withFileTypes: true })
   .filter((file) => file !== "catalog-manifest.json" && !expectedFiles.has(file));
 for (const file of extraJson) fail(`non-allowlisted JSON file in public catalog: ${file}`);
 
+// The universal Agent Skill embeds the certified catalog because standard skill
+// installers copy only one folder. Audit that second distribution surface too:
+// every runtime JSON must be identical, and no documentary/private manifest may
+// hitch a ride inside the skill archive.
+if (catalogDir === resolve(join(ROOT, "data"))) {
+  const embedded = join(ROOT, "skills", "dungeons-and-skills", "data");
+  if (!existsSync(embedded)) fail("autonomous skill catalog is missing");
+  else {
+    for (const file of [...expectedFiles, "catalog-manifest.json"]) {
+      const bundled = join(embedded, file);
+      const source = join(catalogDir, file);
+      if (!existsSync(bundled)) fail(`autonomous skill catalog is missing ${file}`);
+      else if (!readFileSync(bundled).equals(readFileSync(source)))
+        fail(`autonomous skill catalog diverges: ${file}`);
+    }
+    if (existsSync(join(embedded, "feature-labels.en")))
+      fail("private feature-label manifests escaped into the autonomous skill");
+    const embeddedJson = readdirSync(embedded, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
+      .map((entry) => entry.name);
+    for (const file of embeddedJson) {
+      if (file !== "catalog-manifest.json" && !expectedFiles.has(file))
+        fail(`non-allowlisted JSON file in autonomous skill catalog: ${file}`);
+    }
+  }
+}
+
 const allow = contents["catalog-allowlist.json"];
 const publicIds = {
   classes: new Set((contents["classes.json"] || []).map((entry) => entry.id)),

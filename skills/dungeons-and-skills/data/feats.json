@@ -1,0 +1,428 @@
+[
+  {
+    "id": "vigilant",
+    "name": "Alert",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "initiative",
+        "note": "Ajoute le bonus de maitrise a l'Initiative ; peut echanger son Initiative avec un allie."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "initie-a-la-magie",
+    "name": "Magic Initiate",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": true,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "choix:initie-a-la-magie-carac",
+        "list": "choix:initie-a-la-magie-liste",
+        "note": "Caracteristique et liste selon les choix."
+      }
+    ],
+    "choices": [
+      {
+        "id": "initie-a-la-magie-liste",
+        "kind": "liste-sorts",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "cleric",
+            "druid",
+            "wizard"
+          ]
+        }
+      },
+      {
+        "id": "initie-a-la-magie-carac",
+        "kind": "caracteristique-incantation",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      },
+      {
+        "id": "initie-a-la-magie-cantrips",
+        "kind": "cantrip",
+        "count": 2,
+        "from": {
+          "fromChoice": "initie-a-la-magie-liste",
+          "level": 0
+        }
+      },
+      {
+        "id": "initie-a-la-magie-sort-1",
+        "kind": "prepared",
+        "count": 1,
+        "from": {
+          "fromChoice": "initie-a-la-magie-liste",
+          "level": 1
+        },
+        "note": "Toujours prepare, lancable une fois sans emplacement (recupere en Repos long)."
+      }
+    ]
+  },
+  {
+    "id": "sauvagerie-martiale",
+    "name": "Savage Attacker",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "origines",
+    "prerequisite": null,
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageReroll",
+        "note": "1 fois par tour, relancer les des de degats d'une arme et garder le meilleur resultat."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "amelioration-de-caracteristique",
+    "name": "Ability Score Improvement",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "general",
+    "prerequisite": "Niveau 4 ou plus",
+    "repeatable": true,
+    "effects": [],
+    "choices": [
+      {
+        "id": "asc-choix",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+2 sur une caracteristique, ou +1 sur deux (max 20)"
+      }
+    ]
+  },
+  {
+    "id": "archerie",
+    "name": "Archery",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "attackBonus",
+        "value": 2,
+        "note": "+2 aux jets d'attaque avec armes a distance."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "defense",
+    "name": "Defense",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "armorClass",
+        "value": 1,
+        "note": "+1 a la CA en armure legere, intermediaire ou lourde."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "armes-a-deux-mains",
+    "name": "Great Weapon Fighting",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "note": "Les 1 et 2 des des de degats d'une arme Deux mains/Polyvalente comptent comme des 3."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "combat-a-deux-armes",
+    "name": "Two-Weapon Fighting",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "style-de-combat",
+    "prerequisite": "Aptitude Style de combat",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "damageRider",
+        "note": "Ajoute le modificateur de caracteristique aux degats de l'attaque supplementaire (arme Legere)."
+      }
+    ],
+    "choices": []
+  },
+  {
+    "id": "faveur-de-prouesse-martiale",
+    "name": "Boon of Combat Prowess",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Visee infaillible : transformer une attaque ratee en touche (indisponible jusqu'au tour suivant)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-prouesse-martiale-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-deplacement-dimensionnel",
+    "name": "Boon of Dimensional Travel",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Entrechats dimensionnels : se teleporter de 9 m apres une action Attaque ou Magie."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-deplacement-dimensionnel-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-du-destin",
+    "name": "Boon of Fate",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Destin aiguille : 2d4 en bonus/malus a un Test d20 (soi ou creature a 18 m)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-du-destin-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-d-attaque-irresistible",
+    "name": "Boon of Irresistible Offense",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "combatOption",
+        "note": "Degats physiques ignorent la Resistance ; frappe ecrasante sur un 20."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-d-attaque-irresistible-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-l-esprit-nocturne",
+    "name": "Boon of the Night Spirit",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "resistance",
+        "note": "En Lumiere faible/Tenebres : Invisible (action Bonus) et Resistance a tous les degats sauf psychiques et radiants."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-l-esprit-nocturne-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-memoire-magique",
+    "name": "Boon of Spell Recall",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus ; aptitude Sorts",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "effect",
+        "what": "spellCombat",
+        "note": "Incantation gratuite : 1d4 par sort de niveau 1-4 ; si le chiffre = niveau de l'emplacement, il n'est pas depense."
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-memoire-magique-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  },
+  {
+    "id": "faveur-de-vision-lucide",
+    "name": "Boon of Truesight",
+    "kind": "don",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.87-88",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "category": "faveur-epique",
+    "prerequisite": "Niveau 19 ou plus",
+    "repeatable": false,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "sense",
+        "value": "vision-lucide",
+        "range": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "faveur-de-vision-lucide-carac",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+1 (max 30)"
+      }
+    ]
+  }
+]
