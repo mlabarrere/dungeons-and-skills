@@ -2,7 +2,7 @@
 
 *[English](README.md)*
 
-[![CI](https://github.com/mlabarrere/dungeons-and-skills-srd/actions/workflows/test.yml/badge.svg)](https://github.com/mlabarrere/dungeons-and-skills-srd/actions/workflows/test.yml)
+[![CI](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml/badge.svg)](https://github.com/mlabarrere/dungeons-and-skills/actions/workflows/test.yml)
 ![licence : MIT](https://img.shields.io/badge/licence-MIT-black)
 ![règles : D&D 2024 (5.5)](https://img.shields.io/badge/r%C3%A8gles-D%26D%202024%20(5.5)-black)
 ![skills : 6](https://img.shields.io/badge/skills-assistant%20·%20build%20·%20check%20·%20help%20·%20lookup%20·%20optimize-black)

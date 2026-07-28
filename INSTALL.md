@@ -15,8 +15,8 @@ a Claude/ChatGPT Project). Pick the row for your tool.
   from a checkout), so you do **not** have to run from any particular directory.
 
 ```bash
-git clone https://github.com/mlabarrere/dungeons-and-skills-srd.git
-cd dungeons-and-skills-srd
+git clone https://github.com/mlabarrere/dungeons-and-skills.git
+cd dungeons-and-skills
 node engine/cli.mjs build examples/dwarf-fighter.answers.json   # smoke test → a sheet, 0 errors
 ```
 

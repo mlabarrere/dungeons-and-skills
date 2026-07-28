@@ -129,7 +129,7 @@ if (!engine) {
     "This skill needs the rules bundle installed alongside it. The bundled catalog\n" +
     "is the only legal source of D&D 2024 values, so there is nothing to fall back\n" +
     "on — do not compute the sheet from memory.\n" +
-    "Install it from:  https://github.com/mlabarrere/dungeons-and-skills-srd/releases\n" +
+    "Install it from:  https://github.com/mlabarrere/dungeons-and-skills/releases\n" +
     "Searched upward from " + here + " — 12 levels, probing <dir>/, <dir>/.claude/ and\n" +
     "<dir>/.agents/ at each, and requiring data/build-graph.json beside engine/cli.mjs.\n" +
     "The working directory is NOT searched: this shim resolves only from its own location.\n");

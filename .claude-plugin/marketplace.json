@@ -4,7 +4,7 @@
   "description": "Grounded D&D 2024 character-builder skills for Claude Code — build, check, look up, optimize and help, all rules-verified by a deterministic engine (zero hallucinated rules).",
   "owner": {
     "name": "Dungeons & Skills contributors",
-    "url": "https://github.com/mlabarrere/dungeons-and-skills-srd"
+    "url": "https://github.com/mlabarrere/dungeons-and-skills"
   },
   "plugins": [
     {
@@ -14,10 +14,10 @@
       "category": "productivity",
       "author": {
         "name": "Dungeons & Skills contributors",
-        "url": "https://github.com/mlabarrere/dungeons-and-skills-srd"
+        "url": "https://github.com/mlabarrere/dungeons-and-skills"
       },
       "source": "./",
-      "homepage": "https://github.com/mlabarrere/dungeons-and-skills-srd",
+      "homepage": "https://github.com/mlabarrere/dungeons-and-skills",
       "license": "MIT",
       "keywords": [
         "claude-skills",
