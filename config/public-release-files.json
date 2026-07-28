@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "files": [
     ".gitignore",
+    ".gitattributes",
     "AGENTS.md",
     "ATTRIBUTION.md",
     "CHANGELOG.md",
