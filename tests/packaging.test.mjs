@@ -3,12 +3,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
-  cpSync, existsSync, readFileSync, mkdtempSync, mkdirSync, readdirSync, rmSync,
+  cpSync, existsSync, readFileSync, mkdtempSync, mkdirSync, realpathSync, readdirSync, rmSync,
 } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
+import { dirname, isAbsolute, join, relative } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const has = (p) => existsSync(join(ROOT, p));
@@ -39,6 +39,10 @@ test("LICENSE is MIT and flags the data caveat", () => {
 });
 
 const SKILL = "dungeons-and-skills";
+const isInside = (root, candidate) => {
+  const rel = relative(realpathSync(root), realpathSync(candidate));
+  return rel === "" || (!rel.startsWith("..") && !isAbsolute(rel));
+};
 
 function assertAutonomousSkill(skillRoot, fixtures, label) {
   for (const rel of [
@@ -54,8 +58,8 @@ function assertAutonomousSkill(skillRoot, fixtures, label) {
   const report = JSON.parse(doctor.stdout);
   assert.equal(report.healthy, true);
   assert.equal(report.catalogProfile, "srd-5.2");
-  assert.ok(report.engine.startsWith(skillRoot), `${label} resolved an external engine: ${report.engine}`);
-  assert.ok(report.catalogPath.startsWith(skillRoot), `${label} resolved an external catalog: ${report.catalogPath}`);
+  assert.ok(isInside(skillRoot, report.engine), `${label} resolved an external engine: ${report.engine}`);
+  assert.ok(isInside(skillRoot, report.catalogPath), `${label} resolved an external catalog: ${report.catalogPath}`);
 
   const source = join(fixtures, `${label.replace(/[^a-z0-9]+/gi, "-")}.answers.json`);
   cpSync(join(ROOT, "examples", "dwarf-fighter.answers.json"), source);
