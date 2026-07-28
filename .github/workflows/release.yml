@@ -4,6 +4,12 @@ on:
   push:
     tags:
       - "v*-beta.*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing beta tag to verify or publish
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -11,8 +17,12 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.RELEASE_TAG }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -24,9 +34,24 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" \
-            "$RUNNER_TEMP/release/dungeons-and-skills-${GITHUB_REF_NAME}.zip" \
-            "$RUNNER_TEMP/release/dungeons-and-skills-${GITHUB_REF_NAME}.tar.gz" \
-            "$RUNNER_TEMP/release/SHA256SUMS" \
-            "$RUNNER_TEMP/release/release-manifest.json" \
-            --prerelease --generate-notes --verify-tag
+          assets=(
+            "$RUNNER_TEMP/release/dungeons-and-skills-${RELEASE_TAG}.zip"
+            "$RUNNER_TEMP/release/dungeons-and-skills-${RELEASE_TAG}.tar.gz"
+            "$RUNNER_TEMP/release/SHA256SUMS"
+            "$RUNNER_TEMP/release/release-manifest.json"
+          )
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            downloaded="$RUNNER_TEMP/existing-release"
+            mkdir "$downloaded"
+            gh release download "$RELEASE_TAG" --dir "$downloaded"
+            for asset in "${assets[@]}"; do
+              cmp --silent "$asset" "$downloaded/$(basename "$asset")" || {
+                echo "::error::Published asset differs from the reproducible build: $(basename "$asset")"
+                exit 1
+              }
+            done
+            echo "Existing immutable release matches the reproducible build."
+          else
+            gh release create "$RELEASE_TAG" "${assets[@]}" \
+              --prerelease --generate-notes --verify-tag
+          fi

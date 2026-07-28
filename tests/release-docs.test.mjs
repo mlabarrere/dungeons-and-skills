@@ -54,3 +54,14 @@ test("release readiness is a validation-only OS and Node matrix", () => {
   assert.ok(existsSync(join(ROOT, "playwright.config.mjs")));
   assert.ok(existsSync(join(ROOT, "tests", "browser", "standalone-sheet.spec.mjs")));
 });
+
+test("tag publishing is immutable and safely rerunnable", () => {
+  const workflow = read(".github/workflows/release.yml");
+  assert.match(workflow, /workflow_dispatch:/);
+  assert.match(workflow, /gh release view "\$RELEASE_TAG"/);
+  assert.match(workflow, /gh release download "\$RELEASE_TAG"/);
+  assert.match(workflow, /cmp --silent/);
+  assert.match(workflow, /gh release create "\$RELEASE_TAG"/);
+  assert.doesNotMatch(workflow, /release upload[\s\S]*--clobber/,
+    "an immutable beta must never overwrite an existing asset");
+});
