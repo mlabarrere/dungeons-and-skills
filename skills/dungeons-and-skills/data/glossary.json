@@ -1,0 +1,762 @@
+[
+  {
+    "id": "a-terre",
+    "label": "A terre Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "abri",
+    "label": "Abri",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "action",
+    "label": "Action Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "action-bonus",
+    "label": "Action Bonus",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "agrippe",
+    "label": "Agrippe Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "alignement",
+    "label": "Alignement",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "allie",
+    "label": "Allie",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "allonge",
+    "label": "Allonge",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "amical",
+    "label": "Amical Attitude",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "arme",
+    "label": "Arme",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "armes-improvisees",
+    "label": "Armes improvisees",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "arrondis-a-l-inferieur",
+    "label": "Arrondis a l'inferieur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "asphyxie",
+    "label": "Asphyxie Danger",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "assommer-une-creature",
+    "label": "Assommer une creature",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "assourdi",
+    "label": "Assourdi Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "attaque",
+    "label": "Attaque Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "attaque-a-mains-nues",
+    "label": "Attaque a mains nues",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "attaque-d-arme",
+    "label": "Attaque d'arme",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "attaque-de-sort",
+    "label": "Attaque de sort",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "attaques-d-opportunite",
+    "label": "Attaques d'Opportunite",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "attitude",
+    "label": "Attitude",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "avantage",
+    "label": "Avantage",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "aventure",
+    "label": "Aventure",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "aveugle",
+    "label": "Aveugle Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "bris-des-objets",
+    "label": "Bris des objets",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "campagne",
+    "label": "Campagne",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "capacite-de-charge",
+    "label": "Capacite de charge",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "categorie-de-taille",
+    "label": "Categorie de taille",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "charme",
+    "label": "Charme Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "chute",
+    "label": "Chute Danger",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "cible",
+    "label": "Cible",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "classe-d-armure",
+    "label": "Classe d'armure",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "competence",
+    "label": "Competence",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "concentration",
+    "label": "Concentration",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "cone",
+    "label": "Cone Zone d'effet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "coup-critique",
+    "label": "Coup critique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "creature",
+    "label": "Creature",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "cube",
+    "label": "Cube Zone d'effet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "cylindre",
+    "label": "Cylindre Zone d'effet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "danger",
+    "label": "Danger",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "degats",
+    "label": "Degats",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "degre-de-difficulte",
+    "label": "Degre de difficulte",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "des-de-vie",
+    "label": "Des de vie",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "desavantage",
+    "label": "Desavantage",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "desengagement",
+    "label": "Desengagement Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "deshydratation",
+    "label": "Deshydratation Danger",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "effet-magique",
+    "label": "Effet magique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "effets-simultanes",
+    "label": "Effets simultanes",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "effraye",
+    "label": "Effraye Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "emanation",
+    "label": "Emanation Zone d'effet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "embrasement",
+    "label": "Embrasement Danger",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "empoisonne",
+    "label": "Empoisonne Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "en-peril",
+    "label": "En peril",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "ennemi",
+    "label": "Ennemi",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "entrave",
+    "label": "Entrave Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "epuisement",
+    "label": "Epuisement Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "escalade",
+    "label": "Escalade",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "espace-inoccupe",
+    "label": "Espace inoccupe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "espace-occupe",
+    "label": "Espace occupe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "esquive",
+    "label": "Esquive Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "etat",
+    "label": "Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "etourdi",
+    "label": "Etourdi Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "etude",
+    "label": "Etude Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "expertise",
+    "label": "Expertise",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "facteur-de-puissance",
+    "label": "Facteur de puissance",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "fiche-de-personnage",
+    "label": "Fiche de personnage",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "focaliseur-d-incantation",
+    "label": "Focaliseur d'incantation",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "formation-aux-armures",
+    "label": "Formation aux armures",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "furtivite",
+    "label": "Furtivite Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "harmonisation",
+    "label": "Harmonisation",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "hostile",
+    "label": "Hostile Attitude",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "illusions",
+    "label": "Illusions",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "immunite",
+    "label": "Immunite",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "inconscient",
+    "label": "Inconscient Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "indifferent",
+    "label": "Indifferent Attitude",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "influence",
+    "label": "Influence Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "initiative",
+    "label": "Initiative",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "inspiration-heroique",
+    "label": "Inspiration heroique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "intention",
+    "label": "Intention Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "invisible",
+    "label": "Invisible Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "jet-d-attaque",
+    "label": "Jet d'attaque",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "jet-de-degats",
+    "label": "Jet de degats",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "jet-de-sauvegarde",
+    "label": "Jet de sauvegarde",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "jet-de-sauvegarde-contre-la-mort",
+    "label": "Jet de sauvegarde contre la mort",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "js",
+    "label": "JS",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "ligne",
+    "label": "Ligne Zone d'effet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "lumiere-faible",
+    "label": "Lumiere faible",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "lumiere-vive",
+    "label": "Lumiere vive",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "lutte",
+    "label": "Lutte",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "magie",
+    "label": "Magie Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "maitrise",
+    "label": "Maitrise",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "maledictions",
+    "label": "Maledictions",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "malnutrition",
+    "label": "Malnutrition Danger",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "metamorphes",
+    "label": "Metamorphes",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "monstre",
+    "label": "Monstre",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "mort",
+    "label": "Mort",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "nage",
+    "label": "Nage",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "neutralise",
+    "label": "Neutralise Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "objet",
+    "label": "Objet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "observation",
+    "label": "Observation Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "par-jour",
+    "label": "Par jour",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "paralyse",
+    "label": "Paralyse Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "perception-des-vibrations",
+    "label": "Perception des vibrations",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "perception-passive",
+    "label": "Perception passive",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "personnage-joueur",
+    "label": "Personnage joueur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "personnage-non-joueur",
+    "label": "Personnage non-joueur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "petrifie",
+    "label": "Petrifie Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "pointe",
+    "label": "Pointe Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "points-d-experience",
+    "label": "Points d'experience",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "points-de-vie",
+    "label": "Points de vie",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "points-de-vie-temporaires",
+    "label": "Points de vie temporaires",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "possession",
+    "label": "Possession",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "profil-de-jeu",
+    "label": "Profil de jeu",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "reaction",
+    "label": "Reaction",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "rencontre",
+    "label": "Rencontre",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "repos-court",
+    "label": "Repos court",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "repos-long",
+    "label": "Repos long",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "reptation",
+    "label": "Reptation",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "resistance",
+    "label": "Resistance",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "rituel",
+    "label": "Rituel",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "saut",
+    "label": "Saut",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "saut-en-hauteur",
+    "label": "Saut en hauteur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "saut-en-longueur",
+    "label": "Saut en longueur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "seuil-de-degats",
+    "label": "Seuil de degats",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "soins",
+    "label": "Soins",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "sort",
+    "label": "Sort",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "sort-mineur",
+    "label": "Sort mineur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "soutien",
+    "label": "Soutien Action",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "sphere",
+    "label": "Sphere Zone d'effet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "stabilise",
+    "label": "Stabilise",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "surprise",
+    "label": "Surprise",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "telepathie",
+    "label": "Telepathie",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "teleportation",
+    "label": "Teleportation",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "tenebres",
+    "label": "Tenebres",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "terrain-difficile",
+    "label": "Terrain difficile",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "test-de-caracteristique",
+    "label": "Test de caracteristique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "test-d20",
+    "label": "Test d20",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "type-de-creature",
+    "label": "Type de creature",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "visibilite-nulle",
+    "label": "Visibilite nulle",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "visibilite-reduite",
+    "label": "Visibilite reduite",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vision-aveugle",
+    "label": "Vision aveugle",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vision-dans-le-noir",
+    "label": "Vision dans le noir",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vision-lucide",
+    "label": "Vision lucide",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vitesse",
+    "label": "Vitesse",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vitesse-d-escalade",
+    "label": "Vitesse d'escalade",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vitesse-de-fouissement",
+    "label": "Vitesse de fouissement",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vitesse-de-nage",
+    "label": "Vitesse de nage",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vitesse-de-vol",
+    "label": "Vitesse de vol",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vol",
+    "label": "Vol",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vol-stationnaire",
+    "label": "Vol stationnaire",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "vulnerabilite",
+    "label": "Vulnerabilite",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "zone-d-effet",
+    "label": "Zone d'effet",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  }
+]

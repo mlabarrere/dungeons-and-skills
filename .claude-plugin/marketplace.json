@@ -9,8 +9,8 @@
   "plugins": [
     {
       "name": "dungeons-and-skills",
-      "version": "0.2.0-beta.1",
-      "description": "Dungeons & Skills — grounded D&D 2024 character-builder skills (build, check, lookup, optimize, help).",
+      "version": "0.2.0-beta.2",
+      "description": "Dungeons & Skills — one autonomous D&D 2024 skill for building, checking, lookup, optimization and help.",
       "category": "productivity",
       "author": {
         "name": "Dungeons & Skills contributors",
@@ -29,7 +29,6 @@
         "grounding",
         "anti-hallucination"
       ],
-      "icon": "./assets/logo.svg",
       "tags": [
         "community-managed"
       ]

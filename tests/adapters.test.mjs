@@ -23,7 +23,7 @@ test("check-rule-copies: adapters and invariants aligned", () => {
 });
 
 test("check-rule-copies rejects an inverted GROUNDING block", () => {
-  const skillPath = join(ROOT, "skills/dnd-build/SKILL.md");
+  const skillPath = join(ROOT, "skills/dungeons-and-skills/SKILL.md");
   const original = readFileSync(skillPath, "utf8");
   // Normalize to LF, replace only the intro paragraph (between the ## header and
   // the first bullet), keeping the bullet list and all reference links intact so
@@ -50,7 +50,7 @@ test("check-rule-copies rejects an inverted GROUNDING block", () => {
 });
 
 test("check-rule-copies rejects a GROUNDING opening quoted inside prose", () => {
-  const skillPath = join(ROOT, "skills/dnd-build/SKILL.md");
+  const skillPath = join(ROOT, "skills/dungeons-and-skills/SKILL.md");
   const original = readFileSync(skillPath, "utf8");
   const norm = original.replace(/\r\n/g, "\n");
   // The `includes()` bypass: keep the phrase but embed it in a sentence that negates it.

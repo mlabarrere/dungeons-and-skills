@@ -1,7 +1,7 @@
 {
   "name": "dungeons-and-skills",
-  "version": "0.2.0-beta.1",
-  "description": "D&D 2024 (5.5) character skills — assistant, build, check, lookup, optimize, help — rules-verified by a deterministic engine, grounded in a bundled catalog, never the model's memory.",
+  "version": "0.2.0-beta.2",
+  "description": "D&D 2024 (5.5) unified character skill — build, check, lookup, optimize and help — rules-verified by a bundled deterministic engine and SRD catalog.",
   "author": {
     "name": "Dungeons & Skills contributors"
   },
@@ -17,7 +17,6 @@
     "grounding",
     "anti-hallucination"
   ],
-  "icon": "./assets/logo.svg",
   "skills": "./skills",
   "commands": "./commands"
 }

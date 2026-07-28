@@ -30,13 +30,15 @@ test("host support uses certified, compatible and instruction-only statuses", ()
   }
 });
 
-test("public installation docs do not claim an npm or marketplace release", () => {
+test("public installation docs distinguish standard skill install, native plugin and deferred registries", () => {
   const publicDocs = ["README.md", "README.fr.md", "INSTALL.md", "KNOWN_LIMITATIONS.md"]
     .map(read).join("\n");
-  assert.match(publicDocs, /no npm-registry release|no npm-registry package|ni publication sur le registre npm/i);
-  assert.match(publicDocs, /no marketplace listing|ni listing marketplace/i);
-  assert.doesNotMatch(publicDocs, /\/plugin\s+marketplace\s+add/i);
-  assert.doesNotMatch(publicDocs, /\/plugin\s+install/i);
+  assert.match(publicDocs, /no dedicated npm package|pas encore de paquet npm dédié/i);
+  assert.match(publicDocs, /no central listing|not yet listed in a central|marketplace tierce/i);
+  assert.match(publicDocs, /npx skills add mlabarrere\/dungeons-and-skills --skill dungeons-and-skills/);
+  const install = read("INSTALL.md");
+  assert.match(install, /\/plugin\s+marketplace\s+add\s+mlabarrere\/dungeons-and-skills/i);
+  assert.match(install, /\/plugin\s+install\s+dungeons-and-skills@dungeons-and-skills/i);
 });
 
 test("release readiness is a validation-only OS and Node matrix", () => {

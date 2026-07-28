@@ -3,6 +3,6 @@ description: Look up a D&D 2024 (5.5) spell/feat/class/background from the catal
 argument-hint: "<term> [fr|en]"
 ---
 
-Use the `dnd-lookup` skill. Answer only from the bundled catalog (`data/*.json`), cite the
-source (`ref` + `source`), and say "Manquant documentaire" if the term is not in the catalog.
-Do NOT trust your training data. Query: $ARGUMENTS.
+Use the `dungeons-and-skills` skill and follow its catalog-lookup workflow. Cite the bundled
+entry's provenance, and say "Manquant documentaire" for any absent field or entry. Do NOT
+trust your training data. Query: $ARGUMENTS.

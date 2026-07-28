@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dungeons & Skills"
+  short_description: "Build and audit grounded D&D 2024 characters"
+  default_prompt: "Use $dungeons-and-skills to guide me through a grounded level-1 D&D 2024 character build."

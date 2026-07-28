@@ -59,6 +59,7 @@ for (const directory of config.directories) {
 const privateMarkers = [
   /(?:^|\/)\.claude\/worktrees(?:\/|$)/i,
   /(?:^|\/)docs\/(?:html|characters|_analysis)(?:\/|$)/i,
+  /(?:^|\/)feature-labels\.en(?:\/|$)/i,
   /(?:^|\/)(?:private[-_.]|proprietary[-_.])/i,
   /(?:^|\/)(?:work|node_modules|release)(?:\/|$)/i,
 ];

@@ -1,0 +1,4307 @@
+{
+  "classes": {
+    "druid": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sorts"
+            },
+            {
+              "name": "Druidique"
+            },
+            {
+              "name": "Ordre primitif"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 4,
+          "slots": {
+            "1": 2
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Compagnon sauvage"
+            },
+            {
+              "name": "Forme sauvage"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 5,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "forme-sauvage": 2
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe de Druide"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "forme-sauvage": 2
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "forme-sauvage": 2
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Regain sauvage"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "forme-sauvage": 2
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Fureur elementaire"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Fureur elementaire amelioree"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "forme-sauvage": 3
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 19,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "forme-sauvage": 4
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Incantation animale"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 20,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "forme-sauvage": 4
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 21,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "forme-sauvage": 4
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Archidruide"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 22,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 2,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "forme-sauvage": 4
+          }
+        }
+      ]
+    },
+    "barbarian": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Rage"
+            },
+            {
+              "name": "Bottes d'arme"
+            },
+            {
+              "name": "Defense sans armure"
+            }
+          ],
+          "counters": {
+            "rages": 2,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 2
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sens du danger"
+            },
+            {
+              "name": "Temerite"
+            }
+          ],
+          "counters": {
+            "rages": 2,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 2
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Savoir primal"
+            },
+            {
+              "name": "Sous-classe de Barbare"
+            }
+          ],
+          "counters": {
+            "rages": 3,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 2
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "counters": {
+            "rages": 3,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 2
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Attaque supplementaire"
+            },
+            {
+              "name": "Deplacement rapide"
+            }
+          ],
+          "counters": {
+            "rages": 3,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "rages": 4,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Bond instinctif"
+            },
+            {
+              "name": "Instinct sauvage"
+            }
+          ],
+          "counters": {
+            "rages": 4,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "rages": 4,
+            "degats-de-rage": 2,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Coup brutal"
+            }
+          ],
+          "counters": {
+            "rages": 4,
+            "degats-de-rage": 3,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "rages": 4,
+            "degats-de-rage": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Rage implacable"
+            }
+          ],
+          "counters": {
+            "rages": 4,
+            "degats-de-rage": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "rages": 5,
+            "degats-de-rage": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Coup brutal ameliore"
+            }
+          ],
+          "counters": {
+            "rages": 5,
+            "degats-de-rage": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "rages": 5,
+            "degats-de-rage": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Rage persistante"
+            }
+          ],
+          "counters": {
+            "rages": 5,
+            "degats-de-rage": 4,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "rages": 5,
+            "degats-de-rage": 4,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Coup brutal ameliore"
+            }
+          ],
+          "counters": {
+            "rages": 6,
+            "degats-de-rage": 4,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Puissance indomptable"
+            }
+          ],
+          "counters": {
+            "rages": 6,
+            "degats-de-rage": 4,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "counters": {
+            "rages": 6,
+            "degats-de-rage": 4,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Champion primitif",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "counters": {
+            "rages": 6,
+            "degats-de-rage": 4,
+            "bottes-d-arme": 4
+          }
+        }
+      ]
+    },
+    "bard": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Inspiration bardique"
+            },
+            {
+              "name": "Sorts"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 4,
+          "slots": {
+            "1": 2
+          },
+          "counters": {
+            "de-bardique": "d6"
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Expertise"
+            },
+            {
+              "name": "Touche-a-tout"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 5,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "de-bardique": "d6"
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe de Barde"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "de-bardique": "d6"
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "de-bardique": "d6"
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Source d'inspiration"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "de-bardique": "d8"
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "de-bardique": "d8"
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Contre-charme"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "de-bardique": "d8"
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "de-bardique": "d8"
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Expertise"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "de-bardique": "d8"
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Secrets magiques"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "de-bardique": "d10"
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "de-bardique": "d10"
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "de-bardique": "d10"
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "de-bardique": "d10"
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "de-bardique": "d10"
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "de-bardique": "d12"
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "de-bardique": "d12"
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 19,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "de-bardique": "d12"
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Inspiration superieure"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 20,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "de-bardique": "d12"
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 21,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "de-bardique": "d12"
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Verbe de la creation"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 22,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 2,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "de-bardique": "d12"
+          }
+        }
+      ]
+    },
+    "cleric": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sorts"
+            },
+            {
+              "name": "Ordre divin"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 4,
+          "slots": {
+            "1": 2
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Conduit divin"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 5,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe de Clerc"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Calcination de Mort-vivant"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Impacts benis"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Intervention divine"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Impacts benis ameliores"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 19,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 20,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "conduit-divin": 4
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 21,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "conduit-divin": 4
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Intervention divine supreme"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 22,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 2,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "conduit-divin": 4
+          }
+        }
+      ]
+    },
+    "sorcerer": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sorts"
+            },
+            {
+              "name": "Sorcellerie innee"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 2,
+          "slots": {
+            "1": 2
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Metamagie"
+            },
+            {
+              "name": "Reserve arcanique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 4,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "points-de-sorcellerie": 2
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe d'Ensorceleur"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "points-de-sorcellerie": 3
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "points-de-sorcellerie": 4
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Restauration ensorcelee"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "points-de-sorcellerie": 5
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "points-de-sorcellerie": 6
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Sorcellerie incarnee"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 7
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "points-de-sorcellerie": 8
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 6,
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 9
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Metamagie"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "points-de-sorcellerie": 10
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 6,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 11
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 12
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 6,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 13
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 14
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 6,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 15
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 16
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Metamagie"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 19,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 17
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 20,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 18
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 21,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 19
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Apotheose arcanique"
+            }
+          ],
+          "cantripsKnown": 6,
+          "preparedKnown": 22,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 2,
+            "8": 1,
+            "9": 1
+          },
+          "counters": {
+            "points-de-sorcellerie": 20
+          }
+        }
+      ]
+    },
+    "fighter": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Bottes d'arme"
+            },
+            {
+              "name": "Second souffle"
+            },
+            {
+              "name": "Style de combat"
+            }
+          ],
+          "counters": {
+            "second-souffle": 2,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Fougue (une utilisation)"
+            },
+            {
+              "name": "Sens tactique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 2,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe de Guerrier"
+            }
+          ],
+          "counters": {
+            "second-souffle": 2,
+            "bottes-d-arme": 3
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "counters": {
+            "second-souffle": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Attaque supplementaire"
+            },
+            {
+              "name": "Decalage tactique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "second-souffle": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Botte tactique"
+            },
+            {
+              "name": "Inflexible (une utilisation)"
+            }
+          ],
+          "counters": {
+            "second-souffle": 3,
+            "bottes-d-arme": 4
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 5
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Double attaque supplementaire"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 5
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 5
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Attaques avisees"
+            },
+            {
+              "name": "Inflexible (deux utilisations)"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 5
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 5
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 5
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 6
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Fougue (deux utilisations)"
+            },
+            {
+              "name": "Inflexible (trois utilisations)"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 6
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 6
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 6
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Triple attaque supplementaire"
+            }
+          ],
+          "counters": {
+            "second-souffle": 4,
+            "bottes-d-arme": 6
+          }
+        }
+      ]
+    },
+    "wizard": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sorts"
+            },
+            {
+              "name": "Savoir rituel"
+            },
+            {
+              "name": "Restauration magique"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 4,
+          "slots": {
+            "1": 2
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Erudition"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 5,
+          "slots": {
+            "1": 3
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe de Magicien"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Memorisation de sort"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 16,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 17,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 18,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 19,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 21,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [],
+          "cantripsKnown": 5,
+          "preparedKnown": 22,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Maitrise des sorts"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 23,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 24,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Sorts de predilection"
+            }
+          ],
+          "cantripsKnown": 5,
+          "preparedKnown": 25,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 3,
+            "6": 2,
+            "7": 2,
+            "8": 1,
+            "9": 1
+          }
+        }
+      ]
+    },
+    "monk": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Arts martiaux"
+            },
+            {
+              "name": "Defense sans armure"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d6"
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Credo du moine"
+            },
+            {
+              "name": "Deplacement sans armure"
+            },
+            {
+              "name": "Metabolisme surnaturel"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d6",
+            "points-de-credo": 2,
+            "deplacement-sans-armure": "+3 m"
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Deviation d'assaut"
+            },
+            {
+              "name": "Sous-classe de Moine"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d6",
+            "points-de-credo": 3,
+            "deplacement-sans-armure": "+3 m"
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            },
+            {
+              "name": "Chute ralentie"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d6",
+            "points-de-credo": 4,
+            "deplacement-sans-armure": "+3 m"
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Attaque supplementaire"
+            },
+            {
+              "name": "Frappe etourdissante"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d8",
+            "points-de-credo": 5,
+            "deplacement-sans-armure": "+3 m"
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            },
+            {
+              "name": "Frappes renforcees"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d8",
+            "points-de-credo": 6,
+            "deplacement-sans-armure": "+4,50 m"
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Esquive totale"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d8",
+            "points-de-credo": 7,
+            "deplacement-sans-armure": "+4,50 m"
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d8",
+            "points-de-credo": 8,
+            "deplacement-sans-armure": "+4,50 m"
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Mouvement acrobatique"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d8",
+            "points-de-credo": 9,
+            "deplacement-sans-armure": "+4,50 m"
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Autosubsistance"
+            },
+            {
+              "name": "Credo accru"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d8",
+            "points-de-credo": 10,
+            "deplacement-sans-armure": "+6 m"
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d10",
+            "points-de-credo": 11,
+            "deplacement-sans-armure": "+6 m"
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d10",
+            "points-de-credo": 12,
+            "deplacement-sans-armure": "+6 m"
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Parade energetique"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d10",
+            "points-de-credo": 13,
+            "deplacement-sans-armure": "+6 m"
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Survivant discipline"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d10",
+            "points-de-credo": 14,
+            "deplacement-sans-armure": "+7,50 m"
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Credo paracheve"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d10",
+            "points-de-credo": 15,
+            "deplacement-sans-armure": "+7,50 m"
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d10",
+            "points-de-credo": 16,
+            "deplacement-sans-armure": "+7,50 m"
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d12",
+            "points-de-credo": 17,
+            "deplacement-sans-armure": "+7,50 m"
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Defense superieure"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d12",
+            "points-de-credo": 18,
+            "deplacement-sans-armure": "+9 m"
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d12",
+            "points-de-credo": 19,
+            "deplacement-sans-armure": "+9 m"
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Esprit et corps"
+            }
+          ],
+          "counters": {
+            "arts-martiaux": "1d12",
+            "points-de-credo": 20,
+            "deplacement-sans-armure": "+9 m"
+          }
+        }
+      ]
+    },
+    "warlock": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Magie de pacte"
+            },
+            {
+              "name": "Manifestations occultes"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 2,
+          "pact": {
+            "slots": 1,
+            "level": 1
+          },
+          "counters": {
+            "manifestations": 1
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Rouerie magique"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 3,
+          "pact": {
+            "slots": 2,
+            "level": 1
+          },
+          "counters": {
+            "manifestations": 3
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe d'Occultiste"
+            }
+          ],
+          "cantripsKnown": 2,
+          "preparedKnown": 4,
+          "pact": {
+            "slots": 2,
+            "level": 2
+          },
+          "counters": {
+            "manifestations": 3
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 5,
+          "pact": {
+            "slots": 2,
+            "level": 2
+          },
+          "counters": {
+            "manifestations": 3
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [],
+          "cantripsKnown": 3,
+          "preparedKnown": 6,
+          "pact": {
+            "slots": 2,
+            "level": 3
+          },
+          "counters": {
+            "manifestations": 5
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 7,
+          "pact": {
+            "slots": 2,
+            "level": 3
+          },
+          "counters": {
+            "manifestations": 5
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [],
+          "cantripsKnown": 3,
+          "preparedKnown": 8,
+          "pact": {
+            "slots": 2,
+            "level": 4
+          },
+          "counters": {
+            "manifestations": 6
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 9,
+          "pact": {
+            "slots": 2,
+            "level": 4
+          },
+          "counters": {
+            "manifestations": 6
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Communication avec le protecteur"
+            }
+          ],
+          "cantripsKnown": 3,
+          "preparedKnown": 10,
+          "pact": {
+            "slots": 2,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 7
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 10,
+          "pact": {
+            "slots": 2,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 7
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Arcanum mystique (sort du 6e niveau)"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 11,
+          "pact": {
+            "slots": 3,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 7
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 11,
+          "pact": {
+            "slots": 3,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 8
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Arcanum mystique (sort du 7e niveau)"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 12,
+          "pact": {
+            "slots": 3,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 8
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 12,
+          "pact": {
+            "slots": 3,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 8
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Arcanum mystique (sort du 8e niveau)"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 13,
+          "pact": {
+            "slots": 3,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 9
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 13,
+          "pact": {
+            "slots": 3,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 9
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Arcanum mystique (sort du 9e niveau)"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 14,
+          "pact": {
+            "slots": 4,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 9
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [],
+          "cantripsKnown": 4,
+          "preparedKnown": 14,
+          "pact": {
+            "slots": 4,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 10
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 15,
+          "pact": {
+            "slots": 4,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 10
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Maitre de l'occulte"
+            }
+          ],
+          "cantripsKnown": 4,
+          "preparedKnown": 15,
+          "pact": {
+            "slots": 4,
+            "level": 5
+          },
+          "counters": {
+            "manifestations": 10
+          }
+        }
+      ]
+    },
+    "paladin": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Bottes d'arme"
+            },
+            {
+              "name": "Imposition des mains"
+            },
+            {
+              "name": "Sorts"
+            }
+          ],
+          "preparedKnown": 2,
+          "slots": {
+            "1": 2
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Chatiment de paladin"
+            },
+            {
+              "name": "Style de combat"
+            }
+          ],
+          "preparedKnown": 3,
+          "slots": {
+            "1": 2
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Conduit divin"
+            },
+            {
+              "name": "Sous-classe de Paladin"
+            }
+          ],
+          "preparedKnown": 4,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "preparedKnown": 5,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Attaque supplementaire"
+            },
+            {
+              "name": "Fidele destrier",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aura de protection",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Abjuration d'ennemis"
+            }
+          ],
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aura de courage"
+            }
+          ],
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "conduit-divin": 2
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Frappes radiantes"
+            }
+          ],
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [],
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Toucher reparateur"
+            }
+          ],
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [],
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Aura etendue"
+            }
+          ],
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "conduit-divin": 3
+          }
+        }
+      ]
+    },
+    "ranger": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sorts"
+            },
+            {
+              "name": "Bottes d'arme"
+            },
+            {
+              "name": "Ennemi jure"
+            }
+          ],
+          "preparedKnown": 2,
+          "slots": {
+            "1": 2
+          },
+          "counters": {
+            "ennemi-jure": 2
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Fin explorateur"
+            },
+            {
+              "name": "Style de combat"
+            }
+          ],
+          "preparedKnown": 3,
+          "slots": {
+            "1": 2
+          },
+          "counters": {
+            "ennemi-jure": 2
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe de rodeur"
+            }
+          ],
+          "preparedKnown": 4,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "ennemi-jure": 2
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "preparedKnown": 5,
+          "slots": {
+            "1": 3
+          },
+          "counters": {
+            "ennemi-jure": 2
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Attaque supplementaire"
+            }
+          ],
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "ennemi-jure": 3
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Arpenteur"
+            }
+          ],
+          "preparedKnown": 6,
+          "slots": {
+            "1": 4,
+            "2": 2
+          },
+          "counters": {
+            "ennemi-jure": 3
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "ennemi-jure": 3
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "preparedKnown": 7,
+          "slots": {
+            "1": 4,
+            "2": 3
+          },
+          "counters": {
+            "ennemi-jure": 3
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Expertise"
+            }
+          ],
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "ennemi-jure": 4
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Infatigable"
+            }
+          ],
+          "preparedKnown": 9,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 2
+          },
+          "counters": {
+            "ennemi-jure": 4
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "ennemi-jure": 4
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "preparedKnown": 10,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3
+          },
+          "counters": {
+            "ennemi-jure": 4
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Chasseur implacable",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "ennemi-jure": 5
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Voile de la nature"
+            }
+          ],
+          "preparedKnown": 11,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 1
+          },
+          "counters": {
+            "ennemi-jure": 5
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "ennemi-jure": 5
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "preparedKnown": 12,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 2
+          },
+          "counters": {
+            "ennemi-jure": 5
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Chasseur precis"
+            }
+          ],
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "ennemi-jure": 6
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Sens sauvages"
+            }
+          ],
+          "preparedKnown": 14,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 1
+          },
+          "counters": {
+            "ennemi-jure": 6
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "ennemi-jure": 6
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Tueur implacable"
+            }
+          ],
+          "preparedKnown": 15,
+          "slots": {
+            "1": 4,
+            "2": 3,
+            "3": 3,
+            "4": 3,
+            "5": 2
+          },
+          "counters": {
+            "ennemi-jure": 6
+          }
+        }
+      ]
+    },
+    "rogue": {
+      "source": "SRD 5.2.1 (CC-BY-4.0)",
+      "levels": [
+        {
+          "level": 1,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Argot des voleurs"
+            },
+            {
+              "name": "Attaque sournoise"
+            },
+            {
+              "name": "Bottes d'arme"
+            },
+            {
+              "name": "Expertise"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "1d6"
+          }
+        },
+        {
+          "level": 2,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Ruse"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "1d6"
+          }
+        },
+        {
+          "level": 3,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Sous-classe de Roublard"
+            },
+            {
+              "name": "Visee appliquee"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "2d6"
+          }
+        },
+        {
+          "level": 4,
+          "pb": 2,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique",
+              "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "2d6"
+          }
+        },
+        {
+          "level": 5,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Esquive instinctive"
+            },
+            {
+              "name": "Frappe malicieuse"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "3d6"
+          }
+        },
+        {
+          "level": 6,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Expertise"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "3d6"
+          }
+        },
+        {
+          "level": 7,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Esquive totale"
+            },
+            {
+              "name": "Savoir-faire"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "4d6"
+          }
+        },
+        {
+          "level": 8,
+          "pb": 3,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "4d6"
+          }
+        },
+        {
+          "level": 9,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "5d6"
+          }
+        },
+        {
+          "level": 10,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "5d6"
+          }
+        },
+        {
+          "level": 11,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Frappe malicieuse amelioree"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "6d6"
+          }
+        },
+        {
+          "level": 12,
+          "pb": 4,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "6d6"
+          }
+        },
+        {
+          "level": 13,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "7d6"
+          }
+        },
+        {
+          "level": 14,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Coups vicieux"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "7d6"
+          }
+        },
+        {
+          "level": 15,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Esprit fuyant"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "8d6"
+          }
+        },
+        {
+          "level": 16,
+          "pb": 5,
+          "features": [
+            {
+              "name": "Amelioration de caracteristique"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "8d6"
+          }
+        },
+        {
+          "level": 17,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Aptitude de sous-classe"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "9d6"
+          }
+        },
+        {
+          "level": 18,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Insaisissable"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "9d6"
+          }
+        },
+        {
+          "level": 19,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Faveur epique"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "10d6"
+          }
+        },
+        {
+          "level": 20,
+          "pb": 6,
+          "features": [
+            {
+              "name": "Coup de chance"
+            }
+          ],
+          "counters": {
+            "attaque-sournoise": "10d6"
+          }
+        }
+      ]
+    }
+  }
+}

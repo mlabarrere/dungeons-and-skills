@@ -43,14 +43,12 @@ value makes it illegal. Therefore:
 Answer and display in the user's language (one of: en, fr, de, es, it, ja, ru, zh, ar); English entity names come from
 `data/labels.en.json`.
 
-## Skills
+## Skill
 
-- `dnd-build` — guided level-1 character creation.
-- `dnd-check` — validate/audit an existing sheet, flag rules errors (the "sheet checker").
-- `dnd-lookup` — look up a spell/feat/class rule from the catalog only, cite the source.
-- `dnd-optimize` — optimal build under arbitrary constraints (concept locks, "this spell
-  asap"), scored by the engine, milestones cited from the 1–20 progression tables.
-- `dnd-help` — how the family works and what grounding means.
+- `dungeons-and-skills` — the autonomous entry point for guided level-1 creation, sheet
+  audit, catalog-only lookup, constrained optimization and diagnostics. Claude Code keeps
+  `/dnd-build`, `/dnd-check`, `/dnd-lookup`, `/dnd-optimize` and `/dnd-help` as explicit
+  command aliases to this one skill.
 <!-- END:dnd-builder -->
 
 <!-- BEGIN:nextjs-agent-rules -->

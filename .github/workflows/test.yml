@@ -66,15 +66,28 @@ jobs:
           npm test
           npm run skill:check
           npm pack --dry-run --json
+      - name: Install with the standard Agent Skills CLI
+        working-directory: ${{ runner.temp }}
+        run: |
+          mkdir "$RUNNER_TEMP/npx-skills-project"
+          cd "$RUNNER_TEMP/npx-skills-project"
+          npx -y skills add "$RUNNER_TEMP/dungeons-and-skills-srd" --skill dungeons-and-skills --agent codex --copy -y
+          node ".agents/skills/dungeons-and-skills/scripts/dnd.mjs" doctor --json
+          cp "$RUNNER_TEMP/dungeons-and-skills-srd/examples/dwarf-fighter.answers.json" .
+          node ".agents/skills/dungeons-and-skills/scripts/dnd.mjs" build dwarf-fighter.answers.json --format json > dwarf-fighter.character.json
       - name: Build deterministic archives
         run: node scripts/build-public-release.mjs --source "$RUNNER_TEMP/dungeons-and-skills-srd" --output "$RUNNER_TEMP/release"
       - name: Extract, verify and install the release
         run: |
+          VERSION=$(node -p "require('$RUNNER_TEMP/dungeons-and-skills-srd/version.json').version")
+          ARCHIVE="$RUNNER_TEMP/release/dungeons-and-skills-v$VERSION.tar.gz"
+          RELEASE_ROOT="$RUNNER_TEMP/extracted/dungeons-and-skills-v$VERSION"
           mkdir "$RUNNER_TEMP/extracted"
-          tar -xzf "$RUNNER_TEMP/release/dungeons-and-skills-v0.2.0-beta.1.tar.gz" -C "$RUNNER_TEMP/extracted"
-          node "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1/scripts/verify-public-release.mjs" "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1"
-          node "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1/install.mjs" "$RUNNER_TEMP/installed"
-          node "$RUNNER_TEMP/installed/.claude/engine/cli.mjs" build "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1/examples/dwarf-fighter.answers.json"
+          tar -xzf "$ARCHIVE" -C "$RUNNER_TEMP/extracted"
+          node "$RELEASE_ROOT/scripts/verify-public-release.mjs" "$RELEASE_ROOT"
+          node "$RELEASE_ROOT/install.mjs" "$RUNNER_TEMP/installed"
+          node "$RUNNER_TEMP/installed/.agents/skills/dungeons-and-skills/scripts/dnd.mjs" \
+            build "$RELEASE_ROOT/examples/dwarf-fighter.answers.json" --format json
       - uses: actions/upload-artifact@v4
         with:
           name: public-beta-artifacts

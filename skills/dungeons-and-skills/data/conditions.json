@@ -1,0 +1,77 @@
+[
+  {
+    "id": "a-terre",
+    "label": "A terre Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "agrippe",
+    "label": "Agrippe Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "assourdi",
+    "label": "Assourdi Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "aveugle",
+    "label": "Aveugle Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "charme",
+    "label": "Charme Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "effraye",
+    "label": "Effraye Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "empoisonne",
+    "label": "Empoisonne Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "entrave",
+    "label": "Entrave Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "epuisement",
+    "label": "Epuisement Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "etourdi",
+    "label": "Etourdi Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "inconscient",
+    "label": "Inconscient Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "invisible",
+    "label": "Invisible Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "neutralise",
+    "label": "Neutralise Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "paralyse",
+    "label": "Paralyse Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  },
+  {
+    "id": "petrifie",
+    "label": "Petrifie Etat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.176-191"
+  }
+]

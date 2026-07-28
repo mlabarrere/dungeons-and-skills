@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import { sha256 } from "../scripts/lib/release-archive.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const VERSION = JSON.parse(readFileSync(join(ROOT, "version.json"), "utf8")).version;
 
 function fixture() {
   const root = mkdtempSync(join(tmpdir(), "dnd-public-manifest-"));
@@ -15,7 +16,7 @@ function fixture() {
   writeFileSync(join(root, "data", "value.json"), "{}\n");
   const data = readFileSync(join(root, "data", "value.json"));
   writeFileSync(join(root, "release-manifest.json"), JSON.stringify({
-    version: "0.2.0-beta.1",
+    version: VERSION,
     catalogProfile: "srd-5.2",
     license: "CC-BY-4.0",
     files: [{ path: "data/value.json", bytes: data.length, sha256: sha256(data) }]

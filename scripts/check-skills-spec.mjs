@@ -232,7 +232,7 @@ function checkRosters() {
 
   const cmd = read("commands/dnd-help.md");
   if (cmd) for (const d of dirs) {
-    if (d !== "dnd-help" && !cmd.includes(d)) errs.push(`commands/dnd-help.md: omits ${d}`);
+    if (!cmd.includes(d)) errs.push(`commands/dnd-help.md: omits ${d}`);
   }
 
   // Prose "N skills" text in README files. Hand-written counts drift when a skill
@@ -261,9 +261,13 @@ function checkRosters() {
   const pluginSrc = read(".claude-plugin/plugin.json");
   if (pluginSrc) {
     try {
-      const desc = JSON.parse(pluginSrc).description || "";
-      for (const name of short) {
-        if (!desc.toLowerCase().includes(name)) errs.push(`.claude-plugin/plugin.json: description omits "${name}"`);
+      const plugin = JSON.parse(pluginSrc);
+      const desc = (plugin.description || "").toLowerCase();
+      for (const name of dirs) {
+        const readable = name.replaceAll("-", " ");
+        if (plugin.name !== name && !desc.includes(name) && !desc.includes(readable)) {
+          errs.push(`.claude-plugin/plugin.json: name/description omits "${name}"`);
+        }
       }
     } catch { errs.push(".claude-plugin/plugin.json: invalid JSON"); }
   }

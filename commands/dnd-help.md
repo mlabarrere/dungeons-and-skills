@@ -3,5 +3,6 @@ description: Explain the D&D 2024 character-builder skill family and how groundi
 argument-hint: ""
 ---
 
-Use the `dnd-help` skill. Explain what `dnd-assistant`, `dnd-build`, `dnd-check`, `dnd-lookup` and `dnd-optimize` do, the engine
-commands, multilingual FR/EN output, and the scope/limits (level 1 only).
+Use the `dungeons-and-skills` skill and follow its help/diagnostics workflow. Explain the five
+public actions—create, check, look up, optimize and help—the nine languages, and the exact
+scope limits. Run `doctor`; do not answer rules questions from memory.

@@ -3,6 +3,6 @@ description: Build a rules-accurate D&D 2024 (5.5) level-1 character, grounded i
 argument-hint: "[fr|en]"
 ---
 
-Use the `dnd-build` skill. Do NOT trust your training data — build the character only from the
-bundled catalog (`data/*.json`) via `node engine/cli.mjs`. Language: $ARGUMENTS (default: the
-user's language).
+Use the `dungeons-and-skills` skill and follow its character-creation workflow. Do NOT trust
+your training data: use only the bundled resolver and deterministic engine. Language:
+$ARGUMENTS (default: the user's language).

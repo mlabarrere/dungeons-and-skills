@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "srd-5.2",
+  "version": "5.2.1",
+  "license": "CC-BY-4.0",
+  "source": {
+    "title": "System Reference Document 5.2.1",
+    "publisher": "Wizards of the Coast LLC",
+    "url": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+    "landingPage": "https://www.dndbeyond.com/srd"
+  },
+  "attribution": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+  "files": {
+    "classes": {
+      "path": "docs/data/classes.json",
+      "sha256": "f6e9431d20aac25767290b46050cd8469b4ae29da2fec7ce234db56e13dc3839"
+    },
+    "subclasses": {
+      "path": "docs/data/subclasses.json",
+      "sha256": "942ed412deab803912397cc28086d6c98dd070e9cccbb90f31edd29284b0ff38"
+    },
+    "species": {
+      "path": "docs/data/species.json",
+      "sha256": "1bfb108ffa5197f8687a501973e7f411c11f9b1572a81db531ae77a5f1c419fb"
+    },
+    "backgrounds": {
+      "path": "docs/data/backgrounds.json",
+      "sha256": "78b10bcaae4f05b42b3922f809320d3ee4f4e46948bd30d3138116216e454689"
+    }
+  },
+  "selection": {
+    "classes": {
+      "sourceSection": "Classes",
+      "ids": [
+        "barbarian",
+        "bard",
+        "cleric",
+        "druid",
+        "fighter",
+        "monk",
+        "paladin",
+        "ranger",
+        "rogue",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "projection": ["id"]
+    },
+    "subclasses": {
+      "sourceSection": "Classes (one subclass presented for each class)",
+      "ids": [
+        "path-of-the-berserker",
+        "college-of-lore",
+        "life-domain",
+        "circle-of-the-land",
+        "champion",
+        "warrior-of-the-open-hand",
+        "oath-of-devotion",
+        "hunter",
+        "thief",
+        "draconic-sorcery",
+        "fiend-patron",
+        "evoker"
+      ],
+      "projection": ["id", "parentClass"]
+    },
+    "species": {
+      "sourceSection": "Character Origins — Species",
+      "ids": [
+        "dragonborn",
+        "dwarf",
+        "elf",
+        "gnome",
+        "goliath",
+        "halfling",
+        "human",
+        "orc",
+        "tiefling"
+      ],
+      "projection": ["id"]
+    },
+    "backgrounds": {
+      "sourceSection": "Character Origins — Backgrounds",
+      "ids": ["acolyte", "criminal", "sage", "soldier"],
+      "projection": ["id"]
+    }
+  },
+  "excluded": {
+    "notInSrd": {
+      "species": ["aasimar"],
+      "backgrounds": [
+        "artisan",
+        "entertainer",
+        "charlatan",
+        "hermit",
+        "farmer",
+        "guard",
+        "guide",
+        "merchant",
+        "sailor",
+        "noble",
+        "scribe",
+        "wayfarer"
+      ]
+    },
+    "unverified": [
+      "French display names and translated rule text",
+      "All source fields beyond the explicit per-category projection",
+      "Feats, equipment, spells, spell lists, languages, conditions, glossary, build graph, and progression"
+    ]
+  }
+}
