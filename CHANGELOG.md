@@ -59,6 +59,10 @@ All notable changes to this project are documented here. The format is based on
   `labels.en.json` has no `abilities` group, so English ability names fall back to a constant.
 
 ### Fixed
+- Release `.tar.gz` archives now use a host-neutral RFC 1952 OS byte, making
+  their SHA-256 digest reproducible across Windows, Linux and macOS. The
+  immutable `v0.2.0-beta.2` remains installable but is superseded by
+  `v0.2.0-beta.3` for cross-platform byte reproducibility.
 - **The engine accepted values that are not in the catalog.** A hallucinated class id
   (`"class":"warlord"`) was treated as answered, so the sheet computed from nothing and
   rendered `undefined` under a green lint — the exact failure this pack exists to prevent.

@@ -118,5 +118,11 @@ export function createTarGz(entries, epochSeconds) {
     if (padding) chunks.push(Buffer.alloc(padding));
   }
   chunks.push(Buffer.alloc(1024));
-  return gzipSync(Buffer.concat(chunks), { level: 9, mtime: 0 });
+  const gzip = gzipSync(Buffer.concat(chunks), { level: 9, mtime: 0 });
+  // RFC 1952 byte 9 identifies the compressor's operating system. zlib writes
+  // 3 on Unix and 10 on Windows even when every payload byte and timestamp is
+  // identical, which breaks cross-platform release reproducibility. 255 means
+  // unknown and is the only host-neutral value.
+  gzip[9] = 255;
+  return gzip;
 }
