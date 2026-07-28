@@ -28,7 +28,7 @@
   "scripts": {
     "skill:build": "node scripts/build-bundles.mjs && node scripts/build-adapters.mjs",
     "skill:check": "node scripts/sync-version.mjs --check && node scripts/check-sync.mjs && node scripts/check-rule-copies.mjs && node scripts/check-skills-spec.mjs && node scripts/audit-public-catalog.mjs",
-    "test": "node --test \"tests/*.test.mjs\"",
+    "test": "node scripts/run-tests.mjs",
     "test:browser": "playwright test --config playwright.config.mjs",
     "release:export": "node scripts/export-public-repository.mjs",
     "release:build": "node scripts/build-public-release.mjs"
