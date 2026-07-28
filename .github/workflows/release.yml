@@ -19,16 +19,7 @@ jobs:
       - run: npm ci
       - run: npm run skill:check
       - run: npm test
-      - run: node scripts/export-public-repository.mjs --output "$RUNNER_TEMP/public"
-      - name: Commit exported public source for archive identity
-        working-directory: ${{ runner.temp }}/public
-        run: |
-          git init
-          git config user.name "Dungeons & Skills release bot"
-          git config user.email "release@example.invalid"
-          git add --all
-          git commit -m "${GITHUB_REF_NAME}"
-      - run: node scripts/build-public-release.mjs --source "$RUNNER_TEMP/public" --output "$RUNNER_TEMP/release"
+      - run: node scripts/build-public-release.mjs --source . --output "$RUNNER_TEMP/release"
       - name: Publish immutable prerelease
         env:
           GH_TOKEN: ${{ github.token }}
