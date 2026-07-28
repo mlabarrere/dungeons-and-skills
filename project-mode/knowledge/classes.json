@@ -1,0 +1,2150 @@
+[
+  {
+    "id": "barbarian",
+    "name": "Barbarian",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "str",
+    "hitDie": 12,
+    "savingThrows": [
+      "str",
+      "con"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "voie",
+      "ids": [
+        "path-of-the-berserker"
+      ]
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 12
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "str"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "con"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "intermediaire"
+      },
+      {
+        "type": "grants",
+        "what": "shieldTraining"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes de guerre"
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rage",
+        "note": "Action Bonus : entrer en Rage (2x, 1 utilisation recuperee apres Repos court, tout le quota apres Repos long). Tant qu'active : Resistance degats contondants/perforants/tranchants, +2 degats Force, Avantage tests et JdS de Force. Duree : tour suivant (prolongeable)."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bottes d'arme",
+        "note": "Propriete Botte sur 2 types d'armes corps a corps (courantes ou de guerre) au choix. Changement apres chaque Repos long."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Defense sans armure",
+        "note": "Sans armure : CA de base = 10 + mod. Dexterite + mod. Constitution (bouclier conserve)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "barbarian-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "athletics",
+            "animal-handling",
+            "intimidation",
+            "nature",
+            "perception",
+            "survival"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "barbarian-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "hache-a-deux-mains",
+          "hachette",
+          "paquetage-d-explorateur",
+          "15 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "75 po"
+        ]
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "bard",
+    "name": "Bard",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "cha",
+    "hitDie": 8,
+    "savingThrows": [
+      "dex",
+      "cha"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "college",
+      "ids": [
+        "college-of-lore"
+      ]
+    },
+    "spellcasting": {
+      "ability": "cha",
+      "list": "bard",
+      "cantrips": 2,
+      "prepared": 4,
+      "prepMinLevel": 1
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 8
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "dex"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "cha"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "cha",
+        "list": "bard"
+      },
+      {
+        "type": "grants",
+        "what": "cantripSlots",
+        "count": 2,
+        "list": "bard"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 4,
+        "list": "bard",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Inspiration bardique",
+        "note": "Action Bonus : octroyer un de bardique (d6) a une creature a 18 m. Elle l'ajoute a un test, jet d'attaque ou JdS dans la minute suivante. Utilisable un nombre de fois egal au mod. de Charisme par repos long."
+      }
+    ],
+    "choices": [
+      {
+        "id": "bard-competences",
+        "kind": "competence-classe",
+        "count": 3,
+        "from": {
+          "fromSkillSet": [
+            "acrobatics",
+            "arcana",
+            "athletics",
+            "stealth",
+            "animal-handling",
+            "sleight-of-hand",
+            "history",
+            "intimidation",
+            "insight",
+            "investigation",
+            "medicine",
+            "nature",
+            "perception",
+            "persuasion",
+            "religion",
+            "performance",
+            "survival",
+            "deception"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "bard-instruments",
+        "kind": "outil",
+        "count": 3,
+        "from": {
+          "fromToolSet": "instruments de musique"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "toolProficiency"
+        }
+      },
+      {
+        "id": "bard-cantrips",
+        "kind": "cantrip",
+        "count": 2,
+        "from": {
+          "fromSpellList": "bard",
+          "level": 0
+        }
+      },
+      {
+        "id": "bard-prepares",
+        "kind": "prepared",
+        "count": 4,
+        "from": {
+          "fromSpellList": "bard",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "bard-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "armure-de-cuir",
+          "dague",
+          "instrument-de-musique",
+          "paquetage-d-artiste",
+          "19 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "90 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "bard",
+        "ids": [
+          "dancing-lights",
+          "vicious-mockery"
+        ]
+      },
+      {
+        "kind": "prepared",
+        "list": "bard",
+        "ids": [
+          "charm-person",
+          "color-spray",
+          "healing-word",
+          "dissonant-whispers"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cleric",
+    "name": "Cleric",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "wis",
+    "hitDie": 8,
+    "savingThrows": [
+      "wis",
+      "cha"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "domaine",
+      "ids": [
+        "life-domain"
+      ]
+    },
+    "spellcasting": {
+      "ability": "wis",
+      "list": "cleric",
+      "cantrips": 3,
+      "prepared": 4,
+      "prepMinLevel": 1
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 8
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "wis"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "cha"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "intermediaire"
+      },
+      {
+        "type": "grants",
+        "what": "shieldTraining"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "wis",
+        "list": "cleric"
+      },
+      {
+        "type": "grants",
+        "what": "cantripSlots",
+        "count": 3,
+        "list": "cleric"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 4,
+        "list": "cleric",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ordre divin",
+        "note": "Choisissez Protecteur (maitrise armes de guerre + armures lourdes) ou Thaumaturge (sort mineur suppl. + bonus tests Int Arcanes/Religion = mod. Sagesse min. +1)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "cleric-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "history",
+            "insight",
+            "medicine",
+            "persuasion",
+            "religion"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "cleric-ordre-divin",
+        "kind": "ordre-divin",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "protecteur",
+            "thaumaturge"
+          ]
+        },
+        "appliesEffects": {
+          "protecteur": [
+            {
+              "type": "grants",
+              "what": "armorTraining",
+              "value": "lourde"
+            },
+            {
+              "type": "grants",
+              "what": "weaponProficiency",
+              "value": "armes de guerre"
+            }
+          ],
+          "thaumaturge": [
+            {
+              "type": "grants",
+              "what": "cantripSlots",
+              "count": 1,
+              "list": "cleric"
+            }
+          ]
+        }
+      },
+      {
+        "id": "cleric-cantrips",
+        "kind": "cantrip",
+        "count": 3,
+        "from": {
+          "fromSpellList": "cleric",
+          "level": 0
+        }
+      },
+      {
+        "id": "cleric-prepares",
+        "kind": "prepared",
+        "count": 4,
+        "from": {
+          "fromSpellList": "cleric",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "cleric-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "chemise-de-mailles",
+          "bouclier",
+          "masse-d-armes",
+          "symbole-sacre",
+          "paquetage-d-ecclesiastique",
+          "7 po"
+        ],
+        "grants": [
+          {
+            "type": "grants",
+            "what": "shieldTraining"
+          }
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "110 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "cleric",
+        "ids": [
+          "guidance",
+          "sacred-flame",
+          "thaumaturgy"
+        ]
+      },
+      {
+        "kind": "prepared",
+        "list": "cleric",
+        "ids": [
+          "bless",
+          "shield-of-faith",
+          "guiding-bolt",
+          "cure-wounds"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "druid",
+    "name": "Druid",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "wis",
+    "hitDie": 8,
+    "savingThrows": [
+      "int",
+      "wis"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "cercle",
+      "ids": [
+        "circle-of-the-land"
+      ]
+    },
+    "spellcasting": {
+      "ability": "wis",
+      "list": "druid",
+      "cantrips": 2,
+      "prepared": 4,
+      "prepMinLevel": 1
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 8
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "int"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "wis"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "shieldTraining"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel d'herboriste"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "wis",
+        "list": "druid"
+      },
+      {
+        "type": "grants",
+        "what": "cantripSlots",
+        "count": 2,
+        "list": "druid"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 4,
+        "list": "druid",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "language",
+        "value": "druidique"
+      },
+      {
+        "type": "grants",
+        "what": "alwaysPreparedSpell",
+        "spell": "speak-with-animals",
+        "list": "druid"
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Druidique",
+        "note": "Langue secrete des druides permettant de laisser des messages caches. Le sort communication-avec-les-animaux est toujours prepare."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ordre primitif",
+        "note": "Choisissez Gardien (maitrise armes de guerre + armures intermediaires) ou Mage (sort mineur suppl. + bonus tests Int Arcanes/Nature = mod. Sagesse min. +1)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "druid-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "arcana",
+            "animal-handling",
+            "insight",
+            "medicine",
+            "nature",
+            "perception",
+            "religion",
+            "survival"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "druid-ordre-primitif",
+        "kind": "ordre-primitif",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "gardien",
+            "mage"
+          ]
+        },
+        "appliesEffects": {
+          "gardien": [
+            {
+              "type": "grants",
+              "what": "armorTraining",
+              "value": "intermediaire"
+            },
+            {
+              "type": "grants",
+              "what": "weaponProficiency",
+              "value": "armes de guerre"
+            }
+          ],
+          "mage": [
+            {
+              "type": "grants",
+              "what": "cantripSlots",
+              "count": 1,
+              "list": "druid"
+            }
+          ]
+        }
+      },
+      {
+        "id": "druid-cantrips",
+        "kind": "cantrip",
+        "count": 2,
+        "from": {
+          "fromSpellList": "druid",
+          "level": 0
+        }
+      },
+      {
+        "id": "druid-prepares",
+        "kind": "prepared",
+        "count": 4,
+        "from": {
+          "fromSpellList": "druid",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "druid-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "armure-de-cuir",
+          "bouclier",
+          "serpe",
+          "baton-de-combat",
+          "paquetage-d-explorateur",
+          "materiel-d-herboriste",
+          "9 po"
+        ],
+        "grants": [
+          {
+            "type": "effect",
+            "what": "armorClass",
+            "base": 11
+          },
+          {
+            "type": "grants",
+            "what": "shieldTraining"
+          }
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "50 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "druid",
+        "ids": [
+          "druidcraft",
+          "produce-flame"
+        ]
+      },
+      {
+        "kind": "prepared",
+        "list": "druid",
+        "ids": [
+          "animal-friendship",
+          "faerie-fire",
+          "cure-wounds",
+          "thunderwave"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fighter",
+    "name": "Fighter",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": [
+      "str",
+      "dex"
+    ],
+    "hitDie": 10,
+    "savingThrows": [
+      "str",
+      "con"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "sous-classe",
+      "ids": [
+        "champion"
+      ]
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 10
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "str"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "con"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "intermediaire"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "lourde"
+      },
+      {
+        "type": "grants",
+        "what": "shieldTraining"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes de guerre"
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bottes d'arme",
+        "note": "Propriete Botte sur 3 types d'armes (courantes ou de guerre) au choix. Changement d'un choix apres chaque Repos long."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Second souffle",
+        "note": "Action Bonus : recuperer 1d10 + niveau Guerrier pv. 2 utilisations, 1 regagnee apres Repos court (toutes apres Repos long)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "fighter-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "acrobatics",
+            "athletics",
+            "animal-handling",
+            "history",
+            "insight",
+            "intimidation",
+            "perception",
+            "persuasion",
+            "survival"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "fighter-style-de-combat",
+        "kind": "style-de-combat",
+        "count": 1,
+        "from": {
+          "fromFeatCategory": "style-de-combat"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "feat"
+        }
+      },
+      {
+        "id": "fighter-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B",
+            "C"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "cotte-de-mailles",
+          "epee-a-deux-mains",
+          "fleau-d-armes",
+          "javeline",
+          "paquetage-d-exploration-souterraine",
+          "4 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "armure-de-cuir-cloute",
+          "cimeterre",
+          "epee-courte",
+          "arc-long",
+          "fleches",
+          "carquois",
+          "paquetage-d-exploration-souterraine",
+          "11 po"
+        ]
+      },
+      {
+        "option": "C",
+        "items": [
+          "155 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "style-de-combat",
+        "value": "defense",
+        "list": ""
+      }
+    ]
+  },
+  {
+    "id": "monk",
+    "name": "Monk",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "hitDie": 8,
+    "savingThrows": [
+      "str",
+      "dex"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "credo",
+      "ids": [
+        "warrior-of-the-open-hand"
+      ]
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 8
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "str"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "dex"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes de guerre dotees de la propriete legere"
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Arts martiaux",
+        "note": "Sans armure ni bouclier : attaques a mains nues et armes de moine utilisent Dex ou For, degats 1d6, et octroient une attaque a mains nues supplementaire par action Bonus."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Defense sans armure",
+        "note": "Sans armure : CA de base = 10 + mod. Dexterite + mod. Sagesse."
+      }
+    ],
+    "choices": [
+      {
+        "id": "monk-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "acrobatics",
+            "athletics",
+            "stealth",
+            "history",
+            "insight",
+            "religion"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "monk-outil",
+        "kind": "outil",
+        "count": 1,
+        "from": {
+          "fromToolSet": "outils d'artisan ou instrument de musique"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "toolProficiency"
+        }
+      },
+      {
+        "id": "monk-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "lance",
+          "dague",
+          "outil-au-choix",
+          "paquetage-d-explorateur",
+          "11 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "50 po"
+        ]
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "paladin",
+    "name": "Paladin",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": [
+      "str",
+      "cha"
+    ],
+    "hitDie": 10,
+    "savingThrows": [
+      "wis",
+      "cha"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "serment",
+      "ids": [
+        "oath-of-devotion"
+      ]
+    },
+    "spellcasting": {
+      "ability": "cha",
+      "list": "paladin",
+      "prepared": 2,
+      "prepMinLevel": 1
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 10
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "wis"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "cha"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "intermediaire"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "lourde"
+      },
+      {
+        "type": "grants",
+        "what": "shieldTraining"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes de guerre"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "cha",
+        "list": "paladin"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 2,
+        "list": "paladin",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bottes d'arme",
+        "note": "Propriete Botte sur 2 types d'armes maitrises au choix. Changement apres chaque Repos long."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Imposition des mains",
+        "note": "Reserve de pv curatrice = 5 x niveau de Paladin. Action Bonus : restituer des pv ou depenser 5 points pour supprimer l'etat Empoisonne. Reserve recuperee apres Repos long."
+      }
+    ],
+    "choices": [
+      {
+        "id": "paladin-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "athletics",
+            "intimidation",
+            "insight",
+            "medicine",
+            "persuasion",
+            "religion"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "paladin-prepares",
+        "kind": "prepared",
+        "count": 2,
+        "from": {
+          "fromSpellList": "paladin",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "paladin-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "cotte-de-mailles",
+          "bouclier",
+          "epee-longue",
+          "javeline",
+          "symbole-sacre",
+          "paquetage-d-ecclesiastique",
+          "9 po"
+        ],
+        "grants": [
+          {
+            "type": "grants",
+            "what": "shieldTraining"
+          }
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "150 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "prepared",
+        "list": "paladin",
+        "ids": [
+          "heroism",
+          "searing-smite"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": [
+      "dex",
+      "wis"
+    ],
+    "hitDie": 10,
+    "savingThrows": [
+      "str",
+      "dex"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "sous-classe",
+      "ids": [
+        "hunter"
+      ]
+    },
+    "spellcasting": {
+      "ability": "wis",
+      "list": "ranger",
+      "prepared": 2,
+      "prepMinLevel": 1
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 10
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "str"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "dex"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "intermediaire"
+      },
+      {
+        "type": "grants",
+        "what": "shieldTraining"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes de guerre"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "wis",
+        "list": "ranger"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 2,
+        "list": "ranger",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "alwaysPreparedSpell",
+        "spell": "hunters-mark",
+        "list": "ranger"
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bottes d'arme",
+        "note": "Propriete Botte sur 2 types d'armes maitrises au choix. Changement apres chaque Repos long."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ennemi jure",
+        "note": "marque-du-chasseur est toujours prepare. Peut etre lance sans depenser d'emplacement 2x/repos long."
+      }
+    ],
+    "choices": [
+      {
+        "id": "ranger-competences",
+        "kind": "competence-classe",
+        "count": 3,
+        "from": {
+          "fromSkillSet": [
+            "athletics",
+            "stealth",
+            "animal-handling",
+            "insight",
+            "investigation",
+            "nature",
+            "perception",
+            "survival"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "ranger-prepares",
+        "kind": "prepared",
+        "count": 2,
+        "from": {
+          "fromSpellList": "ranger",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "ranger-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "armure-de-cuir-cloute",
+          "cimeterre",
+          "epee-courte",
+          "arc-long",
+          "fleches",
+          "carquois",
+          "branche-de-gui",
+          "paquetage-d-explorateur",
+          "7 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "150 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "prepared",
+        "list": "ranger",
+        "ids": [
+          "ensnaring-strike",
+          "cure-wounds"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "dex",
+    "hitDie": 8,
+    "savingThrows": [
+      "dex",
+      "int"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "sous-classe",
+      "ids": [
+        "thief"
+      ]
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 8
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "dex"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "int"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes de guerre dotees de la propriete finesse ou legere"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "outils de voleur"
+      },
+      {
+        "type": "grants",
+        "what": "language",
+        "value": "argot-des-voleurs"
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Attaque sournoise",
+        "note": "1d6 degats suppl. 1x/tour avec arme finesse ou a distance, si Avantage OU allie non Neutralise a 1,50 m de la cible (sans Desavantage)."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Bottes d'arme",
+        "note": "Propriete Botte sur 2 types d'armes maitrises au choix. Changement apres chaque Repos long."
+      }
+    ],
+    "choices": [
+      {
+        "id": "rogue-competences",
+        "kind": "competence-classe",
+        "count": 4,
+        "from": {
+          "fromSkillSet": [
+            "acrobatics",
+            "athletics",
+            "stealth",
+            "sleight-of-hand",
+            "intimidation",
+            "insight",
+            "investigation",
+            "perception",
+            "persuasion",
+            "deception"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "rogue-expertise",
+        "kind": "expertise",
+        "count": 2,
+        "from": {
+          "fromChoice": "rogue-competences"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency",
+          "expertise": true
+        }
+      },
+      {
+        "id": "rogue-langue",
+        "kind": "langue",
+        "count": 1,
+        "from": {
+          "fromLanguages": "courante"
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "language"
+        }
+      },
+      {
+        "id": "rogue-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "armure-de-cuir",
+          "dague",
+          "epee-courte",
+          "arc-court",
+          "fleches",
+          "carquois",
+          "outils-de-voleur",
+          "paquetage-de-cambrioleur",
+          "8 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "100 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "expertise",
+        "ids": [
+          "sleight-of-hand",
+          "stealth"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sorcerer",
+    "name": "Sorcerer",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "cha",
+    "hitDie": 6,
+    "savingThrows": [
+      "con",
+      "cha"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "sorcellerie",
+      "ids": [
+        "draconic-sorcery"
+      ]
+    },
+    "spellcasting": {
+      "ability": "cha",
+      "list": "sorcerer",
+      "cantrips": 4,
+      "prepared": 2,
+      "prepMinLevel": 1
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 6
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "con"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "cha"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "cha",
+        "list": "sorcerer"
+      },
+      {
+        "type": "grants",
+        "what": "cantripSlots",
+        "count": 4,
+        "list": "sorcerer"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 2,
+        "list": "sorcerer",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sorcellerie innee",
+        "note": "Votre magie jaillit d'une origine innee (sang draconique, magie sauvage, etc.). La sous-classe choisie au niveau 3 en definit la nature et octroie des aptitudes surnaturelles."
+      }
+    ],
+    "choices": [
+      {
+        "id": "sorcerer-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "arcana",
+            "intimidation",
+            "insight",
+            "persuasion",
+            "religion",
+            "deception"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "sorcerer-cantrips",
+        "kind": "cantrip",
+        "count": 4,
+        "from": {
+          "fromSpellList": "sorcerer",
+          "level": 0
+        }
+      },
+      {
+        "id": "sorcerer-prepares",
+        "kind": "prepared",
+        "count": 2,
+        "from": {
+          "fromSpellList": "sorcerer",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "sorcerer-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "lance",
+          "dague",
+          "cristal",
+          "paquetage-d-exploration-souterraine",
+          "28 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "50 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "sorcerer",
+        "ids": [
+          "sorcerous-burst",
+          "light",
+          "shocking-grasp",
+          "prestidigitation"
+        ]
+      },
+      {
+        "kind": "prepared",
+        "list": "sorcerer",
+        "ids": [
+          "detect-magic",
+          "burning-hands"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "warlock",
+    "name": "Warlock",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "cha",
+    "hitDie": 8,
+    "savingThrows": [
+      "wis",
+      "cha"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "protecteur",
+      "ids": [
+        "fiend-patron"
+      ]
+    },
+    "spellcasting": {
+      "ability": "cha",
+      "list": "warlock",
+      "cantrips": 2,
+      "prepared": 2,
+      "prepMinLevel": 1,
+      "pactSlots": {
+        "count": 1,
+        "level": 1
+      }
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 8
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "wis"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "cha"
+      },
+      {
+        "type": "grants",
+        "what": "armorTraining",
+        "value": "legere"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "cha",
+        "list": "warlock"
+      },
+      {
+        "type": "grants",
+        "what": "cantripSlots",
+        "count": 2,
+        "list": "warlock"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 2,
+        "list": "warlock",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "spellSlots",
+        "level": 1,
+        "count": 1
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Magie de pacte",
+        "note": "1 emplacement de sort du 1er niveau (recupere apres Repos court ou long). Caracteristique d'incantation : Charisme. Le niveau et le nombre d'emplacements augmentent avec les niveaux d'Occultiste."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Manifestations occultes",
+        "note": "1 manifestation occulte au choix. Confere des aptitudes surnaturelles permanentes ou actives liees au pacte. Le nombre de manifestations connues augmente avec les niveaux."
+      }
+    ],
+    "choices": [
+      {
+        "id": "warlock-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "arcana",
+            "history",
+            "intimidation",
+            "investigation",
+            "nature",
+            "religion",
+            "deception"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "warlock-cantrips",
+        "kind": "cantrip",
+        "count": 2,
+        "from": {
+          "fromSpellList": "warlock",
+          "level": 0
+        }
+      },
+      {
+        "id": "warlock-prepares",
+        "kind": "prepared",
+        "count": 2,
+        "from": {
+          "fromSpellList": "warlock",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "warlock-manifestation",
+        "kind": "manifestation-occulte",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "armure-d-ombres",
+            "esprit-occulte",
+            "pacte-de-la-chaine",
+            "pacte-du-grimoire",
+            "pacte-de-la-lame"
+          ]
+        }
+      },
+      {
+        "id": "warlock-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "armure-de-cuir",
+          "serpe",
+          "dague",
+          "orbe",
+          "livre",
+          "paquetage-d-erudit",
+          "15 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "100 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "warlock",
+        "ids": [
+          "eldritch-blast",
+          "prestidigitation"
+        ]
+      },
+      {
+        "kind": "prepared",
+        "list": "warlock",
+        "ids": [
+          "charm-person",
+          "hex"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wizard",
+    "name": "Wizard",
+    "kind": "classe",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "primaryAbility": "int",
+    "hitDie": 6,
+    "savingThrows": [
+      "int",
+      "wis"
+    ],
+    "subclass": {
+      "level": 3,
+      "kind": "sous-classe",
+      "ids": [
+        "evoker"
+      ]
+    },
+    "spellcasting": {
+      "ability": "int",
+      "list": "wizard",
+      "cantrips": 3,
+      "prepared": 4,
+      "prepMinLevel": 1,
+      "spellbook": 6
+    },
+    "effects": [
+      {
+        "type": "grants",
+        "what": "hitDie",
+        "die": 6
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "int"
+      },
+      {
+        "type": "grants",
+        "what": "savingThrowProficiency",
+        "value": "wis"
+      },
+      {
+        "type": "grants",
+        "what": "weaponProficiency",
+        "value": "armes courantes"
+      },
+      {
+        "type": "grants",
+        "what": "spellcasting",
+        "ability": "int",
+        "list": "wizard"
+      },
+      {
+        "type": "grants",
+        "what": "cantripSlots",
+        "count": 3,
+        "list": "wizard"
+      },
+      {
+        "type": "grants",
+        "what": "preparedSlots",
+        "count": 4,
+        "list": "wizard",
+        "minLevel": 1,
+        "maxLevel": 1
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Restauration magique",
+        "note": "Apres un Repos court, recuperer des emplacements de sort dont la somme des niveaux <= moitie niveau Magicien (arrondi sup.), 5e niveau max. 1x/repos long."
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Savoir rituel",
+        "note": "Lancer comme rituel tout sort marque 'rituel' dans le Dungeons & Skills, sans l'avoir prepare (necessite de le lire depuis le grimoire)."
+      }
+    ],
+    "choices": [
+      {
+        "id": "wizard-competences",
+        "kind": "competence-classe",
+        "count": 2,
+        "from": {
+          "fromSkillSet": [
+            "arcana",
+            "history",
+            "insight",
+            "investigation",
+            "medicine",
+            "nature",
+            "religion"
+          ]
+        },
+        "grantsEach": {
+          "type": "grants",
+          "what": "skillProficiency"
+        }
+      },
+      {
+        "id": "wizard-cantrips",
+        "kind": "cantrip",
+        "count": 3,
+        "from": {
+          "fromSpellList": "wizard",
+          "level": 0
+        }
+      },
+      {
+        "id": "wizard-grimoire",
+        "kind": "grimoire",
+        "count": 6,
+        "from": {
+          "fromSpellList": "wizard",
+          "level": 1
+        }
+      },
+      {
+        "id": "wizard-prepares",
+        "kind": "prepared",
+        "count": 4,
+        "from": {
+          "fromSpellList": "wizard",
+          "minLevel": 1,
+          "maxLevel": 1
+        }
+      },
+      {
+        "id": "wizard-equipement",
+        "kind": "equipement",
+        "count": 1,
+        "from": {
+          "fromList": [
+            "A",
+            "B"
+          ]
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "option": "A",
+        "items": [
+          "dague",
+          "baton-de-combat",
+          "robe",
+          "grimoire",
+          "paquetage-d-erudit",
+          "5 po"
+        ]
+      },
+      {
+        "option": "B",
+        "items": [
+          "55 po"
+        ]
+      }
+    ],
+    "recommends": [
+      {
+        "kind": "cantrip",
+        "list": "wizard",
+        "ids": [
+          "light",
+          "mage-hand",
+          "ray-of-frost"
+        ]
+      },
+      {
+        "kind": "grimoire",
+        "list": "wizard",
+        "ids": [
+          "mage-armor",
+          "detect-magic",
+          "feather-fall",
+          "magic-missile",
+          "sleep",
+          "thunderwave"
+        ]
+      }
+    ]
+  }
+]

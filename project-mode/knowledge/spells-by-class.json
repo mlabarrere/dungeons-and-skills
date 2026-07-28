@@ -1,0 +1,854 @@
+{
+  "bard": [
+    {
+      "id": "animal-friendship",
+      "level": 1
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "color-spray",
+      "level": 1
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "disguise-self",
+      "level": 1
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "feather-fall",
+      "level": 1
+    },
+    {
+      "id": "hideous-laughter",
+      "level": 1
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "heroism",
+      "level": 1
+    },
+    {
+      "id": "identify",
+      "level": 1
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "silent-image",
+      "level": 1
+    },
+    {
+      "id": "bane",
+      "level": 1
+    },
+    {
+      "id": "command",
+      "level": 1
+    },
+    {
+      "id": "faerie-fire",
+      "level": 1
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "dancing-lights",
+      "level": 0
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "vicious-mockery",
+      "level": 0
+    },
+    {
+      "id": "healing-word",
+      "level": 1
+    },
+    {
+      "id": "dissonant-whispers",
+      "level": 1
+    },
+    {
+      "id": "starry-wisp",
+      "level": 0
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "unseen-servant",
+      "level": 1
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "sleep",
+      "level": 1
+    },
+    {
+      "id": "illusory-script",
+      "level": 1
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    }
+  ],
+  "druid": [
+    {
+      "id": "animal-friendship",
+      "level": 1
+    },
+    {
+      "id": "guidance",
+      "level": 0
+    },
+    {
+      "id": "goodberry",
+      "level": 1
+    },
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "ice-knife",
+      "level": 1
+    },
+    {
+      "id": "create-or-destroy-water",
+      "level": 1
+    },
+    {
+      "id": "shillelagh",
+      "level": 0
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "druidcraft",
+      "level": 0
+    },
+    {
+      "id": "elementalism",
+      "level": 0
+    },
+    {
+      "id": "entangle",
+      "level": 1
+    },
+    {
+      "id": "produce-flame",
+      "level": 0
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "faerie-fire",
+      "level": 1
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "healing-word",
+      "level": 1
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "starry-wisp",
+      "level": 0
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "purify-food-and-drink",
+      "level": 1
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "resistance",
+      "level": 0
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    }
+  ],
+  "sorcerer": [
+    {
+      "id": "mage-armor",
+      "level": 1
+    },
+    {
+      "id": "acid-splash",
+      "level": 0
+    },
+    {
+      "id": "shield",
+      "level": 1
+    },
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "chill-touch",
+      "level": 0
+    },
+    {
+      "id": "color-spray",
+      "level": 1
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "ice-knife",
+      "level": 1
+    },
+    {
+      "id": "disguise-self",
+      "level": 1
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "elementalism",
+      "level": 0
+    },
+    {
+      "id": "sorcerous-burst",
+      "level": 0
+    },
+    {
+      "id": "feather-fall",
+      "level": 1
+    },
+    {
+      "id": "grease",
+      "level": 1
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "silent-image",
+      "level": 1
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "dancing-lights",
+      "level": 0
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "burning-hands",
+      "level": 1
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "chromatic-orb",
+      "level": 1
+    },
+    {
+      "id": "shocking-grasp",
+      "level": 0
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "magic-missile",
+      "level": 1
+    },
+    {
+      "id": "ray-of-frost",
+      "level": 0
+    },
+    {
+      "id": "ray-of-sickness",
+      "level": 1
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "expeditious-retreat",
+      "level": 1
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "false-life",
+      "level": 1
+    },
+    {
+      "id": "sleep",
+      "level": 1
+    },
+    {
+      "id": "fire-bolt",
+      "level": 0
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    }
+  ],
+  "wizard": [
+    {
+      "id": "alarm",
+      "level": 1
+    },
+    {
+      "id": "find-familiar",
+      "level": 1
+    },
+    {
+      "id": "mage-armor",
+      "level": 1
+    },
+    {
+      "id": "acid-splash",
+      "level": 0
+    },
+    {
+      "id": "shield",
+      "level": 1
+    },
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "chill-touch",
+      "level": 0
+    },
+    {
+      "id": "color-spray",
+      "level": 1
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "ice-knife",
+      "level": 1
+    },
+    {
+      "id": "disguise-self",
+      "level": 1
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "floating-disk",
+      "level": 1
+    },
+    {
+      "id": "elementalism",
+      "level": 0
+    },
+    {
+      "id": "feather-fall",
+      "level": 1
+    },
+    {
+      "id": "hideous-laughter",
+      "level": 1
+    },
+    {
+      "id": "grease",
+      "level": 1
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "identify",
+      "level": 1
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "silent-image",
+      "level": 1
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "dancing-lights",
+      "level": 0
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "burning-hands",
+      "level": 1
+    },
+    {
+      "id": "message",
+      "level": 0
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "chromatic-orb",
+      "level": 1
+    },
+    {
+      "id": "shocking-grasp",
+      "level": 0
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "magic-missile",
+      "level": 1
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "ray-of-frost",
+      "level": 0
+    },
+    {
+      "id": "ray-of-sickness",
+      "level": 1
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "expeditious-retreat",
+      "level": 1
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "unseen-servant",
+      "level": 1
+    },
+    {
+      "id": "false-life",
+      "level": 1
+    },
+    {
+      "id": "sleep",
+      "level": 1
+    },
+    {
+      "id": "illusory-script",
+      "level": 1
+    },
+    {
+      "id": "fire-bolt",
+      "level": 0
+    },
+    {
+      "id": "thunderwave",
+      "level": 1
+    }
+  ],
+  "cleric": [
+    {
+      "id": "guidance",
+      "level": 0
+    },
+    {
+      "id": "bless",
+      "level": 1
+    },
+    {
+      "id": "inflict-wounds",
+      "level": 1
+    },
+    {
+      "id": "shield-of-faith",
+      "level": 1
+    },
+    {
+      "id": "create-or-destroy-water",
+      "level": 1
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "sacred-flame",
+      "level": 0
+    },
+    {
+      "id": "bane",
+      "level": 1
+    },
+    {
+      "id": "command",
+      "level": 1
+    },
+    {
+      "id": "light",
+      "level": 0
+    },
+    {
+      "id": "healing-word",
+      "level": 1
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "purify-food-and-drink",
+      "level": 1
+    },
+    {
+      "id": "guiding-bolt",
+      "level": 1
+    },
+    {
+      "id": "mending",
+      "level": 0
+    },
+    {
+      "id": "resistance",
+      "level": 0
+    },
+    {
+      "id": "sanctuary",
+      "level": 1
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    },
+    {
+      "id": "thaumaturgy",
+      "level": 0
+    }
+  ],
+  "paladin": [
+    {
+      "id": "bless",
+      "level": 1
+    },
+    {
+      "id": "shield-of-faith",
+      "level": 1
+    },
+    {
+      "id": "searing-smite",
+      "level": 1
+    },
+    {
+      "id": "divine-smite",
+      "level": 1
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "divine-favor",
+      "level": 1
+    },
+    {
+      "id": "heroism",
+      "level": 1
+    },
+    {
+      "id": "command",
+      "level": 1
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "purify-food-and-drink",
+      "level": 1
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    }
+  ],
+  "ranger": [
+    {
+      "id": "alarm",
+      "level": 1
+    },
+    {
+      "id": "animal-friendship",
+      "level": 1
+    },
+    {
+      "id": "goodberry",
+      "level": 1
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "detect-poison-and-disease",
+      "level": 1
+    },
+    {
+      "id": "entangle",
+      "level": 1
+    },
+    {
+      "id": "ensnaring-strike",
+      "level": 1
+    },
+    {
+      "id": "longstrider",
+      "level": 1
+    },
+    {
+      "id": "hunters-mark",
+      "level": 1
+    },
+    {
+      "id": "fog-cloud",
+      "level": 1
+    },
+    {
+      "id": "jump",
+      "level": 1
+    },
+    {
+      "id": "cure-wounds",
+      "level": 1
+    }
+  ],
+  "warlock": [
+    {
+      "id": "poison-spray",
+      "level": 0
+    },
+    {
+      "id": "charm-person",
+      "level": 1
+    },
+    {
+      "id": "speak-with-animals",
+      "level": 1
+    },
+    {
+      "id": "comprehend-languages",
+      "level": 1
+    },
+    {
+      "id": "chill-touch",
+      "level": 0
+    },
+    {
+      "id": "true-strike",
+      "level": 0
+    },
+    {
+      "id": "eldritch-blast",
+      "level": 0
+    },
+    {
+      "id": "detect-magic",
+      "level": 1
+    },
+    {
+      "id": "hideous-laughter",
+      "level": 1
+    },
+    {
+      "id": "minor-illusion",
+      "level": 0
+    },
+    {
+      "id": "bane",
+      "level": 1
+    },
+    {
+      "id": "mage-hand",
+      "level": 0
+    },
+    {
+      "id": "hex",
+      "level": 1
+    },
+    {
+      "id": "prestidigitation",
+      "level": 0
+    },
+    {
+      "id": "protection-from-evil-and-good",
+      "level": 1
+    },
+    {
+      "id": "expeditious-retreat",
+      "level": 1
+    },
+    {
+      "id": "hellish-rebuke",
+      "level": 1
+    },
+    {
+      "id": "unseen-servant",
+      "level": 1
+    },
+    {
+      "id": "illusory-script",
+      "level": 1
+    }
+  ]
+}

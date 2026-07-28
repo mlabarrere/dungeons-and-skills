@@ -1,0 +1,14 @@
+{
+  "class": "fighter",
+  "species": "dragonborn",
+  "background": "soldier",
+  "method": "standard",
+  "abilityScores": { "str": 15, "dex": 13, "con": 14, "int": 8, "wis": 12, "cha": 10 },
+  "fighter-competences": ["perception", "history"],
+  "fighter-style-de-combat": "defense",
+  "fighter-equipement": "A",
+  "dragonborn-ascendance-draconique": "rouge",
+  "origine-langues-choix": ["draconique", "elfique"],
+  "soldier-caracteristiques": "str",
+  "soldier-boite-de-jeux": "boite-de-jeux"
+}

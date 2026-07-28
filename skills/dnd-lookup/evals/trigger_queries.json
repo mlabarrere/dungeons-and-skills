@@ -1,0 +1,108 @@
+{
+  "skill_name": "dnd-lookup",
+  "note": "60/40 train/validation split. Tune descriptions on train failures only; validation measures generalization. Run `node scripts/eval-trigger-rate.mjs dnd-lookup` to measure trigger accuracy and see the random-baseline comparison.",
+  "train": [
+    {
+      "query": "what does the Lucky feat do in 2024",
+      "should_trigger": true
+    },
+    {
+      "query": "I'm making a wizard and need to pick cantrips — what are my options?",
+      "should_trigger": true
+    },
+    {
+      "query": "comment fonctionne le trait Résistance naine ?",
+      "should_trigger": true
+    },
+    {
+      "query": "what does the soldier background grant exactly",
+      "should_trigger": true
+    },
+    {
+      "query": "explain the Grappled condition to me, I always mix it up with Restrained",
+      "should_trigger": true
+    },
+    {
+      "query": "mon druide a atteint le niveau 1, montre-moi quels sorts il peut préparer",
+      "should_trigger": true
+    },
+    {
+      "query": "build me a level 1 cleric",
+      "should_trigger": false
+    },
+    {
+      "query": "check whether my sheet's AC is correct",
+      "should_trigger": false
+    },
+    {
+      "query": "what was different about the Lucky feat between 2014 and 2024 editions",
+      "should_trigger": false
+    },
+    {
+      "query": "write me a description of a tavern for my session tonight",
+      "should_trigger": false
+    },
+    {
+      "query": "what were the changes between the 2014 and 2024 Player's Handbook overall",
+      "should_trigger": false
+    },
+    {
+      "query": "my fighter is at level 7 — what new abilities have I unlocked since level 5?",
+      "should_trigger": true
+    },
+    {
+      "query": "how many spell slots does a wizard have at level 5",
+      "should_trigger": true
+    },
+    {
+      "query": "I have a character using references/grounding.md as notes — can you look up what skills the Guild Artisan background grants",
+      "should_trigger": true
+    }
+  ],
+  "validation": [
+    {
+      "query": "tell me about the Elf species",
+      "should_trigger": true
+    },
+    {
+      "query": "c'est quoi Vision dans le noir exactement",
+      "should_trigger": true
+    },
+    {
+      "query": "does Shillelagh work with a quarterstaff and what die does it use",
+      "should_trigger": true
+    },
+    {
+      "query": "which skills does the Guide background give",
+      "should_trigger": true
+    },
+    {
+      "query": "what does Fireball do at 9th level",
+      "should_trigger": true
+    },
+    {
+      "query": "recommend a class for a first-time player",
+      "should_trigger": false
+    },
+    {
+      "query": "summarise this PDF rulebook I uploaded",
+      "should_trigger": false
+    },
+    {
+      "query": "what's the AC formula in 3.5",
+      "should_trigger": false
+    },
+    {
+      "query": "at what level does a wizard first get access to Fireball",
+      "should_trigger": false
+    },
+    {
+      "query": "quel bonus de maîtrise à niveau 11 pour un paladin",
+      "should_trigger": true
+    },
+    {
+      "query": "what is the earliest level I can get Fireball",
+      "should_trigger": false
+    }
+  ]
+}

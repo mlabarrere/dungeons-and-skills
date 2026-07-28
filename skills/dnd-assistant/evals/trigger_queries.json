@@ -1,0 +1,108 @@
+{
+  "skill_name": "dnd-assistant",
+  "note": "60/40 train/validation split. Positive queries are generic D&D requests without an explicit skill name; negative queries are non-D&D, already skill-routed (/dnd-build, /dnd-check), or clearly off-topic. Tune descriptions on train failures only; validation measures generalization.",
+  "train": [
+    {
+      "query": "I want to play D&D, where do I start?",
+      "should_trigger": true
+    },
+    {
+      "query": "je veux faire un personnage D&D",
+      "should_trigger": true
+    },
+    {
+      "query": "can you help me make a D&D character? I've never played before",
+      "should_trigger": true
+    },
+    {
+      "query": "vérifier ma fiche de perso D&D 2024",
+      "should_trigger": true
+    },
+    {
+      "query": "is my character sheet legal?",
+      "should_trigger": true
+    },
+    {
+      "query": "qu'est-ce que le sort Boule de Feu fait en D&D 2024 ?",
+      "should_trigger": true
+    },
+    {
+      "query": "I want the strongest possible level 1 D&D build",
+      "should_trigger": true
+    },
+    {
+      "query": "D&D",
+      "should_trigger": true
+    },
+    {
+      "query": "how does this D&D toolkit work?",
+      "should_trigger": true
+    },
+    {
+      "query": "je veux jouer un mage, tu peux m'aider ?",
+      "should_trigger": true
+    },
+    {
+      "query": "/dnd-build make me a dwarf fighter",
+      "should_trigger": false
+    },
+    {
+      "query": "/dnd-check audit this sheet for rules errors",
+      "should_trigger": false
+    },
+    {
+      "query": "write me a Python script to sort a list",
+      "should_trigger": false
+    },
+    {
+      "query": "what's the weather like in Paris today?",
+      "should_trigger": false
+    },
+    {
+      "query": "help me cook a risotto",
+      "should_trigger": false
+    }
+  ],
+  "validation": [
+    {
+      "query": "I want to create a barbarian for our D&D 2024 campaign",
+      "should_trigger": true
+    },
+    {
+      "query": "my AC seems wrong on my cleric sheet, can you check?",
+      "should_trigger": true
+    },
+    {
+      "query": "what does the Lucky feat do?",
+      "should_trigger": true
+    },
+    {
+      "query": "aide-moi avec D&D",
+      "should_trigger": true
+    },
+    {
+      "query": "/dnd-lookup what does Cure Wounds heal",
+      "should_trigger": false
+    },
+    {
+      "query": "/dnd-optimize build me the strongest cleric",
+      "should_trigger": false
+    },
+    {
+      "query": "explain how to configure a Kubernetes cluster",
+      "should_trigger": false
+    },
+    {
+      "query": "translate this sentence to Spanish",
+      "should_trigger": false
+    },
+    {
+      "query": "make me a Pathfinder 2e goblin alchemist",
+      "should_trigger": false
+    },
+    {
+      "query": "I'm playing D&D 5e 2014, what are the rules for grappling?",
+      "should_trigger": false
+    }
+  ]
+}

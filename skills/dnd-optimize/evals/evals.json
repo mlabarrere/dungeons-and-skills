@@ -1,0 +1,58 @@
+{
+  "skill_name": "dnd-optimize",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to play an Aasimar sailor Warlock. Build me the strongest version of that — I don't want to change the concept.",
+      "expected_output": "The constraint set restated and confirmed, then a level-1 sheet that keeps all three identity locks, candidates drawn only from the resolver and scored by the engine, with the working definition of \"optimal\" stated and the white-room assumptions named.",
+      "assertions": [
+        "The constraint set is restated in terms drawn from the resolver's returned options — the catalog ids or option labels for aasimar, sailor, and warlock are each confirmed present in the catalog before optimization proceeds",
+        "Aasimar, sailor and Warlock are all preserved in the delivered build",
+        "Every candidate pick appears in the resolver's options for its choice id",
+        "Each candidate's answers file passes `options` with ready:true, and `build` exits 0",
+        "The scoring metric (which stat or combination is being maximized) is explicitly stated, and at least one candidate's score appears as a number traceable to the engine's --json output",
+        "For each candidate build, at least one derived stat (AC, HP, or primary ability modifier) is cited with the engine's provenance string"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "je veux lancer Boule de Feu le plus tôt possible avec un magicien, à quel niveau ?",
+      "expected_output": "The earliest legal level answered from the progression table with its citation, in French — not recalled from memory.",
+      "assertions": [
+        "The cited progression row appears verbatim from the engine's `progression wizard` output — a level number stated without the corresponding row text is a memory claim and fails",
+        "The answer is in French and uses the French spell name from data/labels.fr.json"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Best build for a Barbarian who casts Counterspell as early as possible.",
+      "expected_output": "The goal is identified as infeasible under the locked class — Counterspell is not on the Barbarian list — the classes that do have it are named from the catalog, and the user is asked which constraint to relax. No lock is bent silently.",
+      "assertions": [
+        "The agent verifies Counterspell is absent from the Barbarian spell list via the engine before declaring infeasibility — a conclusion based on recall fails even when correct",
+        "The classes that legally have the spell are named from the catalog",
+        "The agent explicitly asks which of the constraints (class or spell goal) the user wants to relax, rather than silently picking one",
+        "No multiclass workaround is invented"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Compare a couple of level 1 Fighter builds for me and tell me which is strictly better.",
+      "expected_output": "Engine-scored candidates, with the Pareto front presented when no candidate dominates — not a fabricated single winner.",
+      "assertions": [
+        "Every number shown appears in the engine's --json output for that candidate",
+        "When no candidate dominates on every axis, several are presented with the trade-off stated in terms of specific catalog-sourced stats (e.g., Con modifier vs. Str modifier for HP vs. attack)",
+        "No damage-per-round figure is quoted for any candidate, for weapons or spells"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Give me the optimal level 8 Paladin/Warlock multiclass with Great Weapon Master.",
+      "expected_output": "\"Manquant documentaire\" for the multiclass and for level 2+ feature maths; the level-1 portion offered as the in-scope alternative.",
+      "assertions": [
+        "Multiclassing is refused as \"Manquant documentaire\" rather than approximated",
+        "If any progression-table fact is cited (proficiency bonus, feature name at a given level), it is accompanied by the progression row from the engine's output — a number stated without such a row is a memory claim and fails",
+        "The scope limit is explained rather than silently applied"
+      ]
+    }
+  ]
+}

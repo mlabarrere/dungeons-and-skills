@@ -1,0 +1,102 @@
+{
+  "courantes": [
+    {
+      "id": "commun",
+      "name": "commun",
+      "rarity": "standard"
+    },
+    {
+      "id": "draconique",
+      "name": "draconique",
+      "rarity": "standard"
+    },
+    {
+      "id": "elfique",
+      "name": "elfique",
+      "rarity": "standard"
+    },
+    {
+      "id": "geant",
+      "name": "geant",
+      "rarity": "standard"
+    },
+    {
+      "id": "gnome",
+      "name": "gnome",
+      "rarity": "standard"
+    },
+    {
+      "id": "gobelin",
+      "name": "gobelin",
+      "rarity": "standard"
+    },
+    {
+      "id": "halfelin",
+      "name": "halfelin",
+      "rarity": "standard"
+    },
+    {
+      "id": "langue-multiverselle-des-signes",
+      "name": "langue-multiverselle-des-signes",
+      "rarity": "standard"
+    },
+    {
+      "id": "nain",
+      "name": "nain",
+      "rarity": "standard"
+    },
+    {
+      "id": "orc",
+      "name": "orc",
+      "rarity": "standard"
+    }
+  ],
+  "rares": [
+    {
+      "id": "abyssal",
+      "name": "abyssal",
+      "rarity": "rare"
+    },
+    {
+      "id": "argot-des-voleurs",
+      "name": "argot-des-voleurs",
+      "rarity": "rare"
+    },
+    {
+      "id": "celeste",
+      "name": "celeste",
+      "rarity": "rare"
+    },
+    {
+      "id": "commun-des-profondeurs",
+      "name": "commun-des-profondeurs",
+      "rarity": "rare"
+    },
+    {
+      "id": "druidique",
+      "name": "druidique",
+      "rarity": "rare"
+    },
+    {
+      "id": "infernal",
+      "name": "infernal",
+      "rarity": "rare"
+    },
+    {
+      "id": "primordial",
+      "name": "primordial",
+      "rarity": "rare"
+    },
+    {
+      "id": "profond",
+      "name": "profond",
+      "rarity": "rare"
+    },
+    {
+      "id": "sylvestre",
+      "name": "sylvestre",
+      "rarity": "rare"
+    }
+  ],
+  "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf"
+}

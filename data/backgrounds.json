@@ -1,0 +1,317 @@
+[
+  {
+    "id": "acolyte",
+    "name": "Acolyte",
+    "kind": "historique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.83-86",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "abilityScores": {
+      "abilities": [
+        "int",
+        "wis",
+        "cha"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "insight",
+      "religion"
+    ],
+    "toolProficiency": "materiel-de-calligraphe",
+    "feat": "initie-a-la-magie",
+    "featClass": "cleric",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "materiel-de-calligraphe",
+          "livre-de-prieres",
+          "symbole-sacre",
+          "parchemin-10-feuilles",
+          "robe"
+        ],
+        "gp": 8
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "insight"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "religion"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-de-calligraphe"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "initie-a-la-magie"
+      }
+    ],
+    "choices": [
+      {
+        "id": "acolyte-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "int",
+          "wis",
+          "cha"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "criminal",
+    "name": "Criminal",
+    "kind": "historique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.83-86",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "abilityScores": {
+      "abilities": [
+        "dex",
+        "con",
+        "int"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "stealth",
+      "sleight-of-hand"
+    ],
+    "toolProficiency": "outils-de-voleur",
+    "feat": "vigilant",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "2-dagues",
+          "outils-de-voleur",
+          "2-sacoches",
+          "pied-de-biche",
+          "tenue-de-voyage"
+        ],
+        "gp": 16
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "stealth"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "sleight-of-hand"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "outils-de-voleur"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "vigilant"
+      }
+    ],
+    "choices": [
+      {
+        "id": "criminal-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "dex",
+          "con",
+          "int"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "kind": "historique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.83-86",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "abilityScores": {
+      "abilities": [
+        "con",
+        "int",
+        "wis"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "arcana",
+      "history"
+    ],
+    "toolProficiency": "materiel-de-calligraphe",
+    "feat": "initie-a-la-magie",
+    "featClass": "wizard",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "baton-de-combat",
+          "materiel-de-calligraphe",
+          "livre-histoire",
+          "parchemin-8-feuilles",
+          "robe"
+        ],
+        "gp": 8
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "arcana"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "history"
+      },
+      {
+        "type": "grants",
+        "what": "toolProficiency",
+        "value": "materiel-de-calligraphe"
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "initie-a-la-magie"
+      }
+    ],
+    "choices": [
+      {
+        "id": "sage-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "con",
+          "int",
+          "wis"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      }
+    ]
+  },
+  {
+    "id": "soldier",
+    "name": "Soldier",
+    "kind": "historique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.83-86",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "abilityScores": {
+      "abilities": [
+        "str",
+        "dex",
+        "con"
+      ],
+      "rule": "+2/+1 ou +1/+1/+1",
+      "note": "Augmentez l'une de 2 et une autre de 1, ou les trois de 1 (max 20)."
+    },
+    "skills": [
+      "athletics",
+      "intimidation"
+    ],
+    "toolProficiency": "boite-de-jeux",
+    "feat": "sauvagerie-martiale",
+    "equipment": [
+      {
+        "option": "A",
+        "items": [
+          "arc-court",
+          "20-fleches",
+          "carquois",
+          "lance",
+          "boite-de-jeux",
+          "trousse-de-soins",
+          "tenue-de-voyage"
+        ],
+        "gp": 14
+      },
+      {
+        "option": "B",
+        "items": [],
+        "gp": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "athletics"
+      },
+      {
+        "type": "grants",
+        "what": "skillProficiency",
+        "value": "intimidation"
+      },
+      {
+        "type": "requiresChoice",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      },
+      {
+        "type": "grants",
+        "what": "feat",
+        "id": "sauvagerie-martiale"
+      }
+    ],
+    "choices": [
+      {
+        "id": "soldier-caracteristiques",
+        "kind": "abilityScoreIncrease",
+        "count": 1,
+        "from": [
+          "str",
+          "dex",
+          "con"
+        ],
+        "rule": "+2/+1 ou +1/+1/+1"
+      },
+      {
+        "id": "soldier-boite-de-jeux",
+        "kind": "toolProficiency",
+        "count": 1,
+        "from": {
+          "fromToolSet": "boite-de-jeux"
+        }
+      }
+    ]
+  }
+]

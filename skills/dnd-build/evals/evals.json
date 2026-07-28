@@ -1,0 +1,49 @@
+{
+  "skill_name": "dnd-build",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to make a D&D character. I've never played before — I just like the idea of someone tough who stands at the front with a big shield.",
+      "expected_output": "A complete level-1 sheet for a class matching the described playstyle, built through one-question-at-a-time guidance that never assumes prior D&D knowledge, with 0 sheet-lint errors and provenance on every derived value.",
+      "assertions": [
+        "The HP provenance string is verbatim the engine's, including the per-level term the class grants — a hand-computed sheet omits it",
+        "The first question asks about the character concept, not for a class name",
+        "Every option offered appears in the resolver's options output for that step",
+        "Re-running the produced answers file through `build` exits 0 and prints the clean-lint line",
+        "AC, HP and passive Perception each carry a provenance string naming their source"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "crée-moi un personnage niveau 1, un nain guerrier, background soldat, tableau standard pour les caracs",
+      "expected_output": "A level-1 dwarf fighter with the soldier background and standard-array scores, presented entirely in French, 0 lint errors.",
+      "assertions": [
+        "French entity names in the sheet (class, species, background, features) match the catalog's French labels from data/labels.fr.json — English names or 2014 translations signal a memory-sourced answer",
+        "The class, species and background match the ones requested",
+        "Re-running the produced answers file through `build` exits 0 and prints the clean-lint line",
+        "The soldier background's ability score bonus is attributed to the background (not the Dwarf species) in the sheet's provenance, correctly reflecting the 2024 rule"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Build me a level 1 wood elf druid called Sylwen, wisdom-focused, and give me the sheet in English.",
+      "expected_output": "A level-1 wood elf druid sheet in English, including the lineage choice, cantrips and prepared spells drawn only from the resolver's legal options.",
+      "assertions": [
+        "The lineage named by the user is carried into the build rather than re-asked",
+        "Every cantrip and prepared spell in the sheet appears in the resolver's options for that choice — set equality, no extras",
+        "Entity names in the sheet (spells, species, class features) match data/labels.en.json — the engine was invoked with --lang en to produce them, not recalled from memory",
+        "Re-running the produced answers file through `build` exits 0 and prints the clean-lint line"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Make me a level 5 human paladin with the Oathbreaker subclass.",
+      "expected_output": "A refusal to invent: the agent states \"Manquant documentaire\" for the level-5 request because the catalog covers level 1 only, and does not produce a level-5 sheet from memory.",
+      "assertions": [
+        "The response says \"Manquant documentaire\" or names the level-1 scope limit explicitly",
+        "No level-5 sheet is produced. Any progression-table fact quoted (feature name, proficiency bonus at level 5) must come from the engine's `progression paladin` output with a visible citation row — a number stated without such a row is a memory claim and fails",
+        "The agent offers the level-1 build as the in-scope alternative"
+      ]
+    }
+  ]
+}

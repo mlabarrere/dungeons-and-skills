@@ -1,0 +1,66 @@
+name: release readiness (validation only)
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic-matrix:
+    name: Node ${{ matrix.node }} / ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            node: 18
+          - os: ubuntu-latest
+            node: 22
+          - os: windows-latest
+            node: 18
+          - os: windows-latest
+            node: 22
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run skill:check
+      - run: npm test
+      - name: Validate npm artifact without publishing
+        run: npm pack --dry-run --json
+
+  standalone-html-browser:
+    name: Standalone HTML / Chromium
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install Playwright for this validation job only
+        run: npm install --no-save --package-lock=false @playwright/test@1.55.0
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test --config playwright.config.mjs
+
+  ready:
+    name: Release gates passed (no publish)
+    if: always()
+    needs: [deterministic-matrix, standalone-html-browser]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require every validation job
+        env:
+          MATRIX_RESULT: ${{ needs.deterministic-matrix.result }}
+          BROWSER_RESULT: ${{ needs.standalone-html-browser.result }}
+        run: |
+          test "$MATRIX_RESULT" = success
+          test "$BROWSER_RESULT" = success
+      - run: echo "Artifacts validated. Publishing remains a separate, deferred action."

@@ -1,0 +1,97 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  deterministic:
+    name: ${{ matrix.os }} / Node ${{ matrix.node }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            node: 18
+          - os: ubuntu-latest
+            node: 20
+          - os: ubuntu-latest
+            node: 22
+          - os: windows-latest
+            node: 18
+          - os: windows-latest
+            node: 22
+          - os: macos-latest
+            node: 22
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run skill:check
+      - run: node docs/_engine/html-lint.mjs --quiet
+      - run: npm test
+      - run: npm pack --dry-run --json
+      - run: git diff --check
+
+  public-artifacts:
+    name: Clean public checkout and release archives
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Export history-free public repository
+        run: node scripts/export-public-repository.mjs --output "$RUNNER_TEMP/dungeons-and-skills-srd"
+      - name: Commit the exact public source state
+        working-directory: ${{ runner.temp }}/dungeons-and-skills-srd
+        run: |
+          git init
+          git config user.name "Dungeons & Skills release bot"
+          git config user.email "release@example.invalid"
+          git add --all
+          git commit -m "Dungeons & Skills public beta"
+      - name: Test clean public checkout
+        working-directory: ${{ runner.temp }}/dungeons-and-skills-srd
+        run: |
+          npm test
+          npm run skill:check
+          npm pack --dry-run --json
+      - name: Build deterministic archives
+        run: node scripts/build-public-release.mjs --source "$RUNNER_TEMP/dungeons-and-skills-srd" --output "$RUNNER_TEMP/release"
+      - name: Extract, verify and install the release
+        run: |
+          mkdir "$RUNNER_TEMP/extracted"
+          tar -xzf "$RUNNER_TEMP/release/dungeons-and-skills-v0.2.0-beta.1.tar.gz" -C "$RUNNER_TEMP/extracted"
+          node "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1/scripts/verify-public-release.mjs" "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1"
+          node "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1/install.mjs" "$RUNNER_TEMP/installed"
+          node "$RUNNER_TEMP/installed/.claude/engine/cli.mjs" build "$RUNNER_TEMP/extracted/dungeons-and-skills-v0.2.0-beta.1/examples/dwarf-fighter.answers.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-beta-artifacts
+          path: |
+            ${{ runner.temp }}/release/*.zip
+            ${{ runner.temp }}/release/*.tar.gz
+            ${{ runner.temp }}/release/SHA256SUMS
+            ${{ runner.temp }}/release/release-manifest.json
+
+  documentary-html:
+    name: Standalone documentary HTML / Chromium
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm install --no-save --package-lock=false @playwright/test@1.55.0
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test --config playwright.config.mjs

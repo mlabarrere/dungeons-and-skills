@@ -1,0 +1,738 @@
+[
+  {
+    "id": "path-of-the-berserker",
+    "name": "Path of the Berserker",
+    "parentClass": "barbarian",
+    "kind": "voie",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Frenesie",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Rage aveugle",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Represailles",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Presence intimidante",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "college-of-lore",
+    "name": "College of Lore",
+    "parentClass": "bard",
+    "kind": "college",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Maitrises supplementaires",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Mots cinglants",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Decouvertes magiques",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Competence hors pair",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "college-du-savoir-competences",
+        "kind": "competence",
+        "count": 3,
+        "level": 3,
+        "note": "Maîtrise de trois compétences au choix"
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "life-domain",
+    "name": "Life Domain",
+    "parentClass": "cleric",
+    "kind": "domaine",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Disciple de la Vie",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Survivance",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Guerisseur beni",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Guerison supreme",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "aide",
+        "benediction",
+        "restauration-partielle",
+        "soins"
+      ],
+      "5": [
+        "mot-de-guerison-de-groupe",
+        "retour-a-la-vie"
+      ],
+      "7": [
+        "aura-de-vie",
+        "protection-contre-la-mort"
+      ],
+      "9": [
+        "restauration-supreme",
+        "soins-de-groupe"
+      ]
+    }
+  },
+  {
+    "id": "circle-of-the-land",
+    "name": "Circle of the Land",
+    "parentClass": "druid",
+    "kind": "cercle",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aval de la terre",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ressourcement",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Protege de dame Nature",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sanctuaire de dame Nature",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "cercle-de-la-terre-environnement",
+        "kind": "environnement",
+        "count": 1,
+        "level": 3,
+        "note": "Type d'environnement re-choisi a chaque Repos long : determine les sorts de cercle prepares (spellsByEnvironment) et, au niv.10 (Protege de dame Nature), la resistance associee (+ immunite a l'etat Empoisonne)",
+        "from": {
+          "fromList": [
+            "aride",
+            "polaire",
+            "tempere",
+            "tropical"
+          ]
+        },
+        "appliesEffects": {
+          "aride": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "feu",
+              "level": 10
+            }
+          ],
+          "polaire": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "froid",
+              "level": 10
+            }
+          ],
+          "tempere": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "foudre",
+              "level": 10
+            }
+          ],
+          "tropical": [
+            {
+              "type": "grants",
+              "what": "resistance",
+              "value": "poison",
+              "level": 10
+            }
+          ]
+        }
+      }
+    ],
+    "recommends": [],
+    "spellsByEnvironment": {
+      "aride": {
+        "3": [
+          "flou",
+          "mains-brulantes",
+          "trait-de-feu"
+        ],
+        "5": [
+          "boule-de-feu"
+        ],
+        "7": [
+          "fletrissement"
+        ],
+        "9": [
+          "mur-de-pierre"
+        ]
+      },
+      "polaire": {
+        "3": [
+          "immobilisation-de-personne",
+          "nappe-de-brouillard",
+          "rayon-de-givre"
+        ],
+        "5": [
+          "tempete-de-neige"
+        ],
+        "7": [
+          "tempete-de-grele"
+        ],
+        "9": [
+          "cone-de-froid"
+        ]
+      },
+      "tempere": {
+        "3": [
+          "foulee-brumeuse",
+          "poigne-electrique",
+          "sommeil"
+        ],
+        "5": [
+          "eclair"
+        ],
+        "7": [
+          "liberte-de-mouvement"
+        ],
+        "9": [
+          "passage-par-les-arbres"
+        ]
+      },
+      "tropical": {
+        "3": [
+          "aspersion-acide",
+          "rayon-empoisonne",
+          "toile-d-araignee"
+        ],
+        "5": [
+          "nuage-nauseabond"
+        ],
+        "7": [
+          "metamorphose"
+        ],
+        "9": [
+          "fleau-d-insectes"
+        ]
+      }
+    }
+  },
+  {
+    "id": "champion",
+    "name": "Champion",
+    "parentClass": "fighter",
+    "kind": "archetype-martial",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Athlete accompli",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Critique ameliore",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Style de combat supplementaire",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Heros du champ d'honneur",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Critique superieur",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Survivant",
+        "level": 18
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "warrior-of-the-open-hand",
+    "name": "Warrior of the Open Hand",
+    "parentClass": "monk",
+    "kind": "credo",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Technique de la Paume",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Plenitude physique",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Foulee preste",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Paume vibratoire",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "oath-of-devotion",
+    "name": "Oath of Devotion",
+    "parentClass": "paladin",
+    "kind": "serment",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Arme sacree",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Aura de devotion",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Chatiment de protection",
+        "level": 15
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Nimbe sacre",
+        "level": 20
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "bouclier-de-la-foi",
+        "protection-contre-le-mal-et-le-bien"
+      ],
+      "5": [
+        "aide",
+        "zone-de-verite"
+      ],
+      "9": [
+        "dissipation-de-la-magie",
+        "lueur-d-espoir"
+      ],
+      "13": [
+        "gardien-de-la-foi",
+        "liberte-de-mouvement"
+      ],
+      "17": [
+        "colonne-de-flamme",
+        "communion"
+      ]
+    }
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter",
+    "parentClass": "ranger",
+    "kind": "archetype-de-rodeur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Proie du chasseur",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Savoir du Chasseur",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Tactiques defensives",
+        "level": 7
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Proie du chasseur superieure",
+        "level": 11
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Defense de chasseur superieure",
+        "level": 15
+      }
+    ],
+    "choices": [
+      {
+        "id": "hunter-proie-du-chasseur",
+        "kind": "aptitude-sous-classe",
+        "count": 1,
+        "level": 3,
+        "note": "Proie du chasseur (niv.3), reoptable a chaque repos",
+        "from": {
+          "fromList": [
+            "briseur-de-hordes",
+            "gout-du-sang"
+          ]
+        }
+      },
+      {
+        "id": "hunter-tactiques-defensives",
+        "kind": "aptitude-sous-classe",
+        "count": 1,
+        "level": 7,
+        "note": "Tactiques defensives (niv.7), reoptable a chaque repos",
+        "from": {
+          "fromList": [
+            "cauchemar-de-la-horde",
+            "defense-contre-les-attaques-multiples"
+          ]
+        }
+      }
+    ],
+    "recommends": []
+  },
+  {
+    "id": "thief",
+    "name": "Thief",
+    "parentClass": "rogue",
+    "kind": "archetype-de-roublard",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Mains lestes",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Monte-en-l'air",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Furtivite supreme",
+        "level": 9
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Utilisation d'objets magiques",
+        "level": 13
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Reflexes de voleur",
+        "level": 17
+      }
+    ],
+    "choices": [],
+    "recommends": []
+  },
+  {
+    "id": "draconic-sorcery",
+    "name": "Draconic Sorcery",
+    "parentClass": "sorcerer",
+    "kind": "sorcellerie",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Resistance draconique",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Affinite elementaire",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Ailes draconiques",
+        "level": 14
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Compagnon draconique",
+        "level": 18
+      }
+    ],
+    "choices": [
+      {
+        "id": "sorcellerie-draconique-ascendance",
+        "kind": "type-de-degats",
+        "count": 1,
+        "level": 6,
+        "from": {
+          "fromList": [
+            "acide",
+            "feu",
+            "foudre",
+            "froid",
+            "poison"
+          ]
+        },
+        "note": "Type de dégâts de l'Affinité élémentaire (niveau 6)"
+      }
+    ],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "injonction",
+        "modification-d-apparence",
+        "orbe-chromatique",
+        "souffle-du-dragon"
+      ],
+      "5": [
+        "terreur",
+        "vol"
+      ],
+      "7": [
+        "charme-monstre",
+        "oeil-du-mage"
+      ],
+      "9": [
+        "convocation-de-dragon",
+        "mythes-et-legendes"
+      ]
+    }
+  },
+  {
+    "id": "fiend-patron",
+    "name": "Fiend Patron",
+    "parentClass": "warlock",
+    "kind": "protecteur",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Benediction du tenebreux",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Chance du tenebreux",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Resistance fielonne",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Traversee des enfers",
+        "level": 14
+      }
+    ],
+    "choices": [],
+    "recommends": [],
+    "spellsByLevel": {
+      "3": [
+        "injonction",
+        "mains-brulantes",
+        "rayon-ardent",
+        "suggestion"
+      ],
+      "5": [
+        "boule-de-feu",
+        "nuage-nauseabond"
+      ],
+      "7": [
+        "bouclier-de-feu",
+        "mur-de-feu"
+      ],
+      "9": [
+        "fleau-d-insectes",
+        "quete"
+      ]
+    }
+  },
+  {
+    "id": "evoker",
+    "name": "Evoker",
+    "parentClass": "wizard",
+    "kind": "ecole-arcanique",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.28-82",
+    "source": "SRD 5.2.1 (CC-BY-4.0)",
+    "level": 3,
+    "effects": [
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Evocateur erudit",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Sort mineur appuye",
+        "level": 3
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Faconneur de sorts",
+        "level": 6
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Evocation amelioree",
+        "level": 10
+      },
+      {
+        "type": "grants",
+        "what": "feature",
+        "name": "Surcharge magique",
+        "level": 14
+      }
+    ],
+    "choices": [
+      {
+        "id": "evoker-sorts-ecole",
+        "kind": "sort",
+        "count": 2,
+        "level": 3,
+        "from": {
+          "fromSpellList": "wizard",
+          "maxLevel": 2
+        },
+        "note": "Deux sorts de Magicien de l'école d'Évocation (niveau <= 2) ajoutés au grimoire"
+      }
+    ],
+    "recommends": []
+  }
+]

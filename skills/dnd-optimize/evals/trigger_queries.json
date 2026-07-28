@@ -1,0 +1,96 @@
+{
+  "skill_name": "dnd-optimize",
+  "note": "60/40 train/validation split. Tune descriptions on train failures only; validation measures generalization. Run `node scripts/eval-trigger-rate.mjs dnd-optimize` to measure trigger accuracy and see the random-baseline comparison.",
+  "train": [
+    {
+      "query": "what's the optimal build for an Aasimar sailor warlock",
+      "should_trigger": true
+    },
+    {
+      "query": "I need to squeeze every point of performance out of this concept — don't change the class",
+      "should_trigger": true
+    },
+    {
+      "query": "mon personnage doit absolument avoir Boule de Feu avant la fin de l'arc 2, j'ai besoin d'un build qui y arrive le plus vite possible",
+      "should_trigger": true
+    },
+    {
+      "query": "at what level can a wizard first cast fireball",
+      "should_trigger": true
+    },
+    {
+      "query": "compare these two level 1 fighter builds and tell me which is stronger",
+      "should_trigger": true
+    },
+    {
+      "query": "strongest possible version of a tanky dwarf cleric",
+      "should_trigger": true
+    },
+    {
+      "query": "make me a level 1 rogue",
+      "should_trigger": false
+    },
+    {
+      "query": "what does the Lucky feat do",
+      "should_trigger": false
+    },
+    {
+      "query": "check my sheet, the AC looks wrong",
+      "should_trigger": false
+    },
+    {
+      "query": "can you optimize my D&D encounter difficulty so it's challenging but not deadly for a level 5 party",
+      "should_trigger": false
+    },
+    {
+      "query": "what's the best build for a 5e 2014 hexblade",
+      "should_trigger": false
+    },
+    {
+      "query": "help me optimize my Pathfinder 2e alchemist",
+      "should_trigger": false
+    },
+    {
+      "query": "I wrote my build constraints in a file — Aasimar, sailor background, warlock — which ability scores should I max first?",
+      "should_trigger": true
+    }
+  ],
+  "validation": [
+    {
+      "query": "theorycraft me something nasty that's still a paladin",
+      "should_trigger": true
+    },
+    {
+      "query": "which ability spread gets the most out of a level 1 monk",
+      "should_trigger": true
+    },
+    {
+      "query": "earliest I can pick up Warcaster on a bard?",
+      "should_trigger": true
+    },
+    {
+      "query": "best background for a face character in 2024",
+      "should_trigger": true
+    },
+    {
+      "query": "roll stats for me with 4d6 drop lowest",
+      "should_trigger": false
+    },
+    {
+      "query": "explain how Pareto optimality works",
+      "should_trigger": false
+    },
+    {
+      "query": "what's the DPR of a level 5 fighter with two attacks",
+      "should_trigger": false
+    },
+    {
+      "query": "write a backstory that fits an optimized build",
+      "should_trigger": false
+    },
+    {
+      "query": "what's the best class for a complete beginner",
+      "should_trigger": false
+    }
+  ]
+}

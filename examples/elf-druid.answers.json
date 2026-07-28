@@ -1,0 +1,48 @@
+{
+  "_id": "sylwen-elf-druid",
+  "name": "Sylwen",
+  "alignment": "Neutre bon",
+  "class": "druid",
+  "species": "elf",
+  "lineage": "elfe-sylvestre",
+  "background": "acolyte",
+  "method": "standard",
+  "abilityScores": {
+    "str": 10,
+    "dex": 14,
+    "con": 13,
+    "int": 12,
+    "wis": 15,
+    "cha": 8
+  },
+  "druid-competences": [
+    "nature",
+    "medicine"
+  ],
+  "druid-ordre-primitif": "gardien",
+  "druid-cantrips": [
+    "produce-flame",
+    "shillelagh"
+  ],
+  "druid-prepares": [
+    "animal-friendship",
+    "faerie-fire",
+    "cure-wounds",
+    "thunderwave"
+  ],
+  "druid-equipement": "A",
+  "elf-sens-aiguises": "perception",
+  "elf-sylvestre-caracteristique-incantation": "wis",
+  "acolyte-caracteristiques": "wis",
+  "initie-a-la-magie-liste": "cleric",
+  "initie-a-la-magie-carac": "wis",
+  "initie-a-la-magie-cantrips": [
+    "guidance",
+    "sacred-flame"
+  ],
+  "initie-a-la-magie-sort-1": "bless",
+  "origine-langues-choix": [
+    "elfique",
+    "geant"
+  ]
+}

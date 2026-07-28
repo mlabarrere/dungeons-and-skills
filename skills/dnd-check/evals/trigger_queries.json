@@ -1,0 +1,92 @@
+{
+  "skill_name": "dnd-check",
+  "note": "60/40 train/validation split. Tune descriptions on train failures only; validation measures generalization. Run `node scripts/eval-trigger-rate.mjs dnd-check` to measure trigger accuracy and see the random-baseline comparison.",
+  "train": [
+    {
+      "query": "I entered my numbers but the HP feels way too high — could you look over my character",
+      "should_trigger": true
+    },
+    {
+      "query": "j'ai recalculé ma CA trois fois et je tombe jamais sur le même résultat, tu peux regarder ?",
+      "should_trigger": true
+    },
+    {
+      "query": "my DM said my level 1 ranger isn't legal, can you find what's wrong",
+      "should_trigger": true
+    },
+    {
+      "query": "I built this in a hurry — does the HP math check out? con 14, d10 hit die, level 1",
+      "should_trigger": true
+    },
+    {
+      "query": "audit this build for edition mistakes, I think I used a 2014 rule by accident",
+      "should_trigger": true
+    },
+    {
+      "query": "mon MJ dit que ma fiche a des erreurs de règles, tu peux trouver quoi ?",
+      "should_trigger": true
+    },
+    {
+      "query": "make me a new level 1 bard",
+      "should_trigger": false
+    },
+    {
+      "query": "what does Second Wind do",
+      "should_trigger": false
+    },
+    {
+      "query": "can you explain how to calculate attack rolls in D&D 2024 from scratch",
+      "should_trigger": false
+    },
+    {
+      "query": "my level 6 wizard's spell slots look wrong, can you verify them",
+      "should_trigger": false
+    },
+    {
+      "query": "proofread my character's backstory for typos",
+      "should_trigger": false
+    },
+    {
+      "query": "validate this JSON file against its schema",
+      "should_trigger": false
+    },
+    {
+      "query": "I saved my character sheet to evals/files/broken-dwarf-fighter.md — can you audit it for rules errors",
+      "should_trigger": true
+    }
+  ],
+  "validation": [
+    {
+      "query": "my character just seems weaker than everyone else at the table and I wonder if I made a mistake building it",
+      "should_trigger": true
+    },
+    {
+      "query": "double-check the saving throws on this sheet please",
+      "should_trigger": true
+    },
+    {
+      "query": "j'ai une erreur dans ma fiche de perso, tu peux regarder ?",
+      "should_trigger": true
+    },
+    {
+      "query": "I ended up with AC 18 on my fighter wearing chain mail and holding a shield, my friend says I have it wrong",
+      "should_trigger": true
+    },
+    {
+      "query": "check my Pathfinder character for legality",
+      "should_trigger": false
+    },
+    {
+      "query": "which backgrounds give proficiency in Stealth",
+      "should_trigger": false
+    },
+    {
+      "query": "roll me a d20 with advantage",
+      "should_trigger": false
+    },
+    {
+      "query": "help me pick a subclass for my level 3 rogue",
+      "should_trigger": false
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+/output/playwright/
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# backups de session (ne pas versionner)
+/_batches_backup_*.zip
+/_catalog_backup_*.zip
+
+# fiches de perso remplies / PDF (donnees perso — jamais versionnees ni distribuees)
+# Les gabarits vierges peuvent etre re-ajoutes explicitement : git add -f <fichier>.pdf
+*.pdf
+
+# work scratch (fichiers de build non versionnés)
+work/
+
+# engine scratch (fichiers answers.json temporaires du workflow de build)
+/answers*.json
+*.tmp.json
+/_tmp*.json
+
+# Contenu du livre (scans) — jamais versionne, garde en local/prive
+docs/img/
+docs/_analysis/character_sheet/
+docs/_analysis/contact_*.jpg

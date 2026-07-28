@@ -1,0 +1,23 @@
+{
+  "name": "dungeons-and-skills",
+  "version": "0.2.0-beta.1",
+  "description": "D&D 2024 (5.5) character skills — assistant, build, check, lookup, optimize, help — rules-verified by a deterministic engine, grounded in a bundled catalog, never the model's memory.",
+  "author": {
+    "name": "Dungeons & Skills contributors"
+  },
+  "homepage": "https://github.com/mlabarrere/dungeons-and-skills-srd",
+  "license": "MIT",
+  "keywords": [
+    "claude-skills",
+    "agent-skills",
+    "dnd",
+    "dnd-2024",
+    "5e",
+    "character-builder",
+    "grounding",
+    "anti-hallucination"
+  ],
+  "icon": "./assets/logo.svg",
+  "skills": "./skills",
+  "commands": "./commands"
+}

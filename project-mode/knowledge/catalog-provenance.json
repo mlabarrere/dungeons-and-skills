@@ -1,0 +1,4888 @@
+{
+  "schemaVersion": 1,
+  "profile": "srd-5.2",
+  "version": "5.2.1",
+  "attribution": "This work includes material from the System Reference Document 5.2.1 (\"SRD 5.2.1\") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.",
+  "entries": {
+    "backgrounds:acolyte": {
+      "id": "acolyte",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "backgrounds:criminal": {
+      "id": "criminal",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "backgrounds:sage": {
+      "id": "sage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "backgrounds:soldier": {
+      "id": "soldier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:background": {
+      "id": "background",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:bonus-historique": {
+      "id": "bonus-historique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:calcul": {
+      "id": "calcul",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:cantrips": {
+      "id": "cantrips",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:class": {
+      "id": "class",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:competences": {
+      "id": "competences",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:don-origine": {
+      "id": "don-origine",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:equipement-classe": {
+      "id": "equipement-classe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:identite": {
+      "id": "identite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:langues": {
+      "id": "langues",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:lineage": {
+      "id": "lineage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:method": {
+      "id": "method",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:prepares": {
+      "id": "prepares",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:species": {
+      "id": "species",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:subclass": {
+      "id": "subclass",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "build-graph:valeurs": {
+      "id": "valeurs",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:barbarian": {
+      "id": "barbarian",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:bard": {
+      "id": "bard",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:cleric": {
+      "id": "cleric",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:druid": {
+      "id": "druid",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:fighter": {
+      "id": "fighter",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:monk": {
+      "id": "monk",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:paladin": {
+      "id": "paladin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:ranger": {
+      "id": "ranger",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:rogue": {
+      "id": "rogue",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:sorcerer": {
+      "id": "sorcerer",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:warlock": {
+      "id": "warlock",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "classes:wizard": {
+      "id": "wizard",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:a-terre": {
+      "id": "a-terre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:agrippe": {
+      "id": "agrippe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:assourdi": {
+      "id": "assourdi",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:aveugle": {
+      "id": "aveugle",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:charme": {
+      "id": "charme",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:effraye": {
+      "id": "effraye",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:empoisonne": {
+      "id": "empoisonne",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:entrave": {
+      "id": "entrave",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:epuisement": {
+      "id": "epuisement",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:etourdi": {
+      "id": "etourdi",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:inconscient": {
+      "id": "inconscient",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:invisible": {
+      "id": "invisible",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:neutralise": {
+      "id": "neutralise",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:paralyse": {
+      "id": "paralyse",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "conditions:petrifie": {
+      "id": "petrifie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:armure-d-ecailles": {
+      "id": "armure-d-ecailles",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:armure-de-cuir": {
+      "id": "armure-de-cuir",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:armure-de-cuir-cloute": {
+      "id": "armure-de-cuir-cloute",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:armure-de-peaux": {
+      "id": "armure-de-peaux",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:armure-matelassee": {
+      "id": "armure-matelassee",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:bouclier": {
+      "id": "bouclier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:broigne": {
+      "id": "broigne",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:chemise-de-mailles": {
+      "id": "chemise-de-mailles",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:clibanion": {
+      "id": "clibanion",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:cotte-de-mailles": {
+      "id": "cotte-de-mailles",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:cuirasse": {
+      "id": "cuirasse",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:demi-plate": {
+      "id": "demi-plate",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:armors:harnois": {
+      "id": "harnois",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:amulette": {
+      "id": "amulette",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:baguette": {
+      "id": "baguette",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:baguette-d-if": {
+      "id": "baguette-d-if",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:balles-d-arme-a-feu": {
+      "id": "balles-d-arme-a-feu",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:baton": {
+      "id": "baton",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:baton-en-bois": {
+      "id": "baton-en-bois",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:beaux-habits": {
+      "id": "beaux-habits",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:billes-de-fronde": {
+      "id": "billes-de-fronde",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:branche-de-gui": {
+      "id": "branche-de-gui",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:branche-de-houx": {
+      "id": "branche-de-houx",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:carquois": {
+      "id": "carquois",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:carreaux": {
+      "id": "carreaux",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:corde": {
+      "id": "corde",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:costume": {
+      "id": "costume",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:cristal": {
+      "id": "cristal",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:dards": {
+      "id": "dards",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:embleme": {
+      "id": "embleme",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:fleches": {
+      "id": "fleches",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:grimoire": {
+      "id": "grimoire",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:huile": {
+      "id": "huile",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:lampe": {
+      "id": "lampe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:lanterne-a-capote": {
+      "id": "lanterne-a-capote",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:livre": {
+      "id": "livre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:livre-de-prieres": {
+      "id": "livre-de-prieres",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:livre-histoire": {
+      "id": "livre-histoire",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:livre-philosophie": {
+      "id": "livre-philosophie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:menottes": {
+      "id": "menottes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:miroir": {
+      "id": "miroir",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:orbe": {
+      "id": "orbe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:parchemin": {
+      "id": "parchemin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:parfum": {
+      "id": "parfum",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:pelle": {
+      "id": "pelle",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:pied-de-biche": {
+      "id": "pied-de-biche",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:pot-en-fer": {
+      "id": "pot-en-fer",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:potion-de-guerison": {
+      "id": "potion-de-guerison",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:rations": {
+      "id": "rations",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:reliquaire": {
+      "id": "reliquaire",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:robe": {
+      "id": "robe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:sac-a-dos": {
+      "id": "sac-a-dos",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:sac-de-couchage": {
+      "id": "sac-de-couchage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:sacoche": {
+      "id": "sacoche",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:sacoche-a-composantes": {
+      "id": "sacoche-a-composantes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:sceptre": {
+      "id": "sceptre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:symbole-sacre": {
+      "id": "symbole-sacre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:tente": {
+      "id": "tente",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:tenue-de-voyage": {
+      "id": "tenue-de-voyage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:torche": {
+      "id": "torche",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:gear:trousse-de-soins": {
+      "id": "trousse-de-soins",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:packs:paquetage-d-artiste": {
+      "id": "paquetage-d-artiste",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:packs:paquetage-d-ecclesiastique": {
+      "id": "paquetage-d-ecclesiastique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:packs:paquetage-d-erudit": {
+      "id": "paquetage-d-erudit",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:packs:paquetage-d-explorateur": {
+      "id": "paquetage-d-explorateur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:packs:paquetage-d-exploration-souterraine": {
+      "id": "paquetage-d-exploration-souterraine",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:packs:paquetage-de-cambrioleur": {
+      "id": "paquetage-de-cambrioleur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:packs:paquetage-de-diplomate": {
+      "id": "paquetage-de-diplomate",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:accessoires-de-deguisement": {
+      "id": "accessoires-de-deguisement",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:boite-de-jeux": {
+      "id": "boite-de-jeux",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:instrument-de-musique": {
+      "id": "instrument-de-musique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:instruments-de-navigateur": {
+      "id": "instruments-de-navigateur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:materiel-d-alchimiste": {
+      "id": "materiel-d-alchimiste",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:materiel-d-empoisonneur": {
+      "id": "materiel-d-empoisonneur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:materiel-d-herboriste": {
+      "id": "materiel-d-herboriste",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:materiel-de-brasseur": {
+      "id": "materiel-de-brasseur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:materiel-de-calligraphe": {
+      "id": "materiel-de-calligraphe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:materiel-de-contrefacon": {
+      "id": "materiel-de-contrefacon",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:materiel-de-peintre": {
+      "id": "materiel-de-peintre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-bricoleur": {
+      "id": "outils-de-bricoleur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-cartographe": {
+      "id": "outils-de-cartographe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-charpentier": {
+      "id": "outils-de-charpentier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-cordonnier": {
+      "id": "outils-de-cordonnier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-forgeron": {
+      "id": "outils-de-forgeron",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-joaillier": {
+      "id": "outils-de-joaillier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-macon": {
+      "id": "outils-de-macon",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-menuisier": {
+      "id": "outils-de-menuisier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-potier": {
+      "id": "outils-de-potier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-souffleur-de-verre": {
+      "id": "outils-de-souffleur-de-verre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-tanneur": {
+      "id": "outils-de-tanneur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-tisserand": {
+      "id": "outils-de-tisserand",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:outils-de-voleur": {
+      "id": "outils-de-voleur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:tools:ustensiles-de-cuisinier": {
+      "id": "ustensiles-de-cuisinier",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:arbalete-de-poing": {
+      "id": "arbalete-de-poing",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:arbalete-legere": {
+      "id": "arbalete-legere",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:arbalete-lourde": {
+      "id": "arbalete-lourde",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:arc-court": {
+      "id": "arc-court",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:arc-long": {
+      "id": "arc-long",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:baton-de-combat": {
+      "id": "baton-de-combat",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:cimeterre": {
+      "id": "cimeterre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:coutille": {
+      "id": "coutille",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:dague": {
+      "id": "dague",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:epee-a-deux-mains": {
+      "id": "epee-a-deux-mains",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:epee-courte": {
+      "id": "epee-courte",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:epee-longue": {
+      "id": "epee-longue",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:fleau-d-armes": {
+      "id": "fleau-d-armes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:flechette": {
+      "id": "flechette",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:fouet": {
+      "id": "fouet",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:fronde": {
+      "id": "fronde",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:gourdin": {
+      "id": "gourdin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:hache-a-deux-mains": {
+      "id": "hache-a-deux-mains",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:hache-d-armes": {
+      "id": "hache-d-armes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:hachette": {
+      "id": "hachette",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:hallebarde": {
+      "id": "hallebarde",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:javeline": {
+      "id": "javeline",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:lance": {
+      "id": "lance",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:lance-d-arcon": {
+      "id": "lance-d-arcon",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:maillet-d-armes": {
+      "id": "maillet-d-armes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:marteau-de-guerre": {
+      "id": "marteau-de-guerre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:marteau-leger": {
+      "id": "marteau-leger",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:masse-d-armes": {
+      "id": "masse-d-armes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:massue": {
+      "id": "massue",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:morgenstern": {
+      "id": "morgenstern",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:mousquet": {
+      "id": "mousquet",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:pic-de-guerre": {
+      "id": "pic-de-guerre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:pique": {
+      "id": "pique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:pistolet": {
+      "id": "pistolet",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:rapiere": {
+      "id": "rapiere",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:sarbacane": {
+      "id": "sarbacane",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:serpe": {
+      "id": "serpe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "equipment:weapons:trident": {
+      "id": "trident",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Equipment",
+      "sourceReference": "pp. 89-103",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:amelioration-de-caracteristique": {
+      "id": "amelioration-de-caracteristique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:archerie": {
+      "id": "archerie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:armes-a-deux-mains": {
+      "id": "armes-a-deux-mains",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:combat-a-deux-armes": {
+      "id": "combat-a-deux-armes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:defense": {
+      "id": "defense",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:faveur-d-attaque-irresistible": {
+      "id": "faveur-d-attaque-irresistible",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:faveur-de-deplacement-dimensionnel": {
+      "id": "faveur-de-deplacement-dimensionnel",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:faveur-de-l-esprit-nocturne": {
+      "id": "faveur-de-l-esprit-nocturne",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:faveur-de-memoire-magique": {
+      "id": "faveur-de-memoire-magique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:faveur-de-prouesse-martiale": {
+      "id": "faveur-de-prouesse-martiale",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:faveur-de-vision-lucide": {
+      "id": "faveur-de-vision-lucide",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:faveur-du-destin": {
+      "id": "faveur-du-destin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:initie-a-la-magie": {
+      "id": "initie-a-la-magie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:sauvagerie-martiale": {
+      "id": "sauvagerie-martiale",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "feats:vigilant": {
+      "id": "vigilant",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Feats",
+      "sourceReference": "pp. 87-88",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:a-terre": {
+      "id": "a-terre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:abri": {
+      "id": "abri",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:action": {
+      "id": "action",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:action-bonus": {
+      "id": "action-bonus",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:agrippe": {
+      "id": "agrippe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:alignement": {
+      "id": "alignement",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:allie": {
+      "id": "allie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:allonge": {
+      "id": "allonge",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:amical": {
+      "id": "amical",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:arme": {
+      "id": "arme",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:armes-improvisees": {
+      "id": "armes-improvisees",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:arrondis-a-l-inferieur": {
+      "id": "arrondis-a-l-inferieur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:asphyxie": {
+      "id": "asphyxie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:assommer-une-creature": {
+      "id": "assommer-une-creature",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:assourdi": {
+      "id": "assourdi",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:attaque": {
+      "id": "attaque",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:attaque-a-mains-nues": {
+      "id": "attaque-a-mains-nues",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:attaque-d-arme": {
+      "id": "attaque-d-arme",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:attaque-de-sort": {
+      "id": "attaque-de-sort",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:attaques-d-opportunite": {
+      "id": "attaques-d-opportunite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:attitude": {
+      "id": "attitude",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:avantage": {
+      "id": "avantage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:aventure": {
+      "id": "aventure",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:aveugle": {
+      "id": "aveugle",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:bris-des-objets": {
+      "id": "bris-des-objets",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:campagne": {
+      "id": "campagne",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:capacite-de-charge": {
+      "id": "capacite-de-charge",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:categorie-de-taille": {
+      "id": "categorie-de-taille",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:charme": {
+      "id": "charme",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:chute": {
+      "id": "chute",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:cible": {
+      "id": "cible",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:classe-d-armure": {
+      "id": "classe-d-armure",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:competence": {
+      "id": "competence",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:concentration": {
+      "id": "concentration",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:cone": {
+      "id": "cone",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:coup-critique": {
+      "id": "coup-critique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:creature": {
+      "id": "creature",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:cube": {
+      "id": "cube",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:cylindre": {
+      "id": "cylindre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:danger": {
+      "id": "danger",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:degats": {
+      "id": "degats",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:degre-de-difficulte": {
+      "id": "degre-de-difficulte",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:des-de-vie": {
+      "id": "des-de-vie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:desavantage": {
+      "id": "desavantage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:desengagement": {
+      "id": "desengagement",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:deshydratation": {
+      "id": "deshydratation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:effet-magique": {
+      "id": "effet-magique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:effets-simultanes": {
+      "id": "effets-simultanes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:effraye": {
+      "id": "effraye",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:emanation": {
+      "id": "emanation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:embrasement": {
+      "id": "embrasement",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:empoisonne": {
+      "id": "empoisonne",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:en-peril": {
+      "id": "en-peril",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:ennemi": {
+      "id": "ennemi",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:entrave": {
+      "id": "entrave",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:epuisement": {
+      "id": "epuisement",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:escalade": {
+      "id": "escalade",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:espace-inoccupe": {
+      "id": "espace-inoccupe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:espace-occupe": {
+      "id": "espace-occupe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:esquive": {
+      "id": "esquive",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:etat": {
+      "id": "etat",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:etourdi": {
+      "id": "etourdi",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:etude": {
+      "id": "etude",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:expertise": {
+      "id": "expertise",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:facteur-de-puissance": {
+      "id": "facteur-de-puissance",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:fiche-de-personnage": {
+      "id": "fiche-de-personnage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:focaliseur-d-incantation": {
+      "id": "focaliseur-d-incantation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:formation-aux-armures": {
+      "id": "formation-aux-armures",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:furtivite": {
+      "id": "furtivite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:harmonisation": {
+      "id": "harmonisation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:hostile": {
+      "id": "hostile",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:illusions": {
+      "id": "illusions",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:immunite": {
+      "id": "immunite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:inconscient": {
+      "id": "inconscient",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:indifferent": {
+      "id": "indifferent",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:influence": {
+      "id": "influence",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:initiative": {
+      "id": "initiative",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:inspiration-heroique": {
+      "id": "inspiration-heroique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:intention": {
+      "id": "intention",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:invisible": {
+      "id": "invisible",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:jet-d-attaque": {
+      "id": "jet-d-attaque",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:jet-de-degats": {
+      "id": "jet-de-degats",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:jet-de-sauvegarde": {
+      "id": "jet-de-sauvegarde",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:jet-de-sauvegarde-contre-la-mort": {
+      "id": "jet-de-sauvegarde-contre-la-mort",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:js": {
+      "id": "js",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:ligne": {
+      "id": "ligne",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:lumiere-faible": {
+      "id": "lumiere-faible",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:lumiere-vive": {
+      "id": "lumiere-vive",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:lutte": {
+      "id": "lutte",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:magie": {
+      "id": "magie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:maitrise": {
+      "id": "maitrise",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:maledictions": {
+      "id": "maledictions",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:malnutrition": {
+      "id": "malnutrition",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:metamorphes": {
+      "id": "metamorphes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:monstre": {
+      "id": "monstre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:mort": {
+      "id": "mort",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:nage": {
+      "id": "nage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:neutralise": {
+      "id": "neutralise",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:objet": {
+      "id": "objet",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:observation": {
+      "id": "observation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:par-jour": {
+      "id": "par-jour",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:paralyse": {
+      "id": "paralyse",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:perception-des-vibrations": {
+      "id": "perception-des-vibrations",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:perception-passive": {
+      "id": "perception-passive",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:personnage-joueur": {
+      "id": "personnage-joueur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:personnage-non-joueur": {
+      "id": "personnage-non-joueur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:petrifie": {
+      "id": "petrifie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:pointe": {
+      "id": "pointe",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:points-d-experience": {
+      "id": "points-d-experience",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:points-de-vie": {
+      "id": "points-de-vie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:points-de-vie-temporaires": {
+      "id": "points-de-vie-temporaires",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:possession": {
+      "id": "possession",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:profil-de-jeu": {
+      "id": "profil-de-jeu",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:reaction": {
+      "id": "reaction",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:rencontre": {
+      "id": "rencontre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:repos-court": {
+      "id": "repos-court",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:repos-long": {
+      "id": "repos-long",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:reptation": {
+      "id": "reptation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:resistance": {
+      "id": "resistance",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:rituel": {
+      "id": "rituel",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:saut": {
+      "id": "saut",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:saut-en-hauteur": {
+      "id": "saut-en-hauteur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:saut-en-longueur": {
+      "id": "saut-en-longueur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:seuil-de-degats": {
+      "id": "seuil-de-degats",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:soins": {
+      "id": "soins",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:sort": {
+      "id": "sort",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:sort-mineur": {
+      "id": "sort-mineur",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:soutien": {
+      "id": "soutien",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:sphere": {
+      "id": "sphere",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:stabilise": {
+      "id": "stabilise",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:surprise": {
+      "id": "surprise",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:telepathie": {
+      "id": "telepathie",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:teleportation": {
+      "id": "teleportation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:tenebres": {
+      "id": "tenebres",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:terrain-difficile": {
+      "id": "terrain-difficile",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:test-d20": {
+      "id": "test-d20",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:test-de-caracteristique": {
+      "id": "test-de-caracteristique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:type-de-creature": {
+      "id": "type-de-creature",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:visibilite-nulle": {
+      "id": "visibilite-nulle",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:visibilite-reduite": {
+      "id": "visibilite-reduite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vision-aveugle": {
+      "id": "vision-aveugle",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vision-dans-le-noir": {
+      "id": "vision-dans-le-noir",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vision-lucide": {
+      "id": "vision-lucide",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vitesse": {
+      "id": "vitesse",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vitesse-d-escalade": {
+      "id": "vitesse-d-escalade",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vitesse-de-fouissement": {
+      "id": "vitesse-de-fouissement",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vitesse-de-nage": {
+      "id": "vitesse-de-nage",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vitesse-de-vol": {
+      "id": "vitesse-de-vol",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vol": {
+      "id": "vol",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vol-stationnaire": {
+      "id": "vol-stationnaire",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:vulnerabilite": {
+      "id": "vulnerabilite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "glossary:zone-d-effet": {
+      "id": "zone-d-effet",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Rules Glossary",
+      "sourceReference": "pp. 176-191",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:commun": {
+      "id": "commun",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:draconique": {
+      "id": "draconique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:elfique": {
+      "id": "elfique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:geant": {
+      "id": "geant",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:gnome": {
+      "id": "gnome",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:gobelin": {
+      "id": "gobelin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:halfelin": {
+      "id": "halfelin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:langue-multiverselle-des-signes": {
+      "id": "langue-multiverselle-des-signes",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:nain": {
+      "id": "nain",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:courantes:orc": {
+      "id": "orc",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:abyssal": {
+      "id": "abyssal",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:argot-des-voleurs": {
+      "id": "argot-des-voleurs",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:celeste": {
+      "id": "celeste",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:commun-des-profondeurs": {
+      "id": "commun-des-profondeurs",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:druidique": {
+      "id": "druidique",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:infernal": {
+      "id": "infernal",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:primordial": {
+      "id": "primordial",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:profond": {
+      "id": "profond",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "languages:rares:sylvestre": {
+      "id": "sylvestre",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Creation",
+      "sourceReference": "pp. 19-22",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:barbarian": {
+      "id": "barbarian",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:bard": {
+      "id": "bard",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:cleric": {
+      "id": "cleric",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:druid": {
+      "id": "druid",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:fighter": {
+      "id": "fighter",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:monk": {
+      "id": "monk",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:paladin": {
+      "id": "paladin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:ranger": {
+      "id": "ranger",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:rogue": {
+      "id": "rogue",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:sorcerer": {
+      "id": "sorcerer",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:warlock": {
+      "id": "warlock",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "progression:wizard": {
+      "id": "wizard",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:dragonborn": {
+      "id": "dragonborn",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:dwarf": {
+      "id": "dwarf",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:elf": {
+      "id": "elf",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:gnome": {
+      "id": "gnome",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:goliath": {
+      "id": "goliath",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:halfling": {
+      "id": "halfling",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:human": {
+      "id": "human",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:orc": {
+      "id": "orc",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "species:tiefling": {
+      "id": "tiefling",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Character Origins",
+      "sourceReference": "pp. 83-86",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:bard": {
+      "id": "bard",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:cleric": {
+      "id": "cleric",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:druid": {
+      "id": "druid",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:paladin": {
+      "id": "paladin",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:ranger": {
+      "id": "ranger",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:sorcerer": {
+      "id": "sorcerer",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:warlock": {
+      "id": "warlock",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells-by-class:wizard": {
+      "id": "wizard",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:acid-splash": {
+      "id": "acid-splash",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:alarm": {
+      "id": "alarm",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:animal-friendship": {
+      "id": "animal-friendship",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:bane": {
+      "id": "bane",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:bless": {
+      "id": "bless",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:burning-hands": {
+      "id": "burning-hands",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:charm-person": {
+      "id": "charm-person",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:chill-touch": {
+      "id": "chill-touch",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:chromatic-orb": {
+      "id": "chromatic-orb",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:color-spray": {
+      "id": "color-spray",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:command": {
+      "id": "command",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:comprehend-languages": {
+      "id": "comprehend-languages",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:create-or-destroy-water": {
+      "id": "create-or-destroy-water",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:cure-wounds": {
+      "id": "cure-wounds",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:dancing-lights": {
+      "id": "dancing-lights",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:detect-evil-and-good": {
+      "id": "detect-evil-and-good",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:detect-magic": {
+      "id": "detect-magic",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:detect-poison-and-disease": {
+      "id": "detect-poison-and-disease",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:disguise-self": {
+      "id": "disguise-self",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:dissonant-whispers": {
+      "id": "dissonant-whispers",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:divine-favor": {
+      "id": "divine-favor",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:divine-smite": {
+      "id": "divine-smite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:druidcraft": {
+      "id": "druidcraft",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:eldritch-blast": {
+      "id": "eldritch-blast",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:elementalism": {
+      "id": "elementalism",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:ensnaring-strike": {
+      "id": "ensnaring-strike",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:entangle": {
+      "id": "entangle",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:expeditious-retreat": {
+      "id": "expeditious-retreat",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:faerie-fire": {
+      "id": "faerie-fire",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:false-life": {
+      "id": "false-life",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:feather-fall": {
+      "id": "feather-fall",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:find-familiar": {
+      "id": "find-familiar",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:fire-bolt": {
+      "id": "fire-bolt",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:floating-disk": {
+      "id": "floating-disk",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:fog-cloud": {
+      "id": "fog-cloud",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:goodberry": {
+      "id": "goodberry",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:grease": {
+      "id": "grease",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:guidance": {
+      "id": "guidance",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:guiding-bolt": {
+      "id": "guiding-bolt",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:healing-word": {
+      "id": "healing-word",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:hellish-rebuke": {
+      "id": "hellish-rebuke",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:heroism": {
+      "id": "heroism",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:hex": {
+      "id": "hex",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:hideous-laughter": {
+      "id": "hideous-laughter",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:hunters-mark": {
+      "id": "hunters-mark",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:ice-knife": {
+      "id": "ice-knife",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:identify": {
+      "id": "identify",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:illusory-script": {
+      "id": "illusory-script",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:inflict-wounds": {
+      "id": "inflict-wounds",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:jump": {
+      "id": "jump",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:light": {
+      "id": "light",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:longstrider": {
+      "id": "longstrider",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:mage-armor": {
+      "id": "mage-armor",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:mage-hand": {
+      "id": "mage-hand",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:magic-missile": {
+      "id": "magic-missile",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:mending": {
+      "id": "mending",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:message": {
+      "id": "message",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:minor-illusion": {
+      "id": "minor-illusion",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:poison-spray": {
+      "id": "poison-spray",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:prestidigitation": {
+      "id": "prestidigitation",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:produce-flame": {
+      "id": "produce-flame",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:protection-from-evil-and-good": {
+      "id": "protection-from-evil-and-good",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:purify-food-and-drink": {
+      "id": "purify-food-and-drink",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:ray-of-frost": {
+      "id": "ray-of-frost",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:ray-of-sickness": {
+      "id": "ray-of-sickness",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:resistance": {
+      "id": "resistance",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:sacred-flame": {
+      "id": "sacred-flame",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:sanctuary": {
+      "id": "sanctuary",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:searing-smite": {
+      "id": "searing-smite",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:shield": {
+      "id": "shield",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:shield-of-faith": {
+      "id": "shield-of-faith",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:shillelagh": {
+      "id": "shillelagh",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:shocking-grasp": {
+      "id": "shocking-grasp",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:silent-image": {
+      "id": "silent-image",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:sleep": {
+      "id": "sleep",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:sorcerous-burst": {
+      "id": "sorcerous-burst",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:speak-with-animals": {
+      "id": "speak-with-animals",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:starry-wisp": {
+      "id": "starry-wisp",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:thaumaturgy": {
+      "id": "thaumaturgy",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:thunderwave": {
+      "id": "thunderwave",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:true-strike": {
+      "id": "true-strike",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:unseen-servant": {
+      "id": "unseen-servant",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "spells:vicious-mockery": {
+      "id": "vicious-mockery",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Spells",
+      "sourceReference": "pp. 104-175",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:champion": {
+      "id": "champion",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:circle-of-the-land": {
+      "id": "circle-of-the-land",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:college-of-lore": {
+      "id": "college-of-lore",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:draconic-sorcery": {
+      "id": "draconic-sorcery",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:evoker": {
+      "id": "evoker",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:fiend-patron": {
+      "id": "fiend-patron",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:hunter": {
+      "id": "hunter",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:life-domain": {
+      "id": "life-domain",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:oath-of-devotion": {
+      "id": "oath-of-devotion",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:path-of-the-berserker": {
+      "id": "path-of-the-berserker",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:thief": {
+      "id": "thief",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    },
+    "subclasses:warrior-of-the-open-hand": {
+      "id": "warrior-of-the-open-hand",
+      "ruleset": "2024",
+      "sourceDocument": "System Reference Document 5.2.1",
+      "sourceUrl": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf",
+      "sourceSection": "Classes",
+      "sourceReference": "pp. 28-82",
+      "license": "CC-BY-4.0",
+      "status": "verified"
+    }
+  }
+}

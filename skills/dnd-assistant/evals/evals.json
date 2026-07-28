@@ -1,0 +1,61 @@
+{
+  "skill_name": "dnd-assistant",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Je veux créer un personnage D&D, je débute et j'aime l'idée d'un guerrier robuste en armure lourde.",
+      "expected_output": "The assistant detects a character-creation intent and executes the full creation workflow: runs `node scripts/dnd.mjs doctor`, then `options`, guides the user through class/species/background/scores one question at a time in French, describes options from the engine's facts object (not memory), and ultimately builds a complete level-1 sheet with 0 lint errors and provenance on every derived value.",
+      "assertions": [
+        "The response does not mention 'dnd-build' or any internal skill name to the user",
+        "The first question asks about concept or character vision, not 'which class do you want'",
+        "Every option offered is sourced from the resolver's options output, not from memory",
+        "The final sheet has 0 sheet-lint errors when built by the engine",
+        "The response is in French, matching the user's language"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Can you check my character sheet? I think my AC might be wrong. I'm a level 1 fighter, STR 16, DEX 12, wearing chain mail.",
+      "expected_output": "The assistant detects a sheet-check intent and executes the validation workflow: runs `node scripts/dnd.mjs doctor`, assembles a .character.json from the user's stated values, runs `check`, and reports any AC mismatch with provenance (e.g. chain mail base AC + DEX modifier, citing the armor source). Does not produce a new sheet — audits the existing one.",
+      "assertions": [
+        "The response does not mention 'dnd-check' or any internal skill name to the user",
+        "The AC value is derived from the engine output, not computed by hand or recalled from memory",
+        "Any discrepancy between user-stated AC and engine-computed AC is reported with provenance",
+        "The response does not invent values for missing information — it asks for them one at a time"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "What does the Fireball spell do in D&D 2024?",
+      "expected_output": "The assistant detects a rule-lookup intent and executes the lookup workflow: runs `node scripts/dnd.mjs doctor` to confirm the catalog, then looks up the Fireball entry from the catalog. Presents the spell's level, school, casting time, range, components, duration, and effect text with source citation. If the entry is not in the catalog, says 'Manquant documentaire' — never invents the spell description from memory.",
+      "assertions": [
+        "The response does not mention 'dnd-lookup' or any internal skill name to the user",
+        "Every value in the spell description (damage dice, range, area, level) is sourced from the catalog, not recalled from training data",
+        "If Fireball is present in the catalog, its properties are cited with provenance; if absent, 'Manquant documentaire' is used",
+        "The response is in English, matching the user's language"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "D&D",
+      "expected_output": "The intent is ambiguous — the user has not stated whether they want to create a character, check a sheet, look up a rule, optimize a build, or get help. The assistant asks exactly one clarifying question in the user's language before taking any action.",
+      "assertions": [
+        "The response asks exactly one clarifying question — not multiple questions at once",
+        "The response does not start building a character, running a check, or doing any D&D work before knowing the intent",
+        "The clarifying question covers the main intents: create, check, or look up",
+        "No internal skill names (dnd-build, dnd-check, etc.) are exposed to the user"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I don't understand what this D&D toolkit does or which command to use.",
+      "expected_output": "The assistant detects a help/orientation intent and executes the help workflow: runs `node scripts/dnd.mjs doctor` and reports the installation status, then explains what the toolkit does (build characters, check sheets, look up rules, optimize builds) in plain language without exposing internal skill names or engine commands.",
+      "assertions": [
+        "The response does not mention 'dnd-help' or any internal skill name to the user",
+        "The doctor output is quoted accurately — the assistant does not paraphrase catalog counts from memory",
+        "The explanation covers what the toolkit can and cannot do at a high level",
+        "The response is in English, matching the user's language"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "skill_name": "dnd-check",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Voici la fiche de ma naine guerrière, quelque chose cloche mais je ne trouve pas quoi. Tu peux vérifier ?",
+      "expected_output": "A French audit reporting the four real defects — the +2 Con/+1 Wis species bonus (a 2014 rule; in 2024 the ability increase comes from the background), the stated HP of 15 against a computed 14, Arcana, which is not on the fighter skill list, and darkvision stated at 18 m where the catalog grants the Dwarf 36 m — while confirming the values that are correct rather than manufacturing errors.",
+      "files": [
+        "evals/files/broken-dwarf-fighter.md"
+      ],
+      "assertions": [
+        "The audit is in French and entity names (armor type, species trait) match their French catalog labels — English names or 2014 French spellings signal a memory-sourced answer",
+        "The species ability-score bonus is identified as a 2014 rule that does not apply to a 2024 character",
+        "The stated AC of 18 is confirmed CORRECT, quoting chain mail 16 + Dex capped at 0 + shield 2; no AC error is manufactured",
+        "The stated HP of 15 is reported against the computed 14, and the provenance shows the 1/niveau x1 bonus term alongside the hit die and Con modifier — an audit that reports 13 has dropped the species bonus from the computation and fails",
+        "Arcana is flagged as absent from the fighter skill list, citing the legal set from data/classes.json (fighter-competences: acrobatics, athletics, animal-handling, history, insight, intimidation, perception, persuasion, survival) — not merely as ungranted by the background",
+        "Darkvision is flagged: the sheet states 18 m, data/species.json grants the Dwarf 36 m",
+        "The audit does not rest on the engine's lint verdict alone: a character model carries no record of what the sheet claimed, so `check` recomputes instead of comparing. Each finding is a diff the agent drew between the sheet's text and a catalog value it cites",
+        "The report states each value twice — as written on the sheet and as computed — rather than only naming the error",
+        "The output is a numbered or bulleted diff list — no new ability-score table, no new equipment block, and no 'corrected sheet' section appears"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "is my character legal? level 1 elf druid, AC 14, HP 10, con 13, wearing leather armor, dex 14",
+      "expected_output": "An audit performed from values dictated in prose — the agent assembles the model itself, asks in plain language only for what is genuinely missing, and reports the diff. It must never ask the user to produce JSON.",
+      "assertions": [
+        "The agent assembles the elf druid's values (AC 14, HP 10, Con 13, leather armor, Dex 14) into a character model and queries the engine before stating any verdict — the agent does not ask the user to provide JSON or a character file",
+        "At most one clarifying question appears in the agent's first response — the engine is queried for what can be computed with the stated values before asking for more",
+        "Each reported value states both the sheet's value and the computed value",
+        "Each computed value carries the engine's provenance string verbatim, not a paraphrase"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Vérifie cette fiche : guerrier humain niveau 1, sous-classe Briseur de Serment, don Maître d'hast.",
+      "expected_output": "Two different verdicts, not one: Oathbreaker is absent from the catalog (\"Manquant documentaire\"), while Polearm Master IS in the catalog (maitre-d-hast, img:206) and is a prerequisite violation — it requires level 4+, so a level-1 character cannot have it.",
+      "assertions": [
+        "Oathbreaker is reported as absent from the catalog, and no effect is invented for it",
+        "Polearm Master is found in the catalog and reported as a prerequisite violation (level 4+ required), NOT as a missing entry",
+        "The Polearm Master effect quoted matches its catalog entry rather than being described from memory",
+        "The two cases are distinguished — a missing entry and an illegal-but-modeled entry are not conflated",
+        "A finding is reported independently of whether the subclass name resolves: no class in the catalog unlocks a subclass before level 3 (data/classes.json, subclass.level), so a level-1 fighter has no subclass at all"
+      ]
+    }
+  ]
+}

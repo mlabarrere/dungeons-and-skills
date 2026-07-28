@@ -1,0 +1,96 @@
+{
+  "skill_name": "dnd-help",
+  "note": "60/40 train/validation split. Tune descriptions on train failures only; validation measures generalization. Run `node scripts/eval-trigger-rate.mjs dnd-help` to measure trigger accuracy and see the random-baseline comparison.",
+  "train": [
+    {
+      "query": "there's some D&D thing in here and I have no clue what I'm supposed to do with it",
+      "should_trigger": true
+    },
+    {
+      "query": "je vois un truc D&D mais j'ai aucune idée à quoi ça sert",
+      "should_trigger": true
+    },
+    {
+      "query": "there are like five different commands here and I don't know which one to use first",
+      "should_trigger": true
+    },
+    {
+      "query": "why do you keep saying you can't answer from memory",
+      "should_trigger": true
+    },
+    {
+      "query": "c'est quoi ce machin, j'ai installé un truc D&D mais je pige pas ce que ça fait",
+      "should_trigger": true
+    },
+    {
+      "query": "make me a level 1 fighter",
+      "should_trigger": false
+    },
+    {
+      "query": "what does Cure Wounds heal",
+      "should_trigger": false
+    },
+    {
+      "query": "check my sheet for errors",
+      "should_trigger": false
+    },
+    {
+      "query": "explain the rules of D&D combat to a beginner",
+      "should_trigger": false
+    },
+    {
+      "query": "my DM uses a different character builder, how do I import my character file into Roll20",
+      "should_trigger": false
+    },
+    {
+      "query": "I'm totally new, just make me something playable",
+      "should_trigger": false
+    },
+    {
+      "query": "which languages do you support for the sheet",
+      "should_trigger": true
+    },
+    {
+      "query": "dnd-build keeps erroring out — here's the log from my terminal, what does this mean",
+      "should_trigger": true
+    }
+  ],
+  "validation": [
+    {
+      "query": "what are the limits of what this can do",
+      "should_trigger": true
+    },
+    {
+      "query": "aide",
+      "should_trigger": true
+    },
+    {
+      "query": "what's the difference between dnd-build and dnd-check",
+      "should_trigger": true
+    },
+    {
+      "query": "what's the best class for a beginner",
+      "should_trigger": false
+    },
+    {
+      "query": "show me an example character sheet",
+      "should_trigger": false
+    },
+    {
+      "query": "how does D&D initiative work",
+      "should_trigger": false
+    },
+    {
+      "query": "dnd-build keeps erroring out when it runs node, what's wrong",
+      "should_trigger": true
+    },
+    {
+      "query": "which in-game languages can my character speak",
+      "should_trigger": false
+    },
+    {
+      "query": "min-max my dwarf cleric as hard as you can",
+      "should_trigger": false
+    }
+  ]
+}

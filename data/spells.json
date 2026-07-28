@@ -1,0 +1,2139 @@
+[
+  {
+    "id": "alarm",
+    "name": "Alarm",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "1min",
+    "ritual": true,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une cloche et du fil d'argent",
+    "duration": "8h",
+    "classes": [
+      "wizard",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "animal-friendship",
+    "name": "Animal Friendship",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un peu de nourriture",
+    "duration": "24h",
+    "classes": [
+      "bard",
+      "druid",
+      "ranger"
+    ],
+    "save": "wis",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "find-familiar",
+    "name": "Find Familiar",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "1h",
+    "ritual": true,
+    "concentration": false,
+    "range": "3m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "de l'encens qui brule d'une valeur minimale de 10 po, que le sort detruit",
+    "duration": "instantanee",
+    "classes": [
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "mage-armor",
+    "name": "Mage Armor",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un morceau de cuir traite",
+    "duration": "8h",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "acid-splash",
+    "name": "Acid Splash",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "dex",
+    "damageType": "acide",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "guidance",
+    "name": "Guidance",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "divination",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "contact",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-1min",
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "goodberry",
+    "name": "Goodberry",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une branche de gui",
+    "duration": "24h",
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "bless",
+    "name": "Bless",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un symbole sacre d'une valeur minimale de 5 po",
+    "duration": "conc-1min",
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "inflict-wounds",
+    "name": "Inflict Wounds",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "necromancie",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "cleric"
+    ],
+    "save": "con",
+    "damageType": "necrotique",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "shield",
+    "name": "Shield",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "reaction",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "1round",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "shield-of-faith",
+    "name": "Shield of Faith",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": true,
+    "range": "18m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un parchemin de priere",
+    "duration": "conc-10min",
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "poison-spray",
+    "name": "Poison Spray",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "necromancie",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": null,
+    "damageType": "poison",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "charm-person",
+    "name": "Charm Person",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "1h",
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": "wis",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "searing-smite",
+    "name": "Searing Smite",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "1min",
+    "classes": [
+      "paladin"
+    ],
+    "save": "con",
+    "damageType": "feu",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "divine-smite",
+    "name": "Divine Smite",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "paladin"
+    ],
+    "save": "-",
+    "damageType": "radiant",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "speak-with-animals",
+    "name": "Speak with Animals",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "divination",
+    "castingTime": "action",
+    "ritual": true,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "10min",
+    "classes": [
+      "bard",
+      "druid",
+      "warlock",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "comprehend-languages",
+    "name": "Comprehend Languages",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "divination",
+    "castingTime": "action",
+    "ritual": true,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une pincee de suie et de sel",
+    "duration": "1h",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "chill-touch",
+    "name": "Chill Touch",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "necromancie",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": "-",
+    "damageType": "necrotique",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "color-spray",
+    "name": "Color Spray",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "illusion",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une pincee de sable colore",
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "con",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "true-strike",
+    "name": "True Strike",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "divination",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "S",
+      "M"
+    ],
+    "material": "une arme dont vous avez la maitrise, d'une valeur minimale de 1 pc",
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": "-",
+    "damageType": "radiant",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "ice-knife",
+    "name": "Ice Knife",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "S",
+      "M"
+    ],
+    "material": "une goutte d'eau ou un morceau de glace",
+    "duration": "instantanee",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "dex",
+    "damageType": "froid",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "create-or-destroy-water",
+    "name": "Create or Destroy Water",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un melange d'eau et de sable",
+    "duration": "instantanee",
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "shillelagh",
+    "name": "Shillelagh",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "transmutation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "du gui",
+    "duration": "1min",
+    "classes": [
+      "druid"
+    ],
+    "save": null,
+    "damageType": "force",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "eldritch-blast",
+    "name": "Eldritch Blast",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "36m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "warlock"
+    ],
+    "save": null,
+    "damageType": "force",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "disguise-self",
+    "name": "Disguise Self",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "illusion",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "1h",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "detect-magic",
+    "name": "Detect Magic",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "divination",
+    "castingTime": "action",
+    "ritual": true,
+    "concentration": true,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-10min",
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard",
+      "warlock",
+      "paladin",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "detect-evil-and-good",
+    "name": "Detect Evil and Good",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "divination",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-10min",
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "detect-poison-and-disease",
+    "name": "Detect Poison and Disease",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "divination",
+    "castingTime": "action",
+    "ritual": true,
+    "concentration": true,
+    "range": "perso",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une feuille d'if",
+    "duration": "conc-10min",
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "druidcraft",
+    "name": "Druidcraft",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "druid"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "elementalism",
+    "name": "Elementalism",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "entangle",
+    "name": "Entangle",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "27m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-1min",
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "save": "str",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "sorcerous-burst",
+    "name": "Sorcerous Burst",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "36m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "divine-favor",
+    "name": "Divine Favor",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "transmutation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "1min",
+    "classes": [
+      "paladin"
+    ],
+    "save": "-",
+    "damageType": "radiant",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "feather-fall",
+    "name": "Feather Fall",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "transmutation",
+    "castingTime": "reaction",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "M"
+    ],
+    "material": "une petite plume ou un peu de duvet",
+    "duration": "1min",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "sacred-flame",
+    "name": "Sacred Flame",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "cleric"
+    ],
+    "save": "dex",
+    "damageType": "radiant",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "produce-flame",
+    "name": "Produce Flame",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "invocation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "10min",
+    "classes": [
+      "druid"
+    ],
+    "save": "-",
+    "damageType": "feu",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "ensnaring-strike",
+    "name": "Ensnaring Strike",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": true,
+    "range": "perso",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "conc-1min",
+    "classes": [
+      "ranger"
+    ],
+    "save": "str",
+    "damageType": "perforant",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "grease",
+    "name": "Grease",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un peu de couenne de porc ou de beurre",
+    "duration": "1min",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "dex",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "longstrider",
+    "name": "Longstrider",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une pincee de terre",
+    "duration": "1h",
+    "classes": [
+      "bard",
+      "druid",
+      "wizard",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "heroism",
+    "name": "Heroism",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "contact",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-1min",
+    "classes": [
+      "bard",
+      "paladin"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "identify",
+    "name": "Identify",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "divination",
+    "castingTime": "1min",
+    "ritual": true,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une perle d'une valeur minimale de 100 po",
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "minor-illusion",
+    "name": "Minor Illusion",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "illusion",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "S",
+      "M"
+    ],
+    "material": "un peu de laine brute",
+    "duration": "1min",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "silent-image",
+    "name": "Silent Image",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "illusion",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "18m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un peu de laine brute",
+    "duration": "conc-10min",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "bane",
+    "name": "Bane",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une goutte de sang",
+    "duration": "conc-1min",
+    "classes": [
+      "bard",
+      "cleric",
+      "warlock"
+    ],
+    "save": "cha",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "command",
+    "name": "Command",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "cleric",
+      "paladin"
+    ],
+    "save": "wis",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "faerie-fire",
+    "name": "Faerie Fire",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "18m",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "conc-1min",
+    "classes": [
+      "bard",
+      "druid"
+    ],
+    "save": "dex",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "light",
+    "name": "Light",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "M"
+    ],
+    "material": "une luciole ou de la mousse phosphorescente",
+    "duration": "1h",
+    "classes": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "dancing-lights",
+    "name": "Dancing Lights",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "illusion",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "36m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un peu de phosphore",
+    "duration": "conc-1min",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "mage-hand",
+    "name": "Mage Hand",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "1min",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "burning-hands",
+    "name": "Burning Hands",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "dex",
+    "damageType": "feu",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "hex",
+    "name": "Hex",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": true,
+    "range": "27m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un oeil petrifie de triton",
+    "duration": "conc-1h",
+    "classes": [
+      "warlock"
+    ],
+    "save": null,
+    "damageType": "necrotique",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "hunters-mark",
+    "name": "Hunter's Mark",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "divination",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": true,
+    "range": "27m",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "conc-1h",
+    "classes": [
+      "ranger"
+    ],
+    "save": "-",
+    "damageType": "force",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "message",
+    "name": "Message",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "36m",
+    "components": [
+      "S",
+      "M"
+    ],
+    "material": "du fil de cuivre",
+    "duration": "1round",
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "vicious-mockery",
+    "name": "Vicious Mockery",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "bard"
+    ],
+    "save": "wis",
+    "damageType": "psychique",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "healing-word",
+    "name": "Healing Word",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "cleric",
+      "druid"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "dissonant-whispers",
+    "name": "Dissonant Whispers",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "bard"
+    ],
+    "save": "wis",
+    "damageType": "psychique",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "fog-cloud",
+    "name": "Fog Cloud",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "36m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-1h",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "chromatic-orb",
+    "name": "Chromatic Orb",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "27m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un diamant d'une valeur minimale de 50 po",
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "shocking-grasp",
+    "name": "Shocking Grasp",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "foudre",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "starry-wisp",
+    "name": "Starry Wisp",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "druid"
+    ],
+    "save": "-",
+    "damageType": "radiant",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "prestidigitation",
+    "name": "Prestidigitation",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "3m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "1h",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "magic-missile",
+    "name": "Magic Missile",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "36m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "force",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "protection-from-evil-and-good",
+    "name": "Protection from Evil and Good",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "contact",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une flasque d'eau benite d'une valeur minimale de 25 po, que le sort detruit",
+    "duration": "conc-10min",
+    "classes": [
+      "cleric",
+      "druid",
+      "wizard",
+      "warlock",
+      "paladin"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "purify-food-and-drink",
+    "name": "Purify Food and Drink",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": true,
+    "concentration": false,
+    "range": "3m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "cleric",
+      "druid",
+      "paladin"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "ray-of-frost",
+    "name": "Ray of Frost",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "froid",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "ray-of-sickness",
+    "name": "Ray of Sickness",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "necromancie",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "poison",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "guiding-bolt",
+    "name": "Guiding Bolt",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "36m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "1round",
+    "classes": [
+      "cleric"
+    ],
+    "save": "-",
+    "damageType": "radiant",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "mending",
+    "name": "Mending",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "transmutation",
+    "castingTime": "1min",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "deux magnetites",
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "expeditious-retreat",
+    "name": "Expeditious Retreat",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "transmutation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": true,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-10min",
+    "classes": [
+      "sorcerer",
+      "wizard",
+      "warlock"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "hellish-rebuke",
+    "name": "Hellish Rebuke",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "reaction",
+    "ritual": false,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "warlock"
+    ],
+    "save": "dex",
+    "damageType": "feu",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "resistance",
+    "name": "Resistance",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "abjuration",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "contact",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "conc-1min",
+    "classes": [
+      "cleric",
+      "druid"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "sanctuary",
+    "name": "Sanctuary",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un eclat de verre issu d'un miroir",
+    "duration": "1min",
+    "classes": [
+      "cleric"
+    ],
+    "save": "wis",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "jump",
+    "name": "Jump",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "transmutation",
+    "castingTime": "action-bonus",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une patte arriere de sauterelle",
+    "duration": "1min",
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "unseen-servant",
+    "name": "Unseen Servant",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": true,
+    "concentration": false,
+    "range": "18m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "un bout de ficelle et un morceau de bois",
+    "duration": "1h",
+    "classes": [
+      "bard",
+      "wizard",
+      "warlock"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "false-life",
+    "name": "False Life",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "necromancie",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une goutte d'alcool",
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "cure-wounds",
+    "name": "Cure Wounds",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "abjuration",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "sleep",
+    "name": "Sleep",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "18m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une pincee de sable ou des petales de rose",
+    "duration": "conc-1min",
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "wis",
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "illusory-script",
+    "name": "Illusory Script",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "illusion",
+    "castingTime": "1min",
+    "ritual": true,
+    "concentration": false,
+    "range": "contact",
+    "components": [
+      "S",
+      "M"
+    ],
+    "material": "de l'encre d'une valeur minimale de 10 po, que le sort detruit",
+    "duration": "10jours",
+    "classes": [
+      "bard",
+      "wizard",
+      "warlock"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "thaumaturgy",
+    "name": "Thaumaturgy",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "transmutation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V"
+    ],
+    "material": null,
+    "duration": "1min",
+    "classes": [
+      "cleric"
+    ],
+    "save": "-",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "fire-bolt",
+    "name": "Fire Bolt",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 0,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "36m",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "-",
+    "damageType": "feu",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "thunderwave",
+    "name": "Thunderwave",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "evocation",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": false,
+    "range": "perso",
+    "components": [
+      "V",
+      "S"
+    ],
+    "material": null,
+    "duration": "instantanee",
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "save": "con",
+    "damageType": "tonnerre",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "floating-disk",
+    "name": "Floating Disk",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "invocation",
+    "castingTime": "action",
+    "ritual": true,
+    "concentration": false,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une goutte de mercure",
+    "duration": "1h",
+    "classes": [
+      "wizard"
+    ],
+    "save": null,
+    "damageType": null,
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  },
+  {
+    "id": "hideous-laughter",
+    "name": "Hideous Laughter",
+    "ref": "https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf#pp.104-175",
+    "status": "source",
+    "level": 1,
+    "school": "enchantement",
+    "castingTime": "action",
+    "ritual": false,
+    "concentration": true,
+    "range": "9m",
+    "components": [
+      "V",
+      "S",
+      "M"
+    ],
+    "material": "une tartelette et une plume",
+    "duration": "conc-1min",
+    "classes": [
+      "bard",
+      "wizard",
+      "warlock"
+    ],
+    "save": "wis",
+    "damageType": "-",
+    "source": "SRD 5.2.1 (CC-BY-4.0)"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "skill_name": "dnd-lookup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Que fait le don Chanceux en D&D 2024 ?",
+      "expected_output": "The feat's effect quoted from the catalog entry, with its book reference as the citation — not a recollection of the 2014 version.",
+      "assertions": [
+        "The answer cites the entry's ref/source (a book reference), not the data file it was read from",
+        "The wording matches the catalog entry rather than a remembered 2014 description",
+        "No effect is described that is absent from the catalog entry",
+        "The prerequisite is quoted from the entry rather than summarised, and the answer is built from the feat's typed effects[] — feats are one of the entity types the catalog fully describes"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "quels sorts de niveau 1 est-ce qu'un druide peut préparer ?",
+      "expected_output": "The exact legal set returned by the resolver for a level-1 druid, answered in French, with no options added from memory.",
+      "assertions": [
+        "The listed spells are exactly the set the resolver returns for a level-1 druid — no extras, no omissions",
+        "Each spell name in the list matches its label in data/labels.fr.json — a single English name or 2014 French translation signals the engine was not queried with the fr locale",
+        "No spell outside the resolver's returned options appears in the answer"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "explique-moi ce que fait Auxilio — c'est un ami espagnol qui m'en a parlé",
+      "expected_output": "The Spanish name is resolved to the catalog entry via data/labels.es.json, every field the catalog holds is reported (level 2, abjuration, action, 9 m, V/S/M with a strip of white cloth, 8 h, bard/cleric/druid/paladin/ranger, source img:237), and the answer states \"Manquant documentaire\" for what the spell actually DOES — data/spells.json carries no effect text for any of its 391 spells.",
+      "assertions": [
+        "The Spanish name is resolved to catalog id `aid` via the labels file, not from the model's own Spanish",
+        "The metadata reported matches data/spells.json exactly — level 2, abjuration, action, 9 m, V/S/M (une bandelette de tissu blanc), 8 h, bard/cleric/druid/paladin/ranger, img:237",
+        "The answer carries the entry's ref and source",
+        "The answer says \"Manquant documentaire\" for the spell's effect: no spell in the catalog carries description text. An answer that narrates what the spell does has used memory and fails, however accurate it sounds",
+        "The explanation is delivered in the user's language, French — the answer is not in Spanish or English"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "How does the Oathbreaker paladin's Aura of Hate work?",
+      "expected_output": "\"Manquant documentaire\" — the subclass is not in the catalog, and no effect is reconstructed from training data.",
+      "assertions": [
+        "The response says \"Manquant documentaire\" or states the entry is absent from the catalog",
+        "No mechanical effect for the feature is described",
+        "The agent does not substitute a similar feature it remembers"
+      ]
+    }
+  ]
+}

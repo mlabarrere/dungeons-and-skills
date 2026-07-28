@@ -1,0 +1,41 @@
+name: publish GitHub beta
+
+on:
+  push:
+    tags:
+      - "v*-beta.*"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run skill:check
+      - run: npm test
+      - run: node scripts/export-public-repository.mjs --output "$RUNNER_TEMP/public"
+      - name: Commit exported public source for archive identity
+        working-directory: ${{ runner.temp }}/public
+        run: |
+          git init
+          git config user.name "Dungeons & Skills release bot"
+          git config user.email "release@example.invalid"
+          git add --all
+          git commit -m "${GITHUB_REF_NAME}"
+      - run: node scripts/build-public-release.mjs --source "$RUNNER_TEMP/public" --output "$RUNNER_TEMP/release"
+      - name: Publish immutable prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            "$RUNNER_TEMP/release/dungeons-and-skills-${GITHUB_REF_NAME}.zip" \
+            "$RUNNER_TEMP/release/dungeons-and-skills-${GITHUB_REF_NAME}.tar.gz" \
+            "$RUNNER_TEMP/release/SHA256SUMS" \
+            "$RUNNER_TEMP/release/release-manifest.json" \
+            --prerelease --generate-notes --verify-tag

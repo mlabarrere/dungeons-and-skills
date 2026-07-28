@@ -1,0 +1,14 @@
+{
+  "_note": "Public srd-5.2 overlay. Missing entity labels fall back to English, then stable IDs.",
+  "abilities": {},
+  "classes": {},
+  "species": {},
+  "backgrounds": {},
+  "subclasses": {},
+  "skills": {},
+  "statuses": {},
+  "spells": {},
+  "feats": {},
+  "conditions": {},
+  "features": {}
+}
