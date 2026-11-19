@@ -158,12 +158,20 @@ export function computeCharacter(model) {
   // -- Choix manquants (requiresChoice non satisfaits) ------------------------
   // Le plancher etait verifie, jamais le plafond : fournir 4 picks la ou l'effet
   // en demande 2 passait a 0 erreur, et la fiche portait deux maitrises illegales.
-  const satisfiedCount = {};
-  (model.choices || []).forEach((c) => { if (c.satisfies) satisfiedCount[c.satisfies] = (satisfiedCount[c.satisfies] || 0) + 1; });
+  // Compte par id de choix quand l'exigence le porte (deux sources peuvent demander le
+  // meme kind — ex. Roublard "langue" x1 + langues d'origine "langue" x2 — sans que l'une
+  // sur-remplisse l'autre) ; repli par kind pour les modeles sans id.
+  const satisfiedCount = {}, satisfiedById = {};
+  (model.choices || []).forEach((c) => {
+    if (!c.satisfies) return;
+    satisfiedCount[c.satisfies] = (satisfiedCount[c.satisfies] || 0) + 1;
+    const cid = String(c.id).split(":")[0];
+    satisfiedById[cid] = (satisfiedById[cid] || 0) + 1;
+  });
   const satisfied = new Set(Object.keys(satisfiedCount));
   const missing = [];
   effects.filter((e) => e.type === "requiresChoice").forEach((e) => {
-    const want = e.count || 1, got = satisfiedCount[e.kind] || 0;
+    const want = e.count || 1, got = e.id ? (satisfiedById[e.id] || 0) : (satisfiedCount[e.kind] || 0);
     if (!got) missing.push({ kind: e.kind, count: want, from: e.from, src: e._label, sourceId: e._from });
     else if (got > want) err("choice-overfilled", { kind: e.kind, got, wanted: want, source: e._label }, `choix "${e.kind}" sur-rempli : ${got} pour ${want} demande(s) (${e._label})`);
     else if (got < want) missing.push({ kind: e.kind, count: want - got, from: e.from, src: e._label, sourceId: e._from });

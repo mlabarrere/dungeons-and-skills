@@ -19,7 +19,7 @@ const FALLBACK_UI = {
   noPending: "No pending choices.", noConflicts: "No conflicts detected.",
   choice: "Choice", count: "Count", from: "From", item: "Item",
   path1: "Path 1", path2: "Path 2", resolution: "Resolution",
-  abilityScores: "Ability scores", scoresProvided: "Scores provided. Modifiers computed.",
+  abilityScores: "Ability scores", proficiencies: "Proficiencies", armor: "Armor", weapons: "Weapons", shield: "Shield", tools: "Tools", languages: "Languages", scoresProvided: "Scores provided. Modifiers computed.",
   defenseSpeed: "Defense & Speed", spellcasting: "Spellcasting",
   spellcastingSources: "Spellcasting sources", noSpellcasting: "No spellcasting.",
   saves: "Saving throws", skills: "Skills", skill: "Skill", ability: "Ability",
@@ -74,7 +74,7 @@ const FR_UI = {
   noPending: "Aucun choix en attente.", noConflicts: "Aucun conflit détecté.",
   choice: "Choix", count: "Nombre", from: "Parmi", item: "Élément",
   path1: "Chemin 1", path2: "Chemin 2", resolution: "Remédiation",
-  abilityScores: "Caractéristiques", scoresProvided: "Scores fournis. Modificateurs calculés.",
+  abilityScores: "Caractéristiques", proficiencies: "Maîtrises", armor: "Armures", weapons: "Armes", shield: "Bouclier", tools: "Outils", languages: "Langues", scoresProvided: "Scores fournis. Modificateurs calculés.",
   defenseSpeed: "Défense et vitesse", spellcasting: "Incantation",
   spellcastingSources: "Sources d’incantation", noSpellcasting: "Aucune incantation.",
   saves: "Jets de sauvegarde", skills: "Compétences", skill: "Compétence",
@@ -211,6 +211,23 @@ const derivedLabel = (entry, ui, lang) => {
 const derivedByKey = (computed, key, legacyName) =>
   (computed.derived || []).find((d) => d.key === key) || (computed.derived || []).find((d) => d.name === legacyName) || {};
 
+function proficiencyRows(computed, labels, lang, ui) {
+  // Dedoublonne sur l'id normalise : la classe accorde "outils de voleur" (libelle),
+  // l'historique "outils-de-voleur" (id) — meme maitrise, une seule mention.
+  const names = (group, entries) => {
+    const seen = new Map();
+    (entries || []).forEach((e) => { const key = stableId(e.v, group); if (!seen.has(key)) seen.set(key, labelMap(labels, group, e.v, e.v, lang)); });
+    return [...seen.values()].join(", ");
+  };
+  return [
+    [ui.armor, (computed.armorTraining || []).join(", ")],
+    [ui.weapons, (computed.weaponProf || []).map((e) => e.v).join(", ")],
+    [ui.shield, computed.hasShieldTraining ? "✓" : ""],
+    [ui.tools, names("equipment", computed.tools)],
+    [ui.languages, names("languages", computed.languages)],
+  ].filter(([, text]) => text);
+}
+
 export function renderHTML(computed, rawContext = {}) {
   const context = contextOf(rawContext);
   const { lang, ui, labels, mode } = context;
@@ -281,6 +298,11 @@ export function renderHTML(computed, rawContext = {}) {
     const effects = (src.effects || []).map((effect) => `<li>${escapeText(effect.type === "grants" ? effect.what : effect.type)}${effect.value != null ? ` = ${escapeText(effect.value)}` : effect.spell ? ` = ${escapeText(effect.spell)}` : ""}</li>`).join("");
     return `<div class="field"><span class="label">${heading}</span><ul>${effects}</ul></div>`;
   }).join("");
+  // Maitrises (armures, armes, bouclier, outils, langues) : calculees par build-character,
+  // jamais affichees jusqu'ici — une langue choisie n'apparaissait que dans "Source -> Effets".
+  const profRows = proficiencyRows(computed, labels, lang, ui)
+    .map(([label, text]) => `<div class="field"><span class="label">${escapeText(label)}</span><span class="value">${escapeText(text)}</span></div>`).join("");
+  const proficiencySection = profRows ? `<section class="section"><h2>${escapeText(ui.proficiencies)}</h2>${profRows}</section>` : "";
   const breadcrumb = mode === "site"
     ? `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">${escapeText(ui.home)}</a><span class="sep">/</span><a href="index.html">${escapeText(ui.characters)}</a><span class="sep">/</span><span aria-current="page">${escapeText(identity.name)}</span></nav>`
     : "";
@@ -318,6 +340,7 @@ export function renderHTML(computed, rawContext = {}) {
       <section class="section"><h2>4. ${escapeText(ui.abilityScores)}</h2><div class="score-grid">${scoreCells}</div><p class="note">${escapeText(ui.scoresProvided)}</p></section>
       <section class="grid-3"><div class="section"><h2>${escapeText(ui.defenseSpeed)}</h2>${derivedRows}</div><div class="section"><h2>${escapeText(ui.spellcasting)}</h2>${castingRows || `<p class="note">${escapeText(ui.noSpellcasting)}</p>`}</div><div class="section"><h2>${escapeText(ui.spellcastingSources)}</h2>${Object.entries(computed.casting || {}).map(([list, cast]) => `<div class="field"><span class="label">${escapeText(list)}</span><span class="value">${escapeText(labels?.abilities?.[cast.ability] || cast.ability)}</span><span class="provenance">${escapeText(sourceDisplay(computed, cast.sourceId, cast.src, labels, lang))}</span></div>`).join("") || "—"}</div></section>
       <section class="section"><h2>${escapeText(ui.saves)}</h2><table><thead><tr>${ABILITIES.map((ability) => `<th>${escapeText(labels?.abilities?.[ability] || ability)}</th>`).join("")}</tr></thead><tbody><tr>${saves}</tr></tbody></table></section>
+      ${proficiencySection}
       <section class="section"><h2>${escapeText(ui.skills)}</h2><table><thead><tr><th>${escapeText(ui.skill)}</th><th>${escapeText(ui.ability)}</th><th>${escapeText(ui.total)}</th><th>${escapeText(ui.provenance)}</th></tr></thead><tbody>${skills}</tbody></table></section>
       ${featureRows ? `<section class="section"><h2>${escapeText(ui.narrativeFeatures)}</h2><table><thead><tr><th>${escapeText(ui.feature)}</th><th>${escapeText(ui.level)}</th><th>${escapeText(ui.source)}</th><th>${escapeText(ui.status)}</th></tr></thead><tbody>${featureRows}</tbody></table></section>` : ""}
       <section class="section"><h2>${escapeText(ui.cantrips)}</h2><table><thead><tr><th>${escapeText(ui.spell)}</th><th>${escapeText(ui.list)}</th><th>${escapeText(ui.origin)}</th><th>${escapeText(ui.status)}</th><th>${escapeText(ui.source)}</th></tr></thead><tbody>${spellRows(computed.cantrips, 5)}</tbody></table></section>
@@ -361,6 +384,8 @@ export function renderMarkdown(computed, rawContext = {}) {
   out.push("", `## ${markdown(ui.saves)}`, (computed.saves || []).map((save) => `${markdown(labels?.abilities?.[save.a] || save.a)} ${sign(save.total)}${save.prof ? "*" : ""}`).join(" · "), "");
   const proficient = (computed.skills || []).filter((skill) => skill.prof);
   if (proficient.length) out.push(`## ${markdown(ui.skills)}`, ...proficient.map((skill) => `- ${markdown(labelMap(labels, "skills", skill.id || skill.name, skill.name, lang))} ${sign(skill.total)} _(${markdown(sourceDisplay(computed, skill.sourceId, skill.src, labels, lang))})_`), "");
+  const profLines = proficiencyRows(computed, labels, lang, ui);
+  if (profLines.length) out.push(`## ${markdown(ui.proficiencies)}`, ...profLines.map(([label, text]) => `- **${markdown(label)}**: ${markdown(text)}`), "");
   if (computed.features?.length) out.push(`## ${markdown(ui.features)}`, ...computed.features.map((feature) => `- **${markdown(labelMap(labels, "features", feature.featureId, feature.name, lang))}** _(${markdown(sourceDisplay(computed, feature.sourceId, feature.src, labels, lang))})_`), "");
   if (computed.cantrips?.length || computed.prepared?.length) {
     out.push(`## ${markdown(ui.spells)}`);

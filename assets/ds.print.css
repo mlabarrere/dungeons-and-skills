@@ -24,7 +24,7 @@ main {
 .breadcrumb,
 .tabs,
 .site-footer {
-  display: none;
+  display: none !important; /* l'@import print precede les regles ecran : sans !important, .print-actions{display:flex} gagne a l'impression */
 }
 
 /* Onglets : tout imprimer, meme les panneaux caches a l'ecran */

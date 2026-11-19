@@ -303,6 +303,7 @@ export function toCharacterModel(catalog, answers) {
       .filter((choice) => choice.kind !== "cantrip" && choice.kind !== "prepared")
       .map((choice) => ({
         type: "requiresChoice",
+        id: choice.id,
         kind: choice.kind,
         count: choice.count || 1,
         from: choice.from,
